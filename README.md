@@ -82,3 +82,16 @@ In the end, the team stands at the brink of a revelation, poised to redefine the
 [Abstract Framework of Lambiscopolix](https://chat.openai.com/share/176b2fc1-0d95-4783-9428-5b859e59b177)
 
 [Nuspeak: Cosmic Verse Creation](https://chat.openai.com/share/8a3bf982-3227-41e3-bc32-2321067b57ad)
+
+[Null Convention Logic Purpose](https://chat.openai.com/share/44f9ad80-d3a2-46c8-b977-2ac2facbb228)
+
+[Ergodicity in Physics](https://chat.openai.com/share/ca0163df-96c1-4876-a02a-edf5d96ca66b)
+
+
+## Extracurricular readings:
+
+[Arabic and Greek Lessons](https://chat.openai.com/share/aebec9d3-7490-4151-b764-efc617e7f1fb)
+
+[Bubble Path Latency](https://chat.openai.com/share/d60e18d0-5af1-429b-af0b-b026569418db)
+
+
