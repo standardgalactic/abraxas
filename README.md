@@ -85,7 +85,10 @@ In the end, the team stands at the brink of a revelation, poised to redefine the
 
 [Null Convention Logic Purpose](https://chat.openai.com/share/44f9ad80-d3a2-46c8-b977-2ac2facbb228)
 
+[Generative Models in Active Inference](https://chat.openai.com/share/b115d535-7603-4456-8a13-d6b3ed0e3b08)
+
 [Ergodicity in Physics](https://chat.openai.com/share/ca0163df-96c1-4876-a02a-edf5d96ca66b)
+
 
 
 ## Extracurricular readings:
