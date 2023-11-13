@@ -4,10 +4,6 @@
 [Nuspeak Translator](https://chat.openai.com/g/g-s8SrrtZJS-nuspeak-translator)
 (A GPT bot.)
 
-<p align="left">
-  <img src="waveAnimation.gif" width="450px"/>
-</p>
-
 ## 𝘕𝘶𝘴𝘱𝘦𝘢𝘬 𝘛𝘳𝘢𝘯𝘴𝘭𝘢𝘵𝘰𝘳
 
 Here is a glossary of Ankyran Nuspeak terms:
@@ -101,4 +97,9 @@ In the end, the team stands at the brink of a revelation, poised to redefine the
 
 [Bubble Path Latency](https://chat.openai.com/share/d60e18d0-5af1-429b-af0b-b026569418db)
 
+### Blanket-wave
+
+<p align="left">
+  <img src="waveAnimation.gif" width="450px"/>
+</p>
 
