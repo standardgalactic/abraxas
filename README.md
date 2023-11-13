@@ -5,7 +5,7 @@
 (A GPT bot.)
 
 <p align="left">
-  <img src="waveAnimation.gif" width="749px"/>
+  <img src="waveAnimation.gif" width="450px"/>
 </p>
 
 ## 𝘕𝘶𝘴𝘱𝘦𝘢𝘬 𝘛𝘳𝘢𝘯𝘴𝘭𝘢𝘵𝘰𝘳
