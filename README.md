@@ -4,6 +4,10 @@
 [Nuspeak Translator](https://chat.openai.com/g/g-s8SrrtZJS-nuspeak-translator)
 (A GPT bot.)
 
+<p align="left">
+  <img src="waveAnimation.gif" width="749px"/>
+</p>
+
 ## 𝘕𝘶𝘴𝘱𝘦𝘢𝘬 𝘛𝘳𝘢𝘯𝘴𝘭𝘢𝘵𝘰𝘳
 
 Here is a glossary of Ankyran Nuspeak terms:
