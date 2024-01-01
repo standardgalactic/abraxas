@@ -7,3 +7,5 @@ trionic-cyclexes.mp3 filter=lfs diff=lfs merge=lfs -text
 teleodynamics.mp3 filter=lfs diff=lfs merge=lfs -text
 spherepop.mp3 filter=lfs diff=lfs merge=lfs -text
 relevance-relations.mp3 filter=lfs diff=lfs merge=lfs -text
+intersubjectivity.mp3 filter=lfs diff=lfs merge=lfs -text
+intersubjectividad.mp3 filter=lfs diff=lfs merge=lfs -text
