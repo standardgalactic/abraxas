@@ -16,8 +16,7 @@ C:\> ollama run mistral
 9. مدرسة (mudrasa) - School
 10. مستشفى (mustashfa) - Hospital
 
-These words should help you get started in learning Arabic! Let me know if you
-have any other specific words or phrases you're
+These words should help you get started in learning Arabic! Let me know if you have any other specific words or phrases you're
 interested in.
 
 >>> say -v Majed "السلامة"
@@ -130,6 +129,7 @@ If you have any further questions or need more clarification on these ethical
 theories, don't hesitate to ask!
 
 >>> From Cyclops to Cyborg: Nietzsche, Posthumanism and ‘Embodied Perspectivism’
+<<<<<<< HEAD
 - Philip Mills
 
 Against a rigid conception of the human, various strands of posthumanism prefer
@@ -173,10 +173,25 @@ showing how it ought to be considered a matter of embodiment and affect
 rather ⠙ than one of knowledge and epistemology; third, I use the term of
 Cyborg as a metaphor for the Nietzschean alternative to the Cyclops,
 while pointing out the dangers of a literal reading of the Cyborg.
+=======
+lip Mills
+
+
+
+FacebookTwitterGoogleDiggRedditLinkedInPinterestStumbleUponEmail
+
+
+
+
+Against a rigid conception of the human, various strands of posthumanism prefer considering the idea of the human an open concept, which can evolve in almost unlimited ways according to the evolutions of technology for instance.[1] In this context, many Nietzsche scholars have considered the notion of Übermensch to be of central significance to posthuman studies. Although there are some clear connections to be made in this regard, I will rather focus on his notion of perspectivism—that I reconceptualise as an ‘embodied perspectivism’—to account for what I consider to be the metaphorical force of posthumanism in Nietzsche.[2] Indeed, the abovementioned connection between postmodernism and perspectivism—the idea that there is no privileged perspective and that a form of ‘objectivity’ can only be reached through the multiplication of perspectives—brings to the fore a potential connection to posthumanism through the emphasis on the importance of the ‘eyes’ which, as we will see, is central both to perspectivism and to a certain conception of the posthuman Cyborg. In a literal way, multiplying perspectives involves multiplying eyes, and this multiplication of eyes might be what the posthuman Cyborg makes possible.
+
+In this paper, I consider the notion of Cyborg as a metaphor for the perspectival request for a multiplication of eyes. I do not argue that Nietzsche would be in favour of an actual multiplication of eyes by means of technology, but that the posthuman Cyborg as developed by Donna Haraway offers a metaphor for this multiplication of eyes and perspectives. The postmodern shift from grand narratives to a multiplicity of small narratives can be coined in the metaphorical shift from Cyclops to Cyborg. Whereas Nietzsche criticises Socrates’s cyclopean eye and the cyclopic buildings, the Cyborg offers the counter-metaphor to the Cyclops. My paper is divided in three parts: first, I discuss Nietzsche’s critique of cyclopic buildings and the cyclopic monoperspectival view, relating it to the Cyclops episode in James Joyce’s Ulysses to show the relation between a cyclopic building and political ideologies; second, I elaborate on Nietzsche’s perspectivism by showing how it ought to be considered a matter of embodiment and affect rather ⠙ than one of knowledge and epistemology; third, I use the term of Cyborg as a metaphor for the Nietzschean alternative to the Cyclops, while pointing out the dangers of a literal reading of the Cyborg.
+>>>>>>> bf3b3d3e84ab42b54e7462c1b7fcb1e3402af2bc
 
 
 
 I. Against Cyclopic Ideology
+<<<<<<< HEAD
 Although the Cyclops is not a central figure in Nietzsche’s works, his
 references to the ‘Cyclopian eye’ and ‘cyclopic buildings’ build on two
 of the usual characteristics of the Cyclops: one-eyedness and strength.
@@ -202,6 +217,14 @@ in the ‘sublime and renowned’ art of tragedy, as Plato called it?
 Something quite unreasonable, with causes which apparently lacked
 
 Title: From Cyclops to Cyborg: Nietzsche, Posthumanism and ‘Embodied
+=======
+Although the Cyclops is not a central figure in Nietzsche’s works, his references to the ‘Cyclopian eye’ and ‘cyclopic buildings’ build on two of the usual characteristics of the Cyclops: one-eyedness and strength. The first characteristics suggests that ⠹  perspective; the second suggests that, maybe in order to compensate this lack of perspectives, the Cyclops relies mainly on its superhuman strength. Both one-eyedness and strength are characteristics that I will relate to political nationalism and patriotic ideology, following Joyce’s reinterpretation of the Cyclops episode in Ulysses. Before moving towards the political implications of the Cyclops, let us explore how this figure appears in Nietzsche’s works.
+
+
+Nietzsche discusses the one-eyedness of the Cyclops in the Birth of Tragedy, while describing Socrates’s view of tragedy:
+
+Let us now imagine Socrates’ one great Cyclopian eye turned on tragedy, an eye in which the lovely madness of artistic enthusiasm never glowed, let us remember how that eye was debarred from ever looking with pleasure into the abysses of the Dionysiac; what was this eye actually bound to see in the ‘sublime and renowned’ art of tragedy, as Plato called it? Some­ thing quite unreasonable, with causes which apparently lacke Title: From Cyclops to Cyborg: Nietzsche, Posthumanism and ‘Embodied
+>>>>>>> bf3b3d3e84ab42b54e7462c1b7fcb1e3402af2bc
 Perspectivism’
 
 Abstract:
@@ -650,7 +673,11 @@ Available Commands:
 # To build a new Modelfile based on this one, replace the FROM line with:
 # FROM mistral:latest
 
+<<<<<<< HEAD
 FROM /usr/share/ollama/.ollama/models/blobs/sha256
+=======
+FROM /usr/share/ollama/.ollama/models/blobs/sha256:953202b3116b0a8aeba46f41cdcbf6c2fbdd0d6d8bf0cc17cf000fdcb3361db1
+>>>>>>> bf3b3d3e84ab42b54e7462c1b7fcb1e3402af2bc
 TEMPLATE """[INST] {{ .System }} {{ .Prompt }} [/INST]"""
 PARAMETER num_ctx 32768
 PARAMETER stop "</s>"
