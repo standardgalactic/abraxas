@@ -1,0 +1,387 @@
+Mixtral
+
+Checking cheat-sheet.txt
+ Docker is a platform that enables packaging and
+running applications in isolated containers. These
+containers are lightweight, self-contained
+environments that provide security and flexibility
+when running multiple containers on a single host.
+Containers reduce dependencies on the host system
+and allow for easy sharing and consistent execution
+across different environments.
+
+Checking cheat-sheet-2.txt
+ Docker Desktop can be installed on Mac, Linux, and
+Windows platforms, and is available for use at the
+following link: <https://docs.docker.com/desktop>.
+Example projects that utilize Docker can be found at
+this GitHub repository:
+<https://github.com/docker/awesome-compose>.
+Additional documentation and resources for using
+Docker are located at <https://docs.docker.com>.
+
+Checking cheat-sheet-3.txt
+ A Docker image is a lightweight, standalone, and
+executable package that contains everything needed
+to run an application, including code, runtime,
+system tools, libraries, and settings. You can build
+a Docker image from a Dockerfile using the command
+`docker build -t <image_name>`. To build an image
+without using the cache, you can use the command
+`docker build -t <image_name> . –no-cache`. To list
+all local Docker images, you can use the command
+`docker images`, and to delete a Docker image, you
+can use the command `docker rmi <image_name>`. The
+command `docker image prune` can be used to remove
+all unused images.
+
+Checking cheat-sheet-4.txt
+ Docker Hub is a service provided by Docker for
+sharing and finding container images with your team.
+You can log in to Docker Hub using the command
+`docker login -u <username>`. To publish an image to
+Docker Hub, use the command `docker push
+<username>/<image_name>`. To search for an image on
+Docker Hub, use the command `docker search
+<image_name>`. To pull an image from Docker Hub, use
+the command `docker pull <image_name>`.
+
+Checking cheat-sheet-5.txt
+ Here are some general Docker commands with a brief
+description of what they do:
+
+* `docker daemon -d`: Start the Docker daemon in
+detached mode. The daemon is responsible for
+managing Docker containers and images.
+* `docker --help`: Display help information for
+Docker. This command can also be used with specific
+subcommands to get help on their usage.
+* `docker info`: Display system-wide information
+about Docker, including the number of containers,
+images, and networks. This command can be useful for
+diagnosing issues with Docker or checking its
+configuration.
+
+Checking cheat-sheet-6.txt
+ A container is a runtime instance of a Docker
+image, providing a consistent and isolated
+environment for software to run. Here are commands
+to create, manage, and inspect containers:
+
+1. Create and run a container from an image with a
+custom name:
+   ```
+   docker run --name <container_name> <image_name>
+   ```
+2. Run a container with published ports:
+   ```
+   docker run -p <host_port>:<container_port>
+<image_name>
+   ```
+3. Run a container in the background:
+   ```
+   docker run -d <image_name>
+   ```
+4. Start or stop an existing container:
+   ```
+   docker start|stop <container_name> (or
+<container-id>)
+   ```
+5. Remove a stopped container:
+   ```
+   docker rm <container_name>
+   ```
+6. Open a shell inside a running container:
+   ```
+   docker exec -it <container_name> sh
+   ```
+7. Fetch and follow the logs of a container:
+   ```
+   docker logs -f <container_name>
+   ```
+8. Inspect a running container:
+   ```
+   docker inspect <container_name> (or
+<container_id>)
+   ```
+9. List currently running containers:
+   ```
+   docker ps
+   ```
+10. List all Docker containers (running and
+stopped):
+    ```
+    docker ps --all
+    ```
+11. View resource usage stats:
+    ```
+    docker container stats
+    ```
+
+
+Checking docker-intro.txt
+ Docker is an open-source tool that simplifies the
+deployment of applications to servers by using
+resource isolation features of the Linux kernel. It
+enables the creation of software containers, which
+are isolated from each other and from the host
+system, making it possible to easily allocate
+resources and design simpler deployment pipelines
+without the overhead of full-fledged virtual
+machines.
+
+Docker's architecture consists of registries,
+images, containers, a Docker daemon, and a Docker
+client. Registries like Docker Hub store public and
+official images, while organizations can host their
+private registries. Images are downloaded from
+registries and cached locally; they are the
+non-changing blueprints for containers. Containers
+are instances of images that are running and can be
+created, run, and monitored by the Docker daemon.
+The Docker client communicates with the daemon via
+HTTP or Unix sockets when on the same machine,
+allowing for remote management as well.
+
+The transportation industry analogy illustrates how
+Docker brings similar benefits to the software
+industry: just like intermodal containers
+revolutionized international transportation by
+standardizing and simplifying the movement of goods,
+Docker simplifies the deployment and management of
+applications.
+
+Checking docker-intro-2.txt
+ To install Docker, the official documentation
+should be referred to for the most up-to-date
+instructions. Docker runs natively on Linux and can
+be installed using a package manager like apt-get.
+For Mac OS and Windows, Docker cannot run natively
+and requires the installation of an application
+called Boot2Docker, which includes a VirtualBox
+Virtual Machine, Docker, and management utilities.
+
+Using Docker involves running commands that download
+images from Docker Hub, start containers based on
+those images, execute commands within the container,
+and stop the container when the command exits. The
+`docker run` command can be used for this purpose.
+On first run, there may be a delay as the image is
+downloaded, but if it's cached locally, subsequent
+runs will be faster. Details about the last
+container can be retrieved using the `docker ps -l`
+command.
+
+Checking docker-intro-3.txt
+ This article discusses how to use Docker to deploy
+a simple web server application, specifically a Java
+program that handles HTTP GET requests to '/ping'
+and responds with 'pong\n'. To build the Docker
+image, a Dockerfile is used which specifies:
+
+* The base image (Java 8) using the `FROM`
+instruction.
+* Copying the Java file into the image using the
+`COPY` instruction.
+* Compiling the Java file with the `RUN`
+instruction.
+* Exposing port 8080 using the `EXPOSE`
+instruction.
+* Setting the entry point and command for running
+the container with the `ENTRYPOINT` and `CMD`
+instructions.
+
+The Docker image is built by running the command
+`docker build -t toptal/pingpong .`. The article
+also mentions that it's a good practice to check for
+existing images in registries like Docker Hub before
+building your own.
+
+Checking docker-intro-4.txt
+ The `docker run` command is used to create and
+start a new container from a Docker image. Some
+common options for the `docker run` command are:
+
+* `-d`: runs the container in detached mode, which
+means it runs in the background
+* `-p <host_port>:<container_port>`: maps the host's
+port to the container's port so that the container
+can be accessed from the host
+* `-i` and `-t`: allows you to interact with the
+container through a terminal session
+* `--entrypoint="bash"`: overrides the default
+entrypoint command of the image, allowing you to
+specify a different command to run when the
+container starts
+* `-v <host_path>:<container_path>`: mounts a host
+directory as a volume inside the container, allowing
+data to persist outside of the container
+
+* `
+--link <linked_container_name>`: links one
+container to another so that they can communicate
+with each other.
+
+To test if a web server application is running in a
+container, you can use the `curl` command to make a
+request to the container's endpoint, for example by
+accessing '<http://localhost:8080/ping>' or
+'$(boot2docker ip):8080/ping' depending on your
+platform. If the web server is running, you should
+see the response 'pong'.
+
+Checking docker-intro-5.txt
+ The `docker stop` command is used to stop a running
+container, while the `docker start` command is used
+to start a stopped container. The `docker commit`
+command creates a new image from the changes made in
+a container, and the `docker rm` command removes one
+or more containers.
+
+The `docker rmi` command is used to remove one or
+more images, while the `docker ps` command lists all
+running containers. The `docker images` command
+shows all available images on the system.
+
+Finally, the `docker exec` command lets you run a
+new command in a currently running container. It can
+be particularly useful for debugging purposes as it
+allows you to open a terminal session inside the
+container using the command:
+```bash
+docker exec -i -t <container-id> bash
+```
+
+Checking docker-intro-6.txt
+ Docker is an open-source tool that simplifies the
+deployment of applications to servers through
+containerization. It allows developers to build,
+ship, and run applications in a consistent and
+isolated manner, without relying on virtual
+machines. Docker enables efficient resource
+allocation and management, making it easier to
+design deployment pipelines. This summary is based
+on the article "Getting Started With Docker:
+Simplifying DevOps" by Radek Ostrowski, a Toptal
+expert in Engineering. The article highlights the
+benefits of using Docker and its role in modern
+DevOps practices.
+
+Checking docker-open-source.txt
+ Docker is an open-source project for software
+containerization, which packages applications and
+their dependencies into a single container for easy
+deployment. It uses the resource isolation features
+of the Linux kernel to run multiple containers
+within a single Linux instance, improving
+performance and making development easier. The
+Docker Open Source Engine has a specific
+architecture, and there are also open-source tools
+available for enhancing Docker security.
+Additionally, Docker provides powerful tools for
+managing containers, and seeking DCA certification
+can be helpful in using Docker for various use cases.
+
+Checking docker-open-source-2.txt
+ Docker Open Source is a platform for developers and
+sysadmins to create, ship, and run distributed
+applications using containers. The architecture of
+Docker Open Source Engine consists of three major
+components: the Docker Daemon, the Docker Client,
+and the Docker Registries. The Docker Daemon is the
+heart of the engine, managing containers and
+handling requests from the Docker Client. The Docker
+Client is the main interface for end-users to create
+and manage containers, with both command-line and
+graphical options available. Docker Registries are
+used to store and distribute images, with both
+public and private options available. This
+architecture enables applications to be easily
+assembled from components, reducing friction between
+development, QA, and production environments, and
+allowing for faster shipping and deployment of
+applications across different clouds and data
+centers.
+
+Checking docker-open-source-3.txt
+ Docker provides different storage drivers for
+containers, including:
+
+1. Devicemapper: the original driver, difficult to
+use with devices that do not support thin
+provisioning and used by some orchestration tools
+like Kubernetes.
+2. Fuse-overlayfs: an open source driver that
+supports multiple storage backends, snapshotting,
+and advanced container management.
+3. Aufs: a popular copy-on-write strategy driver,
+included in most Linux distributions and supports
+multiple open-source container registries.
+4. Btrfs and Zfs: two popular storage drivers used
+with containers, providing excellent performance,
+scalability, and enterprise-level features.
+5. Vfs: the default Docker driver, offering good
+performance and isolation, best suited for
+development and testing environments.
+6. Overlay2: the preferred Docker storage driver,
+supporting multiple lower-layer storage options,
+good performance, and snapshotting/cloning features.
+
+Checking docker-open-source-4.txt
+ Docker Bench for Security, Clair, Notary, Dagda,
+and Anchore are open source tools used for enhancing
+Docker security. Docker Bench for Security checks
+running containers against best practices and the
+CIS Benchmark for Docker. Clair performs static
+vulnerability analysis of containers by scanning
+packages and reporting any found vulnerabilities.
+Notary ensures image integrity through cryptographic
+signatures, allowing local signing and verification
+or verifying downloaded images from registries like
+Docker Hub.
+
+Dagda offers a detailed overview of Docker image
+contents, including vulnerabilities, exposed ports,
+malware, and malicious code. It supports Dockerfile
+and OCI formats, monitoring containers for
+suspicious activity and generating reports to
+improve container security. Anchore scans Docker
+image contents against known vulnerabilities and
+provides vulnerability reporting, image signing,
+policy enforcement, and other features for analyzing
+and monitoring Docker images.
+
+Checking docker-open-source-5.txt
+ Trivy is an open-source tool for securing Docker
+containers by performing static code analysis and
+malware scanning. OpenSCAP Workbench is a graphical
+interface for analyzing and remediating security
+vulnerabilities in Docker containers, including the
+ability to create and manage security policies.
+Sysdig Falco is a container security monitor that
+uses kernel-level visibility to detect suspicious
+activity within containers. Grafaes is an
+open-source tool providing a web-based interface for
+managing Docker images and containers, with features
+such as image signing and verification, container
+scanning, and auditing. Cilium is an open-source
+tool offering network security, visibility, and load
+balancing for containers and microservices using the
+BPF kernel feature. Docker Open Source has
+revolutionized application development and
+deployment, and its security is enhanced by these
+open-source tools, enabling businesses to deploy
+containers securely with confidence.
+
+Checking docker-open-source-6.txt
+ Docker is open-source software, but it is not free;
+users can download and use the community edition for
+free, but they need to pay for a subscription to use
+the enterprise edition. Docker does not have to be
+used with Docker Desktop, although Docker Desktop
+provides an easy way to get started with many useful
+tools. The key takeaway here is that while there are
+free options available for using Docker, it is not
+freeware, and users need to pay for certain features
+and functionalities.
+
