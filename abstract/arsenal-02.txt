@@ -1,0 +1,1734 @@
+(base) bash-5.0$ pwd
+/home/bonobo/arsenal
+(base) bash-5.0$ ls
+Dockerfile  LICENSE  README.md  _data  build  connect  context  hooks  start
+(base) bash-5.0$ cat README.md
+# Arsenal
+
+Tools for bug hunting in a container.
+
+## Usage
+
+Clone the repo.
+`git clone https://github.com/r00tdaemon/arsenal`
+
+To build the image run build script.
+`./build`
+Or pull the image from docker hub
+`docker pull r00tdaemon/arsenal`
+
+To start the container run start script.
+`./start`
+
+To attach a new session to running container run connect script.
+`./connect`
+
+## List of Tools
+
+- Amass
+- Assetfinder
+- Burpsuite
+- Dirsearch
+- Exploitdb
+- Ghidra
+- Gitleaks
+- Gobuster
+- Httprobe
+- Linenum
+- Masscan
+- Meg
+- Peass
+- Pspy
+- Seclists
+- Semgrep
+- Sqlmap
+- Subfinder
+(base) bash-5.0$ tree .
+.
+├── Dockerfile
+├── LICENSE
+├── README.md
+├── _data
+├── build
+├── connect
+├── context
+│   └── scripts
+│       ├── all
+│       ├── amass
+│       │   └── install
+│       ├── assetfinder
+│       │   └── install
+│       ├── burpsuite
+│       │   └── install
+│       ├── dirsearch
+│       │   └── install
+│       ├── exploitdb
+│       │   └── install
+│       ├── ghidra
+│       │   └── install
+│       ├── gitleaks
+│       │   └── install
+│       ├── go
+│       │   └── install
+│       ├── gobuster
+│       │   └── install
+│       ├── httprobe
+│       │   └── install
+│       ├── linenum
+│       │   └── install
+│       ├── masscan
+│       │   └── install
+│       ├── meg
+│       │   └── install
+│       ├── peass
+│       │   └── install
+│       ├── pspy
+│       │   └── install
+│       ├── seclists
+│       │   └── install
+│       ├── semgrep
+│       │   └── install
+│       ├── sqlmap
+│       │   └── install
+│       ├── subfinder
+│       │   └── install
+│       └── xmind
+│           └── install.bak
+├── hooks
+│   ├── init.sh
+│   ├── post-checkout
+│   ├── post-commit
+│   └── pre-commit
+└── start
+
+24 directories, 31 files
+(base) bash-5.0$ pwd
+/home/bonobo/arsenal
+(base) bash-5.0$ ls
+Dockerfile  LICENSE  README.md  _data  build  connect  context  hooks  shared  start
+(base) bash-5.0$ ./connect
+arsenal@arsenal ~ % go --version
+flag provided but not defined: -version
+Go is a tool for managing Go source code.
+
+Usage:
+
+go <command> [arguments]
+
+The commands are:
+
+bug         start a bug report
+build       compile packages and dependencies
+clean       remove object files and cached files
+doc         show documentation for package or symbol
+env         print Go environment information
+fix         update packages to use new APIs
+fmt         gofmt (reformat) package sources
+generate    generate Go files by processing source
+get         add dependencies to current module and install them
+install     compile and install packages and dependencies
+list        list packages or modules
+mod         module maintenance
+work        workspace maintenance
+run         compile and run Go program
+test        test packages
+tool        run specified go tool
+version     print Go version
+vet         report likely mistakes in packages
+
+Use "go help <command>" for more information about a command.
+
+Additional help topics:
+
+buildconstraint build constraints
+buildmode       build modes
+c               calling between Go and C
+cache           build and test caching
+environment     environment variables
+filetype        file types
+go.mod          the go.mod file
+gopath          GOPATH environment variable
+gopath-get      legacy GOPATH go get
+goproxy         module proxy protocol
+importpath      import path syntax
+modules         modules, module versions, and more
+module-get      module-aware go get
+module-auth     module authentication using go.sum
+packages        package lists and patterns
+private         configuration for downloading non-public code
+testflag        testing flags
+testfunc        testing functions
+vcs             controlling version control with GOVCS
+
+Use "go help <topic>" for more information about that topic.
+
+2 arsenal@arsenal ~ % go -v
+flag provided but not defined: -v
+Go is a tool for managing Go source code.
+
+Usage:
+
+go <command> [arguments]
+
+The commands are:
+
+bug         start a bug report
+build       compile packages and dependencies
+clean       remove object files and cached files
+doc         show documentation for package or symbol
+env         print Go environment information
+fix         update packages to use new APIs
+fmt         gofmt (reformat) package sources
+generate    generate Go files by processing source
+get         add dependencies to current module and install them
+install     compile and install packages and dependencies
+list        list packages or modules
+mod         module maintenance
+work        workspace maintenance
+run         compile and run Go program
+test        test packages
+tool        run specified go tool
+version     print Go version
+vet         report likely mistakes in packages
+
+Use "go help <command>" for more information about a command.
+
+Additional help topics:
+
+buildconstraint build constraints
+buildmode       build modes
+c               calling between Go and C
+cache           build and test caching
+environment     environment variables
+filetype        file types
+go.mod          the go.mod file
+gopath          GOPATH environment variable
+gopath-get      legacy GOPATH go get
+goproxy         module proxy protocol
+importpath      import path syntax
+modules         modules, module versions, and more
+module-get      module-aware go get
+module-auth     module authentication using go.sum
+packages        package lists and patterns
+private         configuration for downloading non-public code
+testflag        testing flags
+testfunc        testing functions
+vcs             controlling version control with GOVCS
+
+Use "go help <topic>" for more information about that topic.
+
+2 arsenal@arsenal ~ % go version
+go version go1.19.8 linux/amd64
+arsenal@arsenal ~ % go gopath
+go gopath: unknown command
+Run 'go help' for usage.
+2 arsenal@arsenal ~ % go help gopath
+The Go path is used to resolve import statements.
+It is implemented by and documented in the go/build package.
+
+The GOPATH environment variable lists places to look for Go code.
+On Unix, the value is a colon-separated string.
+On Windows, the value is a semicolon-separated string.
+On Plan 9, the value is a list.
+
+If the environment variable is unset, GOPATH defaults
+to a subdirectory named "go" in the user's home directory
+($HOME/go on Unix, %USERPROFILE%\go on Windows),
+unless that directory holds a Go distribution.
+Run "go env GOPATH" to see the current GOPATH.
+
+See https://golang.org/wiki/SettingGOPATH to set a custom GOPATH.
+
+Each directory listed in GOPATH must have a prescribed structure:
+
+The src directory holds source code. The path below src
+determines the import path or executable name.
+
+The pkg directory holds installed package objects.
+As in the Go tree, each target operating system and
+architecture pair has its own subdirectory of pkg
+(pkg/GOOS_GOARCH).
+
+If DIR is a directory listed in the GOPATH, a package with
+source in DIR/src/foo/bar can be imported as "foo/bar" and
+has its compiled form installed to "DIR/pkg/GOOS_GOARCH/foo/bar.a".
+
+The bin directory holds compiled commands.
+Each command is named for its source directory, but only
+the final element, not the entire path. That is, the
+command with source in DIR/src/foo/quux is installed into
+DIR/bin/quux, not DIR/bin/foo/quux. The "foo/" prefix is stripped
+so that you can add DIR/bin to your PATH to get at the
+installed commands. If the GOBIN environment variable is
+set, commands are installed to the directory it names instead
+of DIR/bin. GOBIN must be an absolute path.
+
+Here's an example directory layout:
+
+GOPATH=/home/user/go
+
+/home/user/go/
+src/
+foo/
+bar/               (go code in package bar)
+x.go
+quux/              (go code in package main)
+y.go
+bin/
+quux                   (installed command)
+pkg/
+linux_amd64/
+foo/
+bar.a          (installed package object)
+
+Go searches each directory listed in GOPATH to find source code,
+but new packages are always downloaded into the first directory
+in the list.
+
+See https://golang.org/doc/code.html for an example.
+
+GOPATH and Modules
+
+When using modules, GOPATH is no longer used for resolving imports.
+However, it is still used to store downloaded source code (in GOPATH/pkg/mod)
+and compiled commands (in GOPATH/bin).
+
+Internal Directories
+
+Code in or below a directory named "internal" is importable only
+by code in the directory tree rooted at the parent of "internal".
+Here's an extended version of the directory layout above:
+
+/home/user/go/
+src/
+crash/
+bang/              (go code in package bang)
+b.go
+foo/                   (go code in package foo)
+f.go
+bar/               (go code in package bar)
+x.go
+internal/
+baz/           (go code in package baz)
+z.go
+quux/              (go code in package main)
+y.go
+
+
+The code in z.go is imported as "foo/internal/baz", but that
+import statement can only appear in source files in the subtree
+rooted at foo. The source files foo/f.go, foo/bar/x.go, and
+foo/quux/y.go can all import "foo/internal/baz", but the source file
+crash/bang/b.go cannot.
+
+See https://golang.org/s/go14internal for details.
+
+Vendor Directories
+
+Go 1.6 includes support for using local copies of external dependencies
+to satisfy imports of those dependencies, often referred to as vendoring.
+
+Code below a directory named "vendor" is importable only
+by code in the directory tree rooted at the parent of "vendor",
+and only using an import path that omits the prefix up to and
+including the vendor element.
+
+Here's the example from the previous section,
+but with the "internal" directory renamed to "vendor"
+and a new foo/vendor/crash/bang directory added:
+
+/home/user/go/
+src/
+crash/
+bang/              (go code in package bang)
+b.go
+foo/                   (go code in package foo)
+f.go
+bar/               (go code in package bar)
+x.go
+vendor/
+crash/
+bang/      (go code in package bang)
+b.go
+baz/           (go code in package baz)
+z.go
+quux/              (go code in package main)
+y.go
+
+The same visibility rules apply as for internal, but the code
+in z.go is imported as "baz", not as "foo/vendor/baz".
+
+Code in vendor directories deeper in the source tree shadows
+code in higher directories. Within the subtree rooted at foo, an import
+of "crash/bang" resolves to "foo/vendor/crash/bang", not the
+top-level "crash/bang".
+
+Code in vendor directories is not subject to import path
+checking (see 'go help importpath').
+
+When 'go get' checks out or updates a git repository, it now also
+updates submodules.
+
+Vendor directories do not affect the placement of new repositories
+being checked out for the first time by 'go get': those are always
+placed in the main GOPATH, never in a vendor subtree.
+
+See https://golang.org/s/go15vendor for details.
+arsenal@arsenal ~ % ls
+goProjects  privesc  shared  tools  wordlists  _data
+arsenal@arsenal ~ % cd goProjects
+arsenal@arsenal ~/goProjects % ls
+arsenal@arsenal ~/goProjects % burpsuite
+arsenal@arsenal ~/goProjects % cd ..
+arsenal@arsenal ~ % ls
+goProjects  privesc  shared  tools  wordlists  _data
+arsenal@arsenal ~ % cd tools
+arsenal@arsenal ~/tools % ls
+LinEnum.sh  amass  burp.jar   exploitdb  peass    sqlmap-dev
+SecLists    bin    dirsearch  ghidra     scripts
+arsenal@arsenal ~/tools % cd scripts
+arsenal@arsenal ~/tools/scripts % ls
+all          burpsuite  ghidra    gobuster  masscan  pspy      sqlmap
+amass        dirsearch  gitleaks  httprobe  meg      seclists  subfinder
+assetfinder  exploitdb  go        linenum   peass    semgrep   xmind
+arsenal@arsenal ~/tools/scripts % cd go
+arsenal@arsenal ~/tools/scripts/go % ls
+install
+arsenal@arsenal ~/tools/scripts/go % ./install
+zsh: permission denied: ./install
+126 arsenal@arsenal ~/tools/scripts/go % sudo ./install
+sudo: unable to resolve host arsenal: Name or service not known
+sudo: ./install: command not found
+1 arsenal@arsenal ~/tools/scripts/go % cd ..
+arsenal@arsenal ~/tools/scripts % ./all
+amass.zip: Permission denied
+unzip:  cannot find or open amass.zip, amass.zip.zip or amass.zip.ZIP.
+mv: cannot move './amass' to a subdirectory of itself, 'amass/amass'
+ln: failed to create symbolic link '/home/arsenal/tools/bin/amass': File exists
+go: downloading github.com/tomnomnom/assetfinder v0.1.1
+./burp.jar: Permission denied
+/home/arsenal/tools/scripts/burpsuite//install: line 6: bin/burpsuite: No such file or directory
+chmod: cannot access 'bin/burpsuite': No such file or directory
+fatal: destination path 'dirsearch' already exists and is not an empty directory.
+ln: failed to create symbolic link '/home/arsenal/tools/bin/dirsearch': File exists
+fatal: destination path 'exploitdb' already exists and is not an empty directory.
+sed: can't read exploitdb/.searchsploit_rc: No such file or directory
+ln: failed to create symbolic link '/home/arsenal/tools/bin/searchsploit': File exists
+ghidra.zip: Permission denied
+unzip:  cannot find or open ghidra.zip, ghidra.zip.zip or ghidra.zip.ZIP.
+mv: missing destination file operand after 'ghidra'
+Try 'mv --help' for more information.
+ln: failed to create symbolic link '/home/arsenal/tools/bin/ghidra': File exists
+gitleaks.tar.gz: Permission denied
+tar (child): gitleaks.tar.gz: Cannot open: No such file or directory
+tar (child): Error is not recoverable: exiting now
+tar: Child returned status 2
+tar: Error is not recoverable: exiting now
+chmod: cannot access 'gitleaks/gitleaks': No such file or directory
+mv: cannot stat 'gitleaks/gitleaks': No such file or directory
+rm: cannot remove 'gitleaks/install': Permission denied
+go: downloading github.com/OJ/gobuster/v3 v3.6.0
+go: downloading github.com/OJ/gobuster v2.0.1+incompatible
+go: downloading github.com/fatih/color v1.15.0
+go: downloading github.com/spf13/cobra v1.7.0
+go: downloading golang.org/x/crypto v0.12.0
+go: downloading golang.org/x/term v0.11.0
+go: downloading github.com/google/uuid v1.3.0
+go: downloading github.com/pin/tftp/v3 v3.0.0
+go: downloading github.com/mattn/go-isatty v0.0.19
+go: downloading github.com/mattn/go-colorable v0.1.13
+go: downloading golang.org/x/sys v0.11.0
+go: downloading github.com/spf13/pflag v1.0.5
+go: downloading golang.org/x/net v0.11.0
+go: downloading github.com/tomnomnom/httprobe v0.1.2
+--2024-02-01 01:09:57--  https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.110.133, 185.199.109.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 46631 (46K) [text/plain]
+LinEnum.sh: Permission denied
+
+Cannot write to 'LinEnum.sh' (Permission denied).
+chmod: cannot access 'LinEnum.sh': No such file or directory
+ln: failed to create symbolic link '/home/arsenal/privesc/LinEnum.sh': File exists
+fatal: destination path 'masscan' already exists and is not an empty directory.
+make: *** No targets specified and no makefile found.  Stop.
+mv: cannot stat 'bin/masscan': No such file or directory
+rm: cannot remove 'masscan/install': Permission denied
+go: downloading github.com/tomnomnom/meg v0.3.0
+go: downloading github.com/tomnomnom/rawhttp v0.0.0-20200527083831-e904eb0f15db
+fatal: destination path 'peass' already exists and is not an empty directory.
+ln: failed to create symbolic link '/home/arsenal/privesc/linpeas.sh': File exists
+ln: failed to create symbolic link '/home/arsenal/privesc/winPEAS.bat': File exists
+ln: failed to create symbolic link '/home/arsenal/privesc/winPEAS.exe': File exists
+pspy: Is a directory
+chmod: changing permissions of 'pspy': Operation not permitted
+mv: cannot overwrite non-directory '/home/arsenal/tools/bin/pspy' with directory 'pspy'
+fatal: could not create work tree dir 'SecLists': Permission denied
+'semgrep' already seems to be installed. Not modifying existing installation in
+'/home/arsenal/.local/pipx/venvs/semgrep'. Pass '--force' to force installation.
+fatal: could not create work tree dir 'sqlmap-dev': Permission denied
+ln: failed to create symbolic link '/home/arsenal/tools/bin/sqlmap': File exists
+go: downloading github.com/projectdiscovery/subfinder/v2 v2.6.4
+go: downloading github.com/projectdiscovery/subfinder v2.6.4+incompatible
+go: downloading github.com/json-iterator/go v1.1.12
+go: downloading github.com/projectdiscovery/fdmax v0.0.4
+go: downloading github.com/projectdiscovery/gologger v1.1.12
+go: downloading github.com/hako/durafmt v0.0.0-20210316092057-3a2c319c1acd
+go: downloading github.com/pkg/errors v0.9.1
+go: downloading github.com/projectdiscovery/dnsx v1.1.6
+go: downloading github.com/projectdiscovery/goflags v0.1.34
+go: downloading github.com/projectdiscovery/utils v0.0.72
+go: downloading golang.org/x/exp v0.0.0-20230420155640-133eef4313cb
+go: downloading gopkg.in/yaml.v3 v3.0.1
+go: downloading github.com/projectdiscovery/ratelimit v0.0.23
+go: downloading github.com/rs/xid v1.5.0
+go: downloading github.com/logrusorgru/aurora v2.0.3+incompatible
+go: downloading github.com/corpix/uarand v0.2.0
+go: downloading github.com/cnf/structhash v0.0.0-20201127153200-e1b16c1ebc08
+go: downloading github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd
+go: downloading github.com/modern-go/reflect2 v1.0.2
+go: downloading github.com/miekg/dns v1.1.56
+go: downloading github.com/projectdiscovery/cdncheck v1.0.9
+go: downloading github.com/projectdiscovery/retryabledns v1.0.50
+go: downloading github.com/asaskevich/govalidator v0.0.0-20230301143203-a9d515a09cc2
+go: downloading github.com/Masterminds/semver/v3 v3.2.1
+go: downloading github.com/charmbracelet/glamour v0.6.0
+go: downloading github.com/cheggaaa/pb/v3 v3.1.4
+go: downloading github.com/denisbrodbeck/machineid v1.0.1
+go: downloading github.com/google/go-github/v30 v30.1.0
+go: downloading github.com/minio/selfupdate v0.6.1-0.20230907112617-f11e74f84ca7
+go: downloading golang.org/x/oauth2 v0.11.0
+go: downloading github.com/projectdiscovery/blackrock v0.0.1
+go: downloading github.com/mholt/archiver/v3 v3.5.1
+go: downloading gopkg.in/djherbis/times.v1 v1.3.0
+go: downloading github.com/projectdiscovery/chaos-client v0.5.1
+go: downloading github.com/lib/pq v1.10.9
+go: downloading github.com/projectdiscovery/retryablehttp-go v1.0.42
+go: downloading github.com/tomnomnom/linkheader v0.0.0-20180905144013-02ca5825eb80
+go: downloading golang.org/x/sys v0.15.0
+go: downloading github.com/microcosm-cc/bluemonday v1.0.25
+go: downloading github.com/saintfish/chardet v0.0.0-20230101081208-5e3ef4b5456d
+go: downloading go.uber.org/multierr v1.11.0
+go: downloading github.com/weppos/publicsuffix-go v0.30.1-0.20230422193905-8fecedd899db
+go: downloading github.com/yl2chen/cidranger v1.0.2
+go: downloading golang.org/x/net v0.17.0
+go: downloading github.com/VividCortex/ewma v1.2.0
+go: downloading github.com/mattn/go-runewidth v0.0.14
+go: downloading github.com/muesli/termenv v0.15.1
+go: downloading github.com/yuin/goldmark v1.5.4
+go: downloading github.com/yuin/goldmark-emoji v1.0.1
+go: downloading aead.dev/minisign v0.2.0
+go: downloading github.com/google/go-querystring v1.1.0
+go: downloading golang.org/x/crypto v0.17.0
+go: downloading github.com/andybalholm/brotli v1.0.6
+go: downloading github.com/dsnet/compress v0.0.2-0.20210315054119-f66993602bf5
+go: downloading github.com/golang/snappy v0.0.4
+go: downloading github.com/klauspost/compress v1.16.7
+go: downloading github.com/klauspost/pgzip v1.2.5
+go: downloading github.com/nwaples/rardecode v1.1.3
+go: downloading github.com/pierrec/lz4/v4 v4.1.2
+go: downloading github.com/ulikunitz/xz v0.5.11
+go: downloading github.com/xi2/xz v0.0.0-20171230120015-48954b6210f8
+go: downloading github.com/Mzack9999/go-http-digest-auth-client v0.6.1-0.20220414142836-eb8883508809
+go: downloading github.com/projectdiscovery/fastdialer v0.0.51
+go: downloading github.com/aymerick/douceur v0.2.0
+go: downloading github.com/alecthomas/chroma v0.10.0
+go: downloading github.com/muesli/reflow v0.3.0
+go: downloading github.com/olekukonko/tablewriter v0.0.5
+go: downloading github.com/rivo/uniseg v0.4.4
+go: downloading github.com/aymanbagabas/go-osc52/v2 v2.0.1
+go: downloading github.com/lucasb-eyer/go-colorful v1.2.0
+go: downloading github.com/dimchansky/utfbom v1.1.1
+go: downloading github.com/projectdiscovery/hmap v0.0.33
+go: downloading github.com/projectdiscovery/networkpolicy v0.0.6
+go: downloading github.com/refraction-networking/utls v1.5.4
+go: downloading github.com/ulule/deepcopier v0.0.0-20200430083143-45decc6639b6
+go: downloading github.com/zmap/zcrypto v0.0.0-20230422215203-9a665e1e9968
+go: downloading github.com/gorilla/css v1.0.0
+go: downloading github.com/dlclark/regexp2 v1.8.1
+go: downloading golang.org/x/text v0.14.0
+go: downloading github.com/cloudflare/circl v1.3.7
+go: downloading github.com/gaukas/godicttls v0.0.4
+go: downloading github.com/quic-go/quic-go v0.37.7
+go: downloading github.com/zmap/rc2 v0.0.0-20190804163417-abaa70531248
+go: downloading github.com/akrylysov/pogreb v0.10.1
+go: downloading github.com/syndtr/goleveldb v1.0.0
+go: downloading go.etcd.io/bbolt v1.3.7
+go: downloading github.com/tidwall/buntdb v1.3.0
+go: downloading github.com/tidwall/grect v0.1.4
+go: downloading github.com/tidwall/gjson v1.14.4
+go: downloading github.com/tidwall/btree v1.6.0
+go: downloading github.com/tidwall/match v1.1.1
+go: downloading github.com/tidwall/rtred v0.1.2
+go: downloading github.com/tidwall/pretty v1.2.1
+go: downloading github.com/tidwall/tinyqueue v0.1.1
+../../goProjects/pkg/mod/github.com/refraction-networking/utls@v1.5.4/cfkem.go:25:2: package crypto/ecdh is not in GOROOT (/usr/lib/go-1.19/src/crypto/ecdh)
+./all  25.01s user 8.05s system 132% cpu 24.927 total
+arsenal@arsenal ~/tools/scripts % ls
+all          burpsuite  ghidra    gobuster  masscan  pspy      sqlmap
+amass        dirsearch  gitleaks  httprobe  meg      seclists  subfinder
+assetfinder  exploitdb  go        linenum   peass    semgrep   xmind
+arsenal@arsenal ~/tools/scripts % cd ..
+arsenal@arsenal ~/tools % ls
+LinEnum.sh  amass  burp.jar   exploitdb  peass    sqlmap-dev
+SecLists    bin    dirsearch  ghidra     scripts
+arsenal@arsenal ~/tools % cd ghidra
+arsenal@arsenal ~/tools/ghidra % ls
+Extensions  Ghidra   bom.json  ghidraRun      licenses  support
+GPL         LICENSE  docs      ghidraRun.bat  server
+arsenal@arsenal ~/tools/ghidra % ./ghidraRun
+arsenal@arsenal ~/tools/ghidra % ls
+Extensions  Ghidra   bom.json  ghidraRun      licenses  support
+GPL         LICENSE  docs      ghidraRun.bat  server
+arsenal@arsenal ~/tools/ghidra % cd ..
+arsenal@arsenal ~/tools % ls
+LinEnum.sh  amass  burp.jar   exploitdb  peass    sqlmap-dev
+SecLists    bin    dirsearch  ghidra     scripts
+arsenal@arsenal ~/tools % cd peass
+arsenal@arsenal ~/tools/peass (git)-[master] % ls
+CONTRIBUTING.md  README.md  build_lists  metasploit  winPEAS
+LICENSE          TODO.md    linPEAS      parsers
+arsenal@arsenal ~/tools/peass (git)-[master] % cat README.md
+# PEASS-ng - Privilege Escalation Awesome Scripts SUITE new generation
+
+![](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/raw/master/linPEAS/images/peass.png)
+
+![](https://img.shields.io/badge/Black-Arch-black) ![](https://img.shields.io/badge/Arch-AUR-brightgreen) ![](https://img.shields.io/badge/Black%20Hat%20Arsenal-Asia%202020-red)
+
+# Basic Tutorial
+[![Tutorial](https://img.youtube.com/vi/2Ey1WQXNp3w/0.jpg)](https://www.youtube.com/watch?v=9_fJv_weLU0&list=PL9fPq3eQfaaDxjpXaDYApfVA_IB8T14w7)
+
+
+Here you will find **privilege escalation tools for Windows and Linux/Unix\* and MacOS**.
+
+These tools search for possible **local privilege escalation paths** that you could exploit and print them to you **with nice colors** so you can recognize the misconfigurations easily.
+
+- Check the **Local Windows Privilege Escalation checklist** from
+**[book.hacktricks.xyz](https://book.hacktricks.xyz/windows-hardening/checklist-windows-privilege-escalation)**
+- **[WinPEAS](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/winPEAS)
+- Windows local Privilege Escalation Awesome Script (C#.exe and
+.bat)**
+
+- Check the **Local Linux Privilege Escalation checklist** from
+**[book.hacktricks.xyz](https://book.hacktricks.xyz/linux-hardening/linux-privilege-escalation-checklist)**
+- **[LinPEAS](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS)
+- Linux local Privilege Escalation Awesome Script (.sh)**
+
+## Quick Start
+Find the **latest versions of all the scripts and binaries in [the releases page](https://github.com/carlospolop/PEASS-ng/releases/latest)**.
+
+## JSON, HTML & PDF output
+Check the **[parsers](./parsers/)** directory to **transform PEASS outputs to JSON, HTML and PDF**
+
+## Support PEASS-ng and HackTricks and get benefits
+
+Do you want to have **access the latest version of Hacktricks and PEASS**, obtain a **PDF copy of Hacktricks**, and more? Discover the **brand new [SUBSCRIPTION PLANS](https://github.com/sponsors/carlospolop?frequency=one-time) for individuals and companies**.
+
+**LinPEAS, WinPEAS and MacPEAS** aren’t enough for you? Welcome [**The PEASS Family**](https://opensea.io/collection/the-peass-family/), a limited collection of [**exclusive NFTs**](https://opensea.io/collection/the-peass-family/) of our favourite PEASS in disguise, designed by my team. Go **get your favourite and make it yours!** And if you are a **PEASS & Hacktricks enthusiast**, you can get your hands now on **our [custom swag](https://peass.creator-spring.com/) and show how much you like our projects!**
+
+You can also, join the 💬 [Discord group](https://discord.gg/hRep4RUj7f) or the [telegram group](https://t.me/peass) to learn about latest news in cybersecurity and meet other cybersecurity enthusiasts, or follow me on Twitter 🐦 [@hacktricks_live](https://twitter.com/hacktricks_live).
+
+## Let's improve PEASS together
+
+If you want to **add something** and have **any cool idea** related to this project, please let me know it in the **telegram group https://t.me/peass** or contribute reading the **[CONTRIBUTING.md](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/blob/master/CONTRIBUTING.md)** file.
+
+## Advisory
+
+All the scripts/binaries of the PEAS suite should be used for authorized penetration testing and/or educational purposes only. Any misuse of this software will not be the responsibility of the author or of any other collaborator. Use it at your own machines and/or with the owner's permission.
+
+
+
+By Polop<sup>(TM)</sup>
+arsenal@arsenal ~/tools/peass (git)-[master] % ls
+CONTRIBUTING.md  README.md  build_lists  metasploit  winPEAS
+LICENSE          TODO.md    linPEAS      parsers
+arsenal@arsenal ~/tools/peass (git)-[master] % cd parsers
+arsenal@arsenal ~/tools/peass/parsers (git)-[master] % ls
+README.md  json2html.ps1  json2html.py  json2pdf.py  peas2json.ps1  peas2json.py
+arsenal@arsenal ~/tools/peass/parsers (git)-[master] % cd ..
+arsenal@arsenal ~/tools/peass (git)-[master] % ls
+CONTRIBUTING.md  README.md  build_lists  metasploit  winPEAS
+LICENSE          TODO.md    linPEAS      parsers
+arsenal@arsenal ~/tools/peass (git)-[master] % cd metasploit
+arsenal@arsenal ~/tools/peass/metasploit (git)-[master] % ls
+README.md  peass.rb
+arsenal@arsenal ~/tools/peass/metasploit (git)-[master] % cd ..
+arsenal@arsenal ~/tools/peass (git)-[master] % cd ..
+arsenal@arsenal ~/tools % ls
+LinEnum.sh  amass  burp.jar   exploitdb  peass    sqlmap-dev
+SecLists    bin    dirsearch  ghidra     scripts
+arsenal@arsenal ~/tools % cd dirsearch
+arsenal@arsenal ~/tools/dirsearch (git)-[master] % ls
+CHANGELOG.md     README.md   dirsearch.py  requirements.txt  static      __init__.py
+CONTRIBUTORS.md  config.ini  lib           setup.cfg         testing.py
+Dockerfile       db          options.ini   setup.py          tests
+arsenal@arsenal ~/tools/dirsearch (git)-[master] % ./dirsearch.py
+Missing required dependencies to run.
+Do you want dirsearch to automatically install them? [Y/n] y
+Installing required dependencies...
+Failed to install dirsearch dependencies, try doing it manually.
+1 arsenal@arsenal ~/tools/dirsearch (git)-[master] % ./setup.py
+./setup.py: 1: import: not found
+./setup.py: 2: import: not found
+./setup.py: 3: import: not found
+./setup.py: 4: import: not found
+./setup.py: 5: import: not found
+./setup.py: 7: from: not found
+./setup.py: 8: from: not found
+./setup.py: 11: Syntax error: "(" unexpected
+2 arsenal@arsenal ~/tools/dirsearch (git)-[master] % python setup.py
+zsh: correct 'python' to 'python3' [nyae]? y
+Traceback (most recent call last):
+File "/home/arsenal/tools/dirsearch/setup.py", line 16, in <module>
+shutil.copytree(os.path.abspath(os.getcwd()), os.path.join(env_dir, "dirsearch"))
+File "/usr/lib/python3.11/shutil.py", line 561, in copytree
+return _copytree(entries=entries, src=src, dst=dst, symlinks=symlinks,
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/usr/lib/python3.11/shutil.py", line 515, in _copytree
+raise Error(errors)
+shutil.Error: [('/home/arsenal/tools/dirsearch/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db', '/tmp/dirsearch-install-yej_4zsf/dirsearch/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db', "[Errno 40] Too many levels of symbolic links: '/home/arsenal/tools/dirsearch/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db'")]
+1 arsenal@arsenal ~/tools/dirsearch (git)-[master] % ls
+CHANGELOG.md     README.md   dirsearch.py  requirements.txt  static      __init__.py
+CONTRIBUTORS.md  config.ini  lib           setup.cfg         testing.py
+Dockerfile       db          options.ini   setup.py          tests
+arsenal@arsenal ~/tools/dirsearch (git)-[master] % ./build
+zsh: no such file or directory: ./build
+127 arsenal@arsenal ~/tools/dirsearch (git)-[master] % python3 setup.py
+Traceback (most recent call last):
+File "/home/arsenal/tools/dirsearch/setup.py", line 16, in <module>
+shutil.copytree(os.path.abspath(os.getcwd()), os.path.join(env_dir, "dirsearch"))
+File "/usr/lib/python3.11/shutil.py", line 561, in copytree
+return _copytree(entries=entries, src=src, dst=dst, symlinks=symlinks,
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/usr/lib/python3.11/shutil.py", line 515, in _copytree
+raise Error(errors)
+shutil.Error: [('/home/arsenal/tools/dirsearch/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db', '/tmp/dirsearch-install-c2w2g0jc/dirsearch/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db', "[Errno 40] Too many levels of symbolic links: '/home/arsenal/tools/dirsearch/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db/db'")]
+1 arsenal@arsenal ~/tools/dirsearch (git)-[master] % cd ..
+arsenal@arsenal ~/tools % ls
+LinEnum.sh  amass  burp.jar   exploitdb  peass    sqlmap-dev
+SecLists    bin    dirsearch  ghidra     scripts
+arsenal@arsenal ~/tools % cd bin
+arsenal@arsenal ~/tools/bin % ls
+amass  burpsuite  dirsearch  ghidra  gitleaks  masscan  pspy  searchsploit  sqlmap
+arsenal@arsenal ~/tools/bin % ./burpsuite
+arsenal@arsenal ~/tools/bin % ./gitleaks
+Gitleaks scans code, past or present, for secrets
+
+Usage:
+gitleaks [command]
+
+Available Commands:
+completion  generate the autocompletion script for the specified shell
+detect      detect secrets in code
+help        Help about any command
+protect     protect secrets in code
+version     display gitleaks version
+
+Flags:
+-b, --baseline-path string       path to baseline with issues that can be ignored
+-c, --config string              config file path
+order of precedence:
+1. --config/-c
+2. env var GITLEAKS_CONFIG
+3. (--source/-s)/.gitleaks.toml
+If none of the three options are used, then gitleaks will use the default config
+--exit-code int              exit code when leaks have been encountered (default 1)
+-h, --help                       help for gitleaks
+--ignore-gitleaks-allow      ignore gitleaks:allow comments
+-l, --log-level string           log level (trace, debug, info, warn, error, fatal) (default "info")
+--max-target-megabytes int   files larger than this will be skipped
+--no-banner                  suppress banner
+--no-color                   turn off color for verbose output
+--redact uint[=100]          redact secrets from logs and stdout. To redact only parts of the secret just apply a percent value from 0..100. For example --redact=20 (default 100%)
+-f, --report-format string       output format (json, csv, junit, sarif) (default "json")
+-r, --report-path string         report file
+-s, --source string              path to source (default ".")
+-v, --verbose                    show verbose output from scan
+
+Use "gitleaks [command] --help" for more information about a command.
+arsenal@arsenal ~/tools/bin % gitleaks completion
+
+Generate the autocompletion script for gitleaks for the specified shell.
+See each sub-command's help for details on how to use the generated script.
+
+Usage:
+gitleaks completion [command]
+
+Available Commands:
+bash        generate the autocompletion script for bash
+fish        generate the autocompletion script for fish
+powershell  generate the autocompletion script for powershell
+zsh         generate the autocompletion script for zsh
+
+Flags:
+-h, --help   help for completion
+
+Global Flags:
+-b, --baseline-path string       path to baseline with issues that can be ignored
+-c, --config string              config file path
+order of precedence:
+1. --config/-c
+2. env var GITLEAKS_CONFIG
+3. (--source/-s)/.gitleaks.toml
+If none of the three options are used, then gitleaks will use the default config
+--exit-code int              exit code when leaks have been encountered (default 1)
+--ignore-gitleaks-allow      ignore gitleaks:allow comments
+-l, --log-level string           log level (trace, debug, info, warn, error, fatal) (default "info")
+--max-target-megabytes int   files larger than this will be skipped
+--no-banner                  suppress banner
+--no-color                   turn off color for verbose output
+--redact uint[=100]          redact secrets from logs and stdout. To redact only parts of the secret just apply a percent value from 0..100. For example --redact=20 (default 100%)
+-f, --report-format string       output format (json, csv, junit, sarif) (default "json")
+-r, --report-path string         report file
+-s, --source string              path to source (default ".")
+-v, --verbose                    show verbose output from scan
+
+Use "gitleaks completion [command] --help" for more information about a command.
+arsenal@arsenal ~/tools/bin % ls
+amass  burpsuite  dirsearch  ghidra  gitleaks  masscan  pspy  searchsploit  sqlmap
+arsenal@arsenal ~/tools/bin % ./pspy
+pspy - version: v1.2.1 - Commit SHA: f9e6a1590a4312b9faa093d8dc84e19567977a6d
+
+
+██▓███    ██████  ██▓███ ▓██   ██▓
+▓██░  ██▒▒██    ▒ ▓██░  ██▒▒██  ██▒
+▓██░ ██▓▒░ ▓██▄   ▓██░ ██▓▒ ▒██ ██░
+▒██▄█▓▒ ▒  ▒   ██▒▒██▄█▓▒ ▒ ░ ▐██▓░
+▒██▒ ░  ░▒██████▒▒▒██▒ ░  ░ ░ ██▒▓░
+▒▓▒░ ░  ░▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░  ██▒▒▒
+░▒ ░     ░ ░▒  ░ ░░▒ ░     ▓██ ░▒░
+░░       ░  ░  ░  ░░       ▒ ▒ ░░
+░           ░ ░
+░ ░
+
+Config: Printing events (colored=true): processes=true | file-system-events=false ||| Scanning for processes every 100ms and on inotify events ||| Watching directories: [/usr /tmp /etc /home /var /opt] (recursive) | [] (non-recursive)
+Draining file system events due to startup...
+done
+2024/02/01 01:13:41 CMD: UID=1000  PID=2655   | ./pspy
+2024/02/01 01:13:41 CMD: UID=1000  PID=2624   | java -jar /home/arsenal/tools/burp.jar
+2024/02/01 01:13:41 CMD: UID=1000  PID=1354   | zsh
+2024/02/01 01:13:41 CMD: UID=1000  PID=1      | zsh -i
+
+2024/02/01 01:14:15 CMD: UID=1000  PID=2668   |
+2024/02/01 01:14:15 CMD: UID=1000  PID=2669   |
+2024/02/01 01:14:15 CMD: UID=1000  PID=2670   |
+2024/02/01 01:14:23 CMD: UID=1000  PID=2672   | zsh -i
+2024/02/01 01:14:23 CMD: UID=1000  PID=2673   |
+2024/02/01 01:15:56 CMD: UID=1000  PID=2697   |
+2024/02/01 01:15:56 CMD: UID=1000  PID=2698   |
+2024/02/01 01:16:02 CMD: UID=1000  PID=2700   |
+2024/02/01 01:16:02 CMD: UID=1000  PID=2701   |
+2024/02/01 01:16:02 CMD: UID=1000  PID=2702   |
+2024/02/01 01:16:05 CMD: UID=1000  PID=2704   | zsh -i
+2024/02/01 01:16:05 CMD: UID=1000  PID=2705   |
+2024/02/01 01:16:05 CMD: UID=1000  PID=2707   |
+2024/02/01 01:16:05 CMD: UID=1000  PID=2708   |
+2024/02/01 01:16:05 CMD: UID=1000  PID=2709   |
+2024/02/01 01:16:07 CMD: UID=1000  PID=2711   | zsh -i
+2024/02/01 01:16:07 CMD: UID=1000  PID=2712   |
+2024/02/01 01:16:08 CMD: UID=1000  PID=2714   | uname -n
+2024/02/01 01:16:08 CMD: UID=1000  PID=2715   |
+2024/02/01 01:16:08 CMD: UID=1000  PID=2716   |
+2024/02/01 01:16:19 CMD: UID=1000  PID=2718   |
+2024/02/01 01:16:19 CMD: UID=1000  PID=2719   |
+2024/02/01 01:16:29 CMD: UID=1000  PID=2725   |
+2024/02/01 01:16:34 CMD: UID=1000  PID=2727   |
+2024/02/01 01:16:34 CMD: UID=1000  PID=2728   |
+2024/02/01 01:16:34 CMD: UID=1000  PID=2735   |
+2024/02/01 01:16:57 CMD: UID=1000  PID=2737   |
+2024/02/01 01:16:57 CMD: UID=1000  PID=2738   |
+2024/02/01 01:16:57 CMD: UID=1000  PID=2739   |
+2024/02/01 01:17:04 CMD: UID=1000  PID=2741   |
+2024/02/01 01:17:04 CMD: UID=1000  PID=2742   | ./httprobe
+2024/02/01 01:17:15 CMD: UID=1000  PID=2749   |
+2024/02/01 01:17:20 CMD: UID=1000  PID=2751   | git rev-parse --git-dir
+2024/02/01 01:17:22 CMD: UID=1000  PID=2753   |
+2024/02/01 01:17:22 CMD: UID=1000  PID=2754   |
+2024/02/01 01:17:22 CMD: UID=1000  PID=2760   |
+2024/02/01 01:17:27 CMD: UID=1000  PID=2762   | zsh -i
+2024/02/01 01:17:27 CMD: UID=1000  PID=2763   |
+2024/02/01 01:17:27 CMD: UID=1000  PID=2764   |
+2024/02/01 01:17:30 CMD: UID=1000  PID=2766   | zsh -i
+2024/02/01 01:17:30 CMD: UID=1000  PID=2767   |
+2024/02/01 01:17:30 CMD: UID=1000  PID=2769   |
+2024/02/01 01:17:30 CMD: UID=1000  PID=2770   |
+2024/02/01 01:17:30 CMD: UID=1000  PID=2771   |
+2024/02/01 01:17:34 CMD: UID=1000  PID=2773   | zsh -i
+2024/02/01 01:17:34 CMD: UID=1000  PID=2774   | git rev-parse --git-dir
+2024/02/01 01:17:34 CMD: UID=1000  PID=2776   |
+2024/02/01 01:17:34 CMD: UID=1000  PID=2777   |
+2024/02/01 01:17:34 CMD: UID=1000  PID=2778   |
+2024/02/01 01:17:37 CMD: UID=1000  PID=2781   | zsh -i
+2024/02/01 01:17:37 CMD: UID=1000  PID=2782   |
+2024/02/01 01:17:38 CMD: UID=1000  PID=2784   |
+2024/02/01 01:17:38 CMD: UID=1000  PID=2785   |
+2024/02/01 01:17:38 CMD: UID=1000  PID=2786   | git rev-parse --git-dir
+2024/02/01 01:17:47 CMD: UID=1000  PID=2787   | git rev-parse --git-dir
+2024/02/01 01:17:49 CMD: UID=1000  PID=2789   | zsh -i
+2024/02/01 01:17:49 CMD: UID=1000  PID=2790   |
+2024/02/01 01:17:50 CMD: UID=1000  PID=2792   | zsh -i
+2024/02/01 01:17:51 CMD: UID=1000  PID=2793   |
+2024/02/01 01:17:55 CMD: UID=1000  PID=2794   |
+2024/02/01 01:17:58 CMD: UID=1000  PID=2796   |
+2024/02/01 01:17:58 CMD: UID=1000  PID=2797   | zsh -i
+2024/02/01 01:17:58 CMD: UID=1000  PID=2798   |
+2024/02/01 01:17:58 CMD: UID=1000  PID=2799   |
+2024/02/01 01:18:00 CMD: UID=1000  PID=2801   |
+2024/02/01 01:18:00 CMD: UID=1000  PID=2802   |
+2024/02/01 01:18:04 CMD: UID=0     PID=2804   | apt-get install tree
+2024/02/01 01:18:04 CMD: UID=0     PID=2803   | sudo apt-get install tree
+2024/02/01 01:18:04 CMD: UID=0     PID=2805   |
+2024/02/01 01:18:04 CMD: UID=0     PID=2806   |
+2024/02/01 01:18:05 CMD: UID=0     PID=2807   |
+2024/02/01 01:18:06 CMD: UID=0     PID=2808   |
+2024/02/01 01:18:06 CMD: UID=0     PID=2809   |
+2024/02/01 01:18:07 CMD: UID=0     PID=2810   |
+2024/02/01 01:18:07 CMD: UID=0     PID=2811   | /usr/bin/perl -w /usr/sbin/dpkg-preconfigure --apt
+2024/02/01 01:18:07 CMD: UID=0     PID=2812   |
+2024/02/01 01:18:07 CMD: UID=0     PID=2813   |
+2024/02/01 01:18:07 CMD: UID=0     PID=2814   |
+2024/02/01 01:18:07 CMD: UID=0     PID=2815   | dpkg-split -Qao /var/lib/dpkg/reassemble.deb /var/cache/apt/archives/tree_2.1.0-1_amd64.deb
+2024/02/01 01:18:07 CMD: UID=0     PID=2816   |
+2024/02/01 01:18:07 CMD: UID=0     PID=2818   | dpkg-deb --control /var/cache/apt/archives/tree_2.1.0-1_amd64.deb /var/lib/dpkg/tmp.ci
+2024/02/01 01:18:07 CMD: UID=0     PID=2817   |
+2024/02/01 01:18:07 CMD: UID=0     PID=2819   |
+2024/02/01 01:18:07 CMD: UID=0     PID=2821   |
+2024/02/01 01:18:07 CMD: UID=0     PID=2823   | dpkg-deb --fsys-tarfile /var/cache/apt/archives/tree_2.1.0-1_amd64.deb
+2024/02/01 01:18:07 CMD: UID=0     PID=2822   |
+2024/02/01 01:18:07 CMD: UID=0     PID=2825   |
+2024/02/01 01:18:07 CMD: UID=0     PID=2826   |
+2024/02/01 01:18:07 CMD: UID=0     PID=2827   | /usr/bin/dpkg --status-fd 20 --configure --pending
+2024/02/01 01:18:07 CMD: UID=0     PID=2828   | setpriv --reuid man --regid man --init-groups -- /usr/bin/mandb -pq
+2024/02/01 01:18:07 CMD: UID=0     PID=2830   | sh -c rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true
+2024/02/01 01:18:07 CMD: UID=0     PID=2829   | apt-get install tree
+2024/02/01 01:18:07 CMD: UID=0     PID=2831   | sh -c rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true
+2024/02/01 01:18:07 CMD: UID=1000  PID=2832   |
+2024/02/01 01:19:05 CMD: UID=1000  PID=2833   |
+2024/02/01 01:19:05 CMD: UID=1000  PID=2834   |
+2024/02/01 01:19:10 CMD: UID=1000  PID=2836   |
+2024/02/01 01:19:10 CMD: UID=1000  PID=2837   |
+^CExiting program... (interrupt)
+arsenal@arsenal ~/tools/bin % ./pspy
+pspy - version: v1.2.1 - Commit SHA: f9e6a1590a4312b9faa093d8dc84e19567977a6d
+
+
+██▓███    ██████  ██▓███ ▓██   ██▓
+▓██░  ██▒▒██    ▒ ▓██░  ██▒▒██  ██▒
+▓██░ ██▓▒░ ▓██▄   ▓██░ ██▓▒ ▒██ ██░
+▒██▄█▓▒ ▒  ▒   ██▒▒██▄█▓▒ ▒ ░ ▐██▓░
+▒██▒ ░  ░▒██████▒▒▒██▒ ░  ░ ░ ██▒▓░
+▒▓▒░ ░  ░▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░  ██▒▒▒
+░▒ ░     ░ ░▒  ░ ░░▒ ░     ▓██ ░▒░
+░░       ░  ░  ░  ░░       ▒ ▒ ░░
+░           ░ ░
+░ ░
+
+Config: Printing events (colored=true): processes=true | file-system-events=false ||| Scanning for processes every 100ms and on inotify events ||| Watching directories: [/usr /tmp /etc /home /var /opt] (recursive) | [] (non-recursive)
+Draining file system events due to startup...
+done
+2024/02/01 01:19:28 CMD: UID=1000  PID=2841   | ./pspy
+2024/02/01 01:19:28 CMD: UID=1000  PID=1354   | zsh
+2024/02/01 01:19:28 CMD: UID=1000  PID=1      | zsh -i
+2024/02/01 01:19:33 CMD: UID=1000  PID=2855   |
+2024/02/01 01:19:33 CMD: UID=1000  PID=2856   |
+2024/02/01 01:19:33 CMD: UID=1000  PID=2862   |
+2024/02/01 01:20:28 CMD: UID=1000  PID=2864   |
+2024/02/01 01:20:28 CMD: UID=1000  PID=2865   | ls --color=auto -v
+2024/02/01 01:20:28 CMD: UID=1000  PID=2866   | git rev-parse --git-dir
+2024/02/01 01:20:31 CMD: UID=1000  PID=2868   | zsh -i
+2024/02/01 01:20:31 CMD: UID=1000  PID=2870   |
+2024/02/01 01:20:32 CMD: UID=1000  PID=2872   |
+2024/02/01 01:20:32 CMD: UID=1000  PID=2873   |
+2024/02/01 01:20:32 CMD: UID=1000  PID=2874   |
+2024/02/01 01:20:38 CMD: UID=1000  PID=2876   | zsh -i
+2024/02/01 01:20:38 CMD: UID=1000  PID=2877   |
+2024/02/01 01:20:39 CMD: UID=1000  PID=2879   |
+2024/02/01 01:20:39 CMD: UID=1000  PID=2880   |
+2024/02/01 01:20:39 CMD: UID=1000  PID=2881   |
+2024/02/01 01:20:42 CMD: UID=1000  PID=2883   | zsh -i
+2024/02/01 01:20:42 CMD: UID=1000  PID=2884   |
+2024/02/01 01:20:42 CMD: UID=1000  PID=2885   |
+2024/02/01 01:20:42 CMD: UID=1000  PID=2886   |
+2024/02/01 01:20:42 CMD: UID=1000  PID=2887   | zsh -i
+2024/02/01 01:20:42 CMD: UID=1000  PID=2888   | zsh -i
+2024/02/01 01:20:43 CMD: UID=1000  PID=2890   |
+2024/02/01 01:20:43 CMD: UID=1000  PID=2891   |
+2024/02/01 01:20:43 CMD: UID=1000  PID=2892   |
+2024/02/01 01:20:43 CMD: UID=1000  PID=2893   |
+2024/02/01 01:20:43 CMD: UID=1000  PID=2894   |
+2024/02/01 01:20:43 CMD: UID=1000  PID=2895   | zsh -i
+2024/02/01 01:20:43 CMD: UID=1000  PID=2896   | zsh -i
+2024/02/01 01:20:44 CMD: UID=1000  PID=2898   | zsh -i
+2024/02/01 01:20:44 CMD: UID=1000  PID=2899   | git rev-parse --git-dir
+2024/02/01 01:20:46 CMD: UID=1000  PID=2901   | zsh -i
+2024/02/01 01:20:46 CMD: UID=1000  PID=2902   |
+2024/02/01 01:20:46 CMD: UID=1000  PID=2903   |
+2024/02/01 01:20:46 CMD: UID=1000  PID=2904   |
+2024/02/01 01:20:46 CMD: UID=1000  PID=2905   | zsh -i
+2024/02/01 01:20:46 CMD: UID=1000  PID=2906   | zsh -i
+2024/02/01 01:20:47 CMD: UID=1000  PID=2908   |
+2024/02/01 01:20:47 CMD: UID=1000  PID=2909   |
+2024/02/01 01:20:47 CMD: UID=1000  PID=2910   |
+2024/02/01 01:20:47 CMD: UID=1000  PID=2911   | git rev-parse --show-toplevel
+2024/02/01 01:20:47 CMD: UID=1000  PID=2912   | git symbolic-ref HEAD
+2024/02/01 01:20:47 CMD: UID=1000  PID=2913   | zsh -i
+2024/02/01 01:20:47 CMD: UID=1000  PID=2914   | zsh -i
+2024/02/01 01:20:54 CMD: UID=1000  PID=2916   | zsh -i
+2024/02/01 01:20:54 CMD: UID=1000  PID=2917   |
+2024/02/01 01:20:54 CMD: UID=1000  PID=2918   |
+2024/02/01 01:20:54 CMD: UID=1000  PID=2919   | git symbolic-ref HEAD
+2024/02/01 01:20:54 CMD: UID=1000  PID=2920   | zsh -i
+2024/02/01 01:20:54 CMD: UID=1000  PID=2921   | zsh -i
+2024/02/01 01:20:55 CMD: UID=1000  PID=2923   |
+2024/02/01 01:20:55 CMD: UID=1000  PID=2924   |
+2024/02/01 01:20:55 CMD: UID=1000  PID=2925   |
+2024/02/01 01:20:55 CMD: UID=1000  PID=2926   |
+2024/02/01 01:20:55 CMD: UID=1000  PID=2927   |
+2024/02/01 01:20:55 CMD: UID=1000  PID=2928   | zsh -i
+2024/02/01 01:20:55 CMD: UID=1000  PID=2929   | zsh -i
+2024/02/01 01:21:01 CMD: UID=1000  PID=2931   | zsh -i
+2024/02/01 01:21:01 CMD: UID=1000  PID=2932   | zsh -i
+2024/02/01 01:21:01 CMD: UID=1000  PID=2933   |
+2024/02/01 01:21:01 CMD: UID=1000  PID=2934   |
+2024/02/01 01:21:01 CMD: UID=1000  PID=2935   | zsh -i
+2024/02/01 01:21:01 CMD: UID=1000  PID=2936   | zsh -i
+2024/02/01 01:21:07 CMD: UID=1000  PID=2938   |
+2024/02/01 01:21:07 CMD: UID=1000  PID=2939   |
+2024/02/01 01:21:07 CMD: UID=1000  PID=2940   | git rev-parse --git-dir
+2024/02/01 01:21:07 CMD: UID=1000  PID=2941   | git rev-parse --show-toplevel
+2024/02/01 01:21:07 CMD: UID=1000  PID=2942   |
+2024/02/01 01:21:07 CMD: UID=1000  PID=2943   | zsh -i
+2024/02/01 01:21:07 CMD: UID=1000  PID=2944   | zsh -i
+2024/02/01 01:21:16 CMD: UID=1000  PID=2946   |
+2024/02/01 01:21:16 CMD: UID=1000  PID=2947   | zsh -i
+2024/02/01 01:21:19 CMD: UID=1000  PID=2949   |
+2024/02/01 01:21:19 CMD: UID=1000  PID=2950   |
+2024/02/01 01:21:19 CMD: UID=1000  PID=2951   |
+2024/02/01 01:21:19 CMD: UID=1000  PID=2952   | zsh -i
+2024/02/01 01:21:19 CMD: UID=1000  PID=2953   | zsh -i
+2024/02/01 01:21:22 CMD: UID=1000  PID=2955   |
+2024/02/01 01:21:22 CMD: UID=1000  PID=2956   |
+2024/02/01 01:21:26 CMD: UID=1000  PID=2958   |
+2024/02/01 01:21:26 CMD: UID=1000  PID=2959   | git rev-parse --show-toplevel
+2024/02/01 01:21:26 CMD: UID=1000  PID=2960   |
+2024/02/01 01:21:26 CMD: UID=1000  PID=2961   | zsh -i
+2024/02/01 01:21:26 CMD: UID=1000  PID=2962   | zsh -i
+2024/02/01 01:21:34 CMD: UID=1000  PID=2963   |
+2024/02/01 01:21:34 CMD: UID=1000  PID=2964   |
+2024/02/01 01:21:34 CMD: UID=1000  PID=2965   |
+2024/02/01 01:21:34 CMD: UID=1000  PID=2966   | zsh -i
+2024/02/01 01:21:34 CMD: UID=1000  PID=2967   | zsh -i
+2024/02/01 01:21:36 CMD: UID=1000  PID=2969   | zsh -i
+2024/02/01 01:21:36 CMD: UID=1000  PID=2970   |
+2024/02/01 01:21:36 CMD: UID=1000  PID=2971   |
+2024/02/01 01:21:36 CMD: UID=1000  PID=2972   |
+2024/02/01 01:21:36 CMD: UID=1000  PID=2973   | zsh -i
+2024/02/01 01:21:36 CMD: UID=1000  PID=2974   | zsh -i
+2024/02/01 01:21:36 CMD: UID=1000  PID=2976   |
+2024/02/01 01:21:36 CMD: UID=1000  PID=2977   |
+2024/02/01 01:21:36 CMD: UID=1000  PID=2978   |
+2024/02/01 01:21:36 CMD: UID=1000  PID=2979   | git rev-parse --show-toplevel
+2024/02/01 01:21:36 CMD: UID=1000  PID=2980   |
+2024/02/01 01:21:36 CMD: UID=1000  PID=2981   | zsh -i
+2024/02/01 01:21:36 CMD: UID=1000  PID=2982   | zsh -i
+2024/02/01 01:21:48 CMD: UID=1000  PID=2984   |
+2024/02/01 01:21:48 CMD: UID=1000  PID=2985   |
+2024/02/01 01:22:08 CMD: UID=1000  PID=2987   |
+2024/02/01 01:22:08 CMD: UID=1000  PID=2988   |
+2024/02/01 01:22:08 CMD: UID=1000  PID=2989   |
+2024/02/01 01:22:08 CMD: UID=1000  PID=2990   | zsh -i
+2024/02/01 01:22:08 CMD: UID=1000  PID=2991   | zsh -i
+2024/02/01 01:22:20 CMD: UID=1000  PID=2993   |
+2024/02/01 01:22:20 CMD: UID=1000  PID=2994   |
+2024/02/01 01:23:18 CMD: UID=1000  PID=2996   |
+2024/02/01 01:23:18 CMD: UID=1000  PID=2997   |
+2024/02/01 01:23:18 CMD: UID=1000  PID=2998   |
+2024/02/01 01:23:18 CMD: UID=1000  PID=2999   | zsh -i
+2024/02/01 01:23:18 CMD: UID=1000  PID=3000   | zsh -i
+2024/02/01 01:23:21 CMD: UID=1000  PID=3002   | zsh -i
+2024/02/01 01:23:21 CMD: UID=1000  PID=3003   |
+2024/02/01 01:23:21 CMD: UID=1000  PID=3004   |
+2024/02/01 01:23:21 CMD: UID=1000  PID=3005   |
+2024/02/01 01:23:21 CMD: UID=1000  PID=3006   | zsh -i
+2024/02/01 01:23:21 CMD: UID=1000  PID=3007   | zsh -i
+2024/02/01 01:23:22 CMD: UID=1000  PID=3009   |
+2024/02/01 01:23:22 CMD: UID=1000  PID=3010   |
+2024/02/01 01:23:22 CMD: UID=1000  PID=3011   |
+2024/02/01 01:23:22 CMD: UID=1000  PID=3012   |
+2024/02/01 01:23:22 CMD: UID=1000  PID=3013   | git symbolic-ref HEAD
+2024/02/01 01:23:22 CMD: UID=1000  PID=3014   | zsh -i
+2024/02/01 01:23:22 CMD: UID=1000  PID=3015   | zsh -i
+2024/02/01 01:23:33 CMD: UID=1000  PID=3017   | zsh -i
+2024/02/01 01:23:33 CMD: UID=1000  PID=3018   |
+2024/02/01 01:23:33 CMD: UID=1000  PID=3019   |
+2024/02/01 01:23:33 CMD: UID=1000  PID=3020   |
+2024/02/01 01:23:33 CMD: UID=1000  PID=3021   | zsh -i
+2024/02/01 01:23:33 CMD: UID=1000  PID=3022   | zsh -i
+2024/02/01 01:23:34 CMD: UID=1000  PID=3024   | uname -n
+2024/02/01 01:23:34 CMD: UID=1000  PID=3025   | ls --color=auto -v
+2024/02/01 01:23:34 CMD: UID=1000  PID=3026   | git rev-parse --git-dir
+2024/02/01 01:23:34 CMD: UID=1000  PID=3027   | git rev-parse --show-toplevel
+2024/02/01 01:23:34 CMD: UID=1000  PID=3028   | git symbolic-ref HEAD
+2024/02/01 01:23:34 CMD: UID=1000  PID=3029   | zsh -i
+2024/02/01 01:23:34 CMD: UID=1000  PID=3030   | zsh -i
+2024/02/01 01:23:39 CMD: UID=1000  PID=3032   | zsh -i
+2024/02/01 01:23:39 CMD: UID=1000  PID=3033   |
+2024/02/01 01:24:07 CMD: UID=1000  PID=3035   |
+2024/02/01 01:24:07 CMD: UID=1000  PID=3036   |
+2024/02/01 01:24:07 CMD: UID=1000  PID=3037   |
+2024/02/01 01:24:07 CMD: UID=1000  PID=3038   | zsh -i
+2024/02/01 01:24:07 CMD: UID=1000  PID=3039   | zsh -i
+2024/02/01 01:24:10 CMD: UID=1000  PID=3041   |
+2024/02/01 01:24:10 CMD: UID=1000  PID=3042   | ls --color=auto -v
+2024/02/01 01:24:10 CMD: UID=1000  PID=3043   |
+2024/02/01 01:24:10 CMD: UID=1000  PID=3044   | zsh -i
+2024/02/01 01:24:10 CMD: UID=1000  PID=3045   |
+2024/02/01 01:24:10 CMD: UID=1000  PID=3046   | zsh -i
+2024/02/01 01:24:10 CMD: UID=1000  PID=3047   | zsh -i
+2024/02/01 01:24:13 CMD: UID=1000  PID=3049   |
+2024/02/01 01:24:13 CMD: UID=1000  PID=3050   |
+2024/02/01 01:24:29 CMD: UID=1000  PID=3052   |
+2024/02/01 01:24:29 CMD: UID=1000  PID=3053   |
+2024/02/01 01:24:29 CMD: UID=1000  PID=3054   |
+2024/02/01 01:24:29 CMD: UID=1000  PID=3055   | zsh -i
+2024/02/01 01:24:29 CMD: UID=1000  PID=3056   | zsh -i
+2024/02/01 01:24:52 CMD: UID=1000  PID=3058   | zsh -i
+2024/02/01 01:24:52 CMD: UID=1000  PID=3059   |
+2024/02/01 01:24:52 CMD: UID=1000  PID=3060   |
+2024/02/01 01:24:52 CMD: UID=1000  PID=3061   |
+2024/02/01 01:24:52 CMD: UID=1000  PID=3062   | zsh -i
+2024/02/01 01:24:52 CMD: UID=1000  PID=3063   | zsh -i
+2024/02/01 01:25:00 CMD: UID=1000  PID=3065   |
+2024/02/01 01:25:00 CMD: UID=1000  PID=3066   |
+2024/02/01 01:30:06 CMD: UID=1000  PID=3068   | git rev-parse --git-dir
+2024/02/01 01:30:06 CMD: UID=1000  PID=3069   |
+2024/02/01 01:30:06 CMD: UID=1000  PID=3070   | git symbolic-ref HEAD
+2024/02/01 01:30:06 CMD: UID=1000  PID=3071   | zsh -i
+2024/02/01 01:30:06 CMD: UID=1000  PID=3072   | zsh -i
+2024/02/01 01:30:12 CMD: UID=1000  PID=3074   |
+2024/02/01 01:30:12 CMD: UID=1000  PID=3075   |
+2024/02/01 01:30:47 CMD: UID=1000  PID=3078   |
+2024/02/01 01:30:47 CMD: UID=1000  PID=3079   |
+2024/02/01 01:30:47 CMD: UID=1000  PID=3080   |
+2024/02/01 01:30:47 CMD: UID=1000  PID=3081   | zsh -i
+2024/02/01 01:30:47 CMD: UID=1000  PID=3082   | zsh -i
+2024/02/01 01:30:54 CMD: UID=1000  PID=3084   |
+2024/02/01 01:30:54 CMD: UID=1000  PID=3085   |
+2024/02/01 01:31:21 CMD: UID=1000  PID=3087   |
+2024/02/01 01:31:21 CMD: UID=1000  PID=3088   |
+2024/02/01 01:31:21 CMD: UID=1000  PID=3089   |
+2024/02/01 01:31:21 CMD: UID=1000  PID=3090   | zsh -i
+2024/02/01 01:31:21 CMD: UID=1000  PID=3091   | zsh -i
+2024/02/01 01:31:25 CMD: UID=1000  PID=3093   | zsh -i
+2024/02/01 01:31:25 CMD: UID=1000  PID=3094   |
+2024/02/01 01:31:35 CMD: UID=1000  PID=3096   | git rev-parse --git-dir
+2024/02/01 01:31:35 CMD: UID=1000  PID=3097   |
+2024/02/01 01:31:35 CMD: UID=1000  PID=3098   |
+2024/02/01 01:31:35 CMD: UID=1000  PID=3099   | zsh -i
+2024/02/01 01:31:35 CMD: UID=1000  PID=3100   | zsh -i
+2024/02/01 01:31:42 CMD: UID=1000  PID=3102   | zsh -i
+2024/02/01 01:31:42 CMD: UID=1000  PID=3103   |
+2024/02/01 01:31:42 CMD: UID=1000  PID=3104   |
+2024/02/01 01:31:42 CMD: UID=1000  PID=3105   |
+2024/02/01 01:31:42 CMD: UID=1000  PID=3106   | zsh -i
+2024/02/01 01:31:42 CMD: UID=1000  PID=3107   | zsh -i
+2024/02/01 01:31:44 CMD: UID=1000  PID=3109   |
+2024/02/01 01:31:44 CMD: UID=1000  PID=3110   |
+2024/02/01 01:31:44 CMD: UID=1000  PID=3111   | git rev-parse --git-dir
+2024/02/01 01:31:44 CMD: UID=1000  PID=3112   |
+2024/02/01 01:31:44 CMD: UID=1000  PID=3113   |
+2024/02/01 01:31:44 CMD: UID=1000  PID=3114   | zsh -i
+2024/02/01 01:31:44 CMD: UID=1000  PID=3115   | zsh -i
+2024/02/01 01:31:52 CMD: UID=1000  PID=3117   |
+2024/02/01 01:31:52 CMD: UID=1000  PID=3118   |
+2024/02/01 01:37:46 CMD: UID=1000  PID=3120   |
+2024/02/01 01:37:46 CMD: UID=1000  PID=3121   |
+2024/02/01 01:37:46 CMD: UID=1000  PID=3122   |
+2024/02/01 01:37:46 CMD: UID=1000  PID=3123   | zsh -i
+2024/02/01 01:37:46 CMD: UID=1000  PID=3124   | zsh -i
+2024/02/01 01:37:49 CMD: UID=1000  PID=3126   | zsh -i
+2024/02/01 01:37:49 CMD: UID=1000  PID=3127   | git rev-parse --git-dir
+2024/02/01 01:37:49 CMD: UID=1000  PID=3128   |
+2024/02/01 01:37:49 CMD: UID=1000  PID=3129   |
+2024/02/01 01:37:49 CMD: UID=1000  PID=3130   | zsh -i
+2024/02/01 01:37:49 CMD: UID=1000  PID=3131   | zsh -i
+2024/02/01 01:37:51 CMD: UID=1000  PID=3133   |
+2024/02/01 01:37:51 CMD: UID=1000  PID=3134   |
+2024/02/01 01:37:51 CMD: UID=1000  PID=3135   |
+2024/02/01 01:37:51 CMD: UID=1000  PID=3136   |
+2024/02/01 01:37:51 CMD: UID=1000  PID=3137   |
+2024/02/01 01:37:51 CMD: UID=1000  PID=3138   | zsh -i
+2024/02/01 01:37:51 CMD: UID=1000  PID=3139   | zsh -i
+2024/02/01 01:37:57 CMD: UID=1000  PID=3141   |
+2024/02/01 01:37:57 CMD: UID=1000  PID=3142   |
+2024/02/01 01:38:15 CMD: UID=1000  PID=3144   | git rev-parse --git-dir
+2024/02/01 01:38:15 CMD: UID=1000  PID=3145   |
+2024/02/01 01:38:15 CMD: UID=1000  PID=3146   | git symbolic-ref HEAD
+2024/02/01 01:38:15 CMD: UID=1000  PID=3147   | zsh -i
+2024/02/01 01:38:15 CMD: UID=1000  PID=3148   | zsh -i
+2024/02/01 01:38:28 CMD: UID=1000  PID=3150   |
+2024/02/01 01:38:28 CMD: UID=1000  PID=3151   |
+2024/02/01 01:38:30 CMD: UID=1000  PID=3153   |
+2024/02/01 01:38:30 CMD: UID=1000  PID=3154   |
+2024/02/01 01:38:30 CMD: UID=1000  PID=3155   |
+2024/02/01 01:38:30 CMD: UID=1000  PID=3156   | zsh -i
+2024/02/01 01:38:30 CMD: UID=1000  PID=3157   | zsh -i
+2024/02/01 01:38:48 CMD: UID=1000  PID=3159   |
+2024/02/01 01:38:48 CMD: UID=1000  PID=3160   |
+2024/02/01 01:38:48 CMD: UID=1000  PID=3161   |
+2024/02/01 01:38:48 CMD: UID=1000  PID=3162   |
+2024/02/01 01:38:48 CMD: UID=1000  PID=3163   | zsh -i
+2024/02/01 01:38:48 CMD: UID=1000  PID=3164   | zsh -i
+2024/02/01 01:38:49 CMD: UID=1000  PID=3166   |
+2024/02/01 01:38:49 CMD: UID=1000  PID=3167   |
+2024/02/01 01:38:49 CMD: UID=1000  PID=3168   |
+2024/02/01 01:38:49 CMD: UID=1000  PID=3169   |
+2024/02/01 01:38:49 CMD: UID=1000  PID=3170   |
+2024/02/01 01:38:49 CMD: UID=1000  PID=3171   | zsh -i
+2024/02/01 01:38:49 CMD: UID=1000  PID=3172   | zsh -i
+2024/02/01 01:39:02 CMD: UID=1000  PID=3174   | zsh -i
+2024/02/01 01:39:02 CMD: UID=1000  PID=3175   | zsh -i
+2024/02/01 01:41:07 CMD: UID=1000  PID=3180   |
+2024/02/01 01:41:07 CMD: UID=1000  PID=3181   |
+2024/02/01 01:41:07 CMD: UID=1000  PID=3182   |
+2024/02/01 01:41:07 CMD: UID=1000  PID=3183   | zsh -i
+2024/02/01 01:41:07 CMD: UID=1000  PID=3184   | zsh -i
+2024/02/01 01:41:27 CMD: UID=1000  PID=3186   |
+2024/02/01 01:41:27 CMD: UID=1000  PID=3188   |
+2024/02/01 01:41:27 CMD: UID=1000  PID=3189   |
+2024/02/01 01:41:27 CMD: UID=1000  PID=3190   |
+2024/02/01 01:41:27 CMD: UID=1000  PID=3191   | zsh -i
+2024/02/01 01:41:27 CMD: UID=1000  PID=3192   | zsh -i
+2024/02/01 01:41:34 CMD: UID=1000  PID=3194   | uname -n
+2024/02/01 01:41:34 CMD: UID=1000  PID=3195   | zsh -i
+2024/02/01 01:42:02 CMD: UID=1000  PID=3197   |
+2024/02/01 01:42:02 CMD: UID=1000  PID=3198   |
+2024/02/01 01:42:02 CMD: UID=1000  PID=3199   |
+2024/02/01 01:42:02 CMD: UID=1000  PID=3200   | zsh -i
+2024/02/01 01:42:02 CMD: UID=1000  PID=3201   | zsh -i
+2024/02/01 01:42:07 CMD: UID=1000  PID=3203   | zsh -i
+2024/02/01 01:42:07 CMD: UID=1000  PID=3204   |
+2024/02/01 01:42:07 CMD: UID=1000  PID=3205   |
+2024/02/01 01:42:07 CMD: UID=1000  PID=3206   |
+2024/02/01 01:42:07 CMD: UID=1000  PID=3207   | zsh -i
+2024/02/01 01:42:07 CMD: UID=1000  PID=3208   | zsh -i
+2024/02/01 01:42:08 CMD: UID=1000  PID=3210   |
+2024/02/01 01:42:08 CMD: UID=1000  PID=3211   |
+2024/02/01 01:42:08 CMD: UID=1000  PID=3212   |
+2024/02/01 01:42:08 CMD: UID=1000  PID=3213   |
+2024/02/01 01:42:08 CMD: UID=1000  PID=3214   |
+2024/02/01 01:42:08 CMD: UID=1000  PID=3215   | zsh -i
+2024/02/01 01:42:08 CMD: UID=1000  PID=3216   | zsh -i
+2024/02/01 01:42:13 CMD: UID=1000  PID=3218   |
+2024/02/01 01:42:13 CMD: UID=1000  PID=3219   |
+2024/02/01 01:42:17 CMD: UID=1000  PID=3221   |
+2024/02/01 01:42:17 CMD: UID=1000  PID=3222   |
+2024/02/01 01:42:17 CMD: UID=1000  PID=3223   |
+2024/02/01 01:42:17 CMD: UID=1000  PID=3224   | zsh -i
+2024/02/01 01:42:17 CMD: UID=1000  PID=3225   | zsh -i
+2024/02/01 01:42:21 CMD: UID=1000  PID=3227   |
+2024/02/01 01:42:21 CMD: UID=1000  PID=3228   |
+2024/02/01 01:42:27 CMD: UID=1000  PID=3230   |
+2024/02/01 01:42:27 CMD: UID=1000  PID=3231   |
+2024/02/01 01:42:27 CMD: UID=1000  PID=3232   | git symbolic-ref HEAD
+2024/02/01 01:42:27 CMD: UID=1000  PID=3233   | zsh -i
+2024/02/01 01:42:27 CMD: UID=1000  PID=3234   | zsh -i
+2024/02/01 01:42:29 CMD: UID=1000  PID=3236   |
+2024/02/01 01:42:29 CMD: UID=1000  PID=3238   |
+2024/02/01 01:42:29 CMD: UID=1000  PID=3239   |
+2024/02/01 01:42:29 CMD: UID=1000  PID=3240   | git symbolic-ref HEAD
+2024/02/01 01:42:29 CMD: UID=1000  PID=3241   | zsh -i
+2024/02/01 01:42:29 CMD: UID=1000  PID=3242   | zsh -i
+2024/02/01 01:42:32 CMD: UID=1000  PID=3244   | uname -n
+2024/02/01 01:42:32 CMD: UID=1000  PID=3245   |
+2024/02/01 01:42:32 CMD: UID=1000  PID=3246   |
+2024/02/01 01:42:32 CMD: UID=1000  PID=3247   |
+2024/02/01 01:42:32 CMD: UID=1000  PID=3248   |
+2024/02/01 01:42:32 CMD: UID=1000  PID=3249   | zsh -i
+2024/02/01 01:42:32 CMD: UID=1000  PID=3250   | zsh -i
+2024/02/01 01:42:35 CMD: UID=1000  PID=3252   | zsh -i
+2024/02/01 01:42:35 CMD: UID=1000  PID=3253   |
+2024/02/01 01:42:35 CMD: UID=1000  PID=3254   | zsh -i
+2024/02/01 01:42:35 CMD: UID=1000  PID=3255   |
+2024/02/01 01:42:35 CMD: UID=1000  PID=3256   | zsh -i
+2024/02/01 01:42:35 CMD: UID=1000  PID=3257   | zsh -i
+2024/02/01 01:42:35 CMD: UID=1000  PID=3259   |
+2024/02/01 01:42:35 CMD: UID=1000  PID=3260   |
+2024/02/01 01:42:35 CMD: UID=1000  PID=3261   | git rev-parse --git-dir
+2024/02/01 01:42:35 CMD: UID=1000  PID=3262   |
+2024/02/01 01:42:35 CMD: UID=1000  PID=3263   |
+2024/02/01 01:42:35 CMD: UID=1000  PID=3264   | zsh -i
+2024/02/01 01:42:35 CMD: UID=1000  PID=3265   | zsh -i
+2024/02/01 01:42:40 CMD: UID=1000  PID=3267   |
+2024/02/01 01:42:40 CMD: UID=1000  PID=3268   |
+2024/02/01 01:42:51 CMD: UID=1000  PID=3270   |
+2024/02/01 01:42:51 CMD: UID=1000  PID=3271   |
+2024/02/01 01:42:51 CMD: UID=1000  PID=3272   |
+2024/02/01 01:42:51 CMD: UID=1000  PID=3273   | zsh -i
+2024/02/01 01:42:51 CMD: UID=1000  PID=3274   | zsh -i
+2024/02/01 01:42:54 CMD: UID=1000  PID=3276   | zsh -i
+2024/02/01 01:42:54 CMD: UID=1000  PID=3277   |
+2024/02/01 01:42:54 CMD: UID=1000  PID=3278   |
+2024/02/01 01:42:54 CMD: UID=1000  PID=3279   |
+2024/02/01 01:42:54 CMD: UID=1000  PID=3280   | zsh -i
+2024/02/01 01:42:54 CMD: UID=1000  PID=3281   | zsh -i
+2024/02/01 01:42:55 CMD: UID=1000  PID=3283   |
+2024/02/01 01:42:55 CMD: UID=1000  PID=3284   | zsh -i
+2024/02/01 01:42:55 CMD: UID=1000  PID=3285   |
+2024/02/01 01:42:55 CMD: UID=1000  PID=3286   |
+2024/02/01 01:42:55 CMD: UID=1000  PID=3287   | git symbolic-ref HEAD
+2024/02/01 01:42:55 CMD: UID=1000  PID=3288   | zsh -i
+2024/02/01 01:42:55 CMD: UID=1000  PID=3289   | zsh -i
+2024/02/01 01:43:02 CMD: UID=1000  PID=3291   |
+2024/02/01 01:43:02 CMD: UID=1000  PID=3292   |
+2024/02/01 01:43:45 CMD: UID=1000  PID=3294   |
+2024/02/01 01:43:45 CMD: UID=1000  PID=3295   |
+2024/02/01 01:43:45 CMD: UID=1000  PID=3296   |
+2024/02/01 01:43:45 CMD: UID=1000  PID=3297   | zsh -i
+2024/02/01 01:43:45 CMD: UID=1000  PID=3298   | zsh -i
+2024/02/01 01:43:59 CMD: UID=1000  PID=3300   |
+2024/02/01 01:43:59 CMD: UID=1000  PID=3301   |
+2024/02/01 01:44:06 CMD: UID=1000  PID=3303   |
+2024/02/01 01:44:06 CMD: UID=1000  PID=3304   |
+2024/02/01 01:44:06 CMD: UID=1000  PID=3305   |
+2024/02/01 01:44:06 CMD: UID=1000  PID=3306   | zsh -i
+2024/02/01 01:44:06 CMD: UID=1000  PID=3307   | zsh -i
+2024/02/01 01:44:17 CMD: UID=1000  PID=3309   |
+2024/02/01 01:44:17 CMD: UID=1000  PID=3310   |
+2024/02/01 01:47:36 CMD: UID=1000  PID=3312   |
+2024/02/01 01:47:36 CMD: UID=1000  PID=3313   |
+2024/02/01 01:47:36 CMD: UID=1000  PID=3314   |
+2024/02/01 01:47:36 CMD: UID=1000  PID=3315   | zsh -i
+2024/02/01 01:47:36 CMD: UID=1000  PID=3316   | zsh -i
+2024/02/01 01:47:45 CMD: UID=1000  PID=3318   |
+2024/02/01 01:47:45 CMD: UID=1000  PID=3319   |
+2024/02/01 01:48:17 CMD: UID=1000  PID=3321   |
+2024/02/01 01:48:17 CMD: UID=1000  PID=3322   | git rev-parse --show-toplevel
+2024/02/01 01:48:17 CMD: UID=1000  PID=3323   |
+2024/02/01 01:48:17 CMD: UID=1000  PID=3324   | zsh -i
+2024/02/01 01:48:17 CMD: UID=1000  PID=3325   | zsh -i
+2024/02/01 01:48:44 CMD: UID=1000  PID=3327   |
+2024/02/01 01:48:44 CMD: UID=1000  PID=3328   |
+2024/02/01 01:49:12 CMD: UID=1000  PID=3330   |
+2024/02/01 01:49:12 CMD: UID=1000  PID=3331   |
+2024/02/01 01:49:12 CMD: UID=1000  PID=3332   |
+2024/02/01 01:49:12 CMD: UID=1000  PID=3333   | zsh -i
+2024/02/01 01:49:12 CMD: UID=1000  PID=3334   | zsh -i
+2024/02/01 01:49:16 CMD: UID=1000  PID=3336   | zsh -i
+2024/02/01 01:49:16 CMD: UID=1000  PID=3337   |
+2024/02/01 01:49:16 CMD: UID=1000  PID=3338   |
+2024/02/01 01:49:16 CMD: UID=1000  PID=3339   | git symbolic-ref HEAD
+2024/02/01 01:49:16 CMD: UID=1000  PID=3340   | zsh -i
+2024/02/01 01:49:16 CMD: UID=1000  PID=3341   | zsh -i
+2024/02/01 01:49:16 CMD: UID=1000  PID=3343   |
+2024/02/01 01:49:16 CMD: UID=1000  PID=3344   |
+2024/02/01 01:49:16 CMD: UID=1000  PID=3345   |
+2024/02/01 01:49:16 CMD: UID=1000  PID=3346   |
+2024/02/01 01:49:16 CMD: UID=1000  PID=3347   |
+2024/02/01 01:49:16 CMD: UID=1000  PID=3348   | zsh -i
+2024/02/01 01:49:16 CMD: UID=1000  PID=3349   | zsh -i
+2024/02/01 01:49:29 CMD: UID=1000  PID=3351   | zsh -i
+2024/02/01 01:49:29 CMD: UID=1000  PID=3352   |
+2024/02/01 01:49:29 CMD: UID=1000  PID=3353   | git rev-parse --show-toplevel
+2024/02/01 01:49:29 CMD: UID=1000  PID=3354   |
+2024/02/01 01:49:29 CMD: UID=1000  PID=3355   | zsh -i
+2024/02/01 01:49:29 CMD: UID=1000  PID=3356   | zsh -i
+2024/02/01 01:49:29 CMD: UID=1000  PID=3358   |
+2024/02/01 01:49:29 CMD: UID=1000  PID=3359   |
+2024/02/01 01:49:29 CMD: UID=1000  PID=3360   |
+2024/02/01 01:49:29 CMD: UID=1000  PID=3361   |
+2024/02/01 01:49:29 CMD: UID=1000  PID=3362   |
+2024/02/01 01:49:29 CMD: UID=1000  PID=3363   | zsh -i
+2024/02/01 01:49:29 CMD: UID=1000  PID=3364   | zsh -i
+2024/02/01 01:49:38 CMD: UID=1000  PID=3366   |
+2024/02/01 01:49:38 CMD: UID=1000  PID=3367   |
+2024/02/01 01:49:43 CMD: UID=1000  PID=3369   |
+2024/02/01 01:49:43 CMD: UID=1000  PID=3370   |
+2024/02/01 01:49:43 CMD: UID=1000  PID=3371   |
+2024/02/01 01:49:43 CMD: UID=1000  PID=3372   | zsh -i
+2024/02/01 01:49:43 CMD: UID=1000  PID=3373   | zsh -i
+2024/02/01 01:49:45 CMD: UID=1000  PID=3375   |
+2024/02/01 01:49:45 CMD: UID=1000  PID=3376   |
+2024/02/01 01:49:50 CMD: UID=1000  PID=3378   |
+2024/02/01 01:49:50 CMD: UID=1000  PID=3379   |
+2024/02/01 01:49:50 CMD: UID=1000  PID=3380   |
+2024/02/01 01:49:50 CMD: UID=1000  PID=3381   | zsh -i
+2024/02/01 01:49:50 CMD: UID=1000  PID=3382   | zsh -i
+2024/02/01 01:49:55 CMD: UID=1000  PID=3384   | zsh -i
+2024/02/01 01:49:55 CMD: UID=1000  PID=3385   |
+2024/02/01 01:49:57 CMD: UID=1000  PID=3387   |
+2024/02/01 01:49:57 CMD: UID=1000  PID=3388   |
+2024/02/01 01:49:57 CMD: UID=1000  PID=3389   | git symbolic-ref HEAD
+2024/02/01 01:49:57 CMD: UID=1000  PID=3390   | zsh -i
+2024/02/01 01:49:57 CMD: UID=1000  PID=3391   | zsh -i
+2024/02/01 01:49:58 CMD: UID=1000  PID=3393   |
+2024/02/01 01:49:58 CMD: UID=1000  PID=3395   |
+2024/02/01 01:49:58 CMD: UID=1000  PID=3396   |
+2024/02/01 01:49:58 CMD: UID=1000  PID=3397   |
+2024/02/01 01:49:58 CMD: UID=1000  PID=3398   | zsh -i
+2024/02/01 01:49:58 CMD: UID=1000  PID=3399   | zsh -i
+2024/02/01 01:50:01 CMD: UID=1000  PID=3401   | zsh -i
+2024/02/01 01:50:01 CMD: UID=1000  PID=3402   |
+2024/02/01 01:50:01 CMD: UID=1000  PID=3403   |
+2024/02/01 01:50:01 CMD: UID=1000  PID=3404   |
+2024/02/01 01:50:01 CMD: UID=1000  PID=3405   | zsh -i
+2024/02/01 01:50:01 CMD: UID=1000  PID=3406   | zsh -i
+2024/02/01 01:50:06 CMD: UID=1000  PID=3408   |
+2024/02/01 01:50:06 CMD: UID=1000  PID=3409   |
+2024/02/01 01:50:11 CMD: UID=1000  PID=3411   |
+2024/02/01 01:50:11 CMD: UID=1000  PID=3412   |
+2024/02/01 01:50:11 CMD: UID=1000  PID=3413   |
+2024/02/01 01:50:11 CMD: UID=1000  PID=3414   | zsh -i
+2024/02/01 01:50:11 CMD: UID=1000  PID=3415   | zsh -i
+2024/02/01 01:50:13 CMD: UID=1000  PID=3417   | zsh -i
+2024/02/01 01:50:13 CMD: UID=1000  PID=3418   |
+2024/02/01 01:50:13 CMD: UID=1000  PID=3419   |
+2024/02/01 01:50:13 CMD: UID=1000  PID=3420   |
+2024/02/01 01:50:13 CMD: UID=1000  PID=3421   | zsh -i
+2024/02/01 01:50:13 CMD: UID=1000  PID=3422   | zsh -i
+2024/02/01 01:50:14 CMD: UID=1000  PID=3424   |
+2024/02/01 01:50:14 CMD: UID=1000  PID=3425   |
+2024/02/01 01:50:14 CMD: UID=1000  PID=3426   |
+2024/02/01 01:50:14 CMD: UID=1000  PID=3427   |
+2024/02/01 01:50:14 CMD: UID=1000  PID=3428   |
+2024/02/01 01:50:14 CMD: UID=1000  PID=3429   | zsh -i
+2024/02/01 01:50:14 CMD: UID=1000  PID=3430   | zsh -i
+2024/02/01 01:50:30 CMD: UID=1000  PID=3432   |
+2024/02/01 01:50:30 CMD: UID=1000  PID=3433   |
+2024/02/01 01:51:22 CMD: UID=1000  PID=3435   |
+2024/02/01 01:51:22 CMD: UID=1000  PID=3436   |
+2024/02/01 01:51:22 CMD: UID=1000  PID=3437   | git symbolic-ref HEAD
+2024/02/01 01:51:22 CMD: UID=1000  PID=3438   | zsh -i
+2024/02/01 01:51:22 CMD: UID=1000  PID=3439   | zsh -i
+2024/02/01 01:51:26 CMD: UID=1000  PID=3441   | zsh -i
+2024/02/01 01:51:26 CMD: UID=1000  PID=3442   |
+2024/02/01 01:51:26 CMD: UID=1000  PID=3443   |
+2024/02/01 01:51:26 CMD: UID=1000  PID=3444   |
+2024/02/01 01:51:26 CMD: UID=1000  PID=3445   | zsh -i
+2024/02/01 01:51:26 CMD: UID=1000  PID=3446   | zsh -i
+2024/02/01 01:51:26 CMD: UID=1000  PID=3448   | zsh -i
+2024/02/01 01:51:26 CMD: UID=1000  PID=3449   |
+2024/02/01 01:51:26 CMD: UID=1000  PID=3450   |
+2024/02/01 01:51:26 CMD: UID=1000  PID=3451   |
+2024/02/01 01:51:26 CMD: UID=1000  PID=3452   | git symbolic-ref HEAD
+2024/02/01 01:51:26 CMD: UID=1000  PID=3453   | zsh -i
+2024/02/01 01:51:26 CMD: UID=1000  PID=3454   | zsh -i
+2024/02/01 01:51:37 CMD: UID=1000  PID=3456   | zsh -i
+2024/02/01 01:51:37 CMD: UID=1000  PID=3457   |
+2024/02/01 01:51:37 CMD: UID=1000  PID=3458   |
+2024/02/01 01:51:37 CMD: UID=1000  PID=3459   |
+2024/02/01 01:51:37 CMD: UID=1000  PID=3460   | zsh -i
+2024/02/01 01:51:37 CMD: UID=1000  PID=3461   | zsh -i
+2024/02/01 01:51:38 CMD: UID=1000  PID=3463   |
+2024/02/01 01:51:38 CMD: UID=1000  PID=3464   |
+2024/02/01 01:51:38 CMD: UID=1000  PID=3465   | git rev-parse --git-dir
+2024/02/01 01:51:38 CMD: UID=1000  PID=3466   | git rev-parse --show-toplevel
+2024/02/01 01:51:38 CMD: UID=1000  PID=3467   |
+2024/02/01 01:51:38 CMD: UID=1000  PID=3468   | zsh -i
+2024/02/01 01:51:38 CMD: UID=1000  PID=3469   | zsh -i
+2024/02/01 01:51:49 CMD: UID=1000  PID=3471   | zsh -i
+2024/02/01 01:51:49 CMD: UID=1000  PID=3472   |
+2024/02/01 01:51:49 CMD: UID=1000  PID=3473   |
+2024/02/01 01:51:49 CMD: UID=1000  PID=3474   |
+2024/02/01 01:51:49 CMD: UID=1000  PID=3475   | zsh -i
+2024/02/01 01:51:49 CMD: UID=1000  PID=3476   | zsh -i
+2024/02/01 01:51:50 CMD: UID=1000  PID=3478   | zsh -i
+2024/02/01 01:51:50 CMD: UID=1000  PID=3479   |
+2024/02/01 01:51:50 CMD: UID=1000  PID=3480   |
+2024/02/01 01:51:50 CMD: UID=1000  PID=3481   |
+2024/02/01 01:51:50 CMD: UID=1000  PID=3482   |
+2024/02/01 01:51:50 CMD: UID=1000  PID=3483   | zsh -i
+2024/02/01 01:51:50 CMD: UID=1000  PID=3484   | zsh -i
+2024/02/01 01:52:01 CMD: UID=1000  PID=3486   |
+2024/02/01 01:52:01 CMD: UID=1000  PID=3487   |
+2024/02/01 01:54:11 CMD: UID=1000  PID=3489   |
+2024/02/01 01:54:11 CMD: UID=1000  PID=3490   | unzip -Z -1 -- /home/arsenal/tools/SecLists/Miscellaneous/top-domains-alexa.csv.zip
+2024/02/01 01:54:13 CMD: UID=1000  PID=3491   |
+2024/02/01 01:54:13 CMD: UID=1000  PID=3492   |
+2024/02/01 01:54:25 CMD: UID=1000  PID=3493   |
+2024/02/01 01:54:25 CMD: UID=1000  PID=3494   |
+2024/02/01 01:54:25 CMD: UID=1000  PID=3495   |
+2024/02/01 01:54:25 CMD: UID=1000  PID=3496   | zsh -i
+2024/02/01 01:54:25 CMD: UID=1000  PID=3497   | zsh -i
+2024/02/01 01:54:35 CMD: UID=1000  PID=3499   | zsh -i
+2024/02/01 01:54:35 CMD: UID=1000  PID=3500   |
+2024/02/01 01:54:35 CMD: UID=1000  PID=3501   |
+2024/02/01 01:54:35 CMD: UID=1000  PID=3502   |
+2024/02/01 01:54:35 CMD: UID=1000  PID=3503   | zsh -i
+2024/02/01 01:54:35 CMD: UID=1000  PID=3504   | zsh -i
+2024/02/01 01:54:36 CMD: UID=1000  PID=3506   |
+2024/02/01 01:54:36 CMD: UID=1000  PID=3507   |
+2024/02/01 01:54:36 CMD: UID=1000  PID=3508   |
+2024/02/01 01:54:36 CMD: UID=1000  PID=3509   |
+2024/02/01 01:54:36 CMD: UID=1000  PID=3510   |
+2024/02/01 01:54:36 CMD: UID=1000  PID=3511   | zsh -i
+2024/02/01 01:54:36 CMD: UID=1000  PID=3512   | zsh -i
+2024/02/01 01:54:39 CMD: UID=1000  PID=3514   | zsh -i
+2024/02/01 01:54:39 CMD: UID=1000  PID=3515   |
+2024/02/01 01:54:39 CMD: UID=1000  PID=3516   |
+2024/02/01 01:54:39 CMD: UID=1000  PID=3517   |
+2024/02/01 01:54:39 CMD: UID=1000  PID=3518   | zsh -i
+2024/02/01 01:54:39 CMD: UID=1000  PID=3519   | zsh -i
+2024/02/01 01:54:40 CMD: UID=1000  PID=3521   |
+2024/02/01 01:54:40 CMD: UID=1000  PID=3522   |
+2024/02/01 01:54:40 CMD: UID=1000  PID=3523   |
+2024/02/01 01:54:40 CMD: UID=1000  PID=3524   |
+2024/02/01 01:54:40 CMD: UID=1000  PID=3525   | git symbolic-ref HEAD
+2024/02/01 01:54:40 CMD: UID=1000  PID=3526   | zsh -i
+2024/02/01 01:54:40 CMD: UID=1000  PID=3527   | zsh -i
+2024/02/01 01:54:44 CMD: UID=1000  PID=3529   | zsh -i
+2024/02/01 01:54:45 CMD: UID=1000  PID=3530   |
+2024/02/01 01:54:45 CMD: UID=1000  PID=3531   |
+2024/02/01 01:54:45 CMD: UID=1000  PID=3532   |
+2024/02/01 01:54:45 CMD: UID=1000  PID=3533   | zsh -i
+2024/02/01 01:54:45 CMD: UID=1000  PID=3534   | zsh -i
+2024/02/01 01:54:47 CMD: UID=1000  PID=3536   | zsh -i
+2024/02/01 01:54:47 CMD: UID=1000  PID=3537   |
+2024/02/01 01:54:47 CMD: UID=1000  PID=3538   |
+2024/02/01 01:54:47 CMD: UID=1000  PID=3539   |
+2024/02/01 01:54:47 CMD: UID=1000  PID=3540   | zsh -i
+2024/02/01 01:54:47 CMD: UID=1000  PID=3541   | zsh -i
+2024/02/01 01:54:48 CMD: UID=1000  PID=3543   |
+2024/02/01 01:54:48 CMD: UID=1000  PID=3544   |
+2024/02/01 01:54:48 CMD: UID=1000  PID=3545   |
+2024/02/01 01:54:48 CMD: UID=1000  PID=3546   | zsh -i
+2024/02/01 01:54:48 CMD: UID=1000  PID=3547   |
+2024/02/01 01:54:48 CMD: UID=1000  PID=3548   | zsh -i
+2024/02/01 01:54:48 CMD: UID=1000  PID=3549   | zsh -i
+2024/02/01 01:54:57 CMD: UID=1000  PID=3551   |
+2024/02/01 01:54:57 CMD: UID=1000  PID=3552   |
+2024/02/01 01:55:05 CMD: UID=1000  PID=3554   |
+2024/02/01 01:55:05 CMD: UID=1000  PID=3555   | git rev-parse --show-toplevel
+2024/02/01 01:55:05 CMD: UID=1000  PID=3556   |
+2024/02/01 01:55:05 CMD: UID=1000  PID=3557   | zsh -i
+2024/02/01 01:55:05 CMD: UID=1000  PID=3558   | zsh -i
+2024/02/01 01:55:08 CMD: UID=1000  PID=3560   |
+2024/02/01 01:55:08 CMD: UID=1000  PID=3561   | ls --color=auto -v
+2024/02/01 01:55:08 CMD: UID=1000  PID=3562   |
+2024/02/01 01:55:08 CMD: UID=1000  PID=3563   |
+2024/02/01 01:55:08 CMD: UID=1000  PID=3564   |
+2024/02/01 01:55:08 CMD: UID=1000  PID=3565   | zsh -i
+2024/02/01 01:55:08 CMD: UID=1000  PID=3566   | zsh -i
+2024/02/01 01:55:14 CMD: UID=1000  PID=3568   | zsh -i
+2024/02/01 01:55:14 CMD: UID=1000  PID=3569   |
+2024/02/01 01:55:14 CMD: UID=1000  PID=3570   |
+2024/02/01 01:55:14 CMD: UID=1000  PID=3571   |
+2024/02/01 01:55:14 CMD: UID=1000  PID=3572   | zsh -i
+2024/02/01 01:55:14 CMD: UID=1000  PID=3573   | zsh -i
+2024/02/01 01:55:15 CMD: UID=1000  PID=3575   |
+2024/02/01 01:55:15 CMD: UID=1000  PID=3576   |
+2024/02/01 01:55:15 CMD: UID=1000  PID=3577   |
+2024/02/01 01:55:15 CMD: UID=1000  PID=3578   |
+2024/02/01 01:55:15 CMD: UID=1000  PID=3579   |
+2024/02/01 01:55:15 CMD: UID=1000  PID=3580   | zsh -i
+2024/02/01 01:55:15 CMD: UID=1000  PID=3581   | zsh -i
+2024/02/01 01:55:17 CMD: UID=1000  PID=3583   |
+2024/02/01 01:55:17 CMD: UID=1000  PID=3584   |
+2024/02/01 01:57:39 CMD: UID=1000  PID=3586   |
+2024/02/01 01:57:39 CMD: UID=1000  PID=3587   |
+2024/02/01 01:57:39 CMD: UID=1000  PID=3588   |
+2024/02/01 01:57:39 CMD: UID=1000  PID=3589   | zsh -i
+2024/02/01 01:57:39 CMD: UID=1000  PID=3590   | zsh -i
+2024/02/01 01:57:45 CMD: UID=1000  PID=3593   |
+2024/02/01 01:57:45 CMD: UID=1000  PID=3592   | zsh -i
+2024/02/01 01:57:45 CMD: UID=1000  PID=3591   | zsh -i
+2024/02/01 01:57:45 CMD: UID=1000  PID=3594   |
+2024/02/01 01:57:45 CMD: UID=1000  PID=3596   |
+2024/02/01 01:57:45 CMD: UID=1000  PID=3597   |
+2024/02/01 01:57:45 CMD: UID=1000  PID=3598   |
+2024/02/01 01:57:45 CMD: UID=1000  PID=3599   | git rev-parse --show-toplevel
+2024/02/01 01:57:45 CMD: UID=1000  PID=3600   |
+2024/02/01 01:57:45 CMD: UID=1000  PID=3601   | zsh -i
+2024/02/01 01:57:45 CMD: UID=1000  PID=3602   | zsh -i
+2024/02/01 23:10:12 CMD: UID=1000  PID=3604   | zsh -i
+2024/02/01 23:10:12 CMD: UID=1000  PID=3605   |
+2024/02/01 23:10:12 CMD: UID=1000  PID=3606   | zsh -i
+2024/02/01 23:10:12 CMD: UID=1000  PID=3607   |
+2024/02/01 23:10:12 CMD: UID=1000  PID=3608   | zsh -i
+2024/02/01 23:10:12 CMD: UID=1000  PID=3609   | zsh -i
+2024/02/01 23:10:15 CMD: UID=1000  PID=3611   |
+2024/02/01 23:10:15 CMD: UID=1000  PID=3612   |
+2024/02/01 23:10:15 CMD: UID=1000  PID=3613   |
+2024/02/01 23:10:15 CMD: UID=1000  PID=3614   | git rev-parse --show-toplevel
+2024/02/01 23:10:15 CMD: UID=1000  PID=3615   |
+2024/02/01 23:10:15 CMD: UID=1000  PID=3616   | zsh -i
+2024/02/01 23:10:15 CMD: UID=1000  PID=3617   | zsh -i
+2024/02/01 23:10:24 CMD: UID=1000  PID=3619   |
+2024/02/01 23:10:24 CMD: UID=1000  PID=3620   | zsh -i
+2024/02/01 23:10:25 CMD: UID=1000  PID=3621   |
+2024/02/01 23:10:25 CMD: UID=1000  PID=3622   |
+2024/02/01 23:10:25 CMD: UID=1000  PID=3623   |
+2024/02/01 23:10:25 CMD: UID=1000  PID=3624   | zsh -i
+2024/02/01 23:10:25 CMD: UID=1000  PID=3625   | zsh -i
+2024/02/01 23:10:52 CMD: UID=1000  PID=3627   |
+2024/02/01 23:10:52 CMD: UID=1000  PID=3628   |
+2024/02/01 23:10:52 CMD: UID=1000  PID=3629   |
+2024/02/01 23:10:53 CMD: UID=1000  PID=3630   | zsh -i
+2024/02/01 23:10:53 CMD: UID=1000  PID=3631   | zsh -i
+2024/02/01 23:10:56 CMD: UID=1000  PID=3633   |
+2024/02/01 23:10:56 CMD: UID=1000  PID=3634   |
+2024/02/01 23:10:56 CMD: UID=1000  PID=3635   |
+2024/02/01 23:10:56 CMD: UID=1000  PID=3636   |
+2024/02/01 23:10:56 CMD: UID=1000  PID=3637   |
+2024/02/01 23:10:56 CMD: UID=1000  PID=3638   | zsh -i
+2024/02/01 23:10:56 CMD: UID=1000  PID=3639   | zsh -i
+2024/02/01 23:19:57 CMD: UID=1000  PID=3641   | zsh -i
+2024/02/01 23:19:58 CMD: UID=1000  PID=3642   |
+2024/02/01 23:19:58 CMD: UID=1000  PID=3643   | git rev-parse --show-toplevel
+2024/02/01 23:19:58 CMD: UID=1000  PID=3644   |
+2024/02/01 23:19:58 CMD: UID=1000  PID=3645   | zsh -i
+2024/02/01 23:19:58 CMD: UID=1000  PID=3646   | zsh -i
+2024/02/01 23:19:59 CMD: UID=1000  PID=3648   |
+2024/02/01 23:19:59 CMD: UID=1000  PID=3649   |
+2024/02/01 23:19:59 CMD: UID=1000  PID=3650   |
+2024/02/01 23:19:59 CMD: UID=1000  PID=3651   |
+2024/02/01 23:19:59 CMD: UID=1000  PID=3652   |
+2024/02/01 23:19:59 CMD: UID=1000  PID=3653   | zsh -i
+2024/02/01 23:19:59 CMD: UID=1000  PID=3654   | zsh -i
+2024/02/01 23:20:18 CMD: UID=1000  PID=3656   | zsh -i
+2024/02/01 23:20:18 CMD: UID=1000  PID=3657   |
+2024/02/01 23:20:18 CMD: UID=1000  PID=3658   |
+2024/02/01 23:20:18 CMD: UID=1000  PID=3659   |
+2024/02/01 23:20:18 CMD: UID=1000  PID=3660   | zsh -i
+2024/02/01 23:20:18 CMD: UID=1000  PID=3661   | zsh -i
+2024/02/01 23:20:19 CMD: UID=1000  PID=3663   |
+2024/02/01 23:20:19 CMD: UID=1000  PID=3664   | ls --color=auto -v
+2024/02/01 23:20:19 CMD: UID=1000  PID=3665   |
+2024/02/01 23:20:19 CMD: UID=1000  PID=3666   |
+2024/02/01 23:20:19 CMD: UID=1000  PID=3667   |
+2024/02/01 23:20:19 CMD: UID=1000  PID=3668   | zsh -i
+2024/02/01 23:20:19 CMD: UID=1000  PID=3669   | zsh -i
+2024/02/01 23:20:31 CMD: UID=1000  PID=3671   |
+2024/02/01 23:20:31 CMD: UID=1000  PID=3672   | zsh -i
+2024/02/01 23:20:31 CMD: UID=1000  PID=3673   |
+2024/02/01 23:20:31 CMD: UID=1000  PID=3674   |
+2024/02/01 23:20:31 CMD: UID=1000  PID=3675   |
+2024/02/01 23:20:31 CMD: UID=1000  PID=3676   | zsh -i
+2024/02/01 23:20:31 CMD: UID=1000  PID=3677   | zsh -i
+2024/02/01 23:21:15 CMD: UID=1000  PID=3679   | zsh -i
+2024/02/01 23:21:15 CMD: UID=1000  PID=3680   |
+2024/02/01 23:21:15 CMD: UID=1000  PID=3681   |
+2024/02/01 23:21:15 CMD: UID=1000  PID=3682   |
+2024/02/01 23:21:15 CMD: UID=1000  PID=3683   | zsh -i
+2024/02/01 23:21:15 CMD: UID=1000  PID=3684   | zsh -i
+2024/02/01 23:21:16 CMD: UID=1000  PID=3686   |
+2024/02/01 23:21:16 CMD: UID=1000  PID=3687   |
+2024/02/01 23:21:16 CMD: UID=1000  PID=3688   |
+2024/02/01 23:21:16 CMD: UID=1000  PID=3689   |
+2024/02/01 23:21:16 CMD: UID=1000  PID=3690   |
+2024/02/01 23:21:16 CMD: UID=1000  PID=3691   | zsh -i
+2024/02/01 23:21:16 CMD: UID=1000  PID=3692   | zsh -i
+2024/02/01 23:21:21 CMD: UID=1000  PID=3694   |
+2024/02/01 23:21:21 CMD: UID=1000  PID=3695   | zsh -i
+2024/02/01 23:21:21 CMD: UID=1000  PID=3696   |
+2024/02/01 23:21:21 CMD: UID=1000  PID=3697   |
+2024/02/01 23:21:21 CMD: UID=1000  PID=3698   |
+2024/02/01 23:21:21 CMD: UID=1000  PID=3699   | zsh -i
+2024/02/01 23:21:21 CMD: UID=1000  PID=3700   | zsh -i
+2024/02/01 23:21:50 CMD: UID=1000  PID=3702   | uname -n
+2024/02/01 23:21:50 CMD: UID=1000  PID=3703   |
+2024/02/01 23:23:13 CMD: UID=1000  PID=3705   |
+2024/02/01 23:23:13 CMD: UID=1000  PID=3706   |
+2024/02/01 23:23:13 CMD: UID=1000  PID=3707   |
+2024/02/01 23:23:13 CMD: UID=1000  PID=3708   | zsh -i
+2024/02/01 23:23:13 CMD: UID=1000  PID=3709   | zsh -i
+2024/02/01 23:23:20 CMD: UID=1000  PID=3711   | zsh -i
+2024/02/01 23:23:20 CMD: UID=1000  PID=3712   |
+2024/02/01 23:23:20 CMD: UID=1000  PID=3713   |
+2024/02/01 23:23:20 CMD: UID=1000  PID=3714   |
+2024/02/01 23:23:20 CMD: UID=1000  PID=3715   | zsh -i
+2024/02/01 23:23:20 CMD: UID=1000  PID=3716   | zsh -i
+2024/02/01 23:23:28 CMD: UID=1000  PID=3718   | zsh -i
+2024/02/01 23:23:28 CMD: UID=1000  PID=3719   | git rev-parse --git-dir
+2024/02/01 23:23:28 CMD: UID=1000  PID=3720   |
+2024/02/01 23:23:28 CMD: UID=1000  PID=3721   |
+2024/02/01 23:23:28 CMD: UID=1000  PID=3722   | zsh -i
+2024/02/01 23:23:28 CMD: UID=1000  PID=3723   | zsh -i
+2024/02/01 23:23:30 CMD: UID=1000  PID=3725   | uname -n
+2024/02/01 23:23:30 CMD: UID=1000  PID=3726   |
+2024/02/01 23:23:30 CMD: UID=1000  PID=3727   |
+2024/02/01 23:23:30 CMD: UID=1000  PID=3728   |
+2024/02/01 23:23:30 CMD: UID=1000  PID=3729   |
+2024/02/01 23:23:30 CMD: UID=1000  PID=3730   | zsh -i
+2024/02/01 23:23:30 CMD: UID=1000  PID=3731   | zsh -i
+2024/02/01 23:23:35 CMD: UID=1000  PID=3733   |
+2024/02/01 23:23:35 CMD: UID=1000  PID=3734   |
+2024/02/01 23:24:11 CMD: UID=1000  PID=3736   |
+2024/02/01 23:24:11 CMD: UID=1000  PID=3737   |
+2024/02/01 23:24:11 CMD: UID=1000  PID=3738   |
+2024/02/01 23:24:11 CMD: UID=1000  PID=3739   | zsh -i
+2024/02/01 23:24:11 CMD: UID=1000  PID=3740   | zsh -i
+2024/02/01 23:24:22 CMD: UID=1000  PID=3742   | zsh -i
+2024/02/01 23:24:22 CMD: UID=1000  PID=3743   |
+2024/02/01 23:24:22 CMD: UID=1000  PID=3744   |
+2024/02/01 23:24:22 CMD: UID=1000  PID=3745   |
+2024/02/01 23:24:22 CMD: UID=1000  PID=3746   | zsh -i
+2024/02/01 23:24:22 CMD: UID=1000  PID=3747   | zsh -i
+2024/02/01 23:24:23 CMD: UID=1000  PID=3749   |
+2024/02/01 23:24:23 CMD: UID=1000  PID=3750   | zsh -i
+2024/02/01 23:24:23 CMD: UID=1000  PID=3751   |
+2024/02/01 23:24:23 CMD: UID=1000  PID=3752   |
+2024/02/01 23:24:23 CMD: UID=1000  PID=3753   |
+2024/02/01 23:24:23 CMD: UID=1000  PID=3754   | zsh -i
+2024/02/01 23:24:23 CMD: UID=1000  PID=3755   | zsh -i
+2024/02/01 23:24:31 CMD: UID=1000  PID=3757   |
+2024/02/01 23:24:31 CMD: UID=1000  PID=3758   |
+2024/02/01 23:24:46 CMD: UID=1000  PID=3760   |
+2024/02/01 23:24:46 CMD: UID=1000  PID=3761   |
+2024/02/01 23:24:46 CMD: UID=1000  PID=3762   |
+2024/02/01 23:24:46 CMD: UID=1000  PID=3763   | zsh -i
+2024/02/01 23:24:46 CMD: UID=1000  PID=3764   | zsh -i
+2024/02/01 23:24:52 CMD: UID=1000  PID=3766   | zsh -i
+2024/02/01 23:24:52 CMD: UID=1000  PID=3767   |
+2024/02/01 23:24:52 CMD: UID=1000  PID=3768   | git rev-parse --show-toplevel
+2024/02/01 23:24:52 CMD: UID=1000  PID=3769   |
+2024/02/01 23:24:52 CMD: UID=1000  PID=3770   | zsh -i
+2024/02/01 23:24:52 CMD: UID=1000  PID=3771   | zsh -i
+2024/02/01 23:24:53 CMD: UID=1000  PID=3773   |
+2024/02/01 23:24:53 CMD: UID=1000  PID=3774   |
+2024/02/01 23:24:53 CMD: UID=1000  PID=3775   |
+2024/02/01 23:24:53 CMD: UID=1000  PID=3776   |
+2024/02/01 23:24:53 CMD: UID=1000  PID=3777   |
+2024/02/01 23:24:53 CMD: UID=1000  PID=3778   | zsh -i
+2024/02/01 23:24:53 CMD: UID=1000  PID=3779   | zsh -i
+2024/02/01 23:25:03 CMD: UID=1000  PID=3781   |
+2024/02/01 23:25:03 CMD: UID=1000  PID=3782   | zsh -i
+2024/02/01 23:29:10 CMD: UID=1000  PID=3784   |
+2024/02/01 23:29:10 CMD: UID=1000  PID=3785   |
+2024/02/01 23:29:10 CMD: UID=1000  PID=3786   |
+2024/02/01 23:29:10 CMD: UID=1000  PID=3787   | zsh -i
+2024/02/01 23:29:10 CMD: UID=1000  PID=3788   | zsh -i
+2024/02/01 23:30:12 CMD: UID=1000  PID=3790   |
+2024/02/01 23:30:12 CMD: UID=1000  PID=3791   | zsh -i
+2024/02/01 23:30:12 CMD: UID=1000  PID=3792   | scp COMPOUND.TXT Mechachleopteryx@192.168.2.40:projects
+2024/02/01 23:30:31 CMD: UID=1000  PID=3793   |
+2024/02/01 23:30:31 CMD: UID=1000  PID=3794   |
+2024/02/01 23:30:31 CMD: UID=1000  PID=3795   |
+2024/02/01 23:30:31 CMD: UID=1000  PID=3796   | zsh -i
+2024/02/01 23:30:31 CMD: UID=1000  PID=3797   | zsh -i
+^CExiting program... (interrupt)
+./pspy  86.78s user 95.80s system 0% cpu 59:59:37.82 total
+arsenal@arsenal ~/tools/bin % ./pspy
+pspy - version: v1.2.1 - Commit SHA: f9e6a1590a4312b9faa093d8dc84e19567977a6d
+
+
+██▓███    ██████  ██▓███ ▓██   ██▓
+▓██░  ██▒▒██    ▒ ▓██░  ██▒▒██  ██▒
+▓██░ ██▓▒░ ▓██▄   ▓██░ ██▓▒ ▒██ ██░
+▒██▄█▓▒ ▒  ▒   ██▒▒██▄█▓▒ ▒ ░ ▐██▓░
+▒██▒ ░  ░▒██████▒▒▒██▒ ░  ░ ░ ██▒▓░
+▒▓▒░ ░  ░▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░  ██▒▒▒
+░▒ ░     ░ ░▒  ░ ░░▒ ░     ▓██ ░▒░
+░░       ░  ░  ░  ░░       ▒ ▒ ░░
+░           ░ ░
+░ ░
+
+Config: Printing events (colored=true): processes=true | file-system-events=false ||| Scanning for processes every 100ms and on inotify events ||| Watching directories: [/usr /tmp /etc /home /var /opt] (recursive) | [] (non-recursive)
+Draining file system events due to startup...
+done
+2024/02/03 13:19:49 CMD: UID=1000  PID=3801   | ./pspy
+2024/02/03 13:19:49 CMD: UID=1000  PID=1354   | zsh
+2024/02/03 13:19:49 CMD: UID=1000  PID=1      | zsh -i
+
+
