@@ -1,0 +1,1712 @@
+130 arsenal@arsenal ~/tools % ./LinEnum.sh
+
+#########################################################
+# Local Linux Enumeration & Privilege Escalation Script #
+#########################################################
+# www.rebootuser.com
+# version 0.982
+
+[-] Debug Info
+[+] Thorough tests = Disabled
+
+
+Scan started at:
+Thu Feb  1 01:05:12 UTC 2024
+
+
+### SYSTEM ##############################################
+[-] Kernel information:
+Linux arsenal 5.15.133.1-microsoft-standard-WSL2 #1 SMP Thu Oct 5 21:02:42 UTC 2023 x86_64 GNU/Linux
+
+
+[-] Kernel information (continued):
+Linux version 5.15.133.1-microsoft-standard-WSL2 (root@1c602f52c2e4) (gcc (GCC) 11.2.0, GNU ld (GNU Binutils) 2.37) #1 SMP Thu Oct 5 21:02:42 UTC 2023
+
+
+[-] Specific release information:
+PRETTY_NAME="Debian GNU/Linux 12 (bookworm)"
+NAME="Debian GNU/Linux"
+VERSION_ID="12"
+VERSION="12 (bookworm)"
+VERSION_CODENAME=bookworm
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+
+
+[-] Hostname:
+arsenal
+
+
+### USER/GROUP ##########################################
+[-] Current user/group info:
+uid=1000(arsenal) gid=1000(arsenal) groups=1000(arsenal)
+
+
+[-] Users that have previously logged onto the system:
+Username         Port     From                                       Latest
+
+
+[-] Who else is logged on:
+01:05:12 up 2 days,  9:29,  0 user,  load average: 2.84, 2.88, 3.41
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+
+
+[-] Group memberships:
+uid=0(root) gid=0(root) groups=0(root)
+uid=1(daemon) gid=1(daemon) groups=1(daemon)
+uid=2(bin) gid=2(bin) groups=2(bin)
+uid=3(sys) gid=3(sys) groups=3(sys)
+uid=4(sync) gid=65534(nogroup) groups=65534(nogroup)
+uid=5(games) gid=60(games) groups=60(games)
+uid=6(man) gid=12(man) groups=12(man)
+uid=7(lp) gid=7(lp) groups=7(lp)
+uid=8(mail) gid=8(mail) groups=8(mail)
+uid=9(news) gid=9(news) groups=9(news)
+uid=10(uucp) gid=10(uucp) groups=10(uucp)
+uid=13(proxy) gid=13(proxy) groups=13(proxy)
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+uid=34(backup) gid=34(backup) groups=34(backup)
+uid=38(list) gid=38(list) groups=38(list)
+uid=39(irc) gid=39(irc) groups=39(irc)
+uid=42(_apt) gid=65534(nogroup) groups=65534(nogroup)
+uid=65534(nobody) gid=65534(nogroup) groups=65534(nogroup)
+uid=998(systemd-network) gid=998(systemd-network) groups=998(systemd-network)
+uid=997(systemd-timesync) gid=997(systemd-timesync) groups=997(systemd-timesync)
+uid=100(messagebus) gid=102(messagebus) groups=102(messagebus)
+uid=1000(arsenal) gid=1000(arsenal) groups=1000(arsenal)
+
+
+[-] Contents of /etc/passwd:
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+_apt:x:42:65534::/nonexistent:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin
+systemd-timesync:x:997:997:systemd Time Synchronization:/:/usr/sbin/nologin
+messagebus:x:100:102::/nonexistent:/usr/sbin/nologin
+arsenal:x:1000:1000::/home/arsenal:/usr/bin/zsh
+
+
+[-] Super user account(s):
+root
+
+
+[+] We can sudo without supplying a password!
+Matching Defaults entries for arsenal on arsenal:
+env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin, use_pty
+
+User arsenal may run the following commands on arsenal:
+(root) NOPASSWD: ALL
+
+
+[-] Are permissions on /home directories lax:
+total 16K
+drwxr-xr-x 1 root    root    4.0K Feb  1 00:47 .
+drwxr-xr-x 1 root    root    4.0K Feb  1 00:58 ..
+drwxr-xr-x 1 arsenal arsenal 4.0K Feb  1 01:05 arsenal
+
+
+### ENVIRONMENTAL #######################################
+[-] Environment information:
+COLORTERM=yes
+HOSTNAME=arsenal
+LESS_TERMCAP_se=
+LESS_TERMCAP_so=
+EDITOR=vim
+PWD=/home/arsenal/tools
+LOGNAME=arsenal
+XAUTHORITY=/tmp/.docker.xauth
+HOME=/home/arsenal
+TERM=xterm
+LESS_TERMCAP_mb=
+LESS_TERMCAP_me=
+LESS_TERMCAP_md=
+DISPLAY=host.docker.internal:0
+LESS_TERMCAP_ue=
+SHLVL=2
+LESS_TERMCAP_us=
+PAGER=less
+PATH=/home/arsenal/.local/bin:/home/arsenal/tools/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/go/bin:/home/arsenal/goProjects/bin
+MAIL=/var/mail/
+OLDPWD=/home/arsenal
+GOPATH=/home/arsenal/goProjects
+_=/usr/bin/env
+
+
+ls: cannot access '/usr/local/go/bin': No such file or directory
+ls: cannot access '/home/arsenal/goProjects/bin': No such file or directory
+[-] Path information:
+/home/arsenal/.local/bin:/home/arsenal/tools/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/go/bin:/home/arsenal/goProjects/bin
+lrwxrwxrwx 1 root    root       7 Jan 30 19:44 /bin -> usr/bin
+drwxr-xr-x 2 arsenal arsenal 4096 Feb  1 00:54 /home/arsenal/.local/bin
+drwxr-xr-x 1 arsenal arsenal 4096 Feb  1 00:54 /home/arsenal/tools/bin
+lrwxrwxrwx 1 root    root       8 Jan 30 19:44 /sbin -> usr/sbin
+drwxr-xr-x 1 root    root    4096 Feb  1 01:04 /usr/bin
+drwxr-xr-x 2 root    root    4096 Jan 30 19:44 /usr/local/bin
+drwxr-xr-x 2 root    root    4096 Jan 30 19:44 /usr/local/sbin
+drwxr-xr-x 1 root    root    4096 Feb  1 00:46 /usr/sbin
+
+
+[-] Available shells:
+# /etc/shells: valid login shells
+/bin/sh
+/usr/bin/sh
+/bin/bash
+/usr/bin/bash
+/bin/rbash
+/usr/bin/rbash
+/bin/dash
+/usr/bin/dash
+/bin/zsh
+/usr/bin/zsh
+/usr/bin/zsh
+
+
+[-] Current umask value:
+0022
+u=rwx,g=rx,o=rx
+
+
+[-] umask value as specified in /etc/login.defs:
+UMASK           022
+
+
+[-] Password and storage information:
+PASS_MAX_DAYS   99999
+PASS_MIN_DAYS   0
+PASS_WARN_AGE   7
+ENCRYPT_METHOD SHA512
+
+
+### JOBS/TASKS ##########################################
+[-] Cron jobs:
+/etc/cron.d:
+total 12
+drwxr-xr-x 2 root root 4096 Jan 30 19:44 .
+drwxr-xr-x 1 root root 4096 Feb  1 00:58 ..
+-rw-r--r-- 1 root root  201 Mar  5  2023 e2scrub_all
+
+/etc/cron.daily:
+total 24
+drwxr-xr-x 1 root root 4096 Feb  1 00:42 .
+drwxr-xr-x 1 root root 4096 Feb  1 00:58 ..
+-rwxr-xr-x 1 root root 1478 May 25  2023 apt-compat
+-rwxr-xr-x 1 root root  123 Mar 27  2023 dpkg
+-rwxr-xr-x 1 root root 2211 Feb 10  2018 locate
+-rwxr-xr-x 1 root root 1395 Mar 12  2023 man-db
+
+/etc/cron.weekly:
+total 12
+drwxr-xr-x 2 root root 4096 Feb  1 00:42 .
+drwxr-xr-x 1 root root 4096 Feb  1 00:58 ..
+-rwxr-xr-x 1 root root 1055 Mar 12  2023 man-db
+
+
+### NETWORKING  ##########################################
+[-] Nameserver(s):
+nameserver 192.168.192.1
+
+
+### SERVICES #############################################
+[-] Running processes:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+arsenal        1  0.4  0.0  10200  6476 pts/0    Ss   00:58   0:01 zsh -i
+arsenal      944  0.0  0.0   4848  3880 pts/0    S+   01:05   0:00 /bin/bash ./LinEnum.sh
+arsenal      945  0.1  0.0   4848  3052 pts/0    S+   01:05   0:00 /bin/bash ./LinEnum.sh
+arsenal      946  0.0  0.0   2488   904 pts/0    S+   01:05   0:00 tee -a
+arsenal     1113  0.0  0.0   4848  2732 pts/0    S+   01:05   0:00 /bin/bash ./LinEnum.sh
+arsenal     1114  0.0  0.0   8112  4080 pts/0    R+   01:05   0:00 ps aux
+
+
+[-] Process binaries and associated permissions (from above list):
+-rwxr-xr-x 1 root root 1265648 Apr 23  2023 /bin/bash
+
+
+[-] /etc/init.d/ binary permissions:
+total 28
+drwxr-xr-x 1 root root 4096 Feb  1 00:43 .
+drwxr-xr-x 1 root root 4096 Feb  1 00:58 ..
+-rwxr-xr-x 1 root root 3152 Sep 16 10:03 dbus
+-rwxr-xr-x 1 root root 1748 Feb 13  2023 hwclock.sh
+-rwxr-xr-x 1 root root  959 Dec 19  2022 procps
+-rwxr-xr-x 1 root root 1161 Jun 27  2023 sudo
+-rwxr-xr-x 1 root root 2762 Aug 18  2021 x11-common
+
+
+[-] /lib/systemd/* config file permissions:
+/lib/systemd/:
+total 3.3M
+drwxr-xr-x 1 root root 4.0K Feb  1 00:42 user
+drwxr-xr-x 2 root root 4.0K Feb  1 00:42 ntp-units.d
+drwxr-xr-x 1 root root  12K Feb  1 00:42 system
+drwxr-xr-x 2 root root 4.0K Feb  1 00:42 catalog
+drwxr-xr-x 2 root root 4.0K Feb  1 00:42 network
+drwxr-xr-x 2 root root 4.0K Feb  1 00:42 system-generators
+drwxr-xr-x 2 root root 4.0K Feb  1 00:42 system-preset
+drwxr-xr-x 1 root root 4.0K Feb  1 00:42 user-environment-generators
+drwxr-xr-x 2 root root 4.0K Feb  1 00:42 user-generators
+drwxr-xr-x 2 root root 4.0K Feb  1 00:42 user-preset
+drwxr-xr-x 2 root root 4.0K Nov 10 00:25 system-shutdown
+drwxr-xr-x 2 root root 4.0K Nov 10 00:25 system-sleep
+-rwxr-xr-x 1 root root  91K Nov 10 00:25 systemd
+-rwxr-xr-x 1 root root  15K Nov 10 00:25 systemd-ac-power
+-rwxr-xr-x 1 root root  31K Nov 10 00:25 systemd-backlight
+-rwxr-xr-x 1 root root  19K Nov 10 00:25 systemd-binfmt
+-rwxr-xr-x 1 root root  15K Nov 10 00:25 systemd-boot-check-no-failures
+-rwxr-xr-x 1 root root  15K Nov 10 00:25 systemd-cgroups-agent
+-rwxr-xr-x 1 root root  71K Nov 10 00:25 systemd-cryptsetup
+-rwxr-xr-x 1 root root  27K Nov 10 00:25 systemd-fsck
+-rwxr-xr-x 1 root root  27K Nov 10 00:25 systemd-fsckd
+-rwxr-xr-x 1 root root  23K Nov 10 00:25 systemd-growfs
+-rwxr-xr-x 1 root root  15K Nov 10 00:25 systemd-hibernate-resume
+-rwxr-xr-x 1 root root  43K Nov 10 00:25 systemd-hostnamed
+-rwxr-xr-x 1 root root  23K Nov 10 00:25 systemd-initctl
+-rwxr-xr-x 1 root root  23K Nov 10 00:25 systemd-integritysetup
+-rwxr-xr-x 1 root root 167K Nov 10 00:25 systemd-journald
+-rwxr-xr-x 1 root root  47K Nov 10 00:25 systemd-localed
+-rwxr-xr-x 1 root root 275K Nov 10 00:25 systemd-logind
+-rwxr-xr-x 1 root root  15K Nov 10 00:25 systemd-makefs
+-rwxr-xr-x 1 root root  47K Nov 10 00:25 systemd-measure
+-rwxr-xr-x 1 root root  19K Nov 10 00:25 systemd-modules-load
+-rwxr-xr-x 1 root root  35K Nov 10 00:25 systemd-network-generator
+-rwxr-xr-x 1 root root 1.6M Nov 10 00:25 systemd-networkd
+-rwxr-xr-x 1 root root  31K Nov 10 00:25 systemd-networkd-wait-online
+-rwxr-xr-x 1 root root  23K Nov 10 00:25 systemd-pcrphase
+-rwxr-xr-x 1 root root  23K Nov 10 00:25 systemd-pstore
+-rwxr-xr-x 1 root root  15K Nov 10 00:25 systemd-quotacheck
+-rwxr-xr-x 1 root root  23K Nov 10 00:25 systemd-random-seed
+-rwxr-xr-x 1 root root  19K Nov 10 00:25 systemd-remount-fs
+-rwxr-xr-x 1 root root  15K Nov 10 00:25 systemd-reply-password
+-rwxr-xr-x 1 root root  23K Nov 10 00:25 systemd-rfkill
+-rwxr-xr-x 1 root root  47K Nov 10 00:25 systemd-shutdown
+-rwxr-xr-x 1 root root  31K Nov 10 00:25 systemd-sleep
+-rwxr-xr-x 1 root root  31K Nov 10 00:25 systemd-socket-proxyd
+-rwxr-xr-x 1 root root  15K Nov 10 00:25 systemd-sulogin-shell
+-rwxr-xr-x 1 root root  23K Nov 10 00:25 systemd-sysctl
+lrwxrwxrwx 1 root root   41 Nov 10 00:25 systemd-sysroot-fstab-check -> system-generators/systemd-fstab-generator
+-rwxr-xr-x 1 root root  19K Nov 10 00:25 systemd-time-wait-sync
+-rwxr-xr-x 1 root root  43K Nov 10 00:25 systemd-timedated
+-rwxr-xr-x 1 root root  55K Nov 10 00:25 systemd-timesyncd
+-rwxr-xr-x 1 root root  19K Nov 10 00:25 systemd-update-utmp
+-rwxr-xr-x 1 root root  19K Nov 10 00:25 systemd-user-runtime-dir
+-rwxr-xr-x 1 root root  15K Nov 10 00:25 systemd-user-sessions
+-rwxr-xr-x 1 root root  23K Nov 10 00:25 systemd-veritysetup
+-rwxr-xr-x 1 root root  19K Nov 10 00:25 systemd-volatile-root
+-rwxr-xr-x 1 root root  15K Nov 10 00:25 systemd-xdg-autostart-condition
+-rw-r--r-- 1 root root  710 Nov 10 00:22 resolv.conf
+-rwxr-xr-x 1 root root 1.4K Sep 20 14:44 systemd-sysv-install
+
+/lib/systemd/user:
+total 140K
+drwxr-xr-x 2 root root 4.0K Feb  1 00:42 sockets.target.wants
+drwxr-xr-x 2 root root 4.0K Feb  1 00:41 graphical-session-pre.target.wants
+-rw-r--r-- 1 root root  287 Dec 19 12:55 ssh-agent.service
+-rw-r--r-- 1 root root  554 Nov 10 00:25 graphical-session-pre.target
+-rw-r--r-- 1 root root  442 Nov 10 00:22 app.slice
+-rw-r--r-- 1 root root  446 Nov 10 00:22 background.slice
+-rw-r--r-- 1 root root  505 Nov 10 00:22 basic.target
+-rw-r--r-- 1 root root  427 Nov 10 00:22 bluetooth.target
+-rw-r--r-- 1 root root  471 Nov 10 00:22 default.target
+-rw-r--r-- 1 root root  510 Nov 10 00:22 exit.target
+-rw-r--r-- 1 root root  492 Nov 10 00:22 graphical-session.target
+-rw-r--r-- 1 root root  402 Nov 10 00:22 paths.target
+-rw-r--r-- 1 root root  425 Nov 10 00:22 printer.target
+-rw-r--r-- 1 root root  443 Nov 10 00:22 session.slice
+-rw-r--r-- 1 root root  450 Nov 10 00:22 shutdown.target
+-rw-r--r-- 1 root root  428 Nov 10 00:22 smartcard.target
+-rw-r--r-- 1 root root  404 Nov 10 00:22 sockets.target
+-rw-r--r-- 1 root root  428 Nov 10 00:22 sound.target
+-rw-r--r-- 1 root root  598 Nov 10 00:22 systemd-exit.service
+-rw-r--r-- 1 root root  688 Nov 10 00:22 systemd-tmpfiles-clean.service
+-rw-r--r-- 1 root root  541 Nov 10 00:22 systemd-tmpfiles-clean.timer
+-rw-r--r-- 1 root root  728 Nov 10 00:22 systemd-tmpfiles-setup.service
+-rw-r--r-- 1 root root  453 Nov 10 00:22 timers.target
+-rw-r--r-- 1 root root  477 Nov 10 00:22 xdg-desktop-autostart.target
+-rw-r--r-- 1 root root  410 Sep 16 10:03 dbus.service
+-rw-r--r-- 1 root root  174 Sep 16 10:03 dbus.socket
+-rw-r--r-- 1 root root  200 Jan 29  2023 at-spi-dbus-bus.service
+-rw-r--r-- 1 root root  161 Dec 12  2022 dconf.service
+-rw-r--r-- 1 root root  212 Aug 28  2017 dirmngr.service
+-rw-r--r-- 1 root root  204 Aug 28  2017 dirmngr.socket
+-rw-r--r-- 1 root root  298 Aug 28  2017 gpg-agent-browser.socket
+-rw-r--r-- 1 root root  281 Aug 28  2017 gpg-agent-extra.socket
+-rw-r--r-- 1 root root  308 Aug 28  2017 gpg-agent-ssh.socket
+-rw-r--r-- 1 root root  223 Aug 28  2017 gpg-agent.service
+-rw-r--r-- 1 root root  234 Aug 28  2017 gpg-agent.socket
+
+/lib/systemd/user/sockets.target.wants:
+total 0
+lrwxrwxrwx 1 root root 14 Sep 16 10:03 dbus.socket -> ../dbus.socket
+
+/lib/systemd/user/graphical-session-pre.target.wants:
+total 0
+lrwxrwxrwx 1 root root 20 Dec 19 14:51 ssh-agent.service -> ../ssh-agent.service
+
+/lib/systemd/ntp-units.d:
+total 4.0K
+-rw-r--r-- 1 root root 116 Nov 10 00:22 80-systemd-timesync.list
+
+/lib/systemd/system:
+total 800K
+drwxr-xr-x 2 root root 4.0K Feb  1 00:42 multi-user.target.wants
+drwxr-xr-x 2 root root 4.0K Feb  1 00:42 sockets.target.wants
+drwxr-xr-x 2 root root 4.0K Feb  1 00:42 getty.target.wants
+drwxr-xr-x 2 root root 4.0K Feb  1 00:42 graphical.target.wants
+drwxr-xr-x 2 root root 4.0K Feb  1 00:42 initrd-root-device.target.wants
+drwxr-xr-x 2 root root 4.0K Feb  1 00:42 initrd-root-fs.target.wants
+drwxr-xr-x 2 root root 4.0K Feb  1 00:42 initrd.target.wants
+drwxr-xr-x 2 root root 4.0K Feb  1 00:42 rc-local.service.d
+drwxr-xr-x 2 root root 4.0K Feb  1 00:42 rescue.target.wants
+drwxr-xr-x 2 root root 4.0K Feb  1 00:42 sysinit.target.wants
+drwxr-xr-x 2 root root 4.0K Feb  1 00:42 systemd-localed.service.d
+drwxr-xr-x 2 root root 4.0K Feb  1 00:42 timers.target.wants
+drwxr-xr-x 2 root root 4.0K Feb  1 00:42 user-.slice.d
+drwxr-xr-x 2 root root 4.0K Feb  1 00:42 user@.service.d
+drwxr-xr-x 2 root root 4.0K Feb  1 00:42 user@0.service.d
+lrwxrwxrwx 1 root root   14 Nov 10 00:25 autovt@.service -> getty@.service
+-rw-r--r-- 1 root root 1.1K Nov 10 00:25 console-getty.service
+-rw-r--r-- 1 root root 1.3K Nov 10 00:25 container-getty@.service
+lrwxrwxrwx 1 root root    9 Nov 10 00:25 cryptdisks-early.service -> /dev/null
+lrwxrwxrwx 1 root root    9 Nov 10 00:25 cryptdisks.service -> /dev/null
+lrwxrwxrwx 1 root root   13 Nov 10 00:25 ctrl-alt-del.target -> reboot.target
+lrwxrwxrwx 1 root root   25 Nov 10 00:25 dbus-org.freedesktop.hostname1.service -> systemd-hostnamed.service
+lrwxrwxrwx 1 root root   23 Nov 10 00:25 dbus-org.freedesktop.locale1.service -> systemd-localed.service
+lrwxrwxrwx 1 root root   22 Nov 10 00:25 dbus-org.freedesktop.login1.service -> systemd-logind.service
+lrwxrwxrwx 1 root root   25 Nov 10 00:25 dbus-org.freedesktop.timedate1.service -> systemd-timedated.service
+-rw-r--r-- 1 root root 1.1K Nov 10 00:25 debug-shell.service
+lrwxrwxrwx 1 root root   16 Nov 10 00:25 default.target -> graphical.target
+-rw-r--r-- 1 root root  805 Nov 10 00:25 emergency.service
+-rw-r--r-- 1 root root 2.0K Nov 10 00:25 getty@.service
+lrwxrwxrwx 1 root root    9 Nov 10 00:25 hwclock.service -> /dev/null
+-rw-r--r-- 1 root root 1.3K Nov 10 00:25 initrd-parse-etc.service
+-rw-r--r-- 1 root root  701 Nov 10 00:25 kmod-static-nodes.service
+lrwxrwxrwx 1 root root   28 Nov 10 00:25 kmod.service -> systemd-modules-load.service
+drwxr-xr-x 2 root root 4.0K Nov 10 00:25 local-fs.target.wants
+lrwxrwxrwx 1 root root   22 Nov 10 00:25 procps.service -> systemd-sysctl.service
+-rw-r--r-- 1 root root  617 Nov 10 00:25 quotaon.service
+-rw-r--r-- 1 root root  724 Nov 10 00:25 rc-local.service
+lrwxrwxrwx 1 root root    9 Nov 10 00:25 rc.service -> /dev/null
+lrwxrwxrwx 1 root root    9 Nov 10 00:25 rcS.service -> /dev/null
+-rw-r--r-- 1 root root  796 Nov 10 00:25 rescue.service
+lrwxrwxrwx 1 root root   15 Nov 10 00:25 runlevel0.target -> poweroff.target
+lrwxrwxrwx 1 root root   13 Nov 10 00:25 runlevel1.target -> rescue.target
+drwxr-xr-x 2 root root 4.0K Nov 10 00:25 runlevel1.target.wants
+lrwxrwxrwx 1 root root   17 Nov 10 00:25 runlevel2.target -> multi-user.target
+drwxr-xr-x 2 root root 4.0K Nov 10 00:25 runlevel2.target.wants
+lrwxrwxrwx 1 root root   17 Nov 10 00:25 runlevel3.target -> multi-user.target
+drwxr-xr-x 2 root root 4.0K Nov 10 00:25 runlevel3.target.wants
+lrwxrwxrwx 1 root root   17 Nov 10 00:25 runlevel4.target -> multi-user.target
+drwxr-xr-x 2 root root 4.0K Nov 10 00:25 runlevel4.target.wants
+lrwxrwxrwx 1 root root   16 Nov 10 00:25 runlevel5.target -> graphical.target
+drwxr-xr-x 2 root root 4.0K Nov 10 00:25 runlevel5.target.wants
+lrwxrwxrwx 1 root root   13 Nov 10 00:25 runlevel6.target -> reboot.target
+-rw-r--r-- 1 root root 1.5K Nov 10 00:25 serial-getty@.service
+-rw-r--r-- 1 root root  727 Nov 10 00:25 systemd-backlight@.service
+-rw-r--r-- 1 root root 1.2K Nov 10 00:25 systemd-binfmt.service
+-rw-r--r-- 1 root root  726 Nov 10 00:25 systemd-boot-check-no-failures.service
+-rw-r--r-- 1 root root  813 Nov 10 00:25 systemd-fsck-root.service
+-rw-r--r-- 1 root root  749 Nov 10 00:25 systemd-fsck@.service
+-rw-r--r-- 1 root root  551 Nov 10 00:25 systemd-fsckd.service
+-rw-r--r-- 1 root root  540 Nov 10 00:25 systemd-fsckd.socket
+-rw-r--r-- 1 root root  676 Nov 10 00:25 systemd-hibernate-resume@.service
+-rw-r--r-- 1 root root  551 Nov 10 00:25 systemd-hibernate.service
+-rw-r--r-- 1 root root 1.2K Nov 10 00:25 systemd-hostnamed.service
+-rw-r--r-- 1 root root  572 Nov 10 00:25 systemd-hybrid-sleep.service
+-rw-r--r-- 1 root root  574 Nov 10 00:25 systemd-initctl.service
+-rw-r--r-- 1 root root 2.1K Nov 10 00:25 systemd-journald.service
+-rw-r--r-- 1 root root 1.5K Nov 10 00:25 systemd-journald@.service
+-rw-r--r-- 1 root root 1.2K Nov 10 00:25 systemd-localed.service
+-rw-r--r-- 1 root root 2.1K Nov 10 00:25 systemd-logind.service
+-rw-r--r-- 1 root root 1015 Nov 10 00:25 systemd-modules-load.service
+-rw-r--r-- 1 root root  788 Nov 10 00:25 systemd-network-generator.service
+-rw-r--r-- 1 root root  747 Nov 10 00:25 systemd-networkd-wait-online.service
+-rw-r--r-- 1 root root  800 Nov 10 00:25 systemd-networkd-wait-online@.service
+-rw-r--r-- 1 root root 2.4K Nov 10 00:25 systemd-networkd.service
+-rw-r--r-- 1 root root  976 Nov 10 00:25 systemd-pcrphase-initrd.service
+-rw-r--r-- 1 root root  878 Nov 10 00:25 systemd-pcrphase-sysinit.service
+-rw-r--r-- 1 root root  840 Nov 10 00:25 systemd-pcrphase.service
+-rw-r--r-- 1 root root  811 Nov 10 00:25 systemd-pstore.service
+-rw-r--r-- 1 root root  663 Nov 10 00:25 systemd-quotacheck.service
+-rw-r--r-- 1 root root 1.2K Nov 10 00:25 systemd-random-seed.service
+-rw-r--r-- 1 root root  775 Nov 10 00:25 systemd-remount-fs.service
+-rw-r--r-- 1 root root 1.3K Nov 10 00:25 systemd-repart.service
+-rw-r--r-- 1 root root  725 Nov 10 00:25 systemd-rfkill.service
+-rw-r--r-- 1 root root  619 Nov 10 00:25 systemd-suspend-then-hibernate.service
+-rw-r--r-- 1 root root  552 Nov 10 00:25 systemd-suspend.service
+-rw-r--r-- 1 root root  729 Nov 10 00:25 systemd-sysctl.service
+-rw-r--r-- 1 root root 1.2K Nov 10 00:25 systemd-time-wait-sync.service
+-rw-r--r-- 1 root root 1.2K Nov 10 00:25 systemd-timedated.service
+-rw-r--r-- 1 root root 1.8K Nov 10 00:25 systemd-timesyncd.service
+-rw-r--r-- 1 root root  803 Nov 10 00:25 systemd-update-utmp-runlevel.service
+-rw-r--r-- 1 root root  799 Nov 10 00:25 systemd-update-utmp.service
+-rw-r--r-- 1 root root  647 Nov 10 00:25 systemd-user-sessions.service
+-rw-r--r-- 1 root root  739 Nov 10 00:25 systemd-volatile-root.service
+-rw-r--r-- 1 root root  666 Nov 10 00:25 user-runtime-dir@.service
+-rw-r--r-- 1 root root  770 Nov 10 00:25 user@.service
+lrwxrwxrwx 1 root root    9 Nov 10 00:25 x11-common.service -> /dev/null
+-rw-r--r-- 1 root root  927 Nov 10 00:22 basic.target
+-rw-r--r-- 1 root root  449 Nov 10 00:22 blockdev@.target
+-rw-r--r-- 1 root root  435 Nov 10 00:22 bluetooth.target
+-rw-r--r-- 1 root root  463 Nov 10 00:22 boot-complete.target
+-rw-r--r-- 1 root root  473 Nov 10 00:22 cryptsetup-pre.target
+-rw-r--r-- 1 root root  420 Nov 10 00:22 cryptsetup.target
+-rw-r--r-- 1 root root  754 Nov 10 00:22 dev-hugepages.mount
+-rw-r--r-- 1 root root  701 Nov 10 00:22 dev-mqueue.mount
+-rw-r--r-- 1 root root  479 Nov 10 00:22 emergency.target
+-rw-r--r-- 1 root root  549 Nov 10 00:22 exit.target
+-rw-r--r-- 1 root root  410 Nov 10 00:22 factory-reset.target
+-rw-r--r-- 1 root root  500 Nov 10 00:22 final.target
+-rw-r--r-- 1 root root  461 Nov 10 00:22 first-boot-complete.target
+-rw-r--r-- 1 root root  518 Nov 10 00:22 getty-pre.target
+-rw-r--r-- 1 root root  509 Nov 10 00:22 getty.target
+-rw-r--r-- 1 root root  606 Nov 10 00:22 graphical.target
+-rw-r--r-- 1 root root  542 Nov 10 00:22 halt.target
+-rw-r--r-- 1 root root  526 Nov 10 00:22 hibernate.target
+-rw-r--r-- 1 root root  538 Nov 10 00:22 hybrid-sleep.target
+-rw-r--r-- 1 root root  670 Nov 10 00:22 initrd-cleanup.service
+-rw-r--r-- 1 root root  598 Nov 10 00:22 initrd-fs.target
+-rw-r--r-- 1 root root  566 Nov 10 00:22 initrd-root-device.target
+-rw-r--r-- 1 root root  571 Nov 10 00:22 initrd-root-fs.target
+-rw-r--r-- 1 root root  623 Nov 10 00:22 initrd-switch-root.service
+-rw-r--r-- 1 root root  779 Nov 10 00:22 initrd-switch-root.target
+-rw-r--r-- 1 root root  823 Nov 10 00:22 initrd-udevadm-cleanup-db.service
+-rw-r--r-- 1 root root  571 Nov 10 00:22 initrd-usr-fs.target
+-rw-r--r-- 1 root root  810 Nov 10 00:22 initrd.target
+-rw-r--r-- 1 root root  487 Nov 10 00:22 integritysetup-pre.target
+-rw-r--r-- 1 root root  430 Nov 10 00:22 integritysetup.target
+-rw-r--r-- 1 root root  549 Nov 10 00:22 kexec.target
+-rw-r--r-- 1 root root  453 Nov 10 00:22 local-fs-pre.target
+-rw-r--r-- 1 root root  555 Nov 10 00:22 local-fs.target
+-rw-r--r-- 1 root root  453 Nov 10 00:22 machine.slice
+-rw-r--r-- 1 root root  573 Nov 10 00:22 modprobe@.service
+-rw-r--r-- 1 root root  540 Nov 10 00:22 multi-user.target
+-rw-r--r-- 1 root root  483 Nov 10 00:22 network-online.target
+-rw-r--r-- 1 root root  490 Nov 10 00:22 network-pre.target
+-rw-r--r-- 1 root root  499 Nov 10 00:22 network.target
+-rw-r--r-- 1 root root  562 Nov 10 00:22 nss-lookup.target
+-rw-r--r-- 1 root root  521 Nov 10 00:22 nss-user-lookup.target
+-rw-r--r-- 1 root root  407 Nov 10 00:22 paths.target
+-rw-r--r-- 1 root root  607 Nov 10 00:22 poweroff.target
+-rw-r--r-- 1 root root  433 Nov 10 00:22 printer.target
+-rw-r--r-- 1 root root  764 Nov 10 00:22 proc-sys-fs-binfmt_misc.automount
+-rw-r--r-- 1 root root  711 Nov 10 00:22 proc-sys-fs-binfmt_misc.mount
+-rw-r--r-- 1 root root  598 Nov 10 00:22 reboot.target
+-rw-r--r-- 1 root root  557 Nov 10 00:22 remote-cryptsetup.target
+-rw-r--r-- 1 root root  454 Nov 10 00:22 remote-fs-pre.target
+-rw-r--r-- 1 root root  530 Nov 10 00:22 remote-fs.target
+-rw-r--r-- 1 root root  565 Nov 10 00:22 remote-veritysetup.target
+-rw-r--r-- 1 root root  500 Nov 10 00:22 rescue.target
+-rw-r--r-- 1 root root  548 Nov 10 00:22 rpcbind.target
+-rw-r--r-- 1 root root  457 Nov 10 00:22 shutdown.target
+-rw-r--r-- 1 root root  410 Nov 10 00:22 sigpwr.target
+-rw-r--r-- 1 root root  468 Nov 10 00:22 sleep.target
+-rw-r--r-- 1 root root  462 Nov 10 00:22 slices.target
+-rw-r--r-- 1 root root  428 Nov 10 00:22 smartcard.target
+-rw-r--r-- 1 root root  409 Nov 10 00:22 sockets.target
+-rw-r--r-- 1 root root  428 Nov 10 00:22 sound.target
+-rw-r--r-- 1 root root  585 Nov 10 00:22 suspend-then-hibernate.target
+-rw-r--r-- 1 root root  511 Nov 10 00:22 suspend.target
+-rw-r--r-- 1 root root  402 Nov 10 00:22 swap.target
+-rw-r--r-- 1 root root 1.2K Nov 10 00:22 sys-fs-fuse-connections.mount
+-rw-r--r-- 1 root root 1.1K Nov 10 00:22 sys-kernel-config.mount
+-rw-r--r-- 1 root root  730 Nov 10 00:22 sys-kernel-debug.mount
+-rw-r--r-- 1 root root  756 Nov 10 00:22 sys-kernel-tracing.mount
+-rw-r--r-- 1 root root  574 Nov 10 00:22 sysinit.target
+-rw-r--r-- 1 root root 1.4K Nov 10 00:22 syslog.socket
+-rw-r--r-- 1 root root  454 Nov 10 00:22 system-systemd-cryptsetup.slice
+-rw-r--r-- 1 root root 1.4K Nov 10 00:22 system-update-cleanup.service
+-rw-r--r-- 1 root root  551 Nov 10 00:22 system-update-pre.target
+-rw-r--r-- 1 root root  625 Nov 10 00:22 system-update.target
+-rw-r--r-- 1 root root  771 Nov 10 00:22 systemd-ask-password-console.path
+-rw-r--r-- 1 root root  834 Nov 10 00:22 systemd-ask-password-console.service
+-rw-r--r-- 1 root root  695 Nov 10 00:22 systemd-ask-password-wall.path
+-rw-r--r-- 1 root root  747 Nov 10 00:22 systemd-ask-password-wall.service
+-rw-r--r-- 1 root root  564 Nov 10 00:22 systemd-exit.service
+-rw-r--r-- 1 root root 1.3K Nov 10 00:22 systemd-firstboot.service
+-rw-r--r-- 1 root root  594 Nov 10 00:22 systemd-halt.service
+-rw-r--r-- 1 root root  553 Nov 10 00:22 systemd-initctl.socket
+-rw-r--r-- 1 root root  819 Nov 10 00:22 systemd-journal-flush.service
+-rw-r--r-- 1 root root  655 Nov 10 00:22 systemd-journald-audit.socket
+-rw-r--r-- 1 root root 1.2K Nov 10 00:22 systemd-journald-dev-log.socket
+-rw-r--r-- 1 root root  605 Nov 10 00:22 systemd-journald-varlink@.socket
+-rw-r--r-- 1 root root  934 Nov 10 00:22 systemd-journald.socket
+-rw-r--r-- 1 root root  746 Nov 10 00:22 systemd-journald@.socket
+-rw-r--r-- 1 root root  601 Nov 10 00:22 systemd-kexec.service
+-rw-r--r-- 1 root root  748 Nov 10 00:22 systemd-machine-id-commit.service
+-rw-r--r-- 1 root root  682 Nov 10 00:22 systemd-networkd.socket
+-rw-r--r-- 1 root root  575 Nov 10 00:22 systemd-poweroff.service
+-rw-r--r-- 1 root root  568 Nov 10 00:22 systemd-reboot.service
+-rw-r--r-- 1 root root  734 Nov 10 00:22 systemd-rfkill.socket
+-rw-r--r-- 1 root root 1.1K Nov 10 00:22 systemd-sysext.service
+-rw-r--r-- 1 root root 1.2K Nov 10 00:22 systemd-sysusers.service
+-rw-r--r-- 1 root root  749 Nov 10 00:22 systemd-tmpfiles-clean.service
+-rw-r--r-- 1 root root  539 Nov 10 00:22 systemd-tmpfiles-clean.timer
+-rw-r--r-- 1 root root  837 Nov 10 00:22 systemd-tmpfiles-setup-dev.service
+-rw-r--r-- 1 root root  999 Nov 10 00:22 systemd-tmpfiles-setup.service
+-rw-r--r-- 1 root root  434 Nov 10 00:22 time-set.target
+-rw-r--r-- 1 root root  487 Nov 10 00:22 time-sync.target
+-rw-r--r-- 1 root root  458 Nov 10 00:22 timers.target
+-rw-r--r-- 1 root root  465 Nov 10 00:22 umount.target
+-rw-r--r-- 1 root root  426 Nov 10 00:22 usb-gadget.target
+-rw-r--r-- 1 root root  440 Nov 10 00:22 user.slice
+-rw-r--r-- 1 root root  481 Nov 10 00:22 veritysetup-pre.target
+-rw-r--r-- 1 root root  427 Nov 10 00:22 veritysetup.target
+-rw-r--r-- 1 root root  327 Sep 21 20:55 pam_namespace.service
+-rw-r--r-- 1 root root  366 Sep 20 14:44 getty-static.service
+-rw-r--r-- 1 root root  410 Sep 16 10:03 dbus.service
+-rw-r--r-- 1 root root  102 Sep 16 10:03 dbus.socket
+lrwxrwxrwx 1 root root    9 Jun 27  2023 sudo.service -> /dev/null
+-rw-r--r-- 1 root root  389 May 25  2023 apt-daily-upgrade.service
+-rw-r--r-- 1 root root  184 May 25  2023 apt-daily-upgrade.timer
+-rw-r--r-- 1 root root  326 May 25  2023 apt-daily.service
+-rw-r--r-- 1 root root  156 May 25  2023 apt-daily.timer
+-rw-r--r-- 1 root root  147 Mar 27  2023 dpkg-db-backup.service
+-rw-r--r-- 1 root root  138 Mar 27  2023 dpkg-db-backup.timer
+-rw-r--r-- 1 root root  477 Mar 23  2023 fstrim.service
+-rw-r--r-- 1 root root  270 Mar 23  2023 fstrim.timer
+-rw-r--r-- 1 root root  738 Mar 12  2023 man-db.service
+-rw-r--r-- 1 root root  171 Mar 12  2023 man-db.timer
+-rw-r--r-- 1 root root  438 Mar  5  2023 e2scrub@.service
+-rw-r--r-- 1 root root  297 Mar  5  2023 e2scrub_all.service
+-rw-r--r-- 1 root root  251 Mar  5  2023 e2scrub_all.timer
+-rw-r--r-- 1 root root  245 Mar  5  2023 e2scrub_fail@.service
+-rw-r--r-- 1 root root  553 Mar  5  2023 e2scrub_reap.service
+
+/lib/systemd/system/multi-user.target.wants:
+total 0
+lrwxrwxrwx 1 root root 15 Nov 10 00:25 getty.target -> ../getty.target
+lrwxrwxrwx 1 root root 33 Nov 10 00:25 systemd-ask-password-wall.path -> ../systemd-ask-password-wall.path
+lrwxrwxrwx 1 root root 25 Nov 10 00:25 systemd-logind.service -> ../systemd-logind.service
+lrwxrwxrwx 1 root root 39 Nov 10 00:25 systemd-update-utmp-runlevel.service -> ../systemd-update-utmp-runlevel.service
+lrwxrwxrwx 1 root root 32 Nov 10 00:25 systemd-user-sessions.service -> ../systemd-user-sessions.service
+lrwxrwxrwx 1 root root 15 Sep 16 10:03 dbus.service -> ../dbus.service
+
+/lib/systemd/system/sockets.target.wants:
+total 0
+lrwxrwxrwx 1 root root 25 Nov 10 00:25 systemd-initctl.socket -> ../systemd-initctl.socket
+lrwxrwxrwx 1 root root 32 Nov 10 00:25 systemd-journald-audit.socket -> ../systemd-journald-audit.socket
+lrwxrwxrwx 1 root root 34 Nov 10 00:25 systemd-journald-dev-log.socket -> ../systemd-journald-dev-log.socket
+lrwxrwxrwx 1 root root 26 Nov 10 00:25 systemd-journald.socket -> ../systemd-journald.socket
+lrwxrwxrwx 1 root root 14 Sep 16 10:03 dbus.socket -> ../dbus.socket
+
+/lib/systemd/system/getty.target.wants:
+total 0
+lrwxrwxrwx 1 root root 23 Nov 10 00:25 getty-static.service -> ../getty-static.service
+
+/lib/systemd/system/graphical.target.wants:
+total 0
+lrwxrwxrwx 1 root root 39 Nov 10 00:25 systemd-update-utmp-runlevel.service -> ../systemd-update-utmp-runlevel.service
+
+/lib/systemd/system/initrd-root-device.target.wants:
+total 0
+lrwxrwxrwx 1 root root 27 Nov 10 00:25 remote-cryptsetup.target -> ../remote-cryptsetup.target
+lrwxrwxrwx 1 root root 28 Nov 10 00:25 remote-veritysetup.target -> ../remote-veritysetup.target
+
+/lib/systemd/system/initrd-root-fs.target.wants:
+total 0
+lrwxrwxrwx 1 root root 25 Nov 10 00:25 systemd-repart.service -> ../systemd-repart.service
+
+/lib/systemd/system/initrd.target.wants:
+total 0
+lrwxrwxrwx 1 root root 34 Nov 10 00:25 systemd-pcrphase-initrd.service -> ../systemd-pcrphase-initrd.service
+
+/lib/systemd/system/rc-local.service.d:
+total 4.0K
+-rw-r--r-- 1 root root 290 Sep 20 14:44 debian.conf
+
+/lib/systemd/system/rescue.target.wants:
+total 0
+lrwxrwxrwx 1 root root 39 Nov 10 00:25 systemd-update-utmp-runlevel.service -> ../systemd-update-utmp-runlevel.service
+
+/lib/systemd/system/sysinit.target.wants:
+total 0
+lrwxrwxrwx 1 root root 20 Nov 10 00:25 cryptsetup.target -> ../cryptsetup.target
+lrwxrwxrwx 1 root root 22 Nov 10 00:25 dev-hugepages.mount -> ../dev-hugepages.mount
+lrwxrwxrwx 1 root root 19 Nov 10 00:25 dev-mqueue.mount -> ../dev-mqueue.mount
+lrwxrwxrwx 1 root root 24 Nov 10 00:25 integritysetup.target -> ../integritysetup.target
+lrwxrwxrwx 1 root root 28 Nov 10 00:25 kmod-static-nodes.service -> ../kmod-static-nodes.service
+lrwxrwxrwx 1 root root 36 Nov 10 00:25 proc-sys-fs-binfmt_misc.automount -> ../proc-sys-fs-binfmt_misc.automount
+lrwxrwxrwx 1 root root 32 Nov 10 00:25 sys-fs-fuse-connections.mount -> ../sys-fs-fuse-connections.mount
+lrwxrwxrwx 1 root root 26 Nov 10 00:25 sys-kernel-config.mount -> ../sys-kernel-config.mount
+lrwxrwxrwx 1 root root 25 Nov 10 00:25 sys-kernel-debug.mount -> ../sys-kernel-debug.mount
+lrwxrwxrwx 1 root root 27 Nov 10 00:25 sys-kernel-tracing.mount -> ../sys-kernel-tracing.mount
+lrwxrwxrwx 1 root root 36 Nov 10 00:25 systemd-ask-password-console.path -> ../systemd-ask-password-console.path
+lrwxrwxrwx 1 root root 25 Nov 10 00:25 systemd-binfmt.service -> ../systemd-binfmt.service
+lrwxrwxrwx 1 root root 28 Nov 10 00:25 systemd-firstboot.service -> ../systemd-firstboot.service
+lrwxrwxrwx 1 root root 32 Nov 10 00:25 systemd-journal-flush.service -> ../systemd-journal-flush.service
+lrwxrwxrwx 1 root root 27 Nov 10 00:25 systemd-journald.service -> ../systemd-journald.service
+lrwxrwxrwx 1 root root 36 Nov 10 00:25 systemd-machine-id-commit.service -> ../systemd-machine-id-commit.service
+lrwxrwxrwx 1 root root 31 Nov 10 00:25 systemd-modules-load.service -> ../systemd-modules-load.service
+lrwxrwxrwx 1 root root 35 Nov 10 00:25 systemd-pcrphase-sysinit.service -> ../systemd-pcrphase-sysinit.service
+lrwxrwxrwx 1 root root 27 Nov 10 00:25 systemd-pcrphase.service -> ../systemd-pcrphase.service
+lrwxrwxrwx 1 root root 30 Nov 10 00:25 systemd-random-seed.service -> ../systemd-random-seed.service
+lrwxrwxrwx 1 root root 25 Nov 10 00:25 systemd-repart.service -> ../systemd-repart.service
+lrwxrwxrwx 1 root root 25 Nov 10 00:25 systemd-sysctl.service -> ../systemd-sysctl.service
+lrwxrwxrwx 1 root root 27 Nov 10 00:25 systemd-sysusers.service -> ../systemd-sysusers.service
+lrwxrwxrwx 1 root root 37 Nov 10 00:25 systemd-tmpfiles-setup-dev.service -> ../systemd-tmpfiles-setup-dev.service
+lrwxrwxrwx 1 root root 33 Nov 10 00:25 systemd-tmpfiles-setup.service -> ../systemd-tmpfiles-setup.service
+lrwxrwxrwx 1 root root 30 Nov 10 00:25 systemd-update-utmp.service -> ../systemd-update-utmp.service
+lrwxrwxrwx 1 root root 21 Nov 10 00:25 veritysetup.target -> ../veritysetup.target
+
+/lib/systemd/system/systemd-localed.service.d:
+total 4.0K
+-rw-r--r-- 1 root root 220 Nov  9 12:46 locale-gen.conf
+
+/lib/systemd/system/timers.target.wants:
+total 0
+lrwxrwxrwx 1 root root 31 Nov 10 00:25 systemd-tmpfiles-clean.timer -> ../systemd-tmpfiles-clean.timer
+
+/lib/systemd/system/user-.slice.d:
+total 4.0K
+-rw-r--r-- 1 root root 458 Nov 10 00:22 10-defaults.conf
+
+/lib/systemd/system/user@.service.d:
+total 4.0K
+-rw-r--r-- 1 root root 605 Nov 10 00:22 10-login-barrier.conf
+
+/lib/systemd/system/user@0.service.d:
+total 4.0K
+-rw-r--r-- 1 root root 548 Nov 10 00:22 10-login-barrier.conf
+
+/lib/systemd/system/local-fs.target.wants:
+total 0
+
+/lib/systemd/system/runlevel1.target.wants:
+total 0
+
+/lib/systemd/system/runlevel2.target.wants:
+total 0
+
+/lib/systemd/system/runlevel3.target.wants:
+total 0
+
+/lib/systemd/system/runlevel4.target.wants:
+total 0
+
+/lib/systemd/system/runlevel5.target.wants:
+total 0
+
+/lib/systemd/catalog:
+total 236K
+-rw-r--r-- 1 root root  13K Nov 10 00:25 systemd.be.catalog
+-rw-r--r-- 1 root root 9.6K Nov 10 00:25 systemd.be@latin.catalog
+-rw-r--r-- 1 root root  29K Nov 10 00:25 systemd.bg.catalog
+-rw-r--r-- 1 root root  20K Nov 10 00:25 systemd.catalog
+-rw-r--r-- 1 root root 7.6K Nov 10 00:25 systemd.da.catalog
+-rw-r--r-- 1 root root  688 Nov 10 00:25 systemd.de.catalog
+-rw-r--r-- 1 root root  13K Nov 10 00:25 systemd.fr.catalog
+-rw-r--r-- 1 root root 9.7K Nov 10 00:25 systemd.hr.catalog
+-rw-r--r-- 1 root root 8.0K Nov 10 00:25 systemd.hu.catalog
+-rw-r--r-- 1 root root  16K Nov 10 00:25 systemd.it.catalog
+-rw-r--r-- 1 root root  11K Nov 10 00:25 systemd.ko.catalog
+-rw-r--r-- 1 root root  22K Nov 10 00:25 systemd.pl.catalog
+-rw-r--r-- 1 root root 8.0K Nov 10 00:25 systemd.pt_BR.catalog
+-rw-r--r-- 1 root root  20K Nov 10 00:25 systemd.ru.catalog
+-rw-r--r-- 1 root root  11K Nov 10 00:25 systemd.sr.catalog
+-rw-r--r-- 1 root root 7.0K Nov 10 00:25 systemd.zh_CN.catalog
+-rw-r--r-- 1 root root 7.0K Nov 10 00:25 systemd.zh_TW.catalog
+
+/lib/systemd/network:
+total 40K
+-rw-r--r-- 1 root root  819 Nov 10 00:22 80-6rd-tunnel.network
+-rw-r--r-- 1 root root  937 Nov 10 00:22 80-container-host0.network
+-rw-r--r-- 1 root root  942 Nov 10 00:22 80-container-vb.network
+-rw-r--r-- 1 root root 1023 Nov 10 00:22 80-container-ve.network
+-rw-r--r-- 1 root root 1009 Nov 10 00:22 80-container-vz.network
+-rw-r--r-- 1 root root  619 Nov 10 00:22 80-ethernet.network.example
+-rw-r--r-- 1 root root  970 Nov 10 00:22 80-vm-vt.network
+-rw-r--r-- 1 root root  697 Nov 10 00:22 80-wifi-adhoc.network
+-rw-r--r-- 1 root root  633 Nov 10 00:22 80-wifi-ap.network.example
+-rw-r--r-- 1 root root  595 Nov 10 00:22 80-wifi-station.network.example
+
+/lib/systemd/system-generators:
+total 304K
+-rwxr-xr-x 1 root root 35K Nov 10 00:25 systemd-cryptsetup-generator
+-rwxr-xr-x 1 root root 15K Nov 10 00:25 systemd-debug-generator
+-rwxr-xr-x 1 root root 43K Nov 10 00:25 systemd-fstab-generator
+-rwxr-xr-x 1 root root 23K Nov 10 00:25 systemd-getty-generator
+-rwxr-xr-x 1 root root 31K Nov 10 00:25 systemd-gpt-auto-generator
+-rwxr-xr-x 1 root root 15K Nov 10 00:25 systemd-hibernate-resume-generator
+-rwxr-xr-x 1 root root 23K Nov 10 00:25 systemd-integritysetup-generator
+-rwxr-xr-x 1 root root 15K Nov 10 00:25 systemd-rc-local-generator
+-rwxr-xr-x 1 root root 15K Nov 10 00:25 systemd-run-generator
+-rwxr-xr-x 1 root root 15K Nov 10 00:25 systemd-system-update-generator
+-rwxr-xr-x 1 root root 31K Nov 10 00:25 systemd-sysv-generator
+-rwxr-xr-x 1 root root 31K Nov 10 00:25 systemd-veritysetup-generator
+
+/lib/systemd/system-preset:
+total 4.0K
+-rw-r--r-- 1 root root 1.4K Nov 10 00:22 90-systemd.preset
+
+/lib/systemd/user-environment-generators:
+total 20K
+-rwxr-xr-x 1 root root 15K Nov 10 00:25 30-systemd-environment-d-generator
+-rwxr-xr-x 1 root root 772 Sep  1  2022 90gpg-agent
+
+/lib/systemd/user-generators:
+total 32K
+-rwxr-xr-x 1 root root 31K Nov 10 00:25 systemd-xdg-autostart-generator
+
+/lib/systemd/user-preset:
+total 4.0K
+-rw-r--r-- 1 root root 580 Nov 10 00:22 90-systemd.preset
+
+/lib/systemd/system-shutdown:
+total 0
+
+/lib/systemd/system-sleep:
+total 0
+
+
+### SOFTWARE #############################################
+[-] Sudo version:
+Sudo version 1.9.13p3
+
+
+### INTERESTING FILES ####################################
+[-] Useful file locations:
+/usr/bin/wget
+/usr/bin/nmap
+/usr/bin/gcc
+/usr/bin/curl
+
+
+[-] Installed compilers:
+ii  g++                             4:12.2.0-3                     amd64        GNU C++ compiler
+ii  g++-12                          12.2.0-14                      amd64        GNU C++ compiler
+ii  g++-12-multilib                 12.2.0-14                      amd64        GNU C++ compiler (multilib support)
+ii  g++-multilib                    4:12.2.0-3                     amd64        GNU C++ compiler (multilib files)
+ii  gcc                             4:12.2.0-3                     amd64        GNU C compiler
+ii  gcc-12                          12.2.0-14                      amd64        GNU C compiler
+ii  gcc-12-multilib                 12.2.0-14                      amd64        GNU C compiler (multilib support)
+ii  gcc-multilib                    4:12.2.0-3                     amd64        GNU C compiler (multilib files)
+ii  golang:amd64                    2:1.19~1                       amd64        Go programming language compiler - metapackage
+ii  golang-1.19                     1.19.8-2                       all          Go programming language compiler - metapackage
+ii  golang-1.19-go                  1.19.8-2                       amd64        Go programming language compiler, linker, compiled stdlib
+ii  golang-go:amd64                 2:1.19~1                       amd64        Go programming language compiler, linker, compiled stdlib
+ii  libllvm15:amd64                 1:15.0.6-4+b1                  amd64        Modular compiler and toolchain technologies, runtime library
+ii  rpcsvc-proto                    1.4.3-1                        amd64        RPC protocol compiler and definitions
+
+
+[-] Can we read/write sensitive files:
+-rw-r--r-- 1 root root 1089 Feb  1 00:47 /etc/passwd
+-rw-r--r-- 1 root root 550 Feb  1 00:47 /etc/group
+-rw-r--r-- 1 root root 769 Apr 10  2021 /etc/profile
+-rw-r----- 1 root shadow 591 Feb  1 00:47 /etc/shadow
+
+
+[-] SUID files:
+-rwsr-xr-- 1 root messagebus 51272 Sep 16 10:03 /usr/lib/dbus-1.0/dbus-daemon-launch-helper
+-rwsr-xr-x 1 root root 653888 Dec 19 14:51 /usr/lib/openssh/ssh-keysign
+-rwsr-xr-x 1 root root 48896 Mar 23  2023 /usr/bin/newgrp
+-rwsr-xr-x 1 root root 59704 Mar 23  2023 /usr/bin/mount
+-rwsr-xr-x 1 root root 72000 Mar 23  2023 /usr/bin/su
+-rwsr-xr-x 1 root root 62672 Mar 23  2023 /usr/bin/chfn
+-rwsr-xr-x 1 root root 35128 Mar 23  2023 /usr/bin/umount
+-rwsr-xr-x 1 root root 68248 Mar 23  2023 /usr/bin/passwd
+-rwsr-xr-x 1 root root 88496 Mar 23  2023 /usr/bin/gpasswd
+-rwsr-xr-x 1 root root 52880 Mar 23  2023 /usr/bin/chsh
+-rwsr-xr-x 1 root root 281624 Jun 27  2023 /usr/bin/sudo
+
+
+[-] SGID files:
+-rwxr-sr-x 1 root shadow 39160 Sep 21 20:55 /usr/sbin/unix_chkpwd
+-rwxr-sr-x 1 root shadow 31184 Mar 23  2023 /usr/bin/expiry
+-rwxr-sr-x 1 root tty 39224 Mar 23  2023 /usr/bin/wall
+-rwxr-sr-x 1 root shadow 80376 Mar 23  2023 /usr/bin/chage
+-rwxr-sr-x 1 root tty 22848 Mar 23  2023 /usr/bin/write
+-rwxr-sr-x 1 root _ssh 481664 Dec 19 14:51 /usr/bin/ssh-agent
+
+
+[-] Can't search *.conf files as no keyword was entered
+
+[-] Can't search *.php files as no keyword was entered
+
+[-] Can't search *.log files as no keyword was entered
+
+[-] Can't search *.ini files as no keyword was entered
+
+[-] All *.conf files in /etc (recursive 1 level):
+-rw-r--r-- 1 root root 2584 Jul 29  2022 /etc/gai.conf
+-rw-r--r-- 1 root root 681 Jan 17  2023 /etc/xattr.conf
+-rw-r--r-- 1 root root 34 Sep 22  2022 /etc/ld.so.conf
+-rw-r--r-- 1 root root 3040 May 25  2023 /etc/adduser.conf
+-rw-r--r-- 1 root root 199 Feb  1 00:58 /etc/resolv.conf
+-rw-r--r-- 1 root root 526 Feb  1 00:43 /etc/nsswitch.conf
+-rw-r--r-- 1 root root 191 Feb  9  2023 /etc/libaudit.conf
+-rw-r--r-- 1 root root 1706 May 25  2023 /etc/deluser.conf
+-rw-r--r-- 1 root root 685 Mar  5  2023 /etc/e2scrub.conf
+-rw-r--r-- 1 root root 9 Aug  7  2006 /etc/host.conf
+-rw-r--r-- 1 root root 552 Sep 21 20:55 /etc/pam.conf
+-rw-r--r-- 1 root root 782 Mar  5  2023 /etc/mke2fs.conf
+-rw-r--r-- 1 root root 2969 Jan  8  2023 /etc/debconf.conf
+-rw-r--r-- 1 root root 10593 Oct 15  2022 /etc/sensors3.conf
+-rw-r--r-- 1 root root 2355 Dec 19  2022 /etc/sysctl.conf
+-rw-r--r-- 1 root root 5989 Feb  1 00:41 /etc/ca-certificates.conf
+-rw-r--r-- 1 root root 9804 Jun 27  2023 /etc/sudo_logsrvd.conf
+-rw-r--r-- 1 root root 4343 Jun 27  2023 /etc/sudo.conf
+
+
+[-] Current user's history files:
+-rw------- 1 arsenal arsenal 929 Feb  1 01:05 /home/arsenal/.zsh_history
+
+
+[-] Location and Permissions (if accessible) of .bak file(s):
+-rw-r--r-- 1 root root 228 Feb  1 00:06 /home/arsenal/tools/scripts/xmind/install.bak
+
+
+[-] Any interesting mail in /var/mail:
+total 12
+drwxrwsr-x 2 root mail 4096 Jan 30 19:44 .
+drwxr-xr-x 1 root root 4096 Jan 30 19:44 ..
+
+
+[+] Looks like we're in a Docker container:
+15:name=systemd:/docker/8efcc46d8e2ff3d5b239dcf5b0537d3a64d5d406ee3276cd78254b9a04f20248
+14:misc:/docker/8efcc46d8e2ff3d5b239dcf5b0537d3a64d5d406ee3276cd78254b9a04f20248
+13:rdma:/docker/8efcc46d8e2ff3d5b239dcf5b0537d3a64d5d406ee3276cd78254b9a04f20248
+12:pids:/docker/8efcc46d8e2ff3d5b239dcf5b0537d3a64d5d406ee3276cd78254b9a04f20248
+11:hugetlb:/docker/8efcc46d8e2ff3d5b239dcf5b0537d3a64d5d406ee3276cd78254b9a04f20248
+10:net_prio:/docker/8efcc46d8e2ff3d5b239dcf5b0537d3a64d5d406ee3276cd78254b9a04f20248
+9:perf_event:/docker/8efcc46d8e2ff3d5b239dcf5b0537d3a64d5d406ee3276cd78254b9a04f20248
+8:net_cls:/docker/8efcc46d8e2ff3d5b239dcf5b0537d3a64d5d406ee3276cd78254b9a04f20248
+7:freezer:/docker/8efcc46d8e2ff3d5b239dcf5b0537d3a64d5d406ee3276cd78254b9a04f20248
+6:devices:/docker/8efcc46d8e2ff3d5b239dcf5b0537d3a64d5d406ee3276cd78254b9a04f20248
+5:memory:/docker/8efcc46d8e2ff3d5b239dcf5b0537d3a64d5d406ee3276cd78254b9a04f20248
+4:blkio:/docker/8efcc46d8e2ff3d5b239dcf5b0537d3a64d5d406ee3276cd78254b9a04f20248
+3:cpuacct:/docker/8efcc46d8e2ff3d5b239dcf5b0537d3a64d5d406ee3276cd78254b9a04f20248
+2:cpu:/docker/8efcc46d8e2ff3d5b239dcf5b0537d3a64d5d406ee3276cd78254b9a04f20248
+1:cpuset:/docker/8efcc46d8e2ff3d5b239dcf5b0537d3a64d5d406ee3276cd78254b9a04f20248
+0::/docker/8efcc46d8e2ff3d5b239dcf5b0537d3a64d5d406ee3276cd78254b9a04f20248
+-rwxr-xr-x 1 root root 0 Feb  1 00:58 /.dockerenv
+
+
+[-] Anything juicy in the Dockerfile:
+-rw-r--r-- 1 arsenal arsenal 299 Feb  1 00:50 /home/arsenal/tools/dirsearch/Dockerfile
+-rw-r--r-- 1 root root 2008 Mar 29  2023 /usr/share/go-1.19/src/crypto/internal/boring/Dockerfile
+-rw-r--r-- 1 root root 506 Mar 29  2023 /usr/share/go-1.19/src/crypto/internal/nistec/fiat/Dockerfile
+
+
+### SCAN COMPLETE ####################################
+arsenal@arsenal ~/tools % go version
+go version go1.19.8 linux/amd64
+arsenal@arsenal ~/tools % ls
+LinEnum.sh  amass  burp.jar   exploitdb  peass    sqlmap-dev
+SecLists    bin    dirsearch  ghidra     scripts
+arsenal@arsenal ~/tools % cd ..
+arsenal@arsenal ~ % pwd
+/home/arsenal
+arsenal@arsenal ~ % ls
+goProjects  shared  wordlists
+privesc     tools   _data
+arsenal@arsenal ~ % cd goProjects
+arsenal@arsenal ~/goProjects % ls
+bin  pkg
+arsenal@arsenal ~/goProjects % cd bin
+arsenal@arsenal ~/goProjects/bin % ls
+assetfinder  gobuster  httprobe  meg
+arsenal@arsenal ~/goProjects/bin % ./assetfinder
+
+^C
+130 arsenal@arsenal ~/goProjects/bin % ./gobuster
+Usage:
+gobuster [command]
+
+Available Commands:
+completion  Generate the autocompletion script for the specified shell
+dir         Uses directory/file enumeration mode
+dns         Uses DNS subdomain enumeration mode
+fuzz        Uses fuzzing mode. Replaces the keyword FUZZ in the URL, Headers and the request body
+gcs         Uses gcs bucket enumeration mode
+help        Help about any command
+s3          Uses aws bucket enumeration mode
+tftp        Uses TFTP enumeration mode
+version     shows the current version
+vhost       Uses VHOST enumeration mode (you most probably want to use the IP address as the URL parameter)
+
+Flags:
+--debug                 Enable debug output
+--delay duration        Time each thread waits between requests (e.g. 1500ms)
+-h, --help                  help for gobuster
+--no-color              Disable color output
+--no-error              Don't display errors
+-z, --no-progress           Don't display progress
+-o, --output string         Output file to write results to (defaults to stdout)
+-p, --pattern string        File containing replacement patterns
+-q, --quiet                 Don't print the banner and other noise
+-t, --threads int           Number of concurrent threads (default 10)
+-v, --verbose               Verbose output (errors)
+-w, --wordlist string       Path to the wordlist. Set to - to use STDIN.
+--wordlist-offset int   Resume from a given position in the wordlist (defaults to 0)
+
+Use "gobuster [command] --help" for more information about a command.
+arsenal@arsenal ~/goProjects/bin % ls
+assetfinder  gobuster  httprobe  meg
+arsenal@arsenal ~/goProjects/bin % ./httprobe
+^C
+130 arsenal@arsenal ~/goProjects/bin % ./met
+zsh: correct './met' to './meg' [nyae]? %                     130 arsenal@arsenal ~/goProjects/bin % ./meg
+failed to open paths file: file ./paths not found
+1 arsenal@arsenal ~/goProjects/bin % ls
+assetfinder  gobuster  httprobe  meg
+arsenal@arsenal ~/goProjects/bin % cd ..
+arsenal@arsenal ~/goProjects % ls
+bin  pkg
+arsenal@arsenal ~/goProjects % cd pkg
+arsenal@arsenal ~/goProjects/pkg % ls
+mod  sumdb
+arsenal@arsenal ~/goProjects/pkg % cd mod
+arsenal@arsenal ~/goProjects/pkg/mod % ls
+aead.dev  github.com  go.uber.org  gopkg.in
+cache     go.etcd.io  golang.org
+arsenal@arsenal ~/goProjects/pkg/mod % tree .
+130 arsenal@arsenal ~/goProjects/pkg/mod % cd ..
+arsenal@arsenal ~/goProjects/pkg % cd ..
+arsenal@arsenal ~/goProjects % tree .
+130 arsenal@arsenal ~/goProjects % apt-get install tree
+E: Could not open lock file /var/lib/dpkg/lock-frontend - open (13: Permission denied)
+E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root?
+100 arsenal@arsenal ~/goProjects % sudo !!
+sudo apt-get install tree
+sudo: unable to resolve host arsenal: Name or service not known
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following NEW packages will be installed:
+tree
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 52.5 kB of archives.
+After this operation, 116 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian stable/main amd64 tree amd64 2.1.0-1 [52.5 kB]
+Fetched 52.5 kB in 0s (237 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package tree.
+(Reading database ... 58418 files and directories currently installed.)
+Preparing to unpack .../tree_2.1.0-1_amd64.deb ...
+Unpacking tree (2.1.0-1) ...
+Setting up tree (2.1.0-1) ...
+Processing triggers for man-db arsenal@arsenal arsenal@arsenal ~/goProjects %
+arsenal@arsenal ~/goProjects % pwd
+/home/arsenal/goProjects
+arsenal@arsenal ~/goProjects % go
+Go is a tool for managing Go source code.
+
+Usage:
+
+go <command> [arguments]
+
+The commands are:
+
+bug         start a bug report
+build       compile packages and dependencies
+clean       remove object files and cached files
+doc         show documentation for package or symbol
+env         print Go environment information
+fix         update packages to use new APIs
+fmt         gofmt (reformat) package sources
+generate    generate Go files by processing source
+get         add dependencies to current module and install them
+install     compile and install packages and dependencies
+list        list packages or modules
+mod         module maintenance
+work        workspace maintenance
+run         compile and run Go program
+test        test packages
+tool        run specified go tool
+version     print Go version
+vet         report likely mistakes in packages
+
+Use "go help <command>" for more information about a command.
+
+Additional help topics:
+
+buildconstraint build constraints
+buildmode       build modes
+c               calling between Go and C
+cache           build and test caching
+environment     environment variables
+filetype        file types
+go.mod          the go.mod file
+gopath          GOPATH environment variable
+gopath-get      legacy GOPATH go get
+goproxy         module proxy protocol
+importpath      import path syntax
+modules         modules, module versions, and more
+module-get      module-aware go get
+module-auth     module authentication using go.sum
+packages        package lists and patterns
+private         configuration for downloading non-public code
+testflag        testing flags
+testfunc        testing functions
+vcs             controlling version control with GOVCS
+
+Use "go help <topic>" for more information about that topic.
+
+2 arsenal@arsenal ~/goProjects % ls
+bin  pkg
+arsenal@arsenal ~/goProjects % cd ..
+arsenal@arsenal ~ % ls
+goProjects  privesc  shared  tools  wordlists  _data
+arsenal@arsenal ~ % cd wordlists
+arsenal@arsenal ~/wordlists % ls
+dirsearch  seclists
+arsenal@arsenal ~/wordlists % cd dirsearch
+arsenal@arsenal ~/wordlists/dirsearch (git)-[master] % ls
+400_blacklist.txt  403_blacklist.txt  500_blacklist.txt  db  dicc.txt  user-agents.txt
+arsenal@arsenal ~/wordlists/dirsearch (git)-[master] % cd ..
+arsenal@arsenal ~/wordlists % cd seclists
+arsenal@arsenal ~/wordlists/seclists (git)-[master] % ls
+CONTRIBUTING.md  Fuzzing  Miscellaneous     Payloads   SecLists.png
+CONTRIBUTORS.md  IOCs     Passwords         README.md  Usernames
+Discovery        LICENSE  Pattern-Matching  SecLists   Web-Shells
+arsenal@arsenal ~/wordlists/seclists (git)-[master] % cd Passwords
+arsenal@arsenal ~/wordlists/seclists/Passwords (git)-[master] % ls
+500-worst-passwords.txt           darkweb2017-top1000.txt
+500-worst-passwords.txt.bz2       darkweb2017-top10000.txt
+2020-200_most_used_passwords.txt  days.txt
+2023-200_most_used_passwords.txt  der-postillon.txt
+BiblePass                         dutch_common_wordlist.txt
+Common-Credentials                dutch_passwordlist.txt
+Cracked-Hashes                    dutch_wordlist
+Default-Credentials               german_misc.txt
+Honeypot-Captures                 months.txt
+Keyboard-Walks                    mssql-passwords-nansh0u-guardicore.txt
+Leaked-Databases                  openwall.net-all.txt
+Malware                           probable-v2-top207.txt
+Most-Popular-Letter-Passes.txt    probable-v2-top1575.txt
+PHP-Magic-Hashes.txt              probable-v2-top12000.txt
+Permutations                      richelieu-french-top5000.txt
+README.md                         richelieu-french-top20000.txt
+SCRABBLE-hackerhouse.tgz          scraped-JWT-secrets.txt
+Software                          seasons.txt
+UserPassCombo-Jay.txt             stupid-ones-in-production.txt
+WiFi-WPA                          twitter-banned.txt
+Wikipedia                         unkown-azul.txt
+bt4-password.txt                  xato-net-10-million-passwords.txt
+cirt-default-passwords.txt        xato-net-10-million-passwords-10.txt
+citrix.txt                        xato-net-10-million-passwords-100.txt
+clarkson-university-82.txt        xato-net-10-million-passwords-1000.txt
+common_corporate_passwords.lst    xato-net-10-million-passwords-10000.txt
+darkc0de.txt                      xato-net-10-million-passwords-100000.txt
+darkweb2017-top10.txt             xato-net-10-million-passwords-1000000.txt
+darkweb2017-top100.txt            xato-net-10-million-passwords-dup.txt
+arsenal@arsenal ~/wordlists/seclists/Passwords (git)-[master] % cd citrix.txt
+Correcting citrix.txt to .
+arsenal@arsenal ~/wordlists/seclists/Passwords (git)-[master] % ls
+500-worst-passwords.txt           darkweb2017-top1000.txt
+500-worst-passwords.txt.bz2       darkweb2017-top10000.txt
+2020-200_most_used_passwords.txt  days.txt
+2023-200_most_used_passwords.txt  der-postillon.txt
+BiblePass                         dutch_common_wordlist.txt
+Common-Credentials                dutch_passwordlist.txt
+Cracked-Hashes                    dutch_wordlist
+Default-Credentials               german_misc.txt
+Honeypot-Captures                 months.txt
+Keyboard-Walks                    mssql-passwords-nansh0u-guardicore.txt
+Leaked-Databases                  openwall.net-all.txt
+Malware                           probable-v2-top207.txt
+Most-Popular-Letter-Passes.txt    probable-v2-top1575.txt
+PHP-Magic-Hashes.txt              probable-v2-top12000.txt
+Permutations                      richelieu-french-top5000.txt
+README.md                         richelieu-french-top20000.txt
+SCRABBLE-hackerhouse.tgz          scraped-JWT-secrets.txt
+Software                          seasons.txt
+UserPassCombo-Jay.txt             stupid-ones-in-production.txt
+WiFi-WPA                          twitter-banned.txt
+Wikipedia                         unkown-azul.txt
+bt4-password.txt                  xato-net-10-million-passwords.txt
+cirt-default-passwords.txt        xato-net-10-million-passwords-10.txt
+citrix.txt                        xato-net-10-million-passwords-100.txt
+clarkson-university-82.txt        xato-net-10-million-passwords-1000.txt
+common_corporate_passwords.lst    xato-net-10-million-passwords-10000.txt
+darkc0de.txt                      xato-net-10-million-passwords-100000.txt
+darkweb2017-top10.txt             xato-net-10-million-passwords-1000000.txt
+darkweb2017-top100.txt            xato-net-10-million-passwords-dup.txt
+arsenal@arsenal ~/wordlists/seclists/Passwords (git)-[master] % vim citrix.txt
+arsenal@arsenal ~/wordlists/seclists/Passwords (git)-[master] % vim clarkson-university-82.txt arsenal@arsenal ~/wordlists/seclists/Passwords (git)-[master] %
+130 arsenal@arsenal ~/wordlists/seclists/Passwords (git)-[master] % cd BiblePass
+arsenal@arsenal ~/wordlists/seclists/Passwords/BiblePass (git)-[master] % ls
+BiblePass_part01.txt  BiblePass_part06.txt  BiblePass_part11.txt  BiblePass_part16.txt
+BiblePass_part02.txt  BiblePass_part07.txt  BiblePass_part12.txt  BiblePass_part17.txt
+BiblePass_part03.txt  BiblePass_part08.txt  BiblePass_part13.txt
+BiblePass_part04.txt  BiblePass_part09.txt  BiblePass_part14.txt
+BiblePass_part05.txt  BiblePass_part10.txt  BiblePass_part15.txt
+arsenal@arsenal ~/wordlists/seclists/Passwords/BiblePass (git)-[master] % vim BiblePass_part01.txt
+arsenal@arsenal ~/wordlists/seclists/Passwords/BiblePass (git)-[master] % vim BiblePass_part17.txt
+arsenal@arsenal ~/wordlists/seclists/Passwords/BiblePass (git)-[master] % cd ..
+arsenal@arsenal ~/wordlists/seclists/Passwords (git)-[master] % ls
+500-worst-passwords.txt           darkweb2017-top1000.txt
+500-worst-passwords.txt.bz2       darkweb2017-top10000.txt
+2020-200_most_used_passwords.txt  days.txt
+2023-200_most_used_passwords.txt  der-postillon.txt
+BiblePass                         dutch_common_wordlist.txt
+Common-Credentials                dutch_passwordlist.txt
+Cracked-Hashes                    dutch_wordlist
+Default-Credentials               german_misc.txt
+Honeypot-Captures                 months.txt
+Keyboard-Walks                    mssql-passwords-nansh0u-guardicore.txt
+Leaked-Databases                  openwall.net-all.txt
+Malware                           probable-v2-top207.txt
+Most-Popular-Letter-Passes.txt    probable-v2-top1575.txt
+PHP-Magic-Hashes.txt              probable-v2-top12000.txt
+Permutations                      richelieu-french-top5000.txt
+README.md                         richelieu-french-top20000.txt
+SCRABBLE-hackerhouse.tgz          scraped-JWT-secrets.txt
+Software                          seasons.txt
+UserPassCombo-Jay.txt             stupid-ones-in-production.txt
+WiFi-WPA                          twitter-banned.txt
+Wikipedia                         unkown-azul.txt
+bt4-password.txt                  xato-net-10-million-passwords.txt
+cirt-default-passwords.txt        xato-net-10-million-passwords-10.txt
+citrix.txt                        xato-net-10-million-passwords-100.txt
+clarkson-university-82.txt        xato-net-10-million-passwords-1000.txt
+common_corporate_passwords.lst    xato-net-10-million-passwords-10000.txt
+darkc0de.txt                      xato-net-10-million-passwords-100000.txt
+darkweb2017-top10.txt             xato-net-10-million-passwords-1000000.txt
+darkweb2017-top100.txt            xato-net-10-million-passwords-dup.txt
+arsenal@arsenal ~/wordlists/seclists/Passwords (git)-[master] % cd Keyboard-Walks
+arsenal@arsenal ..ists/seclists/Passwords/Keyboard-Walks (git)-[master] % ls
+Keyboard-Combinations.txt  README.md  walk-the-line.txt
+arsenal@arsenal ..ists/seclists/Passwords/Keyboard-Walks (git)-[master] % vim walk-the-line.txt
+
+arsenal@arsenal ..ists/seclists/Passwords/Keyboard-Walks (git)-[master] % ls
+Keyboard-Combinations.txt  README.md  walk-the-line.txt
+arsenal@arsenal ..ists/seclists/Passwords/Keyboard-Walks (git)-[master] % vim Keyboard-Combinations.txt
+arsenal@arsenal ..ists/seclists/Passwords/Keyboard-Walks (git)-[master] % cd ..
+arsenal@arsenal ~/wordlists/seclists/Passwords (git)-[master] % vim 2023-200_most_used_passwords.txt
+arsenal@arsenal ~/wordlists/seclists/Passwords (git)-[master] % vim 2020-200_most_used_passwords.txt
+arsenal@arsenal ~/wordlists/seclists/Passwords (git)-[master] % vim scraped-JWT-secrets.txt
+arsenal@arsenal ~/wordlists/seclists/Passwords (git)-[master] % vim seasons.txt
+arsenal@arsenal ~/wordlists/seclists/Passwords (git)-[master] % cd Common-Credentials
+arsenal@arsenal ../seclists/Passwords/Common-Credentials (git)-[master] % ls
+10k-most-common.txt
+10-million-password-list-top-100.txt
+10-million-password-list-top-500.txt
+10-million-password-list-top-1000.txt
+10-million-password-list-top-10000.txt
+10-million-password-list-top-100000.txt
+10-million-password-list-top-1000000.txt
+100k-most-used-passwords-NCSC.txt
+500-worst-passwords.txt
+1900-2020.txt
+SplashData-2014.txt
+SplashData-2015-1.txt
+SplashData-2015-2.txt
+best15.txt
+best110.txt
+best1050.txt
+common-passwords-win.txt
+four-digit-pin-codes-sorted-by-frequency-withcount.csv
+medical-devices.txt
+top-20-common-SSH-passwords.txt
+top-passwords-shortlist.txt
+worst-passwords-2017-top100-slashdata.txt
+arsenal@arsenal ../seclists/Passwords/Common-Credentials (git)-[master] % vim *
+22 files to edit
+arsenal@arsenal ../seclists/Passwords/Common-Credentials (git)-[master] % cd ..
+arsenal@arsenal ~/wordlists/seclists/Passwords (git)-[master] % ls
+500-worst-passwords.txt           darkweb2017-top1000.txt
+500-worst-passwords.txt.bz2       darkweb2017-top10000.txt
+2020-200_most_used_passwords.txt  days.txt
+2023-200_most_used_passwords.txt  der-postillon.txt
+BiblePass                         dutch_common_wordlist.txt
+Common-Credentials                dutch_passwordlist.txt
+Cracked-Hashes                    dutch_wordlist
+Default-Credentials               german_misc.txt
+Honeypot-Captures                 months.txt
+Keyboard-Walks                    mssql-passwords-nansh0u-guardicore.txt
+Leaked-Databases                  openwall.net-all.txt
+Malware                           probable-v2-top207.txt
+Most-Popular-Letter-Passes.txt    probable-v2-top1575.txt
+PHP-Magic-Hashes.txt              probable-v2-top12000.txt
+Permutations                      richelieu-french-top5000.txt
+README.md                         richelieu-french-top20000.txt
+SCRABBLE-hackerhouse.tgz          scraped-JWT-secrets.txt
+Software                          seasons.txt
+UserPassCombo-Jay.txt             stupid-ones-in-production.txt
+WiFi-WPA                          twitter-banned.txt
+Wikipedia                         unkown-azul.txt
+bt4-password.txt                  xato-net-10-million-passwords.txt
+cirt-default-passwords.txt        xato-net-10-million-passwords-10.txt
+citrix.txt                        xato-net-10-million-passwords-100.txt
+clarkson-university-82.txt        xato-net-10-million-passwords-1000.txt
+common_corporate_passwords.lst    xato-net-10-million-passwords-10000.txt
+darkc0de.txt                      xato-net-10-million-passwords-100000.txt
+darkweb2017-top10.txt             xato-net-10-million-passwords-1000000.txt
+darkweb2017-top100.txt            xato-net-10-million-passwords-dup.txt
+arsenal@arsenal ~/wordlists/seclists/Passwords (git)-[master] % vim twitter-banned.txt
+arsenal@arsenal ~/wordlists/seclists/Passwords (git)-[master] % vim xato-net-10-million-passwords
+arsenal@arsenal ~/wordlists/seclists/Passwords (git)-[master] % pwd
+/home/arsenal/wordlists/seclists/Passwords
+arsenal@arsenal ~/wordlists/seclists/Passwords (git)-[master] % ls
+500-worst-passwords.txt           darkweb2017-top1000.txt
+500-worst-passwords.txt.bz2       darkweb2017-top10000.txt
+2020-200_most_used_passwords.txt  days.txt
+2023-200_most_used_passwords.txt  der-postillon.txt
+BiblePass                         dutch_common_wordlist.txt
+Common-Credentials                dutch_passwordlist.txt
+Cracked-Hashes                    dutch_wordlist
+Default-Credentials               german_misc.txt
+Honeypot-Captures                 months.txt
+Keyboard-Walks                    mssql-passwords-nansh0u-guardicore.txt
+Leaked-Databases                  openwall.net-all.txt
+Malware                           probable-v2-top207.txt
+Most-Popular-Letter-Passes.txt    probable-v2-top1575.txt
+PHP-Magic-Hashes.txt              probable-v2-top12000.txt
+Permutations                      richelieu-french-top5000.txt
+README.md                         richelieu-french-top20000.txt
+SCRABBLE-hackerhouse.tgz          scraped-JWT-secrets.txt
+Software                          seasons.txt
+UserPassCombo-Jay.txt             stupid-ones-in-production.txt
+WiFi-WPA                          twitter-banned.txt
+Wikipedia                         unkown-azul.txt
+bt4-password.txt                  xato-net-10-million-passwords.txt
+cirt-default-passwords.txt        xato-net-10-million-passwords-10.txt
+citrix.txt                        xato-net-10-million-passwords-100.txt
+clarkson-university-82.txt        xato-net-10-million-passwords-1000.txt
+common_corporate_passwords.lst    xato-net-10-million-passwords-10000.txt
+darkc0de.txt                      xato-net-10-million-passwords-100000.txt
+darkweb2017-top10.txt             xato-net-10-million-passwords-1000000.txt
+darkweb2017-top100.txt            xato-net-10-million-passwords-dup.txt
+arsenal@arsenal ~/wordlists/seclists/Passwords (git)-[master] % vim xato-net-10-million-passwords.txt
+arsenal@arsenal ~/wordlists/seclists/Passwords (git)-[master] % xato-net-10-million-passwords-dup.txt
+zsh: command not found: xato-net-10-million-passwords-dup.txt
+127 arsenal@arsenal ~/wordlists/seclists/Passwords (git)-[master] % vim xato-net-10-million-passwords-dup.txt
+arsenal@arsenal ~/wordlists/seclists/Passwords (git)-[master] % cd Malware
+arsenal@arsenal ~/wordlists/seclists/Passwords/Malware (git)-[master] % ls
+conficker.txt  mirai-botnet.txt
+arsenal@arsenal ~/wordlists/seclists/Passwords/Malware (git)-[master] % vim conficker.txt
+arsenal@arsenal ~/wordlists/seclists/Passwords/Malware (git)-[master] % vim mirai-botnet.txt
+arsenal@arsenal ~/wordlists/seclists/Passwords/Malware (git)-[master] % :q
+zsh: command not found: :q
+127 arsenal@arsenal ~/wordlists/seclists/Passwords/Malware (git)-[master] % ls
+conficker.txt  mirai-botnet.txt
+arsenal@arsenal ~/wordlists/seclists/Passwords/Malware (git)-[master] % cd ..
+arsenal@arsenal ~/wordlists/seclists/Passwords (git)-[master] % ls
+500-worst-passwords.txt           darkweb2017-top1000.txt
+500-worst-passwords.txt.bz2       darkweb2017-top10000.txt
+2020-200_most_used_passwords.txt  days.txt
+2023-200_most_used_passwords.txt  der-postillon.txt
+BiblePass                         dutch_common_wordlist.txt
+Common-Credentials                dutch_passwordlist.txt
+Cracked-Hashes                    dutch_wordlist
+Default-Credentials               german_misc.txt
+Honeypot-Captures                 months.txt
+Keyboard-Walks                    mssql-passwords-nansh0u-guardicore.txt
+Leaked-Databases                  openwall.net-all.txt
+Malware                           probable-v2-top207.txt
+Most-Popular-Letter-Passes.txt    probable-v2-top1575.txt
+PHP-Magic-Hashes.txt              probable-v2-top12000.txt
+Permutations                      richelieu-french-top5000.txt
+README.md                         richelieu-french-top20000.txt
+SCRABBLE-hackerhouse.tgz          scraped-JWT-secrets.txt
+Software                          seasons.txt
+UserPassCombo-Jay.txt             stupid-ones-in-production.txt
+WiFi-WPA                          twitter-banned.txt
+Wikipedia                         unkown-azul.txt
+bt4-password.txt                  xato-net-10-million-passwords.txt
+cirt-default-passwords.txt        xato-net-10-million-passwords-10.txt
+citrix.txt                        xato-net-10-million-passwords-100.txt
+clarkson-university-82.txt        xato-net-10-million-passwords-1000.txt
+common_corporate_passwords.lst    xato-net-10-million-passwords-10000.txt
+darkc0de.txt                      xato-net-10-million-passwords-100000.txt
+darkweb2017-top10.txt             xato-net-10-million-passwords-1000000.txt
+darkweb2017-top100.txt            xato-net-10-million-passwords-dup.txt
+arsenal@arsenal ~/wordlists/seclists/Passwords (git)-[master] % vim Leaked-Databases
+arsenal@arsenal ~/wordlists/seclists/Passwords (git)-[master] % cd Leaked-Databases
+arsenal@arsenal ..ts/seclists/Passwords/Leaked-Databases (git)-[master] % ls
+000webhost.txt                  hak5-withcount.txt          rockyou-15.txt
+Ashley-Madison.txt              honeynet.txt                rockyou-20.txt
+Lizard-Squad.txt                honeynet2.txt               rockyou-25.txt
+NordVPN.txt                     honeynet-withcount.txt      rockyou-30.txt
+README.md                       hotmail.txt                 rockyou-35.txt
+adobe100.txt                    izmy.txt                    rockyou-40.txt
+alleged-gmail-passwords.txt     md5decryptor-uk.txt         rockyou-45.txt
+bible.txt                       muslimMatch.txt             rockyou-50.txt
+bible-withcount.txt             muslimMatch-withcount.txt   rockyou-55.txt
+carders.cc.txt                  myspace.txt                 rockyou-60.txt
+elitehacker.txt                 myspace-withcount.txt       rockyou-65.txt
+elitehacker-withcount.txt       phpbb.txt                   rockyou-70.txt
+faithwriters.txt                phpbb-cleaned-up.txt        rockyou-75.txt
+faithwriters-withcount.txt      phpbb-withcount.txt         rockyou-withcount.txt.tar.gz
+fortinet-2021.txt               porn-unknown.txt            singles.org.txt
+fortinet-2021_clean-combos.txt  porn-unknown-withcount.txt  singles.org-withcount.txt
+fortinet-2021_passwords.txt     rockyou.txt.tar.gz          tuscl.txt
+fortinet-2021_users.txt         rockyou-05.txt              youporn2012.txt
+hak5.txt                        rockyou-10.txt              youporn2012-raw.txt
+arsenal@arsenal ..ts/seclists/Passwords/Leaked-Databases (git)-[master] % vim myspace.txt
+arsenal@arsenal ..ts/seclists/Passwords/Leaked-Databases (git)-[master] % vim rockyou-05.txt
+arsenal@arsenal ..ts/seclists/Passwords/Leaked-Databases (git)-[master] % vim muslimMatch-withcount.txt
+arsenal@arsenal ..ts/seclists/Passwords/Leaked-Databases (git)-[master] % vim bible-withcount.txt
+arsenal@arsenal ..ts/seclists/Passwords/Leaked-Databases (git)-[master] % vim fortinet-2021.txt
+
+arsenal@arsenal ..ts/seclists/Passwords/Leaked-Databases (git)-[master] % cd ..
+arsenal@arsenal ~/wordlists/seclists/Passwords (git)-[master] % ls
+500-worst-passwords.txt           darkweb2017-top1000.txt
+500-worst-passwords.txt.bz2       darkweb2017-top10000.txt
+2020-200_most_used_passwords.txt  days.txt
+2023-200_most_used_passwords.txt  der-postillon.txt
+BiblePass                         dutch_common_wordlist.txt
+Common-Credentials                dutch_passwordlist.txt
+Cracked-Hashes                    dutch_wordlist
+Default-Credentials               german_misc.txt
+Honeypot-Captures                 months.txt
+Keyboard-Walks                    mssql-passwords-nansh0u-guardicore.txt
+Leaked-Databases                  openwall.net-all.txt
+Malware                           probable-v2-top207.txt
+Most-Popular-Letter-Passes.txt    probable-v2-top1575.txt
+PHP-Magic-Hashes.txt              probable-v2-top12000.txt
+Permutations                      richelieu-french-top5000.txt
+README.md                         richelieu-french-top20000.txt
+SCRABBLE-hackerhouse.tgz          scraped-JWT-secrets.txt
+Software                          seasons.txt
+UserPassCombo-Jay.txt             stupid-ones-in-production.txt
+WiFi-WPA                          twitter-banned.txt
+Wikipedia                         unkown-azul.txt
+bt4-password.txt                  xato-net-10-million-passwords.txt
+cirt-default-passwords.txt        xato-net-10-million-passwords-10.txt
+citrix.txt                        xato-net-10-million-passwords-100.txt
+clarkson-university-82.txt        xato-net-10-million-passwords-1000.txt
+common_corporate_passwords.lst    xato-net-10-million-passwords-10000.txt
+darkc0de.txt                      xato-net-10-million-passwords-100000.txt
+darkweb2017-top10.txt             xato-net-10-million-passwords-1000000.txt
+darkweb2017-top100.txt            xato-net-10-million-passwords-dup.txt
+arsenal@arsenal ~/wordlists/seclists/Passwords (git)-[master] % cd Permutations
+arsenal@arsenal ..dlists/seclists/Passwords/Permutations (git)-[master] % ls
+1337speak.txt  korelogic-password.txt  password-permutations.txt
+arsenal@arsenal ..dlists/seclists/Passwords/Permutations (git)-[master] % vim 1337speak.txt
+arsenal@arsenal ..dlists/seclists/Passwords/Permutations (git)-[master] % vim korelogic-password.txt
+arsenal@arsenal ..dlists/seclists/Passwords/Permutations (git)-[master] % vim password-permutations.txt
+arsenal@arsenal ..dlists/seclists/Passwords/Permutations (git)-[master] % :q
+zsh: command not found: :q
+127 arsenal@arsenal ..dlists/seclists/Passwords/Permutations (git)-[master] % cd ..
+arsenal@arsenal ~/wordlists/seclists/Passwords (git)-[master] % vim Wikipedia
+arsenal@arsenal ~/wordlists/seclists/Passwords (git)-[master] % cd Wikipedia
+arsenal@arsenal ~/wordlists/seclists/Passwords/Wikipedia (git)-[master] % ls
+wikipedia_de_vowels_no_compounds_top-1000000.txt
+wikipedia_en_vowels_no_compounds_top-1000000.txt
+wikipedia_es_vowels_no_compounds_top-1000000.txt
+wikipedia_fr_vowels_no_compounds_top-1000000.txt
+wikipedia_pt_vowels_no_compounds_top-1000000.txt
+wikipedia_tr_vowels_no_compounds_top-1000000.txt
+arsenal@arsenal ~/wordlists/seclists/Passwords/Wikipedia (git)-[master] % vim wikipedia_en_vowels_no_compounds_top-1000000.txt
+arsenal@arsenal ~/wordlists/seclists/Passwords/Wikipedia (git)-[master] % cd ..
+arsenal@arsenal ~/wordlists/seclists/Passwords (git)-[master] % ls
+500-worst-passwords.txt           darkweb2017-top1000.txt
+500-worst-passwords.txt.bz2       darkweb2017-top10000.txt
+2020-200_most_used_passwords.txt  days.txt
+2023-200_most_used_passwords.txt  der-postillon.txt
+BiblePass                         dutch_common_wordlist.txt
+Common-Credentials                dutch_passwordlist.txt
+Cracked-Hashes                    dutch_wordlist
+Default-Credentials               german_misc.txt
+Honeypot-Captures                 months.txt
+Keyboard-Walks                    mssql-passwords-nansh0u-guardicore.txt
+Leaked-Databases                  openwall.net-all.txt
+Malware                           probable-v2-top207.txt
+Most-Popular-Letter-Passes.txt    probable-v2-top1575.txt
+PHP-Magic-Hashes.txt              probable-v2-top12000.txt
+Permutations                      richelieu-french-top5000.txt
+README.md                         richelieu-french-top20000.txt
+SCRABBLE-hackerhouse.tgz          scraped-JWT-secrets.txt
+Software                          seasons.txt
+UserPassCombo-Jay.txt             stupid-ones-in-production.txt
+WiFi-WPA                          twitter-banned.txt
+Wikipedia                         unkown-azul.txt
+bt4-password.txt                  xato-net-10-million-passwords.txt
+cirt-default-passwords.txt        xato-net-10-million-passwords-10.txt
+citrix.txt                        xato-net-10-million-passwords-100.txt
+clarkson-university-82.txt        xato-net-10-million-passwords-1000.txt
+common_corporate_passwords.lst    xato-net-10-million-passwords-10000.txt
+darkc0de.txt                      xato-net-10-million-passwords-100000.txt
+darkweb2017-top10.txt             xato-net-10-million-passwords-1000000.txt
+darkweb2017-top100.txt            xato-net-10-million-passwords-dup.txt
+arsenal@arsenal ~/wordlists/seclists/Passwords (git)-[master] % cd ..
+arsenal@arsenal ~/wordlists/seclists (git)-[master] % ls
+CONTRIBUTING.md  Fuzzing  Miscellaneous     Payloads   SecLists.png
+CONTRIBUTORS.md  IOCs     Passwords         README.md  Usernames
+Discovery        LICENSE  Pattern-Matching  SecLists   Web-Shells
+arsenal@arsenal ~/wordlists/seclists (git)-[master] % cd Miscellaneous
+arsenal@arsenal ~/wordlists/seclists/Miscellaneous (git)-[master] % ls
+EFF-Dice                  lang-french-full.txt     security-question-answers
+Moby-Project              lang-french-small.txt    source-code
+control-chars.txt         lang-german.txt          top-domains-alexa.csv.zip
+curl-protocols.txt        lang-portuguese.txt      top-domains-majestic.csv.zip
+dns-resolvers.txt         lang-spanish.txt         us-cities.txt
+domains-1million-top.txt  n0kovo_danish-wordlists  web
+ike-groupid.txt           pi-large.txt             wordlist-skipfish.fuzz.txt
+lang-english.txt          schemes.txt
+arsenal@arsenal ~/wordlists/seclists/Miscellaneous (git)-[master] % vim *
+23 files to edit
+arsenal@arsenal ~/wordlists/seclists/Miscellaneous (git)-[master] % cd source-code
+arsenal@arsenal ..sts/seclists/Miscellaneous/source-code (git)-[master] % ls
+c-linux
+arsenal@arsenal ..sts/seclists/Miscellaneous/source-code (git)-[master] % cd c-linux
+arsenal@arsenal ..ists/Miscellaneous/source-code/c-linux (git)-[master] % ls
+Makefile  drop-shell.c  root-shell.c  root-shell2.c  root-shell3.c  tiny-shell.c
+arsenal@arsenal ..ists/Miscellaneous/source-code/c-linux (git)-[master] % cd ..
+arsenal@arsenal ..sts/seclists/Miscellaneous/source-code (git)-[master] % cd ..
+arsenal@arsenal ~/wordlists/seclists/Miscellaneous (git)-[master] % ls
+EFF-Dice                  lang-french-full.txt     security-question-answers
+Moby-Project              lang-french-small.txt    source-code
+control-chars.txt         lang-german.txt          top-domains-alexa.csv.zip
+curl-protocols.txt        lang-portuguese.txt      top-domains-majestic.csv.zip
+dns-resolvers.txt         lang-spanish.txt         us-cities.txt
+domains-1million-top.txt  n0kovo_danish-wordlists  web
+ike-groupid.txt           pi-large.txt             wordlist-skipfish.fuzz.txt
+lang-english.txt          schemes.txt
+arsenal@arsenal ~/wordlists/seclists/Miscellaneous (git)-[master] % vim security-question-answers
+arsenal@arsenal ~/wordlists/seclists/Miscellaneous (git)-[master] % ls
+EFF-Dice                  lang-french-full.txt     security-question-answers
+Moby-Project              lang-french-small.txt    source-code
+control-chars.txt         lang-german.txt          top-domains-alexa.csv.zip
+curl-protocols.txt        lang-portuguese.txt      top-domains-majestic.csv.zip
+dns-resolvers.txt         lang-spanish.txt         us-cities.txt
+domains-1million-top.txt  n0kovo_danish-wordlists  web
+ike-groupid.txt           pi-large.txt             wordlist-skipfish.fuzz.txt
+lang-english.txt          schemes.txt
+arsenal@arsenal ~/wordlists/seclists/Miscellaneous (git)-[master] % cd security-question-answers
+arsenal@arsenal ..iscellaneous/security-question-answers (git)-[master] % ls
+cities.txt              dates.txt         url-to-download-books.md  us-public-schools
+city-state-country.txt  html-colors.txt   us-colleges               zip-codes.txt
+common-surnames.txt     street-names.txt  us-private-schools
+arsenal@arsenal ..iscellaneous/security-question-answers (git)-[master] % vim *
+11 files to edit
+arsenal@arsenal ..iscellaneous/security-question-answers (git)-[master] % cat url-to-download-books.md
+The list of book titles is too large to host on GitHub. The following is a link to download a .zip file of the book titles:
+
+https://mega.nz/#!qTxDmAxY!iKws65WVeTaP1aNY3bj8dmzUuAaeOqrzXprUtXQV3Ng
+arsenal@arsenal ..iscellaneous/security-question-answers (git)-[master] % pwd
+/home/arsenal/wordlists/seclists/Miscellaneous/security-question-answers
+arsenal@arsenal ..iscellaneous/security-question-answers (git)-[master] % ls
+cities.txt              dates.txt         url-to-download-books.md  us-public-schools
+city-state-country.txt  html-colors.txt   us-colleges               zip-codes.txt
+common-surnames.txt     street-names.txt  us-private-schools
+arsenal@arsenal ..iscellaneous/security-question-answers (git)-[master] % head *
+==> cities.txt <==
+Kabul
+Luanda
+The Valley
+Abu Dhabi
+Ajman
+Al Ain
+Dubai
+Ras Al-Khaimah
+Salta
+Avellaneda
+
+==> city-state-country.txt <==
+Kabul,Afghanistan
+Luanda,Luanda Province,Angola
+The Valley,Anguilla
+Abu Dhabi,Abu Dhabi,United Arab Emirates
+Ajman,Ajman,United Arab Emirates
+Al Ain,Abu Dhabi,United Arab Emirates
+Dubai,Dubai,United Arab Emirates
+Ras Al-Khaimah,North Ras Al Khaimah,United Arab Emirates
+Salta,Salta Province,Argentina
+Avellaneda,Buenos Aires Province,Argentina
+
+==> common-surnames.txt <==
+SMITH
+JOHNSON
+WILLIAMS
+JONES
+BROWN
+DAVIS
+MILLER
+WILSON
+MOORE
+TAYLOR
+
+==> dates.txt <==
+1/1/2018
+2/1/2018
+3/1/2018
+4/1/2018
+5/1/2018
+6/1/2018
+7/1/2018
+8/1/2018
+9/1/2018
+10/1/2018
+
+==> html-colors.txt <==
+aliceblue
+antiquewhite
+aqua
+aquamarine
+azure
+beige
+bisque
+black
+blanchedalmond
+blue
+
+==> street-names.txt <==
+Main Street
+Church Street
+Main Street North
+Main Street South
+High Street
+Elm Street
+Main Street West
+Washington Street
+Park Avenue
+Main Street East
+
+==> url-to-download-books.md <==
+The list of book titles is too large to host on GitHub. The following is a link to download a .zip file of the book titles:
+
+https://mega.nz/#!qTxDmAxY!iKws65WVeTaP1aNY3bj8dmzUuAaeOqrzXprUtXQV3Ng
+
+==> us-colleges <==
+head: error reading 'us-colleges': Is a directory
+
+==> us-private-schools <==
+head: error reading 'us-private-schools': Is a directory
+
+==> us-public-schools <==
+head: error reading 'us-public-schools': Is a directory
+
+==> zip-codes.txt <==
+00000
+00001
+00002
+00003
+00004
+00005
+00006
+00007
+00008
+00009
+1 arsenal@arsenal ..iscellaneous/security-question-answers (git)-[master] %
+1 arsenal@arsenal ..iscellaneous/security-question-answers (git)-[master] % ls
+cities.txt              dates.txt         url-to-download-books.md  us-public-schools
+city-state-country.txt  html-colors.txt   us-colleges               zip-codes.txt
+common-surnames.txt     street-names.txt  us-private-schools
+arsenal@arsenal ..iscellaneous/security-question-answers (git)-[master] % cd ..
+arsenal@arsenal ~/wordlists/seclists/Miscellaneous (git)-[master] % ls
+EFF-Dice            domains-1million-top.txt  lang-german.txt          schemes.txt                   us-cities.txt
+Moby-Project        ike-groupid.txt           lang-portuguese.txt      security-question-answers     web
+control-chars.txt   lang-english.txt          lang-spanish.txt         source-code                   wordlist-skipfish.fuzz.txt
+curl-protocols.txt  lang-french-full.txt      n0kovo_danish-wordlists  top-domains-alexa.csv.zip
+dns-resolvers.txt   lang-french-small.txt     pi-large.txt             top-domains-majestic.csv.zip
+arsenal@arsenal ~/wordlists/seclists/Miscellaneous (git)-[master] % cd Moby-Project
+arsenal@arsenal ..ts/seclists/Miscellaneous/Moby-Project (git)-[master] % ls
+Moby-Language-II  Moby-Thesaurus-II  Moby-Words-II  README.md
+arsenal@arsenal ..ts/seclists/Miscellaneous/Moby-Project (git)-[master] % cat README.md
+# Moby Project
+The **Moby Project** is a collection of public-domain lexical resources created by [Grady Ward](https://en.wikipedia.org/wiki/Grady_Ward).
+
+This directory contains certain wordlists from the Moby Project which may be useful for SecLists users.
+## Statistics
+|  Directory | Details |
+|--|--|
+| Moby Language II | Contains wordlists of 5 languages |
+| Moby Thesaurus II | Contains 30,260 root words, with their 2 million+ synonyms |
+| Moby Words II | Collection of various useful wordlists |
+
+For more details on the project, see [elitejake/Moby-Project](https://github.com/elitejake/Moby-Project).
+
+## Rest of the Moby Project
+The rest of the Moby Project includes more wordlists and lexical resources which might suit your needs. See the rest of them at  [elitejake/Moby-Project](https://github.com/elitejake/Moby-Project)
+arsenal@arsenal ..ts/seclists/Miscellaneous/Moby-Project (git)-[master] % cd Moby-Language-II
+arsenal@arsenal ..llaneous/Moby-Project/Moby-Language-II (git)-[master] % ls
+README.md  french.txt  german.txt  italian.txt  japanese.txt  spanish.txt
+arsenal@arsenal ..llaneous/Moby-Project/Moby-Language-II (git)-[master] % head *
+==> README.md <==
+See documentation: [README.md](github.com/elitejake/Moby-Project/blob/main/Moby%20Language%20II/README.md)
+
+==> french.txt <==
+a
+a^cre
+a^cres
+a^crete'
+a^ge
+a^ge'
+a^ge'e
+a^ge'es
+a^ge's
+a^ges
+
+==> german.txt <==
+Aale
+Aalen
+Aals
+Aas
+Aase
+Aases
+Aasgeiern
+Aasgeiers
+Abaenderung
+Abaenderungsantraege
+
+==> italian.txt <==
+a
+abate
+abati
+abbagli
+abbaglia
+abbagliai
+abbagliamo
+abbagliano
+abbagliare
+abbagliata
+
+==> japanese.txt <==
+a-bitore
+a-cha
+a-chi
+a-chisut
+a-kaibu
+a-ke-do
+a-ku
+a-ru
+a-su
+a-texisu
+
+==> spanish.txt <==
+\a
+\a\a
+\a\o
+\a`\iga
+\a`\igo
+\acanina
+\acurutu`
+\afrar
+\agaza
+\ame
+arsenal@arsenal ..llaneous/Moby-Project/Moby-Language-II (git)-[master] % vim *
+6 files to edit
+arsenal@arsenal ..llaneous/Moby-Project/Moby-Language-II (git)-[master] % cd ..
+arsenal@arsenal ..ts/seclists/Miscellaneous/Moby-Project (git)-[master] % cd Moby-Thesaurus-II
+arsenal@arsenal ..laneous/Moby-Project/Moby-Thesaurus-II (git)-[master] % ls
+README.md  mthesaur.txt
+arsenal@arsenal ..laneous/Moby-Project/Moby-Thesaurus-II (git)-[master] % vim mthesaur.txt
+arsenal@arsenal ..laneous/Moby-Project/Moby-Thesaurus-II (git)-[master] % cd ..
+arsenal@arsenal ..ts/seclists/Miscellaneous/Moby-Project (git)-[master] % ls
+Moby-Language-II  Moby-Thesaurus-II  Moby-Words-II  README.md
+arsenal@arsenal ..ts/seclists/Miscellaneous/Moby-Project (git)-[master] % vim Moby-Words-II
+arsenal@arsenal ..ts/seclists/Miscellaneous/Moby-Project (git)-[master] % cd Moby-Words-II
+arsenal@arsenal ..scellaneous/Moby-Project/Moby-Words-II (git)-[master] % ls
+ACRONYMS.TXT  COMPOUND.TXT  CRSWD-D.TXT  FREQ-INT.TXT  NAMES-F.TXT  OFTENMIS.TXT  README.md
+COMMON.TXT    CROSSWD.TXT   FREQ.TXT     NAMES.TXT     NAMES-M.TXT  PLACES.TXT    SINGLE.TXT
+arsenal@arsenal ..scellaneous/Moby-Project/Moby-Words-II (git)-[master] % vim *
+14 files to edit

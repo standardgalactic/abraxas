@@ -1,0 +1,1145 @@
+(base) bash-5.0$ export DISPLAY=172.17.0.1:0.0
+(base) bash-5.0$ docker pull r00tdaemon/arsenal
+Using default tag: latest
+latest: Pulling from r00tdaemon/arsenal
+7d77d3f40145: Pull complete
+3912296564d2: Pull complete
+cf665ddebf83: Pull complete
+1f7c77d73354: Pull complete
+02a8b891f205: Pull complete
+e31b9e176277: Pull complete
+f78edb6bc25f: Pull complete
+0e0eb9c1b137: Pull complete
+c6b4ef56cbda: Pull complete
+3b0f7a63b765: Pull complete
+579e0eb62cc0: Pull complete
+45225b716cc7: Pull complete
+c2263e7a4d08: Pull complete
+e30b57cf75f5: Pull complete
+e6772f3fc2a3: Pull complete
+96654e772a85: Pull complete
+16f586f69f5a: Pull complete
+74f354a7e593: Pull complete
+b6dd87baa50a: Pull complete
+aab3d35f4a59: Pull complete
+4f4fb700ef54: Pull complete
+484dd9eb315b: Pull complete
+61b34ad8868a: Pull complete
+f9db9014cabc: Pull complete
+fcfc0b4608e2: Pull complete
+Digest: sha256:42c86c8daff7f93a42921699fe3454f9ef4f4be6dcdec9cec61ab7451c733dd3
+Status: Downloaded newer image for r00tdaemon/arsenal:latest
+docker.io/r00tdaemon/arsenal:latest
+(base) bash-5.0$ sudo docker run -it r00tdaemon/arsenal /bin/bash
+[sudo] password for bonobo:
+arsenal@24cc086ef902:~$ ls
+goProjects  privesc  tools  wordlists
+arsenal@24cc086ef902:~$ cd wordlists/
+arsenal@24cc086ef902:~/wordlists$ ls
+dirsearch  seclists
+arsenal@24cc086ef902:~/wordlists$ cd dirsearch
+arsenal@24cc086ef902:~/wordlists/dirsearch$ ls
+400_blacklist.txt  403_blacklist.txt  500_blacklist.txt  dicc.txt  user-agents.txt
+arsenal@24cc086ef902:~/wordlists/dirsearch$ vim 400_blacklist.txt
+arsenal@24cc086ef902:~/wordlists/dirsearch$ vim 400_blacklist.txt
+arsenal@24cc086ef902:~/wordlists/dirsearch$ vim 403_blacklist.txt
+arsenal@24cc086ef902:~/wordlists/dirsearch$ vim 500_blacklist.txt
+arsenal@24cc086ef902:~/wordlists/dirsearch$ vim dicc.txt
+arsenal@24cc086ef902:~/wordlists/dirsearch$ vim user-agents.txt
+arsenal@24cc086ef902:~/wordlists/dirsearch$ cd ..
+arsenal@24cc086ef902:~/wordlists$ cd ..
+arsenal@24cc086ef902:~$ ls
+goProjects  privesc  tools  wordlists
+arsenal@24cc086ef902:~$ cd tools
+arsenal@24cc086ef902:~/tools$ ls
+LinEnum.sh  amass  burp.jar   exploitdb  peass    sqlmap-dev
+SecLists    bin    dirsearch  ghidra     scripts
+arsenal@24cc086ef902:~/tools$ head .
+head: error reading '.': Is a directory
+arsenal@24cc086ef902:~/tools$ head *
+==> LinEnum.sh <==
+#!/bin/bash
+#A script to enumerate local information from a Linux host
+version="version 0.982"
+#@rebootuser
+
+#help function
+usage ()
+{
+echo -e "\n\e[00;31m#########################################################\e[00m"
+echo -e "\e[00;31m#\e[00m" "\e[00;33mLocal Linux Enumeration & Privilege Escalation Script\e[00m" "\e[00;31m#\e[00m"
+
+==> SecLists <==
+head: error reading 'SecLists': Is a directory
+
+==> amass <==
+head: error reading 'amass': Is a directory
+
+==> bin <==
+head: error reading 'bin': Is a directory
+
+==> burp.jar <==
+Li95;uR4Xs/GZC9xD)9g+lPTA-INF/MANIFEST.MFmN0y;p@"Pomp㬭CړGn0&iQ;)(!][gw^H)cOIM
+SF5XR
+ƲBO3:P'Ŭmk@ʫzO(Oug'N^ǝ(@.]'6yװ׆!by|z[ƑtD3rJzJ
+)|VC*#chromium-linux64-114.0.5735.198.zip$Ww<U5B$I�(36]  {$ȼI
+q{#+=2.׸ssyĘgִu.
+3,x>O W~>#.Vdͯa}lmسUAg|4|4GX�f,Rcy;'λJx(=+%
+S$     (FiC`dxlrY$-BnF#lQSm"5fتVՃը٬72SvL2RrW+4%~XTXM&r6[np.Q5Tj
+?3Vaƿ[,osޤ8_*A0yj-]BP.?(gsMމ^&?N�r
+9ӕQ>Y$2y>0vɑccU1(e<JsU          ;0}䳚$]/Ggr hK&%Kkz?\>uO      #߲Ek.t& *tuK9tA>Ti[<nƀ2,4
+%`7<Qa,qbt8q?   54>yrG2>g1N0rY,&        r<}m]c%`ǣ       Sγzu)%"YFx?GΧ̋;<}䢽(!AOu^Ht9@OQ慩Sbcbc%x! $%Kpe  )hgaֹUt
+"+WԂl,&AEOǂţ1
+1,o<u9A6X*^zyu&/GfGO'
+<$6yz:
+E.x;J.ϐmbQ,G<   F!go_46e2(V     h<+NNM  ЗE1}ѫPw{CHwI~My4'y+&K!F'ccq||h9+)v,O
+/͋WIb!BE<fbw3F1Ml4Mm]͌U0Y23"κ@sXYq
+dX0_YOAq0|z</_u/I~
+10
+D*e{ϿG(^~|
++"ȂѦXQh8:$I,Z̋�5i< @S:o0!t}4|S
+OaƒuyX v1U!xxMyL]IbPh2$ic(ǉcmI4/ 8"w
+DD`AY:%-BGGo`d1}xREYxGt
+
+==> dirsearch <==
+head: error reading 'dirsearch': Is a directory
+
+==> exploitdb <==
+head: error reading 'exploitdb': Is a directory
+
+==> ghidra <==
+head: error reading 'ghidra': Is a directory
+
+==> peass <==
+head: error reading 'peass': Is a directory
+
+==> scripts <==
+head: error reading 'scripts': Is a directory
+
+==> sqlmap-dev <==
+head: error reading 'sqlmap-dev': Is a directory
+arsenal@24cc086ef902:~/tools$ ls
+LinEnum.sh  amass  burp.jar   exploitdb  peass    sqlmap-dev
+SecLists    bin    dirsearch  ghidra     scripts
+arsenal@24cc086ef902:~/tools$ cd amass
+arsenal@24cc086ef902:~/tools/amass$ ls
+LICENSE  README.md  amass  examples
+arsenal@24cc086ef902:~/tools/amass$ cat README.md
+# [![OWASP Logo](./images/owasp_logo.png) OWASP Amass](https://owasp.org/www-project-amass/)
+
+<p align="center">
+<img src="https://github.com/owasp-amass/amass/blob/master/images/amass_video.gif">
+</p>
+
+[![OWASP Flagship](https://img.shields.io/badge/owasp-flagship%20project-48A646.svg)](https://owasp.org/projects/#sec-flagships)
+[![GitHub Release](https://img.shields.io/github/release/owasp-amass/amass)](https://github.com/owasp-amass/amass/releases/latest)
+[![Docker Images](https://img.shields.io/docker/pulls/caffix/amass.svg)](https://hub.docker.com/r/caffix/amass)
+[![Follow on Twitter](https://img.shields.io/twitter/follow/owaspamass.svg?logo=twitter)](https://twitter.com/owaspamass)
+[![Chat on Discord](https://img.shields.io/discord/433729817918308352.svg?logo=discord)](https://discord.gg/HNePVyX3cp)
+
+![GitHub Test Status](https://github.com/owasp-amass/amass/workflows/tests/badge.svg)
+[![GoDoc](https://pkg.go.dev/badge/github.com/owasp-amass/amass/v3?utm_source=godoc)](https://pkg.go.dev/github.com/owasp-amass/amass/v3)
+[![License](https://img.shields.io/badge/license-apache%202-blue)](https://www.apache.org/licenses/LICENSE-2.0)
+[![Go Report](https://goreportcard.com/badge/github.com/owasp-amass/amass)](https://goreportcard.com/report/github.com/owasp-amass/amass)
+[![CodeFactor](https://www.codefactor.io/repository/github/owasp-amass/amass/badge)](https://www.codefactor.io/repository/github/owasp-amass/amass)
+[![Maintainability](https://api.codeclimate.com/v1/badges/234e4885e406953f91d0/maintainability)](https://codeclimate.com/github/owasp-amass/amass/maintainability)
+[![codecov](https://codecov.io/gh/owasp-amass/amass/branch/master/graph/badge.svg?token=zoPKxvLT1n)](https://codecov.io/gh/owasp-amass/amass)
+
+The OWASP Amass Project performs network mapping of attack surfaces and external asset discovery using open source information gathering and active reconnaissance techniques.
+
+**Information Gathering Techniques Used:**
+
+| Technique    | Data Sources |
+|:-------------|:-------------|
+| APIs         | 360PassiveDNS, Ahrefs, AnubisDB, BeVigil, BinaryEdge, BufferOver, BuiltWith, C99, Chaos, CIRCL, DNSDB, DNSRepo, Deepinfo, Detectify, FOFA, FullHunt, GitHub, GitLab, GrepApp, Greynoise, HackerTarget, Hunter, IntelX, LeakIX, Maltiverse, Mnemonic, Netlas, Pastebin, PassiveTotal, PentestTools, Pulsedive, Quake, SOCRadar, Searchcode, Shodan, Spamhaus, Sublist3rAPI, ThreatBook, ThreatMiner, URLScan, VirusTotal, Yandex, ZETAlytics, ZoomEye |
+| Certificates | Active pulls (optional), Censys, CertCentral, CertSpotter, Crtsh, Digitorus, FacebookCT |
+| DNS          | Brute forcing, Reverse DNS sweeping, NSEC zone walking, Zone transfers, FQDN alterations/permutations, FQDN Similarity-based Guessing |
+| Routing      | ASNLookup, BGPTools, BGPView, BigDataCloud, IPdata, IPinfo, RADb, Robtex, ShadowServer, TeamCymru |
+| Scraping     | AbuseIPDB, Ask, Baidu, Bing, CSP Header, DNSDumpster, DNSHistory, DNSSpy, DuckDuckGo, Gists, Google, HackerOne, HyperStat, PKey, RapidDNS, Riddler, Searx, SiteDossier, Yahoo |
+| Web Archives | Arquivo, CommonCrawl, HAW, PublicWWW, UKWebArchive, Wayback |
+| WHOIS        | AlienVault, AskDNS, DNSlytics, ONYPHE, SecurityTrails, SpyOnWeb, WhoisXMLAPI |
+
+----
+
+## Installation [![Go Version](https://img.shields.io/github/go-mod/go-version/owasp-amass/amass)](https://golang.org/dl/) [![Docker Images](https://img.shields.io/docker/pulls/caffix/amass.svg)](https://hub.docker.com/r/caffix/amass) [![GitHub Downloads](https://img.shields.io/github/downloads/owasp-amass/amass/latest/total.svg)](https://github.com/owasp-amass/amass/releases/latest)
+
+> You can find some additional installation variations in the
+> [Installation Guide](./doc/install.md).
+
+### Prebuilt Packages
+
+1. Simply unzip the [package](https://github.com/owasp-amass/amass/releases/latest)
+2. Put the precompiled binary into your path
+3. Start using OWASP Amass!
+
+#### Homebrew
+
+```bash
+brew tap owasp-amass/amass
+brew install amass
+```
+
+### Docker Container
+
+1. Install [Docker](https://www.docker.com)
+2. Pull the Docker image by running `docker pull caffix/amass`
+3. Run `docker run -v OUTPUT_DIR_PATH:/.config/amass/ caffix/amass enum -d example.com`
+
+The volume argument allows the Amass graph database to persist between executions and output files to be accessed on the host system. The first field (left of the colon) of the volume option is the amass output directory that is external to Docker, while the second field is the path, internal to Docker, where amass will write the output files.
+
+### From Sources
+
+1. Install [Go](https://golang.org/doc/install) and setup your Go workspace
+2. Download OWASP Amass by running `go install -v github.com/owasp-amass/amass/v3/...@master`
+3. At this point, the binary should be in `$GOPATH/bin`
+
+## Documentation [![GoDoc](https://pkg.go.dev/badge/github.com/owasp-amass/amass/v3?utm_source=godoc)](https://pkg.go.dev/github.com/owasp-amass/amass/v3)
+
+Use the [Installation Guide](./doc/install.md) to get started.
+
+Go to the [User's Guide](./doc/user_guide.md) for additional information.
+
+See the [Tutorial](./doc/tutorial.md) for example usage.
+
+See the [Amass Scripting Engine Manual](./doc/scripting.md) for greater control over your enumeration process.
+
+## Troubleshooting [![Chat on Discord](https://img.shields.io/discord/433729817918308352.svg?logo=discord)](https://discord.gg/HNePVyX3cp)
+
+If you need help with installation and/or usage of the tool, please join our [Discord server](https://discord.gg/HNePVyX3cp) where community members can best help you.
+
+:stop_sign:   **Please avoid opening GitHub issues for support requests or questions!**
+
+## Contributing [![Contribute Yes](https://img.shields.io/badge/contribute-yes-brightgreen.svg)](./CONTRIBUTING.md) [![Chat on Discord](https://img.shields.io/discord/433729817918308352.svg?logo=discord)](https://discord.gg/HNePVyX3cp)
+
+We are always happy to get new contributors on board! Please check [CONTRIBUTING.md](CONTRIBUTING.md) to learn how to
+contribute to our codebase, and join our [Discord Server](https://discord.gg/HNePVyX3cp) to discuss current project goals.
+
+## Testimonials
+
+### [![Accenture Logo](./images/accenture_logo.png) Accenture](https://www.accenture.com/)
+
+*"Accenture’s adversary simulation team has used Amass as our primary tool suite on a variety of external enumeration projects and attack surface assessments for clients. It’s been an absolutely invaluable basis for infrastructure enumeration, and we’re really grateful for all the hard work that’s gone into making and maintaining it – it’s made our job much easier!"*
+
+\- Max Deighton, Accenture Cyber Defense Manager
+
+### [![Visma Logo](./images/visma_logo.png) Visma](https://www.visma.com/)
+
+*"For an internal red team, the organisational structure of Visma puts us against a unique challenge. Having sufficient, continuous visibility over our external attack surface is an integral part of being able to efficiently carry out our task. When dealing with hundreds of companies with different products and supporting infrastructure we need to always be on top of our game.*
+
+*For years, OWASP Amass has been a staple in the asset reconnaissance field, and keeps proving its worth time after time. The tool keeps constantly evolving and improving to adapt to the new trends in this area."*
+
+\- Joona Hoikkala ([@joohoi](https://github.com/joohoi)) & Alexis Fernández ([@six2dez](https://github.com/six2dez)), Visma Red Team
+
+## References [![DEF CON 30 Recon Village](https://img.shields.io/badge/defcon%2030-recon%20village-lightgrey.svg)](https://twitter.com/jeff_foley/status/1562246069278445568/photo/1) [![DEF CON 28 Red Team Village](https://img.shields.io/badge/defcon%2028-red%20team%20village-red.svg)](https://www.youtube.com/c/RedTeamVillage/featured) [![DEF CON 27 Demo Labs](https://img.shields.io/badge/defcon%2027-demo%20labs-purple.svg)](https://www.defcon.org/html/defcon-27/dc-27-demolabs.html)
+
+Did you write a blog post, magazine article or do a podcast about OWASP Amass? Or maybe you held or joined a conference talk or meetup session, a hacking workshop or public training where this project was mentioned?
+
+Add it to our ever-growing list of [REFERENCES.md](REFERENCES.md) by forking and opening a Pull Request!
+
+### Top Mentions
+
+* [Phillip Wylie | Securing APIs Through External Attack Surface
+Management (EASM)](https://www.uscybersecurity.net/csmag/securing-apis-through-external-attack-surface-management-easm/)
+* [Kento Stewart | Mapping Your External Perimeter during an Incident
+with OWASP Amass](https://www.youtube.com/watch?v=23tQ4zLA-9A)
+* [WhoisXML API | OWASP Amass and WhoisXML API Are Now Integration
+Partners](https://main.whoisxmlapi.com/success-stories/cyber-security-solutions/owasp-amass-and-whoisxml-api-are-now-integration-partners)
+* [Intigriti | Hacker tools: Amass – Hunting for
+Subdomains](https://blog.intigriti.com/2021/06/08/hacker-tools-amass-hunting-for-subdomains)
+* [Hakluke | Guide to Amass — How to Use Amass More
+Effectively for Bug Bounties](https://medium.com/@hakluke/haklukes-guide-to-amass-how-to-use-amass-more-effectively-for-bug-bounties-7c37570b83f7)
+* [SecurityTrails | OWASP Amass: A Solid Information Gathering
+Tool](https://securitytrails.com/blog/owasp-amass)
+* [TrustedSec | Upgrade Your Workflow, Part 1: Building
+OSINT Checklists](https://www.trustedsec.com/blog/upgrade-your-workflow-part-1-building-osint-checklists/)
+* [SANS ISC | Offensive Tools Are For Blue Teams
+Too](https://isc.sans.edu/forums/diary/Offensive+Tools+Are+For+Blue+Teams+Too/25842/)
+* [Jason Haddix | LevelUp 0x02 - The Bug Hunters
+Methodology v3(ish)](https://www.youtube.com/watch?v=Qw1nNPiH_Go)
+* [Daniel Miessler | amass — Automated Attack
+Surface Mapping](https://danielmiessler.com/study/amass/)
+* [Dionach | How to Use OWASP Amass: An Extensive
+Tutorial](https://www.dionach.com/blog/how-to-use-owasp-amass-an-extensive-tutorial/)
+* [nynan | How to **Actually** Use Amass More
+Effectively — Bug Bounty](https://medium.com/@nynan/how-to-actually-use-amass-more-effectively-bug-bounty-59e83900de02)
+* [ToolWar | Extreme Subdomain
+Enumeration/Scanning on Windows : OWASP Amass](https://www.youtube.com/watch?v=mEQnVkSG19M)
+
+## Licensing [![License](https://img.shields.io/badge/license-apache%202-blue)](https://www.apache.org/licenses/LICENSE-2.0)
+
+This program is free software: you can redistribute it and/or modify it under the terms of the [Apache license](LICENSE). OWASP Amass and any contributions are Copyright © by Jeff Foley 2017-2023. Some subcomponents have separate licenses.
+
+![Network graph](./images/network_06092018.png "Amass Network Mapping")
+arsenal@24cc086ef902:~/tools/amass$ ls
+LICENSE  README.md  amass  examples
+arsenal@24cc086ef902:~/tools/amass$ ./amass
+
+.+++:.            :                             .+++.
++W@@@@@@8        &+W@#               o8W8:      +W@@@@@@#.   oW@@@W#+
+&@#+   .o@##.    .@@@o@W.o@@o       :@@#&W8o    .@#:  .:oW+  .@#+++&#&
++@&        &@&     #@8 +@W@&8@+     :@W.   +@8   +@:          .@8
+8@          @@     8@o  8@8  WW    .@W      W@+  .@W.          o@#:
+WW          &@o    &@:  o@+  o@+   #@.      8@o   +W@#+.        +W@8:
+#@          :@W    &@+  &@+   @8  :@o       o@o     oW@@W+        oW@8
+o@+          @@&   &@+  &@+   #@  &@.      .W@W       .+#@&         o@W.
+WW         +@W@8. &@+  :&    o@+ #@      :@W&@&         &@:  ..     :@o
+:@W:      o@# +Wo &@+        :W: +@W&o++o@W. &@&  8@#o+&@W.  #@:    o@+
+:W@@WWWW@@8       +              :&W@@@@&    &W  .o#@@W&.   :W@WWW@@&
++o&&&&+.                                                    +oooo.
+
+v3.23.3
+OWASP Amass Project - @owaspamass
+In-depth Attack Surface Mapping and Asset Discovery
+
+
+Usage: amass intel|enum|viz|track|db [options]
+
+-h    Show the program usage message
+-help
+Show the program usage message
+-version
+Print the version number of this Amass binary
+
+
+Subcommands:
+
+amass intel - Discover targets for enumerations
+amass enum  - Perform enumerations and network mapping
+amass viz   - Visualize enumeration results
+amass track - Track differences between enumerations
+amass db    - Manipulate the Amass graph database
+
+The user's guide can be found here:
+https://github.com/owasp-amass/amass/blob/master/doc/user_guide.md
+
+An example configuration file can be found here:
+https://github.com/owasp-amass/amass/blob/master/examples/config.ini
+
+The Amass tutorial can be found here:
+https://github.com/owasp-amass/amass/blob/master/doc/tutorial.md
+
+arsenal@24cc086ef902:~/tools/amass$ cd examples/
+arsenal@24cc086ef902:~/tools/amass/examples$ ls
+config.ini
+arsenal@24cc086ef902:~/tools/amass/examples$ cat config.ini
+# Copyright © by Jeff Foley 2017-2023. All rights reserved.
+# Use of this source code is governed by Apache 2 LICENSE that can be found in the LICENSE file.
+# SPDX-License-Identifier: Apache-2.0
+
+# Should results only be collected passively and without DNS resolution? Not recommended.
+#mode = passive
+# Would you like to use active techniques that communicate directly with the discovered assets,
+# such as pulling TLS certificates from discovered IP addresses and attempting DNS zone transfers?
+#mode = active
+
+# The directory that stores the Cayley graph database and other output files
+# The default for Linux systems is: $HOME/.config/amass
+#output_directory = amass
+
+# Another location (directory) where the user can provide ADS scripts to the engine.
+#scripts_directory =
+
+# The maximum number of DNS queries that can be performed concurrently during the enumeration.
+#maximum_dns_queries = 20000
+
+# DNS resolvers used globally by the amass package.
+#[resolvers]
+#resolver = 1.1.1.1 ; Cloudflare
+#resolver = 8.8.8.8 ; Google
+#resolver = 64.6.64.6 ; Verisign
+#resolver = 74.82.42.42 ; Hurricane Electric
+#resolver = 1.0.0.1 ; Cloudflare Secondary
+#resolver = 8.8.4.4 ; Google Secondary
+#resolver = 64.6.65.6 ; Verisign Secondary
+#resolver = 77.88.8.8 ; Yandex.DNS Secondary
+
+[scope]
+# The network infrastructure settings expand scope, not restrict the scope.
+# Single IP address or range (e.g. a.b.c.10-245)
+#address = 192.168.1.1
+#cidr = 192.168.1.0/24
+#asn = 26808
+port = 80
+port = 443
+#port = 8080
+#port = 8443
+
+# Root domain names used in the enumeration. The findings are limited by the root domain names provided.
+#[scope.domains]
+#domain = owasp.org
+#domain = appsecusa.org
+#domain = appsec.eu
+#domain = appsec-labs.com
+
+# Are there any subdomains that are out of scope?
+#[scope.blacklisted]
+#subdomain = education.appsec-labs.com
+#subdomain = 2012.appsecusa.org
+
+# The graph database discovered DNS names, associated network infrastructure, results from data sources, etc.
+# This information is then used in future enumerations and analysis of the discoveries.
+#[graphdbs]
+# postgres://[username:password@]host[:port]/database-name?sslmode=disable of the PostgreSQL
+# database and credentials. Sslmode is optional, and can be disable, require, verify-ca, or verify-full.
+#[graphdbs.postgres]
+#primary = false ; Specify which graph database is the primary db, or the local database will be selected.
+#url = "postgres://[username:password@]host[:port]/database-name?sslmode=disable"
+#options="connect_timeout=10"
+
+# MySQL database and credentials URL format:
+# [username:password@]tcp(host[:3306])/database-name?timeout=10s
+#[graphdbs.mysql]
+#url = [username:password@]tcp(host[:3306])/database-name?timeout=10s
+
+# Settings related to DNS name brute forcing.
+#[bruteforce]
+#enabled = true
+#recursive = true
+# Number of discoveries made in a subdomain before performing recursive brute forcing: Default is 1.
+#minimum_for_recursive = 1
+#wordlist_file = /usr/share/wordlists/all.txt
+#wordlist_file = /usr/share/wordlists/all.txt # multiple lists can be used
+
+# Would you like to permute resolved names?
+#[alterations]
+#enabled = true
+# edit_distance specifies the number of times a primitive edit operation will be
+# performed on a name sample during fuzzy label searching.
+#edit_distance = 1 ; Setting this to zero will disable this expensive feature.
+#flip_words = true   # test-dev.owasp.org -> test-prod.owasp.org
+#flip_numbers = true # test1.owasp.org -> test2.owasp.org
+#add_words = true    # test.owasp.org -> test-dev.owasp.org
+#add_numbers = true  # test.owasp.org -> test1.owasp.org
+# Multiple lists can be used.
+#wordlist_file = /usr/share/wordlists/all.txt
+#wordlist_file = /usr/share/wordlists/all.txt
+
+[data_sources]
+# When set, this time-to-live is the minimum value applied to all data source caching.
+minimum_ttl = 1440 ; One day
+
+# Are there any data sources that should be disabled?
+#[data_sources.disabled]
+#data_source = Ask
+#data_source = Bing
+
+# Provide data source configuration information.
+# See the following format:
+#[data_sources.SOURCENAME] ; The SOURCENAME must match the name in the data source implementation.
+#ttl = 4320 ; Time-to-live value sets the number of minutes that the responses are cached.
+# Unique identifier for this set of SOURCENAME credentials.
+# Multiple sets of credentials can be provided and will be randomly selected.
+#[data_sources.SOURCENAME.CredentialSetID]
+#apikey = ; Each data source uses potentially different keys for authentication.
+#secret = ; See the examples below for each data source.
+#username =
+#password =
+
+# https://passivedns.cn (Contact)
+#[data_sources.360PassiveDNS]
+#[data_sources.360PassiveDNS.Credentials]
+#apikey =
+
+# https://asnlookup.com (Free)
+#[data_sources.ASNLookup]
+#[data_sources.ASNLookup.Credentials]
+#apikey =
+
+# https://ahrefs.com (Paid)
+#[data_sources.Ahrefs]
+#ttl = 4320
+#[data_sources.Ahrefs.Credentials]
+#apikey =
+
+# https://otx.alienvault.com (Free)
+#[data_sources.AlienVault]
+#[data_sources.AlienVault.Credentials]
+#apikey =
+
+# https://bevigil.com/osint-api
+# [data_sources.BeVigil]
+# [data_sources.BeVigil.Credentials]
+# apikey =
+
+# https://bigdatacloud.com (Free)
+#[data_sources.BigDataCloud]
+#[data_sources.BigDataCloud.Credentials]
+#apikey =
+
+# https://app.binaryedge.com (Paid/Free-trial)
+#[data_sources.BinaryEdge]
+#ttl = 10080
+#[data_sources.BinaryEdge.Credentials]
+#apikey =
+
+# https://tls.bufferover.run (Freemium)
+#[data_sources.BufferOver]
+#[data_sources.BufferOver.Credentials]
+#apikey =
+
+# https://builtwith.com (Paid/Free-trial)
+#[data_sources.BuiltWith]
+#ttl = 10080
+#[data_sources.BuiltWith.Credentials]
+#apikey =
+
+# https://c99.nl (Paid)
+#[data_sources.C99]
+#ttl = 4320
+#[data_sources.C99.account1]
+#apikey =
+#[data_sources.C99.account2]
+#apikey =
+
+# https://censys.io (Paid/Free-trial)
+#[data_sources.Censys]
+#ttl = 10080
+#[data_sources.Censys.Credentials]
+#apikey =
+#secret =
+
+# https://chaos.projectdiscovery.io (Invite-Only)
+#[data_sources.Chaos]
+#ttl = 4320
+#[data_sources.Chaos.Credentials]
+#apikey =
+
+# https://circl.lu (Contact)
+# Access to CIRCL Passive DNS is only allowed to trusted partners in Luxembourg and abroad.
+# Contact http://services.circl.lu/contact/ if you would like access.
+# Include your affiliation and the foreseen use of the Passive DNS data.
+#[data_sources.CIRCL]
+#[data_sources.CIRCL.Credentials]
+#username =
+#password =
+
+# https://www.digicert.com/tls-ssl/certcentral-tls-ssl-manager (Free)
+# CertCentral username is the account ID (account number)
+#[data_sources.CertCentral]
+#[data_sources.CertCentral.Credentials]
+#username =
+#apikey =
+
+# https://dnsdb.info (Paid)
+#[data_sources.DNSDB]
+#ttl = 4320
+#[data_sources.DNSDB.Credentials]
+#apikey =
+
+# https://dnslytics.com (Paid)
+#[data_sources.DNSlytics]
+#[data_sources.DNSlytics.Credentials]
+#apikey =
+
+# https://dnsrepo.noc.org (Paid)
+#[data_sources.DNSRepo]
+#[data_sources.DNSRepo.Credentials]
+#apikey =
+
+# https://deepinfo.com (Paid/Free-Trial)
+#[data_sources.Deepinfo]
+#[data_sources.Deepinfo.Credentials]
+#apikey =
+
+# https://detectify.com (Paid)
+#[data_sources.Detectify]
+#[data_sources.Detectify.Credentials]
+#apikey =
+
+# https://developer.facebook.com (Free)
+# Look here for how to obtain the Facebook credentials:
+# https://goldplugins.com/documentation/wp-social-pro-documentation/how-to-get-an-app-id-and-secret-key-from-facebook/
+#[data_sources.FacebookCT]
+#ttl = 4320
+#[data_sources.FacebookCT.app1]
+#apikey =
+#secret =
+#[data_sources.FacebookCT.app2]
+#apikey =
+#secret =
+
+# https://fofa.info (Paid)
+#[data_sources.FOFA]
+#ttl = 10080
+#[data_sources.FOFA.Credentials]
+#username =
+#apikey =
+
+# https://fullhunt.io (Free)
+#[data_sources.FullHunt]
+#[data_sources.FullHunt.Credentials]
+#apikey =
+
+# https://github.com (Free)
+#[data_sources.GitHub]
+#ttl = 4320
+#[data_sources.GitHub.accountname]
+#apikey =
+
+# https://gitlab.com (Free)
+# GitLab apikey is the personal access token with at least read_repository or api scope
+#[data_sources.GitLab]
+#ttl = 4320
+#[data_sources.GitLab.accountname]
+#apikey =
+
+# https://hackertarget.com (Paid/Free)
+#[data_sources.HackerTarget]
+#ttl = 1440
+#[data_sources.HackerTarget.Credentials]
+#apikey =
+
+# https://hunter.io (Paid/Free-trial)
+#[data_sources.Hunter]
+#[data_sources.Hunter.Credentials]
+#apikey =
+
+# https://intelx.io (Freemium)
+#[data_sources.IntelX]
+#[data_sources.IntelX.Credentials]
+#apikey =
+
+# https://ipdata.co (Free)
+#[data_sources.IPdata]
+#[data_sources.IPdata.Credentials]
+#apikey =
+
+# https://ipinfo.io (Paid/Free-trial)
+#[data_sources.IPinfo]
+#[data_sources.IPinfo.Credentials]
+#apikey =
+
+# https://leakix.net (Free)
+#[data_sources.LeakIX]
+#[data_sources.LeakIX.Credentials]
+#apikey =
+
+# https://netlas.io (Free)
+#[data_sources.Netlas]
+#[data_sources.Netlas.Credentials]
+#apikey =
+
+# https://onyphe.io (Free)
+#[data_sources.ONYPHE]
+#ttl = 4320
+#[data_sources.ONYPHE.Credentials]
+#apikey =
+
+# https://psbdmp.ws (Free)
+#[data_sources.Pastebin]
+#ttl = 10080
+#[data_sources.Pastebin.Credentials]
+#apikey =
+
+# https://www.riskiq.com/products/passivetotal (Paid/Free-trial)
+#[data_sources.PassiveTotal]
+#ttl = 10080
+#[data_sources.PassiveTotal.Credentials]
+#username =
+#apikey =
+
+# https://pentest-tools.com (Paid)
+#[data_sources.PentestTools]
+#ttl = 10080
+#[data_sources.PentestTools.Credentials]
+#apikey =
+
+# https://publicwww.com (Free)
+#[data_sources.PublicWWW]
+#ttl = 10080
+#[data_sources.PublicWWW.Credentials]
+#apikey =
+
+# https://quake.360.cn (Paid)
+#[data_sources.Quake]
+#ttl = 4320
+#[data_sources.Quake.Credentials]
+#apikey =
+
+# https://socradar.io (Paid)
+# This requires a SOCRadar ThreatFusion API key, which is different from a general SOCRadar API key.
+# To obtain it, contact the SOCRadar operation team via operation@socradar.io
+#[data_sources.SOCRadar]
+#[data_sources.SOCRadar.Credentials]
+#apikey =
+
+# https://securitytrails.com (Paid/Free-trial)
+#[data_sources.SecurityTrails]
+#ttl = 1440
+#[data_sources.SecurityTrails.Credentials]
+#apikey =
+
+# https://shodan.io (Paid/Free-trial)
+#[data_sources.Shodan]
+#ttl = 10080
+#[data_sources.Shodan.Credentials]
+#apikey =
+
+# https://spamhaus.com (Freemium)
+#[data_sources.Spamhaus]
+#ttl = 1440
+#[data_sources.Spamhaus.Credentials]
+#username =
+#password =
+
+# https://threatbook.cn (Paid)
+#[data_sources.ThreatBook]
+#[data_sources.ThreatBook.account1]
+#apikey=
+
+# https://urlscan.io (Paid/Free-trial)
+# URLScan can be used without an API key, but the key allows new submissions to be made
+#[data_sources.URLScan]
+#[data_sources.URLScan.Credentials]
+#apikey =
+
+# https://virustotal.com (Paid/Free-trial)
+#[data_sources.VirusTotal]
+#ttl = 10080
+#[data_sources.VirusTotal.Credentials]
+#apikey =
+
+# https://whoisxmlapi.com (Paid/Free-trial)
+#[data_sources.WhoisXMLAPI]
+#[data_sources.WhoisXMLAPI.Credentials]
+#apikey =
+
+# https://yandex.com/dev/xml/ (Free)
+# Restrictions and requirements: https://yandex.com/dev/xml/doc/dg/concepts/restrictions-new.html
+#[data_sources.Yandex]
+#ttl = 1440
+#[data_sources.Yandex.Credentials]
+#username =
+#apikey =
+
+# https://zetalytics.com (Paid/Invite-Only)
+#[data_sources.ZETAlytics]
+#ttl = 1440
+#[data_sources.ZETAlytics.Credentials]
+#apikey =
+
+# https://zoomeye.org (Free)
+#[data_sources.ZoomEye]
+#ttl = 1440
+#[data_sources.ZoomEye.Credentials]
+#username =
+#password =
+arsenal@24cc086ef902:~/tools/amass/examples$ amass intel
+bash: amass: command not found
+arsenal@24cc086ef902:~/tools/amass/examples$ cd ..
+arsenal@24cc086ef902:~/tools/amass$ ls
+LICENSE  README.md  amass  examples
+arsenal@24cc086ef902:~/tools/amass$ amass intell
+bash: amass: command not found
+arsenal@24cc086ef902:~/tools/amass$ ./amass intel
+
+.+++:.            :                             .+++.
++W@@@@@@8        &+W@#               o8W8:      +W@@@@@@#.   oW@@@W#+
+&@#+   .o@##.    .@@@o@W.o@@o       :@@#&W8o    .@#:  .:oW+  .@#+++&#&
++@&        &@&     #@8 +@W@&8@+     :@W.   +@8   +@:          .@8
+8@          @@     8@o  8@8  WW    .@W      W@+  .@W.          o@#:
+WW          &@o    &@:  o@+  o@+   #@.      8@o   +W@#+.        +W@8:
+#@          :@W    &@+  &@+   @8  :@o       o@o     oW@@W+        oW@8
+o@+          @@&   &@+  &@+   #@  &@.      .W@W       .+#@&         o@W.
+WW         +@W@8. &@+  :&    o@+ #@      :@W&@&         &@:  ..     :@o
+:@W:      o@# +Wo &@+        :W: +@W&o++o@W. &@&  8@#o+&@W.  #@:    o@+
+:W@@WWWW@@8       +              :&W@@@@&    &W  .o#@@W&.   :W@WWW@@&
++o&&&&+.                                                    +oooo.
+
+v3.23.3
+OWASP Amass Project - @owaspamass
+In-depth Attack Surface Mapping and Asset Discovery
+
+
+Usage: amass intel [options] [-whois -d DOMAIN] [-addr ADDR -asn ASN -cidr CIDR]
+
+-active
+Attempt certificate name grabs
+-addr value
+IPs and ranges (192.168.1.1-254) separated by commas
+-asn value
+ASNs separated by commas (can be used multiple times)
+-cidr value
+CIDRs separated by commas (can be used multiple times)
+-config string
+Path to the INI configuration file. Additional details below
+-d value
+Domain names separated by commas (can be used multiple times)
+-demo
+Censor output to make it suitable for demonstrations
+-df value
+Path to a file providing root domain names
+-dir string
+Path to the directory containing the output files
+-ef string
+Path to a file providing data sources to exclude
+-exclude value
+Data source names separated by commas to be excluded
+-h    Show the program usage message
+-help
+Show the program usage message
+-if string
+Path to a file providing data sources to include
+-include value
+Data source names separated by commas to be included
+-ip
+Show the IP addresses for discovered names
+-ipv4
+Show the IPv4 addresses for discovered names
+-ipv6
+Show the IPv6 addresses for discovered names
+-list
+Print additional information
+-log string
+Path to the log file where errors will be written
+-max-dns-queries int
+Maximum number of concurrent DNS queries
+-o string
+Path to the text file containing terminal stdout/stderr
+-org string
+Search string provided against AS description information
+-p value
+Ports separated by commas (default: 80, 443)
+-r value
+IP addresses of preferred DNS resolvers (can be used multiple times)
+-rf value
+Path to a file providing preferred DNS resolvers
+-src
+Print data sources for the discovered names
+-timeout int
+Number of minutes to let enumeration run before quitting
+-v    Output status / debug / troubleshooting info
+-whois
+All provided domains are run through reverse whois
+
+
+The user's guide can be found here:
+https://github.com/owasp-amass/amass/blob/master/doc/user_guide.md
+
+An example configuration file can be found here:
+https://github.com/owasp-amass/amass/blob/master/examples/config.ini
+
+The Amass tutorial can be found here:
+https://github.com/owasp-amass/amass/blob/master/doc/tutorial.md
+
+arsenal@24cc086ef902:~/tools/amass$ amass enum -d example.com
+bash: amass: command not found
+arsenal@24cc086ef902:~/tools/amass$ ./amass enum -d example.com
+^C
+arsenal@24cc086ef902:~/tools/amass$ ./amass enum -d provethatyouarenotarobot.com
+exit
+^C
+arsenal@24cc086ef902:~/tools/amass$ exit
+exit
+(base) bash-5.0$ pwd
+/home/bonobo
+(base) bash-5.0$ docker ps -a
+^C
+(base) bash-5.0$ docker ps -a
+CONTAINER ID   IMAGE                         COMMAND                  CREATED          STATUS                        PORTS     NAMES
+552b57d33b09   d2b57612baae                  "/bin/sh -c ./script…"   8 minutes ago    Exited (0) 3 minutes ago                admiring_haibt
+417bb318e37a   d2b57612baae                  "/bin/sh -c ./script…"   10 minutes ago   Exited (0) 4 minutes ago                priceless_blackwell
+24cc086ef902   r00tdaemon/arsenal            "/bin/bash"              26 minutes ago   Exited (130) 17 minutes ago             jovial_liskov
+13fd7fcf6327   neurodebian                   "/bin/bash"              47 hours ago     Exited (0) 58 minutes ago               fervent_golick
+c12ac569b9c0   archlinux                     "/bin/bash"              2 days ago       Up 2 days                               vigilant_mayer
+51d55d572492   alpinelinux/docker-cli        "/bin/sh"                2 days ago       Up 2 days                               awesome_poincare
+e76658c66c72   kalilinux/kali-last-release   "/bin/bash"              2 days ago       Up 2 days                               distracted_newton
+8634d159936a   mechachleopteryx/lynxspace    "sh /entry /bin/bash"    7 months ago     Up 2 days                               elegant_mendel
+(base) bash-5.0$ docker ps -a
+CONTAINER ID   IMAGE                         COMMAND                  CREATED          STATUS                        PORTS     NAMES
+417bb318e37a   d2b57612baae                  "/bin/sh -c ./script…"   11 minutes ago   Exited (0) 5 minutes ago                priceless_blackwell
+24cc086ef902   r00tdaemon/arsenal            "/bin/bash"              26 minutes ago   Exited (130) 18 minutes ago             jovial_liskov
+13fd7fcf6327   neurodebian                   "/bin/bash"              47 hours ago     Exited (0) 59 minutes ago               fervent_golick
+c12ac569b9c0   archlinux                     "/bin/bash"              2 days ago       Up 2 days                               vigilant_mayer
+51d55d572492   alpinelinux/docker-cli        "/bin/sh"                2 days ago       Up 2 days                               awesome_poincare
+e76658c66c72   kalilinux/kali-last-release   "/bin/bash"              2 days ago       Up 2 days                               distracted_newton
+8634d159936a   mechachleopteryx/lynxspace    "sh /entry /bin/bash"    7 months ago     Up 2 days                               elegant_mendel
+(base) bash-5.0$ pwd
+/home/bonobo
+(base) bash-5.0$ cd /mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/abraxas
+(base) bash-5.0$  cd ..
+(base) bash-5.0$ ls *.sh
+academize.sh  add-phonograph.sh  autopush.sh  pushup.sh
+(base) bash-5.0$ vim pushup.sh
+(base) bash-5.0$ cat pushup.sh
+#!/usr/bin/bash
+
+# Base directory where the repositories are located
+base_directory="$PWD"
+
+# Directory to copy files into (the 'academizer' repository)
+academizer_directory="/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/Github/academizer"
+
+# List of directories to process
+directories=("alphabet" "audiobooks" "Centerfuge" "eclectric-oil" "example" "Haplopraxis/IFM" "keen-unicoder" "logical-connectives" "mindgame" "mirror" "negentropy" "phonograph" "prototypes" "psychohistory" "quantum-soup" "standardgalactic.github.io" "technobabble" "unfinished-thoughts" "substrate" "xanadu" "zygomindfulness")
+
+
+# Loop through each specified directory
+for dir in "${directories[@]}"; do
+echo "Processing $dir"
+
+# Full path to the source directory
+full_path="$base_directory/$dir"
+
+# Check if directory exists
+if [ -d "$full_path" ]; then
+# Copy .mhtml, .html, and .txt files to
+# academizer
+cp "$full_path"/*.mhtml "$full_path"/*.html "$full_path"/*.txt "$academizer_directory"
+
+# Change directory to
+# academizer
+cd "$academizer_directory" || exit
+
+# Remove duplicate files with no extension
+for file in *.mhtml; do base=$(basename "$file" .mhtml); find . -maxdepth 1 -type f -name "$base*" ! -name "*.mhtml" -exec rm -f {} \;; done
+
+# all
+# changes
+# to git
+git add .
+
+# Commit
+# the
+# changes
+# with
+# a message
+git commit -m "Imported from $dir"
+
+echo "Acknowledging $dir"
+sleep 4
+
+# Uncomment the next line to enable
+# git push
+git push
+else
+echo "Directory $full_path does not exist"
+fi
+done
+
+
+(base) bash-5.0$ ./pushup.sh
+Processing alphabet
+cp: cannot stat '/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/alphabet/*.html': No such file or directory
+cp: cannot stat '/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/alphabet/*.txt': No such file or directory
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Acknowledging alphabet
+Everything up-to-date
+Processing audiobooks
+cp: cannot stat '/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/audiobooks/*.mhtml': No such file or directory
+cp: cannot stat '/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/audiobooks/*.html': No such file or directory
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Acknowledging audiobooks
+Everything up-to-date
+Processing Centerfuge
+cp: cannot stat '/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/Centerfuge/*.html': No such file or directory
+cp: cannot stat '/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/Centerfuge/*.txt': No such file or directory
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Acknowledging Centerfuge
+Everything up-to-date
+Processing eclectric-oil
+cp: cannot stat '/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/eclectric-oil/*.html': No such file or directory
+cp: cannot stat '/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/eclectric-oil/*.txt': No such file or directory
+[main df388d9] Imported from eclectric-oil
+1 file changed, 632 insertions(+), 745 deletions(-)
+Acknowledging eclectric-oil
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 40.48 KiB | 493.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/standardgalactic/academizer
+75185a0..df388d9  main -> main
+Processing example
+cp: cannot stat '/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/example/*.html': No such file or directory
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Acknowledging example
+Everything up-to-date
+Processing Haplopraxis/IFM
+cp: cannot stat '/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/Haplopraxis/IFM/*.mhtml': No such file or directory
+cp: cannot stat '/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/Haplopraxis/IFM/*.html': No such file or directory
+[main 4f57caf] Imported from Haplopraxis/IFM
+1 file changed, 150 insertions(+), 150 deletions(-)
+Acknowledging Haplopraxis/IFM
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 3.06 KiB | 12.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/standardgalactic/academizer
+df388d9..4f57caf  main -> main
+Processing keen-unicoder
+cp: cannot stat '/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/keen-unicoder/*.mhtml': No such file or directory
+cp: cannot stat '/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/keen-unicoder/*.html': No such file or directory
+cp: cannot stat '/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/keen-unicoder/*.txt': No such file or directory
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Acknowledging keen-unicoder
+Everything up-to-date
+Processing logical-connectives
+cp: cannot stat '/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/logical-connectives/*.mhtml': No such file or directory
+cp: cannot stat '/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/logical-connectives/*.html': No such file or directory
+cp: cannot stat '/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/logical-connectives/*.txt': No such file or directory
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Acknowledging logical-connectives
+Everything up-to-date
+Processing mindgame
+cp: cannot stat '/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/mindgame/*.mhtml': No such file or directory
+cp: cannot stat '/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/mindgame/*.html': No such file or directory
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Acknowledging mindgame
+Everything up-to-date
+Processing mirror
+cp: cannot stat '/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/mirror/*.html': No such file or directory
+[main 40c256f] Imported from mirror
+7 files changed, 24810 insertions(+), 682 deletions(-)
+create mode 100644 Automatic Task Manager.mhtml
+create mode 100644 Biomimetic Food Production.mhtml
+create mode 100644 Interactive Feedback Learning.mhtml
+create mode 100644 Meta-Prompting Analogies.mhtml
+create mode 100644 Venture Capital Ideas.mhtml
+Acknowledging mirror
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 215.23 KiB | 860.00 KiB/s, done.
+Total 9 (delta 8), reused 0 (delta 0)
+remote: Resolving deltas: 100% (8/8), completed with 3 local objects.
+To https://github.com/standardgalactic/academizer
+4f57caf..40c256f  main -> main
+Processing negentropy
+cp: cannot stat '/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/negentropy/*.html': No such file or directory
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Acknowledging negentropy
+Everything up-to-date
+Processing phonograph
+cp: cannot stat '/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/phonograph/*.html': No such file or directory
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Acknowledging phonograph
+Everything up-to-date
+Processing prototypes
+cp: cannot stat '/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/prototypes/*.html': No such file or directory
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Acknowledging prototypes
+Everything up-to-date
+Processing psychohistory
+cp: cannot stat '/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/psychohistory/*.mhtml': No such file or directory
+cp: cannot stat '/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/psychohistory/*.html': No such file or directory
+cp: cannot stat '/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/psychohistory/*.txt': No such file or directory
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Acknowledging psychohistory
+Everything up-to-date
+Processing quantum-soup
+cp: cannot stat '/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/quantum-soup/*.html': No such file or directory
+cp: cannot stat '/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/quantum-soup/*.txt': No such file or directory
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Acknowledging quantum-soup
+Everything up-to-date
+Processing standardgalactic.github.io
+cp: cannot stat '/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/standardgalactic.github.io/*.txt': No such file or directory
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Acknowledging standardgalactic.github.io
+Everything up-to-date
+Processing technobabble
+cp: cannot stat '/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/technobabble/*.html': No such file or directory
+cp: cannot stat '/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/technobabble/*.txt': No such file or directory
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Acknowledging technobabble
+Everything up-to-date
+Processing unfinished-thoughts
+cp: cannot stat '/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/unfinished-thoughts/*.html': No such file or directory
+cp: cannot stat '/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/unfinished-thoughts/*.txt': No such file or directory
+[main 843153a] Imported from unfinished-thoughts
+8 files changed, 39672 insertions(+), 57 deletions(-)
+create mode 100644 Geometric Deep Learning.mhtml
+create mode 100644 Invert Colors in PDF.mhtml
+create mode 100644 Jax programming examples.mhtml
+create mode 100644 MeTTa Formalization with Metagraphs.mhtml
+create mode 100644 Prompt Engineering.mhtml
+create mode 100644 Rename PDF Files Bash.mhtml
+Acknowledging unfinished-thoughts
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (10/10), 520.03 KiB | 1.70 MiB/s, done.
+Total 10 (delta 8), reused 0 (delta 0)
+remote: Resolving deltas: 100% (8/8), completed with 2 local objects.
+To https://github.com/standardgalactic/academizer
+40c256f..843153a  main -> main
+Processing substrate
+cp: cannot stat '/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/substrate/*.html': No such file or directory
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Acknowledging substrate
+Everything up-to-date
+Processing xanadu
+cp: cannot stat '/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/xanadu/*.html': No such file or directory
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Acknowledging xanadu
+Everything up-to-date
+Processing zygomindfulness
+cp: cannot stat '/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/zygomindfulness/*.mhtml': No such file or directory
+cp: cannot stat '/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/zygomindfulness/*.html': No such file or directory
+cp: cannot stat '/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/zygomindfulness/*.txt': No such file or directory
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Acknowledging zygomindfulness
+Everything up-to-date
+(base) bash-5.0$ pwd
+/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub
+(base) bash-5.0$
+
