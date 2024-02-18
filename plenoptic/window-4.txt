@@ -1,0 +1,1907 @@
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub$ ssh eccehomo@192.168.2.240
+eccehomo@192.168.2.240's password:
+Welcome to Ubuntu 22.04.3 LTS (GNU/Linux 6.5.0-17-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+41 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+*** System restart required ***
+Last login: Sat Feb 17 18:44:17 2024 from 192.168.2.11
+(base) eccehomo@Human:~$ git clone https://github.com/MikeyBeez/SimpleAgent.git
+Cloning into 'SimpleAgent'...
+remote: Enumerating objects: 188, done.
+remote: Counting objects: 100% (188/188), done.
+remote: Compressing objects: 100% (131/131), done.
+remote: Total 188 (delta 104), reused 123 (delta 49), pack-reused 0
+Receiving objects: 100% (188/188), 38.59 KiB | 1.07 MiB/s, done.
+Resolving deltas: 100% (104/104), done.
+(base) eccehomo@Human:~$ cd SimpleAgent/
+(base) eccehomo@Human:~/SimpleAgent$ conda create -n sa Python 3.10.9
+Collecting package metadata (current_repodata.json): done
+Solving environment: failed with repodata from current_repodata.json, will retry with next repodata source.
+Collecting package metadata (repodata.json): |-/done
+Solving environment: failed
+
+PackagesNotFoundError: The following packages are not available from current channels:
+
+  - 3.10.9
+
+Current channels:
+
+  - https://repo.anaconda.com/pkgs/main/linux-64
+  - https://repo.anaconda.com/pkgs/main/noarch
+  - https://repo.anaconda.com/pkgs/r/linux-64
+  - https://repo.anaconda.com/pkgs/r/noarch
+
+To search for alternate channels that may provide the conda package you're
+looking for, navigate to
+
+    https://anaconda.org
+
+and use the search bar at the top of the page.
+
+
+(base) eccehomo@Human:~/SimpleAgent$ python --version
+Python 3.9.7
+(base) eccehomo@Human:~/SimpleAgent$ conda create -n sa Python 3.9.7
+Collecting package metadata (current_repodata.json): done
+Solving environment: failed with repodata from current_repodata.json, will retry with next repodata source.
+Collecting package metadata (repodata.json): done
+Solving environment: failed
+
+PackagesNotFoundError: The following packages are not available from current channels:
+
+  - 3.9.7
+
+Current channels:
+
+  - https://repo.anaconda.com/pkgs/main/linux-64
+  - https://repo.anaconda.com/pkgs/main/noarch
+  - https://repo.anaconda.com/pkgs/r/linux-64
+  - https://repo.anaconda.com/pkgs/r/noarch
+
+To search for alternate channels that may provide the conda package you're
+looking for, navigate to
+
+    https://anaconda.org
+
+and use the search bar at the top of the page.
+
+
+(base) eccehomo@Human:~/SimpleAgent$ conda create -n sa Python
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.10.3
+  latest version: 24.1.1
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: /home/eccehomo/anaconda3/envs/sa
+
+  added / updated specs:
+    - python
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    _openmp_mutex-5.1          |            1_gnu          21 KB
+    ca-certificates-2023.12.12 |       h06a4308_0         126 KB
+    expat-2.5.0                |       h6a678d5_0         172 KB
+    ld_impl_linux-64-2.38      |       h1181459_1         654 KB
+    libffi-3.4.4               |       h6a678d5_0         142 KB
+    libgcc-ng-11.2.0           |       h1234567_1         5.3 MB
+    libgomp-11.2.0             |       h1234567_1         474 KB
+    libstdcxx-ng-11.2.0        |       h1234567_1         4.7 MB
+    libuuid-1.41.5             |       h5eee18b_0          27 KB
+    ncurses-6.4                |       h6a678d5_0         914 KB
+    openssl-3.0.13             |       h7f8727e_0         5.2 MB
+    pip-23.3.1                 |  py312h06a4308_0         2.8 MB
+    python-3.12.1              |       h996f2a0_0        35.2 MB
+    readline-8.2               |       h5eee18b_0         357 KB
+    setuptools-68.2.2          |  py312h06a4308_0         1.2 MB
+    sqlite-3.41.2              |       h5eee18b_0         1.2 MB
+    tk-8.6.12                  |       h1ccaba5_0         3.0 MB
+    tzdata-2023d               |       h04d1e81_0         117 KB
+    wheel-0.41.2               |  py312h06a4308_0         131 KB
+    xz-5.4.5                   |       h5eee18b_0         646 KB
+    zlib-1.2.13                |       h5eee18b_0         103 KB
+    ------------------------------------------------------------
+                                           Total:        62.4 MB
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      pkgs/main/linux-64::_libgcc_mutex-0.1-main
+  _openmp_mutex      pkgs/main/linux-64::_openmp_mutex-5.1-1_gnu
+  bzip2              pkgs/main/linux-64::bzip2-1.0.8-h7b6447c_0
+  ca-certificates    pkgs/main/linux-64::ca-certificates-2023.12.12-h06a4308_0
+  expat              pkgs/main/linux-64::expat-2.5.0-h6a678d5_0
+  ld_impl_linux-64   pkgs/main/linux-64::ld_impl_linux-64-2.38-h1181459_1
+  libffi             pkgs/main/linux-64::libffi-3.4.4-h6a678d5_0
+  libgcc-ng          pkgs/main/linux-64::libgcc-ng-11.2.0-h1234567_1
+  libgomp            pkgs/main/linux-64::libgomp-11.2.0-h1234567_1
+  libstdcxx-ng       pkgs/main/linux-64::libstdcxx-ng-11.2.0-h1234567_1
+  libuuid            pkgs/main/linux-64::libuuid-1.41.5-h5eee18b_0
+  ncurses            pkgs/main/linux-64::ncurses-6.4-h6a678d5_0
+  openssl            pkgs/main/linux-64::openssl-3.0.13-h7f8727e_0
+  pip                pkgs/main/linux-64::pip-23.3.1-py312h06a4308_0
+  python             pkgs/main/linux-64::python-3.12.1-h996f2a0_0
+  readline           pkgs/main/linux-64::readline-8.2-h5eee18b_0
+  setuptools         pkgs/main/linux-64::setuptools-68.2.2-py312h06a4308_0
+  sqlite             pkgs/main/linux-64::sqlite-3.41.2-h5eee18b_0
+  tk                 pkgs/main/linux-64::tk-8.6.12-h1ccaba5_0
+  tzdata             pkgs/main/noarch::tzdata-2023d-h04d1e81_0
+  wheel              pkgs/main/linux-64::wheel-0.41.2-py312h06a4308_0
+  xz                 pkgs/main/linux-64::xz-5.4.5-h5eee18b_0
+  zlib               pkgs/main/linux-64::zlib-1.2.13-h5eee18b_0
+
+
+Proceed ([y]/n)? n
+
+
+CondaSystemExit: Exiting.
+
+(base) eccehomo@Human:~/SimpleAgent$ conda update -n base -c defaults conda
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.10.3
+  latest version: 24.1.1
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: /home/eccehomo/anaconda3
+
+  added / updated specs:
+    - conda
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    future-0.18.3              |   py39h06a4308_0         671 KB
+    pyjwt-2.4.0                |   py39h06a4308_0          34 KB
+    xmltodict-0.13.0           |   py39h06a4308_0          19 KB
+    ------------------------------------------------------------
+                                           Total:         724 KB
+
+The following packages will be UPDATED:
+
+  future                              0.18.2-py39h06a4308_1 --> 0.18.3-py39h06a4308_0
+  pyjwt                                2.1.0-py39h06a4308_0 --> 2.4.0-py39h06a4308_0
+  xmltodict          pkgs/main/noarch::xmltodict-0.12.0-py~ --> pkgs/main/linux-64::xmltodict-0.13.0-py39h06a4308_0
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+pyjwt-2.4.0          | 34 KB     | ############################################################################################ | 100%
+xmltodict-0.13.0     | 19 KB     | ############################################################################################ | 100%
+future-0.18.3        | 671 KB    | ############################################################################################ | 100%
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+(base) eccehomo@Human:~/SimpleAgent$ conda create -n sa Python
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.10.3
+  latest version: 24.1.1
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: /home/eccehomo/anaconda3/envs/sa
+
+  added / updated specs:
+    - python
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    _openmp_mutex-5.1          |            1_gnu          21 KB
+    ca-certificates-2023.12.12 |       h06a4308_0         126 KB
+    expat-2.5.0                |       h6a678d5_0         172 KB
+    ld_impl_linux-64-2.38      |       h1181459_1         654 KB
+    libffi-3.4.4               |       h6a678d5_0         142 KB
+    libgcc-ng-11.2.0           |       h1234567_1         5.3 MB
+    libgomp-11.2.0             |       h1234567_1         474 KB
+    libstdcxx-ng-11.2.0        |       h1234567_1         4.7 MB
+    libuuid-1.41.5             |       h5eee18b_0          27 KB
+    ncurses-6.4                |       h6a678d5_0         914 KB
+    openssl-3.0.13             |       h7f8727e_0         5.2 MB
+    pip-23.3.1                 |  py312h06a4308_0         2.8 MB
+    python-3.12.1              |       h996f2a0_0        35.2 MB
+    readline-8.2               |       h5eee18b_0         357 KB
+    setuptools-68.2.2          |  py312h06a4308_0         1.2 MB
+    sqlite-3.41.2              |       h5eee18b_0         1.2 MB
+    tk-8.6.12                  |       h1ccaba5_0         3.0 MB
+    tzdata-2023d               |       h04d1e81_0         117 KB
+    wheel-0.41.2               |  py312h06a4308_0         131 KB
+    xz-5.4.5                   |       h5eee18b_0         646 KB
+    zlib-1.2.13                |       h5eee18b_0         103 KB
+    ------------------------------------------------------------
+                                           Total:        62.4 MB
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      pkgs/main/linux-64::_libgcc_mutex-0.1-main
+  _openmp_mutex      pkgs/main/linux-64::_openmp_mutex-5.1-1_gnu
+  bzip2              pkgs/main/linux-64::bzip2-1.0.8-h7b6447c_0
+  ca-certificates    pkgs/main/linux-64::ca-certificates-2023.12.12-h06a4308_0
+  expat              pkgs/main/linux-64::expat-2.5.0-h6a678d5_0
+  ld_impl_linux-64   pkgs/main/linux-64::ld_impl_linux-64-2.38-h1181459_1
+  libffi             pkgs/main/linux-64::libffi-3.4.4-h6a678d5_0
+  libgcc-ng          pkgs/main/linux-64::libgcc-ng-11.2.0-h1234567_1
+  libgomp            pkgs/main/linux-64::libgomp-11.2.0-h1234567_1
+  libstdcxx-ng       pkgs/main/linux-64::libstdcxx-ng-11.2.0-h1234567_1
+  libuuid            pkgs/main/linux-64::libuuid-1.41.5-h5eee18b_0
+  ncurses            pkgs/main/linux-64::ncurses-6.4-h6a678d5_0
+  openssl            pkgs/main/linux-64::openssl-3.0.13-h7f8727e_0
+  pip                pkgs/main/linux-64::pip-23.3.1-py312h06a4308_0
+  python             pkgs/main/linux-64::python-3.12.1-h996f2a0_0
+  readline           pkgs/main/linux-64::readline-8.2-h5eee18b_0
+  setuptools         pkgs/main/linux-64::setuptools-68.2.2-py312h06a4308_0
+  sqlite             pkgs/main/linux-64::sqlite-3.41.2-h5eee18b_0
+  tk                 pkgs/main/linux-64::tk-8.6.12-h1ccaba5_0
+  tzdata             pkgs/main/noarch::tzdata-2023d-h04d1e81_0
+  wheel              pkgs/main/linux-64::wheel-0.41.2-py312h06a4308_0
+  xz                 pkgs/main/linux-64::xz-5.4.5-h5eee18b_0
+  zlib               pkgs/main/linux-64::zlib-1.2.13-h5eee18b_0
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+setuptools-68.2.2    | 1.2 MB    | ############################################################################################ | 100%
+libffi-3.4.4         | 142 KB    | ############################################################################################ | 100%
+libuuid-1.41.5       | 27 KB     | ############################################################################################ | 100%
+readline-8.2         | 357 KB    | ############################################################################################ | 100%
+ld_impl_linux-64-2.3 | 654 KB    | ############################################################################################ | 100%
+openssl-3.0.13       | 5.2 MB    | ############################################################################################ | 100%
+libgcc-ng-11.2.0     | 5.3 MB    | ############################################################################################ | 100%
+ncurses-6.4          | 914 KB    | ############################################################################################ | 100%
+libgomp-11.2.0       | 474 KB    | ############################################################################################ | 100%
+pip-23.3.1           | 2.8 MB    | ############################################################################################ | 100%
+expat-2.5.0          | 172 KB    | ############################################################################################ | 100%
+tk-8.6.12            | 3.0 MB    | ############################################################################################ | 100%
+xz-5.4.5             | 646 KB    | ############################################################################################ | 100%
+tzdata-2023d         | 117 KB    | ############################################################################################ | 100%
+zlib-1.2.13          | 103 KB    | ############################################################################################ | 100%
+ca-certificates-2023 | 126 KB    | ############################################################################################ | 100%
+libstdcxx-ng-11.2.0  | 4.7 MB    | ############################################################################################ | 100%
+wheel-0.41.2         | 131 KB    | ############################################################################################ | 100%
+_openmp_mutex-5.1    | 21 KB     | ############################################################################################ | 100%
+python-3.12.1        | 35.2 MB   | ############################################################################################ | 100%
+sqlite-3.41.2        | 1.2 MB    | ############################################################################################ | 100%
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate sa
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+(base) eccehomo@Human:~/SimpleAgent$ conda activate {î­€,î­,î­‚,î­ƒ,î­„,î­…,î­†,î­‡,î­ˆ,î­‰,î­Š,î­‹,î­Œ,î­Œ,î­Ž,î­,î­,î­‘,î­’,î­“,î­
+”,î­•,î­–,î­—,î­˜,î­™}
+activate does not accept more than one argument:
+['î\xad€', 'î\xad\x81', 'î\xad‚', 'î\xadƒ', 'î\xad„', 'î\xad…', 'î\xad†', 'î\xad‡', 'î\xadˆ', 'î\xad‰', 'î\xadŠ', 'î\xad‹', 'î\xadŒ', '
+î\xadŒ', 'î\xadŽ', 'î\xad\x8f', 'î\xad\x90', 'î\xad‘', 'î\xad’', 'î\xad“', 'î\xad”', 'î\xad•', 'î\xad–', 'î\xad—', 'î\xad˜', 'î\xad™']
+
+(base) eccehomo@Human:~/SimpleAgent$ ^C
+(base) eccehomo@Human:~/SimpleAgent$ {î­€,î­,î­‚,î­ƒ,î­„,î­…,î­†,î­‡,î­ˆ,î­‰,î­Š,î­‹,î­Œ,î­Œ,î­Ž,î­,î­,î­‘,î­’,î­“,î­”,î­•,î­–,î­—,î
+­˜,î­™} ^C
+(base) eccehomo@Human:~/SimpleAgent$ conda actvate sa
+
+CommandNotFoundError: No command 'conda actvate'.
+Did you mean 'conda activate'?
+
+(base) eccehomo@Human:~/SimpleAgent$ conda activate sa
+(sa) eccehomo@Human:~/SimpleAgent$ pip install langchain
+Collecting langchain
+  Downloading langchain-0.1.7-py3-none-any.whl.metadata (13 kB)
+Collecting PyYAML>=5.3 (from langchain)
+  Downloading PyYAML-6.0.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.1 kB)
+Collecting SQLAlchemy<3,>=1.4 (from langchain)
+  Downloading SQLAlchemy-2.0.27-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.6 kB)
+Collecting aiohttp<4.0.0,>=3.8.3 (from langchain)
+  Downloading aiohttp-3.9.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.4 kB)
+Collecting dataclasses-json<0.7,>=0.5.7 (from langchain)
+  Downloading dataclasses_json-0.6.4-py3-none-any.whl.metadata (25 kB)
+Collecting jsonpatch<2.0,>=1.33 (from langchain)
+  Downloading jsonpatch-1.33-py2.py3-none-any.whl.metadata (3.0 kB)
+Collecting langchain-community<0.1,>=0.0.20 (from langchain)
+  Downloading langchain_community-0.0.20-py3-none-any.whl.metadata (8.1 kB)
+Collecting langchain-core<0.2,>=0.1.22 (from langchain)
+  Downloading langchain_core-0.1.23-py3-none-any.whl.metadata (6.0 kB)
+Collecting langsmith<0.1,>=0.0.83 (from langchain)
+  Downloading langsmith-0.0.92-py3-none-any.whl.metadata (9.9 kB)
+Collecting numpy<2,>=1 (from langchain)
+  Downloading numpy-1.26.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.0/61.0 kB 449.4 kB/s eta 0:00:00
+Collecting pydantic<3,>=1 (from langchain)
+  Downloading pydantic-2.6.1-py3-none-any.whl.metadata (83 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 83.5/83.5 kB 797.6 kB/s eta 0:00:00
+Collecting requests<3,>=2 (from langchain)
+  Using cached requests-2.31.0-py3-none-any.whl.metadata (4.6 kB)
+Collecting tenacity<9.0.0,>=8.1.0 (from langchain)
+  Downloading tenacity-8.2.3-py3-none-any.whl.metadata (1.0 kB)
+Collecting aiosignal>=1.1.2 (from aiohttp<4.0.0,>=3.8.3->langchain)
+  Downloading aiosignal-1.3.1-py3-none-any.whl (7.6 kB)
+Collecting attrs>=17.3.0 (from aiohttp<4.0.0,>=3.8.3->langchain)
+  Downloading attrs-23.2.0-py3-none-any.whl.metadata (9.5 kB)
+Collecting frozenlist>=1.1.1 (from aiohttp<4.0.0,>=3.8.3->langchain)
+  Downloading frozenlist-1.4.1-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metada
+ta (12 kB)
+Collecting multidict<7.0,>=4.5 (from aiohttp<4.0.0,>=3.8.3->langchain)
+  Downloading multidict-6.0.5-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.2 kB)
+Collecting yarl<2.0,>=1.0 (from aiohttp<4.0.0,>=3.8.3->langchain)
+  Downloading yarl-1.9.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (31 kB)
+Collecting marshmallow<4.0.0,>=3.18.0 (from dataclasses-json<0.7,>=0.5.7->langchain)
+  Downloading marshmallow-3.20.2-py3-none-any.whl.metadata (7.5 kB)
+Collecting typing-inspect<1,>=0.4.0 (from dataclasses-json<0.7,>=0.5.7->langchain)
+  Downloading typing_inspect-0.9.0-py3-none-any.whl.metadata (1.5 kB)
+Collecting jsonpointer>=1.9 (from jsonpatch<2.0,>=1.33->langchain)
+  Downloading jsonpointer-2.4-py2.py3-none-any.whl.metadata (2.5 kB)
+Collecting anyio<5,>=3 (from langchain-core<0.2,>=0.1.22->langchain)
+  Downloading anyio-4.2.0-py3-none-any.whl.metadata (4.6 kB)
+Collecting langsmith<0.1,>=0.0.83 (from langchain)
+  Downloading langsmith-0.0.87-py3-none-any.whl.metadata (10 kB)
+Collecting packaging<24.0,>=23.2 (from langchain-core<0.2,>=0.1.22->langchain)
+  Using cached packaging-23.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting annotated-types>=0.4.0 (from pydantic<3,>=1->langchain)
+  Downloading annotated_types-0.6.0-py3-none-any.whl.metadata (12 kB)
+Collecting pydantic-core==2.16.2 (from pydantic<3,>=1->langchain)
+  Downloading pydantic_core-2.16.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.5 kB)
+Collecting typing-extensions>=4.6.1 (from pydantic<3,>=1->langchain)
+  Downloading typing_extensions-4.9.0-py3-none-any.whl.metadata (3.0 kB)
+Collecting charset-normalizer<4,>=2 (from requests<3,>=2->langchain)
+  Downloading charset_normalizer-3.3.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (33 kB)
+Collecting idna<4,>=2.5 (from requests<3,>=2->langchain)
+  Downloading idna-3.6-py3-none-any.whl.metadata (9.9 kB)
+Collecting urllib3<3,>=1.21.1 (from requests<3,>=2->langchain)
+  Downloading urllib3-2.2.0-py3-none-any.whl.metadata (6.4 kB)
+Collecting certifi>=2017.4.17 (from requests<3,>=2->langchain)
+  Downloading certifi-2024.2.2-py3-none-any.whl.metadata (2.2 kB)
+Collecting greenlet!=0.4.17 (from SQLAlchemy<3,>=1.4->langchain)
+  Downloading greenlet-3.0.3-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (3.8 kB)
+Collecting sniffio>=1.1 (from anyio<5,>=3->langchain-core<0.2,>=0.1.22->langchain)
+  Downloading sniffio-1.3.0-py3-none-any.whl (10 kB)
+Collecting mypy-extensions>=0.3.0 (from typing-inspect<1,>=0.4.0->dataclasses-json<0.7,>=0.5.7->langchain)
+  Downloading mypy_extensions-1.0.0-py3-none-any.whl.metadata (1.1 kB)
+Downloading langchain-0.1.7-py3-none-any.whl (815 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 815.9/815.9 kB 2.6 MB/s eta 0:00:00
+Downloading aiohttp-3.9.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 3.7 MB/s eta 0:00:00
+Downloading dataclasses_json-0.6.4-py3-none-any.whl (28 kB)
+Downloading jsonpatch-1.33-py2.py3-none-any.whl (12 kB)
+Downloading langchain_community-0.0.20-py3-none-any.whl (1.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 4.3 MB/s eta 0:00:00
+Downloading langchain_core-0.1.23-py3-none-any.whl (241 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 241.2/241.2 kB 2.0 MB/s eta 0:00:00
+Downloading langsmith-0.0.87-py3-none-any.whl (55 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 55.4/55.4 kB 486.7 kB/s eta 0:00:00
+Downloading numpy-1.26.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.0/18.0 MB 7.6 MB/s eta 0:00:00
+Downloading pydantic-2.6.1-py3-none-any.whl (394 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 394.8/394.8 kB 3.3 MB/s eta 0:00:00
+Downloading pydantic_core-2.16.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 6.2 MB/s eta 0:00:00
+Downloading PyYAML-6.0.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (724 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 725.0/725.0 kB 3.6 MB/s eta 0:00:00
+Using cached requests-2.31.0-py3-none-any.whl (62 kB)
+Downloading SQLAlchemy-2.0.27-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.2/3.2 MB 7.4 MB/s eta 0:00:00
+Downloading tenacity-8.2.3-py3-none-any.whl (24 kB)
+Downloading annotated_types-0.6.0-py3-none-any.whl (12 kB)
+Downloading anyio-4.2.0-py3-none-any.whl (85 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 85.5/85.5 kB 846.3 kB/s eta 0:00:00
+Downloading attrs-23.2.0-py3-none-any.whl (60 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.8/60.8 kB 566.6 kB/s eta 0:00:00
+Downloading certifi-2024.2.2-py3-none-any.whl (163 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 163.8/163.8 kB 1.4 MB/s eta 0:00:00
+Downloading charset_normalizer-3.3.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (141 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 141.9/141.9 kB 1.4 MB/s eta 0:00:00
+Downloading frozenlist-1.4.1-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (281 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 281.5/281.5 kB 2.1 MB/s eta 0:00:00
+Downloading greenlet-3.0.3-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (625 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 625.7/625.7 kB 4.1 MB/s eta 0:00:00
+Downloading idna-3.6-py3-none-any.whl (61 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.6/61.6 kB 227.5 kB/s eta 0:00:00
+Downloading jsonpointer-2.4-py2.py3-none-any.whl (7.8 kB)
+Downloading marshmallow-3.20.2-py3-none-any.whl (49 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 49.4/49.4 kB 486.2 kB/s eta 0:00:00
+Downloading multidict-6.0.5-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (130 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 130.8/130.8 kB 1.3 MB/s eta 0:00:00
+Using cached packaging-23.2-py3-none-any.whl (53 kB)
+Downloading typing_extensions-4.9.0-py3-none-any.whl (32 kB)
+Downloading typing_inspect-0.9.0-py3-none-any.whl (8.8 kB)
+Downloading urllib3-2.2.0-py3-none-any.whl (120 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 120.9/120.9 kB 1.1 MB/s eta 0:00:00
+Downloading yarl-1.9.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (322 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 322.4/322.4 kB 2.6 MB/s eta 0:00:00
+Downloading mypy_extensions-1.0.0-py3-none-any.whl (4.7 kB)
+Installing collected packages: urllib3, typing-extensions, tenacity, sniffio, PyYAML, packaging, numpy, mypy-extensions, multidict, jso
+npointer, idna, greenlet, frozenlist, charset-normalizer, certifi, attrs, annotated-types, yarl, typing-inspect, SQLAlchemy, requests,
+pydantic-core, marshmallow, jsonpatch, anyio, aiosignal, pydantic, dataclasses-json, aiohttp, langsmith, langchain-core, langchain-comm
+unity, langchain
+Successfully installed PyYAML-6.0.1 SQLAlchemy-2.0.27 aiohttp-3.9.3 aiosignal-1.3.1 annotated-types-0.6.0 anyio-4.2.0 attrs-23.2.0 cert
+ifi-2024.2.2 charset-normalizer-3.3.2 dataclasses-json-0.6.4 frozenlist-1.4.1 greenlet-3.0.3 idna-3.6 jsonpatch-1.33 jsonpointer-2.4 la
+ngchain-0.1.7 langchain-community-0.0.20 langchain-core-0.1.23 langsmith-0.0.87 marshmallow-3.20.2 multidict-6.0.5 mypy-extensions-1.0.
+0 numpy-1.26.4 packaging-23.2 pydantic-2.6.1 pydantic-core-2.16.2 requests-2.31.0 sniffio-1.3.0 tenacity-8.2.3 typing-extensions-4.9.0
+typing-inspect-0.9.0 urllib3-2.2.0 yarl-1.9.4
+(sa) eccehomo@Human:~/SimpleAgent$ ls
+charlie            conversation12.py  conversation3.py  conversation6.py  conversation9.py  LICENSE   README.md
+conversation10.py  conversation13.py  conversation4.py  conversation7.py  conversation.py   LMStudio  requirements.txt
+conversation11.py  conversation2.py   conversation5.py  conversation8.py  face.py           ollama    speak.mp3
+(sa) eccehomo@Human:~/SimpleAgent$ cd ollama
+(sa) eccehomo@Human:~/SimpleAgent/ollama$ ls
+bc.py               ollama_runner.py  RAGtool3.py  RAGtool6.py  README.md  test9.py  testRAG1.py
+ollama_2_runner.py  RAGtool2.py       RAGtool4.py  RAGtool.py   test7.py   test.py
+(sa) eccehomo@Human:~/SimpleAgent/ollama$ cd ..
+(sa) eccehomo@Human:~/SimpleAgent$ cd ..
+(sa) eccehomo@Human:~$ ls
+                       get_number.rb                                  memex               really_new_file
+ 4M34                      GNUstep                                        message             reflog
+ a.lua                     go                                             monte               repository-list.txt
+ anaconda3                 go-experiments                                 Music               Rplots.pdf
+ biglybt                   google-chrome-stable_current_amd64.deb         new_file            sandbox
+'BiglyBT Downloads'        google-cloud-cli-455.0.0-linux-x86_64.tar.gz   newfile             sandbox.rb
+ b.lua                     google-cloud-sdk                               node_modules        SimpleAgent
+ build-test                gore                                           package.json        simple.sh
+ cistercian                gosandbox                                      package-lock.json   snap
+ cistercian_examples.txt   hsandbox                                       personality         Templates
+ Deleuze                   idea-generator                                 Pictures            test.py
+ Desktop                   index.html                                     projects            unisonlanguage
+ docker-compose.yaml       Index-of-Repositories.txt                      Public              Videos
+ Documents                 ix                                            'quick escape'       workspace
+ Downloads                 julia                                          random_file
+ factorial.lua             lib1.lua                                       random_file_name
+ file.lua                  linuxcnc-dev                                   RD
+(sa) eccehomo@Human:~$ cd SimpleAgent/
+(sa) eccehomo@Human:~/SimpleAgent$ ls
+charlie            conversation12.py  conversation3.py  conversation6.py  conversation9.py  LICENSE   README.md
+conversation10.py  conversation13.py  conversation4.py  conversation7.py  conversation.py   LMStudio  requirements.txt
+conversation11.py  conversation2.py   conversation5.py  conversation8.py  face.py           ollama    speak.mp3
+(sa) eccehomo@Human:~/SimpleAgent$ cd charlie/
+(sa) eccehomo@Human:~/SimpleAgent/charlie$ ls
+advocate.txt  arbitrator.txt  conversation.py  critic.txt  main.py  response_generator.py  roles_config.json  roles.py  speak.py
+(sa) eccehomo@Human:~/SimpleAgent/charlie$ cd ..
+(sa) eccehomo@Human:~/SimpleAgent$ ls
+charlie            conversation12.py  conversation3.py  conversation6.py  conversation9.py  LICENSE   README.md
+conversation10.py  conversation13.py  conversation4.py  conversation7.py  conversation.py   LMStudio  requirements.txt
+conversation11.py  conversation2.py   conversation5.py  conversation8.py  face.py           ollama    speak.mp3
+(sa) eccehomo@Human:~/SimpleAgent$ python conversation.py
+/home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LL
+Ms from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langch
+ain-community instead:
+
+`from langchain_community.llms import Ollama`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages/langchain_core/_api/deprecation.py:117: LangChainDeprecationWarning: The
+function `__call__` was deprecated in LangChain 0.1.7 and will be removed in 0.2.0. Use invoke instead.
+  warn_deprecated(
+Traceback (most recent call last):
+  File "/home/eccehomo/SimpleAgent/conversation.py", line 48, in <module>
+    run_conversation(ollama, conversation_duration, initial_prompt)
+  File "/home/eccehomo/SimpleAgent/conversation.py", line 27, in run_conversation
+    agent_one_output = agent_one(ollama, initial_prompt if not conversation_history else conversation_history[-1])
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eccehomo/SimpleAgent/conversation.py", line 9, in agent_one
+    agent_output = generate_response(ollama, prompt)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eccehomo/SimpleAgent/conversation.py", line 5, in generate_response
+    response = ollama(prompt)
+               ^^^^^^^^^^^^^^
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages/langchain_core/_api/deprecation.py", line 145, in warning_emittin
+g_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages/langchain_core/language_models/llms.py", line 991, in __call__
+    self.generate(
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages/langchain_core/language_models/llms.py", line 741, in generate
+    output = self._generate_helper(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages/langchain_core/language_models/llms.py", line 605, in _generate_h
+elper
+    raise e
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages/langchain_core/language_models/llms.py", line 592, in _generate_h
+elper
+    self._generate(
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages/langchain_community/llms/ollama.py", line 408, in _generate
+    final_chunk = super()._stream_with_aggregation(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages/langchain_community/llms/ollama.py", line 317, in _stream_with_ag
+gregation
+    for stream_resp in self._create_generate_stream(prompt, stop, **kwargs):
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages/langchain_community/llms/ollama.py", line 159, in _create_generat
+e_stream
+    yield from self._create_stream(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages/langchain_community/llms/ollama.py", line 233, in _create_stream
+    raise OllamaEndpointNotFoundError(
+langchain_community.llms.ollama.OllamaEndpointNotFoundError: Ollama call failed with status code 404. Maybe your model is not found and
+ you should pull the model with `ollama pull llama2`.
+(sa) eccehomo@Human:~/SimpleAgent$ ollama pull llama2
+pulling manifest
+pulling 8934d96d3f08... 100% ▕███████████████████████████████████████████████████████████████████████▏ 3.8 GB
+pulling 8c17c2ebb0ea... 100% ▕███████████████████████████████████████████████████████████████████████▏ 7.0 KB
+pulling 7c23fb36d801... 100% ▕███████████████████████████████████████████████████████████████████████▏ 4.8 KB
+pulling 2e0493f67d0c... 100% ▕███████████████████████████████████████████████████████████████████████▏   59 B
+pulling fa304d675061... 100% ▕███████████████████████████████████████████████████████████████████████▏   91 B
+pulling 42ba7f8a01dd... 100% ▕███████████████████████████████████████████████████████████████████████▏  557 B
+verifying sha256 digest
+writing manifest
+removing any unused layers
+success
+(sa) eccehomo@Human:~/SimpleAgent$ python conversation.py
+/home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LL
+Ms from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langch
+ain-community instead:
+
+`from langchain_community.llms import Ollama`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages/langchain_core/_api/deprecation.py:117: LangChainDeprecationWarning: The
+function `__call__` was deprecated in LangChain 0.1.7 and will be removed in 0.2.0. Use invoke instead.
+  warn_deprecated(
+Agent 1: Hi! How are you?
+(sa) eccehomo@Human:~/SimpleAgent$ ls
+charlie            conversation12.py  conversation3.py  conversation6.py  conversation9.py  LICENSE   README.md
+conversation10.py  conversation13.py  conversation4.py  conversation7.py  conversation.py   LMStudio  requirements.txt
+conversation11.py  conversation2.py   conversation5.py  conversation8.py  face.py           ollama    speak.mp3
+(sa) eccehomo@Human:~/SimpleAgent$ python face.py
+Traceback (most recent call last):
+  File "/home/eccehomo/SimpleAgent/face.py", line 3, in <module>
+    import pygame
+ModuleNotFoundError: No module named 'pygame'
+(sa) eccehomo@Human:~/SimpleAgent$ pip install pygame
+Collecting pygame
+  Downloading pygame-2.5.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (13 kB)
+Downloading pygame-2.5.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (13.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.9/13.9 MB 8.7 MB/s eta 0:00:00
+Installing collected packages: pygame
+Successfully installed pygame-2.5.2
+(sa) eccehomo@Human:~/SimpleAgent$ python face.py
+pygame 2.5.2 (SDL 2.28.2, Python 3.12.1)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+
+libEGL warning: MESA-LOADER: failed to open crocus: /usr/lib/dri/crocus_dri.so: cannot open shared object file: No such file or directo
+ry (search paths /usr/lib/x86_64-linux-gnu/dri:\$${ORIGIN}/dri:/usr/lib/dri, suffix _dri)
+
+libEGL warning: MESA-LOADER: failed to open swrast: /usr/lib/dri/swrast_dri.so: cannot open shared object file: No such file or directo
+ry (search paths /usr/lib/x86_64-linux-gnu/dri:\$${ORIGIN}/dri:/usr/lib/dri, suffix _dri)
+
+Traceback (most recent call last):
+  File "/home/eccehomo/SimpleAgent/face.py", line 11, in <module>
+    screen = pygame.display.set_mode((screen_width, screen_height))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pygame.error: EGL not initialized
+(sa) eccehomo@Human:~/SimpleAgent$
+(sa) eccehomo@Human:~/SimpleAgent$ sudo apt-get install libgles2-mesa-dev libegl1-mesa-dev
+[sudo] password for eccehomo:
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+libegl1-mesa-dev is already the newest version (23.2.1-1ubuntu3.1~22.04.2).
+libegl1-mesa-dev set to manually installed.
+The following packages were automatically installed and are no longer required:
+  app-install-data-partner bsdmainutils g++-9 gcc-10-base gir1.2-cogl-1.0 gir1.2-coglpango-1.0 gir1.2-gnomebluetooth-1.0
+  gir1.2-handy-0.0 gnome-getting-started-docs gnome-screenshot golang-1.13-doc golang-1.13-go golang-1.13-race-detector-runtime
+  golang-1.13-src golang-race-detector-runtime intel-media-va-driver:i386 ippusbxd libamtk-5-0 libamtk-5-common libaom0 libaom0:i386
+  libaom3:i386 libasn1-8-heimdal:i386 libavutil56:i386 libboost-date-time1.71.0 libboost-filesystem1.71.0 libboost-locale1.71.0
+  libboost-python1.71.0 libboost-regex1.71.0 libboost-thread1.71.0 libbrlapi0.7 libcamel-1.2-62 libcbor0.6 libcdio18 libcmis-0.5-5v5
+  libcodec2-0.9 libcodec2-0.9:i386 libcodec2-1.0:i386 libcroco3 libcurl3-gnutls:i386 libdav1d5:i386 libdc1394-22 libdvdread7
+  libedataserver-1.2-24 libedataserverui-1.2-2 libextutils-pkgconfig-perl libffi7:i386 libflashrom1 libfluidsynth2 libftdi1-2
+  libfuse2 libfwupdplugin1 libgdbm-compat4:i386 libgdbm6:i386 libgdk-pixbuf-xlib-2.0-0:i386 libgdk-pixbuf2.0-0
+  libgdk-pixbuf2.0-0:i386 libgig9 libglu1-mesa:i386 libgssapi3-heimdal:i386 libgtkspell0 libgupnp-1.2-0 libhandy-0.0-0
+  libhcrypto4-heimdal:i386 libheimbase1-heimdal:i386 libheimntlm0-heimdal:i386 libhogweed5:i386 libhx509-5-heimdal:i386 libicu66:i386
+  libidn11 libigdgmm11 libigdgmm11:i386 libigdgmm12:i386 libilmbase24 libisl22 libjs-regenerate libjs-util libjson-glib-1.0-0:i386
+  libjsoncpp1 libkrb5-26-heimdal:i386 libldap-2.4-2:i386 libllvm12 libllvm12:i386 libllvm13 libllvm13:i386 liblua5.2-0 libmms0
+  libmozjs-68-0 libmysqlclient21 libmysqlclient21:i386 libnettle7:i386 libnspr4:i386 libnss3:i386 libntfs-3g883 libnuma1:i386
+  libodbc1:i386 libodbccr2:i386 libofa0 libopenexr24 libopengl0:i386 libopenjp2-7:i386 libpci3:i386 libpcre2-posix2 libperl5.30:i386
+  libperl5.34:i386 libpoppler118:i386 libpoppler97 libprotobuf17 libpython2-stdlib libpython2.7-minimal libpython2.7-stdlib
+  libpython3.8-dev libqpdf26 libraw19 libreoffice-style-tango librest-0.7-0:i386 libroken18-heimdal:i386 librtmidi4 libsane
+  libshine3:i386 libsnappy1v5:i386 libsnmp35 libsnmp35:i386 libsnmp40:i386 libsoundio1 libsoup-gnome2.4-1:i386 libsrt1 libssl1.1:i386
+  libtepl-4-0 libtracker-control-2.0-0 libtracker-miner-2.0-0 libtracker-sparql-2.0-0 libusrsctp1 libva-drm2:i386 libva-x11-2:i386
+  libva2:i386 libvdpau1:i386 libvpx6 libvpx6:i386 libwebp6 libwebp6:i386 libwebpmux3:i386 libwind0-heimdal:i386 libwmf0.2-7
+  libwrap0:i386 libx264-155 libx264-155:i386 libx264-163:i386 libx265-179 libx265-179:i386 libx265-199:i386 libxmlb1
+  libxvidcore4:i386 libzvbi0:i386 ltrace lz4 mesa-va-drivers:i386 mesa-vdpau-drivers:i386 ncal node-ajv node-ansi node-ansi-align
+  node-anymatch node-array-union node-array-uniq node-asn1 node-assert node-assert-plus node-aws-sign2 node-aws4 node-babel7-runtime
+  node-bl node-bluebird node-browserslist node-call-limit node-camelcase node-caniuse-lite node-caseless node-ci-info node-cli-boxes
+  node-cliui node-co node-commondir node-concat-map node-concat-stream node-config-chain node-convert-source-map node-core-js
+  node-cross-spawn node-crypto-random-string node-cyclist node-dashdash node-debbundle-es-to-primitive node-decamelize
+  node-deep-equal node-deep-extend node-define-properties node-detect-indent node-detect-newline node-duplexer3 node-duplexify
+  node-ecc-jsbn node-editor node-electron-to-chromium node-errno node-es-abstract node-esutils node-extend node-extsprintf
+  node-fast-deep-equal node-fill-range node-flush-write-stream node-forever-agent node-from2 node-fs-readdir-recursive node-genfun
+  node-get-caller-file node-getpass node-glob-parent node-globals node-har-schema node-har-validator node-has-symbol-support-x
+  node-has-to-string-tag-x node-ignore node-import-lazy node-invert-kv node-is-extglob node-is-glob node-is-npm node-is-number
+  node-is-object node-is-path-cwd node-is-retry-allowed node-is-stream node-isstream node-isurl node-js-tokens node-jsbn node-jsesc
+  node-json-schema node-json-schema-traverse node-json-stable-stringify node-json-stringify-safe node-json5 node-jsonify
+  node-jsonstream node-jsprim node-latest-version node-lazy-property node-lcid node-lockfile node-make-dir node-mem node-mimic-fn
+  node-normalize-path node-number-is-nan node-oauth-sign node-object-inspect node-os-tmpdir node-p-is-promise node-p-limit
+  node-package-json node-parallel-transform node-path-dirname node-path-exists node-path-type node-performance-now node-picocolors
+  node-pify node-prepend-http node-proto-list node-prr node-pseudomap node-pumpify node-qs node-qw node-rc node-regenerator-runtime
+  node-regenerator-transform node-registry-auth-token node-registry-url node-regjsgen node-regjsparser node-repeat-string
+  node-require-directory node-require-main-filename node-resolve-from node-semver-diff node-sha node-shebang-command
+  node-shebang-regex node-slide node-sorted-object node-stream-iterate node-stream-shift node-strip-eof node-strip-json-comments
+  node-through node-through2 node-timed-out node-to-fast-properties node-to-regex-range node-tunnel-agent node-typedarray
+  node-uid-number node-unicode-canonical-property-names-ecmascript node-unicode-match-property-value-ecmascript
+  node-unicode-property-aliases-ecmascript node-unique-string node-unpipe node-uri-js node-url-parse-lax node-url-to-options
+  node-util node-uuid node-v8flags node-verror node-which-module node-widest-line node-wrap-ansi node-xdg-basedir node-xtend
+  node-yargs-parser ocaml-base-nox ocaml-nox popularity-contest python2.7 python2.7-minimal python3-entrypoints
+  python3-requests-unixsocket python3-simplejson python3.8 python3.8-dev python3.8-minimal ruby2.7 syslinux syslinux-common
+  syslinux-legacy vdpau-driver-all:i386 vim-addon-manager vim-asciidoc vino x11proto-randr-dev x11proto-xinerama-dev xul-ext-ubufox
+Use 'sudo apt autoremove' to remove them.
+The following NEW packages will be installed:
+  libgles2-mesa-dev
+0 upgraded, 1 newly installed, 0 to remove and 39 not upgraded.
+Need to get 6,846 B of archives.
+After this operation, 75.8 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgles2-mesa-dev amd64 23.2.1-1ubuntu3.1~22.04.2 [6,846 B]
+Fetched 6,846 B in 0s (23.0 kB/s)
+Selecting previously unselected package libgles2-mesa-dev:amd64.
+(Reading database ... 543390 files and directories currently installed.)
+Preparing to unpack .../libgles2-mesa-dev_23.2.1-1ubuntu3.1~22.04.2_amd64.deb ...
+Unpacking libgles2-mesa-dev:amd64 (23.2.1-1ubuntu3.1~22.04.2) ...
+Setting up libgles2-mesa-dev:amd64 (23.2.1-1ubuntu3.1~22.04.2) ...
+(sa) eccehomo@Human:~/SimpleAgent$ python face.py
+pygame 2.5.2 (SDL 2.28.2, Python 3.12.1)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+libEGL warning: MESA-LOADER: failed to open crocus: /usr/lib/dri/crocus_dri.so: cannot open shared object file: No such file or directo
+ry (search paths /usr/lib/x86_64-linux-gnu/dri:\$${ORIGIN}/dri:/usr/lib/dri, suffix _dri)
+
+libEGL warning: MESA-LOADER: failed to open swrast: /usr/lib/dri/swrast_dri.so: cannot open shared object file: No such file or directo
+ry (search paths /usr/lib/x86_64-linux-gnu/dri:\$${ORIGIN}/dri:/usr/lib/dri, suffix _dri)
+
+Traceback (most recent call last):
+  File "/home/eccehomo/SimpleAgent/face.py", line 11, in <module>
+    screen = pygame.display.set_mode((screen_width, screen_height))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pygame.error: EGL not initialized
+(sa) eccehomo@Human:~/SimpleAgent$ vim face.py
+(sa) eccehomo@Human:~/SimpleAgent$ ls
+charlie            conversation12.py  conversation3.py  conversation6.py  conversation9.py  LICENSE   README.md
+conversation10.py  conversation13.py  conversation4.py  conversation7.py  conversation.py   LMStudio  requirements.txt
+conversation11.py  conversation2.py   conversation5.py  conversation8.py  face.py           ollama    speak.mp3
+(sa) eccehomo@Human:~/SimpleAgent$ vim README.md
+(sa) eccehomo@Human:~/SimpleAgent$ python conversation6.py
+Both --duration and --initial_prompt are required.
+(sa) eccehomo@Human:~/SimpleAgent$ vim conversation6.py
+(sa) eccehomo@Human:~/SimpleAgent$ vim conversation6.py --duration 5 --initial_prompt "What is the purpose of a null-wavefront in Null
+Convention Logic? "
+VIM - Vi IMproved 8.2 (2019 Dec 12, compiled Dec 05 2023 17:58:57)
+Unknown option argument: "--duration"
+More info with: "vim -h"
+(sa) eccehomo@Human:~/SimpleAgent$ python conversation6.py --duration 5 --initial_prompt "What is the purpose of a null-wavefront in Nu
+ll Convention Logic? "
+
+In Null Convention Logic, a null wavefront is used to represent the absence of any wavefront at a particular location. The purpose of a
+ null wavefront is to allow for the representation of absences or gaps in a logical system, which can be useful in a variety of applica
+tions such as:
+
+1. Representing absences: A null wavefront can be used to represent the absence of any object, property, or relationship at a particula
+r location. For example, if we want to reason about the location of objects in a room, we may use a null wavefront to represent the abs
+ence of an object at a particular location.
+2. Representing gaps: A null wavefront can also be used to represent gaps or holes in a logical system. For example, if we want to reas
+on about the relationships between different objects, we may use a null wavefront to represent the lack of a relationship between two o
+bjects.
+3. Reasoning about inconsistent information: Null Convention Logic allows for the representation of inconsistent information, which can
+ be useful in reasoning about incomplete or ambiguous information. A null wavefront can be used to represent the absence of information
+ at a particular location, allowing us to reason about the consequences of such an absence.
+4. Implementing logic-based artificial intelligence: Null Convention Logic provides a way to implement logic-based artificial intellige
+nce systems that are capable of reasoning about absences and gaps in a logical system. This can be useful in applications such as exper
+t systems, natural language processing, and computer vision.
+5. Modeling ontologies: Null Convention Logic can be used to model ontologies, which are formal representations of concepts and relatio
+nships in a domain of interest. A null wavefront can be used to represent the absence of a concept or relationship in an ontology, allo
+wing us to reason about the consequences of such an absence.
+6. Reasoning about temporal and spatial reasoning: Null Convention Logic allows for the representation of temporal and spatial reasonin
+g, which can be useful in applications such as robotics, computer vision, and geographic information systems. A null wavefront can be u
+sed to represent the absence of a wavefront at a particular location and time, allowing us to reason about the consequences of such an
+absence.
+7. Implementing non-monotonic reasoning: Null Convention Logic provides a way to implement non-monotonic reasoning, which allows for th
+e representation of incomplete or ambiguous information. A null wavefront can be used to represent the absence of information at a part
+icular location, allowing us to reason about the consequences of such an absence.
+8. Reasoning about multi-agent systems: Null Convention Logic can be used to model and reason about multi-agent systems, which are syst
+ems composed of multiple agents that interact with each other. A null wavefront can be used to represent the absence of a wavefront at
+a particular location, allowing us to reason about the consequences of such an absence in a multi-agent system.
+9. Reasoning about cyber-physical systems: Null Convention Logic can be used to model and reason about cyber-physical systems, which ar
+e systems that combine physical and computational components. A null wavefront can be used to represent the absence of a wavefront at a
+ particular location, allowing us to reason about the consequences of such an absence in a cyber-physical system.
+10. Reasoning about digital forensics: Null Convention Logic can be used to model and reason about digital forensics, which is the proc
+ess of analyzing digital evidence to understand the actions of an attacker or criminal. A null wavefront can be used to represent the a
+bsence of a wavefront at a particular location, allowing us to reason about the consequences of such an absence in a digital forensic a
+nalysis.
+
+In summary, the purpose of a null wavefront in Null Convention Logic is to allow for the representation of absences or gaps in a logica
+l system, which can be useful in a variety of applications such as reasoning about inconsistent information, modeling ontologies, and i
+mplementing non-monotonic reasoning.(sa) eccehomo@Human:~/SimpleAgent$ vim conversation6.py
+(sa) eccehomo@Human:~/SimpleAgent$ ollama pull mistral
+pulling manifest
+pulling e8a35b5937a5... 100% ▕███████████████████████████████████████████████████████████████████████▏ 4.1 GB
+pulling 43070e2d4e53... 100% ▕███████████████████████████████████████████████████████████████████████▏  11 KB
+pulling e6836092461f... 100% ▕███████████████████████████████████████████████████████████████████████▏   42 B
+pulling ed11eda7790d... 100% ▕███████████████████████████████████████████████████████████████████████▏   30 B
+pulling f9b1e3196ecf... 100% ▕███████████████████████████████████████████████████████████████████████▏  483 B
+verifying sha256 digest
+writing manifest
+removing any unused layers
+success
+(sa) eccehomo@Human:~/SimpleAgent$ python conversation6.py --duration 5 --initial_prompt "What is the purpose of a null-wavefront in Nu
+ll Convention Logic? "
+ In the context of null convention logic, a null wavefront does not directly refer to a concept in optics or electromagnetism. Instead,
+ it's a term used within database and network communication systems to describe specific conditions for handling missing or absent data
+.
+
+Null convention logic is a set of rules that specifies how applications handle null values (i.e., missing or undefined data) in databas
+es and communications between different systems. There are several popular null conventions, such as:
+
+1. Positive-true: A null value is considered to be false.
+2. Negative-true: A null value is considered to be true.
+3. Absent-or-default: A null value represents the absence or default value.
+
+A null wavefront in this context refers to the propagation of null values through a communication channel, such as a database query or
+network message. In some cases, it might be important for applications to explicitly handle and communicate null values rather than ign
+oring them or treating them as specific values (like false or true). This is where the concept of a "null wavefront" comes in.
+
+By sending a null value explicitly from one system to another, applications can ensure that both ends are aware of the missing data and
+ can take appropriate action. For instance, if two databases need to synchronize their records, and one database has a missing value fo
+r a particular field, it may send a null wavefront to the other database to indicate the absence of that data.
+
+Overall, the purpose of dealing with null wavefronts in null convention logic is to ensure accurate and consistent handling of missing
+or undefined data across different systems in a communication network.(sa) eccehomo@Human:~/SimpleAgent$ ls
+charlie            conversation12.py  conversation3.py  conversation6.py  conversation9.py  LICENSE   README.md
+conversation10.py  conversation13.py  conversation4.py  conversation7.py  conversation.py   LMStudio  requirements.txt
+conversation11.py  conversation2.py   conversation5.py  conversation8.py  face.py           ollama    speak.mp3
+(sa) eccehomo@Human:~/SimpleAgent$ cd LMStudio/
+(sa) eccehomo@Human:~/SimpleAgent/LMStudio$ ls
+conversation2.py  conversation3.py  conversation.py
+(sa) eccehomo@Human:~/SimpleAgent/LMStudio$ python conversation2.py
+Traceback (most recent call last):
+  File "/home/eccehomo/SimpleAgent/LMStudio/conversation2.py", line 3, in <module>
+    import openai
+ModuleNotFoundError: No module named 'openai'
+(sa) eccehomo@Human:~/SimpleAgent/LMStudio$ apt-get install openai
+E: Could not open lock file /var/lib/dpkg/lock-frontend - open (13: Permission denied)
+E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root?
+(sa) eccehomo@Human:~/SimpleAgent/LMStudio$ sudo !!
+sudo apt-get install openai
+[sudo] password for eccehomo:
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+E: Unable to locate package openai
+(sa) eccehomo@Human:~/SimpleAgent/LMStudio$ pip install openai
+Collecting openai
+  Downloading openai-1.12.0-py3-none-any.whl.metadata (18 kB)
+Requirement already satisfied: anyio<5,>=3.5.0 in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from openai) (4.2.0)
+Collecting distro<2,>=1.7.0 (from openai)
+  Downloading distro-1.9.0-py3-none-any.whl.metadata (6.8 kB)
+Collecting httpx<1,>=0.23.0 (from openai)
+  Downloading httpx-0.26.0-py3-none-any.whl.metadata (7.6 kB)
+Requirement already satisfied: pydantic<3,>=1.9.0 in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from openai) (2.6.1
+)
+Requirement already satisfied: sniffio in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from openai) (1.3.0)
+Collecting tqdm>4 (from openai)
+  Downloading tqdm-4.66.2-py3-none-any.whl.metadata (57 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.6/57.6 kB 403.5 kB/s eta 0:00:00
+Requirement already satisfied: typing-extensions<5,>=4.7 in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from openai)
+ (4.9.0)
+Requirement already satisfied: idna>=2.8 in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from anyio<5,>=3.5.0->openai
+) (3.6)
+Requirement already satisfied: certifi in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from httpx<1,>=0.23.0->openai)
+ (2024.2.2)
+Collecting httpcore==1.* (from httpx<1,>=0.23.0->openai)
+  Downloading httpcore-1.0.3-py3-none-any.whl.metadata (20 kB)
+Collecting h11<0.15,>=0.13 (from httpcore==1.*->httpx<1,>=0.23.0->openai)
+  Downloading h11-0.14.0-py3-none-any.whl (58 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.3/58.3 kB 477.2 kB/s eta 0:00:00
+Requirement already satisfied: annotated-types>=0.4.0 in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from pydantic<3
+,>=1.9.0->openai) (0.6.0)
+Requirement already satisfied: pydantic-core==2.16.2 in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from pydantic<3,
+>=1.9.0->openai) (2.16.2)
+Downloading openai-1.12.0-py3-none-any.whl (226 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 226.7/226.7 kB 1.3 MB/s eta 0:00:00
+Downloading distro-1.9.0-py3-none-any.whl (20 kB)
+Downloading httpx-0.26.0-py3-none-any.whl (75 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 75.9/75.9 kB 659.6 kB/s eta 0:00:00
+Downloading httpcore-1.0.3-py3-none-any.whl (77 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.0/77.0 kB 544.4 kB/s eta 0:00:00
+Downloading tqdm-4.66.2-py3-none-any.whl (78 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.3/78.3 kB 662.7 kB/s eta 0:00:00
+Installing collected packages: tqdm, h11, distro, httpcore, httpx, openai
+Successfully installed distro-1.9.0 h11-0.14.0 httpcore-1.0.3 httpx-0.26.0 openai-1.12.0 tqdm-4.66.2
+(sa) eccehomo@Human:~/SimpleAgent/LMStudio$ python conversation2.py
+Both --duration and --initial_prompt are required.
+(sa) eccehomo@Human:~/SimpleAgent/LMStudio$ python conversation2.py --duration 5 --initial_prompt "What is the purpose of a null-wavefr
+ont in Null Convention Logic? "
+Initial Prompt: What is the purpose of a null-wavefront in Null Convention Logic?
+
+
+
+
+Traceback (most recent call last):
+  File "/home/eccehomo/SimpleAgent/LMStudio/conversation2.py", line 76, in <module>
+    run_conversation(duration, initial_prompt)
+  File "/home/eccehomo/SimpleAgent/LMStudio/conversation2.py", line 31, in run_conversation
+    agent_output = agent(prompt)
+                   ^^^^^^^^^^^^^
+  File "/home/eccehomo/SimpleAgent/LMStudio/conversation2.py", line 18, in agent
+    agent_output = generate_response(prompt)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eccehomo/SimpleAgent/LMStudio/conversation2.py", line 6, in generate_response
+    result = openai.ChatCompletion.create(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages/openai/lib/_old_api.py", line 39, in __call__
+    raise APIRemovedInV1(symbol=self._symbol)
+openai.lib._old_api.APIRemovedInV1:
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/open
+ai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface.
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+(sa) eccehomo@Human:~/SimpleAgent/LMStudio$ pip install openai==0.28
+Collecting openai==0.28
+  Downloading openai-0.28.0-py3-none-any.whl.metadata (13 kB)
+Requirement already satisfied: requests>=2.20 in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from openai==0.28) (2.3
+1.0)
+Requirement already satisfied: tqdm in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from openai==0.28) (4.66.2)
+Requirement already satisfied: aiohttp in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from openai==0.28) (3.9.3)
+Requirement already satisfied: charset-normalizer<4,>=2 in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from requests
+>=2.20->openai==0.28) (3.3.2)
+Requirement already satisfied: idna<4,>=2.5 in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from requests>=2.20->open
+ai==0.28) (3.6)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from requests>=2.20
+->openai==0.28) (2.2.0)
+Requirement already satisfied: certifi>=2017.4.17 in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from requests>=2.20
+->openai==0.28) (2024.2.2)
+Requirement already satisfied: aiosignal>=1.1.2 in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from aiohttp->openai=
+=0.28) (1.3.1)
+Requirement already satisfied: attrs>=17.3.0 in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from aiohttp->openai==0.
+28) (23.2.0)
+Requirement already satisfied: frozenlist>=1.1.1 in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from aiohttp->openai
+==0.28) (1.4.1)
+Requirement already satisfied: multidict<7.0,>=4.5 in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from aiohttp->open
+ai==0.28) (6.0.5)
+Requirement already satisfied: yarl<2.0,>=1.0 in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from aiohttp->openai==0
+.28) (1.9.4)
+Downloading openai-0.28.0-py3-none-any.whl (76 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 76.5/76.5 kB 548.9 kB/s eta 0:00:00
+Installing collected packages: openai
+  Attempting uninstall: openai
+    Found existing installation: openai 1.12.0
+    Uninstalling openai-1.12.0:
+      Successfully uninstalled openai-1.12.0
+Successfully installed openai-0.28.0
+(sa) eccehomo@Human:~/SimpleAgent/LMStudio$ python conversation2.py --duration 5 --initial_prompt "What is the purpose of a null-wavefr
+ont in Null Convention Logic? "
+Initial Prompt: What is the purpose of a null-wavefront in Null Convention Logic?
+
+
+
+
+Traceback (most recent call last):
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages/urllib3/connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages/urllib3/connectionpool.py", line 496, in _make_request
+    conn.request(
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages/urllib3/connection.py", line 400, in request
+    self.endheaders()
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/http/client.py", line 1322, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/http/client.py", line 1081, in _send_output
+    self.send(msg)
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/http/client.py", line 1025, in send
+    self.connect()
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages/urllib3/connection.py", line 238, in connect
+    self.sock = self._new_conn()
+                ^^^^^^^^^^^^^^^^
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f9f525c7f80>: Failed to establish a new connecti
+on: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages/urllib3/connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages/urllib3/util/retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions
+(Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9f525c7f80>: Failed to establish a new connection: [Err
+no 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages/openai/api_requestor.py", line 596, in request_raw
+    result = _thread_context.session.request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completio
+ns (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9f525c7f80>: Failed to establish a new connection: [
+Errno 111] Connection refused'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/eccehomo/SimpleAgent/LMStudio/conversation2.py", line 76, in <module>
+    run_conversation(duration, initial_prompt)
+  File "/home/eccehomo/SimpleAgent/LMStudio/conversation2.py", line 31, in run_conversation
+    agent_output = agent(prompt)
+                   ^^^^^^^^^^^^^
+  File "/home/eccehomo/SimpleAgent/LMStudio/conversation2.py", line 18, in agent
+    agent_output = generate_response(prompt)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eccehomo/SimpleAgent/LMStudio/conversation2.py", line 6, in generate_response
+    result = openai.ChatCompletion.create(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages/openai/api_resources/chat_completion.py", line 25, in create
+    return super().create(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages/openai/api_resources/abstract/engine_api_resource.py", line 153,
+in create
+    response, _, api_key = requestor.request(
+                           ^^^^^^^^^^^^^^^^^^
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages/openai/api_requestor.py", line 288, in request
+    result = self.request_raw(
+             ^^^^^^^^^^^^^^^^^
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages/openai/api_requestor.py", line 609, in request_raw
+    raise error.APIConnectionError(
+openai.error.APIConnectionError: Error communicating with OpenAI: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded
+ with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9f525c7f80>: Failed to
+establish a new connection: [Errno 111] Connection refused'))
+(sa) eccehomo@Human:~/SimpleAgent/LMStudio$ vim conversation2.py
+(sa) eccehomo@Human:~/SimpleAgent/LMStudio$ ls
+conversation2.py  conversation3.py  conversation.py
+(sa) eccehomo@Human:~/SimpleAgent/LMStudio$ vim conversation.py
+(sa) eccehomo@Human:~/SimpleAgent/LMStudio$ cd ..
+(sa) eccehomo@Human:~/SimpleAgent$ ls
+charlie            conversation12.py  conversation3.py  conversation6.py  conversation9.py  LICENSE   README.md
+conversation10.py  conversation13.py  conversation4.py  conversation7.py  conversation.py   LMStudio  requirements.txt
+conversation11.py  conversation2.py   conversation5.py  conversation8.py  face.py           ollama    speak.mp3
+(sa) eccehomo@Human:~/SimpleAgent$ vim conversation5.py
+(sa) eccehomo@Human:~/SimpleAgent$ python conversation5.py --duration 5 --initial_prompt "What is the purpose of a null-wavefront in Nu
+ll Convention Logic? "
+/home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LL
+Ms from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langch
+ain-community instead:
+
+`from langchain_community.llms import Ollama`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+Initial Prompt: What is the purpose of a null-wavefront in Null Convention Logic?
+
+/home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages/langchain_core/_api/deprecation.py:117: LangChainDeprecationWarning: The
+function `__call__` was deprecated in LangChain 0.1.7 and will be removed in 0.2.0. Use invoke instead.
+  warn_deprecated(
+Agent replies: In Null Convention Logic, a null-wavefront is used to represent the absence of a value or property in a given context. T
+he term "null" is used to describe this concept, and it is often represented using the symbol "⨯" (a wavefront with a horizontal line t
+hrough it).
+
+The purpose of a null-wavefront is twofold:
+
+1. **Re representation**: A null-wavefront can be used to represent the absence of a value or property in a given context. For example,
+ if you want to represent the lack of a particular feature in an object, you could use a null-wavefront to indicate that the feature is
+ not present.
+2. **Logical negation**: A null-wavefront can also be used to represent the logical negation of a value or property. In other words, if
+ a value or property is true, a null-wavefront can be used to represent its opposite (i.e., false). This can be useful in situations wh
+ere you want to represent the absence of something, rather than its presence.
+
+For example, consider the following statement: "The cat is black." In this case, the property "black" is true, so a null-wavefront coul
+d be used to represent its logical negation, i.e., "The cat is not black."
+
+In summary, a null-wavefront in Null Convention Logic serves as a shorthand way of representing the absence of a value or property, and
+ can also be used to represent the logical negation of a value or property.
+Agent replies: In Null Convention Logic, a null-wavefront is used to represent the absence of a value or property in a given context. T
+he term "null" is used to describe this concept, and it is often represented using the symbol "⨯" (a wavefront with a horizontal line t
+hrough it).
+
+The purpose of a null-wavefront is twofold:
+
+1. **Re representation**: A null-wavefront can be used to represent the absence of a value or property in a given context. For example,
+ if you want to represent the lack of a particular feature in an object, you could use a null-wavefront to indicate that the feature is
+ not present.
+2. **Logical negation**: A null-wavefront can also be used to represent the logical negation of a value or property. In other words, if
+ a value or property is true, a null-wavefront can be used to represent its opposite (i.e., false). This can be useful in situations wh
+ere you want to represent the absence of something, rather than its presence.
+
+For example, consider the following statement: "The cat is black." In this case, the property "black" is true, so a null-wavefront coul
+d be used to represent its logical negation, i.e., "The cat is not black."
+
+In summary, a null-wavefront in Null Convention Logic serves as a shorthand way of representing the absence of a value or property, and
+ can also be used to represent the logical negation of a value or property.
+
+
+Conversation History:
+{'role': 'system', 'content': 'Always answer with concise replies.'}
+{'role': 'user', 'content': 'What is the purpose of a null-wavefront in Null Convention Logic? '}
+{'role': 'user', 'content': 'What is the purpose of a null-wavefront in Null Convention Logic? '}
+{'role': 'assistant', 'content': 'In Null Convention Logic, a null-wavefront is used to represent the absence of a value or property in
+ a given context. The term "null" is used to describe this concept, and it is often represented using the symbol "⨯" (a wavefront with
+a horizontal line through it).\n\nThe purpose of a null-wavefront is twofold:\n\n1. **Re representation**: A null-wavefront can be used
+ to represent the absence of a value or property in a given context. For example, if you want to represent the lack of a particular fea
+ture in an object, you could use a null-wavefront to indicate that the feature is not present.\n2. **Logical negation**: A null-wavefro
+nt can also be used to represent the logical negation of a value or property. In other words, if a value or property is true, a null-wa
+vefront can be used to represent its opposite (i.e., false). This can be useful in situations where you want to represent the absence o
+f something, rather than its presence.\n\nFor example, consider the following statement: "The cat is black." In this case, the property
+ "black" is true, so a null-wavefront could be used to represent its logical negation, i.e., "The cat is not black."\n\nIn summary, a n
+ull-wavefront in Null Convention Logic serves as a shorthand way of representing the absence of a value or property, and can also be us
+ed to represent the logical negation of a value or property.'}
+(sa) eccehomo@Human:~/SimpleAgent$ ls
+charlie            conversation12.py  conversation3.py  conversation6.py  conversation9.py  LICENSE   README.md
+conversation10.py  conversation13.py  conversation4.py  conversation7.py  conversation.py   LMStudio  requirements.txt
+conversation11.py  conversation2.py   conversation5.py  conversation8.py  face.py           ollama    speak.mp3
+(sa) eccehomo@Human:~/SimpleAgent$ vim conversation12.py
+(sa) eccehomo@Human:~/SimpleAgent$ python conversation12.py
+Both --duration and --initial_prompt are required.
+(sa) eccehomo@Human:~/SimpleAgent$ python conversation12.py --duration 5 --initial_prompt "What is the purpose of a null-wavefront in N
+ull Convention Logic? "
+
+Advocate:
+
+In Null Convention Logic, a null-wavefront is a theoretical construct used to represent the absence of any particular wavefront in a gi
+ven space or medium. Here are three common arguments that support the idea of a null-wavefront:
+
+1. The need to account for absences: In many fields, including physics, biology, and philosophy, it is important to account for the abs
+ence of certain phenomena. For example, when studying the behavior of light, we need to consider not only the presence of light waves b
+ut also their absence. A null-wavefront provides a way to represent this absence in a formal logic.
+2. The importance of negation: In many logical systems, negation is a fundamental operation that allows us to represent the absence of
+something. However, traditional logics often struggle to handle absences in a systematic way. Null Convention Logic, on the other hand,
+ provides a robust framework for dealing with negation and absences.
+3. The need for a more flexible logic: Traditional logics are often limited in their ability to handle complex and subtle logical struc
+tures. By providing a way to represent absences in a formal logic, null-wavefronts offer a more flexible and expressive means of reason
+ing about complex phenomena. This can be particularly useful in fields such as philosophy, where complex arguments and counterarguments
+(sa) eccehomo@Human:~/SimpleAgent$ vim conversation12.py
+(sa) eccehomo@Human:~/SimpleAgent$ python conversation12.py --duration 50 --initial_prompt "What is the purpose of a null-wavefront in
+Null Convention Logic? "
+
+Advocate:
+In Null Convention Logic, a null-wavefront is a fundamental concept that serves several purposes:
+
+1. Elimination of unnecessary arguments: By assuming that any argument can be made null, the system eliminates unnecessary arguments th
+at do not contribute to the conclusion. This helps to streamline the reasoning process and reduce cognitive load.
+2. Identification of essential arguments: The null-wavefront helps identify the most important arguments that are necessary to reach a
+conclusion. By making all other arguments null, the system highlights the critical arguments that must be addressed.
+3. Encouraging clarity and brevity: The use of a null-wavefront encourages logicians to be clear and concise in their reasoning. It hel
+ps to avoid unnecessary tangents and focusing solely on the most crucial points. This makes the argumentation more efficient and easier
+ to follow.
+4. Reducing ambiguity: By assuming that all arguments can be made null, the system reduces the risk of ambiguity. It eliminates potenti
+al confusion caused by multiple arguments with similar names or meanings, ensuring that the meaning of each argument is clear and unamb
+iguous.
+5. Facilitating debate: The null-wavefront provides a structured framework for debaters to engage in productive discussions. It allows
+them to focus on specific points, identify areas of agreement and disagreement, and evaluate the strengths and weaknesses of each argum
+ent.
+6. Enhancing critical thinking: By assuming that all arguments can be made null, the system encourages logicians to think critically ab
+out the underlying assumptions and premises of each argument. It helps them to identify biases, fallacies, and logical inconsistencies
+more easily.
+7. Simplifying complex arguments: The use of a null-wavefront can simplify complex arguments by highlighting the most critical componen
+ts. This makes it easier for logicians to understand and evaluate the argumentation, even in cases where the argument involves multiple
+(sa) eccehomo@Human:~/SimpleAgent$ ls
+charlie            conversation12.py  conversation3.py  conversation6.py  conversation9.py  LICENSE   README.md
+conversation10.py  conversation13.py  conversation4.py  conversation7.py  conversation.py   LMStudio  requirements.txt
+conversation11.py  conversation2.py   conversation5.py  conversation8.py  face.py           ollama    speak.mp3
+(sa) eccehomo@Human:~/SimpleAgent$ cd charlie/
+(sa) eccehomo@Human:~/SimpleAgent/charlie$ ls
+advocate.txt  arbitrator.txt  conversation.py  critic.txt  main.py  response_generator.py  roles_config.json  roles.py  speak.py
+(sa) eccehomo@Human:~/SimpleAgent/charlie$ vim speak.py
+(sa) eccehomo@Human:~/SimpleAgent/charlie$ vim advocate.txt
+(sa) eccehomo@Human:~/SimpleAgent/charlie$ vim roles.py
+(sa) eccehomo@Human:~/SimpleAgent/charlie$ ./main.py
+-bash: ./main.py: Permission denied
+(sa) eccehomo@Human:~/SimpleAgent/charlie$ python main.py
+Traceback (most recent call last):
+  File "/home/eccehomo/SimpleAgent/charlie/main.py", line 4, in <module>
+    from conversation import run_conversation  # Import run_conversation from conversation.py
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eccehomo/SimpleAgent/charlie/conversation.py", line 5, in <module>
+    from response_generator import generate_response  # Import generate_response from response_generator.py
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eccehomo/SimpleAgent/charlie/response_generator.py", line 5, in <module>
+    from speak import speak_say, speak_gtts  # Import functions from speak.py
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eccehomo/SimpleAgent/charlie/speak.py", line 4, in <module>
+    from gtts import gTTS
+ModuleNotFoundError: No module named 'gtts'
+(sa) eccehomo@Human:~/SimpleAgent/charlie$ pip install gtts
+Collecting gtts
+  Downloading gTTS-2.5.1-py3-none-any.whl.metadata (4.1 kB)
+Requirement already satisfied: requests<3,>=2.27 in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from gtts) (2.31.0)
+Collecting click<8.2,>=7.1 (from gtts)
+  Downloading click-8.1.7-py3-none-any.whl.metadata (3.0 kB)
+Requirement already satisfied: charset-normalizer<4,>=2 in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from requests
+<3,>=2.27->gtts) (3.3.2)
+Requirement already satisfied: idna<4,>=2.5 in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from requests<3,>=2.27->g
+tts) (3.6)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from requests<3,>=2
+.27->gtts) (2.2.0)
+Requirement already satisfied: certifi>=2017.4.17 in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from requests<3,>=2
+.27->gtts) (2024.2.2)
+Downloading gTTS-2.5.1-py3-none-any.whl (29 kB)
+Downloading click-8.1.7-py3-none-any.whl (97 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 97.9/97.9 kB 736.5 kB/s eta 0:00:00
+Installing collected packages: click, gtts
+Successfully installed click-8.1.7 gtts-2.5.1
+(sa) eccehomo@Human:~/SimpleAgent/charlie$ python main.py
+
+Advocate:
+Here 2024-02-17 20:29:11.323 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+2024-02-17 20:29:11.926 GSSpeechServer[94723:94723] No handle for event rport on descriptor 16
+are 2024-02-17 20:29:12.777 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+three common arguments that support the idea that { }: 1 . 2024-02-17 20:29:19.058 GSSpeechServer[94723:94723] No handle for event rpor
+t on descriptor 13
+Argument 2024-02-17 20:29:20.633 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+from historical evidence 2024-02-17 20:29:22.773 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+: Many histor ians 2024-02-17 20:29:25.995 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+argue 2024-02-17 20:29:26.527 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+that 2024-02-17 20:29:26.989 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+the 2024-02-17 20:29:27.873 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+events described in the 2024-02-17 20:29:30.780 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+Bible are supported 2024-02-17 20:29:32.911 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+by arch ae ological evidence , such 2024-02-17 20:29:37.895 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+as the 2024-02-17 20:29:39.405 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+discovery of 2024-02-17 20:29:40.319 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+the Phil ist ine city 2024-02-17 20:29:43.790 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+of Gaz a 2024-02-17 20:29:45.698 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+and 2024-02-17 20:29:46.148 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+the 2024-02-17 20:29:46.983 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+H itt 2024-02-17 20:29:48.329 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+ite emp ire , which l ends cred ibility to 2024-02-17 20:29:55.410 GSSpeechServer[94723:94723] No handle for event rport on descriptor
+13
+the bib lic 2024-02-17 20:29:57.516 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+al 2024-02-17 20:29:58.500 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+account 2024-02-17 20:29:58.582 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+. 2 2024-02-17 20:29:59.359 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+. Argument from prop he cy : The Bible contains many prop he cies 2024-02-17 20:30:09.484 GSSpeechServer[94723:94723] No handle for eve
+nt rport on descriptor 13
+that have been ful filled or are 2024-02-17 20:30:13.749 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+in the process 2024-02-17 20:30:15.849 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+of 2024-02-17 20:30:16.563 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+being ful filled 2024-02-17 20:30:18.122 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+, which supports the 2024-02-17 20:30:21.114 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+idea 2024-02-17 20:30:21.648 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+that 2024-02-17 20:30:22.275 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+it is 2024-02-17 20:30:23.385 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+a 2024-02-17 20:30:24.027 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+div in ely inspired 2024-02-17 20:30:26.979 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+book . 2024-02-17 20:30:27.061 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+2024-02-17 20:30:27.656 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+For example , 2024-02-17 20:30:28.827 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+2024-02-17 20:30:29.275 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+the proph et Isa 2024-02-17 20:30:32.340 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+iah predicted the 2024-02-17 20:30:34.629 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+Bab flite: udb failed to find entry for: y-l
+yl 2024-02-17 20:30:35.903 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+onian 2024-02-17 20:30:36.830 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+capt ivity and the event 2024-02-17 20:30:40.300 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+ual 2024-02-17 20:30:41.084 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+return of the Jews 2024-02-17 20:30:43.353 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+to 2024-02-17 20:30:44.055 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+their hom 2024-02-17 20:30:45.566 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+eland , which has come to 2024-02-17 20:30:49.147 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+pass 2024-02-17 20:30:49.229 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+. 3 . Argument from personal experience : 2024-02-17 20:30:54.652 GSSpeechServer[94723:94723] No handle for event rport on descriptor 1
+3
+Many people argue that 2024-02-17 20:30:57.630 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+they have had personal experiences 2024-02-17 20:31:01.755 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+that demonstrate the truth 2024-02-17 20:31:04.869 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+of the Bible ' s 2024-02-17 20:31:08.098 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+claims . 2024-02-17 20:31:08.819 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+For example , some people have 2024-02-17 20:31:13.019 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+reported having dream s or vis ions that later came 2024-02-17 20:31:20.445 GSSpeechServer[94723:94723] No handle for event rport on de
+scriptor 13
+true , which they attribute to the insp iration 2024-02-17 20:31:26.813 GSSpeechServer[94723:94723] No handle for event rport on descri
+ptor 13
+of God . In each of these 2024-02-17 20:31:30.880 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+arguments , it is important to 2024-02-17 20:31:34.612 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+address any 2024-02-17 20:31:35.990 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+critic isms or ob jections 2024-02-17 20:31:38.979 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+that 2024-02-17 20:31:39.713 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+may be 2024-02-17 20:31:41.109 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+raised against them 2024-02-17 20:31:42.656 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+. For example 2024-02-17 20:31:44.285 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+, a critic might argue that 2024-02-17 20:31:48.017 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+the historical 2024-02-17 20:31:49.948 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+evidence is not 2024-02-17 20:31:52.004 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+conclus 2024-02-17 20:31:52.599 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+ive and 2024-02-17 20:31:53.595 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+that the 2024-02-17 20:31:54.804 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+prop he 2024-02-17 20:31:56.345 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+cies 2024-02-17 20:31:56.986 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+could 2024-02-17 20:31:57.553 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+have been 2024-02-17 20:31:58.822 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+ful filled through other 2024-02-17 20:32:01.656 GSSpeechServer[94723:96084] No handle for event rport on descriptor 13
+means . 2024-02-17 20:32:02.168 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+An 2024-02-17 20:32:03.049 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+advoc ate 2024-02-17 20:32:04.446 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+should 2024-02-17 20:32:05.363 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+address 2024-02-17 20:32:05.993 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+these 2024-02-17 20:32:06.938 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+concerns 2024-02-17 20:32:07.516 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+by 2024-02-17 20:32:08.409 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+providing additional 2024-02-17 20:32:10.116 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+evidence 2024-02-17 20:32:10.552 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+or 2024-02-17 20:32:11.337 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+reasoning 2024-02-17 20:32:11.832 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+to 2024-02-17 20:32:12.776 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+support their argument 2024-02-17 20:32:14.378 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+.
+User:
+Could you explain the concept of unix pipes?
+
+Critic:
+Traceback (most recent call last):
+  File "/home/eccehomo/SimpleAgent/charlie/main.py", line 14, in <module>
+    run_conversation(args.duration, args.initial_prompt, args.use_gtts)
+  File "/home/eccehomo/SimpleAgent/charlie/conversation.py", line 27, in run_conversation
+    response = generate_response(prompt, context, role, use_gtts)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eccehomo/SimpleAgent/charlie/response_generator.py", line 18, in generate_response
+    r.raise_for_status()  # Raise an exception if the request failed
+    ^^^^^^^^^^^^^^^^^^^^
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: http://localhost:11434/api/generate
+(sa) eccehomo@Human:~/SimpleAgent/charlie$ ls
+advocate.txt    conversation.py  main.py      response_generator.py  roles.py
+arbitrator.txt  critic.txt       __pycache__  roles_config.json      speak.py
+(sa) eccehomo@Human:~/SimpleAgent/charlie$ vim speak.py
+(sa) eccehomo@Human:~/SimpleAgent/charlie$ vim conversation.py
+(sa) eccehomo@Human:~/SimpleAgent/charlie$ vim response_generator.py
+(sa) eccehomo@Human:~/SimpleAgent/charlie$ python response_generator.py
+(sa) eccehomo@Human:~/SimpleAgent/charlie$ python speak.py
+(sa) eccehomo@Human:~/SimpleAgent/charlie$ python main.py
+
+Advocate:
+S ure , here are three 2024-02-17 20:34:50.904 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+common arguments that support 2024-02-17 20:34:53.858 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+the idea that { 2024-02-17 20:34:55.346 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+}: Argument 1 : { 2024-02-17 20:34:57.148 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+} is a widely accepted scientific fact . Studies have consist 2024-02-17 20:35:06.309 GSSpeechServer[94723:94723] No handle for event r
+port on descriptor 13
+ently shown that { 2024-02-17 20:35:07.925 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+} and its effects on { 2024-02-17 20:35:10.744 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+} are well 2024-02-17 20:35:12.076 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+- document ed and supported 2024-02-17 20:35:16.245 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+by 2024-02-17 20:35:17.128 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+evidence . 2024-02-17 20:35:17.220 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+The scientific 2024-02-17 20:35:19.695 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+cons ensus is clear 2024-02-17 20:35:22.386 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+on 2024-02-17 20:35:22.993 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+this issue 2024-02-17 20:35:23.822 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+. Argument 2024-02-17 20:35:25.463 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+2 2024-02-17 20:35:25.547 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+: { 2024-02-17 20:35:25.721 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+} has 2024-02-17 20:35:27.228 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+numerous practical applications in various 2024-02-17 20:35:31.999 GSSpeechServer[94723:94723] No handle for event rport on descriptor
+13
+fields , including 2024-02-17 20:35:33.120 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+{ 2024-02-17 20:35:33.210 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+}, 2024-02-17 20:35:33.309 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+{ 2024-02-17 20:35:33.426 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+}, and { } 2024-02-17 20:35:34.156 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+. 2024-02-17 20:35:34.859 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+For example 2024-02-17 20:35:36.018 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+, { 2024-02-17 20:35:36.218 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+} 2024-02-17 20:35:36.898 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+has been used to improve { 2024-02-17 20:35:40.131 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+} and 2024-02-17 20:35:40.777 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+{ } in { } 2024-02-17 20:35:41.809 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+2024-02-17 20:35:42.777 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+and 2024-02-17 20:35:42.861 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+{ } 2024-02-17 20:35:43.794 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+. This demonstr 2024-02-17 20:35:47.550 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+ates the tang ible benefits of { } 2024-02-17 20:35:51.035 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+2024-02-17 20:35:51.577 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+and unders c 2024-02-17 20:35:53.792 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+ores its importance 2024-02-17 20:35:55.617 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+. 2024-02-17 20:35:56.546 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+Argument 2024-02-17 20:35:57.351 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+3 : { 2024-02-17 20:35:57.602 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+} has a 2024-02-17 20:35:59.520 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+long history 2024-02-17 20:36:00.960 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+of use 2024-02-17 20:36:02.126 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+and cultural significance . Ev idence of { 2024-02-17 20:36:06.521 GSSpeechServer[94723:94723] No handle for event rport on descriptor
+13
+} can be trac ed back 2024-02-17 20:36:10.797 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+to 2024-02-17 20:36:10.876 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+{ 2024-02-17 20:36:10.960 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+} and has been 2024-02-17 20:36:13.319 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+an integral part of many cult ures throughout history . This suggests that { } is not just a passing f ad , but rather 2024-02-17 20:36
+:29.188 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+a end uring 2024-02-17 20:36:31.595 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+aspect 2024-02-17 20:36:32.034 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+of human 2024-02-17 20:36:33.971 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+experience 2024-02-17 20:36:34.023 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+.
+User:
+What is the main question?
+
+Critic:
+Traceback (most recent call last):
+  File "/home/eccehomo/SimpleAgent/charlie/main.py", line 14, in <module>
+    run_conversation(args.duration, args.initial_prompt, args.use_gtts)
+  File "/home/eccehomo/SimpleAgent/charlie/conversation.py", line 27, in run_conversation
+    response = generate_response(prompt, context, role, use_gtts)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eccehomo/SimpleAgent/charlie/response_generator.py", line 18, in generate_response
+    r.raise_for_status()  # Raise an exception if the request failed
+    ^^^^^^^^^^^^^^^^^^^^
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: http://localhost:11434/api/generate
+(sa) eccehomo@Human:~/SimpleAgent/charlie$ ls
+advocate.txt    conversation.py  main.py      response_generator.py  roles.py
+arbitrator.txt  critic.txt       __pycache__  roles_config.json      speak.py
+(sa) eccehomo@Human:~/SimpleAgent/charlie$ vim critic.txt
+(sa) eccehomo@Human:~/SimpleAgent/charlie$ vim arbitrator.txt
+(sa) eccehomo@Human:~/SimpleAgent/charlie$ vim advocate.txt
+(sa) eccehomo@Human:~/SimpleAgent/charlie$ vim conversation.py
+(sa) eccehomo@Human:~/SimpleAgent/charlie$ python conversation.py
+(sa) eccehomo@Human:~/SimpleAgent/charlie$ cd ..
+(sa) eccehomo@Human:~/SimpleAgent$ ls
+charlie            conversation12.py  conversation3.py  conversation6.py  conversation9.py  LICENSE   README.md
+conversation10.py  conversation13.py  conversation4.py  conversation7.py  conversation.py   LMStudio  requirements.txt
+conversation11.py  conversation2.py   conversation5.py  conversation8.py  face.py           ollama    speak.mp3
+(sa) eccehomo@Human:~/SimpleAgent$ ffplay speak.mp3
+ffplay version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2003-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/i
+nclude/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass -
+-enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-li
+bfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libm
+ysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-
+libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame -
+-enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libz
+img --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-p
+ocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei
+0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+[mp3 @ 0x7f31d4000cc0] Format mp3 detected only with low score of 1, misdetection possible!
+[mp3 @ 0x7f31d4000cc0] Failed to read frame size: Could not seek to 1026.
+speak.mp3: Invalid argument aq=    0KB vq=    0KB sq=    0B f=0/0
+
+(sa) eccehomo@Human:~/SimpleAgent$ mplayer speak.mp3
+Command 'mplayer' not found, but can be installed with:
+sudo apt install mplayer
+(sa) eccehomo@Human:~/SimpleAgent$ sudo apt install mplayer
+[sudo] password for eccehomo:
+Sorry, try again.
+[sudo] password for eccehomo:
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  app-install-data-partner bsdmainutils g++-9 gcc-10-base gir1.2-cogl-1.0 gir1.2-coglpango-1.0 gir1.2-gnomebluetooth-1.0
+  gir1.2-handy-0.0 gnome-getting-started-docs gnome-screenshot golang-1.13-doc golang-1.13-go golang-1.13-race-detector-runtime
+  golang-1.13-src golang-race-detector-runtime intel-media-va-driver:i386 ippusbxd libamtk-5-0 libamtk-5-common libaom0 libaom0:i386
+  libaom3:i386 libasn1-8-heimdal:i386 libavutil56:i386 libboost-date-time1.71.0 libboost-filesystem1.71.0 libboost-locale1.71.0
+  libboost-python1.71.0 libboost-regex1.71.0 libboost-thread1.71.0 libbrlapi0.7 libcamel-1.2-62 libcbor0.6 libcdio18 libcmis-0.5-5v5
+  libcodec2-0.9 libcodec2-0.9:i386 libcodec2-1.0:i386 libcroco3 libcurl3-gnutls:i386 libdav1d5:i386 libdc1394-22 libdvdread7
+  libedataserver-1.2-24 libedataserverui-1.2-2 libextutils-pkgconfig-perl libffi7:i386 libflashrom1 libfluidsynth2 libftdi1-2
+  libfuse2 libfwupdplugin1 libgdbm-compat4:i386 libgdbm6:i386 libgdk-pixbuf-xlib-2.0-0:i386 libgdk-pixbuf2.0-0
+  libgdk-pixbuf2.0-0:i386 libgig9 libglu1-mesa:i386 libgssapi3-heimdal:i386 libgtkspell0 libgupnp-1.2-0 libhandy-0.0-0
+  libhcrypto4-heimdal:i386 libheimbase1-heimdal:i386 libheimntlm0-heimdal:i386 libhogweed5:i386 libhx509-5-heimdal:i386 libicu66:i386
+  libidn11 libigdgmm11 libigdgmm11:i386 libigdgmm12:i386 libilmbase24 libisl22 libjs-regenerate libjs-util libjson-glib-1.0-0:i386
+  libjsoncpp1 libkrb5-26-heimdal:i386 libldap-2.4-2:i386 libllvm12 libllvm12:i386 libllvm13 libllvm13:i386 liblua5.2-0 libmms0
+  libmozjs-68-0 libmysqlclient21 libmysqlclient21:i386 libnettle7:i386 libnspr4:i386 libnss3:i386 libntfs-3g883 libnuma1:i386
+  libodbc1:i386 libodbccr2:i386 libofa0 libopenexr24 libopengl0:i386 libopenjp2-7:i386 libpci3:i386 libpcre2-posix2 libperl5.30:i386
+  libperl5.34:i386 libpoppler118:i386 libpoppler97 libprotobuf17 libpython2-stdlib libpython2.7-minimal libpython2.7-stdlib
+  libpython3.8-dev libqpdf26 libraw19 libreoffice-style-tango librest-0.7-0:i386 libroken18-heimdal:i386 librtmidi4 libsane
+  libshine3:i386 libsnappy1v5:i386 libsnmp35 libsnmp35:i386 libsnmp40:i386 libsoundio1 libsoup-gnome2.4-1:i386 libsrt1 libssl1.1:i386
+  libtepl-4-0 libtracker-control-2.0-0 libtracker-miner-2.0-0 libtracker-sparql-2.0-0 libusrsctp1 libva-drm2:i386 libva-x11-2:i386
+  libva2:i386 libvdpau1:i386 libvpx6 libvpx6:i386 libwebp6 libwebp6:i386 libwebpmux3:i386 libwind0-heimdal:i386 libwmf0.2-7
+  libwrap0:i386 libx264-155 libx264-155:i386 libx264-163:i386 libx265-179 libx265-179:i386 libx265-199:i386 libxmlb1
+  libxvidcore4:i386 libzvbi0:i386 ltrace lz4 mesa-va-drivers:i386 mesa-vdpau-drivers:i386 ncal node-ajv node-ansi node-ansi-align
+  node-anymatch node-array-union node-array-uniq node-asn1 node-assert node-assert-plus node-aws-sign2 node-aws4 node-babel7-runtime
+  node-bl node-bluebird node-browserslist node-call-limit node-camelcase node-caniuse-lite node-caseless node-ci-info node-cli-boxes
+  node-cliui node-co node-commondir node-concat-map node-concat-stream node-config-chain node-convert-source-map node-core-js
+  node-cross-spawn node-crypto-random-string node-cyclist node-dashdash node-debbundle-es-to-primitive node-decamelize
+  node-deep-equal node-deep-extend node-define-properties node-detect-indent node-detect-newline node-duplexer3 node-duplexify
+  node-ecc-jsbn node-editor node-electron-to-chromium node-errno node-es-abstract node-esutils node-extend node-extsprintf
+  node-fast-deep-equal node-fill-range node-flush-write-stream node-forever-agent node-from2 node-fs-readdir-recursive node-genfun
+  node-get-caller-file node-getpass node-glob-parent node-globals node-har-schema node-har-validator node-has-symbol-support-x
+  node-has-to-string-tag-x node-ignore node-import-lazy node-invert-kv node-is-extglob node-is-glob node-is-npm node-is-number
+  node-is-object node-is-path-cwd node-is-retry-allowed node-is-stream node-isstream node-isurl node-js-tokens node-jsbn node-jsesc
+  node-json-schema node-json-schema-traverse node-json-stable-stringify node-json-stringify-safe node-json5 node-jsonify
+  node-jsonstream node-jsprim node-latest-version node-lazy-property node-lcid node-lockfile node-make-dir node-mem node-mimic-fn
+  node-normalize-path node-number-is-nan node-oauth-sign node-object-inspect node-os-tmpdir node-p-is-promise node-p-limit
+  node-package-json node-parallel-transform node-path-dirname node-path-exists node-path-type node-performance-now node-picocolors
+  node-pify node-prepend-http node-proto-list node-prr node-pseudomap node-pumpify node-qs node-qw node-rc node-regenerator-runtime
+  node-regenerator-transform node-registry-auth-token node-registry-url node-regjsgen node-regjsparser node-repeat-string
+  node-require-directory node-require-main-filename node-resolve-from node-semver-diff node-sha node-shebang-command
+  node-shebang-regex node-slide node-sorted-object node-stream-iterate node-stream-shift node-strip-eof node-strip-json-comments
+  node-through node-through2 node-timed-out node-to-fast-properties node-to-regex-range node-tunnel-agent node-typedarray
+  node-uid-number node-unicode-canonical-property-names-ecmascript node-unicode-match-property-value-ecmascript
+  node-unicode-property-aliases-ecmascript node-unique-string node-unpipe node-uri-js node-url-parse-lax node-url-to-options
+  node-util node-uuid node-v8flags node-verror node-which-module node-widest-line node-wrap-ansi node-xdg-basedir node-xtend
+  node-yargs-parser ocaml-base-nox ocaml-nox popularity-contest python2.7 python2.7-minimal python3-entrypoints
+  python3-requests-unixsocket python3-simplejson python3.8 python3.8-dev python3.8-minimal ruby2.7 syslinux syslinux-common
+  syslinux-legacy vdpau-driver-all:i386 vim-addon-manager vim-asciidoc vino x11proto-randr-dev x11proto-xinerama-dev xul-ext-ubufox
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  libaudio2 libenca0 libmad0 libmng2 libvorbisidec1
+Suggested packages:
+  nas mplayer-doc netselect | fping
+The following NEW packages will be installed:
+  libaudio2 libenca0 libmad0 libmng2 libvorbisidec1 mplayer
+0 upgraded, 6 newly installed, 0 to remove and 4 not upgraded.
+Need to get 2,687 kB of archives.
+After this operation, 6,289 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libaudio2 amd64 1.9.4-7build1 [50.8 kB]
+Get:2 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libenca0 amd64 1.19-1 [54.0 kB]
+Get:3 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libmad0 amd64 0.15.1b-10ubuntu1 [63.1 kB]
+Get:4 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libmng2 amd64 2.0.3+dfsg-3 [168 kB]
+Get:5 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libvorbisidec1 amd64 1.2.1+git20180316-7 [72.0 kB]
+Get:6 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 mplayer amd64 2:1.4+ds1-3ubuntu0.1 [2,279 kB]
+Fetched 2,687 kB in 0s (5,670 kB/s)
+Selecting previously unselected package libaudio2:amd64.
+(Reading database ... 543397 files and directories currently installed.)
+Preparing to unpack .../0-libaudio2_1.9.4-7build1_amd64.deb ...
+Unpacking libaudio2:amd64 (1.9.4-7build1) ...
+Selecting previously unselected package libenca0:amd64.
+Preparing to unpack .../1-libenca0_1.19-1_amd64.deb ...
+Unpacking libenca0:amd64 (1.19-1) ...
+Selecting previously unselected package libmad0:amd64.
+Preparing to unpack .../2-libmad0_0.15.1b-10ubuntu1_amd64.deb ...
+Unpacking libmad0:amd64 (0.15.1b-10ubuntu1) ...
+Selecting previously unselected package libmng2:amd64.
+Preparing to unpack .../3-libmng2_2.0.3+dfsg-3_amd64.deb ...
+Unpacking libmng2:amd64 (2.0.3+dfsg-3) ...
+Selecting previously unselected package libvorbisidec1:amd64.
+Preparing to unpack .../4-libvorbisidec1_1.2.1+git20180316-7_amd64.deb ...
+Unpacking libvorbisidec1:amd64 (1.2.1+git20180316-7) ...
+Selecting previously unselected package mplayer.
+Preparing to unpack .../5-mplayer_2%3a1.4+ds1-3ubuntu0.1_amd64.deb ...
+Unpacking mplayer (2:1.4+ds1-3ubuntu0.1) ...
+Setting up libmng2:amd64 (2.0.3+dfsg-3) ...
+Setting up libvorbisidec1:amd64 (1.2.1+git20180316-7) ...
+Setting up libenca0:amd64 (1.19-1) ...
+Setting up libaudio2:amd64 (1.9.4-7build1) ...
+Setting up libmad0:amd64 (0.15.1b-10ubuntu1) ...
+Setting up mplayer (2:1.4+ds1-3ubuntu0.1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.6) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for mailcap (3.70+nmu1ubuntu1) ...
+(sa) eccehomo@Human:~/SimpleAgent$ mplayer speak.mp3
+Creating config file: /home/eccehomo/.mplayer/config
+MPlayer 1.4 (Debian), built with gcc-11 (C) 2000-2019 MPlayer Team
+do_connect: could not connect to socket
+connect: No such file or directory
+Failed to open LIRC support. You will not be able to use your remote control.
+
+Playing speak.mp3.
+libavformat version 58.76.100 (external)
+
+
+Exiting... (End of file)
+(sa) eccehomo@Human:~/SimpleAgent$ scp speak.mp3 Mechachleopteryx@192.168.2.40:projects
+Mechachleopteryx@192.168.2.40's password:
+speak.mp3                                                                                            100%    0     0.0KB/s   00:00
+(sa) eccehomo@Human:~/SimpleAgent$ ssh mecha@192.168.2.73
+ssh: connect to host 192.168.2.73 port 22: No route to host
+(sa) eccehomo@Human:~/SimpleAgent$ ssh mecha@192.168.2.73
+ssh: connect to host 192.168.2.73 port 22: No route to host
+(sa) eccehomo@Human:~/SimpleAgent$ ls
+charlie            conversation12.py  conversation3.py  conversation6.py  conversation9.py  LICENSE   README.md
+conversation10.py  conversation13.py  conversation4.py  conversation7.py  conversation.py   LMStudio  requirements.txt
+conversation11.py  conversation2.py   conversation5.py  conversation8.py  face.py           ollama    speak.mp3
+(sa) eccehomo@Human:~/SimpleAgent$ vim requirements.txt
+(sa) eccehomo@Human:~/SimpleAgent$ pip install -e .
+Obtaining file:///home/eccehomo/SimpleAgent
+ERROR: file:///home/eccehomo/SimpleAgent does not appear to be a Python project: neither 'setup.py' nor 'pyproject.toml' found.
+(sa) eccehomo@Human:~/SimpleAgent$ pip install -r requirements.txt
+Collecting aiohttp==3.9.1 (from -r requirements.txt (line 1))
+  Downloading aiohttp-3.9.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.4 kB)
+Requirement already satisfied: aiosignal==1.3.1 in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from -r requirements.
+txt (line 2)) (1.3.1)
+Requirement already satisfied: annotated-types==0.6.0 in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from -r require
+ments.txt (line 3)) (0.6.0)
+Collecting anyio==4.1.0 (from -r requirements.txt (line 4))
+  Downloading anyio-4.1.0-py3-none-any.whl.metadata (4.5 kB)
+Collecting async-timeout==4.0.3 (from -r requirements.txt (line 5))
+  Downloading async_timeout-4.0.3-py3-none-any.whl.metadata (4.2 kB)
+Collecting attrs==23.1.0 (from -r requirements.txt (line 6))
+  Downloading attrs-23.1.0-py3-none-any.whl.metadata (11 kB)
+Collecting certifi==2023.11.17 (from -r requirements.txt (line 7))
+  Using cached certifi-2023.11.17-py3-none-any.whl.metadata (2.2 kB)
+Requirement already satisfied: charset-normalizer==3.3.2 in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from -r requ
+irements.txt (line 8)) (3.3.2)
+Collecting dataclasses-json==0.6.3 (from -r requirements.txt (line 9))
+  Downloading dataclasses_json-0.6.3-py3-none-any.whl.metadata (25 kB)
+Collecting exceptiongroup==1.2.0 (from -r requirements.txt (line 10))
+  Downloading exceptiongroup-1.2.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting frozenlist==1.4.0 (from -r requirements.txt (line 11))
+  Downloading frozenlist-1.4.0.tar.gz (90 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 90.7/90.7 kB 575.5 kB/s eta 0:00:00
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+Requirement already satisfied: idna==3.6 in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from -r requirements.txt (li
+ne 12)) (3.6)
+Requirement already satisfied: jsonpatch==1.33 in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from -r requirements.t
+xt (line 13)) (1.33)
+Requirement already satisfied: jsonpointer==2.4 in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from -r requirements.
+txt (line 14)) (2.4)
+Collecting langchain==0.0.348 (from -r requirements.txt (line 15))
+  Downloading langchain-0.0.348-py3-none-any.whl.metadata (16 kB)
+Collecting langchain-core==0.0.13 (from -r requirements.txt (line 16))
+  Downloading langchain_core-0.0.13-py3-none-any.whl.metadata (978 bytes)
+Collecting langsmith==0.0.69 (from -r requirements.txt (line 17))
+  Downloading langsmith-0.0.69-py3-none-any.whl.metadata (10 kB)
+Collecting marshmallow==3.20.1 (from -r requirements.txt (line 18))
+  Downloading marshmallow-3.20.1-py3-none-any.whl.metadata (7.8 kB)
+Collecting multidict==6.0.4 (from -r requirements.txt (line 19))
+  Downloading multidict-6.0.4.tar.gz (51 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 51.3/51.3 kB 280.6 kB/s eta 0:00:00
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Installing backend dependencies ... done
+  Preparing metadata (pyproject.toml) ... done
+Requirement already satisfied: mypy-extensions==1.0.0 in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from -r require
+ments.txt (line 20)) (1.0.0)
+Collecting numpy==1.26.2 (from -r requirements.txt (line 21))
+  Downloading numpy-1.26.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.2/61.2 kB 384.6 kB/s eta 0:00:00
+Requirement already satisfied: packaging==23.2 in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from -r requirements.t
+xt (line 22)) (23.2)
+Collecting pydantic==2.5.2 (from -r requirements.txt (line 23))
+  Downloading pydantic-2.5.2-py3-none-any.whl.metadata (65 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 65.2/65.2 kB 429.6 kB/s eta 0:00:00
+Collecting pydantic_core==2.14.5 (from -r requirements.txt (line 24))
+  Downloading pydantic_core-2.14.5-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.5 kB)
+Requirement already satisfied: PyYAML==6.0.1 in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from -r requirements.txt
+ (line 25)) (6.0.1)
+Requirement already satisfied: requests==2.31.0 in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from -r requirements.
+txt (line 26)) (2.31.0)
+Requirement already satisfied: sniffio==1.3.0 in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from -r requirements.tx
+t (line 27)) (1.3.0)
+Collecting SQLAlchemy==2.0.23 (from -r requirements.txt (line 28))
+  Downloading SQLAlchemy-2.0.23-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.6 kB)
+Requirement already satisfied: tenacity==8.2.3 in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from -r requirements.t
+xt (line 29)) (8.2.3)
+Requirement already satisfied: typing-inspect==0.9.0 in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from -r requirem
+ents.txt (line 30)) (0.9.0)
+Requirement already satisfied: typing_extensions==4.9.0 in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from -r requi
+rements.txt (line 31)) (4.9.0)
+Collecting urllib3==2.1.0 (from -r requirements.txt (line 32))
+  Using cached urllib3-2.1.0-py3-none-any.whl.metadata (6.4 kB)
+Requirement already satisfied: yarl==1.9.4 in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from -r requirements.txt (
+line 33)) (1.9.4)
+Requirement already satisfied: greenlet!=0.4.17 in /home/eccehomo/anaconda3/envs/sa/lib/python3.12/site-packages (from SQLAlchemy==2.0.
+23->-r requirements.txt (line 28)) (3.0.3)
+Downloading aiohttp-3.9.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 3.0 MB/s eta 0:00:00
+Downloading anyio-4.1.0-py3-none-any.whl (83 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 83.9/83.9 kB 769.0 kB/s eta 0:00:00
+Downloading async_timeout-4.0.3-py3-none-any.whl (5.7 kB)
+Downloading attrs-23.1.0-py3-none-any.whl (61 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.2/61.2 kB 351.8 kB/s eta 0:00:00
+Using cached certifi-2023.11.17-py3-none-any.whl (162 kB)
+Downloading dataclasses_json-0.6.3-py3-none-any.whl (28 kB)
+Downloading exceptiongroup-1.2.0-py3-none-any.whl (16 kB)
+Downloading langchain-0.0.348-py3-none-any.whl (2.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 4.2 MB/s eta 0:00:00
+Downloading langchain_core-0.0.13-py3-none-any.whl (188 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 188.2/188.2 kB 1.7 MB/s eta 0:00:00
+Downloading langsmith-0.0.69-py3-none-any.whl (48 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.2/48.2 kB 437.7 kB/s eta 0:00:00
+Downloading marshmallow-3.20.1-py3-none-any.whl (49 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 49.4/49.4 kB 429.4 kB/s eta 0:00:00
+Downloading numpy-1.26.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.9/17.9 MB 9.7 MB/s eta 0:00:00
+Downloading pydantic-2.5.2-py3-none-any.whl (381 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 381.9/381.9 kB 3.4 MB/s eta 0:00:00
+Downloading pydantic_core-2.14.5-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 5.8 MB/s eta 0:00:00
+Downloading SQLAlchemy-2.0.23-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.2/3.2 MB 7.0 MB/s eta 0:00:00
+Using cached urllib3-2.1.0-py3-none-any.whl (104 kB)
+Building wheels for collected packages: frozenlist, multidict
+  Building wheel for frozenlist (pyproject.toml) ... done
+  Created wheel for frozenlist: filename=frozenlist-1.4.0-cp312-cp312-linux_x86_64.whl size=53989 sha256=13f9cc147bba7898af33d107c76f34
+6586a3cc18be13d16015a3cc054ab72b4d
+  Stored in directory: /home/eccehomo/.cache/pip/wheels/f1/9c/94/9386cb0ea511a93226456388d41d35f1c24ba15a62ffd7b1ef
+  Building wheel for multidict (pyproject.toml) ... done
+  Created wheel for multidict: filename=multidict-6.0.4-cp312-cp312-linux_x86_64.whl size=34722 sha256=9bedcb8c731edc573c9b8da1f0801a88
+d227eed39b7adaa7b93c7bbb89c0d8ef
+  Stored in directory: /home/eccehomo/.cache/pip/wheels/f6/d8/ff/3c14a64b8f2ab1aa94ba2888f5a988be6ab446ec5c8d1a82da
+Successfully built frozenlist multidict
+Installing collected packages: urllib3, SQLAlchemy, pydantic_core, numpy, multidict, marshmallow, frozenlist, exceptiongroup, certifi,
+attrs, async-timeout, anyio, pydantic, dataclasses-json, langsmith, aiohttp, langchain-core, langchain
+  Attempting uninstall: urllib3
+    Found existing installation: urllib3 2.2.0
+    Uninstalling urllib3-2.2.0:
+      Successfully uninstalled urllib3-2.2.0
+  Attempting uninstall: SQLAlchemy
+    Found existing installation: SQLAlchemy 2.0.27
+    Uninstalling SQLAlchemy-2.0.27:
+      Successfully uninstalled SQLAlchemy-2.0.27
+  Attempting uninstall: pydantic_core
+    Found existing installation: pydantic_core 2.16.2
+    Uninstalling pydantic_core-2.16.2:
+      Successfully uninstalled pydantic_core-2.16.2
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.26.4
+    Uninstalling numpy-1.26.4:
+      Successfully uninstalled numpy-1.26.4
+  Attempting uninstall: multidict
+    Found existing installation: multidict 6.0.5
+    Uninstalling multidict-6.0.5:
+      Successfully uninstalled multidict-6.0.5
+  Attempting uninstall: marshmallow
+    Found existing installation: marshmallow 3.20.2
+    Uninstalling marshmallow-3.20.2:
+      Successfully uninstalled marshmallow-3.20.2
+  Attempting uninstall: frozenlist
+    Found existing installation: frozenlist 1.4.1
+    Uninstalling frozenlist-1.4.1:
+      Successfully uninstalled frozenlist-1.4.1
+  Attempting uninstall: certifi
+    Found existing installation: certifi 2024.2.2
+    Uninstalling certifi-2024.2.2:
+      Successfully uninstalled certifi-2024.2.2
+  Attempting uninstall: attrs
+    Found existing installation: attrs 23.2.0
+    Uninstalling attrs-23.2.0:
+      Successfully uninstalled attrs-23.2.0
+  Attempting uninstall: anyio
+    Found existing installation: anyio 4.2.0
+    Uninstalling anyio-4.2.0:
+      Successfully uninstalled anyio-4.2.0
+  Attempting uninstall: pydantic
+    Found existing installation: pydantic 2.6.1
+    Uninstalling pydantic-2.6.1:
+      Successfully uninstalled pydantic-2.6.1
+  Attempting uninstall: dataclasses-json
+    Found existing installation: dataclasses-json 0.6.4
+    Uninstalling dataclasses-json-0.6.4:
+      Successfully uninstalled dataclasses-json-0.6.4
+  Attempting uninstall: langsmith
+    Found existing installation: langsmith 0.0.87
+    Uninstalling langsmith-0.0.87:
+      Successfully uninstalled langsmith-0.0.87
+  Attempting uninstall: aiohttp
+    Found existing installation: aiohttp 3.9.3
+    Uninstalling aiohttp-3.9.3:
+      Successfully uninstalled aiohttp-3.9.3
+  Attempting uninstall: langchain-core
+    Found existing installation: langchain-core 0.1.23
+    Uninstalling langchain-core-0.1.23:
+      Successfully uninstalled langchain-core-0.1.23
+  Attempting uninstall: langchain
+    Found existing installation: langchain 0.1.7
+    Uninstalling langchain-0.1.7:
+      Successfully uninstalled langchain-0.1.7
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source
+ of the following dependency conflicts.
+langchain-community 0.0.20 requires langchain-core<0.2,>=0.1.21, but you have langchain-core 0.0.13 which is incompatible.
+langchain-community 0.0.20 requires langsmith<0.1,>=0.0.83, but you have langsmith 0.0.69 which is incompatible.
+Successfully installed SQLAlchemy-2.0.23 aiohttp-3.9.1 anyio-4.1.0 async-timeout-4.0.3 attrs-23.1.0 certifi-2023.11.17 dataclasses-json
+-0.6.3 exceptiongroup-1.2.0 frozenlist-1.4.0 langchain-0.0.348 langchain-core-0.0.13 langsmith-0.0.69 marshmallow-3.20.1 multidict-6.0.
+4 numpy-1.26.2 pydantic-2.5.2 pydantic_core-2.14.5 urllib3-2.1.0
+(sa) eccehomo@Human:~/SimpleAgent$ cd charlie/
+(sa) eccehomo@Human:~/SimpleAgent/charlie$ ls
+advocate.txt    conversation.py  main.py      response_generator.py  roles.py
+arbitrator.txt  critic.txt       __pycache__  roles_config.json      speak.py
+(sa) eccehomo@Human:~/SimpleAgent/charlie$ python conversation.py
+(sa) eccehomo@Human:~/SimpleAgent/charlie$ python main.py
+
+Advocate:
+As 2024-02-17 20:50:10.572 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+an advoc ate for the 2024-02-17 20:50:14.092 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+idea that { }, I 2024-02-17 20:50:16.086 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+will present three common 2024-02-17 20:50:19.607 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+arguments that 2024-02-17 20:50:21.144 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+support this 2024-02-17 20:50:22.653 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+notion 2024-02-17 20:50:22.764 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+: 2024-02-17 20:50:23.713 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+Argument 1 : Historical 2024-02-17 20:50:26.412 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+Sign ific ance T 2024-02-17 20:50:29.689 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+hr ough out 2024-02-17 20:50:31.943 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+history 2024-02-17 20:50:32.057 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+, 2024-02-17 20:50:32.756 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+there have been 2024-02-17 20:50:35.003 GSSpeechServer[94723:94723] No handle for event rport on descriptor 13
+count less examples of successful soci eties and civil izations that have implemented 2024-02-17 20:50:53.629 GSSpeechServer[98103:9810
+3] No handle for event rport on descriptor 14
+some form of { 2024-02-17 20:50:55.133 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+} in 2024-02-17 20:50:56.300 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+their govern ance structures . 2024-02-17 20:50:59.613 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+From ancient Greece to 2024-02-17 20:51:02.786 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+modern - day countries like Sweden and New Zealand , the benefits of { 2024-02-17 20:51:10.246 GSSpeechServer[98103:98103] No handle fo
+r event rport on descriptor 14
+} have been 2024-02-17 20:51:12.754 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+recognized and emb rac ed by leaders and citizens 2024-02-17 20:51:19.129 GSSpeechServer[98103:98103] No handle for event rport on desc
+riptor 14
+al ike 2024-02-17 20:51:19.966 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+. By studying these historical preced ents , we can 2024-02-17 20:51:27.779 GSSpeechServer[98103:98103] No handle for event rport on de
+scriptor 14
+gain 2024-02-17 20:51:28.721 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+valuable ins ights into the potential advantages of implementing { } in our 2024-02-17 20:51:37.136 GSSpeechServer[98103:98103] No hand
+le for event rport on descriptor 14
+own society 2024-02-17 20:51:38.357 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+. Argument 2024-02-17 20:51:39.975 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+2 : 2024-02-17 20:51:40.725 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+En 2024-02-17 20:51:41.721 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+hanced Part icip 2024-02-17 20:51:44.134 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+ation 2024-02-17 20:51:44.673 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+and Eng agement { } prom otes greater participation and eng agement 2024-02-17 20:51:53.137 GSSpeechServer[98103:98103] No handle for e
+vent rport on descriptor 14
+from citizens in the decision - making process 2024-02-17 20:51:58.189 GSSpeechServer[98103:98103] No handle for event rport on descrip
+tor 14
+. When citizens have a 2024-02-17 20:52:01.659 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+direct 2024-02-17 20:52:02.462 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+say 2024-02-17 20:52:02.939 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+in how they are 2024-02-17 20:52:05.477 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+govern ed , they are more likely to feel inv ested in the 2024-02-17 20:52:13.203 GSSpeechServer[98103:99407] No handle for event rport
+ on descriptor 14
+outcome and more motiv 2024-02-17 20:52:17.278 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+ated to particip ate in 2024-02-17 20:52:20.761 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+the political process 2024-02-17 20:52:23.245 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+. 2024-02-17 20:52:23.857 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+This 2024-02-17 20:52:24.647 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+can lead to higher vot er turn 2024-02-17 20:52:29.327 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+out , increased civ 2024-02-17 20:52:31.279 GSSpeechServer[98103:99550] ../Headers/GNUstepBase/GSIArray.h:461  Assertion failed in GSIA
+rrayRemoveItemAtIndex.  NSInvalidArgumentException
+ic 2024-02-17 20:52:33.244 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+participation 2024-02-17 20:52:33.335 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+, and a more v ibr ant 2024-02-17 20:52:37.691 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+dem ocracy . 2024-02-17 20:52:39.517 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+2024-02-17 20:52:40.454 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+Argument 2024-02-17 20:52:41.290 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+3 : Red u ced 2024-02-17 20:52:44.340 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+Cor ruption 2024-02-17 20:52:45.676 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+and I ne 2024-02-17 20:52:48.345 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+ffic iency By 2024-02-17 20:52:50.547 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+giving citizens a direct say in 2024-02-17 20:52:55.058 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+how they are 2024-02-17 20:52:56.974 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+govern 2024-02-17 20:52:57.640 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+ed , { } can 2024-02-17 20:52:59.601 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+help reduce cor 2024-02-17 20:53:02.076 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+ruption and in e ffic 2024-02-17 20:53:05.984 GSSpeechServer[98103:98103] No handle for event rport on descriptor 14
+iency within government 2024-02-17 20:53:13.332 GSSpeechServer[99908:99908] No handle for event rport on descriptor 16
+. When polit icians are 2024-02-17 20:53:16.907 GSSpeechServer[99908:99908] No handle for event rport on descriptor 13
+account able to the ^CTraceback (most recent call last):
+  File "/home/eccehomo/SimpleAgent/charlie/main.py", line 14, in <module>
+    run_conversation(args.duration, args.initial_prompt, args.use_gtts)
+  File "/home/eccehomo/SimpleAgent/charlie/conversation.py", line 27, in run_conversation
+    response = generate_response(prompt, context, role, use_gtts)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eccehomo/SimpleAgent/charlie/response_generator.py", line 33, in generate_response
+    speak_say(word)
+  File "/home/eccehomo/SimpleAgent/charlie/speak.py", line 8, in speak_say
+    subprocess.run(['say', text])
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/subprocess.py", line 1201, in communicate
+    self.wait()
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/subprocess.py", line 1264, in wait
+    return self._wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/subprocess.py", line 2046, in _wait
+    (pid, sts) = self._try_wait(0)
+                 ^^^^^^^^^^^^^^^^^
+  File "/home/eccehomo/anaconda3/envs/sa/lib/python3.12/subprocess.py", line 2004, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+(sa) eccehomo@Human:~/SimpleAgent/charlie$ python main.py
+
+Advocate:
+As an advoc ate for the idea that { 2024-02-17 21:10:02.309 GSSpeechServer[100654:100654] No handle for event rport on descriptor 13
+}, 2024-02-17 21:10:02.913 GSSpeechServer[100654:100654] No handle for event rport on descriptor 13
+I will present 2024-02-17 21:10:05.266 GSSpeechServer[100654:100654] No handle for event rport on descriptor 13
+three 2024-02-17 21:10:06.086 GSSpeechServer[100654:100654] No handle for event rport on descriptor 13
+common arguments 2024-02-17 21:10:07.644 GSSpeechServer[100654:100654] No handle for event rport on descriptor 13
+that support this notion 2024-02-17 21:10:10.161 GSSpeechServer[100654:100654] No handle for event rport on descriptor 13
+: 2024-02-17 21:10:11.112 GSSpeechServer[100654:100654] No handle for event rport on descriptor 13
+Argument 1 : Historical Sign ific 2024-02-17 21:10:15.332 GSSpeechServer[100654:100654] No handle for event rport on descriptor 13
+ance T hr 2024-02-17 21:10:17.602 GSSpeechServer[100654:100654] No handle for event rport on descriptor 13
+ough out history , soci 2024-02-17 21:10:21.703 GSSpeechServer[100654:100654] No handle for event rport on descriptor 13
+eties 2024-02-17 21:10:22.300 GSSpeechServer[100654:100654] No handle for event rport on descriptor 13
+have recognized and respect ed 2024-02-17 21:10:26.282 GSSpeechServer[100654:100654] No handle for event rport on descriptor 13
+the 2024-02-17 21:10:27.088 GSSpeechServer[100654:100654] No handle for event rport on descriptor 13
+value of { 2024-02-17 21:10:27.812 GSSpeechServer[100654:100654] No handle for event rport on descriptor 13
+}. From ancient civil izations 2024-02-17 21:10:31.515 GSSpeechServer[100654:100654] No handle for event rport on descriptor 13
+to modern - day cult ures , { } 2024-02-17 21:10:34.665 GSSpeechServer[100654:100654] No handle for event rport on descriptor 13
+has played a cru 2024-02-17 21:10:38.217 GSSpeechServer[100654:100654] No handle for event rport on descriptor 13
+cial role 2024-02-17 21:10:39.385 GSSpeechServer[100654:100654] No handle for event rport on descriptor 13
+in sh 2024-02-17 21:10:41.281 GSSpeechServer[100654:100654] No handle for event rport on descriptor 13
+aping social norm s , cultural practices 2024-02-17 21:10:46.142 GSSpeechServer[100654:100654] No handle for event rport on descriptor
+13
+, 2024-02-17 21:10:46.708 GSSpeechServer[100654:100654] No handle for event rport on descriptor 13
+and religious belief s 2024-02-17 21:10:49.431 GSSpeechServer[100654:100654] No handle for event rport on descriptor 13
+. By 2024-02-17 21:10:51.033 GSSpeechServer[100654:100654] No handle for event rport on descriptor 13
+studying 2024-02-17 21:10:51.476 GSSpeechServer[100654:100654] No handle for event rport on descriptor 13
+the historical significance of { }, we 2024-02-17 21:10:56.346 GSSpeechServer[100654:100654] No handle for event rport on descriptor 13
+can gain a deeper understanding of its 2024-02-17 21:11:03.383 GSSpeechServer[101208:101208] No handle for event rport on descriptor 14
+importance and relev ance
