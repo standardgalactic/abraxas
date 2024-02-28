@@ -1,0 +1,2850 @@
+(base) flyxion@volsorium:~/pyunity$ cd /mnt/c/Users/nateg/OneDrive/Documentos/GitHub/abraxas
+ (base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/abraxas$  cd ..
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub$ cd academizer
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/academizer$ ls
+'𝘈𝘥𝘷𝘢𝘯𝘤𝘦𝘥 𝘚𝘵𝘰𝘳𝘺𝘵𝘦𝘭𝘭𝘪𝘯𝘨 𝘋𝘦𝘷𝘪𝘤𝘦'
+'𒀭𒅎 𒀀 𒂗 𒁺 𒌆 𒉈 𒄑.txt'
+ 120103_001.MP3.txt
+ 120114_001.MP3.txt
+ 120613_002.MP3.txt
+ 120708_001.MP3.txt
+ 120731_001.MP3.txt
+ 120731_002.MP3.txt
+ 120818_001.MP3.txt
+'16 Boolean Logical Operators'
+'5D Plenoptic Function Summary'
+'A Convoluted Mirror.txt'
+'A Diverse Exploration'
+'A Divine Looking-Glass Issues'
+'A Hyper-Dimensional Primer on Logical Constructs.txt'
+'A Hyper-Dimensional Primer.txt'
+'A Modest Inquiry.txt'
+'A Scientific Mindset.txt'
+'AGI Blueprint.txt'
+'AI & Music Future Overview'
+'AI Accountability Through Competition.txt'
+'AI Adhibere Bene'
+'AI Alignment Problems'
+'AI Assistance Requested'
+'AI Balance Debate.txt'
+'AI Epistemology Principles'
+'AI Management System Requirements.txt'
+'AI Normative Agency Design.txt'
+'AI Philosophical Personalities'
+'AI Prevents Mission Sabotage.txt'
+'AI Progress in Next Decade'
+'AI Risk Discussion.txt'
+'AI Safety Challenges.txt'
+'AI Saves the World.txt'
+'AI Superintelligence Safety Book.txt'
+'AI and Literature Discussion.txt'
+'ARBITRARY REPOSITORY CONSTRAINT.txt'
+'About Brain-Centricism.txt'
+'Abstract Algebra One.txt'
+'Abstract Algebra Two.txt'
+'Abstract Symbolic Distillation.txt'
+ Academizer.txt
+'Accessible Cognitive Music Schemas'
+'Accélération du changement social.txt'
+'Acrostic Poem TAKE'
+'Action Theory Resolving Problems.txt'
+'Active Inference Evolution.txt'
+'Active Inference Glossary.txt'
+'Active Inference and Cognition'
+'Active Inference and Embodied Cognition.txt'
+'Active Inference for Adaptation.txt'
+'Adaptive Gravity'
+'Advancing AI Chatbots'
+'Advancing Algebra Education.txt'
+ Age-of-Photonic-Metasurfaces.txt
+'Agency in Spacetime.txt'
+'Algebraic Spaces in Mathematics.txt'
+'Alignment Objectives.txt'
+'Alliterative Programming.txt'
+'Ambiguous Figures in Philosophy.txt'
+'Amplified Biblical Metaphors.txt'
+'Anachronic Anastomosis.txt'
+'Analog 2048 Game.txt'
+'Anaphoric Agency.txt'
+'Anarchic Scientific Methodology.txt'
+'Anarchist Essay Goes Public'
+'Anaxronia and Novotection'
+ Anaxronia.txt
+'Anthroposophical Reading Kitbash.txt'
+'Antibody Sequence Generation.txt'
+'Aphantasia Movie Request Unfound.txt'
+'Apodosis and Protasis'
+'Apologist Gap Highlighted.txt'
+'Arabic Glossary.txt'
+'Arabic Script Phrases.txt'
+'Arabic Without Toil.txt'
+'Arabic Words & Meanings'
+'Archetypal Ark Stories.txt'
+'Argumentum ad Astra.txt'
+'Armchair World Building.txt'
+'Artificial Curiosity'
+'Asimov on Psychohistory'
+'Assemblies of Neurons.txt'
+'Assembly Theory Explains Evolution'
+'Assist Request for Help'
+'Assistant Responds Promptly'
+'Assumptions and Beliefs.txt'
+'Astroaardvark Inference.txt'
+'Astrophysicists Reveal Dark Matter'
+'Asynchronous Symbiosis.txt'
+'Attentional Cladistics.txt'
+'Augmented Counterfactual Reality.txt'
+'Authorship of the Bible'
+'Auto Universe Concepts.txt'
+'AutoHotkey Scripts.txt'
+'Autocatalytic Altruism.txt'
+ Autodoxx.txt
+'Automate Git Repo Updates.txt'
+'Automated Bayesian Methods.txt'
+'Automatic Differentiation.txt'
+'Automatic Summaries'
+'Automatic Task Manager.txt'
+'Automatic Xenotaxis.txt'
+'Automating Basic Common Sense.txt'
+'Automediality Unchained.txt'
+'Autonomous Infrahumanisation.txt'
+'Autonomy and Epistemic Humility'
+'Autonomy and Epistemic Humility.txt'
+'Autostatic Plasticity.txt'
+'Awareness of experience construction.txt'
+'Axenic Culture Explanation.txt'
+'Axiological Superstructures.txt'
+'Axiology of Art History'
+'Axiology of Science.txt'
+'Axion Cloud Dynamics.txt'
+'Bash Script Review.txt'
+'Basic Parsing Models.txt'
+'Bayesian Cake Recipes.txt'
+'Bayesian Epistemology.txt'
+"Bell's Theorem Revisited"
+"Bell's Theorem Revisited.txt"
+'Benchmarking Language Models.txt'
+'Bible as Iconoclastic Guide.txt'
+'Billets de circulation'
+'Biometric Autobot Detector.txt'
+'Biomimetic Food Production.txt'
+'Biomimetic Glottogenesis.txt'
+'Biomimetic Sociology.txt'
+'Biomimicry Implications'
+'Bionic Limb Implant Technology.txt'
+'Blindfolded Robot Operates Computer.txt'
+'Blockchain Issues Explained'
+'Blockchain Oracle Problem'
+'Bond Breaking in Amorphous Materials.txt'
+'Boolean Algebra B2 Functions'
+'Boolean Function Truth Tables'
+'Boosted Prompt Ensembles'
+'Boundary Construction for Lorentz Surfaces.txt'
+'Bracketing Phylogenetic Trees.txt'
+'Brain Constructs Perceptions.txt'
+'Brain Development and Societies.txt'
+'Brain Science Explained.txt'
+'Brain Shape Influences Activity'
+'Brain as Complex Adaptive System.txt'
+'Breaking Free from Subjective Spells'
+'Brevis Adnotatio.txt'
+'Brexit explanation'
+'Bridging Metaphors.txt'
+'Bureaucratic Hoops in Logic.txt'
+'Byobu Shortcut Review.txt'
+'Byobu for Nuspeak Engineers.txt'
+'CLIP Multi-Modal Zero-Shot Model'
+'CMD Test'
+'Cached Transformer for Improved Attention.txt'
+'Call From Ankyra'
+'Causa Sui.txt'
+'Causal Decoupling.txt'
+'Caution on Competence'
+'Central control over AI'
+'Centrifugal Filtration'
+'Ceteris Paribus.txt'
+'Chain-of-action Technique.txt'
+'Challenges of Superintelligence.txt'
+'Challenging Corporate Power'
+'Chaos and Zygomindfulness'
+'Chaotic Neutral Monism.txt'
+'Chat with RTX.txt'
+'ChatGPT Fabricates Richard Carrier Argument'
+'ChatGPT_ Almost Human.txt'
+'Check Current Network.txt'
+'Check PyTorch Installation.txt'
+'Chromogravity spacecraft density'
+'Circular Misdirection.txt'
+'Circular Reasoning Explained.txt'
+'Clear File Contents.txt'
+'Clickbait is Abstraction.txt'
+'Clipboard Path Conversion.txt'
+'Cogito Ergo Sum Emphasis'
+'Cognition Shapes Change Patterns.txt'
+'Cognitive Models Unveiled.txt'
+'Cohesion of Tropes.txt'
+'Coincidentia Oppositorum'
+'Common Bash Commands Summary'
+'Complex Assembly Theory.txt'
+'Complex Phenomena Ontology.txt'
+'Complex Tale of Connected Events.txt'
+'Compression is Abstraction.txt'
+'Computational Quantum Bayesianism.txt'
+'Computing Prime Number Properties'
+'Consciousness and Perception.txt'
+'Consciousness as Perceptual Control.txt'
+'Conspiracy Viability Study.txt'
+'Constructive Static Sequence Versioning.txt'
+'Continuum Hypothesis Explored.txt'
+'Control of Perception'
+'Controllable Object Generation.txt'
+'Controversial Topics Worldwide'
+'Convergent Solutions to Frame Problem.txt'
+ Conversations
+'Coordinating Boundary Conditions.txt'
+'Core Themes Unveiled.txt'
+'Cosmic Language Unveiled.txt'
+'Cosmic Religion Buddhism'
+'Cosmic Theories Explored.txt'
+'Cosmic Void Simulator.txt'
+'Cosmic Void Solves Cosmology.txt'
+ Cosmocytogenesis.txt
+'Counterfactual Affordances.txt'
+'Counterfactual Scenarios.txt'
+'Crafting A Sustainable Masterpiece.txt'
+'Create Alicia Juarrero Wikipedia page.txt'
+'Creative Ideas Discussion.txt'
+'Creative Pythagoras Translation'
+'Critical Hermeneutics.txt'
+'Criticism of Facebook Feature'
+'Critique of Integrated Pseudoscience.txt'
+'Critiques of Anarcho-Primitivism.txt'
+'Critiquing Poem Themes'
+'Crystal Plenum Theory.txt'
+'Cutting-Edge Research.txt'
+'Cybernetic Governments Investigated.txt'
+'Cytoelectric fields'
+'Da Vinci and Gravity.txt'
+'Dangerously Utopian Overtones.txt'
+'Daniel Milo Overview.txt'
+'Dark Mode Conversion.txt'
+'Data Sources and Methods.txt'
+'De Sitter Conjecture'
+'Dealing with uncertainty'
+'Declining disruption in science'
+'Decoding Quantum Entanglement.txt'
+'Decoupling Capacitor Basics'
+'Deep Dive.txt'
+'Deep Learning Architectures.txt'
+'Deep Learning Cognition Overview'
+'Defending Neutral Monism.txt'
+'Defining Machine Intelligence.txt'
+'Delivery Riders Challenges'
+'Democratic Epistemic Models.txt'
+'Deontological Objectivism.txt'
+'Deontological Transhumanism.txt'
+'Descent Theory'
+'Design of a New Encyclopedia.txt'
+'Designing Robots with LLMs.txt'
+'Designing an Ecosystem'
+'Diachronic Reverse Mathematics.txt'
+'Diacritical Realism.txt'
+'Diamond Bulerite Maximizers'
+'Difference between mereology & clustering'
+'Different Brain Worldviews'
+'Dismantling the Brain for Understanding.txt'
+'Dissecting Story Ideas.txt'
+'Dissociation in Set Theory.txt'
+'Distilling Human Understanding.txt'
+'Diurnal Saturnalia.txt'
+'Diverse Ideas and Concepts.txt'
+'Dizzy Apes'
+'Dual-Wave Ciphers.txt'
+'Dynagraphic Compression'
+'Dynamic Flow Computing.txt'
+'Dynamic Zettelkasten Method.txt'
+'Earliest Use Phrase Found'
+'Echoes of Aeternia.txt'
+'Echoes of Hypatia.txt'
+'Ecphoric Synthesis.txt'
+'Efficient Deep Learning Algorithms.txt'
+'Efficient Software Development Decisions.txt'
+'Effusion Ensemble Learning.txt'
+'Eight Letter Keyboard.txt'
+'El Clickbait es Abstracción.txt'
+'Electric Experiment.txt'
+'Electrocatalytic Heteroatoms.txt'
+'Electromagnetic Integrators.txt'
+'Electrostimulated Sleep Periglympholosis.txt'
+'Embryo Development'
+'Emergency Greek Keyboard.txt'
+'Emergent Evolution in Societies.txt'
+ Endokinematics.txt
+'Enneasecting Problem Domains.txt'
+'Entangled Ancillary Qubits.txt'
+'Entangled Autopoeisis.txt'
+'Entropic Markov Chains.txt'
+'Entropy-Based Universe.txt'
+'Epistemology of Mathematics.txt'
+'Era Values Variations'
+'Erewhon Summary.txt'
+'Ergodic Mind Medication.txt'
+'Ergodic Quantum Interpretation.txt'
+'Ergodicity in Forecasting'
+'Estivating Aliens.txt'
+'Eternal Vaporware Incorporated'
+'Etiological Tales and Behavior.txt'
+'Etymological Investigations.txt'
+'Eugenas Genusae.txt'
+'Europa Monolith Guardian Explored'
+'Everlasting Vaporware.txt'
+'Everything Is a Filter.txt'
+'Evolution of Dome Architecture.txt'
+'Evolution of Error Correction.txt'
+'Evolution of State Space.txt'
+'Evolutionary Computation.txt'
+'Evolutionary Thought Before Darwin.txt'
+'Ex Libris Cthulhu'
+'Exact vs Inexact Numbers'
+'Exegesis Gnomonis.txt'
+'Expanding universe concept.txt'
+'Explain Galactica'
+'Explain Genetic Algorithms'
+'Explain how the movie'
+'Explain these model-free methods'
+'Explaining Abstract Poem'
+'Explaining Beauty Without Grotesque'
+'Explore Current Folder.txt'
+'Exploring Genetic Similarities.txt'
+'Exploring Imaginative Inventions'
+'Exploring Intersections.txt'
+'Exploring Unconventional Categorization Systems and Sustainable Technologies'
+'Extended radio alphabet.txt'
+'Extremely Marked-Up Folding Text.txt'
+'Falcon Tests.txt'
+'Fallacem Illuminationem.txt'
+'Fantastic scenarios.txt'
+'Feedback Loop in PCT'
+'Female scientist discovered star composition.txt'
+'Fiat Boundaries.txt'
+'Filling in the Blanks.txt'
+'First Room-Temperature Superconductor.txt'
+'Flying Dreams'
+'Forth Quine Example.txt'
+'Forward-thinking Operations.txt'
+'Fourier Analysis.ipynb'
+'Fractal Fold Encoding.txt'
+'Fractal Tree Pans.txt'
+'Free Energy Minimization.txt'
+'Free Lunch Vibes.txt'
+'Free-Energy Framework.txt'
+'Frustration with Misleading Information.txt'
+'Function Application Expansion.txt'
+'Function simplification in Lean.txt'
+'Functional Python Programming.txt'
+'Functional Reactive Ecology'
+'Functionally Redundant Meanings.txt'
+'Fundamental Physics Contains Spoilers.txt'
+'Future Psychohistory Computation.txt'
+'Futurist Portraits.txt'
+'Futuristic Tech.txt'
+'Fuzzy Bayesian Logic.txt'
+'Fuzzy Yarnball Infodynamics.txt'
+'Fuzzy Yarnball Information Theory.txt'
+'GLIB Theory Interpretations.txt'
+'Gait Misattribution Error.txt'
+'Galactica Language Model Science'
+'Galaxy Mimetics.txt'
+'Gameified Free Will.txt'
+'Gap Junctions and Spatial Coding'
+'Gardener of Galaxies.txt'
+'Gaussian Auras.txt'
+'Gendicca and Haplopraxis.txt'
+'Generalized Learning through Integrative Biomimicry.txt'
+'Generative Programming Assisstant.txt'
+'Geodesic Metaphors.txt'
+'Geometric Bayesianism Explained.txt'
+'Geometric Bayesianism.txt'
+'Geometric Comparisons.txt'
+'Geometric Cosmology and Algebra.txt'
+'Geometric Deep Learning.txt'
+'Geometric Reasoning on Graphs.txt'
+'Get Active Displays PowerShell.txt'
+"Giordano Bruno's Lost Book"
+'Glass Transition Model.txt'
+'Glimmer of Light'
+'Glossary Game.txt'
+'Glossary for Nuspeak.txt'
+'Gnotobiotic Metaphors.txt'
+'Goals for Haplopraxis.txt'
+'Grabby Aliens Attack.txt'
+'Graph Neural Networks Applications'
+'Graphical Reasoning Engine.txt'
+'Gravity Hum Discovery'
+'Gravity Model of Trade'
+'Gumball Economy.txt'
+'Haplopraxis Game Mechanics Explained'
+'Harmonic Algebraic Existence Theory.txt'
+'Haskell proof of the ontological argument.txt'
+'Hawking Radiation Everywhere'
+'Heterarchical Adaptive Control through Kinematic Chains.txt'
+'Hexagonal Self-Hypnosis.txt'
+'Hexahedral Dynamics'
+'High Culture Characteristics'
+'History of Microcomputers.txt'
+'History of Pluto.txt'
+'History of Standard Galactic.txt'
+'Hoarding for Sustainability.txt'
+'Hobbes on Human Nature.txt'
+'Holographic Seam-mapping.txt'
+ Horn-torus-1
+ Horn-torus-2
+'Hotstring Helper.txt'
+ Hotstrings.txt
+'How to Build a Mind.txt'
+'How to Kill a Noiselord.txt'
+'How to Take Over the World'
+'Human Brain Processes Information'
+'Human Cognitive Singularity'
+'Human Impersonation.txt'
+'Human Values and Evolution.txt'
+'Humans as Large LMs.txt'
+'Hyperbolated Data Storage.txt'
+'Hyperphantasia and Auditory OS'
+'Hyperthymesia Unchained.txt'
+'I understand your perspective.txt'
+ INTRODUCTION.txt
+'Ideational Apraxia.txt'
+'Identity Maintenance and Management Tool'
+'Ideology and Corruption.txt'
+ Ideophones.txt
+'Illusory Precision.txt'
+'Illustrated Man Adaptation.txt'
+'Image Resizing with Entropy.txt'
+'Imagination Culture and Play'
+'Imaginative Earth Perspective.txt'
+'Immortal Banburismus Discovered'
+'Immortal Jellyfish Facts'
+'Immunity Basics'
+'Improved Problem Solving Framework.txt'
+'Include file text in README.txt'
+'Incoherent Request'
+ Index-of-Repositories.txt
+'Individual Transcendence.txt'
+'Individuality in the Age of Spiritual Machines.txt'
+'Inferring System Capabilities.txt'
+ Innate-flying-dreams.txt
+'Inner Space'
+'Innermost Nested Bubble.txt'
+'Innovative Ideas for Benefit'
+'Inoculation Against Surprise.txt'
+'Instructions to Shuruppak.txt'
+'Integrative Complexity.txt'
+'Intellectology Unveiled.txt'
+'Intelligence As Care'
+'Interactive Feedback Learning.txt'
+ Interconnections
+'Interdependent Disciplines.txt'
+'Interpolar Diaspora.txt'
+'Intro to Deep Learning'
+'Introduction to Lojban.txt'
+'Introduction to Null Wave Algebra.txt'
+'Inverse Chokepoint Capitalism.txt'
+'Invert Colors in PDF.txt'
+'Invert Colors.txt'
+'Invocation Model of Process Expression'
+'Ising Sync Visualisation.ipynb'
+'Issues and Ethics List'
+'Iterated Recursive Loops.txt'
+'Jax programming examples.txt'
+'Keen Dreams.txt'
+'Kelp-based Frozen Yogurt.txt'
+'Knowledge Graphs.txt'
+'Knowledge Leakage.txt'
+ LICENSE
+'LLM SelfCheck for Reasoning.txt'
+'LLM Solves Computer Tasks'
+'LMs for VWSD Enhancement.txt'
+"Lacan's Theories, Philosophies.txt"
+'Lambda Fibonacci Function'
+'Lambiscopolix Whispers.txt'
+'Language Learning and Information Processes'
+'Language model evaluation metrics'
+'Latent Confounder Causal Inference.txt'
+'Latent space and Markov chains'
+'Latent space and Markov chains (1)'
+'Latin Conditional Sentences.txt'
+'Latin Poetry for Science'
+'Latin Translation Requested'
+'Layers of Time.txt'
+'Leaded vs unleaded cost'
+'Leaking Chatroom Theory.txt'
+'Lean Theorem Prover'
+'Lenses and Learners.txt'
+"Li Zongwu's life"
+'Limitations of Expected Utility.txt'
+'Linking Neuro-Symbolic Approaches'
+'Linux Swarmbots.txt'
+'Liquid Frame Reduction.txt'
+'Liquid Terra Preta.txt'
+'Logarithmic History of the World.txt'
+'Longer Pauses.txt'
+'Machine Intelligence and Human Perception.txt'
+'Machine Learning and Visualization.txt'
+'Macrolife Chronicles.txt'
+ Macrolife.txt
+'Make It Seem Rebellious.txt'
+'Make up a sci-story'
+'Making Connections.txt'
+'Manifold Differences Explained.txt'
+'Manifolds and Voronoi Diagrams.txt'
+'Markov Blankets and Inference'
+'Math Topics Overview.txt'
+'Mathematical Foundations for Compositional Bayesian Brain.txt'
+'Mathematical Spaces Catalogue'
+'MeTTa Formalization with Metagraphs.txt'
+'Meaning in Language Models'
+'Mechanical Design Principles.txt'
+'Megascale Structures'
+'Megascale Structures.txt'
+'Meta-Mind Complexity.txt'
+'Meta-Prompting Analogies.txt'
+'Metabotropic Cognition.txt'
+'Metaphors for Complex Issues.txt'
+'Metaphysics as Logic.txt'
+'Mexican Death Whistle Theories.txt'
+'Middle English Poetry'
+'Mimetic Holomorph Recognition.txt'
+'Mimetic Participation.txt'
+'Mind Reading Not Necessary.txt'
+'Mind-making Machines.txt'
+'Mindless Mathematical Laws'
+'Missing Chapter_ Rationality'
+'Misunderstanding about Soup.txt'
+'Mixing Mistakes to Avoid.txt'
+'Mixture of Experts.txt'
+'Mneumonic Superstructures.txt'
+'Model Comparison.txt'
+'Model Complexity.txt'
+'Model Limitations Revealed.txt'
+'Model tests reasoning effectiveness'
+'Modeling Possibility Space.txt'
+'Models of Mind'
+'Modifying Nature Directly.txt'
+'Modular Agents Enhance Learning.txt'
+'Monad Shadows.txt'
+'Monolithic Undertones.txt'
+'Monotonic Phenomenological Explications.txt'
+'Moot Point Generators.txt'
+'Morphodynamic Work.txt'
+'Morphogenic Chemistry.txt'
+'Mouse Decision Variables Reservoir'
+'Move Files to Dark Mode.txt'
+'Multi-Concept Prompt Learning.txt'
+'Multi-head Attention.txt'
+'Multichrome Simulator.txt'
+'Multidimensional Dialogue Systems.txt'
+'Multiscale Intelligence Test.txt'
+'Music Arithmetic Exercise Summary'
+ MyLog.txt
+'Mysterious and Comical Video.txt'
+'Müllerian mimicry explained.txt'
+'Narrating Visual Content.txt'
+'Navigating Self-Improving AI'
+'Navigating the Supercanny Valley.txt'
+'Neanderthal Lithophone.txt'
+'Negation Study by Horn.txt'
+'Negentropy Organizer.txt'
+'Negentropy as Surprise'
+'Neoteny and Optimism.txt'
+'NetGlos Access Issue.txt'
+'Neural Basis of Future Prediction.txt'
+'Neural Development Programs.txt'
+'Neurodynamic Intelligence.txt'
+'Neuron Efficiency Analysis.txt'
+'Neuron-boosting supplement ingredients'
+'Nietzschean Influence on Transhumanism.txt'
+'No replication of study.txt'
+'Non-Fungible Teleology'
+'Nonsmooth Dynamical Systems'
+'North Statespace.txt'
+'Nostalgia Bias.txt'
+'Nova Protopia.txt'
+'Null Convention Logic'
+'Null Wave Algebra.txt'
+ Nuspeak-glossary.odt
+'Objective Mismatch Solutions.txt'
+'Objects in Motion'
+'Oblique Problem Solving Methods'
+'Obscure Book for Enthusiasts.txt'
+'Oceanic Megastructures.txt'
+'Oddly-Named Derivatives.txt'
+'Odyssey to Echelon.txt'
+'Old Conversations'
+'Ontology of Space'
+'Open folder in Windows'
+'Optimal Policies Seek Power'
+'Optimization Tradeoffs.txt'
+'Optoelectronic Sceptron.txt'
+'Origin of Mass and Gravity.txt'
+'Orpheus Mythical Lost Wonder'
+'Oscillatory Neural Networks'
+'Out of Thin Air'
+'Overfitting Brain and Dreams.txt'
+'Palimpsest Versioning.txt'
+'Pandemonium Model for Learning.txt'
+'Panprotopsychism and Property Instantiation.txt'
+'Pantomimetic Origin Of Language.txt'
+'Parrots and Language Understanding.txt'
+'Peanut Butter Adventure'
+'Perception Control System.txt'
+'Perigenetic Algorithms.txt'
+'Perineural holes and long term memory'
+'Permission Handling Emojis.txt'
+'Perpetual Truth Detector.txt'
+ Personalities
+'Personality examples'
+'Phenomenological Inquiry'
+'Philosophy in real world'
+'Philosophy of Elementary Mathematics.txt'
+'Photonic Neuroscience Interface'
+'Photosynthesis Re-Wired Fast'
+'Physics and Objectivism Compatibility'
+'Pipsqueak Terms.txt'
+'Pixel-Stretching Algorithms.txt'
+'Planned Obsolescence Ideas.txt'
+'Plant-Based Diet Options'
+'Pleiothermic Energy Solutions.txt'
+'Plenoptic Function in Physics'
+'Poetica ex machina'
+'Poetry writing exercises'
+'Politically Correct Bias in Philosophy.txt'
+'Polycomputing - Understanding Biological Systems'
+'Possibility Space of Foods.txt'
+'Possibility Space.ipynb'
+'Potent Potables.txt'
+'Poème sur les chats.txt'
+'Practopoietic Traverse Explanation'
+'Predictive Brain Theory.txt'
+'Predictive Coding Explained.txt'
+'Prefix Conditioning.txt'
+'Preguntas sobre prejuicios AI.txt'
+'Principia Metaphysica Dilucidatio.txt'
+'Proactive Inference Examples.txt'
+'Probable Inference'
+'Problem Identification Tips'
+'Problems with Self-verification.txt'
+'Process Invocation and Knowledge Presevation.txt'
+'Program Writing Experiments.txt'
+'Programming Experiments.txt'
+'Prolegomena Metaphysica.txt'
+'Prompt Engineering.txt'
+ Prototype
+'Provably Safe Temperatures'
+'Provia Girl Name Meaning'
+'Proximity and External Contingencies.txt'
+'Psychohistorical Themes'
+'Psycholinguistic Theory Construction.txt'
+'Purpose of null wavefront.txt'
+'Quantifying Emergence of Selection.txt'
+'Quantization Model of Neural Scaling'
+'Quantum Consciousness Validated'
+'Quantum Cosmology.txt'
+'Quantum Emoji Language.txt'
+'Quantum Entanglement Analysis'
+'Quantum Entanglement Distributor.txt'
+'Quantum Erasure Explored'
+'Quantum Free Will Resolution.txt'
+'Quantum LF Theorem Experiment.txt'
+'Quantum Measurement and Entanglement'
+'Quantum Phase Space Analysis.txt'
+'Quantum Vacuum Uncertainty.txt'
+'Quantum Vectors Comparison.txt'
+'Quantum Yoghurt Computing.txt'
+'Quaquaversal Tiling Machine.txt'
+'Quartic Ring Fields.txt'
+'Quenched Disorder Techniques.txt'
+'Quest for Cosmic Meaning.txt'
+'Questions for Later'
+'Quiet Brainscan.txt'
+ README.md
+'Radiation from Curved Black Holes.txt'
+'Random Questions'
+ Random-words.txt
+'Recognition Machine Theory.txt'
+'Reconstructing Lost Books.txt'
+'Regenerative Metaphors.txt'
+'Reinterpreting Free-Energy Principle.txt'
+'Relativistic Graph Interpretation.txt'
+'Relativistic Scalar Vector Plenum (RSVP).txt'
+'Relativistic Theory of Consciousness.txt'
+'Relaxation in Disordered Interacting Systems.txt'
+'Religious Factional Disputes.txt'
+'Remap Numpad Key.txt'
+'Remove Page Numbers - Vim'
+'Rename PDF Files Bash.txt'
+'Rendezvous With Llama'
+'Replacing Reason with Revelation'
+'Representation Theory'
+'Request for Assistance. (2)'
+'Retentive Graph Networks.txt'
+'Retrocomputing Flashcards.txt'
+'Retrocomputing Glossary.txt'
+'Retroflective Engineering.txt'
+'Retrofuturist Knowledge.txt'
+'Retrotransposon Noise.txt'
+'Revolutionizing Open-Source AI.txt'
+'Revolutionizing Programming Languages.txt'
+'Reword Perspective Interpretation Alignment'
+'Rhizomatic Perspectives Across Disciplines'
+'Rhizomatic Synergy.txt'
+'Riemann Horn Torus.ipynb'
+'Riemann Horn Torus.png'
+'Riemannian Optogenetics.txt'
+'Robert Nozick Philosophy'
+'Robot Astar Reattaching Arm.txt'
+'Robotic Brain.txt'
+'Rolling Choice Theory.txt'
+'Room-Temperature Superconductors.txt'
+'Rotating Clifford Torus.txt'
+'SYK Wormhole Formation'
+'Scalar Line Element Calculation.txt'
+'Scenius Impact on Creativity.txt'
+'Science Agents in Active Inference.txt'
+'Scientific Proofs in Physics'
+'Scotophobin History.txt'
+'Selective Reconstruction Theory.txt'
+'Self-Assembling Ideas.txt'
+'Self-Assembling Neural Networks.txt'
+'Self-Correcting Strategies.txt'
+'Self-Organisation in the Brain.txt'
+'Self-Organizing Dynamics of Complex Systems.txt'
+'Self-Repair and Quantum Error Correction.txt'
+'Semantic Dimensionality.txt'
+'Semantic Ladle Of Words.txt'
+'Semantic Memory Is All You Need.txt'
+'Semiconductor Packaging Tips'
+ Sga-Regular.ttf
+'Shared State Multiplayer'
+'Sheer to Tilt.txt'
+'Ship of Theseus'
+ Sight-words.txt
+'Significance Testing Critique.txt'
+'Silica Nanolattice Compression.txt'
+'Simple Practice'
+'Simpler Machine Learning Models'
+'Sith Methods of Rationality.txt'
+'Six Degrees of Freedom.txt'
+'Snarky News Bot Delivers!'
+ Socio-cognetics.txt
+'Soliton Chambers.txt'
+'Space Insights'
+'Space Station Adventure'
+'Space-Time Structure.txt'
+'Sparse Maps.txt'
+'Spatiotemporal Dualism.txt'
+'Spherepop Controls.txt'
+'Spherical Hermeneutics.txt'
+'Sphinx of Naxos.txt'
+'Split & Number File'
+'Split Text into Files'
+'Stability of Space'
+'Standard Galactic Alphabet.txt'
+'Starfield Development.txt'
+'Starts with S.txt'
+'State Space Models & Kalman Filter.txt'
+'Statespace-Free Physics.txt'
+'Stations of the Mind'
+'Stochastic Networks.txt'
+'Stochastic-Quantum Correspondence'
+'Stone Spheres Made by Ancestors.txt'
+'Structural Rationality Explained.txt'
+'Structure of Consciousness.txt'
+'Subquadratic Transformer Replacement'
+'Substrate Independent Thinking Hypothesis.txt'
+'Summarize Non-Classical Dynamics'
+'Surjective Tesseract.txt'
+'Surprise-based Collective Behavior Model.txt'
+'Swampland Program'
+'Swarmbot Intelligence.txt'
+'Switch Wiring Issue Detected.txt'
+'Symbiotic Aquatic Filtration.txt'
+'Symbolisme Littéraire et Artistique.txt'
+'Symplectic Manifolds.txt'
+'Synaptic Plasticity'
+'Syntactic Utility.txt'
+'Syntax-Semantics Undisentanglability'
+'Synthetica Mystica Rationalis.txt'
+ Synthographoscopy.txt
+'Table of Catastrophic Risks.txt'
+'Technical Report on Germanium.txt'
+'Techno-Axiological Penteract.txt'
+'Technological Metatheories.txt'
+'Teleodynamic Principles.txt'
+'Telepathic Balloon Pop.txt'
+'Telephrasitic Microblockchain Infiltration.txt'
+'Temporal Org Research Agenda'
+'Test question'
+'Textbook-Quality Data Improves Performance.txt'
+'Textos Infinitos de Borges'
+'The 16 Laws of Robotics.txt'
+'The Biggest Lie of All'
+'The Calculus Cure.txt'
+'The Call οf the Sirens'
+'The Dangerous Plan'
+'The Memetic Nexus.txt'
+'The Oblicosm Paradox'
+'The Ontogenic Parade.txt'
+'The Ortyx Mechanism.txt'
+'The Podman Prophecies.txt'
+'Theory of Humanocentric Evolution.txt'
+'Theory of Modular Intelligence.txt'
+'Thermodynamic Yoghurt Pipelines.txt'
+'Thermodynamic Yoghurt Processing.txt'
+'Thought-Provoking Transformations.txt'
+'Thoughts Concerning the Eloi.txt'
+'Thrillers with Vehicles'
+'Timelike Tube Theorem'
+'Topo Deep Learning Geometric'
+'Topology in Arithmetic Models.txt'
+'Tradition, Poetry, Sensitivity, Sharing'
+'Transcendental Movie Ideas.txt'
+'Transemic Perspectives.txt'
+'Transformer Limits on Reasoning.txt'
+'Transformer Recursion Analysis'
+'Translate Old English Poem'
+'Translation Preface Translation'
+'Tree of Self-reflection.txt'
+'Trickle-down Network Effects.txt'
+'Trionic Cyclexes.txt'
+'Typomorphological Considerations.txt'
+'UNIX Overview and Topics.txt'
+'Ultra Mundo Philosophia Nova'
+'Ultrabionic Reading.txt'
+'Unconventional Interpretation of Expansion'
+'Understanding Aboulomania.txt'
+'Understanding Chaotic Processes'
+'Understanding Deep Learning'
+'Understanding Deleuzian Rhizomatics.txt'
+'Understanding Epistemic Reduction.txt'
+'Understanding Human Introspection.txt'
+'Understanding Model Definitions'
+'Understanding Sentience Limitations'
+'Understanding Transformer Learning'
+'Understanding Unravelism.txt'
+'Understanding the Wave-Particle Duality in Quantum Physics.txt'
+'Unified Method for Science'
+'Unified Model of Reasoning.txt'
+'Unified Theory of Cognetics'
+'Universal Library Expansion'
+'Unix Directory Structure.txt'
+'Unix History and Future.txt'
+'Unix Utilities Overview.txt'
+'Unpredictable Human Behavior.txt'
+'Unraveling Complex Concepts.txt'
+'Unscannable Interfaces.txt'
+'Unsolvable Hard Problem'
+'Untyped Lambda Foundations.txt'
+'Unusual Latin phrases'
+'Unusually Potent Potables.txt'
+'Updating Ubuntu Python.txt'
+'Vacuum Fluctuations.txt'
+'Vague Concepts Explored.txt'
+'Vala Language Overview'
+'Valence Concept Visualized.txt'
+'Venture Capital Ideas.txt'
+'Vernacular, Transcendence, Immanence'
+'Vestibular-Visual Interplay.txt'
+'Viewing Files in DOS.txt'
+'Vim Navigation Basics.txt'
+'Vim Space Quest.txt'
+'Visual Dialogue Exploration'
+'Vorticon Vision.txt'
+'Wandering Significances.txt'
+'Weak Gravity'
+'What Do I Believe'
+ Wikipedia-sample.txt
+ Wikipedia-small-sample.txt
+ Wikipedia-small-sample2.txt
+ Wikipedia-update.txt
+ Wikipedia-watchlist.txt
+ Windows-command-line-Spanish.txt
+'Wordless Imageless Thought'
+'Work on Spherepop.txt'
+'Work on Spherepop2.txt'
+'Wrinklon Explains Material Wrinkles.txt'
+'Xanadu movie plot'
+ Xenophon.txt
+'Xonsh_ Python Shell Interface'
+'Xylem Cell Lineage Insights.txt'
+'Xylem Economies.txt'
+'Xylem-Based Economies.txt'
+ Xyloidology.txt
+'Yappy Chatbot.txt'
+'Yearning for Efficiency'
+'Yogurt Innovations Discussion.txt'
+'Youtronium Incorporated.txt'
+'Zapya in Cuba.txt'
+'Zen and Rationality.txt'
+'Zephyrs of Lambiscopolix.txt'
+"Zera Yacob's Cyclofabianism Philosophy"
+'Zero Resistance.txt'
+'Zero-Knowledge Roots.txt'
+'Zero-Yield Xerography.txt'
+'Zodiac as Ark Metaphor.txt'
+'Zonas Inhúmedas.txt'
+'Zsh - Unix Shell Enhancements.txt'
+ about.txt
+ academize.sh
+ advancing-algebra.txt
+ algebraic-spaces.txt
+ algebraic-structures.txt
+ algebraic-topology.txt
+ aniara.txt
+ assets
+ autopush.sh
+ bayesian-epistemology.txt
+ bells-theorem.txt
+ bing-1.txt
+ bing-2.txt
+'byobu comma separated file.txt'
+'byobu shortcuts ubuntu.txt'
+ byobu.txt
+ common-words.txt
+ cosmic-entity.txt
+ curated-list.txt
+ cyclopod-3.txt
+ diachronic-reverse-mathematics.odt
+ diachronic-reverse-mathematics.txt
+ document-summaries.txt
+'epistemological experiments'
+ exit
+ exogenous-xenotaxis.txt
+ exs.txt
+ extractor.py
+ first-chat-with-vicuna
+ flyxion.txt
+ gpt-illustrations.ipynb
+ group-theory.txt
+ heterarchical-active-control.odt
+ heterarchical-active-control.txt
+ holistic-response.txt
+ horn-torus-1.txt
+ hyperdimensional-primer.txt
+ hyperon.txt
+ imperfect-vacuum.txt
+ index
+ index.txt
+ input-test.txt
+ input.txt
+ introduction-to-chatgpt.txt
+ ising_animation.gif
+ iter-chronologicum.txt
+ language-swap-test.txt
+ lean-theorem-prover.txt
+ llm-workflow-engine.txt
+'mac super resolution first session.txt'
+ mapping-connections.txt
+'math code.txt'
+ math-topics.txt
+ mhtml-extractor.py
+ mind-making-machines.txt
+ mindgame-firstdraft.txt
+ mindgame.txt
+ model-test.txt
+ mouseover.txt
+'newtons method.txt'
+'no enemy but time.odt'
+ null-wavefront.txt
+ old-index.txt
+ old-mhtml-extractor.py
+ output.txt
+ perpetual-truth-detector.txt
+ personal-questions.txt
+ principia-metaphysica.txt
+ probabilistic-models-sga.txt
+ public-opinion-sga.txt
+ pushup-test.txt
+ pushup.sh
+ quantum-vacuum-uncertainty.odt
+ ratsnake-sga.txt
+ rhinoscript.txt
+ rhizomatic-lens.txt
+ riemann-horn-torus.txt
+ rust-documentation.txt
+ rwxrob-zettelkasten-quotes.txt
+ sedFG5W2n
+ self-check.txt
+ sga-starter-aliases.txt
+ solaris.txt
+ spherepop.txt
+ stations-of-the-mind.txt
+ storage.db
+ story-ideas.txt
+ superintelligence.txt
+ teleodynamics.txt
+ testing-the-waters.txt
+ text-processing.ipynb
+ the-little-mermaid-sga.txt
+ the-way-to-go-sga.txt
+ thermobaric-logic.txt
+ topic-list
+ totalitarianism.txt
+ unconverted-pdfs.txt
+ untitled.txt
+ wam-index.txt
+ weirdness.txt
+ zorro.txt
+'Γρήγορο Πανγράμματο - Το ζευγάρι και οι ξυλοκόποι.txt'
+'Атеизм и наука'
+'حروف الشمس والقمر.txt'
+'واجب الضيافة.txt'
+'母亲与儿子的故事 (Mother and Son Story)'
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/academizer$ git branch core
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/academizer$ git checkout core
+M       120103_001.MP3.txt
+M       120114_001.MP3.txt
+M       120613_002.MP3.txt
+M       120708_001.MP3.txt
+M       120731_001.MP3.txt
+M       120731_002.MP3.txt
+M       120818_001.MP3.txt
+M       5D Plenoptic Function Summary
+D       A Convoluted Mirror.mhtml
+D       A Hyper-Dimensional Primer on Logical Constructs.mhtml
+D       A Modest Inquiry.mhtml
+D       A Scientific Mindset.mhtml
+D       AGI Blueprint.mhtml
+D       AI Accountability Through Competition.mhtml
+D       AI Management System Requirements.mhtml
+D       AI Normative Agency Design.mhtml
+D       AI Prevents Mission Sabotage.mhtml
+D       AI Safety Challenges.mhtml
+D       AI Superintelligence Safety Book.mhtml
+D       AI and Literature Discussion.mhtml
+D       Abstract Algebra One.mhtml
+D       Abstract Algebra Two.mhtml
+D       Abstract Symbolic Distillation.mhtml
+D       Academizer.mhtml
+D       Advancing Algebra Education.mhtml
+M       Age-of-Photonic-Metasurfaces.txt
+D       Alignment Objectives.mhtml
+D       Alliterative Programming.mhtml
+D       Ambiguous Figures in Philosophy.mhtml
+D       Amplified Biblical Metaphors.mhtml
+D       Anachronic Anastomosis.mhtml
+D       Analog 2048 Game.mhtml
+D       Anaphoric Agency.mhtml
+D       Anarchic Scientific Methodology.mhtml
+M       Anaxronia.txt
+D       Anthroposophical Reading Kitbash.mhtml
+D       Aphantasia Movie Request Unfound.mhtml
+D       Apologist Gap Highlighted.mhtml
+D       Arabic Glossary.mhtml
+D       Arabic Script Phrases.mhtml
+D       Arabic Without Toil.mhtml
+D       Argumentum ad Astra.mhtml
+D       Armchair World Building.mhtml
+D       Assemblies of Neurons.mhtml
+D       Assumptions and Beliefs.mhtml
+D       Astroaardvark Inference.mhtml
+D       Asynchronous Symbiosis.mhtml
+D       Attentional Cladistics.mhtml
+D       Augmented Counterfactual Reality.mhtml
+D       Auto Universe Concepts.mhtml
+D       AutoHotkey Scripts.mhtml
+D       Autodoxx.mhtml
+D       Automate Git Repo Updates.mhtml
+D       Automated Bayesian Methods.mhtml
+D       Automatic Differentiation.mhtml
+D       Automatic Task Manager.mhtml
+D       Automatic Xenotaxis.mhtml
+D       Automating Basic Common Sense.mhtml
+D       Automediality Unchained.mhtml
+D       Autonomous Infrahumanisation.mhtml
+D       Autostatic Plasticity.mhtml
+D       Awareness of experience construction.mhtml
+D       Axenic Culture Explanation.mhtml
+D       Axiological Superstructures.mhtml
+D       Axiology of Science.mhtml
+D       Axion Cloud Dynamics.mhtml
+D       Basic Parsing Models.mhtml
+D       Bayesian Cake Recipes.mhtml
+D       Bayesian Epistemology.mhtml
+D       Benchmarking Language Models.mhtml
+D       Biometric Autobot Detector.mhtml
+D       Biomimetic Food Production.mhtml
+D       Biomimetic Glottogenesis.mhtml
+D       Biomimetic Sociology.mhtml
+D       Bionic Limb Implant Technology.mhtml
+D       Blindfolded Robot Operates Computer.mhtml
+D       Bond Breaking in Amorphous Materials.mhtml
+D       Bracketing Phylogenetic Trees.mhtml
+D       Brain Development and Societies.mhtml
+D       Brain Science Explained.mhtml
+D       Brevis Adnotatio.mhtml
+D       Bridging Metaphors.mhtml
+D       Bureaucratic Hoops in Logic.mhtml
+D       Byobu Shortcut Review.mhtml
+D       Byobu for Nuspeak Engineers.mhtml
+D       Cached Transformer for Improved Attention.mhtml
+D       Causa Sui.mhtml
+D       Causal Decoupling.mhtml
+D       Ceteris Paribus.mhtml
+D       Chain-of-action Technique.mhtml
+D       Challenges of Superintelligence.mhtml
+D       Chaotic Neutral Monism.mhtml
+D       Chat with RTX.html
+D       ChatGPT_ Almost Human.mhtml
+D       Check Current Network.mhtml
+D       Check PyTorch Installation.mhtml
+D       Circular Misdirection.mhtml
+D       Circular Reasoning Explained.mhtml
+D       Clear File Contents.mhtml
+D       Clickbait is Abstraction.mhtml
+D       Clipboard Path Conversion.mhtml
+D       Cognition Shapes Change Patterns.mhtml
+D       Cognitive Models Unveiled.mhtml
+D       Cohesion of Tropes.mhtml
+D       Complex Assembly Theory.mhtml
+D       Complex Tale of Connected Events.mhtml
+D       Compression is Abstraction.mhtml
+D       Computational Quantum Bayesianism.mhtml
+D       Consciousness and Perception.mhtml
+D       Conspiracy Viability Study.mhtml
+D       Constructive Static Sequence Versioning.mhtml
+D       Controllable Object Generation.mhtml
+D       Convergent Solutions to Frame Problem.mhtml
+D       Coordinating Boundary Conditions.mhtml
+D       Core Themes Unveiled.mhtml
+D       Cosmic Language Unveiled.mhtml
+D       Cosmic Theories Explored.mhtml
+D       Cosmic Void Simulator.mhtml
+D       Cosmic Void Solves Cosmology.mhtml
+D       Cosmocytogenesis.mhtml
+D       Counterfactual Affordances.mhtml
+D       Counterfactual Scenarios.mhtml
+D       Crafting A Sustainable Masterpiece.mhtml
+D       Create Alicia Juarrero Wikipedia page.mhtml
+D       Creative Ideas Discussion.mhtml
+D       Critical Hermeneutics.mhtml
+D       Critique of Integrated Pseudoscience.mhtml
+D       Critiques of Anarcho-Primitivism.mhtml
+D       Crystal Plenum Theory.mhtml
+D       Cutting-Edge Research.mhtml
+D       Cybernetic Governments Investigated.mhtml
+D       Da Vinci and Gravity.mhtml
+D       Dangerously Utopian Overtones.mhtml
+D       Daniel Milo Overview.mhtml
+D       Dark Mode Conversion.mhtml
+D       Data Sources and Methods.mhtml
+D       Decoding Quantum Entanglement.mhtml
+D       Deep Dive.mhtml
+D       Deep Learning Architectures.mhtml
+D       Defending Neutral Monism.mhtml
+D       Defining Machine Intelligence.mhtml
+D       Democratic Epistemic Models.mhtml
+D       Deontological Objectivism.mhtml
+D       Deontological Transhumanism.mhtml
+D       Design of a New Encyclopedia.mhtml
+D       Designing Robots with LLMs.mhtml
+D       Diachronic Reverse Mathematics.mhtml
+D       Diacritical Realism.mhtml
+D       Dissecting Story Ideas.mhtml
+D       Dissociation in Set Theory.mhtml
+D       Distilling Human Understanding.mhtml
+D       Diurnal Saturnalia.mhtml
+D       Diverse Ideas and Concepts.mhtml
+D       Dual-Wave Ciphers.mhtml
+D       Dynamic Flow Computing.mhtml
+D       Dynamic Zettelkasten Method.mhtml
+D       Echoes of Aeternia.mhtml
+D       Echoes of Hypatia.mhtml
+D       Ecphoric Synthesis.mhtml
+D       Efficient Software Development Decisions.mhtml
+D       Effusion Ensemble Learning.mhtml
+D       Eight Letter Keyboard.mhtml
+D       "El Clickbait es Abstracci\303\263n.mhtml"
+D       Electrocatalytic Heteroatoms.mhtml
+D       Electromagnetic Integrators.mhtml
+D       Electrostimulated Sleep Periglympholosis.mhtml
+D       Emergency Greek Keyboard.mhtml
+M       Emergent Evolution in Societies.txt
+D       Endokinematics.mhtml
+D       Enneasecting Problem Domains.mhtml
+D       Entangled Ancillary Qubits.mhtml
+D       Entangled Autopoeisis.mhtml
+D       Entropic Markov Chains.mhtml
+D       Entropy-Based Universe.mhtml
+D       Epistemology of Mathematics.mhtml
+D       Ergodic Mind Medication.mhtml
+D       Estivating Aliens.mhtml
+D       Etiological Tales and Behavior.mhtml
+D       Etymological Investigations.mhtml
+M       Eugenas Genusae.txt
+D       Everlasting Vaporware.mhtml
+D       Everything Is a Filter.mhtml
+D       Evolution of Dome Architecture.mhtml
+D       Evolution of State Space.mhtml
+D       Evolutionary Computation.mhtml
+D       Evolutionary Thought Before Darwin.mhtml
+D       Exegesis Gnomonis.mhtml
+D       Expanding universe concept.mhtml
+D       Explore Current Folder.mhtml
+D       Exploring Intersections.mhtml
+D       Extremely Marked-Up Folding Text.mhtml
+D       Falcon Tests.mhtml
+D       Fallacem Illuminationem.mhtml
+D       Fantastic scenarios.mhtml
+D       Fiat Boundaries.mhtml
+D       Filling in the Blanks.mhtml
+D       Forth Quine Example.mhtml
+D       Forward-thinking Operations.mhtml
+M       Fourier Analysis.ipynb
+D       Fractal Fold Encoding.mhtml
+D       Fractal Tree Pans.mhtml
+D       Free-Energy Framework.mhtml
+D       Frustration with Misleading Information.mhtml
+D       Function Application Expansion.mhtml
+D       Function simplification in Lean.mhtml
+D       Functionally Redundant Meanings.mhtml
+D       Fundamental Physics Contains Spoilers.mhtml
+D       Future Psychohistory Computation.mhtml
+D       Futuristic Tech.mhtml
+D       Fuzzy Bayesian Logic.mhtml
+D       Fuzzy Yarnball Infodynamics.mhtml
+D       Fuzzy Yarnball Information Theory.mhtml
+D       GLIB Theory Interpretations.mhtml
+D       Gait Misattribution Error.mhtml
+D       Galaxy Mimetics.mhtml
+D       Gameified Free Will.mhtml
+D       Gaussian Auras.mhtml
+D       Generalized Learning through Integrative Biomimicry.mhtml
+D       Generative Programming Assisstant.mhtml
+D       Geodesic Metaphors.mhtml
+D       Geometric Bayesianism Explained.mhtml
+D       Geometric Bayesianism.mhtml
+D       Geometric Comparisons.mhtml
+D       Geometric Deep Learning.mhtml
+D       Geometric Reasoning on Graphs.mhtml
+D       Get Active Displays PowerShell.mhtml
+D       Glass Transition Model.mhtml
+D       Glossary Game.mhtml
+D       Glossary for Nuspeak.mhtml
+D       Gnotobiotic Metaphors.mhtml
+D       Goals for Haplopraxis.mhtml
+D       Grabby Aliens Attack.mhtml
+D       Graphical Reasoning Engine.mhtml
+D       Harmonic Algebraic Existence Theory.mhtml
+D       Heterarchical Adaptive Control through Kinematic Chains.mhtml
+D       Hexagonal Self-Hypnosis.mhtml
+D       History of Microcomputers.mhtml
+D       History of Pluto.mhtml
+D       Hobbes on Human Nature.mhtml
+D       Holographic Seam-mapping.mhtml
+D       Hotstring Helper.mhtml
+D       How to Build a Mind.mhtml
+M       How to Kill a Noiselord.txt
+D       Human Impersonation.mhtml
+D       Human Values and Evolution.mhtml
+D       Humans as Large LMs.mhtml
+D       Hyperbolated Data Storage.mhtml
+D       Hyperthymesia Unchained.mhtml
+D       Ideational Apraxia.mhtml
+D       Ideophones.mhtml
+D       Illusory Precision.mhtml
+D       Illustrated Man Adaptation.mhtml
+D       Image Resizing with Entropy.mhtml
+D       Improved Problem Solving Framework.mhtml
+D       Include file text in README.mhtml
+M       Index-of-Repositories.txt
+D       Individual Transcendence.mhtml
+D       Individuality in the Age of Spiritual Machines.mhtml
+D       Inferring System Capabilities.mhtml
+D       Innermost Nested Bubble.mhtml
+D       Inoculation Against Surprise.mhtml
+D       Instructions to Shuruppak.mhtml
+D       Integrative Complexity.mhtml
+D       Intellectology Unveiled.mhtml
+D       Interactive Feedback Learning.mhtml
+D       Interdependent Disciplines.mhtml
+D       Interpolar Diaspora.mhtml
+D       Introduction to Lojban.mhtml
+D       Introduction to Null Wave Algebra.mhtml
+D       Inverse Chokepoint Capitalism.mhtml
+D       Invert Colors in PDF.mhtml
+D       Invert Colors.mhtml
+M       Ising Sync Visualisation.ipynb
+D       Iterated Recursive Loops.mhtml
+D       Jax programming examples.mhtml
+D       Keen Dreams.mhtml
+D       LLM SelfCheck for Reasoning.mhtml
+D       LMs for VWSD Enhancement.mhtml
+D       Lacan's Theories, Philosophies.mhtml
+D       Latent Confounder Causal Inference.mhtml
+D       Latin Conditional Sentences.mhtml
+D       Leaking Chatroom Theory.mhtml
+D       Linux Swarmbots.mhtml
+D       Liquid Frame Reduction.mhtml
+D       Liquid Terra Preta.mhtml
+D       Longer Pauses.mhtml
+D       Machine Intelligence and Human Perception.mhtml
+D       Machine Learning and Visualization.mhtml
+D       Macrolife Chronicles.mhtml
+D       Macrolife.mhtml
+D       Making Connections.mhtml
+D       Manifold Differences Explained.mhtml
+D       Manifolds and Voronoi Diagrams.mhtml
+D       Math Topics Overview.mhtml
+D       Mathematical Foundations for Compositional Bayesian Brain.mhtml
+D       MeTTa Formalization with Metagraphs.mhtml
+D       Meta-Mind Complexity.mhtml
+D       Meta-Prompting Analogies.mhtml
+D       Metabotropic Cognition.mhtml
+D       Metaphors for Complex Issues.mhtml
+D       Metaphysics as Logic.mhtml
+D       Mimetic Holomorph Recognition.mhtml
+D       Mimetic Participation.mhtml
+D       Mind-making Machines.mhtml
+D       Misunderstanding about Soup.mhtml
+D       Mixing Mistakes to Avoid.mhtml
+D       Mixture of Experts.mhtml
+D       Mneumonic Superstructures.mhtml
+D       Model Complexity.mhtml
+D       Model Limitations Revealed.mhtml
+D       Modeling Possibility Space.mhtml
+D       Modifying Nature Directly.mhtml
+D       Modular Agents Enhance Learning.mhtml
+D       Monad Shadows.mhtml
+D       Monolithic Undertones.mhtml
+D       Monotonic Phenomenological Explications.mhtml
+D       Moot Point Generators.mhtml
+D       Morphodynamic Work.mhtml
+D       Morphogenic Chemistry.mhtml
+D       Move Files to Dark Mode.mhtml
+D       Multi-Concept Prompt Learning.mhtml
+D       Multi-head Attention.mhtml
+D       Multichrome Simulator.mhtml
+D       Multidimensional Dialogue Systems.mhtml
+D       Multiscale Intelligence Test.mhtml
+D       Mysterious and Comical Video.mhtml
+D       Navigating the Supercanny Valley.mhtml
+D       Neanderthal Lithophone.mhtml
+D       Negation Study by Horn.mhtml
+D       Negentropy Organizer.mhtml
+D       Neoteny and Optimism.mhtml
+D       NetGlos Access Issue.mhtml
+D       Neural Basis of Future Prediction.mhtml
+D       Neural Development Programs.mhtml
+D       Neurodynamic Intelligence.mhtml
+D       No replication of study.mhtml
+D       North Statespace.mhtml
+D       Nostalgia Bias.mhtml
+D       Nova Protopia.mhtml
+D       Objective Mismatch Solutions.mhtml
+D       Oceanic Megastructures.mhtml
+D       Oddly-Named Derivatives.mhtml
+D       Odyssey to Echelon.mhtml
+D       Optimization Tradeoffs.mhtml
+D       Optoelectronic Sceptron.mhtml
+D       Origin of Mass and Gravity.mhtml
+D       Overfitting Brain and Dreams.mhtml
+D       Palimpsest Versioning.mhtml
+D       Pandemonium Model for Learning.mhtml
+D       Panprotopsychism and Property Instantiation.mhtml
+D       Parrots and Language Understanding.mhtml
+D       Perception Control System.mhtml
+D       Perigenetic Algorithms.mhtml
+D       Permission Handling Emojis.mhtml
+D       Perpetual Truth Detector.mhtml
+M       Personality examples/Fihriya
+M       Personality examples/Nietzsche
+M       Personality examples/Pythagoras
+M       Personality examples/Siemens
+M       Personality examples/Theano
+D       Philosophy of Elementary Mathematics.mhtml
+D       Pipsqueak Terms.mhtml
+D       Pixel-Stretching Algorithms.mhtml
+D       Pleiothermic Energy Solutions.mhtml
+D       Politically Correct Bias in Philosophy.mhtml
+D       Possibility Space of Foods.mhtml
+M       Possibility Space.ipynb
+D       Potent Potables.mhtml
+D       "Po\303\250me sur les chats.mhtml"
+D       Predictive Brain Theory.mhtml
+D       Prefix Conditioning.mhtml
+D       Preguntas sobre prejuicios AI.mhtml
+D       Principia Metaphysica Dilucidatio.mhtml
+D       Proactive Inference Examples.mhtml
+D       Process Invocation and Knowledge Presevation.mhtml
+M       Program Writing Experiments.txt
+D       Programming Experiments.mhtml
+D       Prolegomena Metaphysica.mhtml
+D       Prompt Engineering.mhtml
+D       Proximity and External Contingencies.mhtml
+D       Psycholinguistic Theory Construction.mhtml
+D       Quantifying Emergence of Selection.mhtml
+D       Quantum Cosmology.mhtml
+D       Quantum Emoji Language.mhtml
+D       Quantum Entanglement Distributor.mhtml
+D       Quantum Free Will Resolution.mhtml
+D       Quantum LF Theorem Experiment.mhtml
+D       Quantum Phase Space Analysis.mhtml
+D       Quantum Vacuum Uncertainty.mhtml
+D       Quantum Vectors Comparison.mhtml
+D       Quantum Yoghurt Computing.mhtml
+D       Quaquaversal Tiling Machine.mhtml
+D       Quartic Ring Fields.mhtml
+D       Quest for Cosmic Meaning.mhtml
+D       Quiet Brainscan.mhtml
+D       Radiation from Curved Black Holes.mhtml
+M       Random-words.txt
+D       Recognition Machine Theory.mhtml
+D       Reconstructing Lost Books.mhtml
+D       Regenerative Metaphors.mhtml
+D       Reinterpreting Free-Energy Principle.mhtml
+D       Relativistic Graph Interpretation.mhtml
+D       Relativistic Scalar Vector Plenum (RSVP).mhtml
+D       Relativistic Theory of Consciousness.mhtml
+D       Relaxation in Disordered Interacting Systems.mhtml
+D       Remap Numpad Key.mhtml
+D       Rename PDF Files Bash.mhtml
+D       Retentive Graph Networks.mhtml
+D       Retrocomputing Flashcards.mhtml
+D       Retrocomputing Glossary.mhtml
+D       Retroflective Engineering.mhtml
+D       Retrofuturist Knowledge.mhtml
+D       Retrotransposon Noise.mhtml
+D       Revolutionizing Programming Languages.mhtml
+D       Rhizomatic Synergy.mhtml
+D       Riemannian Optogenetics.mhtml
+D       Robot Astar Reattaching Arm.mhtml
+D       Rolling Choice Theory.mhtml
+D       Room-Temperature Superconductors.mhtml
+D       Rotating Clifford Torus.mhtml
+D       Scalar Line Element Calculation.mhtml
+D       Scenius Impact on Creativity.mhtml
+D       Scotophobin History.mhtml
+D       Selective Reconstruction Theory.mhtml
+D       Self-Assembling Ideas.mhtml
+D       Self-Assembling Neural Networks.mhtml
+D       Self-Correcting Strategies.mhtml
+D       Self-Organisation in the Brain.mhtml
+D       Self-Organizing Dynamics of Complex Systems.mhtml
+D       Self-Repair and Quantum Error Correction.mhtml
+D       Semantic Dimensionality.mhtml
+D       Semantic Ladle Of Words.mhtml
+D       Semantic Memory Is All You Need.mhtml
+D       Sheer to Tilt.mhtml
+M       Sight-words.txt
+D       Silica Nanolattice Compression.mhtml
+D       Six Degrees of Freedom.mhtml
+D       Socio-cognetics.mhtml
+D       Soliton Chambers.mhtml
+D       Space-Time Structure.mhtml
+D       Sparse Maps.mhtml
+D       Spatiotemporal Dualism.mhtml
+D       Spherepop Controls.mhtml
+D       Spherical Hermeneutics.mhtml
+D       Starfield Development.mhtml
+D       Starts with S.mhtml
+D       State Space Models & Kalman Filter.mhtml
+D       Stone Spheres Made by Ancestors.mhtml
+D       Structural Rationality Explained.mhtml
+D       Structure of Consciousness.mhtml
+D       Substrate Independent Thinking Hypothesis.mhtml
+D       Surprise-based Collective Behavior Model.mhtml
+D       Swarmbot Intelligence.mhtml
+D       Switch Wiring Issue Detected.mhtml
+D       Symbiotic Aquatic Filtration.mhtml
+D       "Symbolisme Litt\303\251raire et Artistique.mhtml"
+D       Symplectic Manifolds.mhtml
+D       Syntactic Utility.mhtml
+D       Synthographoscopy.mhtml
+D       Table of Catastrophic Risks.mhtml
+D       Techno-Axiological Penteract.mhtml
+D       Technological Metatheories.mhtml
+D       Teleodynamic Principles.mhtml
+D       Telepathic Balloon Pop.mhtml
+D       Telephrasitic Microblockchain Infiltration.mhtml
+D       The 16 Laws of Robotics.mhtml
+D       The Calculus Cure.mhtml
+D       The Memetic Nexus.mhtml
+D       The Ontogenic Parade.mhtml
+D       The Ortyx Mechanism.mhtml
+D       Theory of Modular Intelligence.mhtml
+D       Thermodynamic Yoghurt Pipelines.mhtml
+D       Thermodynamic Yoghurt Processing.mhtml
+D       Thought-Provoking Transformations.mhtml
+D       Topology in Arithmetic Models.mhtml
+D       Transcendental Movie Ideas.mhtml
+D       Transemic Perspectives.mhtml
+D       Tree of Self-reflection.mhtml
+D       Trickle-down Network Effects.mhtml
+D       Trionic Cyclexes.mhtml
+D       Typomorphological Considerations.mhtml
+D       UNIX Overview and Topics.mhtml
+D       Ultrabionic Reading.mhtml
+D       Understanding Aboulomania.mhtml
+D       Understanding Deleuzian Rhizomatics.mhtml
+D       Understanding Epistemic Reduction.mhtml
+D       Understanding Human Introspection.mhtml
+D       Understanding Unravelism.mhtml
+D       Understanding the Wave-Particle Duality in Quantum Physics.mhtml
+D       Unified Model of Reasoning.mhtml
+D       Unix Directory Structure.mhtml
+D       Unix Utilities Overview.mhtml
+D       Unpredictable Human Behavior.mhtml
+D       Unraveling Complex Concepts.mhtml
+D       Unscannable Interfaces.mhtml
+D       Untyped Lambda Foundations.mhtml
+D       Unusually Potent Potables.mhtml
+D       Updating Ubuntu Python.mhtml
+D       Vacuum Fluctuations.mhtml
+D       Vague Concepts Explored.mhtml
+D       Valence Concept Visualized.mhtml
+D       Venture Capital Ideas.mhtml
+D       Vestibular-Visual Interplay.mhtml
+D       Viewing Files in DOS.mhtml
+D       Vim Navigation Basics.mhtml
+D       Vim Space Quest.mhtml
+D       Vorticon Vision.mhtml
+D       Wandering Significances.mhtml
+M       Wikipedia-sample.txt
+M       Wikipedia-small-sample.txt
+M       Wikipedia-small-sample2.txt
+M       Wikipedia-update.txt
+M       Wikipedia-watchlist.txt
+M       Windows-command-line-Spanish.txt
+D       Work on Spherepop.mhtml
+D       Work on Spherepop2.mhtml
+D       Wrinklon Explains Material Wrinkles.mhtml
+M       Xenophon.txt
+D       Xylem Cell Lineage Insights.mhtml
+D       Xylem-Based Economies.mhtml
+D       Xyloidology.mhtml
+M       Yappy Chatbot.txt
+D       Yogurt Innovations Discussion.mhtml
+D       Youtronium Incorporated.mhtml
+D       Zapya in Cuba.mhtml
+D       Zephyrs of Lambiscopolix.mhtml
+D       Zero Resistance.mhtml
+D       Zero-Knowledge Roots.mhtml
+D       Zero-Yield Xerography.mhtml
+D       Zodiac as Ark Metaphor.mhtml
+D       "Zonas Inh\303\272medas.mhtml"
+D       Zsh - Unix Shell Enhancements.mhtml
+D       about.html
+M       academize.sh
+M       algebraic-structures.txt
+M       autopush.sh
+M       byobu.txt
+M       common-words.txt
+M       exogenous-xenotaxis.txt
+D       exs.html
+D       flyxion.html
+M       group-theory.txt
+M       holistic-response.txt
+M       hyperdimensional-primer.txt
+M       hyperon.txt
+M       imperfect-vacuum.txt
+D       index.html
+M       input-test.txt
+M       input.txt
+D       language-swap-test.html
+M       llm-workflow-engine.txt
+M       mapping-connections.txt
+M       mhtml-extractor.py
+M       mind-making-machines.txt
+M       mindgame-firstdraft.txt
+M       mindgame.txt
+D       mouseover.html
+M       null-wavefront.txt
+D       old-index.html
+M       old-mhtml-extractor.py
+M       output.txt
+M       perpetual-truth-detector.txt
+M       pushup-test.txt
+M       pushup.sh
+M       rwxrob-zettelkasten-quotes.txt
+M       sedFG5W2n
+M       self-check.txt
+M       sga-starter-aliases.txt
+M       text-processing.ipynb
+D       wam-index.html
+M       zorro.txt
+D       "\316\223\317\201\316\256\316\263\316\277\317\201\316\277 \316\240\316\261\316\275\316\263\317\201\316\254\316\274\316\274\316\
+261\317\204\316\277 - \316\244\316\277 \316\266\316\265\317\205\316\263\316\254\317\201\316\271 \316\272\316\261\316\271 \316\277\316\2
+71 \316\276\317\205\316\273\316\277\316\272\317\214\317\200\316\277\316\271.mhtml"
+D       "\330\255\330\261\331\210\331\201 \330\247\331\204\330\264\331\205\330\263 \331\210\330\247\331\204\331\202\331\205\330\261.mht
+ml"
+D       "\331\210\330\247\330\254\330\250 \330\247\331\204\330\266\331\212\330\247\331\201\330\251.mhtml"
+D       "\360\222\200\255\360\222\205\216 \360\222\200\200 \360\222\202\227 \360\222\201\272 \360\222\214\206 \360\222\211\210 \360\222
+\204\221.mhtml"
+Switched to branch 'core'
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/academizer$ git branch
+* core
+  main
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/academizer$ git add .
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/academizer$ git commit -m "New branch"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <flyxion@volsorium.>) not allowed
+(base) 128 flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/academizer$ oo^C
+(base) 128 flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/academizer$ ls
+'𝘈𝘥𝘷𝘢𝘯𝘤𝘦𝘥 𝘚𝘵𝘰𝘳𝘺𝘵𝘦𝘭𝘭𝘪𝘯𝘨 𝘋𝘦𝘷𝘪𝘤𝘦'
+'𒀭𒅎 𒀀 𒂗 𒁺 𒌆 𒉈 𒄑.txt'
+ 120103_001.MP3.txt
+ 120114_001.MP3.txt
+ 120613_002.MP3.txt
+ 120708_001.MP3.txt
+ 120731_001.MP3.txt
+ 120731_002.MP3.txt
+ 120818_001.MP3.txt
+'16 Boolean Logical Operators'
+'5D Plenoptic Function Summary'
+'A Convoluted Mirror.txt'
+'A Diverse Exploration'
+'A Divine Looking-Glass Issues'
+'A Hyper-Dimensional Primer on Logical Constructs.txt'
+'A Hyper-Dimensional Primer.txt'
+'A Modest Inquiry.txt'
+'A Scientific Mindset.txt'
+'AGI Blueprint.txt'
+'AI & Music Future Overview'
+'AI Accountability Through Competition.txt'
+'AI Adhibere Bene'
+'AI Alignment Problems'
+'AI Assistance Requested'
+'AI Balance Debate.txt'
+'AI Epistemology Principles'
+'AI Management System Requirements.txt'
+'AI Normative Agency Design.txt'
+'AI Philosophical Personalities'
+'AI Prevents Mission Sabotage.txt'
+'AI Progress in Next Decade'
+'AI Risk Discussion.txt'
+'AI Safety Challenges.txt'
+'AI Saves the World.txt'
+'AI Superintelligence Safety Book.txt'
+'AI and Literature Discussion.txt'
+'ARBITRARY REPOSITORY CONSTRAINT.txt'
+'About Brain-Centricism.txt'
+'Abstract Algebra One.txt'
+'Abstract Algebra Two.txt'
+'Abstract Symbolic Distillation.txt'
+ Academizer.txt
+'Accessible Cognitive Music Schemas'
+'Accélération du changement social.txt'
+'Acrostic Poem TAKE'
+'Action Theory Resolving Problems.txt'
+'Active Inference Evolution.txt'
+'Active Inference Glossary.txt'
+'Active Inference and Cognition'
+'Active Inference and Embodied Cognition.txt'
+'Active Inference for Adaptation.txt'
+'Adaptive Gravity'
+'Advancing AI Chatbots'
+'Advancing Algebra Education.txt'
+ Age-of-Photonic-Metasurfaces.txt
+'Agency in Spacetime.txt'
+'Algebraic Spaces in Mathematics.txt'
+'Alignment Objectives.txt'
+'Alliterative Programming.txt'
+'Ambiguous Figures in Philosophy.txt'
+'Amplified Biblical Metaphors.txt'
+'Anachronic Anastomosis.txt'
+'Analog 2048 Game.txt'
+'Anaphoric Agency.txt'
+'Anarchic Scientific Methodology.txt'
+'Anarchist Essay Goes Public'
+'Anaxronia and Novotection'
+ Anaxronia.txt
+'Anthroposophical Reading Kitbash.txt'
+'Antibody Sequence Generation.txt'
+'Aphantasia Movie Request Unfound.txt'
+'Apodosis and Protasis'
+'Apologist Gap Highlighted.txt'
+'Arabic Glossary.txt'
+'Arabic Script Phrases.txt'
+'Arabic Without Toil.txt'
+'Arabic Words & Meanings'
+'Archetypal Ark Stories.txt'
+'Argumentum ad Astra.txt'
+'Armchair World Building.txt'
+'Artificial Curiosity'
+'Asimov on Psychohistory'
+'Assemblies of Neurons.txt'
+'Assembly Theory Explains Evolution'
+'Assist Request for Help'
+'Assistant Responds Promptly'
+'Assumptions and Beliefs.txt'
+'Astroaardvark Inference.txt'
+'Astrophysicists Reveal Dark Matter'
+'Asynchronous Symbiosis.txt'
+'Attentional Cladistics.txt'
+'Augmented Counterfactual Reality.txt'
+'Authorship of the Bible'
+'Auto Universe Concepts.txt'
+'AutoHotkey Scripts.txt'
+'Autocatalytic Altruism.txt'
+ Autodoxx.txt
+'Automate Git Repo Updates.txt'
+'Automated Bayesian Methods.txt'
+'Automatic Differentiation.txt'
+'Automatic Summaries'
+'Automatic Task Manager.txt'
+'Automatic Xenotaxis.txt'
+'Automating Basic Common Sense.txt'
+'Automediality Unchained.txt'
+'Autonomous Infrahumanisation.txt'
+'Autonomy and Epistemic Humility'
+'Autonomy and Epistemic Humility.txt'
+'Autostatic Plasticity.txt'
+'Awareness of experience construction.txt'
+'Axenic Culture Explanation.txt'
+'Axiological Superstructures.txt'
+'Axiology of Art History'
+'Axiology of Science.txt'
+'Axion Cloud Dynamics.txt'
+'Bash Script Review.txt'
+'Basic Parsing Models.txt'
+'Bayesian Cake Recipes.txt'
+'Bayesian Epistemology.txt'
+"Bell's Theorem Revisited"
+"Bell's Theorem Revisited.txt"
+'Benchmarking Language Models.txt'
+'Bible as Iconoclastic Guide.txt'
+'Billets de circulation'
+'Biometric Autobot Detector.txt'
+'Biomimetic Food Production.txt'
+'Biomimetic Glottogenesis.txt'
+'Biomimetic Sociology.txt'
+'Biomimicry Implications'
+'Bionic Limb Implant Technology.txt'
+'Blindfolded Robot Operates Computer.txt'
+'Blockchain Issues Explained'
+'Blockchain Oracle Problem'
+'Bond Breaking in Amorphous Materials.txt'
+'Boolean Algebra B2 Functions'
+'Boolean Function Truth Tables'
+'Boosted Prompt Ensembles'
+'Boundary Construction for Lorentz Surfaces.txt'
+'Bracketing Phylogenetic Trees.txt'
+'Brain Constructs Perceptions.txt'
+'Brain Development and Societies.txt'
+'Brain Science Explained.txt'
+'Brain Shape Influences Activity'
+'Brain as Complex Adaptive System.txt'
+'Breaking Free from Subjective Spells'
+'Brevis Adnotatio.txt'
+'Brexit explanation'
+'Bridging Metaphors.txt'
+'Bureaucratic Hoops in Logic.txt'
+'Byobu Shortcut Review.txt'
+'Byobu for Nuspeak Engineers.txt'
+'CLIP Multi-Modal Zero-Shot Model'
+'CMD Test'
+'Cached Transformer for Improved Attention.txt'
+'Call From Ankyra'
+'Causa Sui.txt'
+'Causal Decoupling.txt'
+'Caution on Competence'
+'Central control over AI'
+'Centrifugal Filtration'
+'Ceteris Paribus.txt'
+'Chain-of-action Technique.txt'
+'Challenges of Superintelligence.txt'
+'Challenging Corporate Power'
+'Chaos and Zygomindfulness'
+'Chaotic Neutral Monism.txt'
+'Chat with RTX.txt'
+'ChatGPT Fabricates Richard Carrier Argument'
+'ChatGPT_ Almost Human.txt'
+'Check Current Network.txt'
+'Check PyTorch Installation.txt'
+'Chromogravity spacecraft density'
+'Circular Misdirection.txt'
+'Circular Reasoning Explained.txt'
+'Clear File Contents.txt'
+'Clickbait is Abstraction.txt'
+'Clipboard Path Conversion.txt'
+'Cogito Ergo Sum Emphasis'
+'Cognition Shapes Change Patterns.txt'
+'Cognitive Models Unveiled.txt'
+'Cohesion of Tropes.txt'
+'Coincidentia Oppositorum'
+'Common Bash Commands Summary'
+'Complex Assembly Theory.txt'
+'Complex Phenomena Ontology.txt'
+'Complex Tale of Connected Events.txt'
+'Compression is Abstraction.txt'
+'Computational Quantum Bayesianism.txt'
+'Computing Prime Number Properties'
+'Consciousness and Perception.txt'
+'Consciousness as Perceptual Control.txt'
+'Conspiracy Viability Study.txt'
+'Constructive Static Sequence Versioning.txt'
+'Continuum Hypothesis Explored.txt'
+'Control of Perception'
+'Controllable Object Generation.txt'
+'Controversial Topics Worldwide'
+'Convergent Solutions to Frame Problem.txt'
+ Conversations
+'Coordinating Boundary Conditions.txt'
+'Core Themes Unveiled.txt'
+'Cosmic Language Unveiled.txt'
+'Cosmic Religion Buddhism'
+'Cosmic Theories Explored.txt'
+'Cosmic Void Simulator.txt'
+'Cosmic Void Solves Cosmology.txt'
+ Cosmocytogenesis.txt
+'Counterfactual Affordances.txt'
+'Counterfactual Scenarios.txt'
+'Crafting A Sustainable Masterpiece.txt'
+'Create Alicia Juarrero Wikipedia page.txt'
+'Creative Ideas Discussion.txt'
+'Creative Pythagoras Translation'
+'Critical Hermeneutics.txt'
+'Criticism of Facebook Feature'
+'Critique of Integrated Pseudoscience.txt'
+'Critiques of Anarcho-Primitivism.txt'
+'Critiquing Poem Themes'
+'Crystal Plenum Theory.txt'
+'Cutting-Edge Research.txt'
+'Cybernetic Governments Investigated.txt'
+'Cytoelectric fields'
+'Da Vinci and Gravity.txt'
+'Dangerously Utopian Overtones.txt'
+'Daniel Milo Overview.txt'
+'Dark Mode Conversion.txt'
+'Data Sources and Methods.txt'
+'De Sitter Conjecture'
+'Dealing with uncertainty'
+'Declining disruption in science'
+'Decoding Quantum Entanglement.txt'
+'Decoupling Capacitor Basics'
+'Deep Dive.txt'
+'Deep Learning Architectures.txt'
+'Deep Learning Cognition Overview'
+'Defending Neutral Monism.txt'
+'Defining Machine Intelligence.txt'
+'Delivery Riders Challenges'
+'Democratic Epistemic Models.txt'
+'Deontological Objectivism.txt'
+'Deontological Transhumanism.txt'
+'Descent Theory'
+'Design of a New Encyclopedia.txt'
+'Designing Robots with LLMs.txt'
+'Designing an Ecosystem'
+'Diachronic Reverse Mathematics.txt'
+'Diacritical Realism.txt'
+'Diamond Bulerite Maximizers'
+'Difference between mereology & clustering'
+'Different Brain Worldviews'
+'Dismantling the Brain for Understanding.txt'
+'Dissecting Story Ideas.txt'
+'Dissociation in Set Theory.txt'
+'Distilling Human Understanding.txt'
+'Diurnal Saturnalia.txt'
+'Diverse Ideas and Concepts.txt'
+'Dizzy Apes'
+'Dual-Wave Ciphers.txt'
+'Dynagraphic Compression'
+'Dynamic Flow Computing.txt'
+'Dynamic Zettelkasten Method.txt'
+'Earliest Use Phrase Found'
+'Echoes of Aeternia.txt'
+'Echoes of Hypatia.txt'
+'Ecphoric Synthesis.txt'
+'Efficient Deep Learning Algorithms.txt'
+'Efficient Software Development Decisions.txt'
+'Effusion Ensemble Learning.txt'
+'Eight Letter Keyboard.txt'
+'El Clickbait es Abstracción.txt'
+'Electric Experiment.txt'
+'Electrocatalytic Heteroatoms.txt'
+'Electromagnetic Integrators.txt'
+'Electrostimulated Sleep Periglympholosis.txt'
+'Embryo Development'
+'Emergency Greek Keyboard.txt'
+'Emergent Evolution in Societies.txt'
+ Endokinematics.txt
+'Enneasecting Problem Domains.txt'
+'Entangled Ancillary Qubits.txt'
+'Entangled Autopoeisis.txt'
+'Entropic Markov Chains.txt'
+'Entropy-Based Universe.txt'
+'Epistemology of Mathematics.txt'
+'Era Values Variations'
+'Erewhon Summary.txt'
+'Ergodic Mind Medication.txt'
+'Ergodic Quantum Interpretation.txt'
+'Ergodicity in Forecasting'
+'Estivating Aliens.txt'
+'Eternal Vaporware Incorporated'
+'Etiological Tales and Behavior.txt'
+'Etymological Investigations.txt'
+'Eugenas Genusae.txt'
+'Europa Monolith Guardian Explored'
+'Everlasting Vaporware.txt'
+'Everything Is a Filter.txt'
+'Evolution of Dome Architecture.txt'
+'Evolution of Error Correction.txt'
+'Evolution of State Space.txt'
+'Evolutionary Computation.txt'
+'Evolutionary Thought Before Darwin.txt'
+'Ex Libris Cthulhu'
+'Exact vs Inexact Numbers'
+'Exegesis Gnomonis.txt'
+'Expanding universe concept.txt'
+'Explain Galactica'
+'Explain Genetic Algorithms'
+'Explain how the movie'
+'Explain these model-free methods'
+'Explaining Abstract Poem'
+'Explaining Beauty Without Grotesque'
+'Explore Current Folder.txt'
+'Exploring Genetic Similarities.txt'
+'Exploring Imaginative Inventions'
+'Exploring Intersections.txt'
+'Exploring Unconventional Categorization Systems and Sustainable Technologies'
+'Extended radio alphabet.txt'
+'Extremely Marked-Up Folding Text.txt'
+'Falcon Tests.txt'
+'Fallacem Illuminationem.txt'
+'Fantastic scenarios.txt'
+'Feedback Loop in PCT'
+'Female scientist discovered star composition.txt'
+'Fiat Boundaries.txt'
+'Filling in the Blanks.txt'
+'First Room-Temperature Superconductor.txt'
+'Flying Dreams'
+'Forth Quine Example.txt'
+'Forward-thinking Operations.txt'
+'Fourier Analysis.ipynb'
+'Fractal Fold Encoding.txt'
+'Fractal Tree Pans.txt'
+'Free Energy Minimization.txt'
+'Free Lunch Vibes.txt'
+'Free-Energy Framework.txt'
+'Frustration with Misleading Information.txt'
+'Function Application Expansion.txt'
+'Function simplification in Lean.txt'
+'Functional Python Programming.txt'
+'Functional Reactive Ecology'
+'Functionally Redundant Meanings.txt'
+'Fundamental Physics Contains Spoilers.txt'
+'Future Psychohistory Computation.txt'
+'Futurist Portraits.txt'
+'Futuristic Tech.txt'
+'Fuzzy Bayesian Logic.txt'
+'Fuzzy Yarnball Infodynamics.txt'
+'Fuzzy Yarnball Information Theory.txt'
+'GLIB Theory Interpretations.txt'
+'Gait Misattribution Error.txt'
+'Galactica Language Model Science'
+'Galaxy Mimetics.txt'
+'Gameified Free Will.txt'
+'Gap Junctions and Spatial Coding'
+'Gardener of Galaxies.txt'
+'Gaussian Auras.txt'
+'Gendicca and Haplopraxis.txt'
+'Generalized Learning through Integrative Biomimicry.txt'
+'Generative Programming Assisstant.txt'
+'Geodesic Metaphors.txt'
+'Geometric Bayesianism Explained.txt'
+'Geometric Bayesianism.txt'
+'Geometric Comparisons.txt'
+'Geometric Cosmology and Algebra.txt'
+'Geometric Deep Learning.txt'
+'Geometric Reasoning on Graphs.txt'
+'Get Active Displays PowerShell.txt'
+"Giordano Bruno's Lost Book"
+'Glass Transition Model.txt'
+'Glimmer of Light'
+'Glossary Game.txt'
+'Glossary for Nuspeak.txt'
+'Gnotobiotic Metaphors.txt'
+'Goals for Haplopraxis.txt'
+'Grabby Aliens Attack.txt'
+'Graph Neural Networks Applications'
+'Graphical Reasoning Engine.txt'
+'Gravity Hum Discovery'
+'Gravity Model of Trade'
+'Gumball Economy.txt'
+'Haplopraxis Game Mechanics Explained'
+'Harmonic Algebraic Existence Theory.txt'
+'Haskell proof of the ontological argument.txt'
+'Hawking Radiation Everywhere'
+'Heterarchical Adaptive Control through Kinematic Chains.txt'
+'Hexagonal Self-Hypnosis.txt'
+'Hexahedral Dynamics'
+'High Culture Characteristics'
+'History of Microcomputers.txt'
+'History of Pluto.txt'
+'History of Standard Galactic.txt'
+'Hoarding for Sustainability.txt'
+'Hobbes on Human Nature.txt'
+'Holographic Seam-mapping.txt'
+ Horn-torus-1
+ Horn-torus-2
+'Hotstring Helper.txt'
+ Hotstrings.txt
+'How to Build a Mind.txt'
+'How to Kill a Noiselord.txt'
+'How to Take Over the World'
+'Human Brain Processes Information'
+'Human Cognitive Singularity'
+'Human Impersonation.txt'
+'Human Values and Evolution.txt'
+'Humans as Large LMs.txt'
+'Hyperbolated Data Storage.txt'
+'Hyperphantasia and Auditory OS'
+'Hyperthymesia Unchained.txt'
+'I understand your perspective.txt'
+ INTRODUCTION.txt
+'Ideational Apraxia.txt'
+'Identity Maintenance and Management Tool'
+'Ideology and Corruption.txt'
+ Ideophones.txt
+'Illusory Precision.txt'
+'Illustrated Man Adaptation.txt'
+'Image Resizing with Entropy.txt'
+'Imagination Culture and Play'
+'Imaginative Earth Perspective.txt'
+'Immortal Banburismus Discovered'
+'Immortal Jellyfish Facts'
+'Immunity Basics'
+'Improved Problem Solving Framework.txt'
+'Include file text in README.txt'
+'Incoherent Request'
+ Index-of-Repositories.txt
+'Individual Transcendence.txt'
+'Individuality in the Age of Spiritual Machines.txt'
+'Inferring System Capabilities.txt'
+ Innate-flying-dreams.txt
+'Inner Space'
+'Innermost Nested Bubble.txt'
+'Innovative Ideas for Benefit'
+'Inoculation Against Surprise.txt'
+'Instructions to Shuruppak.txt'
+'Integrative Complexity.txt'
+'Intellectology Unveiled.txt'
+'Intelligence As Care'
+'Interactive Feedback Learning.txt'
+ Interconnections
+'Interdependent Disciplines.txt'
+'Interpolar Diaspora.txt'
+'Intro to Deep Learning'
+'Introduction to Lojban.txt'
+'Introduction to Null Wave Algebra.txt'
+'Inverse Chokepoint Capitalism.txt'
+'Invert Colors in PDF.txt'
+'Invert Colors.txt'
+'Invocation Model of Process Expression'
+'Ising Sync Visualisation.ipynb'
+'Issues and Ethics List'
+'Iterated Recursive Loops.txt'
+'Jax programming examples.txt'
+'Keen Dreams.txt'
+'Kelp-based Frozen Yogurt.txt'
+'Knowledge Graphs.txt'
+'Knowledge Leakage.txt'
+ LICENSE
+'LLM SelfCheck for Reasoning.txt'
+'LLM Solves Computer Tasks'
+'LMs for VWSD Enhancement.txt'
+"Lacan's Theories, Philosophies.txt"
+'Lambda Fibonacci Function'
+'Lambiscopolix Whispers.txt'
+'Language Learning and Information Processes'
+'Language model evaluation metrics'
+'Latent Confounder Causal Inference.txt'
+'Latent space and Markov chains'
+'Latent space and Markov chains (1)'
+'Latin Conditional Sentences.txt'
+'Latin Poetry for Science'
+'Latin Translation Requested'
+'Layers of Time.txt'
+'Leaded vs unleaded cost'
+'Leaking Chatroom Theory.txt'
+'Lean Theorem Prover'
+'Lenses and Learners.txt'
+"Li Zongwu's life"
+'Limitations of Expected Utility.txt'
+'Linking Neuro-Symbolic Approaches'
+'Linux Swarmbots.txt'
+'Liquid Frame Reduction.txt'
+'Liquid Terra Preta.txt'
+'Logarithmic History of the World.txt'
+'Longer Pauses.txt'
+'Machine Intelligence and Human Perception.txt'
+'Machine Learning and Visualization.txt'
+'Macrolife Chronicles.txt'
+ Macrolife.txt
+'Make It Seem Rebellious.txt'
+'Make up a sci-story'
+'Making Connections.txt'
+'Manifold Differences Explained.txt'
+'Manifolds and Voronoi Diagrams.txt'
+'Markov Blankets and Inference'
+'Math Topics Overview.txt'
+'Mathematical Foundations for Compositional Bayesian Brain.txt'
+'Mathematical Spaces Catalogue'
+'MeTTa Formalization with Metagraphs.txt'
+'Meaning in Language Models'
+'Mechanical Design Principles.txt'
+'Megascale Structures'
+'Megascale Structures.txt'
+'Meta-Mind Complexity.txt'
+'Meta-Prompting Analogies.txt'
+'Metabotropic Cognition.txt'
+'Metaphors for Complex Issues.txt'
+'Metaphysics as Logic.txt'
+'Mexican Death Whistle Theories.txt'
+'Middle English Poetry'
+'Mimetic Holomorph Recognition.txt'
+'Mimetic Participation.txt'
+'Mind Reading Not Necessary.txt'
+'Mind-making Machines.txt'
+'Mindless Mathematical Laws'
+'Missing Chapter_ Rationality'
+'Misunderstanding about Soup.txt'
+'Mixing Mistakes to Avoid.txt'
+'Mixture of Experts.txt'
+'Mneumonic Superstructures.txt'
+'Model Comparison.txt'
+'Model Complexity.txt'
+'Model Limitations Revealed.txt'
+'Model tests reasoning effectiveness'
+'Modeling Possibility Space.txt'
+'Models of Mind'
+'Modifying Nature Directly.txt'
+'Modular Agents Enhance Learning.txt'
+'Monad Shadows.txt'
+'Monolithic Undertones.txt'
+'Monotonic Phenomenological Explications.txt'
+'Moot Point Generators.txt'
+'Morphodynamic Work.txt'
+'Morphogenic Chemistry.txt'
+'Mouse Decision Variables Reservoir'
+'Move Files to Dark Mode.txt'
+'Multi-Concept Prompt Learning.txt'
+'Multi-head Attention.txt'
+'Multichrome Simulator.txt'
+'Multidimensional Dialogue Systems.txt'
+'Multiscale Intelligence Test.txt'
+'Music Arithmetic Exercise Summary'
+ MyLog.txt
+'Mysterious and Comical Video.txt'
+'Müllerian mimicry explained.txt'
+'Narrating Visual Content.txt'
+'Navigating Self-Improving AI'
+'Navigating the Supercanny Valley.txt'
+'Neanderthal Lithophone.txt'
+'Negation Study by Horn.txt'
+'Negentropy Organizer.txt'
+'Negentropy as Surprise'
+'Neoteny and Optimism.txt'
+'NetGlos Access Issue.txt'
+'Neural Basis of Future Prediction.txt'
+'Neural Development Programs.txt'
+'Neurodynamic Intelligence.txt'
+'Neuron Efficiency Analysis.txt'
+'Neuron-boosting supplement ingredients'
+'Nietzschean Influence on Transhumanism.txt'
+'No replication of study.txt'
+'Non-Fungible Teleology'
+'Nonsmooth Dynamical Systems'
+'North Statespace.txt'
+'Nostalgia Bias.txt'
+'Nova Protopia.txt'
+'Null Convention Logic'
+'Null Wave Algebra.txt'
+ Nuspeak-glossary.odt
+'Objective Mismatch Solutions.txt'
+'Objects in Motion'
+'Oblique Problem Solving Methods'
+'Obscure Book for Enthusiasts.txt'
+'Oceanic Megastructures.txt'
+'Oddly-Named Derivatives.txt'
+'Odyssey to Echelon.txt'
+'Old Conversations'
+'Ontology of Space'
+'Open folder in Windows'
+'Optimal Policies Seek Power'
+'Optimization Tradeoffs.txt'
+'Optoelectronic Sceptron.txt'
+'Origin of Mass and Gravity.txt'
+'Orpheus Mythical Lost Wonder'
+'Oscillatory Neural Networks'
+'Out of Thin Air'
+'Overfitting Brain and Dreams.txt'
+'Palimpsest Versioning.txt'
+'Pandemonium Model for Learning.txt'
+'Panprotopsychism and Property Instantiation.txt'
+'Pantomimetic Origin Of Language.txt'
+'Parrots and Language Understanding.txt'
+'Peanut Butter Adventure'
+'Perception Control System.txt'
+'Perigenetic Algorithms.txt'
+'Perineural holes and long term memory'
+'Permission Handling Emojis.txt'
+'Perpetual Truth Detector.txt'
+ Personalities
+'Personality examples'
+'Phenomenological Inquiry'
+'Philosophy in real world'
+'Philosophy of Elementary Mathematics.txt'
+'Photonic Neuroscience Interface'
+'Photosynthesis Re-Wired Fast'
+'Physics and Objectivism Compatibility'
+'Pipsqueak Terms.txt'
+'Pixel-Stretching Algorithms.txt'
+'Planned Obsolescence Ideas.txt'
+'Plant-Based Diet Options'
+'Pleiothermic Energy Solutions.txt'
+'Plenoptic Function in Physics'
+'Poetica ex machina'
+'Poetry writing exercises'
+'Politically Correct Bias in Philosophy.txt'
+'Polycomputing - Understanding Biological Systems'
+'Possibility Space of Foods.txt'
+'Possibility Space.ipynb'
+'Potent Potables.txt'
+'Poème sur les chats.txt'
+'Practopoietic Traverse Explanation'
+'Predictive Brain Theory.txt'
+'Predictive Coding Explained.txt'
+'Prefix Conditioning.txt'
+'Preguntas sobre prejuicios AI.txt'
+'Principia Metaphysica Dilucidatio.txt'
+'Proactive Inference Examples.txt'
+'Probable Inference'
+'Problem Identification Tips'
+'Problems with Self-verification.txt'
+'Process Invocation and Knowledge Presevation.txt'
+'Program Writing Experiments.txt'
+'Programming Experiments.txt'
+'Prolegomena Metaphysica.txt'
+'Prompt Engineering.txt'
+ Prototype
+'Provably Safe Temperatures'
+'Provia Girl Name Meaning'
+'Proximity and External Contingencies.txt'
+'Psychohistorical Themes'
+'Psycholinguistic Theory Construction.txt'
+'Purpose of null wavefront.txt'
+'Quantifying Emergence of Selection.txt'
+'Quantization Model of Neural Scaling'
+'Quantum Consciousness Validated'
+'Quantum Cosmology.txt'
+'Quantum Emoji Language.txt'
+'Quantum Entanglement Analysis'
+'Quantum Entanglement Distributor.txt'
+'Quantum Erasure Explored'
+'Quantum Free Will Resolution.txt'
+'Quantum LF Theorem Experiment.txt'
+'Quantum Measurement and Entanglement'
+'Quantum Phase Space Analysis.txt'
+'Quantum Vacuum Uncertainty.txt'
+'Quantum Vectors Comparison.txt'
+'Quantum Yoghurt Computing.txt'
+'Quaquaversal Tiling Machine.txt'
+'Quartic Ring Fields.txt'
+'Quenched Disorder Techniques.txt'
+'Quest for Cosmic Meaning.txt'
+'Questions for Later'
+'Quiet Brainscan.txt'
+ README.md
+'Radiation from Curved Black Holes.txt'
+'Random Questions'
+ Random-words.txt
+'Recognition Machine Theory.txt'
+'Reconstructing Lost Books.txt'
+'Regenerative Metaphors.txt'
+'Reinterpreting Free-Energy Principle.txt'
+'Relativistic Graph Interpretation.txt'
+'Relativistic Scalar Vector Plenum (RSVP).txt'
+'Relativistic Theory of Consciousness.txt'
+'Relaxation in Disordered Interacting Systems.txt'
+'Religious Factional Disputes.txt'
+'Remap Numpad Key.txt'
+'Remove Page Numbers - Vim'
+'Rename PDF Files Bash.txt'
+'Rendezvous With Llama'
+'Replacing Reason with Revelation'
+'Representation Theory'
+'Request for Assistance. (2)'
+'Retentive Graph Networks.txt'
+'Retrocomputing Flashcards.txt'
+'Retrocomputing Glossary.txt'
+'Retroflective Engineering.txt'
+'Retrofuturist Knowledge.txt'
+'Retrotransposon Noise.txt'
+'Revolutionizing Open-Source AI.txt'
+'Revolutionizing Programming Languages.txt'
+'Reword Perspective Interpretation Alignment'
+'Rhizomatic Perspectives Across Disciplines'
+'Rhizomatic Synergy.txt'
+'Riemann Horn Torus.ipynb'
+'Riemann Horn Torus.png'
+'Riemannian Optogenetics.txt'
+'Robert Nozick Philosophy'
+'Robot Astar Reattaching Arm.txt'
+'Robotic Brain.txt'
+'Rolling Choice Theory.txt'
+'Room-Temperature Superconductors.txt'
+'Rotating Clifford Torus.txt'
+'SYK Wormhole Formation'
+'Scalar Line Element Calculation.txt'
+'Scenius Impact on Creativity.txt'
+'Science Agents in Active Inference.txt'
+'Scientific Proofs in Physics'
+'Scotophobin History.txt'
+'Selective Reconstruction Theory.txt'
+'Self-Assembling Ideas.txt'
+'Self-Assembling Neural Networks.txt'
+'Self-Correcting Strategies.txt'
+'Self-Organisation in the Brain.txt'
+'Self-Organizing Dynamics of Complex Systems.txt'
+'Self-Repair and Quantum Error Correction.txt'
+'Semantic Dimensionality.txt'
+'Semantic Ladle Of Words.txt'
+'Semantic Memory Is All You Need.txt'
+'Semiconductor Packaging Tips'
+ Sga-Regular.ttf
+'Shared State Multiplayer'
+'Sheer to Tilt.txt'
+'Ship of Theseus'
+ Sight-words.txt
+'Significance Testing Critique.txt'
+'Silica Nanolattice Compression.txt'
+'Simple Practice'
+'Simpler Machine Learning Models'
+'Sith Methods of Rationality.txt'
+'Six Degrees of Freedom.txt'
+'Snarky News Bot Delivers!'
+ Socio-cognetics.txt
+'Soliton Chambers.txt'
+'Space Insights'
+'Space Station Adventure'
+'Space-Time Structure.txt'
+'Sparse Maps.txt'
+'Spatiotemporal Dualism.txt'
+'Spherepop Controls.txt'
+'Spherical Hermeneutics.txt'
+'Sphinx of Naxos.txt'
+'Split & Number File'
+'Split Text into Files'
+'Stability of Space'
+'Standard Galactic Alphabet.txt'
+'Starfield Development.txt'
+'Starts with S.txt'
+'State Space Models & Kalman Filter.txt'
+'Statespace-Free Physics.txt'
+'Stations of the Mind'
+'Stochastic Networks.txt'
+'Stochastic-Quantum Correspondence'
+'Stone Spheres Made by Ancestors.txt'
+'Structural Rationality Explained.txt'
+'Structure of Consciousness.txt'
+'Subquadratic Transformer Replacement'
+'Substrate Independent Thinking Hypothesis.txt'
+'Summarize Non-Classical Dynamics'
+'Surjective Tesseract.txt'
+'Surprise-based Collective Behavior Model.txt'
+'Swampland Program'
+'Swarmbot Intelligence.txt'
+'Switch Wiring Issue Detected.txt'
+'Symbiotic Aquatic Filtration.txt'
+'Symbolisme Littéraire et Artistique.txt'
+'Symplectic Manifolds.txt'
+'Synaptic Plasticity'
+'Syntactic Utility.txt'
+'Syntax-Semantics Undisentanglability'
+'Synthetica Mystica Rationalis.txt'
+ Synthographoscopy.txt
+'Table of Catastrophic Risks.txt'
+'Technical Report on Germanium.txt'
+'Techno-Axiological Penteract.txt'
+'Technological Metatheories.txt'
+'Teleodynamic Principles.txt'
+'Telepathic Balloon Pop.txt'
+'Telephrasitic Microblockchain Infiltration.txt'
+'Temporal Org Research Agenda'
+'Test question'
+'Textbook-Quality Data Improves Performance.txt'
+'Textos Infinitos de Borges'
+'The 16 Laws of Robotics.txt'
+'The Biggest Lie of All'
+'The Calculus Cure.txt'
+'The Call οf the Sirens'
+'The Dangerous Plan'
+'The Memetic Nexus.txt'
+'The Oblicosm Paradox'
+'The Ontogenic Parade.txt'
+'The Ortyx Mechanism.txt'
+'The Podman Prophecies.txt'
+'Theory of Humanocentric Evolution.txt'
+'Theory of Modular Intelligence.txt'
+'Thermodynamic Yoghurt Pipelines.txt'
+'Thermodynamic Yoghurt Processing.txt'
+'Thought-Provoking Transformations.txt'
+'Thoughts Concerning the Eloi.txt'
+'Thrillers with Vehicles'
+'Timelike Tube Theorem'
+'Topo Deep Learning Geometric'
+'Topology in Arithmetic Models.txt'
+'Tradition, Poetry, Sensitivity, Sharing'
+'Transcendental Movie Ideas.txt'
+'Transemic Perspectives.txt'
+'Transformer Limits on Reasoning.txt'
+'Transformer Recursion Analysis'
+'Translate Old English Poem'
+'Translation Preface Translation'
+'Tree of Self-reflection.txt'
+'Trickle-down Network Effects.txt'
+'Trionic Cyclexes.txt'
+'Typomorphological Considerations.txt'
+'UNIX Overview and Topics.txt'
+'Ultra Mundo Philosophia Nova'
+'Ultrabionic Reading.txt'
+'Unconventional Interpretation of Expansion'
+'Understanding Aboulomania.txt'
+'Understanding Chaotic Processes'
+'Understanding Deep Learning'
+'Understanding Deleuzian Rhizomatics.txt'
+'Understanding Epistemic Reduction.txt'
+'Understanding Human Introspection.txt'
+'Understanding Model Definitions'
+'Understanding Sentience Limitations'
+'Understanding Transformer Learning'
+'Understanding Unravelism.txt'
+'Understanding the Wave-Particle Duality in Quantum Physics.txt'
+'Unified Method for Science'
+'Unified Model of Reasoning.txt'
+'Unified Theory of Cognetics'
+'Universal Library Expansion'
+'Unix Directory Structure.txt'
+'Unix History and Future.txt'
+'Unix Utilities Overview.txt'
+'Unpredictable Human Behavior.txt'
+'Unraveling Complex Concepts.txt'
+'Unscannable Interfaces.txt'
+'Unsolvable Hard Problem'
+'Untyped Lambda Foundations.txt'
+'Unusual Latin phrases'
+'Unusually Potent Potables.txt'
+'Updating Ubuntu Python.txt'
+'Vacuum Fluctuations.txt'
+'Vague Concepts Explored.txt'
+'Vala Language Overview'
+'Valence Concept Visualized.txt'
+'Venture Capital Ideas.txt'
+'Vernacular, Transcendence, Immanence'
+'Vestibular-Visual Interplay.txt'
+'Viewing Files in DOS.txt'
+'Vim Navigation Basics.txt'
+'Vim Space Quest.txt'
+'Visual Dialogue Exploration'
+'Vorticon Vision.txt'
+'Wandering Significances.txt'
+'Weak Gravity'
+'What Do I Believe'
+ Wikipedia-sample.txt
+ Wikipedia-small-sample.txt
+ Wikipedia-small-sample2.txt
+ Wikipedia-update.txt
+ Wikipedia-watchlist.txt
+ Windows-command-line-Spanish.txt
+'Wordless Imageless Thought'
+'Work on Spherepop.txt'
+'Work on Spherepop2.txt'
+'Wrinklon Explains Material Wrinkles.txt'
+'Xanadu movie plot'
+ Xenophon.txt
+'Xonsh_ Python Shell Interface'
+'Xylem Cell Lineage Insights.txt'
+'Xylem Economies.txt'
+'Xylem-Based Economies.txt'
+ Xyloidology.txt
+'Yappy Chatbot.txt'
+'Yearning for Efficiency'
+'Yogurt Innovations Discussion.txt'
+'Youtronium Incorporated.txt'
+'Zapya in Cuba.txt'
+'Zen and Rationality.txt'
+'Zephyrs of Lambiscopolix.txt'
+"Zera Yacob's Cyclofabianism Philosophy"
+'Zero Resistance.txt'
+'Zero-Knowledge Roots.txt'
+'Zero-Yield Xerography.txt'
+'Zodiac as Ark Metaphor.txt'
+'Zonas Inhúmedas.txt'
+'Zsh - Unix Shell Enhancements.txt'
+ about.txt
+ academize.sh
+ advancing-algebra.txt
+ algebraic-spaces.txt
+ algebraic-structures.txt
+ algebraic-topology.txt
+ aniara.txt
+ assets
+ autopush.sh
+ bayesian-epistemology.txt
+ bells-theorem.txt
+ bing-1.txt
+ bing-2.txt
+'byobu comma separated file.txt'
+'byobu shortcuts ubuntu.txt'
+ byobu.txt
+ common-words.txt
+ cosmic-entity.txt
+ curated-list.txt
+ cyclopod-3.txt
+ diachronic-reverse-mathematics.odt
+ diachronic-reverse-mathematics.txt
+ document-summaries.txt
+'epistemological experiments'
+ exit
+ exogenous-xenotaxis.txt
+ exs.txt
+ extractor.py
+ first-chat-with-vicuna
+ flyxion.txt
+ gpt-illustrations.ipynb
+ group-theory.txt
+ heterarchical-active-control.odt
+ heterarchical-active-control.txt
+ holistic-response.txt
+ horn-torus-1.txt
+ hyperdimensional-primer.txt
+ hyperon.txt
+ imperfect-vacuum.txt
+ index
+ index.txt
+ input-test.txt
+ input.txt
+ introduction-to-chatgpt.txt
+ ising_animation.gif
+ iter-chronologicum.txt
+ language-swap-test.txt
+ lean-theorem-prover.txt
+ llm-workflow-engine.txt
+'mac super resolution first session.txt'
+ mapping-connections.txt
+'math code.txt'
+ math-topics.txt
+ mhtml-extractor.py
+ mind-making-machines.txt
+ mindgame-firstdraft.txt
+ mindgame.txt
+ model-test.txt
+ mouseover.txt
+'newtons method.txt'
+'no enemy but time.odt'
+ null-wavefront.txt
+ old-index.txt
+ old-mhtml-extractor.py
+ output.txt
+ perpetual-truth-detector.txt
+ personal-questions.txt
+ principia-metaphysica.txt
+ probabilistic-models-sga.txt
+ public-opinion-sga.txt
+ pushup-test.txt
+ pushup.sh
+ quantum-vacuum-uncertainty.odt
+ ratsnake-sga.txt
+ rhinoscript.txt
+ rhizomatic-lens.txt
+ riemann-horn-torus.txt
+ rust-documentation.txt
+ rwxrob-zettelkasten-quotes.txt
+ sedFG5W2n
+ self-check.txt
+ sga-starter-aliases.txt
+ solaris.txt
+ spherepop.txt
+ stations-of-the-mind.txt
+ storage.db
+ story-ideas.txt
+ superintelligence.txt
+ teleodynamics.txt
+ testing-the-waters.txt
+ text-processing.ipynb
+ the-little-mermaid-sga.txt
+ the-way-to-go-sga.txt
+ thermobaric-logic.txt
+ topic-list
+ totalitarianism.txt
+ unconverted-pdfs.txt
+ untitled.txt
+ wam-index.txt
+ weirdness.txt
+ zorro.txt
+'Γρήγορο Πανγράμματο - Το ζευγάρι και οι ξυλοκόποι.txt'
+'Атеизм и наука'
+'حروف الشمس والقمر.txt'
+'واجب الضيافة.txt'
+'母亲与儿子的故事 (Mother and Son Story)'
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/academizer$ pwd
+/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/academizer
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/academizer$ cd ..
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub$ ollama run mistral
+>>> Explain popular notation for machine learning algorithms.
+ Machine learning algorithms can be represented using various notations and mathematical formulations, depending on the specific
+nature of the algorithm and the preferred conventions in the machine learning community. Here are some popular notations for
+commonly used machine learning algorithms:
+
+1. Linear Regression: In simple linear regression, we represent the relationship between an input variable X and an output
+variable Y using the following equation: Y = β0 + β1X. Here, β0 is the intercept (also known as the bias) and β1 is the
+coefficient for X. For multiple linear regression, we extend this notation to represent a vector of input features X and a vector
+of coefficients β.
+
+2. Logistic Regression: In logistic regression, we use the logistic function to model the probability p of an output variable Y
+given an input feature X. The logistic function is represented as follows: p(Y=1|X) = σ(β0 + β1X), where σ(z) = 1 / (1 + e^(-z)).
+Here, β0 and β1 are the intercept and coefficient for X, respectively.
+
+3. Decision Trees: Decision trees represent a model as a tree structure where each internal node represents a test on an
+attribute, each branch represents the outcome of the test, and each leaf node represents a class label.
+
+4. Random Forests: A random forest is an ensemble learning method that combines multiple decision trees to improve prediction
+accuracy. It builds a multitude of decision trees during training, where each tree is built on a randomly selected subset of
+features from the dataset.
+
+5. Support Vector Machines (SVM): SVMs represent data as points in a high-dimensional space and find the optimal hyperplane that
+maximally separates these points into classes. The key concept here is finding the maximum margin hyperplane, which lies at a
+distance d from the nearest data points of each class. This distance d is known as the margin.
+
+6. Neural Networks: Neural networks are composed of interconnected nodes, representing artificial neurons. Each node receives
+input, applies a non-linear activation function, and passes its output to other nodes as input. The network learns to recognize
+patterns by adjusting the weights between nodes during training using backpropagation.
+
+7. Convolutional Neural Networks (CNN): CNNs are a type of deep learning algorithm that is commonly used for image recognition
+tasks. They have an architecture inspired by the structure and function of biological neural systems. A CNN consists of multiple
+convolutional layers, each followed by a pooling layer, which extract features from input images at different scales and spatial
+positions.
+
+These notations provide a foundation for understanding the underlying principles of popular machine learning algorithms. However,
+keep in mind that some algorithms may have more complex representations, and various extensions and modifications to these basic
+concepts can exist within each family of models.
+
+>>> Give some xamples of the specific mathematical notation used to describe SVMs.
+ Support Vector Machines (SVMs) can be mathematically represented using various forms, including the primal and dual
+representations. Here are some specific mathematical notations used to describe SVMs:
+
+1. Primal representation: In its simplest form, an SVM can be described as finding the hyperplane that maximally separates two
+classes by minimizing the structure risk function. Let X = [x1, x2, …, xn] represent a set of n input data points, where each
+point xi ∈ ℝd. The primal objective function for an SVM is given as:
+
+minimize 1/2 ||w||² + C∑i=1n max(0, 1-yi(w·xii+b))²
+
+Here, w ∈ ℝd is the weight vector, b ∈ ℝ is the bias term, and C > 0 is the regularization parameter. The first term in the
+objective function is the L2 regularizer to control model complexity, while the second term is the hinge loss function that
+enforces the margin condition.
+
+2. Dual representation: Instead of working directly with the primal variables (w and b), SVMs can also be described using their
+Lagrange dual formulation. The Lagrangian function L(α) for an SVM is given as:
+
+maximize ∑i=1n αi - 1/2 ∑i,j = 1,n αiαj yi yj xi·xi
+subject to: ∑i=1n αi yi = 0, 0 ≤ αi ≤ C, i = 1, …, n
+
+Here, αi (i = 1, …, n) are the Lagrange multipliers associated with each data point. The first term in the objective function is
+the maximization of the sum of the Lagrange multipliers, while the second term is the kernel function that measures the
+similarity between data points. This formulation can be more effective when dealing with non-linearly separable data by using
+kernel functions like radial basis function (RBF) and polynomial kernels.
+
+3. Kernel trick: SVMs can handle non-linearly separable data by applying a kernel function to transform the input features into
+higher dimensional spaces, where linear separation becomes possible. The most commonly used kernel functions in SVMs include the
+RBF kernel (Gaussian function) and polynomial kernels. Mathematically, the RBF kernel is given as:
+
+K(xi, xj) = exp(-γ ||xi - xj||²), where γ > 0 is a parameter that controls the width of the Gaussian. The polynomial kernel takes
+the following form:
+
+K(xi, xj) = (xi·xj + c)d, where d is the degree of the polynomial and c is a constant term.
+
+>>> The main steps in most genetic learning pipelines.
+ Genetic learning pipelines, also known as Genetic Algorithms (GAs), are a family of optimization techniques inspired by the
+process of natural selection. They aim to find solutions to complex problems by mimicking the evolutionary process through
+iterative application of genetic operators. Here are the main steps in most genetic learning pipelines:
+
+1. Initialization: Create an initial population of candidate solutions (individuals) randomly or using heuristics. Each
+individual is represented as a fixed-length binary string or a vector of real numbers, depending on the problem representation.
+The population size and other initialization parameters are defined based on the specific problem.
+
+2. Fitness evaluation: Calculate the fitness value for each individual in the population by evaluating how well it solves the
+given problem. The fitness function maps the solution space to a scalar value that represents the quality of the solution.
+
+3. Selection: Choose individuals from the current population based on their fitness values to form the mating pool for producing
+the next generation. Selection strategies like tournament selection, roulette wheel selection, and rank selection are commonly
+used. The goal is to select individuals with high fitness values for reproduction to increase the chances of discovering better
+solutions.
+
+4. Crossover (recombination): Apply crossover operators to generate new offspring from pairs of selected parents. The most common
+crossover operator is one-point crossover, which randomly selects a crossover point and swaps the substrings to the right of that
+point between the two parents. Other variants include multi-point crossover, uniform crossover, and order crossover.
+
+5. Mutation: Apply mutation operators to introduce random variations in the offspring generated from the crossover process.
+Mutation operators like bit flip (for binary representations) or Gaussian mutation (for real-valued representations) help explore
+new regions of the search space and prevent premature convergence.
+
+6. Elitism: Keep the best individual from the current generation unchanged to ensure that good solutions are carried over to the
+next generation. This is also known as elitist strategy or golden sequence selection.
+
+7. Termination condition: The genetic learning pipeline continues iterating through the process of selection, crossover,
+mutation, and elitism until a stopping criterion is met. Common termination conditions include reaching a maximum number of
+generations, achieving a satisfactory solution, or exhausting computational resources.
+
+8. Output: The best individual from the final generation represents the solution to the problem. This solution can be further
+refined using other optimization techniques or used directly for downstream applications.
+
+>>> An introduction to programming in C++. Very technical, mathematical, and with examples.
+ C++ is a powerful and versatile programming language that supports object-oriented, generic, and procedural programming
+paradigms. It is widely used in system programming, game development, and other performance-critical applications due to its
+low-level memory management capabilities and rich set of libraries. In this introduction to programming in C++, we will cover
+basic syntax, data types, control structures, functions, and simple input/output operations with mathematical examples.
+
+1. Syntax: C++ programs are composed of source files (with .cpp extension) containing user-defined types, functions, classes, and
+global variables. The standard input/output stream is initialized using the following statement:
+
+```cpp
+#include <iostream>
+```
+
+2. Data Types: C++ supports various data types such as integers (int), floating-point numbers (float and double), characters
+(char), and boolean values (bool). Here are some mathematical examples:
+
+```cpp
+// Integer assignment and arithmetic operations
+int a = 5, b = 10, c;
+c = a + b; // addition
+c = a - b; // subtraction
+c = a * b; // multiplication
+c = a / b; // division (integer division)
+c = a % b; // modulo operation
+
+// Floating-point assignment and arithmetic operations
+float x = 3.14, y = 2.718;
+y = pow(x, 2); // exponentiation using the pow function from <cmath> library
+
+// Character representation and arithmetic operations
+char symbol = '+';
+symbol += 1; // incrementing a character by 1
+```
+
+3. Control Structures: C++ provides several control structures like if-else statements, switch cases, and loops (for, while,
+do-while) to enable conditional execution and iteration. Here's an example of a mathematical loop:
+
+```cpp
+// For loop to calculate the sum of first 10 natural numbers
+int i, sum = 0;
+for(i = 1; i <= 10; i++) {
+   sum += i;
+}
+std::cout << "Sum of first 10 natural numbers: " << sum << std::endl;
+```
+
+4. Functions: C++ allows defining functions to encapsulate reusable code blocks and simplify program organization. Here's an
+example of a simple mathematical function:
+
+```cpp
+// Function to find the maximum between two numbers
+int max(int x, int y) {
+   return (x > y) ? x : y;
+}
+std::cout << "Maximum: " << max(5, 10) << std::endl;
+```
+
+5. Input/Output: C++ supports standard input/output streams using iostream library. Here's an example of taking user inputs and
+performing a mathematical operation:
+
+```cpp
+// User input and output for finding the square root
+float num, result;
+std::cout << "Enter a positive number: ";
+std::cin >> num;
+result = sqrt(num); // use sqrt function from <cmath> library
+std::cout << "The square root of " << num << " is: " << result << std::endl;
+```
+
+These examples give you a basic understanding of the C++ programming language with a mathematical focus. As you progress, you
+will learn more advanced concepts like classes, inheritance, templates, and exception handling to build complex systems and
+applications.
+
+>>> Examples of a functional programming style in c++.
+ Functional programming (FP) in C++ is achieved by utilizing higher-order functions, lambdas, and avoiding state mutation. FP
+emphasizes immutability, composition, and declarative programming to create more concise, modular, and reusable code. In this
+example, we will demonstrate an FP approach for mathematical operations using C++20 features:
+
+1. Higher-order functions: Higher-order functions are functions that take one or more functions as arguments or return a function
+as their result. In C++, the `std::for_each` and `std::transform` algorithms serve this purpose. Here's an example of applying a
+mathematical operation to each element of a vector using `std::for_each`:
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+int main() {
+   std::vector<int> numbers = {1, 2, 3, 4, 5};
+
+   // Function to square each number
+   auto square = [](int num) -> int { return num * num; };
+
+   // Applying square function to all elements in the vector using std::for_each
+   std::for_each(numbers.begin(), numbers.end(), square);
+
+   for (auto number : numbers) {
+      std::cout << "Squared value: " << number << std::endl;
+   }
+
+   return 0;
+}
+```
+
+2. Lambdas: Lambdas are anonymous functions that can be defined inline and passed as arguments to higher-order functions or used
+in expressions. They offer a convenient way to define simple functions without the need for separate function definitions. Here's
+an example of using lambdas with `std::transform` to calculate the square roots of elements in a vector:
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <cmath> // for sqrt function
+
+int main() {
+   std::vector<double> numbers = {1.0, 2.0, 3.0, 4.0, 5.0};
+
+   // Function to calculate square roots of each number
+   auto root = [](double num) -> double { return sqrt(num); };
+
+   // Applying root function to all elements in the vector using std::transform and lambda
+   std::vector<double> results;
+   std::transform(numbers.begin(), numbers.end(), std::back_inserter(results), root);
+
+   for (auto result : results) {
+      std::cout << "Square root of value: " << result << std::endl;
+   }
+
+   return 0;
+}
+```
+
+These examples demonstrate functional programming concepts like higher-order functions and lambdas in C++. By using these
+features, you can create more concise and expressive code that adheres to FP principles of immutability, composition, and
+declarative programming.
+
+>>> Send a message (/? for help)

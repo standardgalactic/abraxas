@@ -1,0 +1,748 @@
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ ollama run llama2
+pulling manifest
+pulling 8934d96d3f08... 100% ▕█████████████████████████████████████████████████████▏ 3.8 GB
+pulling 8c17c2ebb0ea... 100% ▕█████████████████████████████████████████████████████▏ 7.0 KB
+pulling 7c23fb36d801... 100% ▕█████████████████████████████████████████████████████▏ 4.8 KB
+pulling 2e0493f67d0c... 100% ▕█████████████████████████████████████████████████████▏   59 B
+pulling fa304d675061... 100% ▕█████████████████████████████████████████████████████▏   91 B
+pulling 42ba7f8a01dd... 100% ▕█████████████████████████████████████████████████████▏  557 B
+verifying sha256 digest
+writing manifest
+removing any unused layers
+success
+>>> What are the most commonly used commands in Python?
+
+Python has a vast array of built-in commands that can be used to perform various tasks. Here are some of the
+most commonly used commands in Python:
+
+1. `print()` - Used to print text or values to the screen.
+2. `input()` - Allows users to input data into a program, and is often used for interactive applications.
+3. `range()` - Creates a sequence of numbers that can be used in a loop.
+4. `len()` - Returns the length of a string or other sequence.
+5. `type()` - Used to determine the type of an object.
+6. `sum()` - Used to calculate the sum of a list of numbers.
+7. `max()` - Used to find the maximum value in a list or other iterable.
+8. `min()` - Used to find the minimum value in a list or other iterable.
+9. `sorted()` - Used to sort a list of values.
+10. `list()` - Creates a list from a single value or from a sequence of values.
+11. `range()` - Creates a sequence of numbers that can be used in a loop.
+12. `for()` - Used to create a loop that iterates over a sequence of values.
+13. `while()` - Used to create a loop that continues until a certain condition is met.
+14. `if()` - Used to create conditional statements that execute different blocks of code based on a condition.
+15. `try()` - Used to handle exceptions and errors in a program.
+16. `while loop()` - Used to create a loop that continues until a certain condition is met.
+17. `for loop()` - Used to create a loop that iterates over a sequence of values.
+18. `print()` - Used to print text or values to the screen.
+19. `input()` - Allows users to input data into a program, and is often used for interactive applications.
+20. `list()` - Creates a list from a single value or from a sequence of values.
+
+These are just a few examples of the many commands available in Python. As you continue to learn and use
+Python, you will discover more and more useful commands that can help you write efficient and effective code.
+
+>>> give an example of more complicated code that combines some of these.
+
+Certainly! Here's an example of a more complicated piece of Python code that combines some of the commands
+we've discussed:
+```
+# This code will ask the user for their name, and then greet them with a personalized message
+
+# First, we need to get the user's name
+name = input("What is your name? ")
+
+# Next, we want to check if the user's name is longer than 5 characters
+if len(name) > 5:
+    # If it is, we can calculate the number of letters in their name and print it out
+    letters = len(name)
+    print("Your name has", letters, "letters.")
+else:
+    # If it's not, we'll print a default message
+    print("Hi there! My name is Python.")
+
+# Now let's try using some loops to make the code more interesting
+for i in range(5):
+    # We can use a for loop to iterate over a sequence of numbers
+    # and perform some action on each one
+    print(i)
+
+# And finally, we can use a while loop to create a repeating pattern
+x = 0
+while x < 10:
+    print(x)
+    x += 1
+```
+Let's break down what's going on in this code:
+
+1. The first line gets the user's name using the `input()` function.
+2. The next line checks if the length of the user's name is greater than 5 characters. If it is, the code will
+execute the block inside the `if` statement. Otherwise, it will execute the default message.
+3. Inside the `if` statement, we use the `len()` function to get the number of letters in the user's name, and
+then print it out using the `print()` function.
+4. Next, we use a `for` loop to iterate over a sequence of numbers from 0 to 5. Inside each loop, we print out
+the current value of `i`.
+5. Finally, we use a `while` loop to create a repeating pattern of numbers from 0 to 9. Inside each loop, we
+increment the value of `x` by 1, and then print it out using the `print()` function.
+
+This code demonstrates how to use a variety of commands in Python to create more complex programs. By combining
+these commands in different ways, you can create powerful and flexible pieces of software that can perform a
+wide range of tasks.
+
+>>> you didn't count the letters
+
+My apologies! Here is the updated code that counts the letters in the user's name:
+```
+# This code will ask the user for their name, and then greet them with a personalized message
+
+# First, we need to get the user's name
+name = input("What is your name? ")
+
+# Next, we want to count the number of letters in their name
+letters = len(name)
+print("Your name has", letters, "letters.")
+
+# Now let's try using some loops to make the code more interesting
+for i in range(5):
+    # We can use a for loop to iterate over a sequence of numbers
+    # and perform some action on each one
+    print(i)
+
+# And finally, we can use a while loop to create a repeating pattern
+x = 0
+while x < 10:
+    print(x)
+    x += 1
+```
+Thank you for pointing that out!
+
+>>> I guess it was because my name had less than 5 letters.
+
+Ah, I see! Yes, that's correct. If the user's name has less than 5 letters, the `len()` function will return an
+error message instead of the number of letters in the name. So in that case, the code inside the `if` statement
+won't be executed, and you'll just get the default greeting.
+
+Makes sense, right? The `if` statement is only executed if the length of the user's name is greater than 5
+characters. If it's not, then the default message will be printed out instead.
+
+>>> What is the purpose of a null-wavefront in Null Convention Logic?
+
+Null Convention Logic (NCL) is a programming paradigm that allows developers to write software that can operate
+in a null-safe manner, meaning it can avoid crashes and errors caused by null reference exceptions. A
+null-wavefront is a concept introduced in NCL to provide an additional layer of safety when working with
+nullable types.
+
+In NCL, a null-wavefront is a region around a variable that indicates the type of data that can be stored in
+that variable. The null-wavefront is represented as a rectangle in the code, with the top and left sides of the
+rectangle corresponding to the minimum allowed value for the variable, and the bottom and right sides
+corresponding to the maximum allowed value.
+
+The purpose of a null-wavefront in NCL is to provide a way for developers to specify the range of values that
+can be stored in a variable, while also taking into account any potential null values. By defining the
+null-wavefront, developers can ensure that their code will only operate within the defined range, which helps
+prevent errors caused by null reference exceptions.
+
+Here are some key benefits of using null-wavefronts in NCL:
+
+1. Safety: Null-wavefronts provide an additional layer of safety when working with nullable types. By defining
+the range of values that can be stored in a variable, developers can reduce the risk of errors caused by null
+reference exceptions.
+2. Predictability: The use of null-wavefronts makes the code more predictable and easier to understand.
+Developers can quickly glance at the null-wavefront to determine the allowed range of values for a given
+variable.
+3. Improved readability: By visually representing the allowable range of values for a variable, null-wavefronts
+improve the readability of the code. This makes it easier for developers to understand the logic of the program
+and identify potential issues.
+4. Better error handling: Null-wavefronts help developers handle errors more effectively. By defining the
+allowed range of values, developers can create more robust error handling mechanisms that are less prone to
+crashes and exceptions.
+
+In summary, a null-wavefront in NCL is a concept that provides an additional layer of safety when working with
+nullable types. It defines the range of values that can be stored in a variable, which helps prevent errors
+caused by null reference exceptions, improves code readability, and enables more effective error handling
+mechanisms.
+
+>>> /read
+Unknown command '/read'. Type /? for help
+>>> NULL Convention Logic™
+Brandt
+Theseus Logic, Inc. Dept. of Computer Science
+1080 Montreal Ave, Suite 200 Campus box 430
+St. Paul, Minnesota, USA 55116 University of Colorado
+Boulder, Colorado, USA 80309
+Abstract
+NULL Convention Logic™ (NCL™) is a symbolically complete logic which
+expresses process completely in terms of the logic itself and inherently and conveniently
+expresses asynchronous digital circuits. The traditional form of Boolean logic is not
+symbolically complete in the sense that it requires the participation of a fundamentally
+different form of expression, time in the form of the clock, which has to be very carefully
+coordinated with the logic part of the expression to completely and effectively express a
+process. We introduce NULL Convention Logic™ in relation to Boolean logic as a four
+value logic, and as a three value logic and finally as two value logic quite different from
+traditional Boolean logic. We then show how systems can be constructed entirely in
+
+NULL Convention Logic™ (NCL) is a programming paradigm that helps developers write safer and more robust code by
+introducing a new way of thinking about nullability. NCL is designed to work with any programming language, and
+it provides a set of concepts and tools for creating software that is more reliable and less prone to errors.
+
+NULL Convention Logic™ is based on the following key principles:
+
+1. **Null Safety**: NCL encourages developers to think about nullability as a convention rather than an
+exception. By making nullability a standard part of the programming process, NCL helps prevent errors caused by
+null reference exceptions.
+2. **Type-Safe Nullability**: NCL provides a way to explicitly declare nullability for each variable, function,
+or class. This allows developers to define the allowed range of values for each entity, which helps prevent
+errors and improve code readability.
+3. **Null-Wavefronts**: A null-wavefront is a visual representation of the allowable range of values for a
+variable. By defining the null-wavefront, developers can ensure that their code will only operate within the
+defined range, which helps prevent errors caused by null reference exceptions.
+4. **Optional Chaining**: NCL introduces the concept of optional chaining, which allows developers to create
+more flexible and modular code. Optional chaining enables developers to chain together multiple optional values
+in a single expression, making it easier to write and maintain complex logic.
+5. **Improved Error Handling**: NCL provides a set of tools for improving error handling. By defining the
+allowed range of values for each variable, developers can create more robust error handling mechanisms that are
+less prone to crashes and exceptions.
+
+NULL Convention Logic™ is designed to work with any programming language, and it can be used in combination with
+other programming paradigms. NCL provides a set of libraries and tools that make it easy to implement the
+concepts in your existing codebase or from scratch.
+
+By using NULL Convention Logic™, developers can create software that is more reliable, safer, and easier to
+maintain. The paradigm encourages developers to think about nullability in a new way, which can lead to better
+error handling, improved code readability, and a reduced risk of crashes and exceptions.
+
+>>> Karl M. Fant Scott A. BrandtTheseus Logic, Inc. Dept. of Computer Science1080 Montreal Ave, Suite 200 Campus box 4
+... 30St. Paul, Minnesota, USA 55116 University of ColoradoBoulder, Colorado, USA 80309AbstractNULL Convention Logic™
+... (NCL™) is a symbolically complete logic whichexpresses process completely in terms of the logic itself and inheren
+... tly and convenientlyexpresses asynchronous digital circuits. The traditional form of Boolean logic is notsymbolica
+... lly complete in the sense that it requires the participation of a fundamentallydifferent form of expression, time
+... in the form of the clock, which has to be very carefullycoordinated with the logic part of the expression to compl
+... etely and effectively express aprocess. We introduce NULL Convention Logic™ in relation to Boolean logic as a four
+... value logic, and as a three value logic and finally as two value logic quite different fromtraditional Boolean log
+... ic. We then show how systems can be constructed entirely interms of NULL Convention Logic™.
+
+NULL Convention Logic™ (NCL™) is a symbolically complete logic that expresses digital processes completely in
+terms of the logic itself, without requiring the participation of a separate form of expression, such as time.
+Unlike traditional Boolean logic, which requires careful coordination between the logical and temporal parts of
+an expression to fully and effectively express a process, NCL™ is inherently and conveniently asynchronous.
+
+We introduce NCL™ in relation to Boolean logic as a four-value logic, a three-value logic, and finally as a
+two-value logic that is quite different from traditional Boolean logic. We then show how systems can be
+constructed entirely using NCL™.
+
+The paper provides a detailed analysis of the properties and capabilities of NCL™, including its ability to
+express complex digital processes with a simple and intuitive syntax. The authors also discuss the potential
+applications of NCL™ in various fields, such as computer science, electrical engineering, and cognitive science.
+
+Overall, the paper provides a comprehensive introduction to NULL Convention Logic™ and its potential to
+revolutionize the way we express and reason about digital processes. The authors demonstrate that NCL™ is a
+powerful and flexible tool that can be used to construct complex systems in a modular and compositional manner,
+without requiring the participation of external forms of expression or coordination.
+
+>>> NULL convention Logic™ [7] is derived directly from the Invocation Model of Process
+n Model is a conceptual model of general process expression in contrast to
+a model of computation. It transcends limiting mathematical notions of computation to provide a
+unifying conceptual framework which relates all forms of process expression from the simplest
+physical and chemical processes to the most complex natural and artificial processes. For instance,
+the processes of cell metabolism and of digital computers are characterized in terms of the same
+concepts and relationships. They simply occupy different places in a single expression space defined
+
+NULL Convention Logic™ (NCL™) is a symbolic logic that is derived directly from the Invocation Model of Process
+(IMP). IMP is a theoretical framework for understanding the behavior of digital systems, and it provides a
+foundation for developing logical formalisms that can express digital processes in a concise and intuitive way.
+
+NCL™ is based on the idea of treating digital processes as if they were concurrent processes, and it uses a
+four-value logic to represent the different states of a process. The four values are:
+
+1. **True**: Represents the state of a process that is currently executing.
+2. **False**: Represents the state of a process that is not currently executing.
+3. **NULL**: Represents the absence of a process or the lack of knowledge about its state.
+4. **UNKNOWN**: Represents the uncertainty or ambiguity of a process's state.
+
+By using these four values, NCL™ can express complex digital processes with a simple and intuitive syntax. For
+example, the expression "A ∧ B" can be used to represent the conjunction of two processes, while the expression
+"¬A" can be used to represent the negation of a process.
+
+NULL Convention Logic™ has several key properties that make it useful for expressing digital processes:
+
+1. **Concurrency**: NCL™ is designed to handle concurrent processes, which makes it well-suited for modeling
+systems with multiple threads or processes.
+2. **Compositionality**: NCL™ allows developers to compose complex processes from simpler ones, which makes it
+easier to build and reason about large systems.
+3. **Modularity**: NCL™ provides a modular way of expressing digital processes, which makes it easier to
+understand and modify individual components of a system.
+4. **Predicate Abstraction**: NCL™ provides a way to abstract away the implementation details of a process,
+which makes it easier to reason about the behavior of a system without getting bogged down in specific
+implementation details.
+
+Overall, NULL Convention Logic™ is a powerful tool for modeling and reasoning about digital processes, and it
+has a wide range of potential applications in fields such as computer science, electrical engineering, and
+cognitive science.
+
+>>> Expression. The Invocation Model is a conceptual model of general process expression in contrast toa model of comp
+... utation. It transcends limiting mathematical notions of computation to provide aunifying conceptual framework whic
+... h relates all forms of process expression from the simplestphysical and chemical processes to the most complex nat
+... ural and artificial processes. For instance,the processes of cell metabolism and of digital computers are characte
+... rized in terms of the sameconcepts and relationships. They simply occupy different places in a single expression s
+... pace definedby the Invocation Model.
+
+The Invocation Model is a conceptual framework for understanding and expressing various forms of process,
+including physical, chemical, biological, and digital processes. It provides a unifying perspective that relates
+different types of processes to each other, and it transcends traditional mathematical notions of computation by
+providing a more comprehensive and flexible way of modeling process expression.
+
+In the Invocation Model, all forms of process are seen as invocations of a set of basic processes, which are
+characterized in terms of their ability to interact with their environments and modify their internal states.
+This allows for a wide range of processes to be captured and expressed using a common language and framework,
+regardless of their underlying nature or complexity.
+
+For example, the processes of cell metabolism and digital computers can both be understood and expressed within
+the Invocation Model. While they may seem quite different at first glance, they are both characterized by the
+same fundamental concepts and relationships, such as the ability to modify internal states in response to
+external inputs and to interact with their environments.
+
+The Invocation Model provides a number of key benefits for understanding and working with process expression,
+including:
+
+1. **Comprehensive scope**: The Invocation Model can handle a wide range of processes, from simple physical and
+chemical processes to complex digital systems and beyond.
+2. **Flexibility**: The Model allows for the expression of a wide range of processes using a common language and
+framework, which makes it easier to understand and work with different types of processes.
+3. **Unifying perspective**: The Invocation Model provides a unifying perspective that relates different types
+of processes to each other, which can help to identify common patterns and relationships across different
+domains.
+4. **Mathematical foundation**: The Model is based on mathematical concepts and techniques, which provides a
+solid foundation for understanding and working with process expression.
+
+Overall, the Invocation Model is a powerful tool for understanding and working with process expression, and it
+has a wide range of potential applications in fields such as computer science, biology, and chemistry
+
+>>> /help
+Available Commands:
+  /set         Set session variables
+  /show        Show model information
+  /bye         Exit
+  /?, /help    Help for a command
+
+Use """ to begin a multi-line message.
+
+>>> /bye
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ ls
+0001.png  test.py
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ vim null-convention-logic-01.txt
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ vim null-convention-logic-02.txt
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ vim null-convention-logic-03.txt
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ vim null-convention-logic-4.txt
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ vim null-convention-logic-05.txt
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ mv n^C
+(base) 130 flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ mv null-convention-logic-4.txt  null-convention-logic-04.txt
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ ls
+0001.png                      null-convention-logic-02.txt  null-convention-logic-04.txt  test.py
+null-convention-logic-01.txt  null-convention-logic-03.txt  null-convention-logic-05.txt
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ vim null-convention-logic-06.txt
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ vim null-convention-logic-06.txt
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ vim null-convention-logic-07.txt
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ vim null-convention-logic-08.txt
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ vim null-convention-logic-09.txt
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ vim null-convention-logic-10.txt
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ vim null-convention-logic-11.txt
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ vim null-convention-logic-12.txt
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ vim null-convention-logic-13.txt
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ vim null-convention-logic-14.txt
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ vim null-convention-logic-15.txt
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ vim null-convention-logic-16.txt
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ vim null-convention-logic-17.txt
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ vim null-convention-logic-18.txt
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ vim null-convention-logic-19.txt
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ vim null-convention-logic-20.txt
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ vim null-convention-logic-21.txt
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ vim null-convention-logic-22.txt
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ vim null-convention-logic-23.txt
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ vim null-convention-logic-24.txt
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ vim null-convention-logic-25.txt
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ vim null-convention-logic-26.txt
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ vim null-convention-logic-27.txt
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ vim null-convention-logic-28.txt
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ vim null-convention-logic-29.txt
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ vim null-convention-logic-30.txt
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ vim null-convention-logic-31.txt
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ vim null-convention-logic-32.txt
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ recap^C
+(base) 130 flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/experiments$ for file in *.txt; do
+>     echo "Checking $file";
+>     ollama run llama2 "Summarize:" < "$file";
+> done
+Checking null-convention-logic-01.txt
+The Invocation Model central concept is the idea of symbolic completeness, which refers to the ability of an
+expression to be complete and self-contained in terms of the relationships among symbol values. This means that
+the expression should integrate the data transformation and control aspects of a process within a single
+determined expression, without relying on any external factors such as clocks or controllers. In nature,
+processes are symbolically complete, meaning they resolve spontaneously and autonomously without any external
+intervention. Similarly, artificial processes devised by humans can also be symbolically complete.
+
+Checking null-convention-logic-02.txt
+The traditional Boolean logic system is not symbolically complete, meaning that it lacks the ability to express
+time-dependent and symbolic-value-dependent relationships simultaneously. These two aspects of expression are
+independent of each other and must be carefully coordinated to provide a complete and correctly resolvable
+expression of a process. While a carefully engineered Boolean logic circuit with its clock can be made to work,
+it is not a symbolically complete expression.
+
+Checking null-convention-logic-03.txt
+In computer science, the expression of data transformation and control have traditionally been viewed as
+separate aspects of process expression. However, it is possible to integrate these two aspects into a single
+expression that is completely determined by symbolic-value-dependent relationships without any external control
+expressions. This is what is meant by a symbolically complete expression. A symbolically complete logic circuit
+would have no time relationships and be insensitive to propagation delays among its components.
+
+Checking null-convention-logic-04.txt
+Attempts have been made since the 1950s to eliminate time dependencies in digital logic circuits. Three
+categories of circuits have been developed: fundamental mode circuits, speed-independent circuits, and delay
+insensitive circuits. While fundamental mode circuits use matched delay lines for a local time reference,
+speed-independent circuits make assumptions about insignificant propagation delays in the circuit. Delay
+insensitive circuits are the most difficult and elusive to design, as they require complete freedom from delay
+issues for all components, including gates and wires. Only a few truly delay insensitive designs are known.
+
+Checking null-convention-logic-05.txt
+The article discusses the development of a new approach to asynchronous circuit design called NULL Convention
+Logic™. The traditional approach to eliminating time dependencies in Boolean logic circuits involves surrounding
+them with Muller C-elements and transmitting data between circuits using dual rail encoding. However, these
+structures can become large and expensive. Recent work on asynchronous design has produced interesting results,
+but it still requires assumptions about local transmission delay and extra circuitry to achieve asynchronous
+control. NULL Convention Logic™, on the other hand, is a theoretically complete and economically feasible
+approach that makes Boolean logic symbolically complete as a four value logic and then implements it as a two
+value logic, making it the most practical form. The properties of NULL Convention Logic™ are discussed in the
+conclusion.
+
+Checking null-convention-logic-06.txt
+The Invocation Model proposes that to make Boolean logic symbolically complete, we need to add a value to the
+primitive mutually exclusive assertion domain. The first step is to assign a value called NULL (not a valid data
+value) to express the validity/invalidity of data. This allows us to retain the sense of Boolean logic while
+adding a new value to the domain. The second step is to define truth tables for the preliminary NULL Convention
+Logic™ gates, which assert a data value only when both input values are data values and assert a NULL value
+otherwise.
+
+Checking null-convention-logic-07.txt
+We have a three-value logic system where each wire can hold one of three values: T (true), F (false), or N
+(null). Gates resolve three input values and enforce the completeness of input criteria for data. A transition
+from NULL to a data value marks the beginning of validity, while a transition from a data value to NULL marks
+the end of validity or the beginning of invalidity. The gates will assert a data result value only when a
+complete set of data values is present at their input, and the asserted result value is the correct resolution
+of the presented input data values. If either or both input values are NULL, a NULL result value is asserted.
+
+Checking null-convention-logic-08.txt
+The completeness of input criteria is crucial for speeding up independent logic circuits. As the number of gates
+in a combinational circuit increases, the completeness of input criteria scales up, ensuring that all gates
+receive the correct input values simultaneously. This allows gates to transition from NULL to data values in an
+orderly and synchronized manner, creating a wave front of correct result values that propagate through the
+circuit. No other factors, such as the time it takes for input values to propagate or the order in which they
+arrive, are associated with the assertion of these three facts: the transition from NULL to data, the validation
+of the result value, and the completion of the gate's resolution. Each gate is a synchronization node that
+manages this wave front of correct result values.
+
+Checking null-convention-logic-09.txt
+The circuit will not assert a complete set of result data values until all input data values are present and the
+resolution of those values has propagated through the circuit. If one input value remains NULL, at least one
+result value will also remain NULL. Once all input values are data, the data value will propagate through the
+circuit and all result values will become data, indicating that a complete set of input data values have been
+presented to the circuit and the resolution is complete. The circuit enforces the completeness of input criteria
+for data.
+
+Checking null-convention-logic-10.txt
+The concept of "resolution" in the context of input data sets refers to the process of determining the complete
+output values for a given set of inputs. The completion of resolution can be determined by monitoring the result
+values, which transition from all NULL values to a complete result data value set (i.e., all data at the output)
+when the resolution is finished. This indicates that the circuit has autonomously and symbolically completed its
+resolution process without relying on any external expression or authority such as a clock, delay line, or
+controller.
+
+Checking null-convention-logic-11.txt
+The circuit enters the all NULL state from a data resolution state when it is ready for a new set of input data
+to be resolved. The completeness of input criteria is not enforced for NULL values in relation to data values,
+and a single input value can become NULL and drive all result values to NULL.
+
+Checking null-convention-logic-12.txt
+The article discusses the second step in making Boolean logic symbolically complete, which is to enforce the
+completeness of input criteria for NULL in relation to data. This can be achieved in two ways:
+
+1. Adding another value to the primitive mutually exclusive value assertion domain of the logic.
+2. Adding a feedback variable to each gate.
+
+The article then presents an intermediate value solution, where another value called Intermediate is added to
+the truth tables, and the gates are configured to assert a data result value when both input values are data,
+and a NULL result value when both input values are NULL. The truth tables directly enforce the completeness of
+input criteria for both data and NULL. When the result values are all NULL, the circuit is completely reset and
+ready for a new data set. When the result values are all data, a complete data set is presented at the input to
+the circuit and its resolution is completed. The result values transition from all NULL through Intermediate
+values to all data then from all data through Intermediate values to all NULL. The watcher of the result values
+ignores Intermediate values and looks for all data and all NULL at the output.
+
+Checking null-convention-logic-13.txt
+The circuit is an autonomous and asynchronous element of a larger system, capable of determining when it is
+ready to accept new input data and when it has completed a data resolution. It does this by monitoring the
+result values, which transition from a complete result set to all NULL when the circuit is completely reset and
+ready to accept a new data set. This allows the circuit to indicate its own readiness to accept new input data
+purely symbolically and autonomously, without needing any external expression or authority such as a clock,
+delay line, or controller. The circuit enforces the completeness of input criteria for both data and NULL
+values, ensuring that the circuit is in a completely NULL state when all result values are NULL.
+
+Checking null-convention-logic-14.txt
+Intermediate Value Logic Circuit is a symbolically complete process expression that is purely determined by
+symbols. It is a theoretically complete and general solution to delay-insensitive circuit synthesis. The
+addition of NULL value or Intermediate value does not affect the transform specifications for data values.
+Intermediate Value NULL Convention Logic™ gates can replace standard Boolean logic combinational circuits one
+for one, and the circuit will provide the same logic function while resolving in a more orderly manner and
+asserting its completion and readiness to accept a new input data set.
+
+Checking null-convention-logic-15.txt
+The feedback solution for the circuit is a state machine with hysteresis, where each gate has a result value
+that is fed back to its input. The NULL convention is used, where when the gate is asserting NULL, it will
+continue to do so until both inputs become data. When both inputs become data, the gate will transition its
+result value to a data value and enter a data state. If one input becomes NULL while the other remains data, the
+gate will continue to assert a data value until both inputs become NULL. The feedback path around each gate must
+stabilize faster than successive wave fronts of transition pass through the circuit as a whole, creating a
+non-critical time relationship.
+
+In summary, the feedback solution is a state machine with hysteresis that enforces the completeness of input
+criteria for both data in relation to NULL and for NULL in relation to data. While it is not fully delay
+insensitive, it is effectively delay insensitive due to the non-critical time relationship involved.
+
+Checking null-convention-logic-16.txt
+In NULL Convention Logic™, the limitation of only two values in the primitive mutually exclusive value assertion
+domain (e.g., 0 volts and 5 volts) leads to a system where each wire can express only one data meaning, which is
+called DATA. To reestablish mutually exclusive assertion of data meanings, a convention is established that only
+one wire of a group of wires will assert its DATA value at a time. This group of wires that assert mutually
+exclusive data meanings is called a mutually exclusive assertion group. The size of the group can vary, and the
+system can directly express decimal numbers with a group of wires each expressing a digit value. Additionally, a
+two-wire mutually exclusive assertion group is identical to dual rail encoding, which is traditionally used as a
+transmission protocol between speed independent circuits.
+
+Checking null-convention-logic-17.txt
+The Single Data Value Logic Gate (NULL) is a type of gate that can only accept one data value at a time. It
+means that the gate cannot combine different data values to form a logical result. The only discriminable
+property available when combining wires at the input to a gate is how many data values are presented, and
+therefore, NULL Convention Logic gates must be discrete threshold gates. A complete input data set for a
+threshold gate is sufficient data values to meet its threshold, and if any three or more inputs are data, the
+gate will assert a result data value. Otherwise, it will assert a null value.
+
+Checking null-convention-logic-18.txt
+The article discusses the hysteresis behavior of a NULL Convention Logic™ gate, which is a type of gate that
+outputs NULL values when its input data set is incomplete. The gate has a threshold below which it will output
+NULL values, and it requires all inputs to be NULL before accepting a new input data set. The article presents
+two solutions to provide the necessary hysteresis behavior: a feedback solution and an intermediate value
+solution.
+
+The feedback solution involves feeding back the result value with a weight of one less than the threshold, which
+provides the necessary hysteresis behavior. The gate will not assert a DATA result value until its input data
+set is complete, and it will continue to assert NULL values as long as at least one input value remains DATA.
+
+The intermediate value solution involves using an intermediate value that is between the threshold and the
+feedback weight, which provides a smooth transition between the DATA and NULL states. This solution is more
+complex and may require additional circuitry, but it can provide a more gradual transition between the two
+states.
+
+In summary, the article discusses the hysteresis behavior of a NULL Convention Logic™ gate and presents two
+solutions to provide the necessary hysteresis behavior for the gate to enforce the completeness of input
+criteria for both DATA and NULL values.
+
+Checking null-convention-logic-19.txt
+The intermediate value solution is a method of encoding data values in a digital circuit using threshold gates.
+In this system, each data value is represented by two wires, and the intermediate value gate consists of several
+threshold gates without hysteresis. The gate asserts an encoded_DATA value when both input wires are DATA, and
+an encoded_INTERMEDIATE value when one wire is DATA and the other is NULL. When all four input wires are DATA,
+the threshold 4 gate asserts a DATA value, and the intermediate value gate asserts DATA, DATA to express the
+encoded_DATA value. If one input wire becomes NULL, the threshold 4 gate falls below its threshold, and the
+asserted result for the intermediate value gate is DATA, NULL, expressing the encoded_INTERMEDIATE value. The
+encoded_INTERMEDIATE value is maintained until all input wires become NULL, at which point the threshold 1 gate
+asserts a NULL value, and the result value for the composite gate is NULL, NULL, expressing the encoded_NULL
+value.
+
+Checking null-convention-logic-20.txt
+The Intermediate Value Composite Gate (IVCG) is a logic gate that asserts an encoded NULL code only when all
+input values are NULL, and expresses an encoded DATA code when it has a complete set of input data values. The
+IVCG enforces the completeness of input criteria for both data and NULL.
+
+The translation between IVCGs and hysteresis gates is straightforward. A single wire fan-out can translate an
+IVCG into a hysteresis gate, while a threshold 2 hysteresis gate can translate an encoded gate into a hysteresis
+gate, discriminating between encoded_DATA and encoded_NULL.
+
+However, the use of IVCGs is expensive in terms of resources, as each encoded gate requires several simple
+threshold gates and doubled wires. In contrast, the feedback solution is more practical and economical.
+
+Now that both forms of NULL Convention threshold gates enforce the completeness of input criteria for both DATA
+in relation to NULL and for NULL in relation to DATA, their behavior scales up for circuits as a whole. The
+data-NULL cycle for a single data value NULL Convention Logic™ circuit is shown in Figure 16.
+
+Checking null-convention-logic-21.txt
+The circuit described in the passage is a digital logic circuit that performs a specific function based on the
+values of its input signals. The circuit has two main states: an all NULL state and a complete input data set
+state. In the all NULL state, none of the result values are asserted, while in the complete input data set
+state, one result value is asserted for each output group.
+
+When a DATA value is applied to one of the groups, the circuit evaluates whether a complete input data set is
+present. If a complete input data set is present, the threshold gate asserts a DATA value, which propagates
+through the circuit and results in a complete result data set being asserted.
+
+If an input DATA value becomes NULL, the circuit continues to assert DATA result values until all inputs to the
+circuit are NULL. Once all inputs are NULL, the threshold gate and the circuit transition their result values to
+NULL.
+
+The passage highlights that the circuit is symbolically complete and manages its interactions with the rest of
+the world on its own. The result values can be used to determine the completion of resolution of a complete
+input data set and the readiness of the circuit to receive a new input data set to resolve.
+
+Checking null-convention-logic-22.txt
+The text discusses the properties of Single Data Value NULL Convention Logic™ circuits, which are a type of
+digital circuit that can be used for fault detection and resolution. The circuit consists of multiple layers of
+nodes that process input data, with each layer having a single output value. If exactly one output value is
+asserted in each layer, the circuit will produce a correct result. However, if there are ever three output
+values simultaneously asserted, it is an error and the circuit will signal this. Additionally, if the circuit
+only asserts one output value, it will fail to signal completion of resolution, which can be detected with a
+watchdog timer. The text also compares NULL Convention Logic™ circuits to neural nets, showing how they can be
+viewed as pretrained neural nets.
+
+In summary, Single Data Value NULL Convention Logic™ circuits are digital circuits that can detect and resolve
+faults in a system by processing input data through multiple layers of nodes. They have specific properties,
+such as asserting a correct result or signaling an error if there are ever three output values simultaneously
+asserted. Additionally, they can be compared to neural nets, showing how they can be viewed as pretrained neural
+nets.
+
+Checking null-convention-logic-23.txt
+To build a system using NULL Convention combinational logic circuits, an asynchronous register is necessary to
+manage the communication and interaction among the component circuits. The asynchronous register monitors the
+completeness of resolution and readiness to accept new input data sets, storing the complete set of data values
+and all NULL values between circuits. Each combinational circuit will have an asynchronous register at its
+input. The asynchronous register is a rank of NULL Convention Logic™ threshold gates with feedback hysteresis
+and a single gate that watches for complete data sets and all NULL states, managing the interaction among
+combinational circuits and itself being a simple NULL Convention Logic™ circuit.
+
+Checking null-convention-logic-24.txt
+The NULL Convention Logic™ is an asynchronous register that uses a watcher gate to monitor the inputs and assert
+the output based on complete sets of data or null values. The watcher gate transitions its result value to DATA
+when it sees a complete set of input values, and to NULL when it sees all null values. The control input for
+each register gate comes from the watcher of the next or downstream register, which sends a DATA acknowledge
+(DACK) when it has received and stored a DATA wave front. However, the watcher transitions its result value to
+NULL when it sees a complete set of null values, authorizing the sending of a DATA wave front. The signal must
+be inverted to allow for proper operation.
+
+Checking null-convention-logic-25.txt
+The asynchronous register is a circuit that enforces the completeness of input data for both DATA and NULL
+waves. The register gates have feedback hysteresis, meaning that they will only pass a DATA wave front when both
+inputs are DATA, and will only pass a NULL wave front when both inputs are NULL. When the control line becomes
+DATA, the DATA values will be passed and stored by the register gates until a complete set is reached. Once a
+complete set is reached, the watcher gate detects the DATA wave front and transitions the control line to the
+previous register to NULL, indicating that it has received and stored the DATA wave front. Similarly, when the
+control line becomes NULL, the NULL values will be passed and stored until a complete set is reached, at which
+point the watcher gate detects the NULL wave front and transitions the control line to the previous register to
+DATA.
+
+Checking null-convention-logic-26.txt
+Asynchronous registers are used to manage the flow of data wave fronts and NULL wave fronts in a fully
+asynchronous system. The interaction behavior among combinational circuits can be seen through a simple pipeline
+example, where each register passes the data when its control line is DATA, and blocks the NULL wave front until
+the DATA wave front has propagated through the current circuit and been received by the next register. When the
+next register receives and stores the DATA wave front, the DATA set no longer needs to be maintained by the
+current register, and the next watcher detects the complete DATA set and transitions its acknowledge line to
+NULL to indicate that it has the DATA wave front.
+
+Checking null-convention-logic-27.txt
+
+The two figures depict different configurations of registers and circuits in a digital logic system. In Figure
+23, three circuits present their results to a single circuit, which sends an acknowledge signal to all three
+after receiving complete wave fronts from all. In Figure 24, a single circuit delivers its result values to
+three circuits, each of which generates its own acknowledge control signal, and a threshold 3 gate synchronizes
+the fanned-out wave fronts.
+
+Checking null-convention-logic-28.txt
+The sequential circuit is a critical component in building a system using NULL Convention Logic™. It is
+constructed with asynchronous registers and combinational circuits, and the behavior of the circuit is purely
+symbolically determined by the DATA-NULL input wave fronts and acknowledge signal interaction with its
+predecessor and successor circuits. The basic elements required to build a system, including combinational
+circuits, registers, and sequential circuits, have been demonstrated.
+
+Checking null-convention-logic-29.txt
+The main points of the passage are:
+
+1. The author is comparing the performance of NCL™ (a new asynchronous circuit design technique) with previous
+approaches to asynchronous circuits.
+2. The author shows two examples of adder circuits that can be optimized using NCL™: the first is a
+delay-insensitive minterm synthesis (DIMS) circuit, and the second is a ripple carry adder with an output
+asynchronous register.
+3. The author highlights the advantage of optimizing both the control expression and data processing aspect of
+the circuit simultaneously using NCL™.
+4. The author suggests that there is no need for a separate rank of gates to maintain state (i.e., an
+asynchronous register) in the last stage of a full adder circuit, as the acknowledge line can be directly
+connected to the last rank of processing gates.
+5. The author notes that the threshold for the last rank of gates must now be 4 when using both input meanings
+and the acknowledge control signal.
+
+Checking null-convention-logic-30.txt
+NULL Convention Logic™ (NCL™) is a language for the expression of asynchronous circuits and systems, which
+offers several benefits:
+
+1. Ease of design: NCL™ circuits are purely symbolically determined, meaning their behavior depends only on the
+interconnections among gates, and they are delay insensitive, eliminating the need for subtle and expensive
+circuit constructs.
+2. Lower design cost and risk: By eliminating the clock and its attendant complexities and risks, NCL™ systems
+can be designed in parts and composed directly, without global coordination issues.
+3. Lower power consumption: Only portions of the system that are doing useful work consume power, and
+integrating logic functions and registration in a single gate reduces the power required for system control.
+4. Convenient technology migration: The logic is insensitive to changes in implementation technology, scale, and
+propagation delay changes due to aging or manufacturing variations, eliminating portability and evolvability
+issues.
+
+In summary, NCL™ offers a convenient and straightforward way to design asynchronous circuits and systems, with
+benefits including ease of design, lower design cost and risk, lower power consumption, and convenient
+technology migration.
+
+Checking null-convention-logic-31.txt
+NULL Convention Logic™ (NCL™) is a novel approach to digital circuit design that offers several advantages over
+traditional clocked circuits. These advantages include:
+
+1. Automatic adaptation to physical properties such as voltage, temperature, age, manufacturing variations, and
+different implementation environments, which ensures that the circuits continue to operate correctly over a
+large range of variation.
+2. Elimination of failure modes due to timing problems (race, hazards, skew, etc.), resulting in increased
+reliability of circuit performance and evolvability beyond the barriers of complexity and feature size.
+3. Reduced testing complexity, as stuck-at-1 faults halt the circuit, while stuck-at-0 faults need to be
+exercised with applied patterns, reducing design time and risk, and circuit testing requirements.
+4. Speed competitiveness, as NULL Convention Logic™ circuits operate at the full rate the logic and material
+allow, and when appropriate, take advantage of average case propagation behavior, without adding margins onto
+worst-case propagation delays as with clocked circuits.
+5. Preservation of traditional Boolean logic advantages (two values, simple gates, straightforward synthesis),
+while providing self-determined, locally autonomous, self-synchronizing, delay-insensitive, and fault-detecting
+behavior.
+6. Compatibility with existing fabrication and design infrastructure and with existing clocked systems, allowing
+convenient low-cost market entry.
+
+Checking null-convention-logic-32.txt
+The references provided are related to the topic of asynchronous circuits and their design. Here is a summary of
+each reference:
+
+1. C. L. Seitz, "System Timing." - This book chapter provides an overview of system timing in VLSI systems,
+including the importance of synchronization and timing in digital systems.
+2. Stephen H. Unger, Asynchronous Sequential Switching Circuits - This book introduces the concept of
+asynchronous sequential switching circuits, which are designed to operate without a global clock signal. The
+author presents a design methodology for these circuits and discusses their advantages and limitations.
+3. Ilana David, Ran Ginosar, and Michael Yoeli, "An Efficient Implementation of Boolean Functions as Self-Timed
+Circuits." - This paper presents an efficient implementation of Boolean functions using self-timed circuits,
+which are designed to operate without a global clock signal. The authors show that these circuits can reduce the
+delay and area requirements compared to traditional clocked circuits.
+4. Ivan E. Sutherland, "Micropipelines." - This paper introduces the concept of micropipelines, which are a type
+of asynchronous circuit design. The author discusses the benefits of using micropipelines in computer systems
+and presents a design methodology for these circuits.
+5. J. A. Brzozowski and C-J. H. Seger, "Advances in Asynchronous Circuit Theory Part I: Gate and Unbounded
+Inertial Delay Models." - This paper presents advancements in asynchronous circuit theory, including the
+development of gate-level models for unbounded inertial delay and the design of MOS circuits using these models.
+6. J. A. Brzozowski and C-J. H. Seger, "Advances in Asynchronous Circuit Theory Part II: Unbounded Inertial
+Delay Models, MOS Circuits, Design Techniques." - This paper continues the discussion of asynchronous circuit
+theory, presenting new design techniques for unbounded inertial delay models and MOS circuits.
+7. Karl M. Fant and Scott A. Brandt, NULL Convention Logic™ System - This patent describes a logic system that
+operates without a global clock signal, using a novel logic gate called the NULL gate. The authors claim that
+this system can reduce the power consumption and area requirements of digital circuits compared to traditional
+clocked circuits.
+8. H. Hulgaard and P. H. Christensen, “Automated synthesis of Delay insensitive Circuits.” - This thesis
+presents a methodology for automating the design of delay-insensitive circuits, which are designed to operate
+without a global clock signal. The authors demonstrate the effectiveness of their approach through experimental
+results.
+
+Overall, these references provide a comprehensive overview of asynchronous circuit theory and its applications,
+including the design of self-timed circuits, micropipelines, and delay-insensitive circuits. They also present
+new design techniques and tools for these circuits, which can help improve their performance and energy
+efficiency in digital systems.

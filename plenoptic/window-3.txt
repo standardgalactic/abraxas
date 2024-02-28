@@ -1,0 +1,276 @@
+(base) flyxion@volsorium:/mnt/c/Users/nateg/OneDrive/Documentos/GitHub$ ssh eccehomo@192.168.2.240
+eccehomo@192.168.2.240's password:
+Welcome to Ubuntu 22.04.3 LTS (GNU/Linux 6.5.0-17-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+41 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+*** System restart required ***
+Last login: Sat Feb 17 18:08:12 2024 from 192.168.2.40
+(base) eccehomo@Human:~$ ollama run mistral
+>>> The main steps in most genetic learning pipelines.
+ Genetic learning, also known as machine learning applied to genetic data, involves analyzing genetic information to identify
+patterns, make predictions, or understand biological processes. Here are the main steps in most genetic learning pipelines:
+
+1. Data Collection: Gathering large and diverse datasets of genomic data, including DNA sequences, gene expression profiles, SNPs
+(single nucleotide polymorphisms), and clinical or phenotypic information.
+
+2. Quality Control: Ensuring the accuracy and reliability of the data by performing checks for artifacts, outliers, and errors.
+This may involve removing samples or individuals with poor-quality data, filtering out SNPs with low frequencies or high
+missingness rates, or correcting for batch effects.
+
+3. Data Preprocessing: Cleaning and transforming the raw genomic data into a format suitable for analysis. This can include
+normalization, imputation of missing values, merging datasets, and converting genotype data into allele frequencies.
+
+4. Statistical Analysis and Model Building: Applying statistical methods to identify genetic associations with phenotypes or
+traits of interest. This may involve performing tests for association, such as the chi-square test, Fisher's exact test, or
+logistic regression, or constructing models using techniques like linear regression, generalized linear models, or machine
+learning algorithms like Support Vector Machines (SVM), Random Forests, and Neural Networks.
+
+5. Data Integration: Combining genomic data with other types of data, such as clinical or environmental information, to gain a
+more comprehensive understanding of complex traits or diseases. This may involve techniques like gene-set enrichment analysis,
+pathway analysis, or network analysis.
+
+6. Result Interpretation and Validation: Examining the results from the analyses and validating their biological relevance
+through experimental or functional validation.
+
+7. Data Visualization: Communicating the findings by creating visualizations of genomic data and statistical results to aid in
+understanding complex patterns and relationships.
+
+8. Iterative Improvement: Continuously refining the pipeline through incorporating new data, improving preprocessing methods,
+enhancing analytical tools, and updating statistical models as new insights are gained.
+
+>>> An introduction to programming in C++. Very technical, mathematical, and with examples.
+ C++ is a high-performance, statically-typed, object-oriented programming language widely used for system development, game
+development, numerical computations, and other performance-critical applications. In this brief introduction to programming in
+C++, we will cover some of its essential features with mathematical examples.
+
+1. Variables and Data Types:
+In C++, you can declare variables using specific data types. Here are a few common ones:
+
+```cpp
+int i; // an integer variable
+float x = 3.14; // a floating-point number variable with initial value
+char c = 'A'; // a character variable with initial value
+```
+
+2. Operations and Expressions:
+C++ supports various mathematical operations like addition (+), subtraction (-), multiplication (*), division (/), modulus (%),
+exponentiation (^), and negation (-).
+
+```cpp
+int a = 5;
+int b = 10;
+
+// Mathematical expressions
+int sum = a + b;
+float difference = static_cast<float>(a) - b;
+int product = a * b;
+float quotient = static_cast<float>(a) / b;
+int remainder = a % b;
+int power = pow(a, b); // use <cmath> library for this function
+```
+
+3. Control Structures:
+Control structures define the flow of program execution based on certain conditions. The most common control structures are if
+statements and loops (for, while, do-while).
+
+```cpp
+// If statement
+if (a > b) {
+    std::cout << "a is greater than b";
+} else {
+    std::cout << "b is greater than or equal to a";
+}
+
+// For loop
+for (int i = 0; i < 10; i++) {
+    std::cout << i << " ";
+}
+std::cout << "\n";
+```
+
+4. Functions:
+Functions are blocks of code designed to perform specific tasks. You can create your own functions using the function keyword and
+define input parameters with specific data types.
+
+```cpp
+// Function declaration
+float square_root(float number);
+
+// Function definition
+float square_root(float number) {
+    return sqrt(number);
+}
+```
+
+5. Arrays:
+Arrays are used to store and manipulate collections of data of the same type. You can initialize an array with a fixed size or
+dynamic size using vectors.
+
+```cpp
+// Array initialization
+int arr[5] = {1, 2, 3, 4, 5};
+
+// Vector declaration
+#include <vector>
+std::vector<float> vec{1.0f, 2.0f, 3.0f, 4.0f, 5.0f};
+```
+
+6. Classes and Objects:
+C++ supports object-oriented programming where you can create your own data types (classes) and objects based on those classes.
+This allows for encapsulating data and behavior together.
+
+```cpp
+// Class definition
+class Circle {
+private:
+    float radius;
+public:
+    // Constructor
+    Circle(float r = 0.0f) : radius(r) {}
+    float get_area() { return 3.14 * std::pow(radius, 2); }
+};
+
+// Object creation
+Circle circle(5.0f);
+std::cout << "Area of the circle: " << circle.get_area();
+```
+
+7. Input/Output Streams:
+C++ provides standard input (cin) and output (cout) streams, which can be used for interacting with the user or displaying
+results.
+
+```cpp
+std::cout << "Enter a number: ";
+int num;
+std::cin >> num;
+std::cout << "The square of " << num << " is " << pow(num, 2);
+```
+
+This brief introduction covers the basics of programming in C++. As you progress, you will learn more advanced concepts like
+templates, smart pointers, exceptions, inheritance, polymorphism, and more.
+
+>>> Examples of a functional programming style in c++.
+ Functional programming (FP) is a programming paradigm that emphasizes the evaluation of mathematical functions, immutability,
+and higher-order functions. In C++, you can implement FP concepts, although it's not as commonly used or expressive as functional
+languages like Haskell, Lisp, or Scala. Here are some examples of functional programming styles in C++:
+
+1. Anonymous Functions (Lambda Expressions):
+C++ provides the ability to define and use anonymous functions, also called lambda expressions, on the fly. They can be used as
+arguments for higher-order functions like std::for_each or sort.
+
+```cpp
+#include <algorithm>
+#include <vector>
+#include <functional>
+
+int main() {
+    std::vector<int> vec = {3, 1, 4, 1, 5};
+
+    // Using a lambda expression to sort the vector in ascending order
+    std::sort(vec.begin(), vec.end(), [](int a, int b) { return a < b; });
+
+    for (auto n : vec) {
+        std::cout << n << " ";
+    }
+    std::cout << "\n"; // Output: 1 1 3 4 5
+
+    // Using a lambda expression with one argument and no return value to print the squares of numbers in a range
+    std::for_each(vec.begin(), vec.end(), [](int &n) { n *= n; });
+
+    for (auto n : vec) {
+        std::cout << n << " ";
+    }
+    std::cout << "\n"; // Output: 9 1 16 1 25
+}
+```
+
+2. Higher-Order Functions:
+Higher-order functions are functions that take one or more functions as arguments or return a function as a result. C++ provides
+several built-in higher-order functions in the <algorithm> header, such as std::for_each and std::transform.
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+int main() {
+    std::vector<int> vec = {3, 1, 4, 1, 5};
+
+    // Using a lambda expression with higher-order function std::for_each to print the cubes of numbers in a vector
+    std::for_each(vec.begin(), vec.end(), [](int &n) { n *= n * n; });
+
+    for (auto n : vec) {
+        std::cout << n << " ";
+    }
+    std::cout << "\n"; // Output: 27 1 64 1 125
+}
+```
+
+3. Immutable Data Structures:
+In functional programming, data structures are typically immutable, meaning their state cannot be changed after they have been
+created. In C++, you can simulate immutability by creating deep copies of data structures or using smart pointers and const
+references to ensure the original data remains unchanged when working with them.
+
+```cpp
+#include <vector>
+#include <string>
+#include <iostream>
+#include <memory> // For std::shared_ptr
+
+struct Person {
+    std::string name;
+    int age;
+};
+
+// Using a const reference to ensure the original data remains unchanged when working with the function
+void print_person(const Person &p) {
+    std::cout << "Name: " << p.name << ", Age: " << p.age << "\n";
+}
+
+int main() {
+    Person p1{"Alice", 30};
+    print_person(p1);
+
+    // Creating a deep copy of the data structure
+    Person p2{p1};
+    p2.age = 35;
+    std::cout << "Person p1: Name: Alice, Age: 30\n";
+    std::cout << "Person p2: Name: Alice, Age: 35\n";
+}
+```
+
+4. Recursion:
+Functional programming often involves recursive functions that solve problems by repeatedly applying the same function to smaller
+sub-problems until a base case is reached. In C++, you can define and use recursive functions as well.
+
+```cpp
+#include <iostream>
+
+int factorial(int n) {
+    if (n == 0) {
+        return 1;
+    } else {
+        return n * factorial(n - 1);
+    }
+}
+
+int main() {
+    std::cout << "Factorial of 5: " << factorial(5) << "\n"; // Output: Factorial of 5: 120
+}
+```
+
+These examples showcase some functional programming concepts in C++. However, C++ is not as expressive or focused on the
+functional paradigm as languages like Haskell or Scala.
+
+>>> Send a message (/? for help)
