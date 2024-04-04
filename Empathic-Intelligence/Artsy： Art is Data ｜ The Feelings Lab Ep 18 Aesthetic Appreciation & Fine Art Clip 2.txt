@@ -1,0 +1,34 @@
+Let's get into the curation team because I'm always curious about the ways services
+are and aren't incorporating AI into the workflow and they are actual human beings uniquely
+equipped to help you find art within your price range and match your tastes and all
+that sort of stuff.
+It feels like a job that's ripe for like a recommendation engine or something and I'm
+wondering about the balance or why the decision to keep the human element there or if there's
+AI being employed, all that stuff, I'm really curious and love to hear you talk about.
+Sure.
+Well, I went back in time with the help of Sarah Hack who's one of our machine learning
+engineers and she pointed me to GitHub repo that has been around for six years.
+So we've been doing machine learning at Artsy for at least that long, if not longer in a
+different place.
+So you will find that how we sort things is based on a recommendation engine and it's
+not that you have to be at a certain budget to really take in most advantage of our advisory
+team and at the same time, we think that right now where AI and by AI we mean machine learning
+and by machine learning, we need neural nets at a certain level of depth.
+What they can do right now is amplify our own biases as humans and you can see this
+on some of the poorer sides of AI and machine learning and neural nets where you train things
+on just white skin and then people can't have their soap dispensed by an electronic sensor
+and I think you're helping to fix that as well, which is wonderful.
+So we're amplifying bias and so what we're biasing right now and what we're amplifying
+are these editors and these curators and so we've got I think millions of pieces of art
+and hundreds of thousands of artists and many, many, many users and I think if you calculate
+the intersection of all of that, it would be like 12 trillion interactions and there's
+no way that any human is going to make sense of that exactly, exactly.
+So you talk about art being big data, it's actually big data and this is where we at
+artsy just love as technologists to be able to come in, play with this data, you know,
+one of the first things that we did is we made this thing called a Genome Project and
+so this is one of the first things that we use to help us sort algorithmically what you
+get to see in front of you.
+Yeah, so we've been at it for a while and but at the same time, I think that you can
+also get into the kind of uncanny valley with AI where it just it's almost there and it
+almost is right and then but there's just something off about it and that's where if
+we bring in this curatorial human element, then we kind of avoid that uncanny valley.

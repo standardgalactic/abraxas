@@ -1,0 +1,38 @@
+Moses writes, I've heard that people in different cultures express emotions differently. Yeah.
+By using English emotion terms, are we introducing a Western bias? That's a really cool question.
+All right. Thank you, Moses. So what do we think by using English emotion terms? Are
+we introducing a Western bias, Alan?
+Yeah, I mean, this is a really important topic for emotion science and impact the AI, you know,
+and we gather data from around the world, so we can actually address this like the
+computational kind of data driven way. And that's been our approach. So, you know,
+rather than sort of taking a few pictures and getting people to label them in different cultures,
+we actually take, you know, thousands of responses to stimuli of people, actual people,
+and what they're actually feeling at the time and what they say their expression means they
+look at their expression and report what they were expressing. And they do it in their own language
+and like emotion, English emotion terms, Spanish, Mandarin, Chinese, you know,
+Emparrick, we've looked at a lot of different languages. And they use emotion terms in terms
+of smile and smile, laugh and cry. And about 75% of the time, the English emotion terms line up with
+what people say, like experts say is their most direct translations of different cultures when
+they're used to describe expressions. And that's like when you're like a globalized culture,
+somewhat globalized cultures, I mean, we're almost everybody on Earth basically. But about
+25% of the time they're subtle to moderate differences and what the expressions mean in
+terms of how they're linked to emotions. And so there, it could be misleading, in some cases,
+to say, like, this is the emotion term that's linked to this expression, in addition to the fact
+that like, you don't want to describe an expression in emotion terms, and we have people think that
+you're trying to attribute that emotional experience to that person. When people know that
+it's a social signal, it can be authentic, it can be posed, or it can be used for communication
+and all that. So there are all these subtleties that we're sensitive to. On the other hand,
+if you don't use emotion terms at all, it's really hard to capture the meaning people take away
+from expressions, or even just like, characterize a facial expression at all, like a scowl is just
+this really, it turns out that that's just not a very specific word. It can be pain or anger or
+any number of things. But like the expression people associate with pain is so reliably distinct
+from the one people associate with anger. And so it's really, it's tricky, it's tricky, you kind
+of have to use emotion terms if you want to get at the specificity of expressions, then we turn
+algorithms on those terms. And it's not that we are trying to predict what people are feeling,
+but like the terms, the set, the suite, the distribution of terms people use to label an
+expression. And we try to, and we use methods that, yeah, basically take out the different
+compounds. And then we take those algorithms, and now the outputs are proxies, like basically an
+anger in this algorithm. We have one for facial expression, vocal expression, and they don't
+always align. So it should be very clear that this is not attributing a feeling. It's like,
+there's different modalities, not saying the same thing, but it's a really good proxy for what is
+a pattern of expression.

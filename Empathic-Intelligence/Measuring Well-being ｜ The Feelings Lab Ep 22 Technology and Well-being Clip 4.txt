@@ -1,0 +1,46 @@
+Another thing I wrote down, Alan, from the site is another quote of no single measure
+of well-being is perfect, but many are adequate.
+You just talked about that at length a moment ago, and, Jack, are you talking about taking
+all those points together?
+How many points of data would you say are required to give you an accurate assessment?
+I'm really getting into the weeds here.
+How much is enough?
+At what point do you go, okay, this is a sufficient amount?
+I've got a good idea of what's going on with this person.
+Yeah, I mean, that's another good question, and it depends on the application.
+It depends on what are the actual risks of what's going on, because if you're trying
+to introduce, for example, a pharmaceutical drug to the population, then you have to be
+really rigorous about how you measure well-being, and you have to measure all the adverse outcomes.
+Like, they have a good sense of it, right?
+At least all in the negative domain.
+They don't measure any of the positives for some reason, even though they should.
+It should be also how happy are you?
+Because if a drug made you less happy, but your symptoms were going away and you weren't
+diagnosed with this thing, but actually you were just not very, you were not flourishing,
+you wouldn't want that.
+Anyway, it's the same as true with AI, right?
+If it's a high-risk application of AI, you should have to deploy more measures to make
+sure that it's having a good impact.
+If it's really low-risk, then I think it's probably fine to just take what you can get.
+It shouldn't be an obstacle, in other words, to developing the applications that are beneficial.
+Particularly when you have something that already is reading in video, reading in audio,
+it doesn't cost you anything to get objective measures of expression, assuming those measures
+exist and we have those measures now, but you have those essentially automatically in
+your data.
+You just need to measure them.
+I think that goes a long way.
+Then in terms of adding new measures, like self-report, obviously it's difficult.
+You can't get self-report from all of your users all the time.
+Nobody's going to use something that's just constantly asking them how they're doing.
+You use sampling methods.
+That's what science tells you.
+You sample a sufficient population of people or sample of people that you can make generalizations
+about the population or the generalizations about the effect of the change that you're
+making in A-B tests.
+If you're introducing a new algorithm, you can, in some subset of users, say a week later,
+hey, how are you feeling?
+Make sure they're not feeling worse, on average, when that change is made.
+We make that recommendation.
+The problem with self-report is you can't always get it.
+Objective proxies are going to be the start a lot of the time.
+As for the objective proxies, verify with some.

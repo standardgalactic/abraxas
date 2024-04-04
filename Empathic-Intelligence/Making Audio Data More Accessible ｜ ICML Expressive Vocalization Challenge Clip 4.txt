@@ -1,0 +1,38 @@
+What would be the most exciting outcome to see on the other side of this in a couple
+of months?
+What do we think?
+Who wants to go first?
+Yeah, I can start and just sort of say, I mean, modeling audio is difficult, and it's
+difficult because there's a lot of information packed into a single second.
+There's like tens of thousands of samples, single individual predictions that need to
+be made every single second.
+And that makes it really hard to characterize and model, so you have to use like the newest
+and most innovative kinds of techniques in neural networks and machine learning.
+That isn't likely to be how it will always be.
+Presumably, there will be methods that figure out how to model and characterize these sorts
+of challenging snippets of audio, and that's going to enable us to do even harder multimodal
+stuff in the future.
+And so I really hope that this kind of data set is like exciting and inspiring to people
+to say, oh, maybe we could do this, and then maybe we could make this innovation so we
+don't need as big of a model, we could get by with this number of parameters, but transform
+the data in this way so that we can structure it and understand what's happening underneath
+it.
+By kind of shaping the data in a way that inspires those kind of creative associations, I see
+a pathway to innovation that will then allow us to do exciting multimode audio, video,
+text, and everything at once.
+Something I'm very excited about is the fact that audio, in some sense, audio data is a
+bit less sexy for a scientific paper than image or textual data.
+And one of the main reasons is that it's actually impossible to visualize this data in the sense
+that, you know, how do you put in a paper, how do you put in a paper your data, like
+you can show images, you can show pieces of text, how do you put audio in the paper.
+And so it makes the audio thing a bit less accessible, and so for me, the blue sky would
+be sort of like a revolution where the format of publication makes this data format more
+accessible.
+So, for instance, where we could allow to put audio sample within the paper for people
+to listen to the data, because we are doing this a lot, data scientists, we are looking
+at the data, we are looking at the images, we figure out how we clean it, et cetera.
+There is this iterative process all the time, like going back and forth, like data modeling,
+et cetera.
+If it's harder to visualize the data, it's harder to do the modeling too.
+And so the blue sky would be a world where the audio data is as accessible as the visual
+data.

@@ -1,0 +1,521 @@
+Hello and welcome.
+I'm Alan Cowan, Chief Scientist of HUM AI
+and a former Google Research Researcher and UC Berkeley
+PhD.
+I'm incredibly inspired by all the work that's
+been presented so far today.
+It's really humbling to see all of this come to fruition.
+And in this talk, I wanted to take a step back
+and take stock of some of the scientific advances
+that are paving the way for a new understanding
+of expressive behavior that have led up
+to the exvo workshop and competition
+and many more workshops and competitions and papers to come.
+Nonverbal expressions are really important to understand
+because they're a huge part of how we communicate
+in everyday life, particularly when
+it comes to how we communicate our wants and needs.
+We usually don't articulate our feelings or sentiments
+in words.
+For example, we're more likely to gasp or make a face
+than to say explicitly that something is scary or unpleasant
+or interesting.
+And those signals are often more informative than words
+when we communicate our feelings, sentiments, attitudes,
+and needs, and when we do so rapidly and succinctly.
+So expressions are particularly important
+to understand when it comes to understanding human needs,
+human mental health, human well-being,
+and how to improve human well-being.
+And although they aren't direct windows
+into our emotions or minds, expressions
+can be highly informative.
+These are all separate responses to the same video
+elicitor, for example.
+So I'll talk more about that data set later.
+Lately, machine learning has been
+making exponential strides in understanding natural language.
+But we still have a long way to go when
+it comes to understanding nonverbal expression.
+And I think part of that has to do
+with the immaturity of the science of emotion
+and expressive behavior.
+And another big part of it is that historically, we've
+lacked good data to train models of expressive behavior.
+So today, I'm mostly going to be talking about data.
+But to get there, I want to start
+by introducing a new way of thinking about emotions,
+how we express them, semantic space theory.
+And that's provided the foundation
+for data-driven approaches to understanding human expression.
+I'll talk about how these approaches
+paint a much more complex and high-dimensional picture
+of expression than what's traditionally been understood
+and kind of taught in emotion science textbooks.
+And then I'll talk about how we're gathering the data that we
+hope is going to allow machine learning researchers
+to translate these advances in emotion science
+and the science of expression into more formal, predictive,
+and generative models.
+Before semantic space theory, there
+were two dominant approaches to classifying
+emotional expression, the six basics approach, which
+sorts emotional expressions into six categories.
+And the affective circumplex approach,
+which measures expressions in terms of valence,
+how unpleasant or pleasant someone seems to be feeling,
+and arousal, how calm or excited they are.
+There are also approaches motivated by appraisal theory,
+which measure expression in terms of dimensions
+like safety, novelty, and power.
+And there have been a lot of debates
+about which of these approaches is best.
+But semantic space theory comes from a different perspective
+and argues that if you're choosing
+among approaches like these, you're
+conflating a lot of different questions
+about expressive behavior.
+So instead of asking whether specific expressions map
+to specific feelings or appraisal dimensions,
+we should be leaving room to derive taxonomies
+of emotion-related behavior and expressive behavior
+from the data itself.
+And semantic space theory leaves room
+for us to do that by making minimal assumptions
+about the nature of expressive behavior.
+It just assumes that an expressive behavior,
+as it conveys an emotional state or an emotional state
+that somebody reports, is really just a point
+within a metric space.
+And that space is defined by three properties.
+The first being its dimensionality
+or the number of varieties of emotion.
+The second being the distribution of states
+within the space, so how things are structured,
+whether things are clustered or continuous, for example.
+And the third being how we conceptualize states
+within this space, so how emotion and mental state-related
+concepts like awe and valence actually
+tile this space of expressions or behaviors.
+So the question is, how the dimensionality, distribution,
+and conceptualization of emotion
+can be derived from the data itself?
+And then you can ask how these things vary
+across individuals and how they vary across cultures.
+So the task is really to characterize
+the latent metric space that explains the relationship
+between expressive behaviors and the phenomena
+that they're purported to explain,
+which generally include perceived meaning.
+So what meanings do people take away
+from expressive behaviors?
+Self-report, so what emotions are people expressing?
+What attitudes and sentiments and beliefs
+are they expressing?
+Self-reported experience, what, again,
+what emotions people are expressing
+in relation to a context?
+Physiological responses, heart rates,
+respiration, heart rate variability, and so forth,
+and social context.
+So what is the situation people are in?
+Are they giving a talk?
+Are they playing a sport?
+Are they having a conversation?
+During that conversation, what is their state?
+What information are they relaying?
+What information are they taking in?
+What are their sentiments, and so forth?
+So we spent five years gathering new kinds of data
+to characterize semantic spaces
+in different modalities of expressive behavior.
+We gathered thousands of naturalistic expressions,
+got large samples of participants in different countries
+to rate them using open-ended surveys
+to rate what they were perceiving or experiencing
+at a given time.
+We even put people in fMRI scanners
+to look at their brain activity while this was going on,
+and we looked at the context of expressions
+in everyday life by training models
+and looking at how people's expressive behavior varies
+in different contexts found in videos around the world.
+And across all of this research,
+we arrived at a very different picture
+of human expressive behavior
+than what's traditionally taught.
+Expressive behaviors are not reducible to six clusters.
+They're not reducible to two dimensions.
+They're both high-dimensional and smoothly distributed
+and complex.
+And the most precise and consistent way
+that people conceptualize emotional expressions
+and expressive behaviors
+is in terms of nuanced emotional and mental states.
+The six basics approach
+and the affective circumplex approach
+each capture less than 30% of the variance
+that people take away from expressions.
+And these motions and mental states that people infer
+tend to predict things like appraisal attributions,
+like how safe or unsafe someone seems to be,
+what kinds of experiences someone might be having
+insofar as those are reliable and predictable.
+So these findings have been influential in emotion science
+and the Expo workshop is part of a broader effort
+that we're undertaking to translate them
+into machine learning advances.
+For the Expo workshop,
+we decided to focus on vocal bursts,
+which we keep finding are one of the richest
+and most informative ways that people express emotion.
+And people hadn't really studied vocal bursts very thoroughly,
+even in emotion science.
+So when I first started studying vocal bursts,
+I was pretty surprised at how rich they are
+given how little attention they've received.
+And the first thing we did is we assembled
+thousands of vocal bursts.
+We gathered ratings of them
+and we simply looked at the distribution of those ratings
+and determined what was reliable across different people.
+And we found smooth gradients between vocal bursts
+that people reliably associate
+with at least 24 different dimensions of meaning.
+So let me explore those dimensions a little bit.
+So we have vocal bursts that convey reliably fear,
+surprise,
+surprise.
+Forms a gradient with realization.
+Realization with interest.
+Interest with confusion.
+Over here we have a gradient from adoration
+through sympathy,
+through disappointments,
+to contempt,
+to disgust,
+which connects to anger,
+and to pain.
+Oh!
+Over here, there's a cluster with amusements.
+Oh!
+Oh!
+Oh!
+And embarrassment.
+Oh!
+Oh!
+Oh!
+Oh!
+Oh!
+Oh!
+Embarrassment links.
+Oh!
+Oh!
+To triumph.
+Oh!
+Oh!
+Oh!
+Oh!
+Oh!
+Oh!
+Oh!
+And then of course we have sadness.
+Oh!
+Oh!
+So vocal bursts are these incredibly rich signals
+that convey many, many different dimensions of meaning.
+And if you try to force these into six categories,
+for example,
+you end up capturing a small fraction of the variance.
+The high dimensionality of expressive behaviors
+like vocal bursts,
+of course poses a challenge for machine learning.
+You need a lot of data
+to really disentangle all of these different dimensions.
+And so that's what motivated us
+to start collecting data sets like the Hume VB data set.
+The full Hume VB data set now includes
+about 300,000 vocal bursts.
+We've been collecting them
+by recruiting people in different countries
+to imitate a really wide range of vocal bursts
+that we've found predicts many, many different judgments
+of the meaning that vocal bursts convey
+so that it inhabits the full space
+that we're aware vocal bursts convey and meaning.
+But by collecting imitations,
+we're able to gather the same vocal bursts
+in different cultures from different demographics,
+genders, ages, and so forth.
+So anyone who participated in the competition
+is really familiar with these sounds by now.
+But there were also a lot of dimensions
+that didn't make it into the subset
+that we used for this competition.
+So I just wanna explore those samples a little bit more.
+So each of these letters is actually
+not a single vocal burst,
+but imitations of that vocal bursts in a given culture.
+So in, for example, China,
+we can look at imitations of a given laugh
+or an embarrassment sound.
+Interest, surprise, and so forth.
+And so if we take a given surprise sound,
+we can look in India and see how that sounds,
+in South Africa, in the United States,
+and in Venezuela.
+So all of these, you know, not all of these,
+but some of these were included in the XFO data set,
+but we didn't include everything.
+For example, I don't think we had that realization.
+Embarrassments.
+We had horror and fear.
+We probably didn't have boredom.
+So you can see it gets a lot more complicated.
+And there's potential here to extract
+a lot of different dimensions of meaning.
+With this kind of data,
+we've also been extracting new psychological insights
+about the nature of vocal bursts.
+So for one thing, the meanings of vocal bursts
+are very consistent across cultures.
+Much more so than, for example,
+facial expressions and speech prosody.
+So we've trained models to predict judgments
+of each inferred emotion and mental state
+within each culture separately
+in the native language of that culture.
+So we are predicting adoration
+and its most direct translation into Spanish
+and Chinese in this case.
+And the same judgments from English speakers in India
+and the U.S.
+And what we find is that the meanings
+are extremely consistent
+and we do this using multidimensional reliability analysis.
+So we used a method called PPCA
+to compare the dimensions of meaning
+that our model is able to extract from vocal bursts
+with people's actual judgments.
+And what we found is that there were 24 significant dimensions
+across all cultures.
+And these are the loadings of those dimensions
+on judgments in each individual culture.
+So each of these little groups of five squares
+includes the loadings of an emotion or mental state term
+and its most direct translation across the five cultures
+on each dimension.
+So that red diagonal through the middle
+indicates that the primary meaning
+assigned to each vocal bursts
+is very similar across cultures.
+And overall, 80% of the variance
+in the meaning of the vocal bursts
+in terms of its loadings on each dimension
+was preserved across cultures.
+So what's next for Exvo?
+Well, there's a lot more that we can do
+with the Hume VB dataset.
+And of course, we're moving well beyond vocal bursts
+and exploring many other modalities.
+So just with the Hume VB dataset,
+we've gathered a lot of different kinds of labels
+to train other nuanced models of vocal expression.
+So in our next competition,
+which will be at Aki in October,
+one of the four challenges that we're posing
+is to predict vocal burst types
+like laughs, screens, size, and so forth.
+And we've actually developed a broader taxonomy
+of those call types.
+And we're able to predict them really accurately
+using machine learning models.
+So let's explore some of those call types.
+They range from things like gasps,
+which can convey surprise and fear and awe.
+Yeah, I'm not gonna be able to explore this one, sorry.
+But
+they range from things like gasps to o's,
+screams, ahas, cackles, chuckles,
+haas, haas, mm-hmms.
+So lots and lots of variation over 67 dimensions here,
+some of which carry differences in meaning,
+some of which don't.
+But you can imagine the applications
+of being able to transcribe these sounds.
+Everything that we've done for vocal bursts,
+we've also done for facial expressions.
+So we've collected over 500,000 facial expressions
+in six different cultures.
+And again, it's a much more complex space
+than we would have thought.
+We find upwards of 21 dimensions
+that are shared very consistently
+across the cultures that we've looked at.
+And seven more dimensions, so 28 in total,
+seven dimensions that have varying levels
+of cultural specificity, as you can see on the bottom here.
+So again, we're hoping to translate advances
+in the science of emotion into machine learning models
+that are more accurate, have less bias,
+more cultural specificity.
+We've collected a similar data set for speech prosody,
+which is very similar to the Hume VB data set
+that was the subject of this competition.
+And here we've also collected over 500,000 samples so far.
+Many of them are lexically controlled,
+meaning that we can disentangle lexical features,
+so the words somebody is using from prosodic features,
+or how they actually say those words.
+So let's explore the dimensions of speech prosody.
+And these are actually gonna be predictions
+of a trained model on naturalistic samples
+that the model hasn't seen before.
+It's an incredibly nuanced space.
+There's dimensions like determination.
+You're not dying, Hope.
+You're gonna live a long, healthy life.
+Anger.
+Screw her, that part is mine.
+Disappointments.
+Oh, I forgot about the birthday cake.
+Anxiety.
+Because I think I just heard her moving around it.
+Confusion.
+I'm sorry, so where are...
+Amusements.
+Okay, I'll be up in 18 pages.
+And as you can see, it's a very continuous space
+with blends between different kinds of meaning.
+So you can have kind of confused amusements.
+You liked it?
+You really liked it?
+When did that happen to you?
+And we're collecting different kinds of large scale data
+using other kinds of experiments
+to be able to train higher level multimodal models.
+So one question is how multimodal patterns in expression
+relate to emotional experience?
+And to answer that question,
+we've collected over 250,000 reactions
+to 1,841 highly evocative videos
+across five different countries.
+And so far, what we found is that if you aggregate
+across many people's responses to a video,
+you can reliably predict the average emotional experiences
+evoked by the video along at least 12 different dimensions.
+So in these maps, each letter represents a video.
+The colors in the map on the left
+represent the average reported experiences
+in response to the video.
+And the colors in the map on the right
+represent the average expressive responses to the video.
+So at the aggregate level,
+you can make really fine grain inferences
+of the experiences people say they're having on average
+from people's expressions.
+But this doesn't work as well at the individual level.
+It's worth noting.
+And so finally, moving beyond the individual
+to model how expressions function in social interactions,
+we've also been collecting data
+with expressive conversations.
+We use carefully constructed prompts
+to evoke conversations that naturally include
+a wide range of emotional expressions.
+And people form expressions spontaneously
+pretty often in these conversations.
+And we collected their own self-report annotations
+at a fine grain level of the emotions
+that they thought they were expressing
+during the conversation,
+and that they thought the other person was expressing
+from each participant.
+What's the worst thing you've ever eaten?
+Black mushrooms.
+So you can see there's a disgust expression in there.
+Sometimes the conversations are longer
+and they can get pretty touching.
+All right, so name one thing you are grateful to me for.
+Grateful to you?
+Always be there for me.
+Um, for being my friend.
+That's about it, man.
+I can't think hard.
+You know, I don't want to say here, but I do love you.
+Oh, I love you too.
+That's the emotion.
+Oh, I'm grateful to have you.
+I'm grateful to have you, Kim.
+Thank God this is over with, we got seven seconds.
+So you get the idea.
+Obviously, participants were given
+like really clear warnings and consents
+and all of that, that these videos would be used
+in public settings and used for data science
+and machine learning.
+And the prompt here is pretty funny.
+So now as we have prompts like,
+make your best pterodactyl sound.
+What?
+So anyway, you got the idea.
+You can invoke emotions in a lot of different ways
+in dyadic settings.
+So overall, what we're hoping to do is pave a path
+from advances in emotion science to new technologies
+for understanding expressive communication.
+And to recap a little bit,
+I had talked about how open-ended approaches to emotion
+based on semantic space theory
+paints a more nuanced picture of human expressive behavior
+than was traditionally assumed.
+And in fact, when you sort expressions
+into six categories or along two dimensions,
+that turns out to capture less than a third
+of the information that people reliably glean
+from facial expressions, vocal bursts, speech prosody,
+multimodal expressions, and so forth.
+And that means that affective computing methods
+that are based on those older taxonomies
+are really missing a big part of the picture.
+With new data sets and efforts like the Expo workshop,
+we're hoping to address the gap between advances
+in emotion science and machine learning research
+and applications.
+The data that we gather is in the wild,
+but we use large-scale experiments
+that allow for a more controlled measurement
+of how people represent the emotions
+that they're communicating and expressing.
+And this is perfect for prediction tasks.
+We've also seen today that dealing with in-the-wild data
+is an important challenge for generative tasks
+and it's becoming feasible by using pre-trained models
+that inherently involve a cleaner representation of data.
+Another approach that we've been using
+is to take prediction models and use them
+to mine for clean data for generative tasks.
+And that's in some ways the best of both worlds
+because you can combine psychologically valid measures
+derived from in-the-wild expressions
+with high-quality recordings of those same expressions.
+Ultimately, we're hoping to pave the way for new technologies
+that use expressive communication
+to better address human needs and improve human wellbeing.
+Earlier, we saw one incredible example,
+application and accessibility from Yutuan Shen
+in his talk about Project Euphonia.
+Other great applications include mental health
+and AI value alignment.
+And we're working with a separate nonprofit,
+the Hume Initiative, to establish guidelines
+for how those kinds of use cases should be pursued.
+And with that, I'd like to thank the team at Hume AI
+and the Hume Initiative for making all of this possible.
+And I'd like to thank, of course, the Exvo participants
+and everyone here for coming.
+And if you're interested in accessing
+any of the resources that I discussed today,
+the easiest way is to sign up at hume.ai.
+And with that, I'd love to answer your questions.
+Thank you.

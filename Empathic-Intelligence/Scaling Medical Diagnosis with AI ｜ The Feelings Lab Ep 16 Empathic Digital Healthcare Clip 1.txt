@@ -1,0 +1,49 @@
+This is work because now we've just both said, well, it's one of those, you know, when you
+see it things.
+And something that is to use a word we've used a million times on this podcast.
+So ineffable, how do you then train machines to help you identify it?
+Talk about closing some of those gaps and jumping over some of those hurdles, Dennis.
+How do you then employ the use of machine learning and AI to help us identify and diagnose
+this thing that very smart individuals sit here and go, well, it's hard to say, but we
+don't know enough, but we know when we see it.
+Yeah, that's a great point.
+In fact, clinicians who do routine diagnosis will say to me, they can see which kids have
+autism as they walk from their office through the waiting room to the clinical evaluation
+room.
+And I believe it.
+What I always wanted to do is figure out how to quantify that and provide it to non-specialists.
+It's like, ultimately, when you think about AI and medicine, in a lot of cases, it's going
+to be scaling specialist.
+It's going to be scaling the intuitive specialists, behaviors and abilities to the community settings
+to disperse it.
+It's a lower socioeconomic settings, which is so, so important, right, to increase diversity
+and inclusion and everything else, which isn't happening at all today in the autism
+world, both for diagnosis and for therapeutics.
+Huge disparities there.
+So to answer your question, though, I think the one thing I just want to be clear for
+the audience is that AI is not anywhere near where it needs to be able to detect automatically
+autism in a video, right, or in a sound.
+But we're getting there, you know, ultimately.
+So the Cognola system, the Chemist-DX system does require human inputs and human observations.
+We've just figured out how to minimize and optimize the amount of human input and observations
+that are required.
+And those are essentially vectors that get put together into the equation, essentially,
+and then those vectors combine, enable the machine learning system to run to produce
+scores.
+But the cool thing also about this is that as we receive those measures, in particular,
+we receive those measures from independent observers operating in parallel, independent
+iterator reliability becomes possible, something that's not possible today.
+And we're getting labels, essentially, generated on time sequence video data that become, you
+know, obviously powerful potentials for future AI model development.
+You indicated earlier that AI is only as smart as the data we give it, and right now we don't
+have a lot of data on these kinds of individuals.
+But the more we can succeed with like a system such as Chemist-DX, operationally in the future,
+there's going to be an opportunity to build smarter models that will obviate the need
+increasingly, although probably never entirely for human input in this equation.
+Yeah.
+And that's good because scaling continues to be, you know, a thing we have to worry about
+scaling.
+And of course, you know, then you're going to have issues of security and privacy and
+AI, you know, like performance drift and all these things we should be talking about.
+And we're very mindful of that.
+I just want to at least say that for now, just to give you an idea of how things work.

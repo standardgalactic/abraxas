@@ -1,0 +1,19 @@
+Why is the AI hitting a wall? What is the AI struggling with? And why is it struggling
+with it? Why do we need the humans? What's going on?
+I think Jenny hit on a lot of those points, which is, you know, when you have things like
+Sarkasm, it's a real challenge to build an algorithm that understands that. Right. And
+because it's so contextual, right? The earliest algorithms to detect things like hate speech
+and toxicity were basically detecting certain words, you know, like swear words, they were
+detecting, you know, references to ethnicities, that sort of thing. And then feeding that to
+human moderators. And the human moderators had this massive pile of things to go through, right.
+And as the algorithms have gotten better, and they're still like nowhere near human performance,
+but as they've gotten better, the human moderators have less to do because they've filtered out all
+the things that definitely aren't toxic, that have good intent behind them and so forth,
+and narrowed it down to things that are much more likely to be toxic. And, you know, they can even
+increase the threshold and say, all right, well, let's take more of those edge cases and have humans
+look at them. We wouldn't have been able to consider these before, because then we would have
+just had too many things to moderate. But now we can get more precise. So the algorithms are
+getting better with large language models. And I'm sure actually, I'm curious for Jenny,
+how you're sort of incorporating the newest advances in large language models. But there's
+been huge progress in in sort of exactly this, like taking the context of a conversation and
+using it to inform predictions as to whether something is hate speech or not.

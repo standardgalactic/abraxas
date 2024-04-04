@@ -1,0 +1,19 @@
+So the humans are part of it. They're the people we need the humans. They're the best
+at identifying the new things and spotting the new things. And then once your humans
+identify that, and I understand that I'm oversimplifying to a great degree, but we'll say the humans
+identify the new things. That's when the AI steps in to then detect the things the humans
+found. Am I following that? Is that correct, Ish? Right?
+Yes, there's a few different things that play as part of this whole process. So one part of it
+is, of course, the training data that we feed to our AI. And there we need humans to accurately
+tag the data. So that's why we built these huge databases of tagged content. But then another
+part of it is that there are certain things that just AI in general has a really hard time as
+you know, being able to identify. And some of the biggest challenges we have there is, of course,
+context, its modality, its referentiality, and its sarcasm. So there as well, we use a combination
+where first the comments are run by our AI. And then if the AI doesn't have high enough confidence
+in these types of situations, then there is a human or several humans that will then kind of weigh in
+and ultimately we can then use that data for training purposes. And then we also have a lot of
+quality assurance in place because of course, everything on social media is public. So we
+need to make sure that we maintain the highest possible accuracy at all times when we take
+actions. So there's a lot of different parts, but ultimately all the time, it's AI and humans
+working very closely together. And that's really what we believe is essential to be able to do this
+well. Yeah, now we hear that a lot, especially in the conversations we're having.

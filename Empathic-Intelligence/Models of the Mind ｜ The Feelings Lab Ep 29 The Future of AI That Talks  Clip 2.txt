@@ -1,0 +1,43 @@
+Most recent and limited exposure to this world is talking to Alan about his work and when
+we talk about detecting emotions and interpreting them and just the way in which he's leveraging
+vocal bursts and facial muscles and expressions and all these different things.
+And so I can't help but wonder how did you guys set out to detect those things with what
+I imagined was a very different tool set available to you back then.
+Yeah, well, in one way to think about it, I mean, emotion means many things.
+So when we talk about someone having an emotion, we kind of imagine, okay, there's things going
+on in their face.
+They look angry.
+There's things going on inside their body.
+We can't see.
+Maybe their heart rate is speeding up, maybe hormones are pumping through their blood.
+They probably say to themselves, oh, I'm angry.
+And so those are always sometimes called components of emotion.
+And so what Alan does is he tends to look at facial expressions, which is one thing
+that often people associate as an indicator of emotion, but also emotion involves thinking
+and cognition.
+And so when I approach the problem, coming more from cognitive psychology, which sort
+of tries to come up with models of the mind, was, well, what are the things that you think
+about that might trigger you to have an emotion?
+And so, and there's different theories about emotions arise.
+And in my and Stacy and myself's work, we're most influenced by what are called appraisal
+theories.
+Appraisal, yeah.
+I argue that when you see an event, you think about, okay, how does this event relate to
+me?
+Is it going to help me goals?
+Are they going to hurt my goals?
+Did Alan do it to me?
+Is he the one to blame?
+Typically.
+You control the damage he's about to do.
+And so these are all kind of thoughts and the argument for appraisal theory is that those
+thoughts are antecedents of an emotion.
+So you see an event and like the bear coming in the room doesn't trigger an emotion.
+When you realize that bear is a threat to your bodily, to your life, then you start
+to feel the fear from an appraisal theory perspective.
+So we approached emotion from the thinking side.
+So how would AI, given a description of, okay, this bear has entered the room or my paper
+just got rejected right before my tenure review, how do those thoughts trigger an emotion?
+And then you might associate an expression with that or working backwards if Alan recognizes
+an expression, I might try to reconstruct, well, what are likely the appraisals, the
+judgments that person made that elicited that facial expression?

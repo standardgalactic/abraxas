@@ -1,0 +1,64 @@
+If you guys can help me sort of at my head around the generate sub-challenge and sort
+of the exciting things within this sub-challenge, what we're hoping to achieve, what you're
+looking for.
+Yeah, sure.
+Absolutely.
+I'll go quick and say like the hardest part about working with like these computational
+models is generating laughter.
+It's the hardest part of comedy too, right?
+Generating laughter, like actually making people laugh is a hard part.
+Laughter is just one expression that you want to make happen, to elicit, but it's not the
+only one.
+In our previous work, we worked with a dataset that was maybe 20 times smaller than the dataset
+that we have here, maybe a little bit less, and it was the best that was available at
+the time.
+We're super excited at the quality, scale, size, diversity of the data that's here because
+it doesn't just cover laughter, it covers a whole bunch of different styles, and then
+on a bit more specific stuff or emotions, maybe I'll throw to Gautier you can share
+some more details.
+What's really interesting about generating laughter, and I think vocal burst in general,
+is the fact that it has never been done before at this scale.
+The previous project, I think it's from what I remember, the first project that tried to
+do this, and what's really interesting about this is that as Alan mentioned, you don't
+have to generate some semantics, so when you want to, you know, there is a lot of like
+voice generation, you know, but that tries to generate voice, but it's a specific task
+where you're asking, generate a voice that's going to read this text for me.
+So you're asking something very specific, here we're asking something different, it's
+like just generate a laughter, and I give you no condition, no constraints, just generates
+me, generates laughter or generate horror.
+And so this is, when you think about it, even for a human, this is hard, like if I'm asking
+you to generate, like generate a honest, you know, like true laughter or generate what
+is horror, you have to think about it, like what is horror for me?
+What, okay, okay, how can I convey this emotion?
+Like we are paying actors to do this, because this is hard.
+And so this is why this task is amazing.
+And like, you know, from just an AI perspective, but also from a human perspective, try to
+understand what, you know, try to deconstruct how a machine can learn this, this like
+generation, these emotions.
+And I get into these ideas through the laughter project.
+So I was like, Oh, laughter is amazing, because the task is so well defined.
+And this is so hard to like generate the whole diversity of laughter.
+And then I met Alan and I was like, Oh, it's not about laughter.
+It's about vocal burst.
+It's even more diverse than laughter.
+Like this is about emotion.
+This is what's interesting.
+So yeah, I'm very excited with this challenge, because one of the main bottleneck and one
+of the main thing that was preventing the community to like move forward for this task
+was the access of data.
+As Corey mentioned, you know, the big data challenges were always the thing that was
+like kind of accelerating progress.
+Like really, it was the necessary step, you know, like releasing this large amount of
+data and tell people, okay, guys, you have to give your best and like try to solve this task.
+And so we are at this point where we can, I mean, like you can provide the data and
+that's awesome to the community.
+And yeah, if you look at lots of tasks, like image recognition, translation, I had
+other tasks in mind, but like lots of big or like movie suggestions, all the big challenges
+in, let's say, artificial intelligence, like a huge bottleneck for the progress was the
+release of the data, like the release of the data making this like publicly available.
+And once like such like data sets has been like made publicly available, progress was
+huge because the whole community, it's not about like one group, one people, or like
+even one group, it's like what like the whole community that was working on it and like
+try to improve the benchmarks.
+So that's, that's really exciting.
+Sounds very exciting.
