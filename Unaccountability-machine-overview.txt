@@ -1,0 +1,1613 @@
+Unaccountability Machine Overview
+
+ChatGPT 4o
+
+THE UNACCOUNTABILITY MACHINE
+
+Why Big Systems Make Terrible Decisions –
+and How the World Lost Its Mind
+
+DAN DAVIES
+
+To Tess, Joe, Poppy and Rosie
+And also, to the middle managers of the world, the designers
+of spreadsheets and the writers of policies. Your work may be
+prosaic, but you are the ones who shape the world we live in.
+
+Contents
+Author’s Note ix
+Part One: The Nature of the Crisis 1
+Introduction 3
+1 ‘Something’s Up’ 9
+2 Stafford Beer 37
+3 Aliens Among Us 63
+Intermission: Computing Ponds and Rabbit Holes 87
+Part Two: Pathologies of the System 91
+4 How to Psychoanalyse a Non-human Intelligence 93
+5 Cybernetics Without Diagrams 115
+Intermission: Decerebrate Cats 137
+Part Three: The Blind Spots 139
+6 Economics and How It Got That Way 141
+7 If You’re So Rich, Why Aren’t You Smart? 169
+Intermission: Meanwhile, in Chile 193
+Part Four: What Happened Next? 199
+8 Enter Friedman 201
+9 The Morbid Symptoms 229
+10 What Is to Be Done? 257
+Further Reading 275
+Acknowledgements 283
+Index 285
+
+ix
+Author’s Note
+A great deal of intellectual energy is wasted on trying to attribute events to the categories of ‘conspiracy or cock-up’, when
+most of them should probably be blamed on something more
+abstract. History is the study of decisions, not of events, and
+many decisions are best understood as the outcome of larger
+systems rather than individual acts of will.
+Systems don’t have motivations, so they don’t have hidden
+motivations. If the system consistently produces a particular
+outcome, then that’s its purpose. But on the other hand, systems
+don’t make mistakes. Just as it’s impossible to get lost if you
+don’t know where you’re going, a decision-making system does
+what it does and then either lives with the consequences or dies
+of them.
+This book talks about a lot of people, and at various points
+it might look like I’m criticising someone, often quite harshly.
+That’s usually not what I’m trying to do. The people are
+brought into the story because that’s the only way to sensibly
+describe the systems they were part of. If it hadn’t been them,
+it would have been someone else. If this book had a real villain,
+we might identify it as ‘the regrettable tendency of complex
+systems to have opaque and volatile dynamics’.
+
+part one
+THE NATURE OF THE CRISIS
+
+3
+Introduction
+What counts as a crisis is the expectation of loss of
+control; in other words, cybernetic breakdown in an
+institution.
+Stafford Beer, Brain of the Firm (2nd edn), 1981
+When we avoid making a decision, what happens to it?
+This is a book about the industrialisation of decision-making
+– the methods by which, over the last century, the developed
+world has arranged its society and economy so that important institutions are run by processes and systems, operating
+on standardised sets of information, rather than by individual human beings reacting to individual circumstances. This
+has led to a fundamental change in the relationship between
+decision makers and those affected by their decisions, the vast
+population of what might be called ‘the decided-upon’. That
+relationship used to be what we called ‘accountability’, and this
+book is about the ways in which accountability has atrophied.
+In 1954, for example, Sir Thomas Dugdale resigned from
+the British cabinet over something thereafter known as ‘the
+Crichel Down affair’ (a relatively trivial piece of malpractice
+relating to some farmland which had been requisitioned during
+the Second World War). It was unclear whether he had actually been involved in the decision, but in the climate of the day
+
+The Unaccountability Machine
+4
+his position was untenable – as the minister in charge, he bore
+responsibility for what happened. This small but honourable
+act ensured that Dugdale’s name will live on eternally; both he
+and the small area of Dorset which brought about his downfall
+are mentioned every time a modern British politician dodges
+the blame.
+On the other side of the Atlantic, in 1953, President Harry S.
+Truman had a sign on his desk reading ‘The Buck Stops Here’.
+Sixty-six years later, President Donald Trump mused that ‘the
+buck stops with everybody’ when asked who bore responsibility for a government shutdown. Anyone who has dealt with a
+corporation or bureaucracy of any size, and who is over the
+age of forty, is likely to have a vague sense that you used to be
+able to speak to a person and get things done; the world wasn’t
+always a maze of options menus.
+Industrial societies have been given a great deal of warning
+that something like this was going to happen. In the 1940s, the
+‘managerial revolution’ was regarded as the likely outcome of
+the increasing complexity of the economic system and the scale
+of private and public-sector organisations which had developed to deal with it. The decline in individual accountability
+for unpopular decisions is not – or not only – a form of moral
+decline on the part of our rulers. It’s also a consequence of
+the fact that there are fewer decision makers than there used
+to be. Nearly all the commands and constraints which afflict
+the modern individual, the decisions which used to be made
+by identifiable rulers and bosses, are now the result of systems
+and processes.
+It is most obvious that something has changed when a decision which used to be made by a human being is made by a
+literal algorithm – a computer program. For example, people
+worry a great deal about, and legislators attempt to regulate,
+
+Introduction
+5
+the practice of using artificial intelligence to decide whether
+you are turned down for a loan or denied insurance coverage.
+But a decision-making system is not just a computer. Financial
+and other decisions have been made on the basis of handbooks
+and lists of criteria since the days in which they were recorded
+with quill pens. The very parliamentary committees that
+attempt to regulate artificial intelligence are themselves bound
+by opaque and complicated rule books, designed to standardise
+their proceedings and to avoid having decisions attributed to
+any individual human being.
+For a while, in the early days of this profound social change,
+people tried to understand what was going on. The study of
+decision-making systems was a big thing – they called it ‘cybernetics’. But for a number of reasons, it never took off.
+The most important reason was that the new science was a
+victim of its own technological success. The key figures in the
+early days of cybernetics – people like Norbert Wiener, John
+von Neumann and Claude Shannon – are almost all much more
+famous as pioneers of computing. In trying to invent a mathematical language to describe their problem, they quickly made
+a lot of discoveries relating to the representation of information and the operations that could be performed on it. These
+discoveries turned out to be extremely useful in the design of
+electronic circuits. Consequently, there was a huge and rapid
+brain drain away from the abstract study of decision-making
+systems and into the new industry of manufacturing computers. In many ways, when presented with such a golden
+opportunity, you would have had to have been rather odd not
+to have taken it.
+ChatGPT
+Summary of "The Unaccountability Machine"
+"The Unaccountability Machine: Why Big Systems Make Terrible Decisions – and How the World Lost Its Mind" by Dan Davies explores the evolution and consequences of decision-making processes in large systems and institutions. The book is divided into four main parts, each addressing different aspects of this transformation and its implications.
+
+Part One: The Nature of the Crisis
+In the first part, Davies sets the stage by describing the crisis of decision-making in contemporary society. He argues that as decision-making has become industrialized and systematized, the personal accountability that once characterized leadership and management has diminished. Davies uses historical examples, such as the resignation of Sir Thomas Dugdale over the Crichel Down affair, to illustrate how accountability has eroded over time. He explains that modern systems and processes have taken over many decisions that used to be made by individuals, leading to a disconnection between decision-makers and those affected by their decisions.
+
+Part Two: Pathologies of the System
+The second part delves into the pathological aspects of these decision-making systems. Davies examines how these systems, often designed to be efficient and rational, can produce unintended and often harmful outcomes. He discusses the concept of cybernetics and its initial promise to understand and improve decision-making. However, as technology advanced, the focus shifted from studying these systems to building computing technologies, leaving many of the theoretical insights underexplored.
+
+Part Three: The Blind Spots
+In this section, Davies explores the blind spots and limitations inherent in large decision-making systems. He critiques the economic theories and practices that have contributed to the current state of affairs, questioning the assumptions and motivations behind them. He also addresses the over-reliance on quantitative data and algorithms, which can overlook important qualitative factors and human elements in decision-making.
+
+Part Four: What Happened Next?
+The final part of the book looks at the outcomes of these systemic issues and proposes ways to address them. Davies discusses the influence of figures like Milton Friedman on economic policy and how their ideas have shaped the current landscape. He also identifies the "morbid symptoms" of a system in crisis, such as growing inequality and loss of trust in institutions. Finally, he offers suggestions for reforming decision-making processes to restore accountability and improve outcomes.
+
+Conclusion
+Davies' book is a critical examination of how modern decision-making systems have evolved, the problems they have created, and the potential solutions for restoring accountability and effectiveness. By highlighting the historical context and theoretical foundations of these systems, he provides a comprehensive analysis of why big systems often make terrible decisions and how society can address these challenges.
+
+
+Related to this fact, many of the people who were involved
+in the early days of cybernetics were a bit odd. In this book,
+we’ll look at Stafford Beer, a British management scientist
+
+The Unaccountability Machine
+6
+and consultant. Among other things in his life, he designed a
+method of holding conferences based on an icosahedron, and
+he tried to use an algae-filled pond as a computer. And he was
+the sensible one – the cybernetician who obtained high-powered
+consultancy jobs in industry and provided huge amounts of
+support to the real oddballs working in the field. The more I
+have looked into the science of ‘management cybernetics’, the
+more I have realised that there is no way to rid it of a fundamental core of eccentricity.
+But something else also happened, because cybernetics
+didn’t die a natural death. The most obvious place for these
+ideas about the organisation of a modern economy would
+surely have been within the subject of economics, but they
+didn’t end up there. Some elements of management cybernetics – even some of the ideas of Stafford Beer himself – live on in
+business schools, usually as personal idiosyncrasies of individual researchers. In the economics departments, however, they
+have their own theories.
+The way in which the economics profession ignored most
+of the work done in information theory is striking. It ignored
+its own traditions relating to uncertainty and decision-making,
+instead ploughing ahead with a frighteningly simplistic view of
+the world in which everything could be reduced to a single goal
+of shareholder value maximisation.
+Why did they do this? Any account of how we got to where
+we are must cover three intellectual and organisational revolutions. There was one that happened but we forgot about it – the
+managerial revolution, where control was transferred from
+owners and capitalists to professional administrators. There
+was one that looked like it was going somewhere interesting
+but never arrived – the cybernetic revolution, which might have
+helped us understand that what mattered were the systems of
+
+Introduction
+7
+professional management rather than the individual managers.
+And then, sometime in the early 1970s, we had the neoliberal
+revolution, which succeeded in shaping our society and its discontents, right up to the present day.
+In a more fortunate counterfactual history, this book might
+have told the story of an academic debate between the neoliberal
+economists and the management cyberneticians, on the nature
+of a corporation and the organisation of decision-making. But
+that debate didn’t happen. Or rather, it did happen, but not
+with diagrams and equations. It played out, very suddenly, with
+helicopters and guns at the presidential palace of La Moneda,
+in Chile on 11 September 1973, when the government of Salvador Allende was brought down by a coup led by General
+Augusto Pinochet, and Stafford Beer’s consultancy project to
+bring a new form of economic organisation to the country
+came to an abrupt end.
+Cybernetics was arguably in trouble long before the coup,
+but that was the moment that the world finally chose a different
+path. In doing so, we began to get into the habit of ignoring the
+fact that every year, more of the decisions that affect our lives
+are made not by people but by systems. Strange, alien intelligences with desires and drives quite different from our own.
+They’re taking over the world – and not only that, for it seems
+that some of them are going mad.
+But we should start this story at the beginning.
+ChatGPT
+Extended Summary of "The Unaccountability Machine"
+"The Unaccountability Machine: Why Big Systems Make Terrible Decisions – and How the World Lost Its Mind" by Dan Davies investigates the evolution and consequences of decision-making processes within large systems and institutions. The book is organized into four parts, each analyzing different facets of this transformation and its impacts on society.
+
+Part One: The Nature of the Crisis
+Davies begins by detailing how decision-making has evolved into an industrialized process, leading to a decline in individual accountability. Historical examples, such as the resignation of Sir Thomas Dugdale over the Crichel Down affair, illustrate the loss of personal responsibility in modern institutions. He discusses how decision-making has shifted from individuals to systems and processes, resulting in a disconnect between decision-makers and those affected by their decisions. The erosion of accountability is highlighted as a significant issue, emphasizing the change from a culture of personal responsibility to one dominated by impersonal systems.
+
+Part Two: Pathologies of the System
+This section explores the pathological aspects of these decision-making systems. Davies delves into cybernetics, an early study of decision-making systems, and its initial promise to improve understanding and management of decisions. However, the field's potential was overshadowed by the rapid development of computing technologies. Key figures in cybernetics, such as Norbert Wiener and Claude Shannon, contributed more to the advancement of computing than to the theoretical study of decision-making systems. Davies argues that the complexity and efficiency of these systems often lead to unintended and detrimental outcomes.
+
+Part Three: The Blind Spots
+Davies examines the blind spots and limitations inherent in large decision-making systems. He critiques the economic theories and practices that have contributed to the current state of affairs, questioning the assumptions behind them. He highlights the over-reliance on quantitative data and algorithms, which often overlook important qualitative factors and human elements. The neglect of management cybernetics in economics is particularly noted, with its ideas surviving only in business schools as the personal idiosyncrasies of individual researchers. The dominance of shareholder value maximization as a simplistic goal is identified as a key problem.
+
+Part Four: What Happened Next?
+In the final part, Davies explores the outcomes of these systemic issues and proposes potential solutions. He discusses the influence of neoliberal economists, like Milton Friedman, on shaping current policies and their consequences. The "morbid symptoms" of a system in crisis, such as growing inequality and loss of trust in institutions, are examined. Davies offers suggestions for reforming decision-making processes to restore accountability and improve outcomes. He contrasts the neglected managerial and cybernetic revolutions with the successful neoliberal revolution, which has significantly shaped modern society.
+
+Additional Insights from the Introduction
+Davies provides further context on the early days of cybernetics and the eccentric figures involved, like Stafford Beer. Beer, a British management scientist, attempted unconventional methods, such as using an algae-filled pond as a computer. Despite the oddity, cybernetics had the potential to revolutionize the understanding of decision-making systems. However, the focus shifted to computing technology, sidelining the theoretical advancements in management cybernetics.
+
+Davies also reflects on the broader intellectual shifts that led to the current state. The managerial revolution transferred control from owners to professional administrators. The cybernetic revolution, which aimed to understand decision-making systems, never fully materialized. Instead, the neoliberal revolution took hold in the 1970s, shaping contemporary economic and political landscapes.
+
+A significant historical event, the 1973 coup in Chile, marked a turning point. The coup ended Stafford Beer's consultancy project, which aimed to implement a new form of economic organization. This event symbolized the global shift away from management cybernetics towards neoliberal policies.
+
+Conclusion
+Dan Davies' "The Unaccountability Machine" critically examines the evolution of decision-making systems, highlighting the decline of accountability and the rise of impersonal systems. By exploring historical contexts, theoretical developments, and key intellectual shifts, Davies provides a comprehensive analysis of why big systems often make terrible decisions and suggests ways to address these challenges.
+
+9
+1
+‘Something’s Up’
+Capitalism is disappearing, but Socialism is not replacing
+it. What is now arising is a new kind of planned,
+centralised society which will be neither capitalist nor, in
+any accepted sense of the word, democratic. The rulers
+of this new society will be the people who effectively
+control the means of production: that is, business
+executives, technicians, bureaucrats and soldiers.
+George Orwell, ‘James Burnham and the Managerial
+Revolution’, 1946
+‘Yes. But those clowns put us in an awkward place where we’re
+going to have to thread the needle.’
+An executive at Fox News called Ron Mitchell wrote those
+words, in an email which later showed up in court documents,
+and you could hardly ask for a better summary of the state of
+Republican politics at the beginning of the 2020s. The litigation in which Mitchell was quoted related to a defamation case
+which ended up being settled for $787.5m, the second largest
+such case in American history
+The nature of the defamation was about as serious as they
+get; over a period of months, Fox News had repeatedly accused
+Dominion Systems, a manufacturer of voting machines, of
+conspiring to rig the 2020 US presidential election. This was,
+
+The Unaccountability Machine
+10
+to be clear, unequivocally false. Strangely, though, the emails
+and texts turned up in pre-trial disclosure seemed to confirm
+that nearly all the executives and journalists at Fox News knew
+that this was false, and that the people making the accusations
+were ‘kooks’, ‘wackadoodle’ and ‘cruel and reckless’. But they
+kept broadcasting them anyway.
+Why did they do it? This question never got put to them
+properly, because the case was settled on the courthouse steps.
+But the cache of emails suggests that they felt they had no
+choice. Having initially reported, correctly, that Donald Trump
+had lost the election, Fox News was completely unprepared for
+the consequent backlash from its viewers. The network had
+spent the previous four years working its audience up to a frenzy
+and the juggernaut couldn’t be turned round – every attempt to
+break the bad news was treated as disrespect, and resulted in
+the loss of millions of viewers to less scrupulous broadcasters.
+In the words of one of Fox News’s managing editors, ‘weak
+ratings make good journalists do bad things’.
+Many people destroyed their reputations and careers over
+the 2020 election, and the USA came considerably closer to
+an actual coup than anyone would have liked to have seen in
+the Capitol riots of 6 January 2021. The Fox News–Dominion litigation gives a window into what was happening, but
+it’s a darkened window, through which it’s difficult to really
+see the structure of cause and effect. Nearly all the individual
+people involved wanted to be doing almost anything else rather
+than what they actually did. Even when they were broadcasting
+things they must have known to be false, they hoped that they
+weren’t believed. What was going on here? How did it come to
+this?
+
+‘Something’s Up’
+11
+Crimes without criminals
+I should probably introduce myself at this point. I have a professional interest in situations like this – cases where the exact
+thing that nobody wanted to happen has happened.
+I was once an investment banker, and during the bouncingrubble period of the last global financial crisis, I wrote a book
+called Lying for Money, about the history and economics of
+financial fraud. One of the big questions people were asking
+at that time was why, despite there being a strong popular perception that hanging was too good for them, bankers were not
+going to jail. I ended up reaching a pretty surprising conclusion:
+that although there were a number of bad reasons why prosecutors were reluctant to take on the vested financial interests,
+the basic problem was that in a democratic society, if you want
+to put someone in prison then you need them to intentionally
+carry out a specific criminal act.
+Many years ago, in an earlier financial crisis linked to small
+savings banks in the USA during the 1980s, the fraud investigator Bill Black had coined the concept of a ‘criminogenic
+organisation’. It referred to an institution in which incentives
+and management systems were structurally designed to ensure
+that crimes would be committed. This was an integral part of
+his theory of the savings bank crisis, that of a ‘control fraud’.
+This occurred when a bank came under the control of a criminal, who was then able to set in place a system of incentives
+which ensured that fraudulent loans would be made and profits
+declared, which would naturally flow into the fraudster’s
+pockets.
+This solved several of the key problems that had bedevilled
+white-collar criminals over the years, the biggest of which was
+the need for overt acts of embezzlement. Stealing money by
+dishonesty had previously tended to require you to make illegal
+
+The Unaccountability Machine
+12
+transactions – improper payments or false bookkeeping entries
+– which posed a risk of detection. In a control fraud, the dishonesty resided in the overall scheme and all the transfers of
+cash were legitimate – dividends, salaries, stock options and
+commercial transactions with parties connected to the management. Furthermore, there was often a number of layers
+between the guilty mind and the criminal act – unless there
+was a paper trail, most of the prosecutable things were done
+by people other than those that the authorities would naturally
+want to prosecute.
+As it happened, the technology was in its infancy in the
+1980s and most of the crooks pursued by Bill Black were careless about leaving the kind of paper trail he needed. But by the
+beginning of this century things had got weirder. After investigating some of the biggest scandals of the financial crisis,
+I concluded that not only was there no paper trail between
+the low-level crooks and the bosses, in most cases there was
+actually no connection. I ended up coining the term ‘self-organising control fraud’. The idea was that the financial system
+of the developed world, from around the fall of Communism
+in Europe, had reached a point where the overall system of
+incentives in the economy was so criminogenic that banks
+had a natural tendency to organise themselves into fraudulent
+behaviour. All the top executives had to do was set unrealistic profitability targets and underinvest in legal departments
+and compliance systems. It wasn’t so much that anyone had
+told their traders what to do; more that nobody ever organised things in such a way that they wouldn’t form a criminal
+conspiracy.
+ChatGPT
+Analysis of "The Unaccountability Machine: ‘Something’s Up’"
+Chapter 1: ‘Something’s Up’
+
+Key Points:
+Orwell's Prediction:
+
+George Orwell's 1946 essay "James Burnham and the Managerial Revolution" predicted a new, planned, centralized society. This society would be controlled by business executives, technicians, bureaucrats, and soldiers, rather than traditional capitalists or democratically elected leaders.
+Fox News and the Dominion Case:
+
+In the early 2020s, Fox News faced a defamation lawsuit from Dominion Systems, a voting machine manufacturer, over false claims of election rigging during the 2020 US presidential election.
+Internal communications revealed that Fox News executives and journalists knew the claims were false but continued to broadcast them due to fear of losing viewers to more unscrupulous broadcasters. This resulted in a settlement of $787.5 million, the second largest defamation case in American history.
+The Concept of 'Crimes Without Criminals':
+
+Dan Davies introduces himself and his interest in cases where undesirable outcomes occur despite no one intending them.
+He relates this to his previous work on financial fraud, particularly the idea of ‘criminogenic organizations’ coined by Bill Black. These are organizations structured in a way that incentivizes criminal behavior.
+Davies suggests that the financial systems of the developed world have become so criminogenic that they naturally tend to organize themselves into fraudulent behavior without direct criminal intent from individuals.
+Self-Organizing Control Fraud:
+
+Davies introduces the concept of ‘self-organizing control fraud,’ where the system’s incentives naturally lead to fraudulent behavior.
+Executives set unrealistic profitability targets and underinvest in legal and compliance systems, creating an environment where fraudulent activities can flourish without direct orders from the top.
+Analysis:
+Davies uses historical context, contemporary events, and theoretical concepts to build a narrative about the failures of modern decision-making systems. By examining Fox News's behavior during the 2020 election and linking it to broader trends in financial fraud, he illustrates how large systems can produce unethical or harmful outcomes without clear individual culpability. This chapter sets the stage for a deeper exploration of how and why these systems operate as they do, and what implications this has for accountability in modern society.
+
+
+‘Something’s Up’
+13
+The polycrisis and me
+There is a definite family resemblance between the selforganising criminogenicity of the 2008 financial crisis and the
+stuff that went on at Fox News in 2020 – the ‘criminogenic
+organisation’ might really just be a special case of the ‘structurally bad decision-making organisation’. But, when provided
+with a lot of spare time during the pandemic, I started wondering more about the raw material of the Capitol Hill riots. These
+angry people, whose reactions were so frightening, so difficult
+to control – where did they come from?
+To a certain extent, of course, Fox News made them. Over
+twenty-five years, it had become a media colossus, largely based
+on two creative insights. First, that some people enjoy being
+angry, and will consume their rage as a product. And second,
+that some presenters have the gift of making people angry, just
+like a comedian can make people laugh.
+But there’s more to it than that. Fox News couldn’t actually
+control the rage of its audience, as it belatedly found out. And
+it’s not intellectually satisfying to create a theory of Trump
+voters that only explains that one phenomenon. Because
+almost everywhere you look in the world over the last couple
+of decades, you will find popular movements and trends that
+look quite similar. Silvio Berlusconi was the Trump of Italy. Jair
+Bolsonaro was the Trump of Brazil. Angry people, politically
+incoherent populist politicians and media organisations that
+sell productised rage are everywhere. It can’t be a coincidence;
+we need a theory that covers them all.
+The historian and writer Adam Tooze refers to a ‘polycrisis’
+of the twenty-first century. This is an umbrella term covering a
+lot of these phenomena, held together by a kind of structural
+resemblance. The defining characteristic of the polycrisis is a
+loss of control by the previously existing hierarchy. It’s often
+
+The Unaccountability Machine
+14
+associated with an economic crisis of some sort, as in Greece in
+the early 2010s, but not always. There’s a sudden loss of prestige,
+as the professional and managerial class makes a high-profile
+mistake. And the populists and the merchants of rage step into
+that gap. So the questions that need to be answered are: how
+does this happen? And why?
+The people who left and came back
+One of the stylised facts that interested me is that the people
+most involved in the ground level of the polycrisis were often
+the ones who had been disenfranchised for long periods before
+it began. You could see this in the Brexit vote in the UK. The
+turnout for that referendum was shockingly high, compared
+to the previous decade of general elections. The winning vote
+came from people who had not voted for a long time.
+But why would they have bothered voting? Think about the
+period from the fall of the Berlin Wall in 1989 to the bankruptcy of Lehman Brothers in 2008. There had been hardly any
+choices to make. If you wanted to vote against globalisation,
+you couldn’t. Wanted to vote for higher top rates of income tax
+or tighter bank regulation? Couldn’t. Or the level of interest
+rates – it wasn’t even possible to have a political opinion about
+it. You might be able to vote against further privatisation, but
+there was no political party that would reverse the old ones.
+If you were against immigration, you had no party to vote for
+either. All you had were choices between moderate centrist
+technocrats, competing on the grounds of who might manage
+the system more competently, in an economic context of gently
+growing prosperity. People lost interest because it was rational
+for them to lose interest – nothing needed to change and there
+was no way to change it.
+
+‘Something’s Up’
+15
+Then the 2008 financial crisis happened, followed by a long
+period of recession and austerity, and suddenly it turned out
+that the technocratic consensus wasn’t as competent or moderate as it had appeared. Ten to twenty per cent of the electorate
+suddenly realised that they might have to take an interest in
+politics after all. So they started paying attention again, and
+they didn’t have the basic assumptions of the mainstream. All
+they knew was that the people who used to be in charge seemed
+to have screwed things up mightily.
+The accountability sinks
+Bad things were happening, but they didn’t seem to be anybody’s fault. This was infuriating to everyone; the CEOs,
+political leaders and other figureheads had been drawing big
+salaries and bonuses, and telling all of us that they knew best,
+but it turned out that they didn’t even know what was going on
+in their own organisations. There was no mechanism to punish
+individual human beings, so the hoi polloi defaulted to what
+seemed like the only alternative – to use the democratic powers
+available to them to tear down the whole system.
+The relationship between experts, decision makers and
+the general public had become completely dysfunctional. This
+wasn’t really a crisis of managerialism or a crisis of political
+legitimacy – it was a crisis of accountability. And if accountability was at the root of the crisis, then maybe the things to
+look at were the mechanisms that cause it to be diminished.
+Consider, for example, the following situation. A characteristically modern form of social interaction, familiar from the
+rail and air travel industries, has become ubiquitous with the
+development of the call centre. Someone – an airline gate attendant, for example – tells you some bad news; perhaps you’ve
+
+The Unaccountability Machine
+16
+been bumped from the flight in favour of someone with more
+frequent flyer points. You start to complain and point out how
+much you paid for your ticket, but you’re brought up short by
+the undeniable fact that the gate attendant can’t do anything
+about it. You ask to speak to someone who can do something
+about it, but you’re told that’s not company policy.
+The unsettling thing about this conversation is that you progressively realise that the human being you are speaking to is
+only allowed to follow a set of processes and rules that pass on
+decisions made at a higher level of the corporate hierarchy. It’s
+often a frustrating experience; you want to get angry, but you
+can’t really blame the person you’re talking to. Somehow, the
+airline has constructed a state of affairs where it can speak to
+you with the anonymous voice of an amorphous corporation,
+but you have to talk back to it as if it were a person like yourself.
+Bad people react to this by getting angry at the gate attendant; good people walk away stewing with thwarted rage, and
+they may give some lacerating feedback online. Meanwhile,
+the managers who made the decision to prioritise Gold Elite
+members are able to maximise shareholder value without any
+distractions from the consequences of their actions. They have
+constructed an accountability sink to absorb unwanted negative emotion.
+The fundamental law of accountability
+It is important to be clear, at this stage, exactly what an
+accountability sink is, and how they are constructed.* It’s not
+* If nothing else, you’ll have a few tips about how to set things up in
+your own job to divert any troublesome accountability that might be
+building up.
+
+‘Something’s Up’
+17
+just the way in which the hourly paid worker has been set up to
+act as a human shield. In order to make the sink effective, you
+need a combination of things: that person, plus a policy that
+there’s no way to appeal the decision by communicating with a
+higher level of management. (Even if you somehow managed to
+get the CEO’s phone number, you would come up against the
+fact that the policy was in place precisely to protect them from
+making that decision personally.)
+So the crucial thing at work here seems to be the delegation of the decision to a rule book, removing the human from
+the process and thereby severing the connection that’s needed
+in order for the concept of accountability to make sense. You
+could even coin a sort of law of management here:
+The fundamental law of accountability: the extent to
+which you are able to change a decision is precisely the
+extent to which you can be accountable for it, and vice
+versa.
+The construction of accountability sinks has damaging
+implications for the flow of information. For an accountability
+sink to function, it has to break a link; it has to prevent the
+feedback of the person affected by the decision from affecting the operation of the system. The decision has to be fully
+determined by the policy, which means that it cannot be altered
+by any information that wasn’t anticipated. If somebody can
+override the accountability sink and overrule a policy that is in
+danger of generating a ridiculous or disgusting outcome, then
+that person is potentially accountable for the outcome.
+When an organisation decides to create an accountability sink, it’s taking a risk. Implicitly, every rule is a model of
+the world – you can see both a model and a rule book as a
+
+The Unaccountability Machine
+18
+relationship between causes and effects, inputs and outputs.
+But because they can’t be a model of the whole world, both a
+rule book and a model have to leave out a lot of detail. That
+means that, like a model, a rule has to be based on assumptions
+about the kinds of situations that might need to have decisions
+made about them. So a notice on the wall of an office that says
+‘STAFF HAVE NO ACCESS TO THE SAFE’ implies a set of
+assumptions about the kind of person who might walk in off
+the street and ask staff to open the safe, while a notice that
+says ‘NO REFUNDS – NO EXCEPTIONS’ carries an implicit
+assumption that there will never be a case where a customer is
+entitled to a refund.
+When an unanticipated situation arises – either because
+something unusual has happened, or because the accountability sink was badly designed – there will be a mismatch between
+the input that the system anticipated, and what it actually
+got. And, because the system has been designed to work as an
+accountability sink, the outcome could be gruesome or absurd.
+Consider, for example, the tale of an airline and a few hundred
+furry mammals.
+The squirrel shredders of Schiphol
+Back in the 1990s, ground squirrels were briefly fashionable pets,
+but their popularity came to an abrupt end after an incident at
+Schiphol Airport on the outskirts of Amsterdam. In April 1999,
+a cargo of 440 of the rodents arrived on a KLM flight from
+Beijing, without the necessary import papers. Because of this,
+they could not be forwarded on to the customer in Athens. But
+nobody was able to correct the error and send them back either.
+ChatGPT
+Analysis of "The Unaccountability Machine: ‘Something’s Up’"
+Chapter 1: ‘Something’s Up’
+
+Key Points:
+Polycrisis and Fox News:
+
+Dan Davies connects the concept of self-organizing criminogenic organizations from the 2008 financial crisis to the actions of Fox News during the 2020 US presidential election.
+He explores the idea of a polycrisis, as defined by historian Adam Tooze, which involves multiple crises creating a loss of control by existing hierarchies.
+The Fox News defamation case is used to illustrate how large systems can perpetuate misinformation due to structural incentives.
+The Influence of Media and Populism:
+
+Fox News capitalized on anger as a product, tapping into and amplifying public rage. This phenomenon is not unique to the US, as similar populist movements have emerged globally.
+Davies emphasizes the need for a comprehensive theory to explain the rise of populism and the prevalence of politically incoherent, rage-fueled media.
+The Return of the Disenfranchised:
+
+The chapter discusses the re-engagement of previously disengaged voters, particularly highlighted by the Brexit vote in the UK.
+From 1989 to 2008, political choices were limited, leading to voter apathy. The financial crisis exposed the incompetence of the technocratic consensus, reawakening political interest among disenfranchised groups.
+Accountability Sinks:
+
+Davies introduces the concept of accountability sinks, where responsibility is deflected away from decision-makers to prevent backlash.
+He uses the example of customer service interactions where front-line employees follow rigid rules, preventing any meaningful resolution or feedback.
+The fundamental law of accountability states that the ability to change a decision is directly proportional to the level of accountability.
+Implications of Accountability Sinks:
+
+Accountability sinks break the feedback loop, preventing necessary information from reaching decision-makers, which can lead to disastrous outcomes.
+The anecdote about the squirrels at Schiphol Airport exemplifies how rigid adherence to rules without flexibility can lead to absurd and tragic situations.
+Analysis:
+Davies uses real-world examples and theoretical concepts to highlight the structural issues in modern decision-making systems. He draws parallels between the self-organizing criminogenic behavior of financial institutions and the actions of media organizations like Fox News. The chapter delves into the sociopolitical implications of these structures, exploring how disenfranchised voters re-engage in the political process and how accountability sinks contribute to systemic failures. The emphasis on the polycrisis framework underscores the interconnected nature of these challenges and the need for a holistic understanding to address them effectively.
+
+What could be done with them?
+It’s hard to think there wasn’t a better solution than the one
+
+‘Something’s Up’
+19
+that was carried out; faced with the paperwork issue, airport
+staff threw all 440 squirrels into an industrial shredder, apart
+from a few that had previously escaped from the animal containment facility. In later weeks, it transpired that this shredder
+was a specialised piece of machinery used in the poultry industry to dispose of worthless male chicks. Before the story hit
+the headlines, ground staff had over a period of months shredded 200 other squirrels, several dozen water turtles and a small
+flock of parakeets.
+The press release in which KLM apologised for this horrible
+fiasco was a masterpiece of the genre that’s still studied in business schools as an effective example of crisis PR. But it’s less
+fascinating for its deflection of blame than for the underlying
+system that it revealed.
+It turned out that the order to destroy the squirrels had
+come from the Dutch government’s Department of Agriculture, Environment Management and Fishing. However, KLM’s
+management, with the benefit of hindsight, said that ‘this order,
+in this form and without feasible alternatives,* was unethical’.
+The employees had acted ‘formally correctly’ by obeying the
+order, but KLM acknowledged that they had made an ‘assessment mistake’ in doing so. The company’s board expressed
+‘sincere regret’ for the way things had turned out, and there’s
+no reason to doubt their sincerity.
+So what went wrong, and who was responsible for shredding the squirrels? The first question is easier to answer than
+the second. KLM had set up a system whereby decisions about
+animals with the wrong import paperwork were left to someone
+*The De Meern Foundation for the Shelter of Squirrels, the Netherlands’
+only specialist squirrel rescue organisation, was particularly annoyed
+about not having been asked whether it could help.
+
+The Unaccountability Machine
+20
+at the agriculture department. In doing so, everyone involved
+had accepted that a low baseline level of animal destruction
+was tolerable – which is why they bought the poultry shredder.
+But, in so far as it is possible to reconstruct the reasoning, it
+was presumed that the destruction of living creatures would
+be rare, more used as a threat to encourage people to take care
+over their paperwork rather than something that would happen
+to hundreds of significantly larger mammals than the newborn
+chicks for which the shredder had been designed.
+The characterisation of the employees’ decision as an
+‘assessment mistake’ is revealing; in retrospect, the only safeguard in this system was the nebulous expectation that the
+people tasked with disposing of the animals might decide to
+disobey direct instructions if the consequences of following
+them looked sufficiently grotesque. It’s doubtful whether it had
+ever been communicated to them that they were meant to be
+second-guessing their instructions on ethical grounds; most of
+the time, people who work in sheds aren’t given the authority
+to overrule the government. In any case, it is neither psychologically plausible nor managerially realistic to expect someone
+to follow orders 99 per cent of the time and then suddenly act
+independently on the hundredth instance.
+For their part, the people in the agriculture ministry were a
+long way from the workers who had to carry out their instructions. They had a responsibility to protect the biosecurity of
+the Netherlands and implement the relevant European regulations that required health checks for imported squirrels. A
+policy stating that ‘commercial imports of pets must provide
+veterinary paperwork, or else the animals will be returned
+to their port of origin or euthanised at the expense of the
+importer’ looks sensible enough, and would cover the overwhelming majority of cases. And with the policy implemented,
+
+‘Something’s Up’
+21
+each decision to order the destruction of animal cargo is just a
+matter of following the policy.
+That’s the purpose of making policies – to reduce the
+amount of time and effort spent making decisions on individual
+cases. However, it’s also the root cause of this sort of problem.
+When you set a general policy, you either need to build in a
+system for making exceptions (and make sure that it is used), or
+you need to be confident that all the outcomes of enforcing that
+policy will be acceptable. In the case of the policy with regard
+to rodent imports, this wasn’t the case; the Schiphol incident
+led to an emergency debate in the Dutch parliament. The top
+management of KLM were, in fact, so appalled that within a
+few months the airline had a new policy of refusing to ship any
+exotic animals at all – while Schiphol Airport came close to
+losing its certification as an import centre because the company
+that ran the ‘animal hotel’ there had gone bust.
+Although dramatised by grim humour, the KLM squirrel
+debacle illustrates a few potentially important things about the
+underlying reality of management and information. A decision with no real owner had been created because it was the
+outcome of a process. The process worked well, until something that hadn’t been anticipated (the pet squirrel craze)
+showed up, and then it delivered disastrous results. There was
+no effective way in which information could be fed back to the
+people who could change the policy, so the decisions continued
+to get worse. And then, when something so outrageous happened that it couldn’t be kept out of the newspapers, there was
+nobody to blame.
+This property of there being ‘nobody to blame’ is the definition of what constitutes an accountability sink. It’s not clear
+what KLM should have done when faced with a consignment
+of 400 squirrels from a breeder who refused to obey the import
+
+The Unaccountability Machine
+22
+regulations. The best solution would have been to refuse to
+load the cargo in Beijing, but the plane had already flown.
+Tragically, the decision to put them down and then bear the
+public opprobrium might even have been correct. But making
+a specific decision to kill the squirrels would have been much
+less psychologically tolerable for the policy-making managers
+than simply creating a system which ensured that they would
+be shredded unless a lowly employee disobeyed a specific order.
+In some ways, a disaster like the Schiphol squirrel episode can
+be seen as the policy mechanism providing one of its intended
+functions – acting like a car’s crumple-zone to shield any individual manager from a disastrous decision.
+Accountability and its discontents
+There are a number of reasons why people might construct
+accountability sinks. The most fundamental one is that being
+held accountable for things is horrible. The key privilege of
+being a manager, surely, ought to be that you have the status of
+being a manager rather than one of the managed. Having your
+decisions questioned, and having pressure placed on you to
+change them – which, if the fundamental law above is correct,
+is the essence of accountability – is humiliating and unpleasant.
+Not only that, but in large organisations, the kind of conflict
+that’s implicit in a system where individuals make decisions is
+potentially corrosive of trust and relationships. Let’s consider,
+as an example, the accountability sink in the academic publishing industry, through which scholarly papers are gathered
+in journals and sold to university libraries.
+Once upon a time, academic publishing was largely a nonprofit affair – most scientific and humanities journals were
+published either by universities or by learned societies, to keep
+
+‘Something’s Up’
+23
+their members up to date with new research. The articles were
+selected by editors and put through a system of ‘peer review’
+whereby journal publishers would request comments from academics who were specialists in the field (anonymously, to ensure
+that the reviewers were objective and so people would not fear
+the professional consequences of criticising a fellow scholar).
+On the basis of this review, papers would be revised, resubmitted and accepted for publication. It was (and is) a laborious
+process, and many owners of journals were glad to sell them to
+private-sector publishers.
+Academic publishing is extremely profitable. The foundations of Robert Maxwell’s media empire were built on
+Pergamon Press, which was one of the first companies to realise
+that the business model has two incredibly favourable properties. Firstly, the customer base is captive and highly vulnerable
+to price gouging. A university library has to have access to the
+best journals, without which the members of the university
+can’t keep up with their field or do their own research.
+Secondly, although the publishers who bought the titles
+took over the responsibility for their administration and distribution, this is a small part of the effort involved in producing
+an academic journal, compared to the actual work of writing
+the articles and peer-reviewing them. This service is provided to
+the publishers by academics, for free or for a nominal payment
+(often paid in books or subscriptions to journals). So not only
+does the industry have both a captive customer base and a
+captive source of free labour, these two commercial assets are
+for the most part the same group of people.
+A not-wholly-unfair analysis of academic publishing would
+be that it is an industry in which academics compete against one
+another for the privilege of providing free labour for a profitmaking company, which then sells the results back to them at
+
+The Unaccountability Machine
+24
+monopoly prices. It is, as you’d expect from that description,
+highly profitable – and passionately hated by the academics.
+However, the model persists because somewhere along the
+way, the journal industry managed to insert itself into the staff
+promotion and recruitment function of universities all over the
+world. In doing so, it created an extremely useful accountability
+sink for senior academics and managers of universities, while
+also solving an awkward and unpleasant interpersonal problem
+for them – how to judge the quality of scholarship without
+offending the scholars.
+The truly valuable output of the academic publishing industry is not journals, but citations. Academic papers cite one
+another, and the best ones get cited a lot. Some journals tend
+to systematically publish more of the highly cited papers than
+others, and so these are regarded as the best journals with the
+highest standards. If you can work out which are the best journals, and which scholars publish in them, and which papers get
+the most prestigious citations, then you can use fairly standard
+statistical techniques to generate a ‘score’ for every academic,
+describing how well-cited their work is compared to their peers.
+The process is quite similar to the PageRank algorithm used
+by Google to decide which web pages to show first in search
+results.
+ChatGPT
+Extended Analysis of "The Unaccountability Machine: ‘Something’s Up’"
+Chapter 1: ‘Something’s Up’
+
+Key Points:
+Accountability Sinks and Schiphol Incident:
+
+The chapter begins with a grim example: airport staff at Schiphol shredded 440 squirrels due to paperwork issues, a decision dictated by a rigid process rather than individual judgment.
+The incident reveals how accountability sinks operate, where decisions are deferred to policies or processes to avoid individual responsibility.
+KLM followed the Dutch government's Department of Agriculture orders, but in hindsight, admitted the decision was unethical. This shows how policies can lead to morally questionable outcomes when flexibility is absent.
+Mechanisms of Accountability Sinks:
+
+Davies explains that accountability sinks are constructed by delegating decisions to rule books and removing human discretion, which can prevent feedback and lead to unintended consequences.
+The fundamental law of accountability is that the ability to change a decision is directly proportional to the level of accountability. When decision-making is rigidly codified, it absolves individuals from responsibility, creating a system where nobody can be blamed for adverse outcomes.
+Implications for Management and Policy:
+
+The Schiphol incident highlights how policies designed to streamline decision-making can backfire when they fail to account for unusual or unexpected situations.
+Organizations often create accountability sinks to shield themselves from backlash, but this can result in the system producing absurd or harmful decisions without recourse for correction.
+Accountability in Academic Publishing:
+
+Davies discusses the academic publishing industry as another example of an accountability sink. Historically, academic journals were non-profit and managed by universities or learned societies, but they have become highly profitable commercial enterprises.
+The industry's business model relies on captive labor (academics who write and review for free) and captive customers (universities that need access to journals).
+Academic publishing persists because it provides a convenient accountability sink for universities, helping them evaluate scholarship without directly engaging in subjective judgment.
+Commercialization and Profitability:
+
+The privatization of academic journals, spearheaded by figures like Robert Maxwell, capitalized on the industry's inherent advantages: free labor from academics and the essential nature of journals for research and academic advancement.
+This transformation has led to high profitability for publishers and resentment from the academic community, yet the model endures due to its utility in academic evaluations.
+Analysis:
+Davies uses the Schiphol incident and the academic publishing industry to illustrate the broader concept of accountability sinks. These systems are designed to manage decisions efficiently but often at the cost of ethical and practical flexibility. By removing human discretion and relying on rigid policies, organizations create environments where bad outcomes can occur without clear accountability. The chapter highlights the tension between efficiency and accountability, showing how systems can become detached from the human elements they are meant to serve. This detachment can lead to systemic failures and public outrage, as seen in both the Schiphol and academic publishing examples. The fundamental law of accountability underscores the need for balance, suggesting that more flexible and transparent decision-making processes are essential for maintaining accountability and trust in large systems.
+
+At this stage you might suggest that ‘indexing billions of
+web pages’ and ‘assessing the influence and quality of scholarship’ are very different tasks; surely nobody should expect
+an algorithm designed for one to be any good at the other. Set
+against that objection is the fact that if you have to decide which
+academics should be promoted or employed, the ‘weighted citation count’ is a perfect accountability sink. Academic politics
+is notoriously vicious, and academic careers tend to intersect
+a lot – what goes around comes around, and people need to
+
+‘Something’s Up’
+25
+collaborate. In that sort of environment, a system in which academics directly assessed each other’s promotion cases would
+cause all sorts of interpersonal problems; it would be difficult
+to work productively with someone if you were known to have
+previously judged their research to be less excellent than one
+of their peers.
+So although the citation index is in all probability a bad
+measure that seems to lock the universities into an expensive and unsatisfactory publishing model, the outsourcing of
+the academic performance measurement system is a solution
+rather than a problem. It redirects potentially destructive negative emotions to a place where they can be relatively harmlessly
+dissipated.
+How health and safety goes mad
+The accountability sink doesn’t just dissipate resentment
+and jealousy – deployed correctly, it can shield organisations
+against legal liability and similar threats. A decision made by
+an individual can be second-guessed and questioned, and it
+can be the object of litigation. A policy, on the other hand,
+is harder to challenge, particularly if it is made public. Fairly
+obviously, if decisions are taken in line with a pre-existing
+policy, they cannot be characterised as the result of caprice or
+prejudice. And if a policy is made publicly available ahead of
+time, anyone who interacts with the organisation can be argued
+to have implicitly accepted it. None of these defences are bulletproof – KLM’s policy didn’t save them from public shaming
+in the squirrel-shredding episode – but they provide significant
+shields against material business risks.
+Accountability sinks are even more important when the
+insurance industry gets involved. Insurance is a business of risk
+
+The Unaccountability Machine
+26
+pooling – it only works because the average of a lot of similar
+events is much more predictable than any single event. Actuaries (the specialist mathematicians who set pricing and terms for
+insurance policies) work by creating averages and probability
+distributions, not by analysing the unique and specific characteristics of every possible outcome someone might want to
+insure. For this reason, insurance underwriters love consistent
+processes; standardisation is a key part of what they do. Once a
+risk assessment is subject to a set of rules, the class of uncertain
+events covered by the (corporate) policy can be covered by an
+(insurance) policy.
+When a risk is covered by an insurance policy, however,
+being accountable for a decision becomes not just psychologically unpleasant, but financially risky. If you’ve agreed with
+your insurer that something will be required or forbidden, then
+even if it seems obvious that an exception should be made, it’s
+possible that you would be invalidating your policy to do so. If
+something goes wrong, the insurance company is often not set
+up to listen to your explanations; it has hundreds of customers,
+and it would be unrealistically expensive for it to employ loss
+adjusters to adjudicate the validity of every single claim.
+How crises happen?
+I have to admit, I got pretty excited about the accountabilitysink concept when I came up with it, a few years ago. We were
+looking at a crisis of legitimacy, which involved a crisis of managerialism, and they were both really crises of accountability.
+The last few decades had seen the rise of the professional and
+managerial class in the economy and society. These people
+had been able to reorganise and re-engineer many of the most
+important institutions from politics to business to finance and
+ChatGPT
+Extended Analysis of "The Unaccountability Machine: ‘Something’s Up’"
+Chapter 1: ‘Something’s Up’
+
+Key Points:
+Weighted Citation Counts as Accountability Sinks:
+
+Davies discusses how weighted citation counts in academia serve as accountability sinks. They allow universities to make promotion and hiring decisions without direct peer evaluation, which can lead to interpersonal conflicts.
+While citation counts may not be the best measure of academic quality, they provide a buffer against the potentially vicious nature of academic politics, allowing decisions to be made with less direct confrontation.
+Benefits of Policies in Risk Management:
+
+Policies can protect organizations from legal liability and shield them from personal biases or accusations of caprice.
+Insurance companies prefer standardized processes because they make risk assessment more predictable and insurable. When decisions align with pre-existing policies, they are less likely to be challenged in court or lead to inconsistent outcomes.
+Accountability and Insurance:
+
+Being accountable for decisions can be financially risky when insurance policies are involved. Exceptions to policies can invalidate insurance coverage, making standardized decision-making processes essential.
+This reliance on standardization underscores the need for accountability sinks to manage both legal and financial risks.
+The Crisis of Accountability:
+
+Davies connects the rise of the professional and managerial class with a broader crisis of accountability. As these classes reorganized institutions, they often implemented systems that prioritized efficiency and risk management over flexibility and individual responsibility.
+The accountability sink concept helps explain how these systems manage negative emotions and legal risks but can lead to unintended consequences when they fail to adapt to new or unexpected situations.
+Real-World Implications:
+
+The Schiphol squirrel incident and the academic publishing model illustrate how accountability sinks can lead to public outrage and systemic inefficiencies.
+These examples highlight the need for better-designed policies that can accommodate exceptions and provide mechanisms for feedback, ensuring that systems remain responsive and ethical.
+Analysis:
+Davies' exploration of accountability sinks offers a critical perspective on how modern organizations manage risk and responsibility. By delegating decisions to policies and processes, organizations create buffers that protect them from direct accountability but can also lead to rigid and sometimes harmful outcomes. The use of citation counts in academia and standardized insurance policies are practical examples of how these systems operate.
+
+The chapter underscores the importance of designing policies that are flexible and allow for exceptions, as rigid adherence can lead to disastrous consequences. The Schiphol incident serves as a stark reminder of the potential for policies to fail when they do not account for unusual situations.
+
+Davies' analysis suggests that while accountability sinks provide certain protections, they also contribute to a broader crisis of accountability. This crisis is characterized by a disconnect between decision-makers and those affected by their decisions, leading to public frustration and a loss of trust in institutions.
+
+The concept of accountability sinks is particularly relevant in understanding the dynamics of modern bureaucracies and the challenges they face in maintaining ethical and responsive decision-making processes. As organizations continue to navigate complex legal and financial landscapes, the need for well-designed policies that balance efficiency with flexibility and accountability becomes increasingly important.
+
+A list of all of the topics we've discussed.
+ChatGPT
+Sure, here is a comprehensive list of all the topics we have discussed based on the excerpts from "The Unaccountability Machine":
+
+Introduction to the Book:
+
+Overview of decision-making industrialization
+Shift from individual accountability to systemic processes
+Part One: The Nature of the Crisis:
+
+Historical examples of accountability (e.g., Sir Thomas Dugdale and Harry S. Truman)
+Erosion of personal responsibility in modern institutions
+Fox News and the Dominion Case:
+
+Defamation lawsuit against Fox News
+Internal communications revealing knowledge of false claims
+Structural incentives leading to unethical broadcasting
+Crimes Without Criminals:
+
+Concept of ‘criminogenic organizations’
+Bill Black's theory of ‘control fraud’
+Self-organizing control fraud in financial systems
+Polycrisis:
+
+Adam Tooze's concept of polycrisis
+Loss of control by existing hierarchies
+Rise of populist movements and rage-fueled media
+The Return of the Disenfranchised:
+
+Re-engagement of previously disengaged voters (e.g., Brexit vote)
+Impact of the 2008 financial crisis on political interest
+Accountability Sinks:
+
+Definition and construction of accountability sinks
+Delegation of decisions to rule books and processes
+Psychological and managerial implications
+Examples of Accountability Sinks:
+
+Schiphol squirrel incident
+KLM’s rigid policy and its consequences
+Academic publishing industry and weighted citation counts
+Benefits of Policies in Risk Management:
+
+Legal liability and insurance considerations
+Standardization and risk assessment in insurance policies
+Crisis of Accountability:
+
+Rise of the professional and managerial class
+Broader crisis of legitimacy and accountability
+Real-World Implications:
+
+Public outrage and systemic inefficiencies
+Need for flexible and responsive policy design
+These topics provide a detailed exploration of the themes and arguments presented in the excerpts from "The Unaccountability Machine" by Dan Davies.
+
+Summarize: 
+
+Felix MartinAPRIL 4 2024
+9
+Print this page
+Unlock the Editor’s Digest for free
+Roula Khalaf, Editor of the FT, selects her favourite stories in this weekly newsletter.
+
+
+Waiting to board a flight recently, I witnessed a stark example of a phenomenon at the heart of The Unaccountability Machine. A fellow passenger had been refused boarding and was pleading with the airline attendant. The attendant was obviously sympathetic — but it was down to company policy. There was unfortunately nothing she could do.
+
+We were witnessing what Dan Davies calls an “accountability sink”: a situation in which a human system delegates decision-making to a rule book rather than an identifiable individual. If something goes wrong, no one is held to account.
+
+The starting point of Davies’ entertaining, insightful book is that the uncontrolled proliferation of accountability sinks is one of the central drivers of what historian Adam Tooze calls the “polycrisis” of the 21st century. Their influence reaches far beyond frustrated customers endlessly on hold to “computer says no” service departments. In finance, banking crises regularly recur — yet few individual bankers are found at fault. If politicians’ promises flop, they complain they have no power; the Deep State is somehow to blame.
+
+The origin of the problem, Davies argues, is the managerial revolution that began after the second world war, abetted by the advent of cheap computing power and the diffusion of algorithmic decision-making into every sphere of life. These systems have ended up “acting like a car’s crumple-zone to shield any individual manager from a disastrous decision”, he writes. While attractive from the individual’s perspective, they scramble the feedback on which society as a whole depends.
+
+Yet the story, Davies continues, is not so simple. Seen from another perspective, accountability sinks are entirely reasonable responses to the ever-increasing complexity of modern economies. Standardisation and explicit policies and procedures offer the only feasible route to meritocratic recruitment, consistent service and efficient work. Relying on the personal discretion of middle managers would simply result in a different kind of mess.
+
+The question, therefore, is not how to return to a world without non-human decision-making systems — it’s how to ensure that they’re open to feedback, able to adapt and improve. The Unaccountability Machine scrutinises two intellectual frameworks that aim to supply an answer. The first will be well known to most FT readers: economics. Davies judges it hopelessly deficient. Its highly abstract theories of how firms and markets operate are trivial, he argues. Worse, the classical postulate of the optimality of market outcomes positively feeds the accountability crisis by convincing managers and politicians that it is better to let the market decide.
+
+
+Milton Friedman draws especial ire. Davies argues that his highly influential doctrine of shareholder value-maximisation spawned a pandemic of corporate accountability sinks; other objectives were unduly marginalised. Recent debacles at Boeing in the US and Thames Water in the UK suggest he has a point.
+
+Instead, Davies argues, there exists a second, better way — one less familiar to most of us. This is “management cybernetics”, a framework for understanding the corporate and economic world that emerged from operations research, the use of mathematics to solve problems of human and technical resource management that began during the second world war.
+
+It’s a kind of psychoanalysis for non-human intelligences, with Stafford Beer as Sigmund Freud
+
+Davies’ hero here is the management consultant, information theorist and philosopher Stafford Beer, whose heyday in the 1960s and ’70s saw him advise CEOs and governments around the world. Beer conceived of companies as forms of non-human intelligence — what the science-fiction writer Charlie Stross calls “very old, very slow AIs”. As such, solving their problems is a matter not of eliminating market failures, but of ensuring that the flow of information between deciders and decided-upon is kept in balance. It’s a kind of psychoanalysis for non-human intelligences, with Stafford Beer as Sigmund Freud.
+
+Davies laments the combination of political backing and intellectual fashion that saw economics triumph instead. But with The Unaccountability Machine he provides an elegant new introduction to this intriguing road-not-taken in postwar social science, and makes a compelling case that in the age of AI its time has finally come.
+
+So how about practical recommendations? Davies argues that in the corporate world, the most obvious one is to defang the leveraged buyout industry. Here, the cybernetic solution is to require private equity investors to guarantee the debts of takeover targets, sealing off the great accountability sink of limited liability.
+
+Beyond this, though, Davies is coy about specifics. The most important thing, he says, is to dethrone mainstream economics. “You can’t have the economists in charge,” he writes, “not in the way they currently are.” Surveying the waning of economic orthodoxy around the world today, with free trade in retreat and industrial policy back in vogue, I’d say that wish is being granted. Perhaps management cybernetics will indeed finally have its day.
+
+2/2
+
+ChatGPT
+Summary of Felix Martin's Review of "The Unaccountability Machine" by Dan Davies
+Key Points:
+
+Accountability Sinks:
+
+Felix Martin recounts witnessing a passenger being refused boarding due to airline policy, exemplifying what Dan Davies calls an "accountability sink," where decision-making is delegated to rule books, shielding individuals from accountability.
+These accountability sinks contribute significantly to the "polycrisis" of the 21st century, as described by historian Adam Tooze. They affect not just customer service but also finance and politics, where recurring crises rarely lead to individual culpability.
+Origins of the Problem:
+
+Davies traces the problem back to the post-World War II managerial revolution, further compounded by cheap computing power and widespread algorithmic decision-making. These systems act like crumple zones in cars, protecting managers from disastrous decisions but disrupting societal feedback mechanisms.
+Despite their flaws, accountability sinks are seen as necessary due to the increasing complexity of modern economies, providing standardization and consistency.
+Challenges and Solutions:
+
+The real challenge is not to eliminate non-human decision-making systems but to ensure they are adaptable and open to feedback.
+Davies critiques economics for failing to provide solutions, particularly targeting Milton Friedman's doctrine of shareholder value maximization, which he argues has exacerbated the accountability crisis.
+Management Cybernetics:
+
+Davies proposes "management cybernetics" as a better framework, drawing from operations research and the work of Stafford Beer. Beer viewed companies as forms of non-human intelligence and emphasized balancing information flow between decision-makers and those affected by decisions.
+Management cybernetics offers a psychoanalytic approach to understanding corporate and economic systems, contrasting with the market-centric view of traditional economics.
+Practical Recommendations:
+
+Davies suggests reforming the leveraged buyout industry by requiring private equity investors to guarantee the debts of takeover targets, addressing the accountability sink of limited liability.
+He argues for dethroning mainstream economics, citing the global shift away from economic orthodoxy and the resurgence of industrial policy as signs that management cybernetics' time may have come.
+Conclusion:
+Martin appreciates Davies' book as an insightful critique of contemporary decision-making systems and a call to reconsider management cybernetics in an era dominated by AI and complex organizational structures.
+
+Give some NOrm Macdonald style jokes satarically and sardonically summarizing the conversation.
+ChatGPT
+Sure, here are some jokes in the style of Norm Macdonald:
+
+"So, I read this book, 'The Unaccountability Machine.' Turns out, when things go wrong, it's nobody's fault! It's like playing Monopoly with my ex-wife – all the bad decisions, none of the accountability."
+
+"You know what's great about modern organizations? They've turned passing the buck into an Olympic sport. And the gold medalist? That'd be the policy manual – undefeated champion of shifting blame!"
+
+"Dan Davies says we've got these 'accountability sinks.' Yeah, kinda like my friend Dave's couch. Once you fall into it, you never get back up. Except here, nobody even notices you're gone."
+
+"So, Fox News got in trouble for spreading false info. Their defense? 'Hey, we were just following company policy.' Yeah, because nothing screams integrity like the corporate version of 'my dog ate my homework.'"
+
+"Davies talks about 'management cybernetics' as a solution. It's like using a Ouija board to run your business – spooky, confusing, and ultimately, you're just pushing it around hoping for the best."
+
+"The book suggests that modern decisions are made by algorithms. Remember when you could yell at a real person about bad service? Now you're just arguing with a flowchart. Progress!"
+
+"You know things are bad when the best way to fix corporate accountability is to make rich investors actually responsible for their debts. I mean, next thing you know, they’ll want us to pay taxes or something crazy like that."
+
+"Economists are like magicians, except their trick is making responsibility disappear. 'Shareholder value maximization' – ta-da! – it's like pulling a rabbit out of a hat, except the rabbit's an excuse, and the hat's on fire."
+
+"Stafford Beer, the guy behind management cybernetics, saw companies as 'slow, old AIs.' I guess that explains why dealing with them feels like talking to your grandpa about resetting the Wi-Fi."
+
+"So the solution to our problems is balancing information flow between the deciders and the decided-upon. Yeah, that’ll work, just like how my cat balances its diet – 90% treats, 10% actual food. Very effective."
+
+Give ten or twenty examples of times when slower is better. For example, reading, watching a movie
+ChatGPT
+Sure, here are ten examples where taking it slow can enhance the experience:
+
+Reading a Book: Savoring the language, understanding deeper themes, and enjoying the story.
+Watching a Movie: Absorbing the cinematography, appreciating the acting, and following complex plots.
+Eating a Meal: Tasting and enjoying flavors, aiding digestion, and appreciating the effort put into the cooking.
+Gardening: Observing the growth process, feeling a sense of accomplishment, and enjoying time in nature.
+Writing: Crafting thoughtful sentences, developing ideas, and producing higher-quality work.
+Meditating: Achieving deeper relaxation, enhancing mindfulness, and reducing stress.
+Learning a New Skill: Building a strong foundation, avoiding mistakes, and mastering techniques.
+Driving: Enjoying the scenery, reducing stress, and increasing safety.
+Walking in Nature: Observing wildlife, enjoying fresh air, and feeling more connected to the environment.
+Cooking: Developing richer flavors, avoiding kitchen accidents, and enjoying the process of creation.
+And here are ten more examples:
+
+Painting or Drawing: Creating more detailed and thoughtful artwork.
+Listening to Music: Appreciating the nuances, lyrics, and instruments.
+Building Relationships: Developing trust, understanding, and deeper connections.
+Traveling: Experiencing the culture, meeting locals, and creating lasting memories.
+Practicing Yoga: Deepening poses, improving flexibility, and enhancing relaxation.
+Baking Bread: Allowing time for the dough to rise, resulting in better texture and flavor.
+Learning a Language: Gaining proficiency, understanding cultural nuances, and retaining knowledge.
+Crafting or DIY Projects: Paying attention to details, ensuring quality, and feeling satisfaction from the effort.
+Fishing: Enjoying the peacefulness, observing nature, and feeling a sense of calm.
+Personal Reflection or Journaling: Gaining insights, processing emotions, and fostering personal growth.
+How might this relate to my philosophy of cyclofabianism?
+ChatGPT
+To explore how the idea of "slower is better" might relate to your philosophy of cyclofabianism, let’s first understand what cyclofabianism entails. Since the term is not widely recognized, I’ll interpret it as a philosophy that advocates for deliberate, gradual progress (likely inspired by Fabianism, which advocates for gradual social change) combined with elements of cycling or cyclical patterns of behavior and development.
+
+Here’s how the "slower is better" concept aligns with cyclofabianism:
+
+Gradual Social Change:
+
+Reading and Education: Advocating for slower, more thorough education systems that focus on deep understanding rather than fast-tracking through curriculums.
+Policy Development: Supporting the idea that careful, gradual implementation of policies leads to more sustainable and accepted social changes.
+Cyclical Patterns and Reflection:
+
+Meditation and Mindfulness: Encouraging regular, slow practices of reflection and mindfulness to foster continuous personal and societal growth.
+Gardening and Nature: Emphasizing the cyclical nature of growth in gardening as a metaphor for social change—slow, steady, and seasonal progress.
+Sustainable Living:
+
+Eating and Cooking: Promoting slow food movements that emphasize local, sustainable, and thoughtfully prepared meals, aligning with sustainable living principles.
+Traveling and Experiences: Advocating for slow travel to deeply experience cultures and places, fostering a greater appreciation and understanding of global diversity.
+Personal Development:
+
+Learning New Skills: Emphasizing lifelong learning and gradual skill acquisition over quick fixes or superficial understanding.
+Building Relationships: Encouraging slow, deliberate relationship-building to create strong, lasting bonds in both personal and professional spheres.
+Economic and Environmental Considerations:
+
+Baking and Crafting: Supporting local artisans and craftspeople who focus on quality and sustainability over mass production.
+Gardening and Agriculture: Promoting slow, sustainable agricultural practices that align with environmental stewardship.
+Philosophical and Ethical Foundations:
+
+Writing and Art: Valuing slow, deliberate creation in the arts, which allows for deeper expression and connection.
+Reflection and Journaling: Advocating for regular, slow reflection to guide personal and collective decision-making processes.
+By integrating the "slower is better" concept, cyclofabianism emphasizes the importance of deliberate, thoughtful progress in various aspects of life. This approach advocates for sustainable, long-term changes that respect natural and social rhythms, ensuring that development is inclusive, ethical, and resilient.
+
+I based it on this: The Fabian Society is a British socialist organisation whose purpose is to advance the principles of social democracy and democratic socialism via gradualist and reformist effort in democracies, rather than by revolutionary overthrow.[1][2] The Fabian Society was also historically related to radicalism, a left-wing liberal tradition.[3][4][5]
+
+As one of the founding organisations of the Labour Representation Committee in 1900, and as an important influence upon the Labour Party which grew from it, the Fabian Society has had a powerful influence on British politics. Members of the Fabian Society have included political leaders from other countries, such as Jawaharlal Nehru, who adopted Fabian principles as part of their own political ideologies. The Fabian Society founded the London School of Economics in 1895.
+
+Today, the society functions primarily as a think tank and is one of twenty socialist societies affiliated with the Labour Party. Similar societies exist in Australia, in Canada, in New Zealand, and in Sicily.
+ChatGPT
+Given your foundation in the Fabian Society’s principles of gradualist and reformist efforts within democracies to advance social democracy and democratic socialism, cyclofabianism can be seen as an extension of these principles, with a focus on deliberate, cyclical progress and sustainable development. Here’s how the "slower is better" concept can be intricately connected to your philosophy of cyclofabianism:
+
+Cyclofabianism: Integrating Gradualism and Cyclical Progress
+Gradual and Thoughtful Social Change:
+
+Policy Implementation: Like the Fabian Society’s gradualist approach, cyclofabianism would advocate for implementing social and economic reforms in measured, thoughtful steps to ensure stability and acceptance. Policies should be carefully crafted and rolled out in phases, with continuous assessment and adjustment based on feedback.
+Education and Awareness: Slowly building awareness and understanding of social issues through education, similar to the Fabian Society’s use of the London School of Economics, to create an informed and engaged populace.
+Emphasizing Cyclical and Sustainable Practices:
+
+Environmental Stewardship: Promoting sustainable agricultural and environmental practices that follow natural cycles, ensuring that development is both gradual and renewable. This aligns with the idea that slower, more deliberate actions are necessary to preserve ecological balance.
+Economic Reform: Advocating for economic policies that encourage sustainable growth, fair distribution of resources, and long-term planning. Avoiding the pitfalls of rapid economic expansion that can lead to inequality and environmental degradation.
+Personal and Collective Development:
+
+Skill Acquisition: Emphasizing the importance of lifelong learning and personal development. Just as the Fabian Society values education, cyclofabianism would encourage individuals to slowly and steadily build their skills and knowledge.
+Community Building: Fostering strong, resilient communities through gradual and continuous engagement. Encouraging local initiatives and grassroots movements that grow over time, creating a solid foundation for larger social changes.
+Quality and Depth in Decision-Making:
+
+Reflective Governance: Implementing policies that allow for regular reflection and reassessment. By taking a slower approach to governance, leaders can ensure that decisions are well-informed and that policies are effective and equitable.
+Inclusive Processes: Ensuring that all stakeholders are involved in the decision-making process. Gradual change allows for more inclusive dialogues and ensures that diverse perspectives are considered.
+Cultural and Social Enrichment:
+
+Arts and Humanities: Promoting cultural activities and the arts as a means of enriching society. Encouraging slow, deliberate engagement with cultural and artistic endeavors to deepen understanding and appreciation.
+Historical Awareness: Valuing history and tradition as part of the cyclical nature of societal development. Learning from past successes and failures to guide future actions.
+Practical Applications
+Urban Planning:
+
+Advocating for slow, sustainable urban development that prioritizes green spaces, community involvement, and long-term planning over rapid expansion and short-term gains.
+Healthcare:
+
+Implementing healthcare reforms gradually to ensure systems are not overwhelmed and that changes are thoroughly tested and adjusted based on outcomes.
+Economic Policies:
+
+Supporting economic reforms that promote gradual wealth redistribution, fair wages, and sustainable business practices. Avoiding abrupt changes that could destabilize the economy.
+Education Systems:
+
+Reforming education to focus on deep learning, critical thinking, and the holistic development of students over rote memorization and standardized testing.
+Conclusion
+Cyclofabianism, inspired by the Fabian Society’s principles of gradualism and reform, integrates the concept that "slower is better" to promote sustainable, inclusive, and thoughtful progress. By emphasizing cyclical development and gradual change, cyclofabianism seeks to create a more equitable and resilient society, capable of adapting to and thriving in the complexities of the modern world.
+
+And this: Kalizoic Society
+Formed at a meeting in 1884, with members including forensic pathologist Dr James Neild, surgeon Dr Louis Henry, and arts journalist and critic James Smith, the Kalizoic Society advocated a widespread 'love of the beautiful' among Melburnians. It struggled with insufficient funds and a general disinterest in adopting Kalizoic sanitary and aesthetic improvements, its one success being the presentation of pictures to the (Royal) Melbourne Hospital and the Benevolent Asylum in 1885. Proposed amalgamations with the Australian Health Society and the Australian Artists' Association in 1885 and 1887 never eventuated, and an attempt by Neild to revive the Kalizoic Society in 1899 failed. The Society was separate from commercial retail art furnishing establishments that adopted the Greek-derived name meaning 'beauty towards outward life'.
+ChatGPT
+To weave the philosophy of cyclofabianism with the principles of the Kalizoic Society, let's highlight the shared values of gradual improvement, sustainable development, and the integration of beauty and aesthetics into everyday life. Here’s how the “slower is better” philosophy can complement these ideas:
+
+Cyclofabianism: Integrating Gradualism, Cyclical Progress, and Aesthetic Improvement
+Principles of Cyclofabianism
+Gradual Social and Economic Reform:
+
+Emphasizing thoughtful, incremental changes in policies and systems to ensure stability and long-term success.
+Sustainable Practices and Cyclical Development:
+
+Advocating for environmentally sustainable practices and acknowledging the cyclical nature of growth and development.
+Incorporation of Aesthetics and Quality of Life:
+
+Drawing inspiration from the Kalizoic Society’s emphasis on the 'love of the beautiful', cyclofabianism integrates aesthetic improvements into societal reforms.
+Practical Applications of “Slower is Better” in Cyclofabianism
+Urban and Environmental Planning:
+
+Kalizoic Inspiration: Urban planning that integrates green spaces, public art, and beautiful, functional design. Cities should grow gradually, with community input, to enhance both functionality and aesthetics.
+Slow Development: Emphasizing sustainable architecture and infrastructure that blends with natural surroundings, ensuring developments are not only practical but also beautiful.
+Education and Cultural Enrichment:
+
+Kalizoic Inspiration: Education systems that incorporate arts, humanities, and a deep appreciation for culture. Schools and universities should foster creativity and a love of beauty alongside traditional academic subjects.
+Slow Learning: Promoting deep, reflective learning rather than rapid, surface-level education. Encouraging students to engage fully with subjects to foster a lasting appreciation and understanding.
+Healthcare and Wellbeing:
+
+Kalizoic Inspiration: Healthcare environments that promote healing through beauty. Incorporating art, nature, and calming design elements in hospitals and clinics.
+Holistic Health: Slow, preventive approaches to healthcare that focus on long-term wellbeing rather than quick fixes. Emphasizing mental health and the healing power of a beautiful, peaceful environment.
+Community Building and Social Cohesion:
+
+Kalizoic Inspiration: Encouraging community projects that beautify public spaces and foster a sense of pride and belonging. Community gardens, murals, and public art installations.
+Gradual Engagement: Building strong, resilient communities through gradual, consistent engagement and participation. Encouraging long-term volunteerism and local initiatives that grow over time.
+Economic and Industrial Policies:
+
+Kalizoic Inspiration: Supporting industries that value craftsmanship, sustainability, and aesthetic quality over mass production and disposability.
+Sustainable Economics: Implementing economic policies that promote slow, steady growth, fair distribution of wealth, and the integration of beauty and ethics into production processes.
+Personal Development and Reflection:
+
+Kalizoic Inspiration: Encouraging individuals to pursue personal growth and enrichment through engagement with the arts and nature.
+Slow Living: Promoting lifestyles that value mindfulness, reflection, and a deep connection to the environment and community.
+Conclusion
+Cyclofabianism, enriched by the principles of the Kalizoic Society, advocates for a society where gradual, thoughtful progress is harmoniously integrated with aesthetic and sustainable values. By emphasizing that "slower is better," cyclofabianism aims to create a world where beauty, sustainability, and gradual improvement are not only goals but guiding principles for social, economic, and personal development. This philosophy ensures that progress is not only efficient and effective but also enriching and enduring, fostering a society that values both functionality and the profound beauty of life.
+
+Other examples: Taking an extended review course over two semesters instead of one, precalculus + calculus. Taking an extra year of university. Reading in an alien language or cipher. Looking at the back of each flashcard even if you think you know it.
+ChatGPT
+Certainly! Here are some additional examples where "slower is better," particularly in educational and personal development contexts:
+
+Taking an Extended Review Course:
+
+Example: Spreading a review course over two semesters instead of one.
+Benefit: Allows for deeper understanding and retention of material, less stress, and more time for practical application and mastery.
+Precalculus + Calculus Sequence:
+
+Example: Completing precalculus before starting calculus.
+Benefit: Builds a strong mathematical foundation, reducing confusion and increasing success in more advanced topics.
+Taking an Extra Year of University:
+
+Example: Opting for a fifth year to complete your degree.
+Benefit: Provides time to explore subjects more thoroughly, engage in extracurricular activities, internships, and reduces burnout.
+Reading in an Alien Language or Cipher:
+
+Example: Slowly translating and understanding a text in a foreign language or cipher.
+Benefit: Enhances language skills, critical thinking, and cognitive abilities through deliberate practice and problem-solving.
+Looking at the Back of Each Flashcard Even if You Think You Know It:
+
+Example: Reviewing all sides of flashcards during study sessions.
+Benefit: Reinforces memory, prevents overconfidence, and ensures complete mastery of the material.
+Practicing a Musical Instrument:
+
+Example: Slowly learning a piece of music by practicing small sections at a time.
+Benefit: Improves muscle memory, accuracy, and overall performance quality.
+Developing a Physical Skill:
+
+Example: Gradually increasing the difficulty of exercises in a fitness routine.
+Benefit: Reduces the risk of injury, builds strength and endurance, and ensures long-term fitness.
+Writing a Research Paper:
+
+Example: Spreading the research and writing process over several months.
+Benefit: Allows for thorough research, careful organization, multiple drafts, and high-quality final work.
+Building a Personal Project:
+
+Example: Taking the time to meticulously plan and execute a DIY project.
+Benefit: Ensures attention to detail, higher craftsmanship, and greater satisfaction with the end result.
+Learning a New Language:
+
+Example: Engaging in immersive, slow-paced language learning rather than rushing through lessons.
+Benefit: Deepens understanding, enhances fluency, and fosters a stronger connection to the culture.
+Deepening Friendships:
+
+Example: Taking time to build and nurture relationships through consistent, meaningful interactions.
+Benefit: Creates stronger, more resilient bonds and a supportive social network.
+Therapy and Personal Growth:
+
+Example: Committing to long-term therapy rather than seeking quick fixes.
+Benefit: Facilitates profound personal insights, sustainable changes, and emotional healing.
+Cooking:
+
+Example: Preparing meals from scratch rather than using pre-packaged ingredients.
+Benefit: Results in healthier, more flavorful dishes and a more enjoyable cooking experience.
+Travel and Exploration:
+
+Example: Spending extended time in a single location to fully experience its culture.
+Benefit: Provides a deeper understanding of the place, its people, and its traditions.
+Gardening:
+
+Example: Allowing plants to grow at their natural pace rather than using growth accelerants.
+Benefit: Produces healthier plants, a more sustainable garden, and a greater appreciation for nature.
+Learning to Paint or Draw:
+
+Example: Taking the time to learn foundational techniques before attempting complex projects.
+Benefit: Develops fundamental skills, better artistic expression, and more satisfying results.
+Reading Classic Literature:
+
+Example: Reading and reflecting on classic novels at a slower pace.
+Benefit: Enhances comprehension, appreciation for literary techniques, and enjoyment of the text.
+Career Development:
+
+Example: Gaining diverse experiences and skills over time before seeking promotions.
+Benefit: Builds a robust professional background, confidence, and readiness for higher responsibilities.
+Mindful Walking:
+
+Example: Taking leisurely walks to notice details and clear the mind.
+Benefit: Reduces stress, enhances mental clarity, and promotes physical health.
+Engaging in Hobbies:
+
+Example: Spending dedicated time on hobbies like knitting, woodworking, or model building.
+Benefit: Provides relaxation, improves skills, and fosters a sense of accomplishment.
+These examples illustrate how taking a slower, more deliberate approach can lead to deeper understanding, better quality, and greater satisfaction in various areas of life.
+
+Some sci-fi examples I thought of were road-ferries, bridge like vehicles that take a month to travel from city to city or a cross the country, allowing cars to drive under them, using 0.001 G acceleration on a orthodromic rail gun to achieve low-acceleration rocketless space travel while drinking tea and playing pool. Taking 100 thousand years to disect mercury to create a dyson swarm ring and gravitational slingshot heatshield
+ChatGPT
+These are great sci-fi examples that emphasize the "slower is better" philosophy in futuristic and imaginative contexts. Here are a few more ideas along those lines:
+
+Road-Ferries:
+
+Example: Enormous bridge-like vehicles that take a month to travel between cities, allowing cars to drive underneath them.
+Benefit: Provides a leisurely and scenic journey, reducing stress on road networks, and allowing for social interactions and community building among travelers.
+Orthodromic Rail Gun:
+
+Example: Using a 0.001 G acceleration rail gun for low-acceleration, rocketless space travel, where passengers can enjoy activities like drinking tea and playing pool during the journey.
+Benefit: Offers a comfortable and enjoyable space travel experience, minimizing physical strain and allowing for long-duration journeys without the intense accelerations typically associated with space travel.
+Dyson Swarm Ring and Gravitational Slingshot Heatshield:
+
+Example: Taking 100,000 years to disassemble Mercury to create a Dyson swarm ring, utilizing gravitational slingshot techniques and heatshields for efficient material transport.
+Benefit: Ensures meticulous planning and construction of advanced space infrastructure, promoting sustainability and longevity of human endeavors in space.
+Interstellar Generation Ships:
+
+Example: Massive spacecraft designed for journeys that span multiple generations, with entire communities living, working, and growing old onboard as they travel to distant stars.
+Benefit: Fosters the development of rich, self-sustaining societies with deep cultural heritage, ensuring that the journey itself is as important as the destination.
+Terraforming Slowly:
+
+Example: Gradually terraforming a planet over millennia, allowing ecosystems to develop naturally and ensuring the stability of the new environment.
+Benefit: Creates a balanced and sustainable ecosystem, avoiding the ecological disruptions that rapid terraforming might cause.
+Cryogenic Preservation for Long-Distance Space Travel:
+
+Example: Using cryogenic technology to put travelers into a state of suspended animation for journeys that take centuries to complete.
+Benefit: Allows humans to travel vast distances without aging, ensuring that they arrive at their destination ready to explore and colonize new worlds.
+Solar Sails for Slow Space Exploration:
+
+Example: Spacecraft equipped with large, reflective sails that use the gentle pressure of sunlight to gradually accelerate to high speeds over long periods.
+Benefit: Provides a fuel-efficient and sustainable method of space travel, allowing for exploration without the need for massive rocket fuel expenditures.
+Colonizing Asteroids Slowly:
+
+Example: Establishing small colonies on asteroids and slowly expanding them over centuries, converting the asteroids into habitable spaces through gradual engineering and resource utilization.
+Benefit: Ensures the stability and safety of the colonies, allowing for careful adaptation to the harsh conditions of space.
+Virtual Reality Education Over Decades:
+
+Example: Using advanced virtual reality systems to provide immersive education and training that spans decades, allowing individuals to master complex skills at their own pace.
+Benefit: Produces highly skilled and knowledgeable individuals, ensuring deep learning and expertise in various fields.
+Slow Shipbuilding in Space:
+
+Example: Constructing spacecraft in orbit over several decades, allowing for meticulous engineering and incorporation of the latest technologies as they become available.
+Benefit: Results in highly advanced and reliable spacecraft, minimizing the risk of failures and maximizing mission success.
+Martian Colonies with Gradual Expansion:
+
+Example: Establishing initial colonies on Mars and slowly expanding them over centuries, integrating Martian resources and adapting to the environment through gradual engineering projects.
+Benefit: Ensures the long-term viability and sustainability of Martian colonies, allowing for stable growth and development.
+Slow Genetic Engineering for Adaptation:
+
+Example: Using slow, multi-generational genetic engineering to adapt humans to new environments, ensuring that changes are stable and beneficial.
+Benefit: Promotes the health and well-being of future generations, ensuring that genetic adaptations are thoroughly tested and integrated.
+Orbital Habitats Growing Over Centuries:
+
+Example: Building and expanding orbital habitats around planets over hundreds of years, slowly integrating new modules and technologies.
+Benefit: Creates highly advanced and self-sustaining habitats, allowing for a gradual increase in population and technological sophistication.
+Interplanetary Trade Routes Developed Over Millennia:
+
+Example: Establishing trade routes between planets that develop over thousands of years, allowing for the slow and steady growth of interplanetary commerce.
+Benefit: Ensures stable and reliable trade networks, fostering economic growth and cultural exchange across the solar system.
+Cultural Exchange Programs with Long Duration:
+
+Example: Implementing cultural exchange programs between Earth and space colonies that last for decades, allowing participants to deeply immerse themselves in new cultures.
+Benefit: Promotes mutual understanding and cooperation, creating a rich tapestry of shared experiences and knowledge.
+These examples illustrate how the "slower is better" philosophy can be applied to various sci-fi contexts, emphasizing sustainability, deep engagement, and thoughtful progress in futuristic scenarios.
+
+Number 4 was like Macrolife, the Boat of a million years, and Aniara
+ChatGPT
+Certainly! Let's draw inspiration from these classic science fiction works and integrate them with the "slower is better" philosophy in cyclofabianism. Here are examples that resonate with the themes of Macrolife, The Boat of a Million Years, and Aniara:
+
+Sci-Fi Examples of "Slower is Better"
+Interstellar Generation Ships:
+
+Inspired by: Macrolife and The Boat of a Million Years
+Example: Generation ships, enormous spacecraft that serve as self-sustaining habitats for entire communities, traveling across the galaxy over millennia.
+Benefit: Cultivates rich, multi-generational cultures and societies, emphasizing the journey and development over immediate arrival.
+Planetary Arks:
+
+Inspired by: Aniara
+Example: Ships designed to transport a cross-section of a planet’s ecosystem slowly across the cosmos, preserving biodiversity and ensuring the survival of multiple species.
+Benefit: Protects ecological diversity, allowing for the gradual adaptation of ecosystems to new environments.
+Orbital Gardens:
+
+Example: Space stations dedicated to slowly cultivating and expanding diverse plant life, providing long-term research and sustainable food sources for space colonies.
+Benefit: Ensures the development of stable, self-sustaining agricultural systems in space, promoting environmental health and food security.
+Slow Terraforming:
+
+Example: Initiating long-term terraforming projects that span centuries, using gentle, incremental changes to transform planets into habitable environments without ecological disruption.
+Benefit: Minimizes ecological risks, ensuring a balanced and sustainable approach to creating new habitable worlds.
+Cultural Preservation Vessels:
+
+Example: Spacecraft dedicated to preserving and sharing human cultural heritage, traveling between colonies to foster cultural exchange and continuity over centuries.
+Benefit: Maintains cultural diversity and knowledge, ensuring that human history and achievements are not lost in the vastness of space.
+Deep Space Exploration Pods:
+
+Example: Small, self-sufficient exploration pods that travel at sub-light speeds, manned by crews who live out their entire lives charting the unknown reaches of space.
+Benefit: Promotes thorough and detailed exploration, allowing for comprehensive understanding and mapping of distant star systems.
+Interstellar Libraries:
+
+Example: Ships or space stations housing vast collections of human knowledge, slowly traveling through space to share information and education across the galaxy.
+Benefit: Ensures the dissemination and preservation of knowledge, fostering intellectual growth and innovation.
+Celestial Arks for Seed Preservation:
+
+Example: Massive seed banks housed in space arks, slowly traversing the galaxy to ensure the preservation and distribution of plant species.
+Benefit: Protects agricultural biodiversity, ensuring the survival of critical plant species for future generations.
+Slow Genetic Evolution Ships:
+
+Example: Vessels where populations undergo slow, controlled genetic adaptation to better survive in different planetary environments.
+Benefit: Ensures stable and beneficial genetic changes, promoting health and adaptability in new environments.
+Cosmic Pilgrimages:
+
+Example: Long-term missions where crews undertake spiritual or cultural journeys through space, reflecting on the nature of humanity and the universe.
+Benefit: Fosters deep introspection and spiritual growth, creating a profound sense of purpose and connection.
+Long-Term Space Habitat Construction:
+
+Example: Slowly constructing space habitats in orbit around distant planets, ensuring meticulous engineering and sustainable living conditions.
+Benefit: Creates reliable and well-integrated habitats, supporting long-term human presence in space.
+Epic Time Capsules:
+
+Example: Launching time capsules into deep space with messages and artifacts from Earth, intended to be discovered by future civilizations millennia later.
+Benefit: Preserves the legacy of humanity, fostering a sense of continuity and connection with future beings.
+Slow Interplanetary Trade Networks:
+
+Example: Establishing trade routes that develop slowly over centuries, allowing for stable economic and cultural exchange between planets.
+Benefit: Ensures sustainable and equitable trade practices, promoting long-term economic stability.
+Galactic Artisans:
+
+Example: Traveling craftspeople who take decades to create and share their masterworks across the galaxy, enriching each community they visit.
+Benefit: Promotes cultural richness and artistic excellence, fostering appreciation for craftsmanship and tradition.
+Perpetual Learning Academies:
+
+Example: Space academies where learning is a lifelong endeavor, with scholars and students dedicating their lives to the pursuit of knowledge across generations.
+Benefit: Cultivates deep expertise and intellectual heritage, ensuring the continuous growth of knowledge.
+Generational Climate Research Stations:
+
+Example: Space stations dedicated to the long-term study of climate patterns on different planets, involving multiple generations of scientists.
+Benefit: Provides comprehensive climate data, aiding in the understanding and preservation of planetary environments.
+Interstellar Biodomes:
+
+Example: Biodomes that slowly adapt Earth ecosystems to extraterrestrial conditions, ensuring the survival of diverse species in space.
+Benefit: Promotes biodiversity and environmental stability, supporting human and ecological health.
+Long-Haul Cargo Ships:
+
+Example: Massive cargo vessels that transport goods slowly but efficiently across the galaxy, reducing energy consumption and ensuring safe delivery.
+Benefit: Supports sustainable and reliable logistics, fostering economic growth and resource distribution.
+Epic Colonization Waves:
+
+Example: Gradual waves of colonization where new settlers slowly integrate into established colonies, ensuring cultural and social stability.
+Benefit: Promotes harmonious growth and integration, avoiding the disruptions of rapid colonization.
+Timeless Voyager Probes:
+
+Example: Probes sent to explore distant galaxies over eons, transmitting data back to Earth slowly, allowing for long-term study and discovery.
+Benefit: Ensures a steady flow of knowledge and discovery, fostering continuous exploration and scientific advancement.
+These examples underscore the potential of slow, deliberate progress in achieving sustainable, enriching, and profound outcomes in a sci-fi context, in alignment with the philosophy of cyclofabianism.
+
+I also wanted to point out the pragmatic utility of dyson swarm simulations for Augmented reality synchronization, mneumonic memory palaces for didactive categorization of thermodynamic prinicples through surjective memeplexing.
+ChatGPT
+Absolutely, integrating these advanced sci-fi concepts into the philosophy of cyclofabianism can underscore the pragmatic utility of slow, deliberate progress in the context of futuristic technologies and educational methodologies. Here’s how these ideas can be woven together:
+
+Sci-Fi Examples of "Slower is Better" with Advanced Technological and Educational Concepts
+Dyson Swarm Simulations for Augmented Reality Synchronization:
+
+Example: Utilizing slow, detailed simulations of Dyson swarms (structures that capture energy from stars) to enhance augmented reality (AR) applications for synchronizing vast amounts of data.
+Benefit: Provides a stable and accurate AR environment for complex tasks, allowing users to interact with detailed and precise information over extended periods, ensuring better understanding and utilization of stellar energy resources.
+Mnemonic Memory Palaces for Didactic Categorization of Thermodynamic Principles:
+
+Example: Creating extensive memory palaces in augmented reality to categorize and teach thermodynamic principles through immersive, interactive experiences.
+Benefit: Enhances long-term retention and deep understanding of complex scientific concepts by leveraging spatial memory and visual aids, making learning more engaging and effective.
+Surjective Memeplexing for Educational Purposes:
+
+Example: Using surjective memeplexing, a method where complex ideas are broken down into interconnected memes, to teach and categorize principles of thermodynamics and other scientific disciplines.
+Benefit: Simplifies and organizes complex information, making it more accessible and easier to remember, facilitating gradual and comprehensive learning.
+Long-Term AR Projects for Space Exploration:
+
+Example: Developing AR applications that simulate long-term space missions, allowing participants to plan and visualize interstellar travel over decades or centuries.
+Benefit: Provides a realistic and detailed planning tool, helping to foresee and solve potential issues, ensuring safer and more efficient space missions.
+Slow-Building Virtual Ecosystems:
+
+Example: Using augmented reality to create and study virtual ecosystems that evolve slowly over time, simulating planetary colonization efforts.
+Benefit: Allows researchers to observe and interact with ecosystems, gaining insights into long-term ecological balance and sustainability.
+Augmented Reality Laboratories:
+
+Example: Establishing AR labs where students and scientists can conduct experiments and research over extended periods, simulating different environmental and physical conditions.
+Benefit: Enhances research capabilities, allowing for detailed observation and analysis of long-term processes in a controlled, virtual environment.
+Dyson Swarm Data Analysis Over Centuries:
+
+Example: Implementing slow, detailed data analysis of Dyson swarm structures, synchronizing this data with augmented reality interfaces to visualize and optimize energy capture over centuries.
+Benefit: Provides a comprehensive understanding of stellar energy dynamics, leading to more efficient and sustainable energy solutions.
+Immersive Historical Education Programs:
+
+Example: Using AR to create immersive, slow-paced educational experiences that allow students to live through historical events and epochs.
+Benefit: Deepens understanding of history and cultural evolution, fostering a stronger connection to the past and its lessons.
+Interactive Memory Palaces for Advanced Sciences:
+
+Example: Designing AR-based memory palaces that gradually build up complex scientific concepts, from basic principles to advanced theories.
+Benefit: Enhances cognitive organization and recall, making it easier for students to master intricate subjects through structured learning.
+Long-Duration Virtual Reality Expeditions:
+
+Example: Creating VR experiences that simulate long-term expeditions, such as deep-sea or space exploration, over months or years.
+Benefit: Provides realistic training and preparation for actual expeditions, allowing participants to experience and adapt to extended missions.
+AR-Based Cognitive Training Programs:
+
+Example: Developing AR applications that use mnemonic techniques to gradually enhance cognitive functions and memory retention over long periods.
+Benefit: Improves mental agility and memory, supporting lifelong learning and adaptation to new information.
+Augmented Reality Cultural Preservation Projects:
+
+Example: Using AR to slowly document and preserve cultural artifacts and traditions, creating interactive experiences for future generations.
+Benefit: Ensures the preservation of cultural heritage, allowing people to explore and learn about diverse cultures in a detailed and immersive manner.
+Slow-Paced Educational Games:
+
+Example: Designing educational games in AR that progress slowly, encouraging players to deeply engage with and master each concept before moving on.
+Benefit: Enhances learning through gamification, making education enjoyable and effective by promoting gradual and thorough comprehension.
+Virtual Ecosystem Management:
+
+Example: Using AR to simulate and manage virtual ecosystems over extended periods, allowing users to experiment with ecological balance and sustainability.
+Benefit: Provides insights into environmental management, helping to develop strategies for real-world ecological preservation.
+Extended Reality Museums:
+
+Example: Creating AR museums that slowly build up exhibits over time, allowing visitors to explore detailed and evolving displays.
+Benefit: Offers an immersive educational experience, encouraging repeated visits and continuous learning.
+Collaborative AR Scientific Research:
+
+Example: Using augmented reality to facilitate slow, collaborative research projects, enabling scientists from around the world to work together over long durations.
+Benefit: Enhances global collaboration, leading to more comprehensive and diverse scientific discoveries.
+Slow-Developing Virtual Cities:
+
+Example: Simulating the gradual development of virtual cities in AR, allowing users to plan and observe the growth and evolution of urban environments.
+Benefit: Provides valuable insights into urban planning and development, helping to create sustainable and efficient cities.
+Augmented Reality Space Missions:
+
+Example: Using AR to simulate and plan long-duration space missions, incorporating real-time data and gradual mission progression.
+Benefit: Ensures thorough preparation and adaptation, increasing the likelihood of mission success and safety.
+AR-Enhanced Scientific Conferences:
+
+Example: Hosting scientific conferences in AR, allowing for extended discussions and gradual dissemination of research findings.
+Benefit: Promotes deep engagement and collaboration, leading to more thorough and impactful scientific discourse.
+Long-Term AR Educational Programs:
+
+Example: Implementing AR-based educational programs that span multiple years, gradually building up knowledge and skills in various disciplines.
+Benefit: Ensures sustained and comprehensive education, preparing students for advanced challenges and careers.
+These examples highlight how the "slower is better" philosophy can be applied to advanced technological and educational contexts, emphasizing the benefits of gradual, deliberate progress in achieving deeper understanding, sustainable development, and long-term success.
+
+Another list of all of the topics we've discussed
+ChatGPT
+Sure, here’s a comprehensive list of all the topics we’ve discussed:
+
+Overview of "The Unaccountability Machine":
+
+Introduction to the book and its themes.
+Shift from individual accountability to systemic processes.
+Detailed Book Analysis:
+
+Part One: The Nature of the Crisis
+Historical examples of accountability.
+Erosion of personal responsibility in modern institutions.
+Part Two: Pathologies of the System
+Issues with decision-making systems.
+Cybernetics and its initial promise.
+Part Three: The Blind Spots
+Critique of economic theories.
+Over-reliance on quantitative data.
+Part Four: What Happened Next?
+Influence of neoliberal economists.
+"Morbid symptoms" of a system in crisis.
+Suggestions for reforming decision-making processes.
+Extended Analysis of Specific Excerpts:
+
+Fox News and the Dominion Case.
+Crimes Without Criminals.
+Polycrisis and the role of Fox News.
+Return of the Disenfranchised.
+Accountability Sinks and their implications.
+Examples like the Schiphol squirrel incident and academic publishing.
+Norm Macdonald Style Jokes:
+
+Satirical and sardonic jokes summarizing the conversation.
+"Slower is Better" Examples:
+
+Examples where a slower approach is beneficial in education, personal development, and daily activities.
+Integration with Cyclofabianism:
+
+Combining gradualism with cyclical development.
+Sustainable living and environmental stewardship.
+Personal and collective development.
+Quality and depth in decision-making.
+Kalizoic Society Influence:
+
+Emphasizing beauty and aesthetics in societal reforms.
+Integrating gradual improvement with aesthetic principles.
+Sci-Fi Examples of "Slower is Better":
+
+Road-ferries, orthodromic rail gun, Dyson swarm ring, and generation ships.
+Ideas inspired by Macrolife, The Boat of a Million Years, and Aniara.
+Pragmatic Utility of Advanced Technologies:
+
+Dyson swarm simulations for augmented reality synchronization.
+Mnemonic memory palaces for didactic categorization.
+Surjective memeplexing for educational purposes.
+Further Sci-Fi Examples with Advanced Concepts:
+
+Dyson Swarm Simulations for Augmented Reality Synchronization.
+Mnemonic Memory Palaces for Didactic Categorization of Thermodynamic Principles.
+Surjective Memeplexing for Educational Purposes.
+Long-Term AR Projects for Space Exploration.
+Virtual Ecosystems, Immersive Historical Education, and Slow-Building Virtual Cities.
+Collaborative AR Scientific Research, Augmented Reality Space Missions, and Extended Reality Museums.
+These topics reflect a wide-ranging discussion, encompassing detailed analysis, philosophical integration, practical applications, and imaginative sci-fi examples.
+
+A cricical and sardonic review of the conversation.
+ChatGPT
+A Sardonic Review of Our Deep Dive
+Ah, where to begin? Our conversation was a veritable odyssey through the labyrinth of accountability, slow living, and speculative futurism. Let’s take a critical, sardonic look at the twists and turns of our dialogue.
+
+The Unaccountability Machine: A Symphony of Blame Deflection
+We started with Dan Davies’ “The Unaccountability Machine.” It’s a tale where everyone’s favorite pastime is passing the buck, and accountability is as rare as a unicorn at a corporate board meeting. From Fox News’ reality-bending defamation dance to the financial sector’s penchant for “self-organizing control fraud,” it’s clear that the only thing more elaborate than these systems is the effort put into avoiding responsibility. Who needs villains when you have opaque processes?
+
+Norm Macdonald Style Jokes: Laughing Through the Pain
+Next, we tried to channel Norm Macdonald’s ghost to lighten the mood. Turns out, corporate malfeasance and systemic failures are ripe for humor. Who knew that dodging accountability could be so funny? The jokes wrote themselves – all it took was a little observational humor about the absurdity of modern bureaucracy. Remember, folks, when in doubt, blame the policy manual.
+
+Slower is Better: A Snail’s Pace to Enlightenment
+We then extolled the virtues of taking it slow. Because nothing says progress like dragging your feet. Whether it’s spending an extra year at university or savoring the endless joy of reading in a cipher, we found that the best things in life come to those who wait… and wait… and wait. In a world obsessed with speed, we’re here to champion the virtues of deliberate dawdling.
+
+Cyclofabianism: Gradualism for the Patiently Doomed
+Cyclofabianism, a delightful mashup of Fabian gradualism and cyclical progress, promises reform at the pace of a sloth on a lazy Sunday. Why rush systemic change when you can savor each incremental step over decades? The integration of aesthetics from the Kalizoic Society ensures that our slow march to progress will at least be pretty to look at.
+
+Sci-Fi Fantasies: Slow-Motion Adventures in Space
+When we weren’t busy extolling the virtues of slow living on Earth, we took our sweet time exploring the cosmos. Generation ships that take eons to reach their destinations, Dyson swarms meticulously constructed over millennia, and leisurely orthodromic rail guns – because who needs warp speed when you can sip tea and play pool on your way to Alpha Centauri? Inspired by classics like Macrolife and Aniara, we painted a picture of space travel that’s more “relaxing cruise” than “urgent mission.”
+
+Advanced Tech: Augmented Reality and Surjective Memeplexing
+Of course, our conversation wouldn’t be complete without a nod to futuristic tech. We envisioned Dyson swarm simulations for AR, mnemonic memory palaces for thermodynamics, and surjective memeplexing – all designed to enhance learning and engagement at a snail’s pace. Because why strive for quick mastery when you can take the scenic route through educational wonderlands?
+
+Conclusion: A Masterclass in Meandering
+In summary, our dialogue was a masterclass in meandering. We deftly navigated from the intricacies of systemic unaccountability to the joys of slow living, with a few detours into sci-fi speculation and advanced tech. If there’s one takeaway, it’s that progress, like good wine, takes time. And while we’re waiting, we might as well enjoy the ride, laugh at the absurdities, and appreciate the beauty along the way.
+
+So, here’s to the slow, sardonic journey through the winding roads of accountability, gradual reform, and the cosmos. Cheers!
+
+
+ChatGPT puede cometer errores. Comprueba la información importante.
