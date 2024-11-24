@@ -6,12 +6,19 @@
     <title>Evolution of the Paraclete</title>
     <meta name="description" content="A sardonic exploration of humanity's journey through time, artifacts, and the invention of entirely new organs.">
     <link rel="preload" href="fonts/CursiveGalactic-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Sga-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
     <style>
         @font-face {
             src: url('fonts/CursiveGalactic-Regular.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
             font-family: 'Cursive Galactic';
+        }
+        @font-face {
+            src: url('fonts/Sga-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-family: 'Standard Galactic';
         }
         body {
             font-family: 'Cursive Galactic', Arial, sans-serif;
@@ -56,11 +63,32 @@
         .content ul li {
             margin-bottom: 10px;
         }
+        .button-container {
+            margin-bottom: 20px;
+        }
+        .font-button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: 2px solid #00ff00;
+            background: black;
+            color: #00ff00;
+            font-family: Arial, sans-serif;
+            cursor: pointer;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+        .font-button.active {
+            background: #00ff00;
+            color: black;
+        }
+        .font-button:hover {
+            background: #00cc00;
+            color: black;
+        }
     </style>
 </head>
 <body>
     <h1>𝘌𝘷𝘰𝘭𝘶𝘵𝘪𝘰𝘯 𝘰𝘧 𝘵𝘩𝘦 𝘗𝘢𝘳𝘢𝘤𝘭𝘦𝘵𝘦</h1>
-    <img src="paraclete.webp" alt="Paraclete Evolution Graphic" class="paraclete-image">
+        <img src="paraclete.webp" alt="Paraclete Evolution Graphic" class="paraclete-image">
     <div class="content">
         <p>Ah, what a journey we've taken—skipping merrily through the tangled forest of theoretical musings, existential angst about machines, and the invention of entirely new organs, as if we were gods bored on a coffee break. Let’s wrap it all up with the kind of irreverence it deserves:</p>
 
@@ -107,5 +135,37 @@
         <p><a href="https://chatgpt.com/share/6741db42-46e4-800f-aae0-c47ca4bf54fd">Continue this Conversation</a></p>
         <p><a href="https://github.com/standardgalactic/abraxas/blob/main/Temporal%20Dimensionality%20and%20Feedback.mhtml">From Temporal Dimensionality and Feedback</a></p>
     </div>
+<div class="button-container">
+        <button class="font-button active" id="cursive-btn">Cursive Galactic</button>
+        <button class="font-button" id="standard-btn">Standard Galactic</button>
+        <button class="font-button" id="latin-btn">Latin</button>
+    </div>
+    <script>
+    // Font switching functionality
+    const cursiveBtn = document.getElementById('cursive-btn');
+    const standardBtn = document.getElementById('standard-btn');
+    const latinBtn = document.getElementById('latin-btn');
+    const body = document.body;
+
+    function switchFont(fontFamily, activeBtn) {
+        body.style.fontFamily = fontFamily;
+
+        // Adjust font size dynamically for Arial
+        if (fontFamily === "Arial, sans-serif") {
+            body.style.fontSize = "75%"; // Reduce font size for Arial
+        } else {
+            body.style.fontSize = ""; // Reset font size for other fonts
+        }
+
+        // Update active button styling
+        document.querySelectorAll('.font-button').forEach(btn => btn.classList.remove('active'));
+        activeBtn.classList.add('active');
+    }
+
+    cursiveBtn.addEventListener('click', () => switchFont("'Cursive Galactic', Arial, sans-serif", cursiveBtn));
+    standardBtn.addEventListener('click', () => switchFont("'Standard Galactic', Arial, sans-serif", standardBtn));
+    latinBtn.addEventListener('click', () => switchFont("Arial, sans-serif", latinBtn));
+</script>
+
 </body>
 </html>
