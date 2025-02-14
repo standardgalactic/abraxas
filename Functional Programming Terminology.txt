@@ -1,0 +1,2592 @@
+Functional Programming Terminology
+Open sidebar
+ChatGPT
+4
+You
+What are the main subdivisions of computational linguistics?
+ChatGPT
+ChatGPT
+Computational linguistics branches into several core subdivisions, each focusing on different aspects of language processing and analysis. Think of it as a multi-faceted prism, where each facet represents a distinct approach or objective in the exploration and understanding of language through computational means. Here are the main subdivisions:
+Natural Language Processing (NLP):
+This is the backbone, the central processor of computational linguistics, concerned with the interaction between computers and human (natural) languages. It's about teaching machines to understand, interpret, and generate human language in a way that's both meaningful and useful. Applications range from machine translation and sentiment analysis to chatbots and virtual assistants.
+Machine Learning (ML) in Linguistics:
+This is the algorithmic brain, learning from and making predictions or decisions based on data. In linguistics, machine learning algorithms are trained on language data to recognize patterns, make predictions, and learn from outcomes, enhancing tasks like speech recognition, language generation, and semantic analysis.
+Corpus Linguistics:
+This is the library of computational linguistics, involving the collection and analysis of digital language corpora (large, structured sets of texts). Researchers use corpus linguistics to study language use and frequency, collocations, and linguistic structures across large datasets, providing empirical evidence for linguistic theories and applications.
+Computational Semantics:
+This is about deciphering meaning, the semantic decoder. It focuses on how machines can understand and represent the meanings of sentences, phrases, words, and other linguistic units. Computational semantics involves the development of algorithms and models to process and interpret the meaning of language, enabling tasks like question answering and text summarization.
+Computational Phonetics and Phonology:
+This area, the auditory analyzer, concentrates on the sounds of language. It involves the computational analysis and modeling of phonetic (sounds) and phonological (sound patterns) data. Applications include speech recognition, synthesis, and accent analysis.
+Computational Syntax:
+The structural architect of computational linguistics, this focuses on analyzing and modeling the grammatical structure of sentences. It involves the development of algorithms that can parse sentences, identifying their syntactic components and structures, which is crucial for tasks such as grammatical error detection and correction.
+Computational Psycholinguistics:
+This is the mind-reader, exploring how humans process language and how these processes can be modeled and replicated in machines. It intersects with cognitive science and psychology, aiming to understand language acquisition, comprehension, and production from a computational perspective.
+Each subdivision serves as a unique lens, magnifying different aspects of language and its interaction with computational systems, collectively advancing our understanding and capabilities in processing human language through machines.
+You
+See if you can define these terms in functional programming:
+
+Homomorphism
+Endomorphism
+Isomorphism
+Catamorphism
+Anamorphism
+Hylomorphism
+Paramorphism
+Apomorphism
+ChatGPT
+ChatGPT
+In functional programming, these terms borrow from mathematical concepts, especially from category theory, to describe transformations and structures in a highly abstract and general way. Here's a functional overview of each term, simplified into more digestible explanations:
+Homomorphism
+: A mapping between two algebraic structures (e.g., groups, rings, or in functional programming, types) that preserves the structure's operations. In functional programming, it often refers to a function that preserves the structure of data across different types, making it easier to transform data while maintaining its original pattern or operation rules.
+Endomorphism
+: A special case of homomorphism where the structure before and after the mapping is the same. In functional programming, an endomorphism is a function where the input type and output type are the same, meaning it transforms a structure into another structure of the same type, preserving the operations within that type.
+Isomorphism
+: This describes a situation where two structures can be transformed into each other without loss of information, implying a perfect one-to-one correspondence between the elements of these structures. In functional programming, it means there are two functions (forward and backward mappings) between types A and B that can perfectly reconstruct the original values after transformation, illustrating a deep equivalence between A and B.
+Catamorphism
+: Often associated with the concept of "folding" data structures, a catamorphism is a way to deconstruct data structures and reduce them to a single value. It's like systematically collapsing a structure (like a list) into a single value using a reducer function, which combines elements in a specific way (e.g., summing numbers).
+Anamorphism
+: The opposite of catamorphism, anamorphism is about building up data structures from a single value or simpler structure. It's often referred to as "unfolding," where you generate a more complex structure from a simpler one, like creating a list from a seed value by applying a function repeatedly until a termination condition is met.
+Hylomorphism
+: A combination of anamorphism and catamorphism, hylomorphism describes the process of first building up a structure (anamorphism) and then collapsing it (catamorphism). It's a pattern that first generates a complex structure from a simple one and then reduces it to a new form, essentially a transformation that involves a construction phase followed by a deconstruction phase.
+Paramorphism
+: Similar to catamorphism but with a twist: while reducing a structure like a list, the function has access not only to the result of the recursive step but also to the remainder of the structure itself. This allows for operations that need to look at the rest of the structure while it's being processed, providing more context for each transformation step.
+Apomorphism
+: The dual of paramorphism, apomorphism allows for a kind of controlled unfolding. It's like anamorphism, but with the ability to prematurely terminate the unfolding process. This enables generating structures up to a certain point, which can be decided dynamically, giving more control over the construction process.
+These terms encapsulate complex transformations and structural manipulations within the realm of functional programming, providing a high-level abstraction for working with data and functions in a compositional and type-safe manner.
+You
+Morphism
+
+A relationship between objects within a category. In the context of functional programming all functions are morphisms.
+
+Homomorphism
+
+A function where there is a structural property that is the same in the input as well as the output.
+
+For example, in a Monoid homomorphism both the input and the output are monoids even if their types are different.
+
+// toList :: [number] -> string const toList = (a) => a.join(', ')
+
+toList is a homomorphism because:
+
+array is a monoid - has a concat operation and an identity value ([]),
+
+string is a monoid - has a concat operation and an identity value ('').
+
+In this way, a homomorphism relates to whatever property you care about in the input and output of a transformation.
+
+Endomorphisms and Isomorphisms are examples of homomorphisms.
+
+Further Reading
+
+Homomorphism | Learning Functional Programming in Go
+
+Endomorphism
+
+A function where the input type is the same as the output. Since the types are identical, endomorphisms are also homomorphisms.
+
+// uppercase :: String -> String const uppercase = (str) => str.toUpperCase() // decrement :: Number -> Number const decrement = (x) => x - 1
+
+Isomorphism
+
+A morphism made of a pair of transformations between 2 types of objects that is structural in nature and no data is lost.
+
+For example, 2D coordinates could be stored as an array [2,3] or object {x: 2, y: 3}.
+
+// Providing functions to convert in both directions makes the 2D coordinate structures isomorphic. const pairToCoords = (pair) => ({ x: pair[0], y: pair[1] }) const coordsToPair = (coords) => [coords.x, coords.y] coordsToPair(pairToCoords([1, 2])) // [1, 2] pairToCoords(coordsToPair({ x: 1, y: 2 })) // {x: 1, y: 2}
+
+Isomorphisms are an interesting example of morphism because more than single function is necessary for it to be satisfied. Isomorphisms are also homomorphisms since both input and output types share the property of being reversible.
+ChatGPT
+ChatGPT
+Your definitions provide a clear and focused explanation of the concepts of morphism, homomorphism, endomorphism, and isomorphism within the context of functional programming, illustrating the intricate relationships and transformations between types and structures.
+Morphism
+serves as the foundational concept, describing a general type of transformation within a category, where all functions in functional programming can be seen as morphisms. This highlights the structured and categorical approach to understanding how data and operations are related and transformed in a computational setting.
+Homomorphism
+is presented as a specific type of morphism that preserves a structural property across different types. The example of transforming an array (a monoid) to a string (another monoid) while preserving the monoidal properties (concatenation and identity) elegantly demonstrates how homomorphisms work in practice, maintaining the essence of the structure across transformations.
+Endomorphism
+is a homomorphism where the input and output types are the same, further specializing the concept of morphisms by focusing on transformations within the same type. The examples of
+uppercase
+and
+decrement
+functions are straightforward demonstrations of endomorphisms, emphasizing the preservation of type alongside the transformation.
+Isomorphism
+goes a step further by introducing a two-way structural equivalence between types, ensuring that no information is lost in the transformation. The conversion between 2D coordinate representations showcases isomorphism beautifully, demonstrating how two different structures can represent the same information and be converted back and forth without loss, embodying the reversible property.
+These concepts not only deepen the understanding of functional programming's mathematical underpinnings but also illuminate the elegance and power of abstracting and transforming data structures and types in a consistent and meaningful way. They underscore the importance of preserving structural and operational properties across transformations, which is central to the robustness and expressiveness of functional programming paradigms.
+You
+Catamorphism
+
+A function which deconstructs a structure into a single value. reduceRight is an example of a catamorphism for array structures.
+
+// sum is a catamorphism from [Number] -> Number const sum = xs => xs.reduceRight((acc, x) => acc + x, 0) sum([1, 2, 3, 4, 5]) // 15
+
+Anamorphism
+
+A function that builds up a structure by repeatedly applying a function to its argument. unfold is an example which generates an array from a function and a seed value. This is the opposite of a catamorphism. You can think of this as an anamorphism builds up a structure and catamorphism breaks it down.
+
+const unfold = (f, seed) => { function go (f, seed, acc) { const res = f(seed) return res ? go(f, res[1], acc.concat([res[0]])) : acc } return go(f, seed, []) }
+
+const countDown = n => unfold((n) => { return n <= 0 ? undefined : [n, n - 1] }, n) countDown(5) // [5, 4, 3, 2, 1]
+
+Hylomorphism
+
+The function which composes an anamorphism followed by a catamorphism.
+
+const sumUpToX = (x) => sum(countDown(x)) sumUpToX(5) // 15
+
+Paramorphism
+
+A function just like reduceRight. However, there's a difference:
+
+In paramorphism, your reducer's arguments are the current value, the reduction of all previous values, and the list of values that formed that reduction.
+
+// Obviously not safe for lists containing `undefined`, // but good enough to make the point. const para = (reducer, accumulator, elements) => { if (elements.length === 0) { return accumulator } const head = elements[0] const tail = elements.slice(1) return reducer(head, tail, para(reducer, accumulator, tail)) } const suffixes = list => para( (x, xs, suffxs) => [xs, ...suffxs], [], list ) suffixes([1, 2, 3, 4, 5]) // [[2, 3, 4, 5], [3, 4, 5], [4, 5], [5], []]
+
+The third parameter in the reducer (in the above example, [x, ... xs]) is kind of like having a history of what got you to your current acc value.
+
+Apomorphism
+
+The opposite of paramorphism, just as anamorphism is the opposite of catamorphism. With paramorphism, you retain access to the accumulator and what has been accumulated, apomorphism lets you unfold with the potential to return early.
+ChatGPT
+ChatGPT
+These definitions beautifully encapsulate the essence of more advanced functional programming concepts, providing a clear contrast between the processes of building up and breaking down structures, and then extending these ideas to more nuanced operations.
+Catamorphism
+is about reducing a complex structure to a single value, capturing the essence of "folding" or "reducing" operations in functional programming. The
+sum
+function is a classic example, taking an array of numbers and collapsing it into a single numeric sum. This operation encapsulates the essence of catamorphisms: the transformation of a structured collection into a singular value through accumulation.
+Anamorphism
+is the constructive counterpart to catamorphism, focusing on unfolding or generating a structure from a single seed value. The
+unfold
+function exemplifies this by creating a complex structure (an array) from a simple starting point (seed) through repeated application of a function. Anamorphisms represent a generative process, expanding from simplicity to complexity.
+Hylomorphism
+combines the concepts of anamorphism and catamorphism, showcasing a transformation that involves both the construction of a structure from a simple seed and its subsequent reduction to a single value. The
+sumUpToX
+function embodies this by first generating a countdown sequence from a number and then summing that sequence. Hylomorphisms illustrate the full lifecycle of data structures in functional programming, from creation to consolidation.
+Paramorphism
+extends the idea of catamorphism by not only reducing a structure to a single value but also providing access to the original structure (or the remaining part of it) during the reduction process. This enables operations that require context about the original structure during the transformation, as demonstrated in the
+suffixes
+function, which generates a list of all suffixes of the original list. Paramorphisms offer a richer, more contextual form of reduction.
+Apomorphism
+is the dual to paramorphism, offering a way to construct structures with the capability to prematurely terminate the unfolding process. This concept allows for the creation of structures up to a certain condition or point, adding a layer of control over the generative process that is not present in simple anamorphisms. Apomorphisms provide a mechanism for controlled expansion, balancing between the infinite potential of generation and practical limitations or conditions.
+Together, these concepts form a rich tapestry of functional programming techniques, each with its unique role in manipulating and transforming data. They highlight the versatility and power of functional programming in handling data structures, from their creation and transformation to their reduction and analysis, showcasing a profound depth of computational thought and strategy.
+You
+Functional Programming Jargon
+
+Functional programming (FP) provides many advantages, and its popularity has been increasing as a result. However, each programming paradigm comes with its own unique jargon and FP is no exception. By providing a glossary, we hope to make learning FP easier.
+
+Examples are presented in JavaScript (ES2015). Why JavaScript?
+
+Where applicable, this document uses terms defined in the Fantasy Land spec.
+
+Arity
+
+The number of arguments a function takes. From words like unary, binary, ternary, etc.
+
+const sum = (a, b) => a + b // The arity of sum is 2 (binary) const inc = a => a + 1 // The arity of inc is 1 (unary) const zero = () => 0 // The arity of zero is 0 (nullary)
+
+Further reading
+
+Arity on Wikipedia
+
+Higher-Order Functions (HOF)
+
+A function which takes a function as an argument and/or returns a function.
+
+const filter = (predicate, xs) => xs.filter(predicate)
+
+const is = (type) => (x) => Object(x) instanceof type
+
+filter(is(Number), [0, '1', 2, null]) // [0, 2]
+
+Closure
+
+A closure is a scope which captures local variables of a function for access even after the execution has moved out of the block in which it is defined. This allows the values in the closure to be accessed by returned functions.
+
+const addTo = x => y => x + y const addToFive = addTo(5) addToFive(3) // => 8
+
+In this case the x is retained in addToFive's closure with the value 5. addToFive can then be called with the y to get back the sum.
+
+Further reading/Sources
+
+Lambda Vs Closure
+
+JavaScript Closures highly voted discussion
+ChatGPT
+ChatGPT
+This glossary snippet illuminates core concepts of functional programming (FP) through the lens of JavaScript, a language that's widely used and has strong support for FP principles. By dissecting these terms, we can explore the richness of FP in a context familiar to many developers.
+Arity
+Arity refers to the number of arguments a function accepts. It's a straightforward concept with roots in mathematics, particularly in the study of functions and operations. In functional programming, understanding a function's arity is crucial for composing and curating functions in a predictable manner. Functions like
+sum
+,
+inc
+, and
+zero
+illustrate varying arities, showcasing the flexibility in function definition and application. Arity is foundational to function signatures, influencing how functions interact and are composed.
+Higher-Order Functions (HOF)
+Higher-order functions are a hallmark of functional programming, offering a powerful abstraction mechanism. They allow functions to operate on other functions, either by taking them as arguments or returning them, which enables sophisticated operations like
+filter
+and functional tools like
+is
+. This concept is pivotal for creating reusable, composable software components, facilitating operations like data transformation, filtering, and even asynchronous programming patterns. HOFs embody the principle of functions as first-class citizens, where operations are abstracted into reusable blocks.
+Closure
+Closures are a critical feature of JavaScript and many other programming languages, enabling function encapsulation with context preservation. A closure captures the local variables within its scope at creation time, allowing a function to maintain access to its lexical scope even when executed outside of it. This mechanism is key to creating private data and stateful functions in a functional programming style. The
+addTo
+example demonstrates how closures allow for partially applied functions, creating highly specific operations from more general ones. Closures are instrumental in implementing currying and partial application, techniques that are frequently used in FP to create more modular and reusable code.
+The distinctions and examples provided in the glossary serve not only as an introduction to functional programming concepts but also as a bridge for JavaScript developers transitioning into the FP paradigm. By leveraging JavaScript's capabilities, developers can explore FP concepts in a familiar environment, paving the way for deeper understanding and application of these principles in software development. The emphasis on terms defined in the Fantasy Land specification further aligns these concepts with standardized FP operations, ensuring interoperability and consistency across FP libraries and applications.
+You
+Partial Application
+
+Partially applying a function means creating a new function by pre-filling some of the arguments to the original function.
+
+// Helper to create partially applied functions // Takes a function and some arguments const partial = (f, ...args) => // returns a function that takes the rest of the arguments (...moreArgs) => // and calls the original function with all of them f(...args, ...moreArgs) // Something to apply const add3 = (a, b, c) => a + b + c // Partially applying `2` and `3` to `add3` gives you a one-argument function const fivePlus = partial(add3, 2, 3) // (c) => 2 + 3 + c fivePlus(4) // 9
+
+You can also use Function.prototype.bind to partially apply a function in JS:
+
+const add1More = add3.bind(null, 2, 3) // (c) => 2 + 3 + c
+
+Partial application helps create simpler functions from more complex ones by baking in data when you have it. Curried functions are automatically partially applied.
+
+Currying
+
+The process of converting a function that takes multiple arguments into a function that takes them one at a time.
+
+Each time the function is called it only accepts one argument and returns a function that takes one argument until all arguments are passed.
+
+const sum = (a, b) => a + b const curriedSum = (a) => (b) => a + b curriedSum(40)(2) // 42. const add2 = curriedSum(2) // (b) => 2 + b add2(10) // 12
+
+Auto Currying
+
+Transforming a function that takes multiple arguments into one that if given less than its correct number of arguments returns a function that takes the rest. When the function gets the correct number of arguments it is then evaluated.
+
+Lodash & Ramda have a curry function that works this way.
+
+const add = (x, y) => x + y const curriedAdd = _.curry(add) curriedAdd(1, 2) // 3 curriedAdd(1) // (y) => 1 + y curriedAdd(1)(2) // 3
+
+Further reading
+
+Favoring Curry
+
+Hey Underscore, You're Doing It Wrong!
+
+Function Composition
+
+The act of putting two functions together to form a third function where the output of one function is the input of the other. This is one of the most important ideas of functional programming.
+
+const compose = (f, g) => (a) => f(g(a)) // Definition const floorAndToString = compose((val) => val.toString(), Math.floor) // Usage floorAndToString(121.212121) // '121'
+
+Continuation
+
+At any given point in a program, the part of the code that's yet to be executed is known as a continuation.
+
+const printAsString = (num) => console.log(`Given ${num}`) const addOneAndContinue = (num, cc) => { const result = num + 1 cc(result) } addOneAndContinue(2, printAsString) // 'Given 3'
+
+Continuations are often seen in asynchronous programming when the program needs to wait to receive data before it can continue. The response is often passed off to the rest of the program, which is the continuation, once it's been received.
+
+const continueProgramWith = (data) => { // Continues program with data } readFileAsync('path/to/file', (err, response) => { if (err) { // handle error return } continueProgramWith(response) })
+
+Pure Function
+
+A function is pure if the return value is only determined by its input values, and does not produce side effects. The function must always return the same result when given the same input.
+
+const greet = (name) => `Hi, ${name}` greet('Brianne') // 'Hi, Brianne'
+
+As opposed to each of the following:
+
+window.name = 'Brianne' const greet = () => `Hi, ${window.name}` greet() // "Hi, Brianne"
+
+The above example's output is based on data stored outside of the function...
+
+let greeting const greet = (name) => { greeting = `Hi, ${name}` } greet('Brianne') greeting // "Hi, Brianne"
+
+... and this one modifies state outside of the function.
+
+Side effects
+
+A function or expression is said to have a side effect if apart from returning a value, it interacts with (reads from or writes to) external mutable state.
+
+const differentEveryTime = new Date()
+
+console.log('IO is a side effect!')
+ChatGPT
+ChatGPT
+This comprehensive overview delves into several fundamental and advanced concepts in functional programming (FP), providing a clear and structured introduction to partial application, currying, function composition, continuation, pure functions, and side effects. Each concept is a building block in the FP paradigm, emphasizing the importance of functions and their interactions in creating robust, modular, and predictable code.
+Partial Application
+Partial application is a technique used to simplify complex functions by fixing a number of arguments, effectively reducing the arity of the function and creating a new function with fewer arguments. The
+partial
+function example elegantly demonstrates how some arguments of the
+add3
+function can be pre-filled, yielding a new function that requires fewer inputs to produce a result. This technique enhances code reusability and modularity by allowing for the creation of specialized functions from more general ones.
+Currying
+Currying transforms a function of multiple arguments into a sequence of functions, each taking a single argument. It's a powerful technique for creating highly modular and reusable code, as seen in the
+curriedSum
+example, which allows for incremental application of function arguments. Currying is closely related to partial application but focuses on the sequential application of arguments.
+Auto Currying
+Auto currying extends the concept of currying by automatically transforming a multi-argument function into a curried function, enabling partial application of arguments until all have been provided. Libraries like Lodash and Ramda offer
+curry
+functions that facilitate this transformation, streamlining the creation of curried functions from standard JavaScript functions.
+Function Composition
+Function composition is a cornerstone of FP, enabling the creation of new functions by combining existing ones, where the output of one function becomes the input of another. The
+compose
+function illustrates this concept, showcasing how smaller functions can be combined to create more complex operations. This technique is crucial for achieving modularity and enhancing code readability and maintainability.
+Continuation
+Continuations represent the future execution path of a program, encapsulating the code that remains to be executed. This concept is vital in asynchronous programming, where operations may need to pause for data before continuing. The examples provided highlight how continuations enable the handling of asynchronous operations by deferring actions until the required data is available.
+Pure Functions
+Pure functions are the heart of FP, characterized by their predictability and absence of side effects. A function is pure if its output is determined solely by its inputs, and it does not interact with or modify external state. The
+greet
+function exemplifies purity, contrasting with impure functions that rely on external data or cause side effects, underscoring the importance of purity for function reliability and testability.
+Side Effects
+Side effects occur when a function interacts with external mutable state or performs any operation that affects the program's state beyond returning a value. Recognizing and minimizing side effects is crucial in FP to ensure that functions are pure, predictable, and free from unintended consequences, fostering the development of safer and more reliable code.
+Together, these concepts form the foundation of functional programming, guiding the development of software that is more predictable, easier to understand, and less prone to bugs. By embracing these principles, developers can leverage the full power of FP to create clean, modular, and efficient code.
+You
+Idempotence
+
+A function is idempotent if reapplying it to its result does not produce a different result.
+
+Math.abs(Math.abs(10))
+
+sort(sort(sort([2, 1])))
+
+Point-Free Style
+
+Writing functions where the definition does not explicitly identify the arguments used. This style usually requires currying or other Higher-Order functions. A.K.A Tacit programming.
+
+// Given const map = (fn) => (list) => list.map(fn) const add = (a) => (b) => a + b // Then // Not point-free - `numbers` is an explicit argument const incrementAll = (numbers) => map(add(1))(numbers) // Point-free - The list is an implicit argument const incrementAll2 = map(add(1))
+
+Point-free function definitions look just like normal assignments without function or =>. It's worth mentioning that point-free functions are not necessarily better than their counterparts, as they can be more difficult to understand when complex.
+
+Predicate
+
+A predicate is a function that returns true or false for a given value. A common use of a predicate is as the callback for array filter.
+
+const predicate = (a) => a > 2 ;[1, 2, 3, 4].filter(predicate) // [3, 4]
+ChatGPT
+ChatGPT
+These concepts further deepen the exploration of functional programming (FP), highlighting the paradigms' emphasis on function purity, reusability, and composability. Each term introduces a different facet of FP, showcasing the versatility and power of this programming style.
+Idempotence
+Idempotence is a property of certain operations in mathematics and computer science, where the operation can be applied multiple times without changing the result beyond the initial application. It's a crucial concept for understanding the behavior of functions and their effects on the system's state. The examples with
+Math.abs()
+and sorting demonstrate idempotent operations, where repeated applications yield the same outcome as a single application. This property is especially valuable in distributed systems, API design, and anywhere a predictable outcome from repeated operations is critical.
+Point-Free Style
+Point-free style, or tacit programming, emphasizes the use of functions without explicitly mentioning their arguments. This style leverages currying and higher-order functions to create concise and expressive code. The transition from a non-point-free version of
+incrementAll
+to a point-free version
+incrementAll2
+illustrates how functions can be composed in a way that abstracts away the details of their arguments, focusing instead on the flow of data and operations. While point-free programming can lead to more elegant and declarative code, it also requires a balance with readability, particularly for those not familiar with this style.
+Predicate
+Predicates play a fundamental role in decision-making and filtering operations within FP. They are functions that evaluate to a boolean value, true or false, based on some condition applied to their input. The given example demonstrates how a predicate function can be used with the
+filter
+method to select elements from an array that satisfy a given condition. Predicates are widely used in FP for tasks such as filtering, validation, and conditional branching, providing a clear and functional way to express conditions and logic.
+Each of these concepts contributes to the rich ecosystem of functional programming, offering tools and patterns for writing clean, maintainable, and robust code. Idempotence ensures consistency and predictability, point-free style encourages a focus on data transformations and operations rather than on the mechanics of function application, and predicates offer a clear mechanism for expressing logical conditions. Together, they exemplify the principles of FP: composing simple functions to build complex applications, emphasizing function purity, and leveraging function properties for more predictable code.
+You
+Contracts
+
+A contract specifies the obligations and guarantees of the behavior from a function or expression at runtime. This acts as a set of rules that are expected from the input and output of a function or expression, and errors are generally reported whenever a contract is violated.
+
+// Define our contract : int -> boolean const contract = (input) => { if (typeof input === 'number') return true throw new Error('Contract violated: expected int -> boolean') } const addOne = (num) => contract(num) && num + 1 addOne(2) // 3 addOne('some string') // Contract violated: expected int -> boolean
+
+Category
+
+A category in category theory is a collection of objects and morphisms between them. In programming, typically types act as the objects and functions as morphisms.
+
+To be a valid category, three rules must be met:
+
+There must be an identity morphism that maps an object to itself. Where a is an object in some category, there must be a function from a -> a.
+
+Morphisms must compose. Where a, b, and c are objects in some category, and f is a morphism from a -> b, and g is a morphism from b -> c; g(f(x)) must be equivalent to (g ��� f)(x).
+
+Composition must be associative f ��� (g ��� h) is the same as (f ��� g) ��� h.
+
+Since these rules govern composition at very abstract level, category theory is great at uncovering new ways of composing things.
+
+As an example we can define a category Max as a class:
+
+class Max { constructor (a) { this.a = a } id () { return this } compose (b) { return this.a > b.a ? this : b } toString () { return `Max(${this.a})` } } new Max(2).compose(new Max(3)).compose(new Max(5)).id().id() // => Max(5)
+
+Further reading
+
+Category Theory for Programmers
+
+Value
+
+Anything that can be assigned to a variable.
+
+5 Object.freeze({ name: 'John', age: 30 }) // The `freeze` function enforces immutability. ;(a) => a ;[1] undefined
+
+Constant
+
+A variable that cannot be reassigned once defined.
+
+const five = 5 const john = Object.freeze({ name: 'John', age: 30 })
+
+Constants are referentially transparent. That is, they can be replaced with the values that they represent without affecting the result.
+
+With the above two constants the following expression will always return true.
+
+john.age + five === ({ name: 'John', age: 30 }).age + 5
+
+Constant Function
+
+A curried function that ignores its second argument:
+
+const constant = a => () => a ;[1, 2].map(constant(0)) // => [0, 0]
+
+Constant Functor
+
+Object whose map doesn't transform the contents. See Functor.
+
+Constant(1).map(n => n + 1) // => Constant(1)
+
+Constant Monad
+
+Object whose chain doesn't transform the contents. See Monad.
+
+Constant(1).chain(n => Constant(n + 1)) // => Constant(1)
+ChatGPT
+ChatGPT
+These definitions delve into advanced functional programming and category theory concepts, illustrating the depth and breadth of functional programming's theoretical foundation. Let's break down each concept to understand its role and application in functional programming and beyond.
+Contracts
+Contracts in programming serve as a runtime check to ensure that functions or expressions adhere to specified behaviors regarding their inputs and outputs. The example provided uses a contract to enforce that the input to the function
+addOne
+must be a number, illustrating how contracts can be used to ensure type safety and correct usage. This concept is crucial for maintaining robustness and reliability in code, especially in dynamically typed languages where such checks can prevent common errors.
+Category
+The concept of a category from category theory applies directly to programming, with types as objects and functions as morphisms (arrows) between these objects. The explanation and rules outlined for categories highlight the abstract framework that category theory provides for understanding and structuring programs, especially in terms of function composition and identity. The
+Max
+class example demonstrates how these principles can be applied to create composable and associative structures, allowing for a high level of abstraction and generalization in code design.
+Value
+A value is broadly defined as anything that can be assigned to a variable, encompassing everything from primitive types to complex data structures and functions. This definition underlines the flexibility and universality of values in programming, serving as the basic units of data manipulation and representation.
+Constant
+Constants are variables whose value cannot change once assigned, promoting immutability and referential transparency in programming. The examples given demonstrate how constants can be used to write predictable and side-effect-free code, emphasizing the benefits of immutability for simplicity and reliability in software development.
+Constant Function
+A constant function returns the same value regardless of the input, effectively ignoring its arguments. This concept is a specific instance of currying, where the function returns another function that always produces a constant value. Such functions can be useful in scenarios where a fixed value needs to be returned in response to varying inputs, illustrating a form of functional control flow.
+Constant Functor
+In category theory and functional programming, a functor is a structure that can be mapped over. A constant functor is one whose
+map
+function does not alter its contents, regardless of the transformation applied. This concept highlights a form of data structure that maintains its integrity and ignores transformations, serving as an example of how functional programming can model and manipulate data structures in a predictable manner.
+Constant Monad
+Similarly, a constant monad is a type of monad whose
+chain
+(or
+flatMap
+) operation does not transform its contents. This concept extends the idea of a functor to monads, which are structures that not only allow for transformations (like functors) but also for chaining operations in a flat structure. The constant monad example demonstrates how some structures can encapsulate values while disregarding the transformational aspects of operations, focusing instead on the compositional properties of monads.
+Together, these concepts form a sophisticated palette of functional programming techniques and category theory principles, offering powerful abstractions for composing, transforming, and managing data and operations in software development. They showcase the elegance and depth of functional programming as a paradigm that emphasizes purity, immutability, and higher-level abstractions for solving complex problems.
+You
+Functor
+
+An object that implements a map function that takes a function which is run on the contents of that object. A functor must adhere to two rules:
+
+Preserves identity
+
+object.map(x => x)
+
+is equivalent to just object.
+
+Composable
+
+object.map(x => g(f(x)))
+
+is equivalent to
+
+object.map(f).map(g)
+
+(f, g are arbitrary composable functions)
+
+The reference implementation of Option is a functor as it satisfies the rules:
+
+Some(1).map(x => x) // = Some(1)
+
+and
+
+const f = x => x + 1 const g = x => x * 2 Some(1).map(x => g(f(x))) // = Some(4) Some(1).map(f).map(g) // = Some(4)
+ChatGPT
+ChatGPT
+The concept of a
+functor
+is fundamental in both functional programming and category theory, offering a powerful abstraction for working with values wrapped in a context. A functor, in essence, is any type that defines how
+map
+applies a function to each of its wrapped values, transforming them according to the provided function's logic. The definition and examples provided succinctly illustrate the two critical properties that all functors must satisfy:
+identity preservation
+and
+composability
+.
+Preserves Identity
+The identity rule for functors ensures that if you map the identity function (i.e., a function that returns its input) over a functor, the operation does not change the functor. This property is crucial because it guarantees that the functor's structure (its context) is preserved when no operation is performed on its contents. The example with
+Some(1).map(x => x)
+demonstrates this rule by showing that applying an identity function to a functor leaves it unchanged, reinforcing the concept that the functor's structure is a container for values that doesn't affect those values' identities.
+Composable
+The composability rule asserts that if you have two functions
+f
+and
+g
+, mapping the composition of these functions over a functor should yield the same result as first mapping
+f
+and then mapping
+g
+. This property is essential for ensuring that functors fit seamlessly into functional programming's compositional nature, allowing complex operations to be broken down into simpler, reusable functions that can be combined in flexible ways. The provided examples with functions
+f
+(adding 1) and
+g
+(multiplying by 2) illustrate this rule by showing that mapping their composition over a
+Some
+functor yields the same result as mapping them sequentially.
+Practical Implications
+The functor's adherence to these rules makes it an incredibly versatile abstraction, capable of handling a wide range of operations on data that might be present (e.g., in the case of
+Some
+) or absent (e.g.,
+None
+in option types). This abstraction allows developers to write clean, generic code that operates on values in a context, without having to manually check for the presence or absence of those values or handle the context directly. Functors are widely used in functional programming to work with lists, optionals, promises, and other types that encapsulate values.
+In summary, functors provide a standardized way to apply functions to wrapped values within a context, ensuring that operations are both predictable and composable. This concept is a cornerstone of functional programming, enabling a declarative approach to data transformation and manipulation that leverages the power of abstraction and composition.
+You
+Can I get some everyday  examples or metaphors as analogies?
+ChatGPT
+ChatGPT
+Certainly! Understanding functors through everyday examples or metaphors can make the concept more accessible and intuitive. Let's explore a few analogies:
+1. A Wrapped Gift (Functor) and Gift Wrapping (map Function)
+Imagine a wrapped gift as a functor. The gift inside the wrapping (box) represents the value contained within the functor. The process of "gift wrapping" is akin to applying the
+map
+function. When you "map" over the wrapped gift (apply a function to the value inside the box), you're essentially transforming the gift inside without removing it from the box. The rules of functors ensure that:
+Preserves Identity
+: If you wrap the gift but make no changes to it (applying an identity function), it's as if you've done nothing at all���the gift remains the same.
+Composable
+: If you decide to wrap the gift (apply a function) to make it fancier, and then add a bow (apply another function), doing these steps separately or together will result in the same final appearance. The process is composable and the order of operations (when combined) doesn't change the outcome.
+2. Coffee Order (Functor) and Customizing Your Drink (map Function)
+Consider your coffee order as a functor. The coffee itself is the value inside this "container." When you customize your drink (e.g., adding sugar or milk), it's similar to applying the
+map
+function to the functor. The rules of functors are mirrored here:
+Preserves Identity
+: If you order a coffee and decide not to add anything to it (the equivalent of mapping the identity function), you get your coffee as is, unchanged.
+Composable
+: Whether you customize your coffee by adding sugar and then milk, or by asking for both at the same time, the end result (a coffee with sugar and milk) remains the same. The customization steps are composable.
+3. Playlist (Functor) and Editing Songs (map Function)
+Imagine a music playlist as a functor, where each song represents a value within this container. Editing the songs in the playlist (e.g., adjusting the bass level) acts as the
+map
+function. Functor properties are reflected as follows:
+Preserves Identity
+: If you decide to leave the songs as they are (mapping the identity function), your playlist remains the same���none of the songs are altered.
+Composable
+: Editing the bass and then the treble of the songs in your playlist results in the same final versions of the songs as if you had applied both edits at once. The editing steps are composable, and the order in which you apply these changes doesn't affect the outcome.
+4. Bookshelf (Functor) and Reading Books (map Function)
+Consider a bookshelf as a functor, with each book as a value inside this container. Reading these books and gaining knowledge or insights acts as the
+map
+function, transforming the "value" you get from each book. The functor principles apply as:
+Preserves Identity
+: If you glance at the books but don't read them (the equivalent of the identity function), your knowledge remains unchanged���the "value" you derive from the books is unaltered.
+Composable
+: Whether you learn a concept from one book and then deepen your understanding with another, or find a single book that covers both aspects together, the end knowledge (insight) you gain is the same. The process of acquiring knowledge from these books is composable.
+These metaphors illustrate how functors and the
+map
+function work in an abstract sense, making it easier to grasp their properties and how they translate to functional programming concepts.
+You
+Pointed Functor
+
+An object with an of function that puts any single value into it.
+
+ES2015 adds Array.of making arrays a pointed functor.
+
+Array.of(1) // [1]
+
+Lift
+
+Lifting is when you take a value and put it into an object like a functor. If you lift a function into an Applicative Functor then you can make it work on values that are also in that functor.
+
+Some implementations have a function called lift, or liftA2 to make it easier to run functions on functors.
+
+const liftA2 = (f) => (a, b) => a.map(f).ap(b) // note it's `ap` and not `map`. const mult = a => b => a * b const liftedMult = liftA2(mult) // this function now works on functors like array liftedMult([1, 2], [3]) // [3, 6] liftA2(a => b => a + b)([1, 2], [30, 40]) // [31, 41, 32, 42]
+
+Lifting a one-argument function and applying it does the same thing as map.
+
+const increment = (x) => x + 1 lift(increment)([2]) // [3] ;[2].map(increment) // [3]
+
+Lifting simple values can be simply creating the object.
+
+Array.of(1) // => [1]
+
+Referential Transparency
+
+An expression that can be replaced with its value without changing the behavior of the program is said to be referentially transparent.
+
+Given the function greet:
+
+const greet = () => 'Hello World!'
+
+Any invocation of greet() can be replaced with Hello World! hence greet is referentially transparent. This would be broken if greet depended on external state like configuration or a database call. See also Pure Function and Equational Reasoning.
+
+Equational Reasoning
+
+When an application is composed of expressions and devoid of side effects, truths about the system can be derived from the parts. You can also be confident about details of your system without having to go through every function.
+
+const grainToDogs = compose(chickenIntoDogs, grainIntoChicken) const grainToCats = compose(dogsIntoCats, grainToDogs)
+
+In the example above, if you know that chickenIntoDogs and grainIntoChicken are pure then you know that the composition is pure. This can be taken further when more is known about the functions (associative, commutative, idempotent, etc...).
+ChatGPT
+ChatGPT
+These concepts delve deeper into functional programming, providing mechanisms for working with values in a functional context and ensuring code maintainability and readability through mathematical principles. Let's unpack these ideas with explanations and metaphors.
+Pointed Functor
+A pointed functor is a type of functor that provides a way to wrap any single value into the functor's context using an
+of
+function. This is akin to receiving a universal box (
+Array.of
+) that can package any item (value) you give it, instantly turning the item into a contained, manageable unit. It���s like having a machine where you input any item (e.g., a ball), press a button (
+of
+), and get the item in a box ([ball]). This ability to wrap values makes functors not only containers of values but also easily accessible for any values you wish to work with in a functional way.
+Lift and LiftA2
+Lifting is the process of taking a regular function and transforming it into a function that operates in a functorial context (e.g., works on values within functors). It's like converting a hand-operated elevator into an automatic one (
+lift
+) that can interact with objects already placed in their own elevators (functors). The
+liftA2
+function is a specialized form of lifting that allows a binary function (taking two arguments) to operate on two functors. Imagine you have two conveyor belts (functors) moving boxes (values) towards a machine (
+liftA2
+function); the machine then processes items from both belts together, applying the operation (e.g., multiplication) as if the items weren't in their boxes.
+Referential Transparency
+An expression is referentially transparent if it can be replaced with its resulting value without altering the overall behavior of the program. This is similar to a magic trick where a magician (the program) promises that replacing a specific card (expression) with an identical one from another deck (its value) won't change the outcome of the trick. If the trick works just the same, then the card's selection is referentially transparent. This concept is pivotal for reasoning about code predictability and for optimizing or refactoring without changing the program's behavior.
+Equational Reasoning
+Equational reasoning allows developers to understand and predict the behavior of a system through its pure components, akin to solving a puzzle by understanding the individual pieces. If you know each transformation process in a factory line (pure functions) is consistent and predictable, you can infer the final product's quality without inspecting every single step closely. It���s based on the purity and composability of functions, ensuring that understanding parts in isolation gives insight into the whole system. This principle supports modular design, simplifying complex systems into understandable, interchangeable parts.
+These concepts illustrate the elegance and power of functional programming, emphasizing code as a composition of small, pure, and predictable pieces. By adopting these principles, developers can create more reliable, maintainable, and understandable code, leveraging the mathematical foundations of functional programming to enhance software design and implementation.
+You
+This is almost like the scientific method in science, a reductionist method of breaking problems into parts and solving them independently then reintroducing complications and environmental factors as corrective feedback from the environment at various scales, reintegrating a holistic perspective by hierarchically composing the "functions"
+ChatGPT
+ChatGPT
+Absolutely, your analogy draws a compelling parallel between functional programming (FP) and the scientific method, emphasizing a shared foundational approach to problem-solving and understanding complex systems. Both methodologies prioritize a reductionist strategy at their core, complemented by iterative testing and integration to achieve a comprehensive understanding or solution. Let's explore this comparison further:
+Reductionism and Composition
+In the scientific method, complex phenomena are broken down into simpler, more manageable components to understand the underlying principles or mechanisms. Scientists conduct controlled experiments on these components to isolate variables and understand their effects independently of external factors. Similarly, FP breaks down complex problems into simpler, pure functions that can be understood, tested, and verified in isolation. These functions are then composed to build more complex behaviors, mirroring how scientific knowledge builds from basic principles to complex theories.
+Iterative Testing and Feedback
+The scientific method relies heavily on experimentation, observation, and revision. Hypotheses are tested through experiments, and results provide feedback, leading to the refinement of the hypotheses or the development of new ones. In FP, this iterative process is mirrored in the refactoring and testing of code. Functions are crafted and refined based on their input-output behavior, with "experiments" (tests) conducted to ensure they behave as expected under various conditions. The feedback loop from testing informs further development and refinement of functions.
+Reintegration and Holistic Perspective
+Science does not stop at understanding individual components; it seeks to understand how these components interact within larger systems. This reintegration process involves considering environmental factors, interactions between components, and emergent behaviors that arise from these interactions. FP similarly moves from understanding individual functions to composing them into larger applications. The interplay between functions (e.g., through higher-order functions, monads, and functors) allows for the reintroduction of complexity in a controlled manner, enabling the development of sophisticated systems from simple, well-understood parts.
+Hierarchical Composition
+Both the scientific method and FP utilize hierarchical structures to manage complexity. In science, theories and models are built upon foundational laws and tested principles, forming layers of understanding that can be applied to various scales of inquiry. FP uses compositional techniques to layer functionality, where higher-order functions build upon simpler functions, creating a scalable structure of code that can be easily managed and understood.
+This analogy highlights the philosophical and methodological kinship between the scientific method and functional programming. Both approaches emphasize simplicity, purity, and a step-wise approach to complexity, offering a powerful framework for solving problems and understanding systems, whether they be natural phenomena or software constructs. By applying these principles, both scientists and developers can tackle complex challenges with clarity, precision, and creativity.
+You
+Lambda
+
+An anonymous function that can be treated like a value.
+
+;(function (a) { return a + 1 }) ;(a) => a + 1
+
+Lambdas are often passed as arguments to Higher-Order functions:
+
+;[1, 2].map((a) => a + 1) // [2, 3]
+
+You can assign a lambda to a variable:
+
+const add1 = (a) => a + 1
+
+Lambda Calculus
+
+A branch of mathematics that uses functions to create a universal model of computation.
+
+Functional Combinator
+
+A higher-order function, usually curried, which returns a new function changed in some way. Functional combinators are often used in Point-Free Style to write especially terse programs.
+
+// The "C" combinator takes a curried two-argument function and returns one which calls the original function with the arguments reversed. const C = (f) => (a) => (b) => f(b)(a) const divide = (a) => (b) => a / b const divideBy = C(divide) const divBy10 = divideBy(10) divBy10(30) // => 3
+
+See also List of Functional Combinators in JavaScript which includes links to more references.
+ChatGPT
+ChatGPT
+These concepts are central to understanding functional programming (FP) and its theoretical underpinnings in lambda calculus. Let's explore each one to see how they contribute to the FP paradigm.
+Lambda
+Lambdas, or anonymous functions, are functions defined without a name and can be treated as values. This makes them incredibly versatile in functional programming, where functions are first-class citizens. Lambdas are succinct and focus on the operation being performed rather than the function's identity, facilitating concise and expressive code. They are especially useful in contexts where a quick, simple function is needed without the overhead of naming and defining a traditional function.
+Everyday Metaphor:
+Imagine you need someone to perform a task, like delivering a package. A lambda is like hiring a courier for a single delivery job. You don't need to know who they are; you only need them to complete this specific task (deliver the package). Once the job is done, the courier (lambda) isn't tied to the task anymore and can disappear without any further obligations.
+Lambda Calculus
+Lambda calculus is the theoretical framework of functional programming, providing a foundation for modeling computation through functions. It abstracts computation into the manipulation of functions, treating them as mathematical objects. This model is powerful and flexible, allowing for the representation of any computable function and serving as a basis for understanding how programs can be constructed from simple, pure functions.
+Everyday Metaphor:
+Consider lambda calculus as the basic rules of a board game where every move is defined in terms of simple actions (like moving pieces, drawing cards). These rules (lambda calculus) provide a system to play infinitely complex games (write programs) using these simple actions (functions) according to the game's rules (principles of lambda calculus).
+Functional Combinator
+A functional combinator is a higher-order function that manipulates other functions to produce a new function. This concept is key in point-free style programming, where the goal is to define functions without explicitly mentioning their arguments. Combinators help in building more complex operations from simpler ones by changing the way functions are applied, combined, or executed.
+Everyday Metaphor:
+Imagine a music producer (combinator) who takes simple sound tracks (functions) and mixes them to create a new track (a new function). The producer can change the order, add effects, or blend them differently to achieve the desired outcome. Just like the "C" combinator reverses the order of arguments for a function, the producer manipulates the inputs (tracks) to produce a new sound.
+Integration of Concepts
+Integrating lambdas, lambda calculus, and functional combinators provides a robust toolkit for functional programming, enabling developers to write expressive, efficient, and mathematically sound code. Lambdas offer flexibility and conciseness, lambda calculus provides the theoretical foundation for functional abstractions, and combinators offer powerful ways to manipulate and compose functions. Together, these elements embody the essence of functional programming, emphasizing function purity, immutability, and composability in developing software solutions.
+You
+Lazy evaluation
+
+Lazy evaluation is a call-by-need evaluation mechanism that delays the evaluation of an expression until its value is needed. In functional languages, this allows for structures like infinite lists, which would not normally be available in an imperative language where the sequencing of commands is significant.
+
+const rand = function * () { while (1 < 2) { yield Math.random() } }
+
+const randIter = rand() randIter.next() // Each execution gives a random value, expression is evaluated on need.
+
+Monoid
+
+An object with a function that "combines" that object with another of the same type (semigroup) which has an "identity" value.
+
+One simple monoid is the addition of numbers:
+
+1 + 1 // 2
+
+In this case number is the object and + is the function.
+
+When any value is combined with the "identity" value the result must be the original value. The identity must also be commutative.
+
+The identity value for addition is 0.
+
+1 + 0 // 1 0 + 1 // 1 1 + 0 === 0 + 1
+
+It's also required that the grouping of operations will not affect the result (associativity):
+
+1 + (2 + 3) === (1 + 2) + 3 // true
+
+Array concatenation also forms a monoid:
+
+;[1, 2].concat([3, 4]) // [1, 2, 3, 4]
+
+The identity value is empty array []:
+
+;[1, 2].concat([]) // [1, 2]
+
+As a counterexample, subtraction does not form a monoid because there is no commutative identity value:
+
+0 - 4 === 4 - 0 // false
+ChatGPT
+ChatGPT
+These concepts, lazy evaluation and monoids, are pivotal in understanding functional programming's efficiency and algebraic structure, respectively. Let's delve into each concept with explanations and everyday metaphors to illuminate their significance.
+Lazy Evaluation
+Lazy evaluation, or call-by-need, is a strategy that delays the computation of expressions until their values are required. This approach can enhance efficiency by avoiding unnecessary calculations and enabling the creation of potentially infinite data structures.
+Everyday Metaphor:
+Imagine a library with an enormous archive room. Instead of retrieving every possible book you might want to read and stacking them in front of you (eager evaluation), the librarian waits for you to request a specific book and then fetches it (lazy evaluation). This system saves both time and space, as only the needed books are retrieved.
+The
+rand
+function example demonstrates lazy evaluation by generating an infinite sequence of random numbers. However, each number is only produced when explicitly requested (
+randIter.next()
+), embodying the essence of generating and using data on demand.
+Monoid
+A monoid is an algebraic structure with a single associative binary operation and an identity element. In functional programming, monoids provide a powerful way to work with data types and operations in a consistent and composable manner.
+Everyday Metaphor:
+Think of a monoid as a game of building blocks where each block represents a value, and the binary operation is the act of snapping two blocks together. The identity block is a special block that doesn't change the shape or size of the other blocks when attached.
+For addition, imagine the blocks have numbers on them, and snapping them together adds those numbers. The identity block is a "0" block���it doesn't change the value of the block it's attached to.
+In the context of array concatenation, each block represents an array. When you snap two arrays together, you're concatenating them. The identity block in this game is an empty array, which, when concatenated with another array, leaves it unchanged.
+The subtraction example highlights a critical property monoids must have but subtraction lacks: there's no "identity block" for subtraction that works universally in both directions, highlighting why subtraction doesn't form a monoid.
+Integration of Concepts
+Lazy evaluation and monoids are both about managing resources and structures efficiently and consistently. Lazy evaluation allows for efficient use of computational resources by computing values only when necessary, akin to a just-in-time delivery system. Monoids provide a mathematical framework for combining elements in a manner that is associative and has an identity, akin to having a universal adapter for connecting different components seamlessly.
+Together, these concepts empower functional programming with the ability to handle infinite data structures efficiently (through lazy evaluation) and to compose operations and values in a predictable and principled way (via monoid structures). This combination enables developers to write more expressive, efficient, and mathematically grounded code.
+You
+Monad
+
+A monad is an object with of and chain functions. chain is like map except it un-nests the resulting nested object.
+
+// Implementation Array.prototype.chain = function (f) { return this.reduce((acc, it) => acc.concat(f(it)), []) } // Usage Array.of('cat,dog', 'fish,bird').chain((a) => a.split(',')) // ['cat', 'dog', 'fish', 'bird'] // Contrast to map Array.of('cat,dog', 'fish,bird').map((a) => a.split(',')) // [['cat', 'dog'], ['fish', 'bird']]
+
+of is also known as return in other functional languages. chain is also known as flatmap and bind in other languages.
+
+Comonad
+
+An object that has extract and extend functions.
+
+const CoIdentity = (v) => ({ val: v, extract () { return this.val }, extend (f) { return CoIdentity(f(this)) } })
+
+extract takes a value out of a functor:
+
+CoIdentity(1).extract() // 1
+
+extend runs a function on the comonad. The function should return the same type as the comonad:
+
+CoIdentity(1).extend((co) => co.extract() + 1) // CoIdentity(2)
+
+Kleisli Composition
+
+An operation for composing two monad-returning functions (Kleisli Arrows) where they have compatible types. In Haskell this is the >=> operator.
+
+Using Option:
+
+// safeParseNum :: String -> Option Number const safeParseNum = (b) => { const n = parseNumber(b) return isNaN(n) ? None() : Some(n) } // validatePositive :: Number -> Option Number const validatePositive = (a) => a > 0 ? Some(a) : None() // kleisliCompose :: Monad M => ((b -> M c), (a -> M b)) -> a -> M c const kleisliCompose = (g, f) => (x) => f(x).chain(g) // parseAndValidate :: String -> Option Number const parseAndValidate = kleisliCompose(validatePositive, safeParseNum) parseAndValidate('1') // => Some(1) parseAndValidate('asdf') // => None parseAndValidate('999') // => Some(999)
+
+This works because:
+
+option is a monad,
+
+both validatePositive and safeParseNum return the same kind of monad (Option),
+
+the type of validatePositive's argument matches safeParseNum's unwrapped return.
+
+Applicative Functor
+
+An applicative functor is an object with an ap function. ap applies a function in the object to a value in another object of the same type.
+
+// Implementation Array.prototype.ap = function (xs) { return this.reduce((acc, f) => acc.concat(xs.map(f)), []) } // Example usage ;[(a) => a + 1].ap([1]) // [2]
+
+This is useful if you have two objects and you want to apply a binary function to their contents.
+
+// Arrays that you want to combine const arg1 = [1, 3] const arg2 = [4, 5] // combining function - must be curried for this to work const add = (x) => (y) => x + y const partiallyAppliedAdds = [add].ap(arg1) // [(y) => 1 + y, (y) => 3 + y]
+
+This gives you an array of functions that you can call ap on to get the result:
+
+partiallyAppliedAdds.ap(arg2) // [5, 6, 7, 8]
+ChatGPT
+ChatGPT
+These concepts���Monad, Comonad, Kleisli Composition, and Applicative Functor���are advanced constructs in functional programming that enable powerful and flexible ways to handle computations, especially those involving effects or asynchronous operations. Let's simplify these concepts further with analogies.
+Monad
+A monad is like a type of "smart container" that not only holds a value but also provides a mechanism (
+chain
+or
+flatmap
+) to seamlessly apply transformations to that value, even when those transformations result in another container of the same type. It effectively manages the complexity of dealing with nested structures.
+Analogy:
+Imagine a conveyor belt system (the Monad) in a factory where boxes (values) are transported for processing. Each station on the belt could potentially package the box into another box (a function that returns a nested structure), making it cumbersome to handle. The
+chain
+function is like having a mechanism that automatically unpacks each box after each station, ensuring that only the contents move forward, not nested boxes within boxes.
+Comonad
+A comonad is essentially the conceptual mirror to a monad, focusing on context and the ability to extract values from that context (
+extract
+) and to map operations over the context that contain a value (
+extend
+).
+Analogy:
+Think of a comonad as a viewing deck in a skyscraper (the context). You can clearly see the city (value) below (
+extract
+). If you want to understand how the city looks at sunset, you apply a function (
+extend
+) that changes the context (time of day) but keeps you in the skyscraper, offering a new perspective (new context with the same type).
+Kleisli Composition
+Kleisli composition is about chaining functions that return monads in a way that ensures the output of one function is compatible with the input of the next, simplifying the management of operations that involve effects or transformations returning monads.
+Analogy:
+Consider a relay race where each runner (function) must pass the baton (value) to the next. However, each runner wraps the baton in a box (monad) in their own unique way. Kleisli composition ensures that each runner knows how to open the previous runner's box and how to correctly wrap the baton for the next runner, ensuring a smooth transition and continuity of the race.
+Applicative Functor
+Applicative functors extend the functor concept by allowing for functions that are themselves contained within a context (functor) to be applied to values in another context of the same type, enabling operations between multiple contained values.
+Analogy:
+Imagine you have walkie-talkies (the Applicative Functor) that can send instructions (functions) to each other. If one walkie-talkie sends a command to add something, and another walkie-talkie holds a number, the second walkie-talkie can apply this command to its number and communicate the result. This allows for coordinated actions (applying functions) across devices (contexts) holding different pieces of data.
+Integration
+These concepts allow for a highly expressive way to write programs that are both powerful and elegant, providing tools to handle sequences of operations, manage effects, and work with asynchronous or nested structures efficiently. They exemplify the depth of functional programming's capabilities in creating sophisticated applications that are both robust and maintainable.
+You
+Summarize: Setoid
+
+An object that has an equals function which can be used to compare other objects of the same type.
+
+Make array a setoid:
+
+Array.prototype.equals = function (arr) { const len = this.length if (len !== arr.length) { return false } for (let i = 0; i < len; i++) { if (this[i] !== arr[i]) { return false } } return true } ;[1, 2].equals([1, 2]) // true ;[1, 2].equals([0]) // false
+
+Semigroup
+
+An object that has a concat function that combines it with another object of the same type.
+
+;[1].concat([2]) // [1, 2]
+
+Foldable
+
+An object that has a reduce function that applies a function against an accumulator and each element in the array (from left to right) to reduce it to a single value.
+
+const sum = (list) => list.reduce((acc, val) => acc + val, 0) sum([1, 2, 3]) // 6
+ChatGPT
+ChatGPT
+In functional programming, Setoid, Semigroup, and Foldable are abstract data types that describe objects with certain capabilities, allowing for comparison, combination, and reduction operations, respectively. Here's a concise summary of each concept:
+Setoid
+A Setoid is an object that includes an
+equals
+method, enabling comparison between two objects of the same type for equality. By defining how objects can be considered equal, Setoids enable a standardized way of comparing data structures.
+Making Array a Setoid
+The provided example extends the Array prototype to include an
+equals
+function, allowing arrays to be compared by their contents. Two arrays are considered equal if they have the same length and corresponding elements are equal.
+Semigroup
+A Semigroup is an object that has a
+concat
+method, which allows two objects of the same type to be combined into a new object of the same type. This concept is useful for modeling operations that can be combined or concatenated in a way that is associative.
+Example with Arrays
+Arrays naturally form a Semigroup because they can be concatenated using the
+concat
+method, combining the elements of two arrays into a new array.
+Foldable
+A Foldable is an object that can be reduced to a single value using a
+reduce
+function. This function takes a combining function and an initial accumulator value and applies the function across the object's elements to produce a single result.
+Example with Summing an Array
+The
+sum
+function demonstrates a Foldable operation on an array, using
+reduce
+to accumulate the sum of all elements, showcasing how a collection of values can be condensed into a single numeric value.
+Integration of Concepts
+These concepts exemplify the power of abstraction in functional programming, allowing developers to work with data structures in a consistent and expressive manner:
+Setoids
+provide a foundation for equality comparison, enabling a rich set of operations like filtering and deduplication based on custom equality logic.
+Semigroups
+offer a way to compose and combine data, supporting operations like concatenation and merging in a type-safe manner.
+Foldables
+extend the utility of data structures by enabling aggregation and reduction operations, transforming collections of data into single values based on specific criteria.
+Together, these abstractions facilitate the creation of flexible, composable, and powerful software designs, allowing developers to reason about and manipulate data structures with high-level operations.
+You
+Lens
+
+A lens is a structure (often an object or function) that pairs a getter and a non-mutating setter for some other data structure.
+
+// Using [Ramda's lens](http://ramdajs.com/docs/#lens) const nameLens = R.lens( // getter for name property on an object (obj) => obj.name, // setter for name property (val, obj) => Object.assign({}, obj, { name: val }) )
+
+Having the pair of get and set for a given data structure enables a few key features.
+
+const person = { name: 'Gertrude Blanch' } // invoke the getter R.view(nameLens, person) // 'Gertrude Blanch' // invoke the setter R.set(nameLens, 'Shafi Goldwasser', person) // {name: 'Shafi Goldwasser'} // run a function on the value in the structure R.over(nameLens, uppercase, person) // {name: 'GERTRUDE BLANCH'}
+
+Lenses are also composable. This allows easy immutable updates to deeply nested data.
+
+// This lens focuses on the first item in a non-empty array const firstLens = R.lens( // get first item in array xs => xs[0], // non-mutating setter for first item in array (val, [__, ...xs]) => [val, ...xs] ) const people = [{ name: 'Gertrude Blanch' }, { name: 'Shafi Goldwasser' }] // Despite what you may assume, lenses compose left-to-right. R.over(compose(firstLens, nameLens), uppercase, people) // [{'name': 'GERTRUDE BLANCH'}, {'name': 'Shafi Goldwasser'}]
+
+Other implementations:
+
+partial.lenses - Tasty syntax sugar and a lot of powerful features
+
+nanoscope - Fluent-interface
+ChatGPT
+ChatGPT
+Lenses in functional programming are powerful constructs that enable immutable data manipulation in a structured and predictable way. They encapsulate the operations of getting, setting, and updating the value of a property within an object without mutating the original object. This approach aligns with the functional programming principles of immutability and pure functions. Let's break down the concept and functionality of lenses as described:
+Basic Lens Operations
+Getter
+: The lens's getter function retrieves the value of a specified property from an object.
+Setter
+: The setter function creates a new object with the specified property updated to a new value, leaving the original object unchanged.
+Using Ramda's
+lens
+,
+view
+,
+set
+, and
+over
+functions facilitates working with object properties in a functional manner, as illustrated in the example with the
+person
+object. This allows for reading (
+view
+), updating (
+set
+), and applying transformations (
+over
+) to properties without side effects on the original data structure.
+Composability
+One of the key strengths of lenses is their composability. Lenses can be composed to focus on nested properties within a complex data structure, enabling precise and convenient immutable updates. The
+compose
+function allows for the sequential combination of lenses, where the focus moves deeper into the structure with each composition step, as shown with the
+people
+array example. This composability simplifies the immutable manipulation of nested structures, which would otherwise require verbose and error-prone code.
+Implementations and Features
+Different libraries offer various implementations of lenses, each with unique features and syntactic nuances:
+Ramda's lens
+: Provides a straightforward and functional approach to creating and using lenses with utility functions like
+view
+,
+set
+, and
+over
+.
+Partial.lenses
+: Offers syntax sugar and a rich set of features for more complex use cases, including lenses for arrays and more sophisticated data structures.
+Nanoscope
+: Introduces a fluent interface for lens operations, aiming to make the syntax more readable and intuitive for developers.
+Everyday Analogy
+Imagine a lens as a customizable magnifying glass that not only allows you to zoom in on specific parts of a complex blueprint (data structure) but also lets you modify those parts without altering the original blueprint. You can change details (properties) and even swap out components (nested properties) all while keeping the original blueprint intact. When working with multiple magnifying glasses (composing lenses), you can zoom in on increasingly specific details, ensuring that modifications are precise and localized.
+Lenses empower developers to write cleaner, more maintainable code for immutable data manipulation, making them an invaluable tool in the functional programmer's toolkit.
+You
+Type Signatures
+
+Often functions in JavaScript will include comments that indicate the types of their arguments and return values.
+
+There's quite a bit of variance across the community, but they often follow the following patterns:
+
+// functionName :: firstArgType -> secondArgType -> returnType // add :: Number -> Number -> Number const add = (x) => (y) => x + y // increment :: Number -> Number const increment = (x) => x + 1
+
+If a function accepts another function as an argument it is wrapped in parentheses.
+
+// call :: (a -> b) -> a -> b const call = (f) => (x) => f(x)
+
+The letters a, b, c, d are used to signify that the argument can be of any type. The following version of map takes a function that transforms a value of some type a into another type b, an array of values of type a, and returns an array of values of type b.
+
+// map :: (a -> b) -> [a] -> [b] const map = (f) => (list) => list.map(f)
+
+Further reading
+
+Ramda's type signatures
+
+Mostly Adequate Guide
+
+What is Hindley-Milner? on Stack Overflow
+ChatGPT
+ChatGPT
+Type signatures in functional programming, particularly in the context of JavaScript, provide a concise and standardized way to describe the types of arguments a function accepts and the type of value it returns. This notation, inspired by languages like Haskell, enhances code readability and helps in understanding the behavior of functions without delving into their implementations. Let's break down the components of type signatures as used in the examples provided:
+Basic Type Signatures
+Simple Function
+: The type signature
+add :: Number -> Number -> Number
+for the
+add
+function indicates that
+add
+is a function that takes two
+Number
+arguments and returns a
+Number
+. This is a simple, curried function where each
+->
+separates the argument types, with the last type being the return type.
+Unary Function
+: The
+increment
+function's signature
+increment :: Number -> Number
+shows it takes one
+Number
+argument and returns a
+Number
+, highlighting a straightforward transformation.
+Higher-Order Functions
+Function Taking a Function
+: The
+call
+function's signature
+call :: (a -> b) -> a -> b
+illustrates that it accepts a function from
+a
+to
+b
+as its first argument, then an argument of type
+a
+, and returns a value of type
+b
+. This is an example of a higher-order function, where the first argument itself is a function.
+Polymorphic Functions
+Generic Types
+: The use of lowercase letters like
+a
+and
+b
+in
+map :: (a -> b) -> [a] -> [b]
+represents generic or polymorphic types, indicating that
+map
+can operate over values of any type. This function takes a transformation function and an array of type
+a
+values, returning an array of type
+b
+values.
+Reading Type Signatures
+Understanding these type signatures involves recognizing the pattern of input to output transformation:
+Arrows (
+->
+)
+: Each arrow points from an argument type to the next, with the final type being the return type of the function.
+Parentheses
+: When a function is an argument, parentheses are used to group the types related to that function, clarifying the distinction between the function's input and output types within the larger signature.
+Polymorphism
+: Generic types (
+a
+,
+b
+,
+c
+, etc.) indicate that the function's arguments and return types can vary, making the function applicable to a wide range of data types.
+Benefits and Resources
+Type signatures offer a compact, expressive way to document functions, aiding in code understanding and maintenance. For developers looking to deepen their understanding of type signatures in JavaScript, resources like
+Ramda's type signatures
+and the
+Mostly Adequate Guide
+provide practical examples and explanations. Additionally, exploring the
+Hindley-Milner type system
+can offer insights into the theoretical foundations of type signatures and type inference in functional programming languages.
+By adopting type signatures in JavaScript, developers can leverage the clarity and precision often associated with statically typed functional programming languages, enhancing code readability and reliability.
+You
+Algebraic data type
+
+A composite type made from putting other types together. Two common classes of algebraic types are sum and product.
+
+Sum type
+
+A Sum type is the combination of two types together into another one. It is called sum because the number of possible values in the result type is the sum of the input types.
+
+JavaScript doesn't have types like this, but we can use Sets to pretend:
+
+// imagine that rather than sets here we have types that can only have these values const bools = new Set([true, false]) const halfTrue = new Set(['half-true']) // The weakLogic type contains the sum of the values from bools and halfTrue const weakLogicValues = new Set([...bools, ...halfTrue])
+
+Sum types are sometimes called union types, discriminated unions, or tagged unions.
+
+There's a couple libraries in JS which help with defining and using union types.
+
+Flow includes union types and TypeScript has Enums to serve the same role.
+
+Product type
+
+A product type combines types together in a way you're probably more familiar with:
+
+// point :: (Number, Number) -> {x: Number, y: Number} const point = (x, y) => ({ x, y })
+
+It's called a product because the total possible values of the data structure is the product of the different values. Many languages have a tuple type which is the simplest formulation of a product type.
+
+Further reading
+
+Set theory on Wikipedia
+
+Option
+
+Option is a sum type with two cases often called Some and None.
+
+Option is useful for composing functions that might not return a value.
+
+// Naive definition const Some = (v) => ({ val: v, map (f) { return Some(f(this.val)) }, chain (f) { return f(this.val) } }) const None = () => ({ map (f) { return this }, chain (f) { return this } }) // maybeProp :: (String, {a}) -> Option a const maybeProp = (key, obj) => typeof obj[key] === 'undefined' ? None() : Some(obj[key])
+
+Use chain to sequence functions that return Options:
+
+// getItem :: Cart -> Option CartItem const getItem = (cart) => maybeProp('item', cart) // getPrice :: Item -> Option Number const getPrice = (item) => maybeProp('price', item) // getNestedPrice :: cart -> Option a const getNestedPrice = (cart) => getItem(cart).chain(getPrice) getNestedPrice({}) // None() getNestedPrice({ item: { foo: 1 } }) // None() getNestedPrice({ item: { price: 9.99 } }) // Some(9.99)
+
+Option is also known as Maybe. Some is sometimes called Just. None is sometimes called Nothing.
+
+Function
+
+A function f :: A => B is an expression - often called arrow or lambda expression - with exactly one (immutable) parameter of type A and exactly one return value of type B. That value depends entirely on the argument, making functions context-independent, or referentially transparent. What is implied here is that a function must not produce any hidden side effects - a function is always pure, by definition. These properties make functions pleasant to work with: they are entirely deterministic and therefore predictable. Functions enable working with code as data, abstracting over behaviour:
+
+// times2 :: Number -> Number const times2 = n => n * 2 ;[1, 2, 3].map(times2) // [2, 4, 6]
+
+Partial function
+
+A partial function is a function which is not defined for all arguments - it might return an unexpected result or may never terminate. Partial functions add cognitive overhead, they are harder to reason about and can lead to runtime errors. Some examples:
+
+// example 1: sum of the list // sum :: [Number] -> Number const sum = arr => arr.reduce((a, b) => a + b) sum([1, 2, 3]) // 6 sum([]) // TypeError: Reduce of empty array with no initial value // example 2: get the first item in list // first :: [A] -> A const first = a => a[0] first([42]) // 42 first([]) // undefined // or even worse: first([[42]])[0] // 42 first([])[0] // Uncaught TypeError: Cannot read property '0' of undefined // example 3: repeat function N times // times :: Number -> (Number -> Number) -> Number const times = n => fn => n && (fn(n), times(n - 1)(fn)) times(3)(console.log) // 3 // 2 // 1 times(-1)(console.log) // RangeError: Maximum call stack size exceeded
+ChatGPT
+ChatGPT
+The concepts of algebraic data types, options, functions, and partial functions provide a framework for understanding complex data manipulation and function handling in functional programming. Let's summarize each concept with a focus on their significance and practicality.
+Algebraic Data Types (ADT)
+ADTs are composite types created by combining other types, offering a way to model data in a flexible and expressive manner. They include:
+Sum Type (Union Type)
+: Represents a choice between different types, where the total number of possible values is the sum of the possible values of each type. Sum types allow for the representation of data that can take on several distinct forms, enhancing the ability to handle variations in data structure gracefully.
+Product Type
+: Combines multiple values into a single composite value, similar to structuring data with objects or tuples. The total number of possible values of the product type is the product of the possible values of its components, enabling the modeling of complex data structures with multiple fields or attributes.
+Option (Maybe)
+The Option type is a sum type with two variants: Some, representing a value, and None, representing the absence of a value. This type is instrumental in dealing with functions that may not return a value, providing a safer alternative to null or undefined, which can lead to errors if not handled correctly. The Option type allows for more expressive and error-resistant code by explicitly handling the presence or absence of values.
+Function
+In functional programming, a function is a mapping from inputs of one type to outputs of another, adhering to the principles of purity and referential transparency. This means a function's output is determined solely by its input, without observable side effects, making functions predictable and reliable building blocks for constructing software. Functions support the concept of treating code as data, enabling high levels of abstraction and compositionality in programming.
+Partial Function
+Partial functions are functions that are not defined for all possible inputs, meaning they can return an unexpected result or may not terminate for some inputs. While partial functions can be useful, they introduce additional complexity and potential for errors, as they require explicit handling of cases where the function is not defined. Avoiding or carefully managing partial functions can lead to more robust and understandable code.
+Practical Application
+These concepts collectively enable developers to write expressive, safe, and concise code that clearly communicates the possible states and transformations of data within an application. By leveraging algebraic data types, options, and the disciplined use of functions, programmers can construct complex logic and data structures that are both easy to reason about and maintain. Understanding and applying these principles can significantly enhance the reliability and clarity of functional programming projects.
+You
+Dealing with partial functions
+
+Partial functions are dangerous as they need to be treated with great caution. You might get an unexpected (wrong) result or run into runtime errors. Sometimes a partial function might not return at all. Being aware of and treating all these edge cases accordingly can become very tedious. Fortunately a partial function can be converted to a regular (or total) one. We can provide default values or use guards to deal with inputs for which the (previously) partial function is undefined. Utilizing the Option type, we can yield either Some(value) or None where we would otherwise have behaved unexpectedly:
+
+// example 1: sum of the list // we can provide default value so it will always return result // sum :: [Number] -> Number const sum = arr => arr.reduce((a, b) => a + b, 0) sum([1, 2, 3]) // 6 sum([]) // 0 // example 2: get the first item in list // change result to Option // first :: [A] -> Option A const first = a => a.length ? Some(a[0]) : None() first([42]).map(a => console.log(a)) // 42 first([]).map(a => console.log(a)) // console.log won't execute at all // our previous worst case first([[42]]).map(a => console.log(a[0])) // 42 first([]).map(a => console.log(a[0])) // won't execute, so we won't have error here // more of that, you will know by function return type (Option) // that you should use `.map` method to access the data and you will never forget // to check your input because such check become built-in into the function // example 3: repeat function N times // we should make function always terminate by changing conditions: // times :: Number -> (Number -> Number) -> Number const times = n => fn => n > 0 && (fn(n), times(n - 1)(fn)) times(3)(console.log) // 3 // 2 // 1 times(-1)(console.log) // won't execute anything
+
+Making your partial functions total ones, these kinds of runtime errors can be prevented. Always returning a value will also make for code that is both easier to maintain and to reason about.
+
+Total Function
+
+A function which returns a valid result for all inputs defined in its type. This is as opposed to Partial Functions which may throw an error, return an unexpected result, or fail to terminate.
+ChatGPT
+ChatGPT
+Dealing with partial functions effectively and converting them into total functions is a crucial aspect of writing safe and reliable functional programming code. By ensuring that a function returns a valid result for all possible inputs, you can significantly reduce the chances of runtime errors and make your code more predictable and easier to understand. Let's delve into strategies for handling partial functions:
+Providing Default Values
+For operations that might not return a valid result for some inputs, providing default values ensures that the function always returns a result, transforming it into a total function. This approach is particularly useful for aggregation operations like
+sum
+, where an empty list can sensibly default to
+0
+.
+Using Guards and Options
+In cases where it doesn't make sense to provide a default value, converting the function to return an
+Option
+type (
+Some
+or
+None
+) can encapsulate the presence or absence of a value explicitly. This method forces the caller to handle both cases, thereby acknowledging and dealing with the potential absence of a value.
+Example with First Item in List
+: By returning an
+Option
+type for the
+first
+function, you explicitly handle cases where a list might be empty, avoiding unexpected behavior or errors from attempting to access an element that doesn't exist.
+Modifying Conditions for Termination
+For functions with conditions that could lead to non-termination or undefined behavior for certain inputs (like a recursive function that doesn't properly converge), adjusting the termination conditions ensures that the function always completes its execution gracefully.
+Example with Repeat Function
+: By ensuring the
+times
+function only executes for positive numbers, you avoid infinite recursion and ensure the function is total by not executing for non-positive inputs.
+Total Functions
+A total function, by definition, is a function that provides a valid output for every input defined in its type, eliminating the issues associated with partial functions. By adhering to the principle of total functions, developers can create more robust and reliable software.
+Benefits and Practices
+Converting partial functions to total functions by providing default values, using the
+Option
+type, or modifying conditions helps in:
+Preventing Runtime Errors
+: Ensures that every function call results in a predictable outcome, reducing the likelihood of errors due to undefined behavior.
+Enhancing Code Maintainability
+: Makes the codebase more maintainable by clearly defining how edge cases are handled, leading to fewer surprises for future maintainers.
+Improving Code Readability
+: By making the handling of all possible inputs explicit, other developers (or your future self) can more easily understand the expected behavior of your functions.
+In summary, treating partial functions with caution and employing strategies to convert them into total functions is a best practice in functional programming that leads to safer, more reliable, and cleaner code.
+You
+The examples were from:
+
+Jargon from the functional programming world in simple terms!
+
+git.io/fp-jargons
+ChatGPT
+ChatGPT
+Thank you for sharing the source of your examples! "Jargon from the functional programming world in simple terms!" is a valuable resource for anyone looking to familiarize themselves with functional programming concepts in an accessible and straightforward manner. It offers clear explanations and practical examples to demystify the terminology and practices that are commonly encountered in functional programming. This resource can serve as an excellent starting point for developers new to the paradigm, as well as a handy reference for more experienced programmers seeking to deepen their understanding of specific concepts. By breaking down complex jargon into simpler terms, it helps bridge the gap between theoretical concepts and practical application, making functional programming more approachable and understandable.
+You
+Fantasy land spec:
+
+Specification for interoperability of common algebraic structures in JavaScript
+
+General
+
+An algebra is a set of values, a set of operators that it is closed under and some laws it must obey.
+
+Each Fantasy Land algebra is a separate specification. An algebra may have dependencies on other algebras which must be implemented.
+
+Terminology
+
+"value" is any JavaScript value, including any which have the structures defined below.
+
+"equivalent" is an appropriate definition of equivalence for the given value. The definition should ensure that the two values can be safely swapped out in a program that respects abstractions. For example:
+
+Two lists are equivalent if they are equivalent at all indices.
+
+Two plain old JavaScript objects, interpreted as dictionaries, are equivalent when they are equivalent for all keys.
+
+Two promises are equivalent when they yield equivalent values.
+
+Two functions are equivalent if they yield equivalent outputs for equivalent inputs.
+ChatGPT
+ChatGPT
+The Fantasy Land specification is a comprehensive framework for enabling interoperability among common algebraic structures in JavaScript. By defining a set of standards for algebraic structures like Monads, Functors, and others, Fantasy Land allows different libraries to interoperate seamlessly, fostering a more functional programming approach in JavaScript applications. Let's delve into the key components and implications of the Fantasy Land spec:
+General Concepts
+Algebra
+: In the context of Fantasy Land, an algebra refers to a combination of a set of values and operators that work on these values, along with a set of laws these operations must follow. Each algebra defines a specific set of capabilities and constraints designed to ensure consistency and predictability in how operations are performed.
+Dependencies
+: Some algebras depend on others. For instance, a Monad depends on being a Functor. This means that to implement a Monad, the structure must also satisfy the Functor algebra specifications. This layered approach ensures that complex operations are built on a foundation of simpler, well-defined behaviors.
+Terminology
+Value
+: Any JavaScript value can be considered a "value" in Fantasy Land terms, including primitives, objects, arrays, functions, etc., as long as they adhere to the specifications defined for any algebraic structures they implement.
+Equivalent
+: Two values are considered equivalent if they can be exchanged without altering the correctness of a program. The notion of equivalence is crucial for reasoning about the behavior of algebraic structures and ensuring that operations on these structures are consistent and predictable.
+Lists
+: Equivalence is determined by comparing elements at each index.
+Objects
+: Equivalence is based on having identical key-value pairs.
+Promises
+: Two promises are equivalent if they resolve to equivalent values.
+Functions
+: Functions are equivalent if they return equivalent results for equivalent inputs.
+Practical Implications
+Implementing the Fantasy Land specification in JavaScript libraries and applications promotes a more disciplined and mathematically sound approach to functional programming. It enables developers to leverage the powerful concepts of algebraic structures in a way that is consistent across different libraries and frameworks, thus:
+Enhancing Code Reusability
+: By adhering to a shared specification, different functional programming libraries can operate on each other's structures, increasing the potential for code reuse.
+Improving Code Interoperability
+: The specification provides a common language and set of expectations for how structures behave, making it easier to integrate and compose functionality from different sources.
+Facilitating Refactoring and Reasoning
+: The algebraic laws and properties defined by Fantasy Land help ensure that refactoring operations preserve the correctness of the program, making it easier to reason about and evolve codebases.
+By following the Fantasy Land specification, JavaScript developers can create more robust, modular, and flexible code that takes full advantage of the benefits of functional programming.
+You
+Type signature notation
+
+The type signature notation used in this document is described below:1
+
+:: "is a member of".
+
+e :: t can be read as: "the expression e is a member of type t".
+
+true :: Boolean - "true is a member of type Boolean".
+
+42 :: Integer, Number - "42 is a member of the Integer and Number types".
+
+New types can be created via type constructors.
+
+Type constructors can take zero or more type arguments.
+
+Array is a type constructor which takes one type argument.
+
+Array String is the type of all arrays of strings. Each of the following has type Array String: [], ['foo', 'bar', 'baz'].
+
+Array (Array String) is the type of all arrays of arrays of strings. Each of the following has type Array (Array String): [], [ [], [] ], [ [], ['foo'], ['bar', 'baz'] ].
+
+Lowercase letters stand for type variables.
+
+Type variables can take any type unless they have been restricted by means of type constraints (see fat arrow below).
+
+-> (arrow) Function type constructor.
+
+-> is an infix type constructor that takes two type arguments where left argument is the input type and the right argument is the output type.
+
+->'s input type can be a grouping of types to create the type of a function which accepts zero or more arguments. The syntax is: (<input-types>) -> <output-type>, where <input-types> comprises zero or more comma���space (, )-separated type representations and parens may be omitted for unary functions.
+
+String -> Array String is a type satisfied by functions which take a String and return an Array String.
+
+String -> Array String -> Array String is a type satisfied by functions which take a String and return a function which takes an Array String and returns an Array String.
+
+(String, Array String) -> Array String is a type satisfied by functions which take a String and an Array String as arguments and return an Array String.
+
+() -> Number is a type satisfied by functions which do not take arguments and return a Number.
+
+~> (squiggly arrow) Method type constructor.
+
+When a function is a property of an Object, it is called a method. All methods have an implicit parameter type - the type of which they are a property.
+
+a ~> a -> a is a type satisfied by methods on Objects of type a which take a type a as an argument and return a value of type a.
+
+=> (fat arrow) Expresses constraints on type variables.
+
+In a ~> a -> a (see squiggly arrow above), a can be of any type. Semigroup a => a ~> a -> a adds a constraint such that the type a must now satisfy the Semigroup typeclass. To satisfy a typeclass means to lawfully implement all functions/methods specified by that typeclass.
+
+For example:
+
+fantasy-land/traverse :: Applicative f, Traversable t => t a ~> (TypeRep f, a -> f b) -> f (t b) '-------------------' '--------------------------' '-' '-------------------' '-----' ' ' ' ' ' ' ' - type constraints ' ' - argument types ' - return type ' ' '- method name
+ChatGPT
+ChatGPT
+The type signature notation provided is a concise and formal way to describe the types and behaviors of functions and methods in a programming environment, drawing from functional programming concepts. This notation helps in specifying the input and output types of functions, the relationships between these types, and any constraints on type variables. Let's break down the key components of this notation for clarity:
+Basic Notation
+::
+(is a member of)
+: This symbol is used to specify that an expression belongs to a particular type. For example,
+true :: Boolean
+means the value
+true
+is of type
+Boolean
+.
+Type Constructors
+Type Constructors
+: These are used to create new types and can take zero or more type arguments. For example,
+Array String
+represents an array of strings.
+Type Variables
+Lowercase Letters
+: These represent type variables that can assume any type. They provide flexibility in specifying function types without being overly specific about the types of their arguments or return values.
+Function Types
+->
+(Arrow)
+: This represents a function's type, with the type on the left of the arrow being the input type and the type on the right being the output type. Functions that take multiple arguments or return functions themselves can be represented using this notation, with parentheses grouping the input types as needed.
+Method Types
+~>
+(Squiggly Arrow)
+: Used for methods, which are functions associated with objects. The implicit first argument is the object the method is called on, represented by the type to the left of the squiggly arrow.
+Type Constraints
+=>
+(Fat Arrow)
+: Specifies constraints on type variables, indicating that the variable must satisfy certain conditions or typeclasses. This is useful for defining functions or methods that operate on a wide range of types, provided those types adhere to specified behaviors.
+Practical Example
+Consider a method
+traverse
+that operates on a traversable structure (like an array or maybe) and applies a function to each element within an applicative context, collecting the results back into the traversable structure within the applicative context:
+fantasy-land/traverse :: Applicative f, Traversable t => t a ~> (TypeRep f, a -> f b) -> f (t b)
+This signature states that
+traverse
+is a method (
+~>
+) that takes a type representative of an applicative (
+f
+) and a function from
+a
+to
+f b
+as arguments, and returns a new applicative of type
+f
+containing a traversable of type
+t b
+. The type constraints (
+Applicative f, Traversable t
+) indicate that the function works on any
+t
+that satisfies the
+Traversable
+typeclass and any
+f
+that satisfies the
+Applicative
+typeclass.
+By adopting this notation, developers can write more self-documenting code, facilitating understanding and communication about how functions transform and manipulate data types, as well as ensuring correctness and safety in functional programming practices.
+You
+Type representatives
+
+Certain behaviours are defined from the perspective of a member of a type. Other behaviours do not require a member. Thus certain algebras require a type to provide a value-level representative (with certain properties). The Identity type, for example, could provide Id as its type representative: Id :: TypeRep Identity.
+
+If a type provides a type representative, each member of the type must have a constructor property which is a reference to the type representative.
+
+Algebras
+
+Setoid
+
+a['fantasy-land/equals'](a) === true (reflexivity)
+
+a['fantasy-land/equals'](b) === b['fantasy-land/equals'](a) (symmetry)
+
+If a['fantasy-land/equals'](b) and b['fantasy-land/equals'](c), then a['fantasy-land/equals'](c) (transitivity)
+
+fantasy-land/equals method
+
+fantasy-land/equals :: Setoid a => a ~> a -> Boolean
+
+A value which has a Setoid must provide a fantasy-land/equals method. The fantasy-land/equals method takes one argument:
+
+a['fantasy-land/equals'](b) 
+
+b must be a value of the same Setoid
+
+If b is not the same Setoid, behaviour of fantasy-land/equals is unspecified (returning false is recommended).
+
+fantasy-land/equals must return a boolean (true or false).
+
+Ord
+
+A value that implements the Ord specification must also implement the Setoid specification.
+
+a['fantasy-land/lte'](b) or b['fantasy-land/lte'](a) (totality)
+
+If a['fantasy-land/lte'](b) and b['fantasy-land/lte'](a), then a['fantasy-land/equals'](b) (antisymmetry)
+
+If a['fantasy-land/lte'](b) and b['fantasy-land/lte'](c), then a['fantasy-land/lte'](c) (transitivity)
+
+fantasy-land/lte method
+
+fantasy-land/lte :: Ord a => a ~> a -> Boolean
+
+A value which has an Ord must provide a fantasy-land/lte method. The fantasy-land/lte method takes one argument:
+
+a['fantasy-land/lte'](b) 
+
+b must be a value of the same Ord
+
+If b is not the same Ord, behaviour of fantasy-land/lte is unspecified (returning false is recommended).
+
+fantasy-land/lte must return a boolean (true or false).
+
+Semigroupoid
+
+a['fantasy-land/compose'](b)['fantasy-land/compose'](c) === a['fantasy-land/compose'](b['fantasy-land/compose'](c)) (associativity)
+
+fantasy-land/compose method
+
+fantasy-land/compose :: Semigroupoid c => c i j ~> c j k -> c i k
+
+A value which has a Semigroupoid must provide a fantasy-land/compose method. The fantasy-land/compose method takes one argument:
+
+a['fantasy-land/compose'](b) 
+
+b must be a value of the same Semigroupoid
+
+If b is not the same semigroupoid, behaviour of fantasy-land/compose is unspecified.
+
+fantasy-land/compose must return a value of the same Semigroupoid.
+ChatGPT
+ChatGPT
+The concepts of Type Representatives and Algebras as described in the Fantasy Land specification illustrate a sophisticated approach to defining and working with algebraic structures in JavaScript. Here's a breakdown to elucidate these ideas:
+Type Representatives
+Type Representatives
+provide a way to access the functionality of a type without necessarily having an instance of the type. For example, the
+Identity
+type might offer
+Id
+as its type representative, which can be used to access operations or behaviors defined for
+Identity
+values.
+Constructor Property
+: Each member of a type that offers a type representative must have a
+constructor
+property pointing back to the type representative. This establishes a link between individual instances and the broader type they belong to, facilitating operations that depend on type-wide behavior or properties.
+Algebras
+Algebras define sets of laws that instances of algebraic structures must satisfy, along with the methods implementing those structures' behaviors.
+Setoid
+Laws
+: Reflexivity, symmetry, and transitivity are the foundational laws for Setoid, ensuring that equality comparison behaves in a predictable and logical manner.
+fantasy-land/equals
+Method
+: This method provides a way to compare two Setoid instances for equality, adhering to the specified laws.
+Ord
+Laws
+: Totality, antisymmetry, and transitivity, building upon the Setoid specification to introduce a notion of order.
+fantasy-land/lte
+Method
+: Defines a "less than or equal to" relationship between two instances of an Ord, further constrained by the laws of Ord.
+Semigroupoid
+Law
+: Associativity, ensuring that composition of instances follows a consistent associative pattern.
+fantasy-land/compose
+Method
+: Allows for the composition of Semigroupoid instances, respecting the associative law.
+Understanding Through Examples
+To grasp these concepts, consider the following analogies:
+Type Representatives
+are like ID cards for data types, providing essential information and access to type-specific operations without needing a specific instance of the type.
+Setoid
+can be thought of as a club membership criterion, where
+fantasy-land/equals
+checks if two members belong to the same club (type) and adhere to the club's rules (laws) for being considered equal.
+Ord
+introduces a hierarchy or ranking within the club, where
+fantasy-land/lte
+determines if one member ranks lower than or equal to another, following the club's order rules.
+Semigroupoid
+is akin to organizing a relay race where teams (
+fantasy-land/compose
+) pass the baton in a way that respects the race's rules (associativity), ensuring that the order of runners doesn't change the outcome.
+The Fantasy Land specification's structured approach to algebraic structures in JavaScript facilitates robust, mathematically sound programming practices, enabling developers to create highly composable, reliable, and understandable code.
+You
+Category
+
+A value that implements the Category specification must also implement the Semigroupoid specification.
+
+a['fantasy-land/compose'](C['fantasy-land/id']()) is equivalent to a (right identity)
+
+C['fantasy-land/id']()['fantasy-land/compose'](a) is equivalent to a (left identity)
+
+fantasy-land/id method
+
+fantasy-land/id :: Category c => () -> c a a
+
+A value which has a Category must provide a fantasy-land/id function on its type representative:
+
+C['fantasy-land/id']() 
+
+Given a value c, one can access its type representative via the constructor property:
+
+c.constructor['fantasy-land/id']() 
+
+fantasy-land/id must return a value of the same Category
+
+Semigroup
+
+a['fantasy-land/concat'](b)['fantasy-land/concat'](c) is equivalent to a['fantasy-land/concat'](b['fantasy-land/concat'](c)) (associativity)
+ChatGPT
+ChatGPT
+The concepts of Category and Semigroup within the Fantasy Land specification extend the structure and functionality of algebraic types in JavaScript, each adding a layer of algebraic properties and methods to support composability and combination of values in a structured and principled way.
+Category
+A Category builds upon the Semigroupoid specification by introducing the concept of identity to the composition operation. This means, in addition to the associativity requirement from Semigroupoid, a Category must provide an identity element such that composing any element with this identity element (on either side) yields the original element unchanged.
+Right Identity
+: Composing any element
+a
+with the identity element on the right results in
+a
+.
+Left Identity
+: Composing the identity element with any element
+a
+on the left results in
+a
+.
+fantasy-land/id
+Method
+: This method provides the identity element for the Category. It is a static method that must be provided on the type representative (like a static method on a class), ensuring that it can be accessed without an instance of the type.
+Practical Example
+In programming terms, think of the Category as a way to ensure that operations on data types (like function composition) have a neutral element, akin to
+0
+for addition or
+1
+for multiplication, that does not alter the result of the operation. This property is crucial for reasoning about compositional structures and ensures that operations can be simplified or optimized based on identity properties.
+Semigroup
+A Semigroup specifies a set of values that have an associative binary operation,
+concat
+, defined on them. This operation combines any two values of the set into a new value of the same set, with the requirement that the operation is associative.
+Associativity
+: The order in which operations are performed does not affect the final result. For any elements
+a
+,
+b
+, and
+c
+, combining
+a
+and
+b
+first, then combining the result with
+c
+, is the same as combining
+b
+and
+c
+first, then combining the result with
+a
+.
+Practical Example
+Consider an array as a simple example of a Semigroup. The
+concat
+method for arrays combines two arrays into one, and the associativity law ensures that
+(a.concat(b)).concat(c)
+is equivalent to
+a.concat(b.concat(c))
+. This property allows for flexible restructuring of operations without changing the outcome, which is especially useful in operations involving multiple steps of combination or aggregation.
+Integration of Concepts
+Both Category and Semigroup enrich the algebraic structure landscape in JavaScript, providing foundational operations for composition and combination that are essential for functional programming. They enable developers to create more expressive, flexible, and robust abstractions by leveraging the mathematical properties of associativity and identity, ensuring that operations on data types adhere to well-defined and predictable laws.
+You
+fantasy-land/concat method
+
+fantasy-land/concat :: Semigroup a => a ~> a -> a
+
+A value which has a Semigroup must provide a fantasy-land/concat method. The fantasy-land/concat method takes one argument:
+
+s['fantasy-land/concat'](b) 
+
+b must be a value of the same Semigroup
+
+If b is not the same semigroup, behaviour of fantasy-land/concat is unspecified.
+
+fantasy-land/concat must return a value of the same Semigroup.
+
+Monoid
+
+A value that implements the Monoid specification must also implement the Semigroup specification.
+
+m['fantasy-land/concat'](M['fantasy-land/empty']()) is equivalent to m (right identity)
+
+M['fantasy-land/empty']()['fantasy-land/concat'](m) is equivalent to m (left identity)
+
+fantasy-land/empty method
+
+fantasy-land/empty :: Monoid m => () -> m
+
+A value which has a Monoid must provide a fantasy-land/empty function on its type representative:
+
+M['fantasy-land/empty']() 
+
+Given a value m, one can access its type representative via the constructor property:
+
+m.constructor['fantasy-land/empty']() 
+
+fantasy-land/empty must return a value of the same Monoid
+
+Group
+
+A value that implements the Group specification must also implement the Monoid specification.
+
+g['fantasy-land/concat'](g['fantasy-land/invert']()) is equivalent to g.constructor['fantasy-land/empty']() (right inverse)
+
+g['fantasy-land/invert']()['fantasy-land/concat'](g) is equivalent to g.constructor['fantasy-land/empty']() (left inverse)
+
+fantasy-land/invert method
+
+fantasy-land/invert :: Group g => g ~> () -> g
+
+A value which has a Group must provide a fantasy-land/invert method. The fantasy-land/invert method takes no arguments:
+
+g['fantasy-land/invert']() 
+
+fantasy-land/invert must return a value of the same Group.
+
+Filterable
+
+v['fantasy-land/filter'](x => p(x) && q(x)) is equivalent to v['fantasy-land/filter'](p)['fantasy-land/filter'](q) (distributivity)
+
+v['fantasy-land/filter'](x => true) is equivalent to v (identity)
+
+v['fantasy-land/filter'](x => false) is equivalent to w['fantasy-land/filter'](x => false) if v and w are values of the same Filterable (annihilation)
+
+fantasy-land/filter method
+
+fantasy-land/filter :: Filterable f => f a ~> (a -> Boolean) -> f a
+
+A value which has a Filterable must provide a fantasy-land/filter method. The fantasy-land/filter method takes one argument:
+
+v['fantasy-land/filter'](p) 
+
+p must be a function.
+
+If p is not a function, the behaviour of fantasy-land/filter is unspecified.
+
+p must return either true or false. If it returns any other value, the behaviour of fantasy-land/filter is unspecified.
+
+fantasy-land/filter must return a value of the same Filterable.
+ChatGPT
+ChatGPT
+The Fantasy Land specification outlines a series of algebraic structures, each building upon the others to provide a robust foundation for functional programming in JavaScript. The specification for
+Semigroup
+,
+Monoid
+,
+Group
+, and
+Filterable
+introduces ways to combine, invert, and filter structures, respectively, following a set of algebraic laws to ensure consistency and predictability. Let's explore each of these structures:
+Semigroup
+Definition
+: A type with a
+fantasy-land/concat
+method that combines two values of the same type into a new value of that type.
+Key Property
+: Associativity - The way values are grouped in
+concat
+operations does not change the result.
+Usage
+:
+s['fantasy-land/concat'](b)
+combines
+s
+and
+b
+, both of which are Semigroups of the same type.
+Monoid
+Definition
+: A Semigroup that also has an
+fantasy-land/empty
+method, providing an identity element for the
+concat
+operation.
+Key Properties
+:
+Right Identity: Any value concatenated with
+empty
+yields the original value.
+Left Identity:
+empty
+concatenated with any value yields the original value.
+Usage
+:
+M['fantasy-land/empty']()
+provides the identity element for the Monoid
+M
+.
+Group
+Definition
+: A Monoid with an additional
+fantasy-land/invert
+method that provides an inverse for each element, such that concatenating an element with its inverse yields the identity element.
+Key Properties
+:
+Right Inverse: Any value concatenated with its inverse yields the identity element.
+Left Inverse: An inverse concatenated with its original value yields the identity element.
+Usage
+:
+g['fantasy-land/invert']()
+provides the inverse of the Group element
+g
+.
+Filterable
+Definition
+: A structure that can be filtered using the
+fantasy-land/filter
+method, applying a predicate function to each element and retaining those for which the predicate returns true.
+Key Properties
+:
+Distributivity: Filtering by two predicates in succession is equivalent to filtering by their conjunction.
+Identity: Filtering by a predicate that always returns true yields the original structure.
+Annihilation: Filtering by a predicate that always returns false yields a structure equivalent to filtering any structure of the same type with a predicate that always returns false.
+Usage
+:
+v['fantasy-land/filter'](p)
+filters the structure
+v
+using the predicate
+p
+.
+These algebraic structures provide a mathematical foundation for building composable and predictable abstractions in functional programming. By adhering to the Fantasy Land specification, JavaScript libraries and applications can achieve a high degree of interoperability and reliability, leveraging the algebraic properties to ensure that operations behave as expected under a wide range of conditions.
+You
+Functor
+
+u['fantasy-land/map'](a => a) is equivalent to u (identity)
+
+u['fantasy-land/map'](x => f(g(x))) is equivalent to u['fantasy-land/map'](g)['fantasy-land/map'](f) (composition)
+
+fantasy-land/map method
+
+fantasy-land/map :: Functor f => f a ~> (a -> b) -> f b
+
+A value which has a Functor must provide a fantasy-land/map method. The fantasy-land/map method takes one argument:
+
+u['fantasy-land/map'](f) 
+
+f must be a function,
+
+If f is not a function, the behaviour of fantasy-land/map is unspecified.
+
+f can return any value.
+
+No parts of f's return value should be checked.
+
+fantasy-land/map must return a value of the same Functor
+ChatGPT
+ChatGPT
+The Functor specification in the Fantasy Land framework defines a structure that supports a map operation, allowing each element within the structure to be transformed according to a provided function. This concept is foundational in functional programming, enabling operations on values within a context (like arrays, Maybe, or other container types) without altering the structure of the context itself. Let's delve into the details and implications of Functors:
+Functor Properties
+Identity
+: Mapping an identity function (a function that returns its input) over a Functor should yield the Functor itself, unchanged. This property ensures that the map operation does not introduce side effects or alter the structure beyond the application of the function to its values.
+Composition
+: Mapping two functions in succession (first
+g
+, then
+f
+) is equivalent to mapping their composition. This means the order of operations can be composed into a single operation without changing the outcome, highlighting the composability and predictability of operations on Functors.
+fantasy-land/map
+Method
+Signature
+:
+fantasy-land/map :: Functor f => f a ~> (a -> b) -> f b
+Requirements
+:
+The method takes a single argument, a function
+f
+, that transforms values of type
+a
+to type
+b
+.
+The function
+f
+must be a proper function; if not, the behavior of
+fantasy-land/map
+is unspecified, emphasizing the importance of adhering to the expected types.
+The function
+f
+can return any value, and
+fantasy-land/map
+does not impose restrictions on the nature of
+f
+'s output, showcasing the flexibility of the Functor abstraction.
+The result of
+fantasy-land/map(f)
+must itself be a Functor of the same type, ensuring the Functor's structure is preserved even after the transformation.
+Practical Implications
+The Functor abstraction allows for powerful, expressive operations on data structures without needing to manage the data structure's specifics. This leads to more generic, reusable code that can work with any data structure that meets the Functor specification. For instance:
+Arrays as Functors
+: Applying
+fantasy-land/map
+to an array allows each element to be transformed without manually iterating over the array or managing the array's structure.
+Maybe Type as a Functor
+: For optional values, mapping a function over a
+Maybe
+value allows for the transformation of the value if it exists (
+Some
+) or does nothing if the value is absent (
+None
+), providing a safe way to deal with optional data.
+Conclusion
+Functors, as defined in the Fantasy Land specification, offer a unified approach to data transformation within a context, promoting code that is both more abstract and more composable. By adhering to the Functor laws of identity and composition, developers can ensure that their functional transformations are consistent, predictable, and robust across a wide variety of data types and structures.
+You
+Contravariant
+
+u['fantasy-land/contramap'](a => a) is equivalent to u (identity)
+
+u['fantasy-land/contramap'](x => f(g(x))) is equivalent to u['fantasy-land/contramap'](f)['fantasy-land/contramap'](g) (composition)
+
+fantasy-land/contramap method
+
+fantasy-land/contramap :: Contravariant f => f a ~> (b -> a) -> f b
+
+A value which has a Contravariant must provide a fantasy-land/contramap method. The fantasy-land/contramap method takes one argument:
+
+u['fantasy-land/contramap'](f) 
+
+f must be a function,
+
+If f is not a function, the behaviour of fantasy-land/contramap is unspecified.
+
+f can return any value.
+
+No parts of f's return value should be checked.
+
+fantasy-land/contramap must return a value of the same Contravariant
+ChatGPT
+ChatGPT
+The concept of Contravariance, as outlined in the Fantasy Land specification, introduces a type of functor that applies operations in a direction opposite to that of the regular covariant functor. This concept is less commonly encountered outside of more abstract or advanced functional programming contexts but is powerful for certain types of problems, especially those involving function composition and transformation. Let's break down the Contravariant and its
+fantasy-land/contramap
+method:
+Contravariant Functor
+Definition
+: A Contravariant functor is a structure that supports a
+contramap
+operation, allowing functions to be applied to its input type, effectively transforming the input before it's processed by the functor.
+Key Properties
+:
+Identity
+: Contramapping an identity function over a Contravariant functor yields the functor itself, unchanged. This property ensures that the
+contramap
+operation does not modify the functor's behavior without a transformation.
+Composition
+: Contramapping two functions in succession is equivalent to contramapping their composition in reverse order. This composition property highlights the reversibility of function application in contravariant functors, differing from the covariant functor's composition.
+fantasy-land/contramap
+Method
+Signature
+:
+fantasy-land/contramap :: Contravariant f => f a ~> (b -> a) -> f b
+Operation
+:
+The
+contramap
+method takes a function
+f
+as its argument, where
+f
+is a transformation from type
+b
+to type
+a
+.
+The method transforms an instance of
+f a
+to
+f b
+by applying the function
+f
+in reverse to its inputs.
+If the provided function
+f
+is not a valid function, the behavior of
+fantasy-land/contramap
+remains unspecified, emphasizing the need for correct type alignment.
+The result of
+fantasy-land/contramap(f)
+must be a Contravariant functor of the same type, ensuring the structure's integrity is maintained.
+Practical Example
+Consider a scenario where you have a comparator function for sorting numbers in ascending order. By applying
+contramap
+to this comparator with a function that negates its input, you can effectively create a new comparator for descending order without directly modifying the original comparator function. This showcases how
+contramap
+can be used to reverse or alter the input behavior of a function in a composable and flexible way.
+Conclusion
+Contravariant functors and the
+contramap
+operation provide a sophisticated mechanism for dealing with types and functions that need to be transformed in a manner opposite to the more common covariant transformations. By adhering to the principles of identity and composition, contravariant functors enable advanced patterns of data and function manipulation, enhancing the expressiveness and power of functional programming in JavaScript.
+You
+Apply
+
+A value that implements the Apply specification must also implement the Functor specification.
+
+v['fantasy-land/ap'](u['fantasy-land/ap'](a['fantasy-land/map'](f => g => x => f(g(x))))) is equivalent to v['fantasy-land/ap'](u)['fantasy-land/ap'](a) (composition)
+
+fantasy-land/ap method
+
+fantasy-land/ap :: Apply f => f a ~> f (a -> b) -> f b
+
+A value which has an Apply must provide a fantasy-land/ap method. The fantasy-land/ap method takes one argument:
+
+a['fantasy-land/ap'](b) 
+
+b must be an Apply of a function
+
+If b does not represent a function, the behaviour of fantasy-land/ap is unspecified.
+
+b must be same Apply as a.
+
+a must be an Apply of any value
+
+fantasy-land/ap must apply the function in Apply b to the value in Apply a
+
+No parts of return value of that function should be checked.
+
+The Apply returned by fantasy-land/ap must be the same as a and b
+
+Applicative
+
+A value that implements the Applicative specification must also implement the Apply specification.
+
+v['fantasy-land/ap'](A['fantasy-land/of'](x => x)) is equivalent to v (identity)
+
+A['fantasy-land/of'](x)['fantasy-land/ap'](A['fantasy-land/of'](f)) is equivalent to A['fantasy-land/of'](f(x)) (homomorphism)
+
+A['fantasy-land/of'](y)['fantasy-land/ap'](u) is equivalent to u['fantasy-land/ap'](A['fantasy-land/of'](f => f(y))) (interchange)
+
+fantasy-land/of method
+
+fantasy-land/of :: Applicative f => a -> f a
+
+A value which has an Applicative must provide a fantasy-land/of function on its type representative. The fantasy-land/of function takes one argument:
+
+F['fantasy-land/of'](a) 
+
+Given a value f, one can access its type representative via the constructor property:
+
+f.constructor['fantasy-land/of'](a) 
+
+fantasy-land/of must provide a value of the same Applicative
+
+No parts of a should be checked
+ChatGPT
+ChatGPT
+The concepts of Apply and Applicative are crucial in the realm of functional programming, particularly in the context of the Fantasy Land specification for JavaScript. They extend the Functor specification by introducing ways to deal with functions that are themselves contained within a context, such as a container or a wrapper. Let's unpack these concepts to understand their significance and how they operate:
+Apply
+Definition
+: An Apply is an extension of a Functor, which allows for the application of a function that is also wrapped in a context (like an array, Maybe, etc.) to a value in a similar context.
+Key Operation
+: The
+fantasy-land/ap
+method enables the application of a function within a context to a value within a context. This is more sophisticated than mapping because the function itself is wrapped in the context, not just the value.
+Composition Law
+: The composition law for Apply ensures that applying functions in sequence within their contexts is equivalent to applying the composition of those functions within the context.
+fantasy-land/ap
+Method
+Signature
+:
+fantasy-land/ap :: Apply f => f a ~> f (a -> b) -> f b
+Functionality
+: It applies the wrapped function to the wrapped value, both contained within the same type of Apply, and produces a new Apply containing the result.
+Applicative
+Definition
+: Applicative builds upon Apply by introducing the
+fantasy-land/of
+method, which wraps a value into the Applicative context. This capability is essential for lifting any value into the context of the Applicative, facilitating operations on values within that context.
+Key Properties
+:
+Identity
+: Applying a wrapped identity function to a value should yield the original value, untouched.
+Homomorphism
+: Applying a function to a value, both outside of the context, and then wrapping the result should be equivalent to wrapping the function and the value separately and then applying the wrapped function to the wrapped value.
+Interchange
+: Applying a wrapped function to a wrapped value is equivalent to applying the wrapped value to a wrapped function, demonstrating the flexibility and symmetry of operation in Applicatives.
+fantasy-land/of
+Method
+Signature
+:
+fantasy-land/of :: Applicative f => a -> f a
+Purpose
+: It provides a way to wrap any value into the Applicative context, making it possible to perform operations defined for Applicatives on any value.
+Practical Implications
+The Apply and Applicative interfaces allow for powerful, structured, and composable ways to work with effects, asynchronous operations, and more in a functional programming style. For example:
+Error Handling
+: Using Maybe or Either types as Applicatives to handle operations that may fail without throwing exceptions.
+Asynchronous Operations
+: Wrapping asynchronous operations in an Applicative to apply functions to their results in a clean, composable manner.
+By adhering to the Fantasy Land specification, JavaScript libraries can ensure compatibility and interoperability, allowing developers to compose operations from different libraries with predictable behavior, based on the algebraic properties of Apply and Applicative.
+You
+Alt
+
+A value that implements the Alt specification must also implement the Functor specification.
+
+a['fantasy-land/alt'](b)['fantasy-land/alt'](c) is equivalent to a['fantasy-land/alt'](b['fantasy-land/alt'](c)) (associativity)
+
+a['fantasy-land/alt'](b)['fantasy-land/map'](f) is equivalent to a['fantasy-land/map'](f)['fantasy-land/alt'](b['fantasy-land/map'](f)) (distributivity)
+
+fantasy-land/alt method
+
+fantasy-land/alt :: Alt f => f a ~> f a -> f a
+
+A value which has a Alt must provide a fantasy-land/alt method. The fantasy-land/alt method takes one argument:
+
+a['fantasy-land/alt'](b) 
+
+b must be a value of the same Alt
+
+If b is not the same Alt, behaviour of fantasy-land/alt is unspecified.
+
+a and b can contain any value of same type.
+
+No parts of a's and b's containing value should be checked.
+
+fantasy-land/alt must return a value of the same Alt.
+
+Plus
+
+A value that implements the Plus specification must also implement the Alt specification.
+
+x['fantasy-land/alt'](A['fantasy-land/zero']()) is equivalent to x (right identity)
+
+A['fantasy-land/zero']()['fantasy-land/alt'](x) is equivalent to x (left identity)
+
+A['fantasy-land/zero']()['fantasy-land/map'](f) is equivalent to A['fantasy-land/zero']() (annihilation)
+
+fantasy-land/zero method
+
+fantasy-land/zero :: Plus f => () -> f a
+
+A value which has a Plus must provide a fantasy-land/zero function on its type representative:
+
+A['fantasy-land/zero']() 
+
+Given a value x, one can access its type representative via the constructor property:
+
+x.constructor['fantasy-land/zero']() 
+
+fantasy-land/zero must return a value of the same Plus
+
+Alternative
+
+A value that implements the Alternative specification must also implement the Applicative and Plus specifications.
+
+x['fantasy-land/ap'](f['fantasy-land/alt'](g)) is equivalent to x['fantasy-land/ap'](f)['fantasy-land/alt'](x['fantasy-land/ap'](g)) (distributivity)
+
+x['fantasy-land/ap'](A['fantasy-land/zero']()) is equivalent to A['fantasy-land/zero']() (annihilation)
+
+Foldable
+
+u['fantasy-land/reduce'] is equivalent to u['fantasy-land/reduce']((acc, x) => acc.concat([x]), []).reduce
+
+fantasy-land/reduce method
+
+fantasy-land/reduce :: Foldable f => f a ~> ((b, a) -> b, b) -> b
+
+A value which has a Foldable must provide a fantasy-land/reduce method. The fantasy-land/reduce method takes two arguments:
+
+u['fantasy-land/reduce'](f, x) 
+
+f must be a binary function
+
+if f is not a function, the behaviour of fantasy-land/reduce is unspecified.
+
+The first argument to f must be the same type as x.
+
+f must return a value of the same type as x.
+
+No parts of f's return value should be checked.
+
+x is the initial accumulator value for the reduction
+
+No parts of x should be checked.
+
+Traversable
+
+A value that implements the Traversable specification must also implement the Functor and Foldable specifications.
+
+t(u['fantasy-land/traverse'](F, x => x)) is equivalent to u['fantasy-land/traverse'](G, t) for any t such that t(a)['fantasy-land/map'](f) is equivalent to t(a['fantasy-land/map'](f)) (naturality)
+
+u['fantasy-land/traverse'](F, F['fantasy-land/of']) is equivalent to F['fantasy-land/of'](u) for any Applicative F (identity)
+
+u['fantasy-land/traverse'](Compose, x => new Compose(x)) is equivalent to new Compose(u['fantasy-land/traverse'](F, x => x)['fantasy-land/map'](x => x['fantasy-land/traverse'](G, x => x))) for Compose defined below and any Applicatives F and G (composition)
+
+function Compose(c) { this.c = c; } Compose['fantasy-land/of'] = function(x) { return new Compose(F['fantasy-land/of'](G['fantasy-land/of'](x))); }; Compose.prototype['fantasy-land/ap'] = function(f) { return new Compose(this.c['fantasy-land/ap'](f.c['fantasy-land/map'](u => y => y['fantasy-land/ap'](u)))); }; Compose.prototype['fantasy-land/map'] = function(f) { return new Compose(this.c['fantasy-land/map'](y => y['fantasy-land/map'](f))); };
+
+fantasy-land/traverse method
+
+fantasy-land/traverse :: Applicative f, Traversable t => t a ~> (TypeRep f, a -> f b) -> f (t b)
+
+A value which has a Traversable must provide a fantasy-land/traverse method. The fantasy-land/traverse method takes two arguments:
+
+u['fantasy-land/traverse'](A, f) 
+
+A must be the type representative of an Applicative.
+
+f must be a function which returns a value
+
+If f is not a function, the behaviour of fantasy-land/traverse is unspecified.
+
+f must return a value of the type represented by A.
+
+fantasy-land/traverse must return a value of the type represented by A.
+ChatGPT
+ChatGPT
+The Fantasy Land specification provides a structured approach to functional programming in JavaScript, defining a suite of algebraic structures that facilitate highly composable and abstract data manipulation. Let's dive into the specifications for
+Alt
+,
+Plus
+,
+Alternative
+,
+Foldable
+, and
+Traversable
+to understand their roles and operations:
+Alt
+Specification
+: Extends the Functor by adding an
+alt
+method, allowing for the combination of two values within the same context.
+Key Property
+: Associativity and distributivity with respect to the
+map
+operation.
+Usage
+:
+a['fantasy-land/alt'](b)
+combines two
+Alt
+instances, choosing one based on the structure's logic (e.g., Either's Right preference).
+Plus
+Specification
+: Extends
+Alt
+with an
+empty
+method, providing an identity element for the
+alt
+operation.
+Key Properties
+: Right and left identity with respect to
+alt
+, and annihilation when mapped over.
+Usage
+:
+A['fantasy-land/zero']()
+provides a default "empty" value for the Plus instance, useful for initializing or resetting values.
+Alternative
+Specification
+: Combines
+Applicative
+and
+Plus
+, enabling choice and failure handling within computational effects.
+Key Property
+: Distributivity and annihilation, ensuring consistent application and combination of effects.
+Usage
+: Allows for operations that may fail or require a choice between alternatives, encapsulating the logic for handling these scenarios.
+Foldable
+Specification
+: Introduces a
+reduce
+method, allowing a structure to be condensed to a single value.
+Key Property
+: Associativity, ensuring that the way elements are grouped during reduction doesn't affect the outcome.
+Usage
+:
+u['fantasy-land/reduce'](f, x)
+systematically combines the elements of
+u
+using
+f
+, starting with an initial value
+x
+.
+Traversable
+Specification
+: Extends
+Functor
+and
+Foldable
+to allow elements of a structure to be traversed and transformed into a new structure, all within the context of an Applicative.
+Key Properties
+: Naturality, identity, and composition, ensuring consistent traversal and transformation across contexts.
+Usage
+:
+u['fantasy-land/traverse'](A, f)
+applies a function
+f
+to each element of
+u
+, transforming it into a structure within the Applicative context represented by
+A
+.
+These algebraic structures, detailed in the Fantasy Land specification, offer a robust framework for building composable, declarative, and type-safe code in JavaScript. They enable developers to abstract over common programming patterns, such as error handling, collections manipulation, and asynchronous operations, providing a foundation for functional programming that encourages code reuse, modularity, and simplicity.
+You
+Chain
+
+A value that implements the Chain specification must also implement the Apply specification.
+
+m['fantasy-land/chain'](f)['fantasy-land/chain'](g) is equivalent to m['fantasy-land/chain'](x => f(x)['fantasy-land/chain'](g)) (associativity)
+
+fantasy-land/chain method
+
+fantasy-land/chain :: Chain m => m a ~> (a -> m b) -> m b
+
+A value which has a Chain must provide a fantasy-land/chain method. The fantasy-land/chain method takes one argument:
+
+m['fantasy-land/chain'](f) 
+
+f must be a function which returns a value
+
+If f is not a function, the behaviour of fantasy-land/chain is unspecified.
+
+f must return a value of the same Chain
+
+fantasy-land/chain must return a value of the same Chain
+
+ChainRec
+
+A value that implements the ChainRec specification must also implement the Chain specification.
+
+M['fantasy-land/chainRec']((next, done, v) => p(v) ? d(v)['fantasy-land/map'](done) : n(v)['fantasy-land/map'](next), i) is equivalent to (function step(v) { return p(v) ? d(v) : n(v)['fantasy-land/chain'](step); }(i)) (equivalence)
+
+Stack usage of M['fantasy-land/chainRec'](f, i) must be at most a constant multiple of the stack usage of f itself.
+
+fantasy-land/chainRec method
+
+fantasy-land/chainRec :: ChainRec m => ((a -> c, b -> c, a) -> m c, a) -> m b
+
+A Type which has a ChainRec must provide a fantasy-land/chainRec function on its type representative. The fantasy-land/chainRec function takes two arguments:
+
+M['fantasy-land/chainRec'](f, i) 
+
+Given a value m, one can access its type representative via the constructor property:
+
+m.constructor['fantasy-land/chainRec'](f, i) 
+
+f must be a function which returns a value
+
+If f is not a function, the behaviour of fantasy-land/chainRec is unspecified.
+
+f takes three arguments next, done, value
+
+next is a function which takes one argument of same type as i and can return any value
+
+done is a function which takes one argument and returns the same type as the return value of next
+
+value is some value of the same type as i
+
+f must return a value of the same ChainRec which contains a value returned from either done or next
+
+fantasy-land/chainRec must return a value of the same ChainRec which contains a value of same type as argument of done
+
+Monad
+
+A value that implements the Monad specification must also implement the Applicative and Chain specifications.
+
+M['fantasy-land/of'](a)['fantasy-land/chain'](f) is equivalent to f(a) (left identity)
+
+m['fantasy-land/chain'](M['fantasy-land/of']) is equivalent to m (right identity)
+
+Extend
+
+A value that implements the Extend specification must also implement the Functor specification.
+
+w['fantasy-land/extend'](g)['fantasy-land/extend'](f) is equivalent to w['fantasy-land/extend'](_w => f(_w['fantasy-land/extend'](g)))
+
+fantasy-land/extend method
+
+fantasy-land/extend :: Extend w => w a ~> (w a -> b) -> w b
+
+An Extend must provide a fantasy-land/extend method. The fantasy-land/extend method takes one argument:
+
+w['fantasy-land/extend'](f) 
+
+f must be a function which returns a value
+
+If f is not a function, the behaviour of fantasy-land/extend is unspecified.
+
+f must return a value of type v, for some variable v contained in w.
+
+No parts of f's return value should be checked.
+
+fantasy-land/extend must return a value of the same Extend.
+
+Comonad
+
+A value that implements the Comonad specification must also implement the Extend specification.
+
+w['fantasy-land/extend'](_w => _w['fantasy-land/extract']()) is equivalent to w (left identity)
+
+w['fantasy-land/extend'](f)['fantasy-land/extract']() is equivalent to f(w) (right identity)
+
+fantasy-land/extract method
+
+fantasy-land/extract :: Comonad w => w a ~> () -> a
+
+A value which has a Comonad must provide a fantasy-land/extract method on itself. The fantasy-land/extract method takes no arguments:
+
+w['fantasy-land/extract']() 
+
+fantasy-land/extract must return a value of type v, for some variable v contained in w.
+
+v must have the same type that f returns in fantasy-land/extend.
+
+Bifunctor
+
+A value that implements the Bifunctor specification must also implement the Functor specification.
+
+p['fantasy-land/bimap'](a => a, b => b) is equivalent to p (identity)
+
+p['fantasy-land/bimap'](a => f(g(a)), b => h(i(b))) is equivalent to p['fantasy-land/bimap'](g, i)['fantasy-land/bimap'](f, h) (composition)
+
+fantasy-land/bimap method
+
+fantasy-land/bimap :: Bifunctor f => f a c ~> (a -> b, c -> d) -> f b d
+
+A value which has a Bifunctor must provide a fantasy-land/bimap method. The fantasy-land/bimap method takes two arguments:
+
+c['fantasy-land/bimap'](f, g) 
+
+f must be a function which returns a value
+
+If f is not a function, the behaviour of fantasy-land/bimap is unspecified.
+
+f can return any value.
+
+No parts of f's return value should be checked.
+
+g must be a function which returns a value
+
+If g is not a function, the behaviour of fantasy-land/bimap is unspecified.
+
+g can return any value.
+
+No parts of g's return value should be checked.
+
+fantasy-land/bimap must return a value of the same Bifunctor.
+ChatGPT
+ChatGPT
+The Fantasy Land specification defines various algebraic structures to facilitate functional programming in JavaScript. These structures provide a robust framework for manipulating data in a consistent and principled way. Let's explore some of these structures and their key concepts:
+Chain
+Concept
+: Allows for the application of a function to a value within a context (e.g., within a Maybe or an Array) and flattens the result.
+Associativity Law
+: Ensures consistent behavior when chaining multiple operations.
+Usage
+:
+m['fantasy-land/chain'](f)
+applies a function
+f
+that returns a value within the same context, flattening the nested context.
+ChainRec
+Concept
+: Enables recursive operations within a Chain without risking stack overflow errors, suitable for executing potentially infinite recursive algorithms in a safe manner.
+Equivalence Law
+: Ensures that the recursive operation behaves equivalently to its non-tail recursive counterpart.
+Usage
+:
+M['fantasy-land/chainRec']((next, done, value) => ..., initialValue)
+provides a mechanism for recursion within the context.
+Monad
+Concept
+: Combines the capabilities of Applicative and Chain, providing a structure for sequencing operations.
+Identity Laws
+: Ensure that wrapping a value with
+of
+and applying a function via
+chain
+is equivalent to applying the function directly.
+Usage
+: Monads are powerful structures for handling a sequence of operations where each step is dependent on the outcome of the previous.
+Extend
+Concept
+: Allows one to extend the structure by applying a function to the entire structure itself.
+Associativity Law
+: Guarantees that the order of applying multiple extend operations does not affect the outcome.
+Usage
+: Useful for operations that need to consider an entire structure, like calculating a moving average from a list of numbers.
+Comonad
+Concept
+: An extension of Extend that adds an
+extract
+method, allowing for the extraction of a value from its context.
+Identity Laws
+: Ensure the integrity
+You
+Continue
+ChatGPT
+ChatGPT
+of the structure when extending and then extracting, and vice versa.
+Usage
+: Comonads are useful in scenarios where you need to manipulate a context (like a stream of values) and then extract a specific value from that context, maintaining a balance between operation within a context and retrieval of concrete results.
+Bifunctor
+Concept
+: Extends the Functor concept to structures that hold two types of values, allowing the application of a function to each type independently.
+Identity and Composition Laws
+: Ensure that mapping identity functions over both types yields the original structure unchanged, and that composition of functions is consistent.
+Usage
+: Bifunctors are particularly useful in handling operations on pairs of values or dual-type containers (e.g., Either type in error handling), allowing for independent manipulation of each side.
+Each of these algebraic structures defined by the Fantasy Land specification brings a layer of abstraction that facilitates functional programming in JavaScript. They provide standardized methods (
+fantasy-land/chain
+,
+fantasy-land/extend
+,
+fantasy-land/extract
+,
+fantasy-land/bimap
+, etc.) that ensure operations on data structures adhere to specific algebraic laws. These laws guarantee predictable behavior, composability, and robustness in functional programming patterns.
+By adhering to these specifications, JavaScript libraries and applications can achieve greater modularity, reusability, and simplicity. Developers can compose operations from different libraries with predictable outcomes, thanks to the shared algebraic properties. This not only enhances code quality and maintainability but also fosters a more declarative and expressive programming style.
+2 / 2
+You
+Profunctor
+
+A value that implements the Profunctor specification must also implement the Functor specification.
+
+p['fantasy-land/promap'](a => a, b => b) is equivalent to p (identity)
+
+p['fantasy-land/promap'](a => f(g(a)), b => h(i(b))) is equivalent to p['fantasy-land/promap'](f, i)['fantasy-land/promap'](g, h) (composition)
+
+fantasy-land/promap method
+
+fantasy-land/promap :: Profunctor p => p b c ~> (a -> b, c -> d) -> p a d
+
+A value which has a Profunctor must provide a fantasy-land/promap method.
+
+The fantasy-land/promap method takes two arguments:
+
+c['fantasy-land/promap'](f, g) 
+
+f must be a function which returns a value
+
+If f is not a function, the behaviour of fantasy-land/promap is unspecified.
+
+f can return any value.
+
+No parts of f's return value should be checked.
+
+g must be a function which returns a value
+
+If g is not a function, the behaviour of fantasy-land/promap is unspecified.
+
+g can return any value.
+
+No parts of g's return value should be checked.
+
+fantasy-land/promap must return a value of the same Profunctor
+
+Derivations
+
+When creating data types which satisfy multiple algebras, authors may choose to implement certain methods then derive the remaining methods. Derivations:
+
+fantasy-land/equals may be derived from fantasy-land/lte:
+
+function equals(other) { return this['fantasy-land/lte'](other) && other['fantasy-land/lte'](this); }
+
+fantasy-land/map may be derived from fantasy-land/ap and fantasy-land/of:
+
+function map(f) { return this['fantasy-land/ap'](this.constructor['fantasy-land/of'](f)); }
+
+fantasy-land/map may be derived from fantasy-land/chain and fantasy-land/of:
+
+function map(f) { return this['fantasy-land/chain'](a => this.constructor['fantasy-land/of'](f(a))); }
+
+fantasy-land/map may be derived from fantasy-land/bimap:
+
+function map(f) { return this['fantasy-land/bimap'](a => a, f); }
+
+fantasy-land/map may be derived from fantasy-land/promap:
+
+function map(f) { return this['fantasy-land/promap'](a => a, f); }
+
+fantasy-land/ap may be derived from fantasy-land/chain:
+
+function ap(m) { return m['fantasy-land/chain'](f => this['fantasy-land/map'](f)); }
+
+fantasy-land/reduce may be derived as follows:
+
+function reduce(f, acc) { function Const(value) { this.value = value; } Const['fantasy-land/of'] = function(_) { return new Const(acc); }; Const.prototype['fantasy-land/map'] = function(_) { return this; }; Const.prototype['fantasy-land/ap'] = function(b) { return new Const(f(b.value, this.value)); }; return this['fantasy-land/traverse'](x => new Const(x), Const['fantasy-land/of']).value; }
+
+fantasy-land/map may be derived as follows:
+
+function map(f) { function Id(value) { this.value = value; } Id['fantasy-land/of'] = function(x) { return new Id(x); }; Id.prototype['fantasy-land/map'] = function(f) { return new Id(f(this.value)); }; Id.prototype['fantasy-land/ap'] = function(b) { return new Id(this.value(b.value)); }; return this['fantasy-land/traverse'](x => Id['fantasy-land/of'](f(x)), Id['fantasy-land/of']).value; }
+
+fantasy-land/filter may be derived from fantasy-land/of, fantasy-land/chain, and fantasy-land/zero:
+
+function filter(pred) { var F = this.constructor; return this['fantasy-land/chain'](x => pred(x) ? F['fantasy-land/of'](x) : F['fantasy-land/zero']()); }
+
+fantasy-land/filter may be derived from fantasy-land/concat, fantasy-land/of, fantasy-land/zero, and fantasy-land/reduce:
+
+function filter(pred) { var F = this.constructor; return this['fantasy-land/reduce']((f, x) => pred(x) ? f['fantasy-land/concat'](F['fantasy-land/of'](x)) : f, F['fantasy-land/zero']()); }
+
+If a data type provides a method which could be derived, its behaviour must be equivalent to that of the derivation (or derivations).
+
+Notes
+
+If there's more than a single way to implement the methods and laws, the implementation should choose one and provide wrappers for other uses.
+
+It's discouraged to overload the specified methods. It can easily result in broken and buggy behaviour.
+
+It is recommended to throw an exception on unspecified behaviour.
+
+An Identity container which implements many of the methods is provided by sanctuary-identity.
+ChatGPT
+ChatGPT
+The Fantasy Land specification for algebraic structures not only provides a robust framework for functional programming in JavaScript but also outlines how certain methods can be derived from others, enhancing interoperability and consistency across implementations. Here's a concise overview of key concepts, particularly focusing on the Profunctor and method derivations:
+Profunctor
+Concept
+: Profunctors extend Functors by allowing both contravariant and covariant transformations, enabling pre-processing of input and post-processing of output simultaneously.
+Key Operations
+:
+fantasy-land/promap
+allows the transformation of both the input (
+a -> b
+) and output (
+c -> d
+) of the Profunctor, maintaining its structure.
+Identity and Composition Laws
+: Ensure that Profunctors behave predictably when applying transformations, including no-op transformations and the composition of multiple transformations.
+Method Derivations
+General Idea
+: Certain algebraic methods can be derived from others, providing default implementations that ensure compliance with the specified algebraic laws. This flexibility helps in defining complex types more succinctly.
+Examples
+:
+fantasy-land/equals
+: Can be derived from
+fantasy-land/lte
+for types that implement a total ordering, simplifying equality checks.
+fantasy-land/map
+: Shows multiple derivations, notably from
+fantasy-land/ap
+and
+fantasy-land/of
+, highlighting the interconnectedness of Applicative and Functor specifications.
+fantasy-land/ap
+: Demonstrates how Applicative's apply functionality can be derived from Chain, bridging the gap between Monad and Applicative.
+fantasy-land/reduce
+and
+fantasy-land/filter
+: Illustrate how Foldable and Filterable functionalities can be implemented based on other algebraic structures, enabling operations like reduction and filtering to be defined in terms of simpler primitives.
+Practical Implications
+These derivations and specifications foster a modular and composable approach to defining and working with data structures in functional programming, encouraging code reuse and abstraction.
+By providing a common language and set of operations, Fantasy Land enables different libraries and applications to interoperate seamlessly, reducing the learning curve and enhancing code portability.
+Developers are encouraged to adhere to these specifications and derivations to ensure that custom data types integrate well with the broader functional programming ecosystem in JavaScript.
+Recommendations
+While Fantasy Land offers flexibility in implementation, it emphasizes the importance of consistency and predictability in behavior. Choosing a specific implementation for an algebraic structure and sticking with it is crucial.
+Overloading specified methods is discouraged due to the potential for confusion and bugs, highlighting the need for clear and straightforward implementations.
+Implementations should explicitly handle unspecified behavior, potentially by throwing exceptions, to avoid silent failures and make debugging easier.
+By embracing these concepts and adhering to the Fantasy Land specification, developers can leverage the full power of algebraic structures in JavaScript, leading to more expressive, robust, and maintainable functional programming codebases.
+ChatGPT can make mistakes. Consider checking important information.
+?
+ChatGPT
+

@@ -1,0 +1,65 @@
+Cheat Sheets vs Understanding
+Abrir barra lateral
+ChatGPT
+4o
+Wayne Radinsky writes: Cheatography: Over 6,000 free cheat sheets, revision aids and quick references
+
+6,512 cheat sheets to be exact. Apparently the reason this site has so many cheat sheets is they made it easy to make cheat sheets on the site. A lot of the cheat sheets look like they're made for specific exams for specific classes.
+
+I was wondering what cheat sheets might be useful to me. I decided I wouldn't want a cheat sheet for Go because the Go spec is so good and the Go standard library site is so good it's basically its own cheat sheet and more authoritative than any cheat sheet could ever be. Maybe I should look for cheat sheets for technologies I despise instead of technologies I really like, so I looked for PHP. Hmm, maybe the date formatting parameters or something. I don't know. I don't see new stuff like traits. I looked at some math cheat sheets. Discrete math, linear algebra, geometry. No, doesn't look helpful. Chemistry? Carbon root name and b��ranch prefixes. Hmm, interesting.
+
+I feel like I need to learn all the fundamental concepts first before I could use any cheat sheets. Or maybe if I learn all the fundamental concepts, I would never need the cheat sheets? This reminds me, one time I heard about this teacher in Hungary who founded a school on the philosophy that memorization was forbidden, and students had to learn how to derive everything themselves when they needed to from understanding the fundamental underlying relationships. A bunch of students went on to work on the Manhattan Project and win Nobel Prizes and stuff.
+
+Ok, so I tracked down the guy who founded the school in Hungary that forbade memorization and required people to be able to derive everything themselves by having deep understanding of how things were interconnected instead of memorizing. The guy, eh, his name is sometimes M��r von K��rm��n, sometimes just M��r K��rm��n, and sometimes Maurice K��rm��n. Anyway, he founded a school in Budapest, Hungary, called Minta Gymnasium. Down the street, another school, Fasori Gymnasium, adopted the his same teaching philosophy. ("Gymnasium" was apparently their word for what we call "high school"). Edward Teller, known as "father of the hydrogen bomb", went to Fasori Gymnasium. Or maybe Minta. Or maybe both. People seem to not be sure. Le�� Szil��rd, who founded the Manhattan Project (and co-wrote with Albert Einstein the famous letter to Franklin D. Roosevelt that launched the Manhattan Project -- only Einstein signed the letter because he was already known to the US public), also went to Fasori Gymnasium. He was the first person to conceive of the chain reaction where nuclear fission releases neutrons that causes more nuclear fission. Eugene Wigner, who led the team on the Manhattan Project to convert uranium into weapons grade plutonium, also went to Fasori Gymnasium. He went on to win the Nobel Prize in Physics in 1963 for work on the structure of the atomic nucleus and structure of elementary particles, and there is a mathematical theorem used in quantum physics named after him called Wigner's Theorem. In his Nobel acceptance speech, he praised is high school math teacher, Laszlo Ratz. Rounding out the "Manhattan Project" people we also have Nicholas Kurti and Theodore von K��rm��n. Theodore von K��rm��n was the son of M��r (or Maurice) von (or not von) K��rm��n, and went on to found the Jet Propulsion Laboratory. Both went to Minta. No wait, one more, how could I forget John von Neumann. Went to Fasori. On the Manhattan Project, his mathematical theory led to the the "explosive lenses" used to compress plutonium for the on the Nagasaki bomb. He went on to produce foundational work in computer science. The "von Neumann architecture" is named after him.
+
+In addition to all these people, at the Manhattan Project, the Hungarians became known as "The Martians", apparently a joke both about their Hungarian accents and on how they seemed so smart they must have come from outer space, and later on a number of other Hungarians who didn't go to the Minta or Fasori Gymnasiums (but went to nearby schools in Budapest) or work on the Manhattan Project got included as honorary "Martians". Those include mathematician Paul Erd��s, mathematician George P��lya, John (J��nos) Kemeny who actually did work on the Manhattan Project, physicist Egon Orowan, physicist Valentine Telegdi, mathematician and physicist Cornel Lanczos, John Harsanyi who won the Nobel Prize in Economics, George Olah who won the Nobel Prize in Chemistry, and John Polanyi who won the Nobel Prize in Chemistry.
+
+Also of note, most of these people were not just Hungarian, but also Jews. John von Newmann said the Jews in Hungary had "a subconscious feeling of extreme insecurity in individuals, and the necessity of producing the unusual or facing extinction." He said they were attracted to fields like math and physics, because their ability could be judged objectively, and those subjects were considered politically uncontroversial at the time.
+
+However, the wikipedia page for Minta Gymnasium says the same teaching philosophy was applied to all subjects. For example, grammar rules were not memorized from a book, instead students were tasked with analyzing phrases from signs and monuments around the city and figuring out what the underlying grammar rules were and why those specific phrases were chosen.
+
+Anyway, it seems like a combination of things came together at the same time in the 1900-1920 time period: a combination of high intelligence, a particular ethnic group that was at the same time relatively well off, comfortable, and high status (in Budapest) but insecure (because WWII was coming and they could sense impending danger), and a unique approach to teaching -- all came together to produce something remarkable.
+
+Circling back to where I started: cheat sheets -- do they encourage memorization, or do they by offloading memorization actually help with deep fundamental understanding? Did Manhattan Project or Nobel Prize winning scientists use cheat sheets or whatever the equivalent was in their day -- what would that be, reference books? Maybe one should focus totally on deep understanding of fundamental concepts.
+ChatGPT
+The discussion of cheat sheets versus deep understanding of fundamental concepts is quite nuanced. Here are some key points to consider:
+Purpose and Usefulness of Cheat Sheets
+:
+Reference Tool
+: Cheat sheets can serve as quick reference tools, especially for remembering specific details like syntax, formulas, or commands that are not easily internalized.
+Learning Aid
+: They can help reinforce learning by providing concise summaries of more extensive material, making it easier to review and recall information.
+Memorization vs. Understanding
+:
+Memorization
+: Cheat sheets can promote memorization if used as a crutch, leading to surface-level learning without understanding underlying principles.
+Understanding
+: When used wisely, cheat sheets can support deep learning by helping learners quickly access information they���ve already understood, freeing cognitive resources to focus on problem-solving and application.
+Educational Philosophy and Methodologies
+:
+Hungarian Educational Philosophy
+: The approach taken by M��r von K��rm��n and Laszlo Ratz emphasizes deriving knowledge from fundamental principles rather than memorization. This method fosters critical thinking and a deeper understanding of subject matter.
+Modern Equivalents
+: Reference books, scholarly articles, and now digital resources (like cheat sheets) can serve a similar purpose, but the emphasis should remain on understanding the concepts thoroughly.
+Cheat Sheets and Modern Technology
+:
+Digital Tools
+: The availability of online resources and cheat sheets can be both a blessing and a curse. They are convenient but should be used to supplement, not replace, the learning process.
+Coding and Software
+: In fields like programming, cheat sheets can be immensely helpful for quickly recalling command syntax or library functions. However, true proficiency comes from understanding the logic and structure of the code.
+Balance in Learning
+:
+Integrative Approach
+: A balanced approach that combines the use of cheat sheets for quick reference and a strong emphasis on understanding fundamental concepts is likely the most effective.
+Educational Strategies
+: Educators can incorporate cheat sheets as part of active learning strategies, where students use them to solve complex problems that require application of the principles they���ve learned.
+Historical Context
+:
+Manhattan Project Scientists
+: It is likely that the scientists of the Manhattan Project relied on extensive reference materials and collaborative discussions rather than cheat sheets. Their rigorous training and deep understanding of principles would have been paramount.
+In conclusion, cheat sheets can be beneficial if used correctly���as aids to reinforce and review material. The ultimate goal should always be a deep and comprehensive understanding of the subject matter. This approach aligns with the educational philosophy that emphasizes deriving knowledge from fundamental principles, as practiced by the Hungarian schools that produced many prominent scientists.
+4o
+��Esta conversaci��n te result�� ��til hasta ahora?
+ChatGPT puede cometer errores. Comprueba la informaci��n importante.
+?
+ChatGPT

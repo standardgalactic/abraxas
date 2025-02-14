@@ -1,0 +1,747 @@
+Principle of Least Action
+Historial del chat
+ChatGPT
+ChatGPT
+Nuspeak Translator
+Jain Hive Tree
+Explorar GPT
+Hoy
+Cosmic Backgrounds
+Font Interpolation in Python
+Logic Gate Simulator
+Ayer
+Prosaic Lab Signals Rewrite
+7 d��as anteriores
+Principle of Least Action
+Calculus Hip Hop Ballad
+Symbolic Completeness
+Criticality-Based Magnetism
+AI Commodification Concerns
+Carmen Scientiae English Translation
+Attention and Consciousness Insights
+Reverse Pinocchio Scenario
+Hippocampal Bootstrap
+Emotion and Mind in Organisms
+Iota Subscript in Greek
+Greek Verbs Translation Request
+30 d��as anteriores
+Move tag in SRT file
+Synchronizing Automata
+Embodied Relegation
+Fruit Vegetable Number Converter
+Update GitHub Page Content
+Perceptual Figuration
+Dynamic Terraformation
+Orthodromic Rivers
+Remove Control Characters Vim
+Language Learning Through Reading
+FFmpeg GIF Alternation Command
+Transformer Language Models Primer
+Renovar Plus
+Nathaniel Guimond
+Abrir barra lateral
+ChatGPT
+ChatGPT
+Compartir
+Dijiste:
+Mike Bee writes: I think this is very important for training LLMs:  Principle of Least Action
+
+The Principle of Least Action is a fundamental concept in physics, stating that the motion of an object or system follows the path that minimizes the action, a mathematical quantity representing the integral of energy over time.
+Definition
+
+Action (S) = ���L(q, dq/dt, t)dt
+Where:
+L = Lagrangian function (kinetic energy - potential energy)
+q = generalized coordinates
+dq/dt = generalized velocities
+t = time
+Key Points
+
+Minimization: The action is minimized over all possible paths.
+Global optimization: The principle finds the global minimum, not just local minima.
+Variational principle: The action is varied to find the optimal path.
+Implications
+
+Efficient motion: Objects follow the most energy-efficient path.
+Predictive power: The principle predicts the motion of complex systems.
+Fundamental laws: Derives fundamental laws, such as Newton's laws and Einstein's equations.
+Applications
+
+Classical mechanics: Describes motion of particles and rigid bodies.
+Quantum mechanics: Forms the basis of path integral formulation.
+Field theory: Applies to electromagnetism, general relativity, and quantum field theory.
+Examples
+
+Shortest path: A thrown ball follows the shortest path (parabola) under gravity.
+Brachistochrone problem: A bead on a wire follows the path that minimizes time.
+History
+
+Pierre-Louis Maupertuis (1744): Introduced the concept.
+Leonhard Euler (1748): Developed the mathematical framework.
+Joseph-Louis Lagrange (1788): Formulated the Lagrangian mechanics.
+Related Concepts
+
+Hamilton's principle: Similar principle using Hamiltonian mechanics.
+Noether's theorem: Relates symmetries to conserved quantities.
+The Principle of Least Action is a powerful tool for understanding and predicting the behavior of physical systems, from classical mechanics to quantum field theory.
+ChatGPT dijo:
+ChatGPT
+Mike Bee's writing on the
+Principle of Least Action
+offers a compelling and concise overview of one of the most fundamental principles in physics. The Principle of Least Action (PLA) posits that the path taken by a system between two states is the one that minimizes the action, which is essentially the integral of the Lagrangian (the difference between kinetic and potential energy) over time.
+Here's a breakdown of some key points:
+Key Concepts:
+Action (S)
+: The quantity to be minimized, represented as
+S
+=
+���
+L
+���
+d
+t
+S = \int L \, dt
+S
+=
+���
+L
+d
+t
+, where the Lagrangian
+L
+=
+T
+���
+V
+L = T - V
+L
+=
+T
+���
+V
+(kinetic energy minus potential energy) is integrated over time.
+Minimization
+: The principle leads to the least action, meaning the most energy-efficient path.
+Variational Principle
+: By applying calculus of variations, one can derive the Euler-Lagrange equation, which gives the equation of motion for the system.
+Important Implications:
+Efficient Motion
+: Objects move in ways that conserve energy, implying they naturally select the path with minimal energy cost.
+Predictive Power
+: It���s a unifying principle that can derive Newton���s laws, Maxwell���s equations, and even Einstein���s field equations.
+Applications in Different Fields
+: From classical mechanics to quantum mechanics and field theory, the principle forms a foundational tool for solving physical problems.
+Historical Contributions:
+Maupertuis (1744)
+: The principle���s origin.
+Euler and Lagrange
+: These mathematicians formalized the principle and developed the mathematical machinery (Euler-Lagrange equations) that is now a cornerstone of modern physics.
+Practical Examples:
+Brachistochrone Problem
+: Demonstrates the principle where a bead sliding down a curve under gravity follows the path that minimizes travel time.
+Quantum Mechanics
+: In Feynman���s path integral formulation, the principle is expanded where every possible path contributes, but the least action path dominates in classical systems.
+Why It���s Relevant for LLM Training:
+The Principle of Least Action could be a metaphorical guide for the training of machine learning models, especially LLMs. Here are some parallels:
+Efficiency in Learning
+: Like physical systems minimizing action, LLMs might optimize their weights to minimize loss functions across various paths during training, seeking the most efficient route to generalization.
+Global Optimization
+: Just as PLA focuses on a global minimum rather than a local one, LLM training algorithms like gradient descent aim for global optima in their parameter space.
+Predictive Power
+: The LLMs, after training, predict responses or generate text based on the learned paths that minimize some loss function related to human language.
+This makes the Principle of Least Action not just a fundamental concept in physics, but also a rich analogy for optimizing complex systems, such as training LLMs. It aligns with the idea of finding efficient, globally optimized solutions in both physics and artificial intelligence.
+4o
+Dijiste:
+Steps towards a minimal unifying model of consciousness: An integration of models of consciousness based on the free energy principle
+
+Authors
+Maxwell James Ramstead, Mahault Albarracin, Alex Kiefer, Kenneth Williford, Adam Safron, Chris Fields, Mark Solms, and Karl Friston
+Author Assertions
+Conflict of Interest
+Public Data
+Preregistration
+
+Ramstead_et_al_MUM.pdf
+Version: 1
+Created: July 06, 2023
+Last edited: June 20, 2024
+Views: 1039 | Downloads: 2345
+
+Abstract
+This paper aims to assess whether the recently proposed "inner screen model" of consciousness that follows from the free-energy principle (FEP) can be regarded as a minimal unifying model (MUM) of consciousness, thereby providing a common foundational model for consciousness studies, and integrating approaches to consciousness based on the FEP. We first present the inner screen model, which follows from applying the quantum information theoretic version of the FEP to the known sparse (nested and hierarchical) neuroanatomy of the brain. We then review models of consciousness that are premised on the FEP. Specifically, we review Bayesian versions of the global workspace and attention schema theories, theories premised on world-models and self-models, and models formalizing the computational structure and properties of time-consciousness. We then discuss how extant FEP-theoretic models of consciousness can be situated with respect to the candidate MUM.
+ChatGPT dijo:
+ChatGPT
+The paper "
+Steps towards a minimal unifying model of consciousness: An integration of models of consciousness based on the free energy principle
+" by Ramstead et al. aims to integrate different theories of consciousness by applying the Free Energy Principle (FEP) as a unifying framework. Here's a summary of key points:
+Key Concepts:
+Free Energy Principle (FEP)
+: A principle in neuroscience and cognitive science that suggests biological systems, including the brain, act to minimize the difference between their predictions (or models) and sensory inputs, thus reducing free energy. It underlies perception, action, and learning.
+Inner Screen Model of Consciousness
+: A newly proposed model that derives from applying the quantum information theory-based version of the FEP to the brain's neuroanatomy, particularly its sparse, hierarchical, and nested structure.
+Minimal Unifying Model (MUM)
+: The authors assess whether the inner screen model can serve as a minimal unifying model (MUM) for consciousness, aiming to bridge and unify multiple approaches to the study of consciousness.
+Integration of Theories:
+The paper reviews several consciousness models that are based on or related to the FEP:
+Global Workspace Theory
+(GWT): A theory positing that consciousness involves broadcasting information across a "global workspace" for widespread cognitive access, updated through a Bayesian (probabilistic) framework in some versions.
+Attention Schema Theory
+(AST): Suggests that consciousness arises from a model of attention itself, with the FEP-related version emphasizing a Bayesian approach to attention control.
+World-models and Self-models
+: These models propose that consciousness stems from an organism���s ability to generate and update internal models of the external world and itself, with the FEP guiding these updates based on prediction errors.
+Time-consciousness Models
+: Focuses on how the brain constructs the experience of time, with consciousness being tied to the temporal structuring of experiences, again using computational principles derived from FEP.
+Application of FEP to Consciousness:
+The authors explore how these different theories can be grounded in the FEP, and how they relate to the proposed inner screen model. By applying the FEP to these models, they suggest a possible commonality���consciousness might be viewed as a mechanism for minimizing free energy across hierarchical, temporally-structured processes within the brain.
+Conclusion:
+The paper suggests that the inner screen model could potentially act as a MUM, offering a foundational framework for understanding consciousness. By aligning various FEP-based models within this broader framework, the authors propose a pathway toward a more unified scientific understanding of consciousness, grounded in a common principle: the minimization of free energy.
+This paper is an important step in integrating various theories of consciousness under a cohesive model, with the Free Energy Principle as the central unifying concept.
+4o
+Dijiste:
+The inner screen model of consciousness is a model that applies the free energy principle (FEP) to the study of consciousness. The FEP is a mathematical principle in information physics that attempts to explain the brain's structure and function. The inner screen model is based on the quantum information theoretic version of the FEP and the brain's sparse neuroanatomy. 
+The inner screen model of consciousness includes the following ideas: 
+Inner screen hypothesis: A conscious system must be made up of at least two components that are separable and communicate with each other. 
+Holographic structure: The brain's holographic structure supports action. 
+Minimal unifying model: The inner screen model could be a minimal unifying model of consciousness, providing a common foundation for consciousness studies. 
+The FEP is similar to the principle of maximum entropy or the principle of least action. It's useful for describing systems that appear to have beliefs about their environment.
+ChatGPT dijo:
+ChatGPT
+The
+Inner Screen Model
+of consciousness provides an intriguing approach to understanding consciousness through the lens of the Free Energy Principle (FEP), particularly using its quantum information theoretic version. Here's a breakdown of the key components of this model based on your description:
+Core Ideas of the Inner Screen Model:
+Free Energy Principle (FEP)
+:
+The FEP, originally proposed by Karl Friston, is a framework for understanding how biological systems, including the brain, act to minimize surprise or free energy. In essence, it suggests that systems like the brain function by constantly updating their internal models to align their predictions with sensory inputs, minimizing the difference between the two. This process can be compared to principles like maximum entropy or the principle of least action, both of which describe systems minimizing specific quantities to achieve efficient outcomes.
+Inner Screen Hypothesis
+:
+A key concept in this model is the idea that consciousness arises from a system that contains at least two distinct components. These components are separable but capable of communicating with each other. This structure creates a kind of "inner screen" where interactions between components give rise to the conscious experience. This could be interpreted as different brain areas or processes interacting to produce the unified experience of awareness.
+Holographic Structure
+:
+The model suggests that the brain has a holographic-like structure that supports action. In holography, each part of a system contains information about the whole, and this concept might be applied to consciousness, suggesting that different parts of the brain work together in a way that the whole conscious experience can be generated from the interaction of its components. This holographic nature is closely related to how the brain processes and represents information.
+Minimal Unifying Model (MUM)
+:
+The inner screen model is proposed as a
+minimal unifying model
+(MUM) of consciousness. A MUM is a model that seeks to integrate different theories and findings into a single coherent framework. In this case, the inner screen model attempts to bring together various theories of consciousness, using the FEP as the underlying principle, potentially offering a unified foundation for consciousness studies. This unification can help bridge various models like the global workspace theory, attention schema theory, and others mentioned earlier.
+FEP as a Unifying Concept:
+The
+Free Energy Principle
+is similar to concepts like
+maximum entropy
+and the
+principle of least action
+in physics. These principles describe how systems naturally evolve to minimize certain quantities (such as action, entropy, or free energy) to achieve stable and efficient states. In the context of the inner screen model, the FEP is used to describe how conscious systems, like the brain, operate by reducing prediction errors, which is akin to minimizing free energy.
+The FEP also offers a way to describe systems that appear to have "beliefs" about their environment���meaning the brain's internal models (its beliefs about the state of the world) are constantly updated to match reality, forming the basis of perception, learning, and action.
+Implications for Consciousness Studies:
+The inner screen model, grounded in the FEP, offers a framework that could potentially reconcile different approaches to consciousness by suggesting that consciousness arises from the interaction of multiple separable components within the brain, supported by a holographic-like structure. This model aligns with the FEP���s prediction-minimizing mechanisms, offering a minimal yet comprehensive foundation for future research in consciousness.
+This model's focus on the brain's sparse, nested, and hierarchical neuroanatomy aligns with modern neuroscientific findings, while also incorporating quantum information principles, potentially opening new avenues for understanding the physical and informational basis of consciousness.
+4o
+Dijiste:
+2The inner screen hypothesis 
+The FEP characterizes systems that can be decomposed into components called ���particles,��� 
+each of which serves as the ���environment��� of the other. Let us call such a system U = AB, 
+where A and B are the components. We regard U as comprising ���everything��� of interest, 
+and hence as isolated; in this case, A and B interact only with each other, and B can be 
+regarded as ���everything but A��� or simply as ���not-A��� and vice versa. The FEP states, in 
+this case, that if A and B are distinguishable from each other, and hence can be regarded 
+as having mutually conditionally-independent states, then they can both be regarded as 
+behaving in a way that maintains their conditional independence, given the states that 
+separate and couple both systems (the ���Markov blanket,��� which we discuss next) (Fields 
+et al., 2022; Fields, Glazebrook, & Levin, 2022). Since independence can only be maintained 
+if each component can respond adaptively to the actions of the other, the more familiar 
+formulation of the FEP���as the claim that each system will behave in a way that maximizes 
+its ability to predict what its interaction partner will do next���is recovered. As Bayesian 
+inference maximizes predictive power, it is in this latter formulation that the FEP supports 
+5 
+a ���Bayesian mechanics��� of the joint system U (Ramstead et al., 2023). 
+There are two main renditions of the FEP: the classical formulation and the quantum 
+information theoretic formulation. If the state space of U is described classically, then it 
+follows that if the dynamics of U can be represented by a directed acyclic graph (and hence 
+as a Bayesian causal network), then A can be considered to be separated from B by a set 
+of ���boundary��� states that form a Markov blanket; this Markov blanket is simply the set of 
+states of A through which all causal connections between A and B l ow. Clearly, in this case, 
+B also has a Markov blanket, comprising the states of B immediately causally adjacent to 
+the Markov blanket of A. The existence of (either of) these Markov blankets renders the 
+���internal��� (i.e., non-blanket) states of A and B conditionally independent. As shown in (Fris- 
+ton, 2019), (Ramstead et al., 2023), if the system U implements or entails a generative model 
+that encodes such a Markov blanket, then it will look as if the internal states of components 
+of U (say, A) ���track��� the statistics of its interaction partner (say, B). More technically, if 
+a system U admits a particular partition (into particles with their Markov blanket), then 
+the internal states of these particles will look as if they encode the parameters of a varia- 
+tional density over (a probabilistic ���best guess��� about) about the observable behavior of B, 
+i.e., as implementing a probabilistic model of the actions of B on the Markov blanket, and 
+vice-versa. 
+If the state space of U is described using quantum theory, i.e., as a Hilbert space HU, then 
+it follows that if the dynamics (i.e., the self-interaction) HUof U is such that the joint state 
+is separable, i.e., not entangled (formally, using the Dirac notation, |U��� = |AB��� = |A���|B���), 
+then A can be considered to be separated from B by a decompositional boundary B that acts 
+as a holographic screen (Fields et al., 2022). The states of this screen are not in the Hilbert 
+space HU; they can be regarded as def i ning an ancillary Hilbert space HB. Separability 
+requires that the interaction HABdef i ned at B is weak compared to the self-interactions HA 
+and HB. This, in turn, requires that the dimension dim(HB) �� dim(A), dim(B), a condition 
+that can only be satisf i ed if B is i nite, i.e., dim(HB) = N for some i nite N. In this case, 
+the interaction HABhas 2Neigenvalues, one of which can be viewed as encoded as a bit 
+array on B at any given time. The particular components A and B can then be regarded as 
+alternatively writing and reading bit strings to B, which functions as a Markov blanket and 
+guarantees the conditional independence of the states |A��� and |B���. The internal dynamics 
+HAand HBcan, as in the classical case, be regarded as implementing generative models of 
+the action on B of B and A respectively, as behaving so as to maximize Bayesian predictive 
+power. A detailed comparison of this quantum formulation to the classical formulation is 
+given in (Fields et al., 2023). 
+While in the classical formulation of the FEP, all states and state transitions, and there- 
+fore all encoded information is classical, in the quantum formulation, the only classical 
+information is the information written as a bit array on, and then read from, the boundary 
+B. This has two immediate consequences: 1. Classical information is def i ned only relative to the component that wrote it to B 
+(Fields, Glazebrook, & Marcian��, 2022). There is no ���objective��� classical information 
+in the joint system U, which can in principle be decomposed in an arbitrary number 
+6 
+of ways. 
+2. If the particular component A itself has components, i.e., if A = A1A2, and the com- 
+ponents A1and A2communicate classically, then the state |A��� must be separable as 
+|A��� = |A1A2��� = |A1���|A2���, each of A1and 
+A2must have a boundary that serves as 
+a holographic screen, and any classical information they exchange must be encoded 
+on their shared boundary B12, which serves as a holographic screen and hence as a 
+Markov blanket. 
+An internal boundary separating components of A that communicate classically is an 
+���internal screen���; the hypothesis that any system that encodes internal memories (i.e. internal 
+classical information) has such an internal screen was stated by (Fields, Glazebrook, & Levin, 
+2021) and developed at length in (Ramstead et al., 2023). It is now known that such inner 
+screens are required whenever a (quantum) system is capable of deploying measurements 
+or actions that cannot, whether for in-principle or practical (e.g., energetic) reasons, be 
+deployed simultaneously (Fields, Glazebrook, & Marcian��, 2022); see (Fields, Glazebrook, & 
+Marcian��, 2023) for formal details and proof. Interestingly, measurements or actions made 
+with such ���non co-deployable��� resources induce intrinsic or ���quantum��� context-dependence 
+and hence can have in-principle unpredictable side ef f ects (Fields & Glazebrook, 2022, 2023). 
+For systems described using classical neuroscience, and hence the classical FEP, mea- 
+surements (i.e., perceptions) and actions are ef f ectively non co-deployable whenever they 
+can only be executed serially. In this case, the inner screen hypothesis is the hypothesis 
+that all such systems have irreducible internal Markov blankets. We have previously shown 
+that the assumption of irreducible internal Markov blankets leads, via the classical FEP, to 
+a model of hierarchical processing that allows us to understand where and (functionally) 
+why consciousness arises in complex nervous systems; see Fig. 1 for a schematic illustra- 
+tion (Ramstead et al., 2023). Brief l y, the model predicts that at every scale, from that of 
+inter-cellular signal transduction systems to that of whole-brain architecture, components 
+have Markov blankets that render them conditionally independent of other components at 
+the same scale. At intermediate organizational scales, such components have both suf i cient 
+input from smaller-scale systems and modulatory constraints from larger-scale systems to en- 
+code coherent contents of consciousness. We will see in what follows that this model provides 
+a basis on which to integrate multiple existing, FEP-compliant theories of consciousness, i.e., 
+that it provides a MUM.
+ChatGPT dijo:
+ChatGPT
+The
+Inner Screen Hypothesis
+expands on the Free Energy Principle (FEP) by introducing the idea of separable components within a system that interact in a way that maintains conditional independence, achieved through what is called a Markov blanket. This idea is applied both to classical and quantum formulations of the FEP, offering a comprehensive framework for understanding how complex systems like the brain maintain adaptive interactions within themselves and with their environments.
+Here are the key points of the
+Inner Screen Hypothesis
+:
+1.
+Decomposition into Components (A and B)
+:
+The system
+U
+=
+A
+B
+U = AB
+U
+=
+A
+B
+is composed of two distinct components,
+A
+A
+A
+and
+B
+B
+B
+, which interact with each other but remain separable and conditionally independent. These components can be considered as each other���s "environment," with
+B
+B
+B
+representing "everything but
+A
+A
+A
+" and vice versa. Their interaction is mediated by a boundary (the Markov blanket), which ensures that their states are conditionally independent, meaning they can behave adaptively in response to one another.
+2.
+Classical Formulation of FEP
+:
+In the classical case, the state space of
+U
+U
+U
+is represented as a Bayesian causal network. A Markov blanket separates
+A
+A
+A
+from
+B
+B
+B
+and contains the states through which all causal information flows. The internal states of
+A
+A
+A
+and
+B
+B
+B
+remain independent because the Markov blanket mediates their interaction. This model leads to the prediction that the internal states of each component behave as if they are generating a probabilistic model of the behavior of the other component.
+3.
+Quantum Formulation of FEP
+:
+In the quantum case,
+U
+U
+U
+is described as a Hilbert space
+H
+U
+H_U
+H
+U
+���
+, and separability between
+A
+A
+A
+and
+B
+B
+B
+is maintained by a holographic screen. This screen functions similarly to a Markov blanket, ensuring that
+A
+A
+A
+and
+B
+B
+B
+remain conditionally independent. Here, the information exchanged between
+A
+A
+A
+and
+B
+B
+B
+is classical, but only relative to the component that wrote it to the boundary. This boundary acts as a bit array, encoding information that is read and written by
+A
+A
+A
+and
+B
+B
+B
+, preserving their independence.
+4.
+Implications of the Holographic Screen
+:
+In the quantum version, separability is achieved when the interaction between
+A
+A
+A
+and
+B
+B
+B
+is weak compared to their internal dynamics. The holographic screen (or Markov blanket) allows for the exchange of information between the two components while maintaining their conditional independence. This setup also implies that any classical information exchanged between the components is encoded on the boundary, acting as a shared screen that guarantees this independence.
+5.
+Inner Screen Hypothesis
+:
+The hypothesis posits that any system encoding internal memories (or classical information) must have an internal screen that separates its components. This internal screen serves a similar function as the Markov blanket, ensuring that components of the system interact adaptively but maintain their independence. Such systems, when applied to the brain, could explain how hierarchical structures, from cells to entire brain regions, maintain coherence and independence, giving rise to consciousness at various scales of organization.
+6.
+Context-Dependence and Non Co-Deployable Resources
+:
+The hypothesis also covers the idea that in systems described by classical neuroscience, measurements (perceptions) and actions are non-co-deployable when they cannot be executed simultaneously. In these cases, internal Markov blankets within the system ensure that even with sequential actions, the system can function coherently. In quantum systems, this non-co-deployability results in context-dependence and potentially unpredictable side effects.
+7.
+Hierarchical Processing and Consciousness
+:
+The presence of internal Markov blankets at various scales in the brain leads to a model of hierarchical processing. Each level of the hierarchy, from cellular to whole-brain structures, has conditional independence from other components at the same scale, ensuring that the system processes information efficiently. This conditional independence allows smaller-scale systems to provide inputs, while larger-scale systems impose modulatory constraints, creating coherent conscious experience.
+8.
+Minimal Unifying Model (MUM)
+:
+The Inner Screen Hypothesis supports the idea that these Markov blankets and hierarchical structures provide a foundation for unifying multiple theories of consciousness under the FEP. The combination of classical and quantum formulations allows for a versatile model that integrates different approaches, offering a framework that could serve as a Minimal Unifying Model (MUM) of consciousness.
+In summary, the
+Inner Screen Hypothesis
+suggests that the brain can be seen as a system of interacting components that remain conditionally independent through the mediation of Markov blankets or holographic screens. These structures ensure adaptive behavior, predict interactions, and maintain coherence, potentially explaining how consciousness arises in complex nervous systems across different scales. The hypothesis provides a strong foundation for integrating various theories of consciousness under the Free Energy Principle.
+4o
+Dijiste:
+3.2.2Self-modelling theory 
+The self-modelling theory (SMT), proposed by (Metzinger, 2007) and later developed un- 
+der active inference by (Limanowski, 2014), focuses on how the concept of self���and the 
+experience of selfhood���emerges from the workings of the brain. The theory identif i es the 
+self as the centre of control that connects (interoceptive) sensations from the body with 
+(proprioceptive) movement in extrapersonal space. On this account, the self emerges from a 
+temporally extended process that integrates sensory information from multiple sources (in- 
+cluding exteroceptive ones) into a generative model that includes representations of the self 
+as the cause of those sensations. The self-model in SMT is egocentric, meaning that it is cen- 
+tred on the individual���s perspective and experience, and encompasses both the i rst-personal 
+(subjective) aspect of experience and third-person experiences of the self (as an object on 
+a par with others)���a self that is experienced (transparently) as conserved over space and 
+time. 
+According to SMT, the self is not a static object, but rather results from a dynamic 
+process of inference about the most probable causes of the sensory states of an agent. An 
+active self-model is a functional state that operates beneath the level of conscious awareness 
+and has a specif i c causal role. The operation of such a process generates an egocentric, 
+perspectival experience that is directed towards objects and allows for interaction with the 
+external world. Self-modelling theory also treats the distinction between ���transparent��� and 
+���opaque��� mental states or processes (Metzinger, 2003), which was later formalised using 
+active inference by (Sandved-Smith et al., 2021). A key contribution of this formulation is 
+the conditioning of precision on latent states at successively higher levels of a deep generative 
+model. This induces the key notion that representations of ���states of being��� are in the service 
+of recognising distinct states of perceptual dispositions and, at the same time, necessary to 
+deploy attentional sets by contextualising the precision of belief updating processes lower in 
+the hierarchy. 
+The terms ���transparency��� and ���opacity��� come from the metaphor of seeing something 
+through a window: the transparency of the window itself enables the thing outside to be 
+seen, but the window is not experienced itself, except in cases where it becomes opaque. 
+Accordingly, the experience of the self is often transparent, meaning the agent having that 
+experience only has access to the contents of their experience and not to the process that 
+makes that experience possible (i.e., mental action). However, in some special cases, the 
+experience of self can become opaque, when the agent attends to its experiences directly 
+(and aspects of the process of experience thus enter into its content). In this sense, the self is 
+ultimately a particularly adaptive hypothesis about what is causing one���s sensory experience. 
+3.2.3The beast machine approach 
+The beast machine approach (Seth & Tsakiris, 2018) suggests that inference is fundamentally 
+related to embodied processeses, and grounded in allostatic control realized by predictive 
+coding (Ainley et al., 2016; Ainley et al., 2012; Apps & Tsakiris, 2014; Barrett, Quigley, & 
+Hamilton, 2016; Barrett & Simmons, 2015; Fotopoulou & Tsakiris, 2017; Seth, 2015; Seth 
+18 
+& Friston, 2016; Seth, Suzuki, & Critchley, 2012). On this view, conscious experience is 
+constructed from an array of multimodal inputs to the body (with a special emphasis on 
+interoceptive and proprioceptive af f erents). In line with the winning hypothesis model, the 
+agent���s best guess about what caused these sensory inputs is leveraged to control the body, 
+enabling intention and purposeful action. 
+In this approach���like the winning hypothesis model���the brain leverages a generative 
+model with a set of prior beliefs about what might be causing interoceptive sensory signals. 
+The beast machine approach foregrounds the contribution to conscious experience of embod- 
+ied action, i.e., of moving the body intentionally. In this model, the conscious experience of 
+selfhood is caused by the generation of predictions about actions, and the conscious experi- 
+ence of ownership is related to the management of prediction errors issued from interoceptive 
+and exteroceptive centres of the brain (Seth, 2013). The basic idea is that dif f erent kinds of 
+inputs at dif f erent levels of the neural hierarchy generate prediction errors, and that conscious 
+processing is related to the quashing of a special kind of prediction error. More specif i cally, 
+on this view, conscious perception results from minimising proprioceptive prediction errors 
+during action. Based on beliefs about a specif i c course of action or policy, proprioceptive 
+signals are i rst predicted, and then fulf i lled or frustrated���via action. Precision-weighing 
+also factors in this approach, by determining whether an action is performed (when precision 
+is lower), or whether the model is updated (if the precision is higher). This kind of precision 
+weighting has close connections to sensory attenuation; namely,attenuating the (precision of) 
+sensory consequences of self-made actions (H. Brown et al., 2013; Limanowski, 2017, 2022). In the beast machine approach, the stability of our sense of embodied selfhood is linked to 
+the dif f erence in timescales and stability between motor actions and physiological homeosta- 
+sis. Motor actions are variable, generated in accordance with the demands of a situation, and 
+may change over time; while physiological homeostasis is fundamentally about maintaining 
+stability, i.e., maintaining essential variables within a viable range. Interoceptive demands 
+encode strong priors, which enable the emergence of a stable sense of self over time. Given 
+this stability, the experience of being a body is transparent (in the sense discussed above with 
+respect to self-modelling theory): the body is not usually perceived as a mere object���unlike 
+the visual experience of an object, in which things are perceived as objects due to predictions 
+the brain makes about how object-related sensory signals would change with certain actions. 
+Thus, the body and the self are mostly experienced as transparent, and are only turned into 
+objects of experience per se when attention is directed towards specif i c processes.
+ChatGPT dijo:
+ChatGPT
+Self-Modelling Theory (SMT)
+The
+Self-Modelling Theory
+(SMT) proposed by Thomas Metzinger (2007) and further developed under active inference by Limanowski (2014), explores how the sense of
+self
+arises from the brain's operations. The central idea is that the self emerges as a model constructed by the brain to integrate various sensory inputs and movements. This theory emphasizes the dynamic and inferential nature of selfhood, proposing that the brain actively models the causes of sensory experiences, thereby generating a
+self
+that is situated within a body and engaged in the external world.
+Key Points:
+Integration of Sensory Inputs
+:
+The self is seen as the center of control, connecting interoceptive sensations (internal bodily sensations like hunger or heartbeat) with proprioceptive movements (movements in external space). The brain integrates multiple sensory sources���such as exteroceptive inputs (external stimuli)���into a coherent model of the self, as the cause of those sensations.
+Dynamic Inference
+:
+The self-model is not a fixed object but rather the result of ongoing inferences about the probable causes of sensory states. It operates at a subconscious level and has a specific causal role in how we interact with the world. Through this process, an egocentric, perspectival experience emerges, focused on objects and actions.
+Transparent and Opaque Mental States
+:
+SMT distinguishes between
+transparent
+and
+opaque
+states of self-awareness. In transparent states, the self is experienced directly, without awareness of the underlying processes that construct this experience. For example, when we perceive the world, we don't consciously recognize the cognitive processes creating that perception. In contrast, in
+opaque
+states, one becomes aware of the process of self-experience itself, such as when reflecting on one's thoughts or focusing on internal bodily states.
+Hierarchical Generative Models
+:
+The theory also involves the concept of precision-weighting in hierarchical generative models. Higher levels of these models encode "states of being," conditioning the precision of beliefs about sensory inputs at lower levels. This allows the self-model to adapt dynamically to new information while maintaining a stable sense of self over time.
+Beast Machine Approach
+The
+Beast Machine Approach
+, as proposed by Seth and Tsakiris (2018), emphasizes the role of the body in shaping conscious experience. This approach integrates
+allostatic control
+(maintaining physiological stability) with
+predictive coding
+, suggesting that conscious experiences are constructed based on how the brain predicts and responds to multimodal sensory inputs from the body.
+Key Points:
+Embodied Inference
+:
+Consciousness is fundamentally rooted in the body���s interactions with the environment. Interoceptive (internal body states) and proprioceptive (body position and movement) signals play a critical role in shaping conscious experiences. The brain generates a model of the body���s current and future states, allowing for the coordination of movement and perception.
+Generative Models and Action
+:
+Similar to SMT, the brain uses generative models to predict and update beliefs about the causes of interoceptive and exteroceptive signals. The brain leverages these models to control the body and perform actions. Conscious experience emerges from minimizing prediction errors���differences between what the brain predicts and what it senses���in relation to bodily movements and environmental interactions.
+Proprioceptive Prediction Errors
+:
+Conscious perception, in this view, is particularly tied to the minimization of
+proprioceptive prediction errors
+during action. The brain first predicts the sensory outcomes of a planned action, and then either fulfills or updates its model based on the actual sensory feedback. This prediction-error minimization helps to fine-tune bodily actions and maintain a coherent sense of self.
+Precision-Weighting
+:
+The Beast Machine Approach also emphasizes the role of
+precision-weighting
+, which determines the brain's confidence in its predictions. When prediction errors have low precision, the brain sticks with its current model and carries out actions. When prediction errors are high, the brain adjusts its model to better reflect the sensory data. This process also relates to
+sensory attenuation
+, where the brain reduces the precision of sensory consequences for self-made actions, enabling smoother control over movement.
+Embodied Selfhood and Stability
+:
+The model links the stability of selfhood to the interaction between
+motor actions
+and
+physiological homeostasis
+. Motor actions are variable and situation-dependent, while homeostasis focuses on maintaining stable internal conditions. This stability in interoceptive states provides a foundational sense of self, while motor actions introduce flexibility and adaptability.
+Transparency of Bodily Experience
+:
+As with SMT, the body is generally experienced as
+transparent
+���not as a separate object of attention, but as part of the self. The body only becomes
+opaque
+when attention is explicitly directed to its processes, such as during introspective awareness of bodily sensations or reflective thought.
+Comparison and Integration:
+Self-Modelling Theory (SMT)
+emphasizes the role of a dynamic, inferential process that integrates sensory information to generate an egocentric self-model. This model is hierarchical, and its transparency or opacity determines whether the self is experienced directly or becomes the focus of attention.
+Beast Machine Approach
+focuses on the embodiment of consciousness, highlighting the predictive and allostatic control processes that allow the brain to minimize prediction errors and maintain physiological stability. Conscious experience emerges through the interaction of the body���s internal states and movements in the external world.
+Both theories are grounded in active inference and predictive coding, aligning well with the Free Energy Principle. They can be integrated into a more unified understanding of consciousness that balances the dynamic inferential self-modelling of SMT with the embodied, action-oriented approach of the Beast Machine model. Together, they suggest that consciousness arises not just from internal self-representation, but from the continuous interaction between the brain, body, and environment, minimizing prediction errors across both sensory and action domains.
+4o
+Dijiste:
+3.2.5Felt uncertainty theory 
+According to felt uncertainty theory (Solms, 2013, 2021a, 2021b; Solms & Friston, 2018), 
+conscious feeling is simply ���what it is like to be��� a thing that minimises free energy given 
+a set of homeostatic setpoints, which a Freudian would call ���drives��� (Solms, 2021a). On 
+this account, the locus or correlate of the basic state of consciousness in the brain (arguably 
+identif i able with what Rosenthal has called ���creature consciousness��� as opposed to ���state con- 
+sciousness��� (Rosenthal, 2005)) is a set of upper brainstem structures (Solms, 2021b). Feeling 
+per se derives from brainstem activity, and especially from the upper brainstem structures 
+of the periaqueductal grey (PAG) and reticular activating system (Solms, 2013). Felt un- 
+certainty theory can be read as an attempt to reverse the dominant trend of cortico-centric 
+approaches to consciousness, suggesting that the contributions of cortex to consciousness 
+have been exaggerated. In felt uncertainty theory, the perceptual contents of conscious ex- 
+perience, or ���mental solids,��� come from the top-down constraining ef f ect of cortical structures 
+on brainstem activity; but the primary locus of conscious feeling itself is sub-cortical. On 
+this view, consciousness entails the relation: ���I feel like this about that.��� 
+Felt uncertainty theory dovetails with the beast machine approach and IWMT���albeit 
+with some potential dif f erences regarding the neuroanatomical substrates of af f ective con- 
+sciousness (Safron, 2021b; Seth, 2021)���in that it posits that the brain contains a repre- 
+sentation of the internal body (i.e., a representation of homeostatic needs or drives, as well 
+as homeostatic error signals) and a representation of the external body (as an object of 
+action and perception) (Solms, 2013). Individuals are endowed with spatially distributed 
+sensory receptors, which allow them to form a map of their own extended bodies as ���men- 
+tal solids.��� The af f ective representation of the internal body corresponds to need-detector 
+systems, which map onto what Freud called the id. Af f ect functions to regulate the body 
+through homeostasis. The body responds to af f ective cues, and must act allostatically on the 
+external world to respond to its homeostatic needs. The homeostatic body map is mostly 
+realized by brain structures around the hypothalamus, including various parts distributed 
+within the hypothalamic complex. The external, third-person representation of the body 
+corresponds to a special part of the generative model that represents external objects. 
+20 
+According to felt uncertainty theory, the maintenance of the external milieu supervenes 
+or depends on that of the internal milieu, insofar as homeostatic perception and control is a 
+prerequisite for allostatic perception and control. To build up the external body representa- 
+tion, and most of cognition, individuals leverage traces or memories of past events, which are 
+repurposed for counterfactual and imaginary projection into the future. On this view, the 
+same parts of the brain are involved in these two processes, namely through the thalamo- 
+cortico-thalamic circuits. Looking at one���s body implements the same functions as looking at 
+other bodies, considered as objects in the world: c.f., mirror neuron formulations (Gallese & 
+Goldman, 1998; Kilner, Friston, & Frith, 2007; Rizzolatti & Craighero, 2004). This external 
+body-map also consumes motor maps which are produced by the somatosensory and motor 
+cortices. 
+The crucial aspects of this theory are (1) that following each action/perception cycle, 
+residual homeostatic error signals converge on the PAG, where their precisions are priori- 
+tised by current salience; (2) that the prioritised category���i.e., quality���of need is felt; and 
+(3) that its l uctuating valence is then utilised by ascending reticular activating neurons 
+to modulate the agent���s expected precisions in an ensuing action/perception cycle, thereby 
+rendering it voluntary; while (4) the parallel action/perception policies that respond to the 
+non-prioritised needs are assigned i xed precision values, and therefore executed automati- 
+cally. The ���felt uncertainty��� that gives this theory its name therefore refers to an agent���s 
+l uctuating conf i dence in its currently prioritised ef f ort to maintain homeostasis voluntarily.
+ChatGPT dijo:
+ChatGPT
+Felt Uncertainty Theory
+Felt Uncertainty Theory
+(Solms, 2013, 2021a, 2021b; Solms & Friston, 2018) offers an explanation for how consciousness, particularly conscious
+feeling
+, emerges in the brain through the minimization of free energy in relation to homeostatic needs (or "drives"). It presents an account of how internal bodily states, particularly homeostatic errors and drives, generate the feeling component of consciousness, shifting the focus away from cortical-centric views and placing more emphasis on subcortical structures like the brainstem.
+Key Concepts:
+Consciousness as Minimizing Free Energy for Homeostasis
+:
+According to this theory, consciousness arises as the brain minimizes free energy relative to the body's homeostatic setpoints (goals that maintain internal stability). These setpoints are aligned with what Freudians would call "drives." In essence, feeling reflects the brain's adaptive response to bodily needs.
+Subcortical Basis of Consciousness
+:
+Unlike many cortico-centric theories that place the origin of consciousness in cortical (higher brain) structures, Felt Uncertainty Theory suggests that the locus of consciousness lies in the brainstem, particularly in structures like the
+periaqueductal grey (PAG)
+and the
+reticular activating system
+. These brainstem regions are critical for generating the "feeling" aspect of consciousness, which originates from internal, affective representations of bodily states.
+Interaction of Brainstem and Cortex
+:
+While feelings themselves are generated in the brainstem, the contents of consciousness���what we experience as thoughts or perceptions���are shaped by cortical activity. The cortex provides a top-down influence, constraining brainstem activity and shaping how feelings are experienced in relation to external events or perceptions. This dynamic creates the fundamental experience of "I feel like this about that."
+Homeostatic and Allostatic Control
+:
+Felt Uncertainty Theory also links to the broader concept of
+allostatic control
+, which refers to the body���s ability to regulate itself in response to environmental demands. Consciousness depends on the brain's ability to maintain internal homeostasis, which in turn supports the ability to control and predict the external environment. The theory suggests that external body representations (maps of the body in space) depend on internal body representations (homeostatic maps), with the brain balancing these two to guide action and perception.
+Mental Solids and Affective States
+:
+The brain forms a representation of the body as "mental solids," integrating sensory information from both the internal body (homeostatic drives) and the external environment. These representations are tied to affective (emotional) responses that guide action. The internal affective states are largely processed by brain regions around the hypothalamus, while external body representations involve cortical structures that manage perception and action in space.
+Feeling Uncertainty and Precision of Needs
+:
+The concept of
+felt uncertainty
+refers to the brain���s fluctuating confidence in its ability to maintain homeostasis. Following each action-perception cycle, residual homeostatic error signals (which reflect unmet bodily needs) converge on the PAG, where they are prioritized by their current relevance or
+salience
+. The "feeling" arises when the brain registers the quality and intensity of these needs. Ascending reticular activating neurons modulate the precision of these needs, affecting whether the ensuing actions are voluntary or automatic.
+Action-Perception Cycles
+:
+Each action or perception cycle in the brain involves an evaluation of homeostatic error signals. When a particular need is prioritized (e.g., hunger), it is felt more intensely, and the actions taken to address it are voluntary. In contrast, needs that are not prioritized are managed by fixed precision values and result in automatic actions (e.g., maintaining posture). This hierarchy allows the brain to focus attention on pressing needs while still maintaining other essential functions.
+Integration with Other Models:
+Relation to Beast Machine Approach
+: Felt Uncertainty Theory shares similarities with the Beast Machine approach, especially regarding the role of bodily states in shaping conscious experience. Both theories highlight how the brain���s internal models of the body and its homeostatic needs interact with external perceptions and actions. However, Felt Uncertainty Theory places more emphasis on the brainstem as the seat of affective consciousness.
+Integration with Active Inference
+: The theory aligns with
+active inference
+principles, particularly the idea that the brain minimizes free energy by predicting and responding to sensory inputs. The difference lies in its focus on how affective (emotional) states guide this process, with homeostatic regulation being a central driver of the brain's inferential processes.
+Freudian Influence
+: The theory also draws on Freudian ideas, specifically the notion of drives (like the id) as underlying forces that shape behavior and consciousness. In Felt Uncertainty Theory, these drives correspond to homeostatic needs that the brain continuously monitors and responds to.
+Conclusion:
+Felt Uncertainty Theory
+presents an innovative perspective on the nature of consciousness by centering it on the brain's ability to manage homeostasis through affective (emotional) states. By locating the source of conscious feeling in subcortical structures like the brainstem and prioritizing homeostatic drives, this theory challenges cortico-centric views of consciousness. It also offers a detailed account of how feelings of uncertainty and confidence arise from the brain's attempts to maintain internal balance, influencing both voluntary and automatic actions. Through its connections to active inference and the Beast Machine approach, Felt Uncertainty Theory contributes to a broader, integrated understanding of how consciousness emerges from the interaction between internal bodily states and external environmental demands.
+4o
+Dijiste:
+A list of all of the topics we've discussed.
+ChatGPT dijo:
+ChatGPT
+Here���s a list of all the topics we���ve discussed so far:
+Principle of Least Action
+- A fundamental concept in physics that explains how systems follow paths that minimize action, which has parallels to optimization processes in training machine learning models.
+Free Energy Principle (FEP)
+- A mathematical principle explaining how systems minimize free energy, central to understanding brain function and consciousness.
+Inner Screen Model of Consciousness
+- A model applying the FEP to consciousness, proposing that separable components within a system interact through a Markov blanket or holographic screen.
+Self-Modelling Theory (SMT)
+- A theory of consciousness that focuses on how the brain creates a dynamic model of the self by integrating sensory inputs and generating an egocentric perspective.
+Beast Machine Approach
+- A theory emphasizing the role of the body in shaping conscious experience, grounded in allostatic control and predictive coding.
+Felt Uncertainty Theory
+- A theory suggesting that conscious feeling arises from the brain's attempts to minimize free energy relative to homeostatic drives, emphasizing subcortical brain structures as the locus of feeling.
+Let me know if you need more information on any of these topics!
+4o
+ChatGPT puede cometer errores. Comprueba la informaci��n importante.
+?

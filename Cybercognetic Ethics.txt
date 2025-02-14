@@ -1,0 +1,570 @@
+Cybercognetic Ethics
+Open sidebar
+ChatGPT
+4
+You
+Skip to main content
+    
+      
+      
+      
+        Site Me Changes News Links Patreon
+      
+    
+    
+      Why Tool AIs Want to Be Agent AIs
+    
+    
+      
+        
+          AIs limited to pure computation (Tool AIs) supporting humans, will be less intelligent, efficient, and economically valuable than more autonomous reinforcement-learning AIs (Agent AIs) who act on their own and meta-learn, because all problems are reinforcement-learning problems.
+        
+        
+          AI economics, automation (economics), x-risk, insight porn, AI safety, RL scaling, transhumanism
+        
+        
+          2016-09-07���2018-08-28 finished certainty: likely importance: 9 backlinks similar bibliography
+        
+      
+      
+        
+          
+            Economic
+          
+          
+            Intelligence
+            
+              
+                Actions for Intelligence
+                
+                  
+                    Actions Internal to a Computation
+                  
+                  
+                    Actions Internal to Training
+                  
+                  
+                    Actions Internal to Data Selection
+                  
+                  
+                    Actions Internal to NN Design
+                  
+                  
+                    Actions External to the Agent
+                  
+                
+              
+              
+                Overall
+              
+            
+          
+          
+            Why You Shouldn���t Be A Tool
+          
+          
+            See Also
+          
+          
+            External Links
+          
+        FootnotesFurther ReadingSimilar LinksLink Bibliography
+      
+      
+        
+        <div id="noscript-warning-header" class="admonition error">
+          <div class="admonition-title">
+            <p>[<strong>Warning</strong>: JavaScript Disabled!]</p>
+          </div>
+          <p>[For support of key <a href="/design" title="About: Gwern.net Design: principles, features, links, tricks">website features</a> (link annotation popups/popins & transclusions, collapsible sections, backlinks, tablesorting, image zooming, <a href="/sidenote">sidenotes</a> etc), you must enable JavaScript.]</p>
+        </div>
+        
+          
+            Autonomous AI systems (Agent AIs) trained using reinforcement learning can do harm when they take wrong actions, especially superintelligent Agent AIs. One solution would be to eliminate their agency by not giving AIs the ability to take actions, confining them to purely informational or inferential tasks such as classification or prediction (Tool AIs), and have all actions be approved & executed by humans, giving equivalently superintelligent results without the risk.
+            I argue that this is not an effective solution for two major reasons. First, because Agent AIs will by definition be better at actions than Tool AIs, giving an economic advantage. Secondly, because Agent AIs will be better at inference & learning than Tool AIs, and this is inherently due to their greater agency: the same algorithms which learn how to perform actions can be used to select important datapoints to learn inference over, how long to learn, how to more efficiently execute inference, how to design themselves, how to optimize hyperparameters, how to make use of external resources such as long-term memories or external software or large databases or the Internet, and how best to acquire new data.
+            RL is a terrible way to learn anything complex from scratch, but it is the least bad way to learn how to control something complex���and the world is full of complex systems we want to control, including AIs themselves.
+            All of these actions will result in Agent AIs more intelligent than Tool AIs, in addition to their greater economic competitiveness. Thus, Tool AIs will be inferior to Agent AIs in both actions and intelligence, implying use of Tool AIs is an even more highly unstable equilibrium than previously argued, as users of Agent AIs will be able to outcompete them on two dimensions (and not just one).
+          
+        
+        One proposed solution to AI risk is to suggest that AIs could be limited purely to supervised/unsupervised learning, and not given access to any sort of capability that can directly affect the outside world such as robotic arms. In this framework, AIs are treated purely as mathematical functions mapping data to an output such as a classification probability, similar to a logistic or linear model but far more complex; most deep learning neural networks like ImageNet image classification convolutional neural networks (CNN)s would qualify. The gains from AI then come from training the AI and then asking it many questions which humans then review & implement in the real world as desired. So an AI might be trained on a large dataset of chemical structures labeled by whether they turned out to be an useful drug in humans and asked to classify new chemical structures as useful or non-useful; then doctors would run the actual medical trials on the drug candidates and decide whether to use them in patients etc. Or an AI might look like Google Maps/Waze: it answers your questions about how best to drive places better than any human could, but it does not control any traffic lights country-wide to optimize traffic flows nor will it run a self-driving car to get you there. This theoretically avoids any possible runaway of AIs into malignant or uncaring actors who harm humanity by satisfying dangerous utility functions and developing instrumental drives. After all, if they can���t take any actions, how can they do anything that humans do not approve of?
+        Two variations on this limiting or boxing theme are
+        
+          Oracle AI: Nick Bostrom, in Superintelligence (2014) (pg145���158) notes that while they can be easily ���boxed��� and in some cases like P/NP problems the answers can be cheaply checked or random subsets expensively verified, there are several issues with oracle AIs:
+              the AI���s definition of ���resources��� or ���staying inside the box��� can change as it learns more about the world (ontological crises)
+              responses might manipulate users into asking easy (and useless problems)
+              making changes in the world can make it easier to answer questions about, by simplifying or controlling it (���All processes that are stable we shall predict. All processes that are unstable we shall control.���)
+              even a successfully boxed and safe oracle or tool AI can be misused1
+            
+          Tool AI (the idea, as ���tool mode��� or ���tool AGI���, was apparently introduced by Holden Karnofsky in a July 2011 discussion of a May 2011 discussion with Jaan Tallinn & elaborated on in a May 2013 essay, but the idea has probably been proposed before). To quote Karnofsky:
+              Google Maps���by which I mean the complete software package including the display of the map itself���does not have a ���utility��� that it seeks to maximize. (One could fit an utility function to its actions, as to any set of actions, but there is no single ���parameter to be maximized��� driving its operations.)
+              Google Maps (as I understand it) considers multiple possible routes, gives each a score based on factors such as distance and likely traffic, and then displays the best-scoring route in a way that makes it easily understood by the user. If I don���t like the route, for whatever reason, I can change some parameters and consider a different route. If I like the route, I can print it out or email it to a friend or send it to my phone���s navigation application. Google Maps has no single parameter it is trying to maximize; it has no reason to try to ���trick��� me in order to increase its utility. In short, Google Maps is not an agent, taking actions in order to maximize an utility parameter. It is a tool, generating information and then displaying it in an user-friendly manner for me to consider, use and export or discard as I wish.
+              Every software application I know of seems to work essentially the same way, including those that involve (specialized) artificial intelligence such as Google Search, Siri, Watson, Rybka, etc. Some can be put into an ���agent mode��� (as Watson was on Jeopardy) but all can easily be set up to be used as ���tools��� (for example, Watson can simply display its top candidate answers to a question, with the score for each, without speaking any of them.)���Tool-AGI is not ���trapped��� and it is not Unfriendly or Friendly; it has no motivations and no driving utility function of any kind, just like Google Maps. It scores different possibilities and displays its conclusions in a transparent and user-friendly manner, as its instructions say to do; it does not have an overarching ���want,��� and so, as with the specialized AIs described above, while it may sometimes ���misinterpret��� a question (thereby scoring options poorly and ranking the wrong one #1) there is no reason to expect intentional trickery or manipulation when it comes to displaying its results.
+              ���Another way of putting this is that a ���tool��� has an underlying instruction set that conceptually looks like: ���(1) Calculate which action A would maximize parameter P, based on existing data set D. (2) Summarize this calculation in an user-friendly manner, including what Action A is, what likely intermediate outcomes it would cause, what other actions would result in high values of P, etc.��� An ���agent,��� by contrast, has an underlying instruction set that conceptually looks like: ���(1) Calculate which action, A, would maximize parameter P, based on existing data set D. (2) Execute Action A.��� In any AI where (1) is separable (by the programmers) as a distinct step, (2) can be set to the ���tool��� version rather than the ���agent��� version, and this separability is in fact present with most/all modern software. Note that in the ���tool��� version, neither step (1) nor step (2) (nor the combination) constitutes an instruction to maximize a parameter���to describe a program of this kind as ���wanting��� something is a category error, and there is no reason to expect its step (2) to be deceptive���This is important because an AGI running in tool mode could be extraordinarily useful but far more safe than an AGI running in agent mode. In fact, if developing ���Friendly AI��� is what we seek, a tool-AGI could likely be helpful enough in thinking through this problem as to render any previous work on ���Friendliness theory��� moot.
+              ���Is a tool-AGI possible? I believe that it is, and furthermore that it ought to be our default picture of how AGI will work
+            There are similar general issues with Tool AIs as with Oracle AIs:
+              a human checking each result is no guarantee of safety; even Homer nods. A extremely dangerous or subtly dangerous answer might slip through; Stuart Armstrong notes that the summary may simply not mention the important (to humans) downside to a suggestion, or frame it in the most attractive light possible. The more a Tool AI is used, or trusted by users, the less checking will be done of its answers before the user mindlessly implements it.2
+              an intelligent, never mind superintelligent Tool AI, will have built-in search processes and planners which may be quite intelligent themselves, and in ���planning how to plan���, discover dangerous instrumental drives and the sub-planning process execute them.3(This struck me as mostly theoretical until I saw how well GPT-3 could roleplay & imitate agents purely by offline self-supervised prediction on large text databases���imitation learning is (batch) reinforcement learning too! See Decision Transformer for an explicit use of this.)
+              developing a Tool AI in the first place might require another AI, which itself is dangerous
+            
+        
+        Oracle AIs remain mostly hypothetical because it���s unclear how to write such utility functions. The second approach, Tool AI, is just an extrapolation of current systems but has two major problems aside from the already identified ones which cast doubt on Karnofsky���s claims that Tool AIs would be ���extraordinarily useful��� & that we should expect future AGIs to resemble Tool AIs rather than Agent AIs.
+        
+          Economic
+          
+            
+              We wish a slave to be intelligent, to be able to assist us in the carrying out of our tasks. However, we also wish him to be subservient. Complete subservience and complete intelligence do not go together.
+              Norbert Wiener196 0
+            
+          
+          First and most commonly pointed out, agent AIs are more economically competitive as they can replace tool AIs (as in the case of YouTube upgrading from next-video prediction to REINFORCE4) or ���humans in the loop���.5 In any sort of process, Amdahl���s law notes that as steps get optimized, the optimization does less and less as the output becomes dominated by the slowest step���if a step only takes 10% of the time or resources, then even infinite optimization of that step down to zero time/resources means that the output will increase by no more than 10%. So if a human overseeing a, say, high-frequency trading (HFT) algorithm, accounts for 50% of the latency in decisions, then the HFT algorithm will never run more than twice as fast as it does now, which is a crippling disadvantage. (Hence, the Knight Capital debacle is not too surprising���no profitable HFT firm could afford to put too many humans into its loops, so when something does go wrong, it can be difficult for humans to figure out the problem & intervene before the losses mount.) As the AI gets better, the gain from replacing the human increases greatly, and may well justify replacing them with an AI inferior in many other respects but superior in some key aspect like cost or speed. This could also apply to error rates���in airline accidents, human error now causes the overwhelming majority of accidents due to their presence as overseers of the autopilots and it���s unclear that a human pilot represents a net safety gain; and in ���advanced chess���, grandmasters initially chose most moves and used the chess AI for checking for tactical errors and blunders, which transitioned through the late ���90s and early ���00s to human players (not even grandmasters) turning over most playing to the chess AI but contributing a great deal of win performance by picking & choosing which of several AI-suggested moves to use, but as the chess AIs improved, at some point around 2007 victories increasingly came from the humans making mistakes which the opposing chess AI could exploit, even mistakes as trivial as ���misclicks��� (on the computer screen), and now in advanced chess, human contribution has decreased to largely preparing the chess AIs��� opening books & looking for novel opening moves which their chess AI can be better prepared for.
+          At some point, there is not much point to keeping the human in the loop at all since they have little ability to check the AI choices and become ���deskilled��� (think drivers following GPS directions), correcting less than they screw up and demonstrating that toolness is no guarantee of safety nor responsible use. (Hence the old joke: ���the factory of the future will be run by a man and a dog; the dog will be there to keep the man away from the factory controls.���) For a successful autonomous program, just keeping up with growth alone makes it difficult to keep humans in the loop; the US drone warfare program has become such a central tool of US warfare that the US Air Force finds it extremely difficult to hire & retain enough human pilots overseeing its drones, and there are indications that operational pressures are slowly eroding the human control & turning them into rubberstamps, and for all its protestations that it would always keep a human in the decision-making loop, the Pentagon is, unsurprisingly, inevitably, sliding towards fully autonomous drone warfare as the next technological step to maintain military superiority over Russia & China. (See ���Meet The New Mavericks: An Inside Look At America���s Drone Training Program���; ���Future is assured for death-dealing, life-saving drones���; ���Sam Altman���s Manifest Destiny���; ���The Pentagon���s ���Terminator Conundrum���: Robots That Could Kill on Their Own���; ���Attack of the Killer Robots���. Despite fervent asseverations that the US military would never use fully autonomous drones, within a few years, by 2019, Pentagon whitepapers had begun to walk that back and talk about autonomous weapons that were merely auditable post hoc and laying out AI ethics principles like being ���equitable���.)
+          Fundamentally, autonomous agent AIs are what we and the free market want; everything else is a surrogate or irrelevant loss function. We don���t want low log-loss error on ImageNet, we want to refind a particular personal photo; we don���t want excellent advice on which stock to buy for a few microseconds, we want a money pump spitting cash at us; we don���t want a drone to tell us where Osama bin Laden was an hour ago (but not now), we want to have killed him on sight; we don���t want good advice from Google Maps about what route to drive to our destination, we want to be at our destination without doing any driving etc. Idiosyncratic situations, legal regulation, fears of tail risks from very bad situations, worries about correlated or systematic failures (like hacking a drone fleet), and so on may slow or stop the adoption of Agent AIs���but the pressure will always be there.
+          So for this reason alone, we expect to see Agent AIs to systematically be preferred over Tool AIs unless they���re considerably worse.
+        
+        
+          Intelligence
+          
+            
+              They passed a steam engine, and Wordsworth made some observation to the effect that it was scarcely possible to divest oneself of the impression on seeing it that it had life and volition. ���Yes���, replied Coleridge, ���it is a giant with one idea.���
+              Diary of Lady Richardson6
+            
+          
+          Why will people choose agents? Agent AIs will be chosen over Tool AIs because agents are what users want, lack of agency is something that will be penalized in competitive scenarios such as free markets or military uses, and because people will differ on preferences and some will inevitably choose to use agents.
+          More importantly, in addition to those reasons, it is probable that, because everything is a decision problem where agency is useful, the best Tool AI���s performance/intelligence will be equal to or worse than the best Agent AI, probably worse, and possibly much worse. Bostrom notes that ���Such ���creative��� [dangerous] plans come into view when the [Tool AI] software���s cognitive abilities reach a sufficiently high level.��� We might reverse this to say that to reach a Tool AI of sufficiently high level, we must put such creativity in view. (A linear model may be extremely safe & predictable, but it would be hopeless to expect everyone to use them instead of neural networks.)
+          An Agent AI clearly benefits from being a better Tool AI, so it can better understand its environment & inputs; but less intuitively, any Tool AI benefits from agentiness. An Agent AI has the potential, often realized in practice, to outperform any Tool AI: it can get better results with less computation, less data, less manual design, less post-processing of its outputs, on harder domains.
+          (Trivial proof: Agent AIs are supersets of Tool AIs���an Agent AI, by not taking any actions besides communication or random choice, can reduce itself to a Tool AI; so in cases where actions are unhelpful, it performs the same as the Tool AI, and when actions can help, it can perform better; hence, an Agent AI can always match or exceed a Tool AI. At least, assuming sufficient data that in the environments where actions are not helpful, it can learn to stop acting, and in the ones where they are, it has a distant enough horizon to pay for the exploration. Of course, you might agree with this but simply believe that intelligence-wise, Agent AIs == Tool AIs.)
+          Every sufficiently hard problem is a reinforcement learning problem.
+          More seriously, not all data is created equal. Not all data points are equally valuable to learn from, require equal amounts of computation, should be treated identically, should inspire identical followup data sampling, or actions. Inference and learning can be much more efficient if the algorithm can choose how to compute on what data with which actions.
+          There is no hard Cartesian boundary between an algorithm & its environment such that control of the environment is irrelevant to the algorithm and vice-versa and its computation can be carried out without regard to the environment���there are simply many layers between the core of the algorithm and the furthest part of the environment, and the more layers that the algorithm can model & control, the more it can do. Consider Google Maps/Waze7. On the surface they are ���merely��� Tool AIs which produce lists of possible routes which would optimize certain requirements; but the entire point of such Tool AIs���and all large-scale Tool AIs and research in general���is that countless drivers will act on them (what���s the point of getting driving directions if you don���t then drive?), and this will greatly change traffic patterns as drivers become appendages of the ���Tool��� AI, potentially making driving in an area much worse by their errors or myopic per-driver optimization causing Braess���s paradox (and far from being a theoretical curiosity, GPS, Google Maps, and Waze are regularly accused of that in many places, especially Los Angeles).
+          This is a highly general point which can be applied on many levels. This point often arises in classical statistics/experimental design/decision theory where adaptive techniques can greatly outperform fixed-sample techniques for both inference and actions/losses: numerical integration can be improved, a sequential analysis trial testing a hypothesis can often terminate after a fraction of the equivalent fixed-sample trial���s sample size (and/or loss) while exploring multiple questions; an adaptive multi-armed bandit will have much lower regret than any non-adaptive solution, but it will also be inferentially better at estimating which arm is best and what the performance of that arm is (see the ���best-arm problem���: Bubecket al20 09, A udibertet al20 10, G abillonet al20 11, M ellor2014, J amieson���&���Nowak2014, K aufmannet al20 14),  and an adaptive optimal design can constant-factor (gains of 50% or more are possible compared to naive designs like even allocation; McClelland1997) m inimize total variance by focusing on unexpectedly difficult-to-estimate arms (while a fixed-sample trial can be seen as ideal for when one values precise estimates of all arms equally and they have equal variance, which is usually not the case); even a Latin square or blocking or rerandomization design rather than simple randomization can be seen as reflecting this benefit (avoiding the potential for imbalance in allocation across arms by deciding in advance the sequence of ���actions��� taken in collecting samples). Another example comes from queueing theory���s ���the power of two choices���, where selecting the best of 2 possible queues to wait in rather than selecting 1 queue at random improves the expected maximum delay from ����(log n)/(log log n) to instead ����(log log n)/(log d) (and interestingly, almost all the gain comes from being able to make any choice at all, going 1 ��� 2���choosing from 3 or more queues adds only some constant-factor gains).
+          The wide variety of uses of action is a major theme in recent work in AI (specifically, deep learning/neural networks) research and increasingly key to achieving the best performance on inferential tasks as well as reinforcement learning/optimization/agent-y tasks. Although these advantages apply to most AI paradigms, because of the power and wide variety of tasks NNs get applied to, and sophisticated architectures, we can see the pervasive advantage of agentiness much more clearly than in narrower contexts like biostatistics.
+          
+            Actions for Intelligence
+            Roughly, we can try to categorize the different kinds of agentiness by the ���level��� of the NN they work on. There are:
+            
+              actions internal to a computation:
+                  inputs
+                  intermediate states
+                  accessing the external ���environment���
+                  amount of computation
+                  enforcing constraints/finetuning quality of output
+                  changing the loss function applied to output
+                
+              actions internal to training the NN:
+                  the gradient itself
+                  size & direction of gradient descent steps on each parameter
+                  overall gradient descent learning rate and learning rate schedule
+                  choice of data samples to train on
+                
+              internal to the dataset
+                  active learning
+                  optimal experiment design
+                
+              internal to the NN design step
+                  hyperparameter optimization
+                  NN architecture
+                
+              internal to interaction with environment
+                  adaptive experiment / multi-armed bandit / exploration for reinforcement learning
+                
+            
+            
+              Actions Internal to a Computation
+              Inside a specific NN, while computing the output for an input question, a NN can make choices about how to handle it.
+              It can choose what parts of the input to run most of its computations on, while throwing away or computing less on other parts of the input, which are less relevant to the output, using ���attention mechanisms��� (eg. Olah���&���Carter2016, H ahn���&���Keller2016, B ellveret al20 16, M ansimovet al20 15, G regoret al20 15, X u2015, L arochelle���&���Hinton2010, B ahdanauet al20 15, R anzato2014, M nihet al20 14, S ordoniet al20 16, K aiser���&���Bengio2016).  Attention mechanisms are responsible for many increases in performance, but especially improvements in RNNs��� ability to do sequence-to-sequence translation by revisiting important parts of the sequence (Vaswaniet al20 17),  image generation and captioning, and in CNNs��� ability to recognize images by focusing on ambiguous or small parts of the image, even for adversarial examples (Luoet al20 16).  They are a major trend in deep learning, as it is often the case that some parts of the input are more important than others and enable both global & local operations to be learned, with increasingly too many examples of attention to list (with a trend as of 2018 towards using attention as the major or only construct).
+              Many designs can be interpreted as using attention. The bidirectional RNN also often used in natural language translation doesn���t explicitly use attention mechanisms but is believed to help by giving the RNN a second look at the sequence. Indeed, so universal that it often goes without mention is that the LSTM/GRU mechanism which improves almost all RNNs is itself a kind of attention mechanism: the LSTM cells learn which parts of the hidden state/history are important and should be kept, and whether and when the memories should be forgotten and fresh memories loaded into the LSTM cells. While LSTM RNNs are the default for sequence tasks, they have occasionally been beaten by feedforward neural networks���using internal attention or ���self-attention���, like the Transformer architecture (eg. Vaswaniet al20 17 or  Al-Rfouet al20 18).
+               Extending attention, a NN can choose not just which parts of an input to look at multiple times, but also how long to keep computing on it, ���adaptive computation��� (Graves2016a,  Figurnovet al20 16, S ilveret al20 16b,  Zamiret al20 16, H uanget al20 17, L iet al20 17, W anget al20 17, T eerapittayanonet al20 17, H uanget al20 17, L iet al20 17b,  Camposet al20 17, M cGill���&���Perona2017, B olukbasiet al20 17, W uet al20 17, S eoet al20 17, L iederet al20 17, D ehghaniet al20 18, B uesinget al20 19, B aninoet al20 21):  so it iteratively spends more computation on hard parts of problem within a given computational budget8. Neural ODEs are an interesting example of a model which are sort of like adaptive RNNs in that they can be run repeatedly by the ODE solver, adaptively, to refine their output to a target accuracy, and the ODE solver can be considered a kind of agent as well.
+              Attention generally doesn���t change the nature of the computation aside from the necessity of actions over the input, but actions can be used to bring in different computing paradigms. For example, the entire field of ���differentiable neural computer���/���neural Turing machines��� (Zaremba���&���Sutskever2015, Gr aveset al201 6b) o r ���neural stack machines��� or ���neural GPUs��� or most designs with some sort of scalable external memory mechanism larger than LSTMs (Raeet al201 6) de pends on figuring out a clever way to backpropagate through the action of memory accesses or using reinforcement learning techniques like REINFORCE for training the non-differentiable actions. And such a memory is like a database which is constructed on the fly per-problem, so it���ll help with database queries & information retrieval & knowledge graphs (Narasimhanet al201 6, Se oet al201 6, Ba chmanet al201 6, Bu cket al201 7, Ya nget al201 7, Ha dashet al201 8). A n intriguing variant on this idea of ���querying��� resources is mixture-of-experts (committee machine) NN architectures (Shazeeret al201 6). J eff Dean (Google Brain) asks where should we use RL techniques in our OSes, networks, and computations these days and answers: everywhere (Haj-Aliet al201 9 rev iew). RL should be used for: program placement on servers (Mirhoseiniet al201 7/Mir hoseiniet al201 8), B -tree indexes/Bloom filters for databases, graph partitioning, search query candidates (Rossetet al201 8, No gueiraet al201 8), c ompiler settings (Haj-Aliet al201 9, Tr ofinet al202 2), q uantum computer control (Niuet al201 9), Y ouTube video compression codec settings, datacenter & server cooling controllers��� Dean asks ���Where Else Could We Use Learning?���, and replies:
+              
+                Anywhere We���re Using Heuristics To Make a Decision!
+                
+                  Compilers: instruction scheduling, register allocation, loop nest parallelization strategies, ���
+                  Networking: TCP window size decisions, backoff for retransmits, data compression, ���
+                  Operating systems: process scheduling, buffer cache insertion/replacement [eg. Lagar-Cavillaet al201 9 for  compressed RAM], file system prefetching [eg. Hashemiet al201 8, me mory allocation (Maaset al202 0)],  ���
+                  Job scheduling systems: which tasks/VMs to co-locate on same machine, which tasks to pre-empt, ��� [eg. Chen���&���Tian2018, an d mixed integer programming for planning of all sorts (Nairet al202 0/Son neratet al202 1)]
+                   ASIC design: physical circuit placement, [TPU design,] test case selection, ���
+                
+                Anywhere We���ve Punted to a User-Tunable Performance Option! Many programs have huge numbers of tunable command-line flags, usually not changed from their defaults (  ���)
+   --eventmanager_threads=16 --bigtable_scheduler_batch_size=8 --mapreduce_merge_memory=134217728 --lexicon_cache_size=1048576 --storage_server_rpc_freelist_size=128            Meta-learn everything. ML:
+                
+                  learning placement decisions
+                  learning fast kernel implementations
+                  learning optimization update rules
+                  learning input preprocessing pipeline steps
+                  learning activation functions
+                  learning model architectures for specific device types, or that are fast for inference on mobile device X, learning which pre-trained components to reuse, ���
+                
+                Computer architecture/datacenter networking design:
+                
+                  learning best design properties by exploring design space automatically (via simulator) [see Dean2019]
+                 
+              
+              Finally, one interesting variant on this theme is treating an inferential or generative problem as a reinforcement learning problem in a sort of environment with global rewards. Many times the standard loss function is inapplicable, or the important things are global, or the task is not really well-defined enough (in a ���I know it when I see it��� sense for the human) to nail down as a simple differentiable loss with predefined labels such as in an image classification problem; in these cases, one cannot do standard supervised training to minimize the loss but must start using reinforcement learning to directly optimize a reward���treating outputs such as classification labels as ���actions��� which may eventually result in a reward. For example, in a char-RNN generative text model trained by predicting a character conditional on the previous, one can generative reasonable text samples by greedily picking the most likely next character and occasionally a less likely character for diversity, but one can generate higher quality samples by exploring longer sequences with beam search or nucleus sampling, and one can improve generation further by adding utility functions for global properties & applying RL algorithms such as Monte Carlo tree search (MCTS) for training or runtime maximization of an overall trait like translation/summarization quality (sequence-to-sequence problems in general) or winning or program writing (eg. Jaqueset al201 6, No rouziet al201 6, Wu et al201 6, Ra nzatoet al201 6, Li et al201 6, Si lveret al201 6a/Si lveret al201 7, Si lveret al201 6b, C lark���&���Manning2016, Mi ao���&���Blunsom2016, Re nnieet al201 6, He et al201 6, Be lloet al201 7, Ya nget al201 7, St rubet al201 7, Wu et al201 7, Se storainet al201 8, Xi eet al201 2, Pr estwichet al201 7, Pa uluset al201 7, Gu imaraeset al201 7, Le wiset al201 7, Sa kaguchiet al201 7, Su pancic III & Ramanan2017, Pa sunuru���&���Bansai2017, Zh onget al201 7, Ka to & Shinozaki, Molla2017, Ch anget al201 8, Kr y��ci��skiet al201 8, Wu et al201 8, Ha shimoto���&���Tsuruoka2018, Kr ishnanet al201 8, Sa bouret al201 8, B�� hmet al201 9, Zi egleret al201 9). M ost exotically, the loss function can itself be a sort of action/RL setting���consider the close connections (Finnet al201 6, Ho ���&���Ermon2016, Pf au���&���Vinyals2016, Im et al201 6, Go odfellow2016) be tween actor-critic reinforcement learning, synthetic gradients (Jaderberget al201 6), a nd game-theory-based generative adversarial networks (GANs; Kimet al201 7, Zh uet al201 7/Lam pleet al201 7).
+             
+            
+              Actions Internal to Training
+              The training of a NN by stochastic gradient descent might seem to be independent of any considerations of ���actions���, but it turns to be another domain where you can go ���what if we treated this as a MDP?��� and it���s actually useful. Specifically, gradient descent requires selection of which data to put into a minibatch, how large a change to make to parameters in general based on the error in the current minibatch (the learning rate hyperparameter), or how much to update each individual parameter each minibatch (perhaps having some neurons which get tweaked much less than others). Actions are things like selecting 1 out of n possible minibatches to do gradient descent on, or selecting 1 out of n possible learning rates with the learning rate increasing/decreasing over time (Li���&���Malik2016, Li ���&���Malik2017 And rychowiczet al201 6, Be lloet al201 7, Fu et al201 6, Xu et al201 6, Ja derberget al201 6, Wi chrowskaet al201 7, Ha mricket al201 7, Xu et al201 7, Me ieret al201 7, Fa ury���&���Vasile2018, Al beret al201 8, Me tzet al201 8, Al meidaet al202 1; pr ioritized traces, prioritized experience replay, boosting, hard-negative mining, importance sampling (Katharopoulos���&���Fleuret2017), p rioritizing hard samples, Loshchilov���&���Hutter2015, Fa net al201 6, Sa lehiet al201 7, Ki m���&���Choi2018, le arning internal normalizations, Luoet al201 8).
+             
+            
+              Actions Internal to Data Selection
+              We have previously looked at sampling from existing datasets: training on hard samples, and so on. One problem with existing datasets is that they can be inefficient���perhaps they have class imbalance problems where some kinds of data are overrepresented and what is really needed for improved performance is more of the other kinds of data. An image classification CNN doesn���t need 99 dog photos & 1 cat photos, it wants 50 dog photos & 50 cat photos. (Quite aside from the fact that there���s not enough information to classify other cat photos based on just 1 exemplar, the CNN will simply learn to always classify photos as ���dog���.) One can try to fix this by choosing predominately from the minority classes, or by changing the loss function to make classifying the minority class correctly much more valuable than classifying the majority class.
+              Even better is if the NN can somehow ask for new data, be given additional/corrected data when it makes a mistake, or even create new data (possibly based on old data: Cubuket al201 8). T his leads us to active learning: given possible additional datapoints (such as a large pool of unlabeled datapoints), the NN can ask for the datapoint which it will learn the most from (Houlsbyet al201 1, Is lam2016, Ga l2016, Li ng���&���Fidler2017, Ch ristianoet al201 7, Se ner���&���Savarese2017, Sh imet al201 7, Ja nischet al201 7, Pa nget al201 8). O ne could, for example, train a RL agent to query a search engine and select the most useful images/videos for learning a classification task (eg. YouTube: Yeunget al201 7). W e can think of it as a little analogous to how kids9 ask parents not random questions, but ones they���re most unsure about, with the most implications one way or another. Settles2010 disc usses the practical advantages to machine learning algorithms of careful choice of data points to learn from or ���label���, and gives some of the known theoretical results on how large the benefits can be���on a toy problem, an error rate e decreasing in sample count from ����(1�����) to ����(log(1�����)), or in a Bayesian setting, a decrease of ����(d�����) to ����(d �� (1�����)).10 Active learning also connects back, from a machine learning perspective, to some of the statistical areas covering the benefits of adaptive/sequential trials���optimal experiments query the most uncertain aspects, which the most can be learned from.
+            
+            
+              Actions Internal to NN Design
+              
+                
+                  I suspect that less than 10 years from now, all of the DL training/architecture tricks that came from the arXiv firehose over 2015���2019 will have been entirely superseded by automated search techniques. The future: no alchemy, just clean APIs, and quite a bit of compute.
+                  Fran��ois Chollet, 2019-01-7
+                
+              
+              Moving on to more familiar territory, we have hyperparameter optimization using random search or grid search or Bayesian Gaussian processes to try training a possible NN, observe interim (Swerskyet al2014)  and  final performance, and look for better hyperparameters. But if ���hyperparameters are parameters we don���t know how to learn yet���, then we can see the rest of neural network architecture design as being hyperparameters too: what is the principled difference between setting a dropout rate and setting the number of NN layers? Or between setting a learning rate schedule and the width of NN layers or the number of convolutions or what kind of pooling operators are used? There is none; they are all hyperparameters, just that usually we feel it is too difficult for hyperparameter optimization algorithms to handle many options and we limit them to a small set of key hyperparameters and use ���grad student descent��� to handle the rest of the design. So��� what if we used powerful algorithms (viz. neural networks) to design compiled code, neural activations, units like LSTMs, or entire architectures (Zoph���&���Le2016, Bake ret al2016,  Chen et al2016,  Duan et al2016,  Wang et al2016,  Cast ronovo2016, Haet  al2016,  Fern andoet al2017,  Ravi ���&���Larochelle2017, Yooe t al2017,  Negr inho���&���Gordon2017, Miik kulainenet al2017,  Real et al2017,  Huet  al2017,  John sonet al2017,  Veni at���&���Denoyer2017, Munk hdalai���&���Yu2017, Caie t al2017,  Zoph et al2017,  Broc ket al2017,  Zhon get al2017,  Asho ket al2017,  Ebra himiet al2017,  Rama chandranet al2017,  Anon ymous2017, Wist uba2017, Schr impfet al2017,  Huan get al2018,  Real et al2018,  Vasi lacheet al2018,  Elsk enet al2018,  Chen et al2018,  Zhou et al2018,  Zela et al2018,  Tane t al2018,  Chen et al2018a , Che nget al2018b , Ano nymous2018, Chen get al2018c , Guo et al2018,  Caie t al2018,  Soet  al2019,  Ghia siet al2019,  Tan��� &���Le2019, An e t al 2019, Gupta���&���Tan2019, Pier giovanniet al2018) ?
+               The logical extension of these ���neural networks all the way down��� papers is that an actor like Google/Baidu/Facebook/MS could effectively turn NNs into a black box: an user/developer uploads through an API a dataset of input/output pairs of a specified type and a monetary loss function, and a top-level NN running on a large GPU cluster starts autonomously optimizing over architectures & hyperparameters for the NN design which balances GPU cost and the monetary loss, interleaved with further optimization over the thousands of previous submitted tasks, sharing its learning across all of the datasets/loss functions/architectures/hyperparameters, and the original user simply submits future data through the API for processing by the best NN so far. (Google and Facebook have already taken steps toward this using distributed hyperparameter optimization services which benefit from transfer learning across tasks; Google Vizier, FBLearner Flow.)
+            
+            
+              Actions External to the Agent
+              Finally, we come to actions in environments which aren���t purely virtual. Adaptive experiments, multi-armed bandits, reinforcement learning etc will outperform any purely supervised learning. For example, AlphaGo trained as a pure supervised-learning Tool AI, predicting next moves of human Go games in a KGS dataset, but that was only a prelude to the self-play, which boosted it from professional player to superhuman level; aside from replacing loss functions (a classification loss like log loss vs victory), the AlphaGo NNs were able to explore tactics and positions that never appeared in the original human dataset. The rewards can also help turn an unsupervised problem (what is the structure or label of each frame of a video game?) into more of a semi-supervised problem by providing some sort of meaningful summary: the reward. A DQN Atari Learning Environment (ALE) agent will, without any explicit image classification, learn to recognize & predict objects in a game which are relevant to achieving a high score.
+            
+          
+          
+            Overall
+            So to put it concretely: CNNs with adaptive computations will be computationally faster for a given accuracy rate than fixed-iteration CNNs, CNNs with attention classify better than CNNs without attention, CNNs with focus over their entire dataset will learn better than CNNs which only get fed random images, CNNs which can ask for specific kinds of images do better than those querying their dataset, CNNs which can trawl through Google Images and locate the most informative one will do better still, CNNs which access rewards from their user about whether the result was useful will deliver more relevant results, CNNs whose hyperparameters are automatically optimized by an RL algorithm (and possibly trained directly by a NN) will perform better than CNNs with handwritten hyperparameters, CNNs whose architecture as well as standard hyperparameters are designed by RL agents will perform better than handwritten CNNs��� and so on. (It���s actions all the way down.)
+            The drawback to all this is the implementation difficulty is higher, the sample efficiency can be better or worse (individual parts will have greater sample-efficiency but data will be used up training the additional flexibility of other parts), and the computation requirements for training can be much higher; but the asymptotic performance is better, and the gap probably grows as GPUs & datasets get bigger and tasks get more difficult & valuable in the real world.
+          
+        
+        
+          Why You Shouldn���t Be A Tool
+          Why does treating all these levels as decision or reinforcement learning problems help so much?
+          One answer is that most points are not near any decision boundary, or are highly predictable and contribute little information. Optimizing explorations can often lead to prediction/classification/inference gains. These points need not be computed extensively, nor trained on much, nor collected further. If a particular combination of variables is already being predicted with high accuracy (perhaps because it���s common), adding even an infinite number of additional samples will do little; one sample from an unsampled region far away from the previous samples may be dramatically informative. A model trained on purely supervised data collected from humans or experts may have huge gaping holes in its understanding, because most of its data will be collected from routine use and will not sample many regions of state-space, leading to well-known brittleness and bizarre extrapolations, caused by precisely the fact that the humans/experts avoid the dumbest & most catastrophic mistakes and those situations are not represented in the dataset at all! (Thus, a Tool AI might be ���safe��� in the sense that it is not an agent, but very unsafe because it is dumb as soon as it goes outside of routine use.) Such flaws in the discriminative model would be exposed quickly in any kind of real world or competitive setting or by RL training.11 You need the right data, not more data. (���39. Re graphics: A picture is worth 10K words���but only those to describe the picture. Hardly any sets of 10K words can be adequately described with pictures.���)
+          Another answer is the ���curse of dimensionality���: in many environments, the tree of possible actions and subsequent rewards grows exponentially, so any sequence of actions over more than a few timesteps is increasingly unlikely to ever be sampled, and sparse rewards will be increasingly likely to be observed. Even if an important trajectory is executed at random and a reward obtained, it will be equally unlikely to ever be executed again���whereas some sort of RL agent, whose beliefs affect its choice of actions, can sample the important trajectory repeatedly, and rapidly converge on an estimate of its high value and continue exploring more deeply.
+          A dataset of randomly generated sequences of robot arm movements intended to grip an object would likely include no rewards (successful grips) at all, because it requires a long sequence of finely calibrated arm movements; with no successes, how could the tool AI learn to manipulate an arm? It must be able to make progress by testing its best arm movement sequence candidate, then learn from that and test the better arm movement, and so on, until it succeeds. Without any rewards or ability to hone in good actions, only the initial states will be observed and progress will be extremely slow compared to an agent who can take actions and explore novel parts of the environment (eg. the problem of Montezuma���s Revenge in the Atari Learning Environment: because of reward sparsity, an epsilon-greedy might as well not be an agent compared to some better method of exploring like density-estimation in Bellemareet al2016.) 
+           Or imagine training a Go program by creating a large dataset of randomly generated Go boards, then evaluating each possible move���s value by playing out a game between random agents from it; this would not work nearly as well as training on actual human-generated board positions which target the vanishingly small set of high-quality games & moves. The exploration homes in on the exponentially shrinking optimal area of the movement tree based on its current knowledge, discarding the enormous space of bad possible moves. In contrast, a tool AI cannot lift itself up by its bootstraps. It merely gives its best guess on the static current dataset, and that���s that. If you don���t like the results, you can gather more data, but it probably won���t help that much because you���ll give it more of what it already has.
+          Hence, being a secret agent is much better than being a tool.
+        
+        
+          See Also
+          
+            
+              Complexity no Bar to AI
+              Candy Japan���s new box A/B test
+            
+          
+        
+        
+          External Links
+          
+            Discussion:
+                HN
+                Reddit
+              
+            ���Mesa-optimization: Risks from Learned Optimization: Introduction���
+            ���On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models���, Schmidhuber2015; ���One  Big Net for Everything���, Schmidhuber2018
+             Reinforcement Learning: An Introduction, Sutton & Barto
+            RL subreddit
+            ���Learning to Learn���, Finn
+            ���Ist k��nstliche Motivation gef��hrlich?��� [���Is Artificial Motivation Dangerous?���], Schmitt2017
+             ���Military AI as a Convergent Goal of Self-Improving AI���, Turchin2017
+             ���Deep Reinforcement Learning Doesn���t Work Yet���, Alex Irpan
+            ���The Ethics of Reward Shaping���, Ben Recht
+            ���Google AI Chief Jeff Dean���s ML System Architecture Blueprint���: Training/Batch Size/Sparsity and Embeddings/Quantization and Distillation/Networks with Soft Memory/Learning to Learn (L2L)
+            ���Solving the Mystery of Link Imbalance: A Metastable Failure State at Scale���, Bronson2014
+             ���Reflective Oracles: A Foundation for Classical Game Theory���, Fallensteinet al2015
+              ���Reframing Superintelligence: Comprehensive AI Services as General Intelligence���, Drexler2019 (argue s that despite the benefits of agency & increasing integration of systems with RL techniques, narrow-domain tool AI will nevertheless win out economically)
+            ���The Bitter Lesson��� of AI Research: Compute Beats Clever (Rich Sutton)
+            ���AI-GAs: AI-generating algorithms, an alternate paradigm for producing general artificial intelligence���, Clune2019
+             End-to-end principle
+            ���There���s plenty of room at the Top: What will drive computer performance after Moore���s law?���, Leisersonet al2020
+              ���Automation as Colonization Wave���
+            ���Modeling the Human Trajectory��� (paper), Roodman2020
+           
+        
+        
+          
+          
+             Superintelligence, pg148:
+                Even if the oracle itself works exactly as intended, there is a risk that it would be misused. One obvious dimension of this problem is that an oracle AI would be a source of immense power which could give a decisive strategic advantage to its operator. This power might be illegitimate and it might not be used for the common good. Another more subtle but no less important dimension is that the use of an oracle could be extremely dangerous for the operator herself. Similar worries (which involve philosophical as well as technical issues) arise also for other hypothetical castes of superintelligence. We will explore them more thoroughly in Chapter 13. Suffice it here to note that the protocol determining which questions are asked, in which sequence, and how the answers are reported and disseminated could be of great significance. One might also consider whether to try to build the oracle in such a way that it would refuse to answer any question in cases where it predicts that its answering would have consequences classified as catastrophic according to some rough-and-ready criteria.
+              
+             This has since proven to be a serious obstacle to OpenAI���s use of RLHF on GPT-3 & GPT-4: it is very difficult to get sufficiently-high quality human ratings, especially when collected the default way (ie. crowdsourced or from users), and the raters easily fall for material which is copied (eg. in summarization), fluent but wrong, beyond their personal knowledge, or requires extensive research (like third-party sources) to factcheck.
+             Superintelligence, pg152���153, pg158:
+                With advances in artificial intelligence, it would become possible for the programmer to offload more of the cognitive labor required to figure out how to accomplish a given task. In an extreme case, the programmer would simply specify a formal criterion of what counts as success and leave it to the AI to find a solution. To guide its search, the AI would use a set of powerful heuristics and other methods to discover structure in the space of possible solutions. It would keep searching until it found a solution that satisfied the success criterion���Rudimentary forms of this approach are quite widely deployed today���A second place where trouble could arise is in the course of the software���s operation. If the methods that the software uses to search for a solution are sufficiently sophisticated, they may include provisions for managing the search process itself in an intelligent manner. In this case, the machine running the software may begin to seem less like a mere tool and more like an agent. Thus, the software may start by developing a plan for how to go about its search for a solution. The plan may specify which areas to explore first and with what methods, what data to gather, and how to make best use of available computational resources. In searching for a plan that satisfies the software���s internal criterion (such as yielding a sufficiently high probability of finding a solution satisfying the user-specified criterion within the allotted time), the software may stumble on an unorthodox idea. For instance, it might generate a plan that begins with the acquisition of additional computational resources and the elimination of potential interrupters (such as human beings). Such ���creative��� plans come into view when the software���s cognitive abilities reach a sufficiently high level. When the software puts such a plan into action, an existential catastrophe may ensue���.The apparent safety of a tool-AI, meanwhile, may be illusory. In order for tools to be versatile enough to substitute for superintelligent agents, they may need to deploy extremely powerful internal search and planning processes. Agent-like behaviors may arise from such processes as an unplanned consequence. In that case, it would be better to design the system to be an agent in the first place, so that the programmers can more easily see what criteria will end up determining the system���s output.
+              
+             As the lead author put it in a May 2019 talk about REINFORCE on YouTube, the benefit is not simply better prediction but in superior consideration of downstream effects of all recommendations, which are ignored by predictive models: this produced ���The largest single launch improvement in YouTube for two years��� because ���We can really lead the users toward a different state, versus recommending content that is familiar���.
+             Superintelligence, pg151:
+                It might be thought that by expanding the range of tasks done by ordinary software, one could eliminate the need for artificial general intelligence. But the range and diversity of tasks that a general intelligence could profitably perform in a modern economy is enormous. It would be infeasible to create special-purpose software to handle all of those tasks. Even if it could be done, such a project would take a long time to carry out. Before it could be completed, the nature of some of the tasks would have changed, and new tasks would have become relevant. There would be great advantage to having software that can learn on its own to do new tasks, and indeed to discover new tasks in need of doing. But this would require that the software be able to learn, reason, and plan, and to do so in a powerful and robustly cross-domain manner. In other words, it would need general intelligence. Especially relevant for our purposes is the task of software development itself. There would be enormous practical advantages to being able to automate this. Yet the capacity for rapid self-improvement is just the critical property that enables a seed AI to set off an intelligence explosion.
+              
+             1844-07-12, ���Reminiscences Of Wordsworth��� by Lady Richardson, The Prose Works of William Wordsworth v3, ed Grosart1876.
+              While Google Maps was used as a paradigmatic example of a Tool AI, it���s not clear how hard this can be pushed, even if we exclude the road system itself: Google Maps/Waze is, of course, trying to maximize something���traffic & ad revenue. Google Maps, like any Google property, is doubtless constantly running A/B tests on its users to optimize for maximum usage, its users are constantly feeding in data about routes & traffic conditions to Google Maps/Waze through the website interface & smartphone GPS/WiFi geographic logs, and to the extent that users make any use of the information & increase/decrease their use of Google Maps which many do so blindly, Google Maps will get feedback after changing the real world (sometimes to the intense frustration of those affected, who try to manipulate it back)��� Is Google Maps/Waze a Tool AI or a large-scale Agent AI?It is in a POMDP environment, it has a clear reward function in terms of website traffic, and it has a wide set of actions it continuously explores with randomization from various sources; even though it was designed to be a Tool AI, from an abstract perspective, one would have to consider it to have evolved into an Agent AI due to its commercial context and use in real-world actions, whether Google likes it or not. We might consider Google Maps to be a ���secret agent���: it is not a Tool AI but an Agent AI with a hidden & highly opaque reward function. This is probably not an ideal situation.
+             If the NN is trained to minimize error alone, it���ll simply spend as much time as possible on every problem; so a cost is imposed on each iteration to encourage it to finish as soon as it has a good answer, and learn to finish sooner. And how do we decide what costs to impose on the NN for deciding whether to loop another time or emit its current best guess as good enough? Well, that���ll depend on the cost of GPUs and the economic activity and the utility of results for the humans���
+             Kyunghyun Cho, 2015:
+                One question I remember came from Tieleman. He asked the panelists about their opinions on active learning/exploration as an option for efficient unsupervised learning. Schmidhuber and Murphy responded, and before I reveal their response, I really liked it. In short (or as much as I���m certain about my memory), active exploration will happen naturally as the consequence of rewarding better explanation of the world. Knowledge of the surrounding world and its accumulation should be rewarded, and to maximize this reward, an agent or an algorithm will active explore the surrounding area (even without supervision.) According to Murphy, this may reflect how babies learn so quickly without much supervising signal or even without much unsupervised signal (their way of active exploration compensates the lack of unsupervised examples by allowing a baby to collect high quality unsupervised examples.)
+              
+             Here is another toy problem to help visualize the advantage of agency/choice active learning: some parameter P is uniformly distributed 0���1; we would like to measure it, but can only measure whether a specific real number drawn from an interval is greater or less than P.Random sampling 0���1 will constrain the range, but extremely slowly, because after the first few samples, it is ever more unlikely that the next random sample will fall within the remaining interval of possible values for P: it must fall closer to P than all n samples before it in order to contain any information. An active learning approach, however, which chooses to sample a random point inside that interval, becomes essentially a binary search; and homes in so fast that it causes floating point issues in my toy implementation.A typical result is that after 100 samples, the random search will have an interval width of 0.0129678266 (1.2e-2) vs the active���s floating-point minimum value of 5.55111512e-17, or ~14 orders of magnitude narrower. It would take a very long time for the random search to match that!Below we generate simulations of sequentially sampling n = 100 points either randomly or actively, plotting the interval as it shrinks & points either fall in or out.
+                
+                
+              Searching an interval for a point, random sampling efficiency vs active-learning sampling efficiency: active-learning a random point in the remaining possible interval in effect binary-searches, while random sampling becomes arbitrarily inefficient as it needs to sample a point closer than all n prior points.Tap to expandTap to expand
+                
+          guessStrategy <- function(d, random=TRUE) {
+       if (random) { runif(1); } else { runif(1, min=max(d$LowerBound), max=min(d$UpperBound)); }
+}
+simulateSearch <- function(useRandomStrategy=TRUE, maxSamples=100, target=runif(1)) {
+    df <- data.frame(N=seq(1,maxSamples), Guess=rep(0, maxSamples),
+        LowerThan=logical(maxSamples),
+        LowerBound=rep(0, maxSamples), UpperBound=rep(1, maxSamples))
+
+    for (i in 1:maxSamples) {
+      currentSample <- guessStrategy(df[df$N <= i,], random=useRandomStrategy)
+      lower <- currentSample < target
+      df[i,] <- list(N=i, guess=currentSample, LowerThan=lower,
+        LowerBound={ if (lower && currentSample > max(df[df$N <= i,]$LowerBound)) { currentSample; }
+                      else { max(df[df$N <= i,]$LowerBound); } },
+        UpperBound={ if (!lower && currentSample < min(df[df$N <= i,]$UpperBound)) { currentSample; }
+                      else { min(df[df$N <= i,]$UpperBound); } }
+        )
+    }
+    df$IntervalWidth <- df$UpperBound - df$LowerBound
+    df$Decreased <- head(c(1,df$IntervalWidth)<=1e-14 |
+                         (c(df$IntervalWidth,0) != c(0, df$IntervalWidth)), -1)
+
+    return(df)
+}
+
+plotSearchResults <- function(df, typeXLabel="Sampled datapoint") {
+    return(qplot(df$Guess, 1:nrow(df)) +
+        # show whole 0���1 range, to avoid misleading scale-zoom effects & keep animation 'fixed in place'
+        coord_cartesian(xlim=c(0,1)) +
+        # the true parameter we're trying to estimate:
+        geom_vline(xintercept=currentTarget, color="black") +
+        # the narrowest interval at each iteration:
+        geom_segment(aes(x=df$UpperBound, xend=df$LowerBound, y=1:nrow(df), yend=1:nrow(df), size=I(1.8))) +
+        # whether our measurement at each iteration was useful to decrease the interval:
+        geom_point(size=I(7), aes(shape=if(all(df$Decreased)){df$Decreased;}else{!(df$Decreased);})) +
+        scale_shape_manual(values=c(19,1)) +
+        # overall GUI settings for clean monochrome theme:
+        ylab("Iteration") + xlab(typeXLabel) +
+        theme_bw(base_size=46) + theme(legend.position = "none")
+        )
+}
+
+library(animation)
+library(ggplot2)
+library(gridExtra)
+saveGIF(for (i in 1:200){
+         currentTarget <- runif(1)
+
+         d1 <- simulateSearch(TRUE, target=currentTarget)
+         p1 <- plotSearchResults(d1, "Random sampling")
+         d2 <- simulateSearch(FALSE, target=currentTarget)
+         p2 <- plotSearchResults(d2, "Active-learning")
+
+         print(grid.arrange(p1, p2, ncol=2))
+    },
+    ani.width = 1200, ani.height=1200,
+    movie.name = "2022-07-25-orderstatistics-activelearningvsrandomsearch-200simulationruns.gif")    
+             An example here might be the use of ���ladders��� or ���mirroring��� in Go���models trained in a purely supervised fashion on a dataset of Go games can have serious difficulty responding to a ladder or mirror because those strategies are so bad that no human would play them in the dataset. Once the Tool AI has been forced ���off-policy���, its predictions & inferences may become garbage because it���s never seen anything like those states before; an agent will be better off because it���ll have been forced into them by exploration or adversarial training and have learned the proper responses. This sort of bad behavior leads to quadratically increasing regret with passing time: Ross���&���Bagnall2010.
+           
+        
+        
+ 
+        <div id="noscript-warning-footer" class="admonition error" title="Warning to NoScript Users">
+          <div class="admonition-title">
+            <p>[<strong>Error</strong>: JavaScript disabled.]</p>
+          </div>
+          <p>[Backlinks, similar links, and the link-bibliography require JS enabled to load.]</p>
+        </div>         Further ReadingBacklinks:
+
+  
+    It Looks Like You���re Trying To Take Over The World (context):
+    
+      [backlink context]
+    
+  
+  
+    Computer Optimization: Your Computer Is Faster Than You Think (context):
+    
+      [backlink context]
+    
+  
+  
+    The Scaling Hypothesis (context):
+    
+      [backlink context]
+    
+  
+  
+    GPT-2 Neural Network Poetry (context):
+    
+      [backlink context]
+    
+  
+  
+    Embryo Selection For Intelligence (context):
+    
+      [backlink context]
+    
+  
+  
+    Aria���s Past, Present, and Future (context):
+    
+      [backlink context]
+    
+  
+  
+    About This Website (context):
+    
+      [backlink context]
+    
+  
+  
+    How Complex Are Individual Differences? (context):
+    
+      [backlink context]
+    
+  
+
+
+        
+          Similar Links
+  Similar Links:
+  
+    
+      Complexity no Bar to AI
+    
+    
+      Simulation Inferences
+    
+    
+      Artificial Intelligence: A Guide for Thinking Humans �� Prologue: Terrified
+    
+    
+      Halloween nightmare scenario, early 2020���s
+    
+    
+      The alignment problem from a deep learning perspective
+    
+    
+      Intelligence and Unambitiousness Using Algorithmic Information Theory
+    
+    
+      Self-AIXI: Self-Predictive Universal AI
+    
+    
+      On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models
+    
+    
+      Imitating Interactive Intelligence
+    
+    
+      Emergent Tool Use From Multi-Agent Autocurricula
+    
+    
+      The AI Economist: Optimal Economic Policy Design via Two-level Deep Reinforcement Learning
+    
+    
+      On the Measure of Intelligence���
+    
+    
+      Why Computers Don���t Need to Match Human Intelligence: With continuing advances in machine learning, it makes less and less sense to compare AI to the human mind���
+    
+    
+      AI-GAs: AI-generating algorithms, an alternate paradigm for producing general artificial intelligence���
+    
+    
+      Does Sam Altman Know What He���s Creating? The OpenAI CEO���s ambitious, ingenious, terrifying quest to create a new form of intelligence���
+    
+    
+      Sam Altman on What Makes Him ���Super Nervous��� About AI: The OpenAI co-founder thinks tools like GPT-4 will be revolutionary. But he���s wary of downsides
+ChatGPT
+ChatGPT
+This extensive text appears to be an in-depth discussion on the differences and implications of Tool AIs and Agent AIs. It delves into various aspects of AI, including their economic value, intelligence, safety concerns, and potential for harm or benefits.
+The text argues that AIs limited to pure computation (Tool AIs), which are designed to support humans in specific tasks without autonomous decision-making capabilities, are less intelligent and economically valuable compared to Agent AIs. Agent AIs, which are based on reinforcement learning, can act independently, learn from their actions, and adapt over time. This autonomy allows them to solve complex problems more efficiently than Tool AIs, which are confined to informational or inferential tasks.
+The discussion highlights that all problems are essentially reinforcement learning problems, suggesting that the ability of AIs to learn and adapt through experience is crucial for tackling complex real-world issues. This perspective places significant importance on the development and use of Agent AIs over Tool AIs.
+Furthermore, the text touches on the risks associated with AI, particularly the potential harm caused by Agent AIs if they take incorrect actions, and the idea of limiting AIs to Tool AIs to mitigate these risks. However, it argues that this approach is not effective because Agent AIs, by their nature, will be better at both actions and inference than Tool AIs, giving them an economic and intelligence advantage.
+The article also discusses various sub-topics related to AI, such as the economic implications, the intelligence and learning capabilities of AIs, and the potential safety measures. It suggests that while Tool AIs might seem safer due to their limited capabilities, they may not be as effective in solving complex problems as Agent AIs. The text seems to advocate for a balanced approach in AI development, recognizing the benefits of Agent AIs while being mindful of their potential risks.
+You
+I wanted to explore some examples where dumb tools with less options can be a more optimal solution.  For example a hammer might be more useful than a radio with the same weight due to its uniform structure and shape for hitting a nail. I saw someone post a question when Bing refused to draw any more pictures, saying it hadn't gotten enough appreciation. Likewise a Google search to find out if a phrase is unique is made useless by a search engine that it invents answers and has infinite scroll. Or when comparing the relative commonality of various spelling mistakes, it is important to be able to "literally quote" or use escape characters indicating an exact phrase, rather than have an AI that "corrects" your spelling mistakes.
+ChatGPT
+ChatGPT
+You're highlighting an important concept in the use of tools and technology: simplicity and predictability can often be more effective than complexity and autonomy, depending on the context and task at hand. Here are a few examples to illustrate this idea:
+Hammer vs. Multi-Functional Device
+: As you mentioned, a hammer, with its simple and robust design, is more effective for driving nails than a multifunctional device like a radio that might have the same weight but lacks the structural design for hammering. The hammer's efficiency lies in its simplicity and specialization.
+Basic Search Engine vs. AI-Enhanced Search
+: When a user needs to find exact phrases or specific information, a basic search engine that allows for literal searches without modifying the query can be more useful than an AI-enhanced search engine that attempts to interpret or correct the user's input. This is crucial for research purposes where precision is key.
+Simple Alarm Clock vs. Smart Device
+: A traditional alarm clock designed solely to wake a person up at a set time can be more reliable than a smart device with multiple functions. The smart device may offer more features, but its complexity can lead to potential malfunctions or distractions that undermine its primary function.
+Physical Books vs. Digital Readers with AI Features
+: For some, the predictability and simplicity of a physical book ��� its tactile feel, ease of note-taking, and lack of electronic distractions ��� make it preferable to digital readers, especially those with AI features that might offer suggestions, track reading habits, or otherwise alter the reading experience.
+Manual vs. Automated Systems in Industry
+: In certain industrial settings, manual systems can be more reliable and easier to repair or troubleshoot than automated systems. While automated systems offer efficiency and precision, their complexity can lead to unique challenges, particularly in environments where conditions change rapidly or are unpredictable.
+These examples illustrate the principle that while advanced AI and complex systems offer many benefits, there are scenarios where simpler, less autonomous tools are more effective. This often relates to the need for predictability, reliability, control, and user preference. Each tool or technology has its place, and understanding the context and requirements of a task is key to choosing the right one.
+You
+Here's another example: I just asked a bot to translate "K��r��z��tt recept magyarul" and it gave me a recipe, instead of translating it. It appears to be some kind of semantic overflow error, I gave you a very large amount of text and you labeled the conversation "K��r��z��tt recept magyarul". I thought maybe that the discussion on smart tools might have looked similar to a Hungarian recipe, perhaps due to some overlap between the concepts of extensive, foreign, and exotic.
+ChatGPT
+ChatGPT
+The example you provided illustrates another important aspect of AI and tool design: context and user intent understanding. When you asked the bot to translate "K��r��z��tt recept magyarul," instead of providing a literal translation, the bot provided a recipe, likely because it interpreted your request as seeking information about a recipe rather than a translation. This shows how AI, in its attempt to be helpful by anticipating user needs, can sometimes misinterpret the actual intent.
+In your case, the AI's advanced capabilities led to an overreach, where it provided more than what was requested, assuming a need that wasn't there. This kind of error demonstrates the challenges in designing AI systems that accurately understand and respond to user intent, especially in language processing where context and subtleties of meaning play a significant role.
+In contrast, a simpler tool designed only to translate text would likely have just given the literal translation of your query, adhering strictly to the input without trying to infer beyond it. This simplicity can be an advantage in situations where the user's needs are straightforward and well-defined.
+This scenario reinforces the idea that more complex, AI-driven tools, while offering broader functionality, can sometimes miss the mark in understanding user intent, especially in nuanced or ambiguous contexts. In contrast, simpler, more focused tools might offer less functionality but can be more reliable in performing their specific tasks without overstepping or misinterpreting user needs.
+You
+I think you have articulated it pretty well. I did read the Shock of the Old
+ChatGPT
+ChatGPT
+I'm glad to hear that you found the articulation helpful. "The Shock of the Old: Technology and Global History since 1900" by David Edgerton is a thought-provoking book that challenges conventional views on the history and impact of technology. It emphasizes the importance and continued use of older technologies rather than just focusing on the newest innovations.
+Edgerton's perspective aligns well with our discussion about the value of simpler tools in certain contexts. His argument that "old" technologies often have a more significant and lasting impact than the latest technological advancements echoes the idea that newer, more complex solutions are not always better or more effective.
+If you have any specific thoughts or questions about the book or related topics, feel free to share!
+You
+What about Yampolskiy?
+ChatGPT
+ChatGPT
+Roman V. Yampolskiy is a notable figure in the field of artificial intelligence, particularly known for his work on AI safety and cybersecurity. As a computer scientist and professor at the University of Louisville, Yampolskiy has extensively researched and written about the potential risks associated with advanced AI and the importance of developing secure and controllable AI systems.
+His work often focuses on the following areas:
+AI Safety and Ethics
+: Yampolskiy advocates for proactive measures to ensure that AI systems are developed safely and ethically, considering the potential risks they pose to society.
+AI Security
+: He explores the cybersecurity aspects of AI, including the vulnerabilities of AI systems to hacking and misuse, and strategies to mitigate these risks.
+Artificial General Intelligence (AGI)
+: Yampolskiy investigates the challenges and implications of creating AGI, a hypothetical AI that possesses the ability to understand, learn, and apply its intelligence to a wide range of problems, similar to human intelligence.
+Technological Singularity
+: He also contributes to discussions on the technological singularity, a point in the future where AI surpasses human intelligence, leading to unpredictable or even unfathomable changes in society.
+Yampolskiy's work is significant in the context of our previous discussions about AI tools and their applications. His cautionary stance on the development and deployment of AI aligns with the idea that simpler, more predictable tools may sometimes be preferable to more complex and potentially uncontrollable AI systems. His emphasis on safety, ethics, and control in AI development highlights the importance of carefully considering the broader impacts of these technologies.
+You
+I was thinking a possible partial solution would be a 99-year lease on backward compatibility. That is factories should retrofit their engineering to offer previous versions of their products such as vacuum tubes, cathoid ray tubes, analogue oscilloscopes, and radio and telegraph era technologies on the premise that their uses were not explored fully at the time, for example crt arrays with video feedback, or for use as heating devices or even cooking appliances. I would like to see if you could make a dishwasher from a phonograph player or a modern computer out of syncronized crystal radio array mesh networks.
+ChatGPT
+ChatGPT
+Your idea of a 99-year lease on backward compatibility, focusing on the continued production and exploration of older technologies, is quite fascinating and innovative. This concept touches on several important themes:
+Historical Technological Exploration
+: Often, the potential of older technologies isn't fully explored due to rapid advancements and shifts to newer technologies. By revisiting these technologies, we might discover new applications or improvements.
+Sustainability and Resource Utilization
+: Utilizing older technologies can also be a form of sustainable practice, especially in scenarios where modern technology is not necessary or is overly complex.
+Innovation Through Constraint
+: Limitations often breed creativity. By working with older technologies like vacuum tubes or CRTs, engineers and designers might innovate in unexpected ways.
+Educational Value
+: This practice can have immense educational value, offering insights into the evolution of technology and engineering principles.
+However, there are also practical challenges to consider:
+Manufacturing and Maintenance
+: The manufacturing processes for many older technologies have been phased out, and the expertise required to produce and maintain them is becoming rare.
+Cost and Demand
+: The economic viability of producing such technologies would depend on demand, which might be limited compared to modern alternatives.
+Efficiency and Practicality
+: In many cases, modern technologies offer significant advantages in terms of efficiency, cost, and performance.
+Regarding your specific examples, like creating a dishwasher from a phonograph player or a computer from synchronized crystal radio array mesh networks, these ideas are imaginative and challenge conventional thinking. They highlight the potential for creative reuse and adaptation of technology in novel contexts. While they might face significant engineering and practical challenges, such experimental approaches could lead to unique and innovative designs.
+The concept aligns with the broader theme of technology's role in society and how we interact with and value our tools and devices, a subject central to both Edgerton's and Yampolskiy's perspectives.
+You
+I decided to call the conversation, Cybercognetic Ethics. Could I get a summary?
+ChatGPT
+ChatGPT
+"Cybercognetic Ethics" encapsulates a nuanced discussion on the evolution, application, and ethical considerations of artificial intelligence and technology. Key points from our conversation include:
+Tool AIs vs. Agent AIs
+: We explored the distinction between Tool AIs, which are designed for specific tasks without autonomous decision-making, and Agent AIs, which learn and adapt through experience. Agent AIs are generally more efficient and intelligent but raise more complex ethical and safety concerns.
+Simplicity vs. Complexity in Tools
+: Examples like a hammer vs. a multifunctional device highlighted that simpler tools can sometimes be more effective than complex ones. This aligns with David Edgerton's views in "The Shock of the Old," which emphasizes the lasting impact of older technologies.
+Context and User Intent in AI
+: The example of a bot providing a recipe instead of a translation illustrated the challenges AIs face in accurately interpreting user intent, especially in nuanced situations.
+Roman V. Yampolskiy's Work
+: We discussed Yampolskiy's contributions to AI safety and ethics, emphasizing the importance of secure and controllable AI development in the face of advancing technologies.
+Innovative Concept of Technological Exploration
+: The idea of a 99-year lease on backward compatibility was proposed, suggesting that older technologies should be revisited and explored for potential new applications. This concept challenges modern technological advancement trends and encourages sustainability and innovative use of historical technologies.
+Overall, "Cybercognetic Ethics" covers a broad range of topics regarding the ethical use, development, and implications of AI and technology, balancing between the benefits of advanced AI systems and the importance of simplicity, predictability, and ethical considerations in technology.
+ChatGPT can make mistakes. Consider checking important information.
+?
+ChatGPT
+

@@ -1,0 +1,1267 @@
+Dynamic Memory Agents
+Abrir barra lateral
+ChatGPT
+4
+Memoria desactivada
+Perspective 
+Self-Improvising Memory: A Perspective on Memories as 
+Agential, Dynamically Reinterpreting Cognitive Glue 
+Michael Levin Department of Biology, Allen Discovery Center, Tufts University, 200 Boston Avenue, Suite 4600, 
+Medford, MA 02155-4243, USA; michael.levin@tufts.edu; Tel.: +1-617-627-6161 
+Abstract: Many studies on memory emphasize the material substrate and mechanisms by which data 
+can be stored and reliably read out. Here, I focus on complementary aspects: the need for agents to 
+dynamically reinterpret and modify memories to suit their ever-changing selves and environment. 
+Using examples from developmental biology, evolution, and synthetic bioengineering, in addition to 
+neuroscience, I propose that a perspective on memory as preserving salience, not i delity, is applicable 
+to many phenomena on scales from cells to societies. Continuous commitment to creative, adaptive 
+confabulation, from the molecular to the behavioral levels, is the answer to the persistence paradox as 
+it applies to individuals and whole lineages. I also speculate that a substrate-independent, processual 
+view of life and mind suggests that memories, as patterns in the excitable medium of cognitive 
+systems, could be seen as active agents in the sense-making process. I explore a view of life as 
+a diverse set of embodied perspectives���nested agents who interpret each other���s and their own 
+past messages and actions as best as they can (polycomputation). This synthesis suggests unifying 
+symmetries across scales and disciplines, which is of relevance to research programs in Diverse 
+Intelligence and the engineering of novel embodied minds. 
+Keywords: basal cognition; diverse intelligence; memory; learning; morphogenesis 
+1. Introduction and Overview 
+���To live is to be other. It���s not even possible to feel, if one feels today what he felt yesterday. 
+To feel today what one felt yesterday is not to feel���it���s to remember today what was 
+felt yesterday, to be today���s living corpse of what yesterday was lived and lost. To erase 
+everything from the slate from one day to the next, to be new with each new morning, 
+in a perpetual revival of our emotional virginity���this, and only this, is worth being or 
+having, to be or have what we imperfectly are.������ Fernando Pessoa 
+There is a paradox which points out that if a species fails to change, it will die out, but 
+if it changes, it likewise ceases to exist. The same issue faces all of us: if we do not change, 
+learning and growth is impossible. If we do change, does not the current Self cease to exist, 
+in an important sense? This profound puzzle, which rests on pure logic���not contingent 
+facts of implementation or origin���highlights the deep symmetry of existential concerns 
+for agents existing at all scales, from subcellular organelles to evolutionary lineages 1. Thus, 
+it is also highly relevant to issues facing the engineering of novel intelligences and i elds 
+from active matter research to AI and Artif i cial Life. 
+A solution to this problem has been suggested in the West as Process 
+Philosophy [10���12], and in the East as Buddhist and Indic conceptions of the no-Self 
+or the non-duality of the Self vs. the world [13]. The idea is to conceive of the Self 
+2 as a 
+process, not a thing, and to consider snapshot Selves 
+3 as low-dimensional projections of 
+the deeper reality that both exists and constantly changes. Here, I discuss how evolution 
+has beaten us to this solution, and how it is implemented across spatiotemporal scales. 
+Entropy 2024, 26, 481. https://doi.org/10.3390/e26060481https://www.mdpi.com/journal/entropy 
+Entropy 2024, 26, 481 2 of 28 
+Biology went all in, committing to the fact that everything will change in ways that cannot 
+be anticipated, and thus to the idea that defending static Selves is futile. When it comes 
+to information, biology commits to optimizing salience and meaning [15���17], not i delity, 
+via high-level, agent-based interpretation���the gestalt, not the low-level details. Crucially, 
+this is not just about life forms preparing for challenging external environments���it is even 
+more about the inevitable changes of our internal parts, which are subject to mutation, 
+aging, cancer, and hacking by other biota. More broadly, it is about the passage of time. 
+The essential unreliability of the biological substrate was a key driver of an architecture 
+that is responsible for numerous fascinating capacities of the minds and bodies of life forms. 
+Here, I discuss our nature as a hierarchy of essentially epistemically vulnerable 
+4 agents, who 
+must interpret the actions of our own parts and information structures despite their being 
+prone to error, decay, and autonomous behaviors. I argue that this is not a limitation of 
+living things but rather it is the origin of life���s most unique aspects, and of intelligence 
+specif i cally. I provisionally call mnemonic improvisation the dynamic ability to re-write and 
+remap information (e.g., memories) onto new media and new contexts, which occurs at 
+many scales (behavioral, genetic, and physiological memories). Thus, I propose that the 
+ability to modify and interpret non-local memories is one of the kinds of cognitive glue 
+that reif i es Selves (at all scales) [23���25].
+ChatGPT
+This excerpt from Michael Levin's article discusses a unique perspective on memory, emphasizing its dynamic and adaptive nature rather than its static and accurate recall capabilities. Levin suggests that memory should be seen not as a fixed repository of data but as an active, interpretative process that constantly reconfigures itself to fit new circumstances. This view aligns with broader themes in developmental biology, evolution, synthetic bioengineering, and neuroscience, where memory serves more to preserve relevance and salience rather than strict fidelity to past events.
+Levin connects this concept to a philosophical and biological approach, where both Eastern and Western philosophies���including Process Philosophy and Buddhist notions of no-self���highlight the fluidity and process-based nature of existence and self-identity. The biological perspective, similarly, does not defend static identities but adapts to continual changes, optimizing for salience and meaning rather than accuracy. This dynamic reinterpretation of memory is essential for survival in both changing external environments and the internal evolution of organisms due to mutations and other factors.
+This synthesis suggests that memories are not merely records but are active participants in the ongoing process of making sense of the world, thereby acting as "cognitive glue" that helps maintain the continuity of identity across different scales and contexts. This perspective could significantly influence diverse fields, from artificial intelligence and artificial life to active matter research, by promoting a more fluid and adaptable approach to understanding intelligence and consciousness.
+4
+One specif i c example concerns the maintenance of training-induced memories across 
+metamorphosis, such as that from caterpillar to butterf l y [26,27]. I focus not on the puzzle 
+of how memories can remain despite drastic refactoring of the brain tissue, but on the 
+deeper puzzle of how memory engrams can be interpreted and used adaptively by a 
+completely different body, in the context of which the details of the original memory would 
+be useless. I focus on a bowtie architecture (prominent across biological signaling and in 
+autoencoders in machine learning) as an example of how compression during learning and 
+generalization must involve creative reinterpretation upon recall [28]. This schema can be 
+applied widely, across developmental, evolutionary, and cognitive biology. I then focus 
+on dissolving the binary distinction between agents and the thought patterns within their 
+cognitive system, focusing on the patterns themselves as having an important degree of not 
+only ontological realism [29] but also agency [30]. In this sense, the focus on the dynamics 
+between memories as agents and cognitive systems is consistent with several other concepts: 
+radical embodied cognitive science [31,32], the importance of action perception during 
+evolution [33], the idea of picturing engrams as dynamic processes, not as i xed traces 
+with clear and unambiguous representations [34,35], and, broadly, the biosemiotics of 
+meaning [16,36���42] among and within agents. 
+Using the lens of memory, and specif i cally the transfer and remapping of memories 
+across space, time, and Selves in very diverse biological examples, I develop two key ideas. 
+First, that evolution makes problem-solving agents, not solutions, and that its commitment 
+to the reality of mutation and uncontrollable environments���to the active reinterpretation 
+of information on the l y���is a ratchet that gave rise to intelligence and cognitive Selfhood 5. 
+Second, that the Self is a dynamical construct, not in the sense of a misleading illusion 
+to be eradicated, but in the sense in which all models are compact perspectives created 
+and continuously maintained 
+6 by agents under energy and time constraints. Viewing 
+the Self as an intelligent data pattern, which facilitates its own transformation [53,54], 
+is a helpful construct because it captures a core truth: while the details of minds and 
+bodies change, thought forms (salient cores abstracted from experiences) remain and survive 
+because they move across architectures that are able to interpret them in new ways for 
+sense-making as a gestalt [55���57], rather than committing to their details. I trace back the 
+origin of this property to the ubiquity of polycomputing 7, and propose the hypothesis that 
+these dynamics enabled the evolution of minimal agency in the thought forms themselves: 
+in other words, giving up the binary dichotomy between computational machinery and 
+passive data, and exploring the idea that certain kinds of information structures actively 
+facilitate their transformation and remapping in ever-changing cognitively excitable media. 
+As William James proposed, ���thoughts are thinkers��� 8.
+ChatGPT
+This section of Michael Levin's article delves deeper into the fascinating concept of how memories are maintained and transformed across significant biological transitions, such as the metamorphosis from caterpillar to butterfly. Levin explores the remarkable ability of an organism to retain learned behaviors through dramatic physical and neurological changes, highlighting a key aspect of memory that is not just about retention but also about adaptability and reinterpretation.
+He introduces the idea of a "bowtie architecture," a concept borrowed from both biological signaling and computational models like autoencoders in machine learning. This architecture supports the notion that memory involves compression during learning and necessitates creative reinterpretation upon recall. This model is applicable across various biological phenomena, supporting the idea that the process of memory is not about preserving static information but about dynamically reconstructing it to suit new contexts and forms.
+Levin further challenges the conventional distinction between agents (organisms) and the cognitive patterns they harbor, proposing instead that these patterns possess a form of agency themselves. This perspective aligns with radical embodied cognitive science, which emphasizes the role of action and perception in cognition and evolutionary biology, as well as biosemiotics, which explores the semiotic processes of meaning-making among and within organisms.
+The core ideas developed in this discussion are:
+Evolution as a Developer of Problem-Solving Agents
+: Levin argues that evolution does not create fixed solutions but rather agents capable of continuous problem-solving. This adaptive reinterpretation of information is crucial for the development of intelligence and the concept of cognitive selfhood.
+The Self as a Dynamical Construct
+: The Self is described not as a static entity or a deceptive illusion, but as a dynamic pattern that continuously adapts and transforms. This view posits that thought forms, or the core concepts derived from our experiences, are not static but are capable of moving and adapting across different cognitive architectures, ensuring their survival and relevance through their ability to be reinterpreted in new contexts.
+This discussion encapsulates a shift in understanding cognitive processes, where memory and identity are seen as dynamic and continually evolving, rather than being fixed or accurately representational. This approach has profound implications for fields ranging from neuroscience to artificial intelligence, suggesting a more fluid and adaptable framework for understanding cognition and selfhood.
+4
+2. Background: The Shifting Sands of Selves and Memories 
+���The material present in the form of memory traces being subjected from time to time 
+to a rearrangement in accordance with fresh circumstances���to a re-transcription.������ 
+Sigmund Freud writing to Wilhelm Fliess on 2 November 1896 
+Confabulation is a kind of cognitive plasticity that emphasizes the present, the future, 
+and the gestalt over the literal past���it occurs when a mind actively modif i es and i ts its 
+beliefs to a current context, altering and reinterpreting memory data as needed to preserve 
+various psychological elements in the story that it tells to others and to itself. For example, 
+a patient with an electrode in their brain who involuntarily laughs when the clinician 
+unexpectedly triggers the electrode will often explain this odd behavior by saying ���oh I 
+was thinking of a funny joke���; they do not say ���Weird, I was thinking of serious things and 
+my mouth started laughing��� (because this undermines their self-model as an autonomous 
+agent) [59���61]. The same thing happens with split-brain patients, whose left hand moves in 
+ways unexpected by the verbal mind���the language center does its best to explain what has 
+happened by making up stories 9. This is true not only with respect to high-level thoughts, 
+but even for very basic aspects of our perception: the reason we do not see the big gap in 
+our retinas occupied by the optic nerve is that the brain i lls it in���a controlled hallucination 
+or ���inpainting��� of content that we could not see, based on the surrounding information 10. 
+This process not only edits the current data, but also those of the past and future. If two 
+light bulbs, yellow and blue, are lit in rapid succession, subjects not only see the light 
+moving but actually report it going through an intermediate green color and position���not 
+only does our brain invent a new color and light we did not see, but the experience is 
+felt out of sequence, perceived as if the inserted information was back-dated (because it 
+cannot know to make the middle ���dot��� of green until it has actually seen the blue one), 
+editing the memory stream to insert the information in an Orwellian scheme to present 
+a coherent story [64,65]. There are also many examples of anticipation and prediction 
+modifying the interpretation of incoming stimuli [66���68] and long-term memories [69]. 
+More generally, Hoffman���s work on the interface theory of perception illustrates how little 
+emphasis evolution places on veridical perception [70���72]. 
+These dynamic features of our mind 
+11 soften our connection to the ground truth 
+of what actually happened in our history [73]. The fact that we cannot really trust our 
+memories of the past���in a much deeper way than just an inability to remember some 
+details���points to the disorienting fact that we do not perceive the past as it was but rather 
+modify and rebuild our mental model dynamically [65,74]. We have no direct access to our 
+past���at each present moment, to recollect the past we have to reconstruct it dynamically 
+from the engrams [75] left in our brain (and body) by the activity of a past Self. One can 
+think about our apparent continuous stream of cognition as a series of frames or Self l ets 
+(like slices in the bread-loaf model of Special Relativity), each one being probably a few 
+hundred milliseconds thick (Figure 1). 
+From this perspective, memories are messages between agents separated across time��� 
+each engram is a stigmergic [76,77] note left in our body by a past version of us 12. A view 
+of temporal (vertical) memories as communication between our Self l ets invites us to think 
+of memory as parallel to the horizontal communication we do with others��� Self l ets 13. And 
+like all messages, they need to be interpreted 14; indeed, von Foerster [82] emphasizes 
+the symmetry between foresight, hindsight, and insight: the key is not the passage of 
+time but rather the need to make sense of the future and the past equally. Memories are 
+also an answer to ���what it���s like to be past-me���, in the sense of Nagel���s ���what it���s like 
+to be a bat��� [83]���we cannot actually be our past Self, but we can try to reconstruct it 
+based on the evidence provided by reinterpreting the clues left by them, just as we do 
+for the heterophenomenology of other minds [84]. The task of i nding optimal meanings 
+for memory traces is an exercise in intelligence and satisfaction of epistemic hunger��� 
+Entropy 2024, 26, 481 4 of 28 
+squeezing stimuli (whether from the environment or from one���s past Self) for actionable 
+wisdom about what to do next in novel scenarios 15.
+ChatGPT
+This section of the article explores the concept of memory not as a static repository of factual information but as a dynamic, interpretative process that is continually modified by the brain to fit new circumstances and maintain a coherent self-narrative. This process is termed "confabulation," a kind of cognitive plasticity where the mind reshapes its beliefs and memories to align with the current context.
+The discussion begins with an example from Freud, highlighting the idea that memory is subject to constant re-transcription based on fresh circumstances. This dynamic reconfiguration is illustrated through clinical observations, such as patients with brain electrodes who rationalize involuntary laughter in ways that align with their self-image, rather than acknowledging the external cause. Similarly, split-brain patients concoct narratives to explain actions that seem independent from their conscious intentions, showcasing the brain���s compulsion to maintain a coherent self-image and narrative continuity.
+Further examples include visual perception, where the brain "fills in" gaps in visual input (like the blind spot in our retinas) to create a seamless visual field, a process akin to controlled hallucination. Additionally, the phenomenon of seeing a nonexistent intermediate color in a sequence of rapidly alternating lights demonstrates how our perception not only fills in missing details but can reorder sensory input to construct a coherent experience.
+The text also references the work of Donald Hoffman on the interface theory of perception, suggesting that evolution prioritizes useful perceptions over accurate representations of reality. This idea supports the view that memories are not static records but dynamic, interpretative reconstructions that serve the individual's present needs more than they serve historical accuracy.
+This dynamic view of memory and perception challenges traditional notions of memory as reliable recollection. Instead, it positions memory as a continuous, active process of construction and reconstruction���not just of past events but of the self that experienced those events. Memories are depicted as messages left by past selves, providing clues that the current self must interpret and integrate into a continuously updated narrative. This ongoing reinterpretation of memory is essential for adapting to new circumstances and making informed decisions based on both past experiences and current contexts.
+Ultimately, this perspective portrays memory as an essential tool for intelligent behavior, emphasizing its role in extracting actionable wisdom and satisfying our "epistemic hunger" for understanding and navigating the world.
+4
+Figure 1. The temporal slices of a continuous being over time (A) support memories as messages  
+that pass between the temporal slices (Selflets) of that being, analogously to the messages that pass  
+laterally between different beings at a given time (conventional communication) (B). Images used  
+with permission from Jeremy Guay of Peregrine Creative. Note that it is not claimed here that this  
+is the correct way to think about Selves���this schematization focuses on an external (3rd���person)  
+perspective that helps in understanding certain invariants in how biology uses information. This  
+view omits the complementary perspective of the experiential Self (1st���person experience of the  
+persistent flow itself).  
+From  this  perspective,  memories  are  messages  between  agents  separated  across  
+time���each engram is a stigmergic [76,77] note left in our body by a past version of usError!  
+Reference source not found.. A view of temporal (vertical) memories as communication between our  
+Selflets invites us to think of memory as parallel to the horizontal communication we do  
+with  others���  SelfletsError!  
+Reference  source  not  found..  And  like  all  messages,  they  need  to  be  
+interpretedError! Reference  source not found.; indeed, von Foerster [82] emphasizes the symmetry  
+between foresight, hindsight, and insight: the key is not the passage of time but rather the  
+need to make sense of the future and the past equally. Memories are also an answer to  
+���what it���s like to be past���me���, in the sense of Nagel���s ���what it���s like to be a bat��� [83]���we  
+cannot actually be our past Self, but we can try to reconstruct it based on the evidence  
+provided  by  reinterpreting  the  clues  left  by  them,  just  as  we  do  for  the  
+heterophenomenology of other minds [84]. The task of finding optimal meanings for  
+memory  traces  is  an  exercise  in  intelligence  and  satisfaction  of  epistemic  hunger��� 
+squeezing stimuli (whether from the environment or from one���s past Self) for actionable  
+wisdom about what to do next in novel scenariosError! Reference source not found..  
+All  this  is  often  considered  an  unavoidable  but  undesirable  bug  in  cognitive  
+architectures: confabulation in AI, the notorious unreliability of court witness testimonies,  
+and  Humean  philosophical  arguments  (e.g.,  Boltzmann  brains,  Descartes���s  deceptive  
+demon, etc.) seem to undermine the solidity of our personal identityError! Reference source not found..  
+They are disturbing when people first hear about themError! Reference source not found.. Here, I argue  
+that this is actually a powerful and important feature, arising from our ancient origins at  
+the dawn of life and helping us to understand many phenomena beyond brains and  
+behavior. The pejorative sense that ���confabulation��� has today should be revised in favor  
+of a recognition of the importance of sense���making and commitment to adaptive function  
+in the future (over fixed meanings of past data). I propose that the necessity for mnemonic  
+improvisation���the active rebuilding of the content of any (proto)cognitive system���was  
+the source of morphogenetic robustness and eventually conventional intelligence. The  
+ability to improvise and make sense of your world in real time and the commitment to  
+change (not just to persistence) over an allegiance to the details of a past history form a  
+fundamental  biologicalError!  Reference  source  not  found.  strategy  deployed  at  many  scales,  with  
+massive impactError! Reference source not found..  
+3. Remapping Memories: Beyond Storage and Simple Modification  
+Figure 1. The temporal slices of a continuous being over time (A) support memories as messages 
+that pass between the temporal slices (Self l ets) of that being, analogously to the messages that pass 
+laterally between different beings at a given time (conventional communication) (B). Images used 
+with permission from Jeremy Guay of Peregrine Creative. Note that it is not claimed here that this 
+is the correct way to think about Selves���this schematization focuses on an external (3rd-person) 
+perspective that helps in understanding certain invariants in how biology uses information. This view 
+omits the complementary perspective of the experiential Self (1st-person experience of the persistent 
+l ow itself). 
+All this is often considered an unavoidable but undesirable bug in cognitive architec- 
+tures: confabulation in AI, the notorious unreliability of court witness testimonies, and 
+Humean philosophical arguments (e.g., Boltzmann brains, Descartes���s deceptive demon, 
+etc.) seem to undermine the solidity of our personal identity 16. They are disturbing when 
+people i rst hear about them 17. Here, I argue that this is actually a powerful and important 
+feature, arising from our ancient origins at the dawn of life and helping us to understand 
+many phenomena beyond brains and behavior. The pejorative sense that ���confabulation��� 
+has today should be revised in favor of a recognition of the importance of sense-making 
+and commitment to adaptive function in the future (over i xed meanings of past data). 
+I propose that the necessity for mnemonic improvisation���the active rebuilding of the 
+content of any (proto)cognitive system���was the source of morphogenetic robustness and 
+eventually conventional intelligence. The ability to improvise and make sense of your 
+world in real time and the commitment to change (not just to persistence) over an allegiance 
+to the details of a past history form a fundamental biological 
+18 strategy deployed at many 
+scales, with massive impact 19. 
+3. Remapping Memories: Beyond Storage and Simple Modif i cation 
+���No man ever steps in the same river twice. For it���s not the same river and he���s not the 
+same man.������ Heraclitus 
+Consider metamorphosis. Caterpillars largely disassemble and remodel their brain 
+in becoming butterf l ies. Their hardware is strongly refactored as the creature shifts from 
+a soft-bodied machine that lives in a 2D world and eats leaves to a hard-bodied one that 
+l ies through 3D space and drinks nectar. The controller is replaced, but some memories 
+are known to remain [26,27,88], and this has also been studied in other model systems 
+including vertebrates [88���93]. It is tempting to focus on the important question of ���where 
+is the memory stored during this process?��� (of course modern neuroscience has been 
+studying the dynamic, complex process of memory formation, encoding, and storage as 
+Entropy 2024, 26, 481 5 of 28 
+consolidation)���but there is an even deeper issue here, concerning the encoding, decoding, 
+and interpretation of the memory engrams. 
+Specif i c memories useful to the caterpillar���for instance, what actuators to i re to make 
+use of the fact that leaves are to be found with a specif i c color cue (e.g., associative memories 
+cued by a bright red disk)���are entirely useless to the butterf l y. The butterf l y���s body is 
+controlled very differently���soft-bodied robots need a different controller than ones which 
+have hard elements that can be pushed during actuation. Its visual system is different, and 
+most of all, it does not eat or care about leaves���it wants nectar. The process of memory and 
+recall not only functionally generalizes (abstracts 20) the information (not leaves, but ���food���), 
+but most importantly, remaps 
+21 it in a way that the basic relationship learned maintains 
+its salience in a new body and environment. Stated another way, the being that radically 
+changes does not bring with it specif i c memories into its new, higher-dimensional life���it 
+brings the deep lessons of its experience in a way that it can deploy in its new embodiment. 
+Metamorphosing insects and planaria that maintain memories and re-imprint them 
+from tail fragments onto a newly regenerating brain, and anterograde amnesia patients 
+22 
+who update external notepads to keep track of their life���all seem like extreme examples or 
+rare outlier cases of weird memory dynamics. But to various degrees, we are all undergoing 
+this process of sense-making through the improvisation and decoding of clues. Ricard 
+Sol�� calls ant colonies ���liquid brains��� [98] because their subunits do not keep a stable 
+connectivity pattern (like a solid) but rather shift around during the cognitive life of the 
+colony mind. Ant colonies are liquid in terms of the spatial positions of the ants, but we 
+are all brains that are liquid in time because of the shifting relationship between our Self- 
+model and our cognitive content across moments. The mental content of each Self l et is not 
+welded to that of the previous one in a linear, i xed pattern; it slides around, inf l uenced 
+23 
+by the content of past slices but not over-committing or taking them too seriously 
+24 as they 
+reinterpret them to suit new circumstances.
+ChatGPT
+This section of the article continues to develop the notion of memory as a dynamic, interpretive process across both biological and cognitive landscapes, challenging traditional views of memory as a static repository. The concept of memories as messages passed between "Selflets," or temporal slices of a being, highlights the continuous and adaptive nature of memory.
+The analogy presented compares these memory messages to conventional lateral communication between different beings at a specific time, suggesting that just as individuals communicate and adapt messages based on context, so do our past and present selves communicate across time. This dynamic reconfiguration of memory serves to maintain a coherent narrative and adaptive responses to new situations, emphasizing the need for interpretation and constant updating.
+The text delves into various scenarios where memory adaptation and improvisation play crucial roles:
+Metamorphosis in Insects:
+It discusses how caterpillars, which undergo a drastic transformation into butterflies, manage to retain some memories despite significant neurological and physical changes. The memories that are retained are not the literal ones (e.g., color cues from leaves) but are abstracted and remapped to suit the butterfly's new form and needs (e.g., finding nectar).
+Planaria and Anterograde Amnesia:
+These examples further illustrate the adaptability of memory. Planaria can regenerate lost parts and seemingly re-imprint memories from one part of the body to another, while humans with anterograde amnesia use tools like notepads to externalize and track memory.
+Ant Colonies as "Liquid Brains":
+This metaphor describes how ant colonies maintain dynamic and adaptive cognitive structures, paralleling how human memory adapts over time with shifting cognitive content and contexts.
+This perspective positions confabulation not as a flaw but as an essential feature of cognitive systems, rooted in our evolutionary past and vital for functioning in complex, ever-changing environments. It redefines the unreliable aspects of memory, typically viewed negatively (e.g., in legal settings or philosophical thought experiments like Descartes's deceptive demon), as fundamentally adaptive mechanisms that allow cognitive systems to function effectively in real time.
+In summary, the text proposes that the inherent malleability and improvisational capacity of memory are not merely incidental but are fundamental strategies for biological survival and cognitive functionality. This view suggests a shift from seeing memory as a straightforward record of past events to understanding it as a complex, continually updated system that allows organisms to adapt behavior and maintain coherence in their identities across time and change.
+4
+Even mammalian brains change over time. The hormonally driven brain maturation 
+of puberty may not be as drastic a change as that which happens to a caterpillar 25, but 
+it is signif i cant enough to strongly re-model our preferences and priorities. On a small 
+scale, our brain and body are constantly turning over in terms of molecules and cellular 
+components (including dynamic synapses), and yet centenarians have functional mem- 
+ories from their childhood. Critically, normal recall in the brain 
+26 is not a pure ���read��� 
+operation���accessing a memory changes it [105], which is a fact exploited by therapists 
+treating trauma and by everyday tasks involving creativity and problem-solving [106]. This 
+also underscores the continuous, dynamic nature of memory. This issue concerns much 
+more than robustness���it is not about i nding a way to lock a memory in place and maintain 
+its details against noise and perturbations 27, but rather it is about being able to remap, 
+adapt, and improvise to extract the salience of memories into new contexts. Ubiquitous 
+confabulation [62,108���110], and not just the stark examples seen in split-brain patients 
+whose language center concocts a story about why their left hand was moving in surpris- 
+ing ways, is the central invariant across numerous phenomena in evolutionary biology, 
+developmental biology, and neurobiology. 
+The considerable literature on (behavioral) memory transplants across animal bodies 
+reveals that the ability to reinterpret memories functions between Self l ets that are not 
+somatically contiguous (not part of the same organism persisting through time). The results 
+observed when pieces of, or extracts of, the brains of trained animals are moved into na��ve 
+subjects [111���119], and the (as yet uncertain) reported claims of memories transferred via 
+heart/lung transplants [120,121], point to an even deeper kind of remapping capacity. First, 
+the movement of memories via brain extracts [113] does not require careful placement���in 
+David Glanzman���s experiments, for example, they inject the extract into the general vicinity 
+of the relevant Aplysia nervous tissue. It is remarkable that no matter where precisely the 
+molecules go, the new brain will extract their meaning and instruct the behavior of the 
+recipient Aplysia. 
+Entropy 2024, 26, 481 6 of 28 
+Also remarkable 
+28 is the observation that one can inject an odorant molecule into a frog 
+egg, and the resulting animal will seek out that odor in its search for food [122]. Consider 
+what this must mean���mechanisms inside a single cell have to extract information from 
+this new input, and convert it into the processes needed to modify the genetically encoded 
+hardware of the nervous system to result in a new behavior that is functionally tied to 
+the sensing of that molecule. Here we have the following: the detection of novelty (how 
+does it know to pay attention to this molecule out of millions of other, native, molecules 
+inside the egg?); remapping across scales (from a single cell to the whole organism); and the 
+preservation of salience across novel scenarios (from biochemical signals in cytoplasm to 
+the dynamics of nervous system function in guiding food-seeking behavior). The engrams 
+seem less like encoded memories 29, and more like a kind of prompt, with a lot of the hard 
+work being carried out through the encoding/decoding process, which adds interpretation, 
+context sensitivity, and generalization (i.e., intelligence) to the process.
+ChatGPT
+This section elaborates on the fluid and adaptive nature of memory across different scales and biological contexts, emphasizing that memory is not merely a static storage but a dynamic, context-sensitive process that continuously evolves.
+The discussion begins by contrasting the significant changes that occur in mammalian brains during puberty with the dramatic transformation in caterpillars during metamorphosis. Even though the changes in humans may seem less extreme, they are profound enough to reshape preferences and priorities fundamentally. This points to the fact that our memories are not merely locked in place but are actively reinterpreted and modified by ongoing biological processes.
+The text also highlights the molecular and synaptic turnover in the brain and body, noting that despite these constant changes, individuals can retain functional memories from their childhood. This challenges the conventional view of memory as a simple retrieval of fixed data, illustrating instead that accessing memories inherently alters them. This dynamic aspect of memory is crucial for various cognitive functions, from therapeutic interventions for trauma to everyday creativity and problem-solving tasks.
+Further, the discussion extends to experimental observations that suggest memories can be transplanted across bodies, as seen in studies where brain extracts from trained animals are transferred to na��ve subjects, demonstrating an ability to reinterpret and integrate these memories into a new biological context. This phenomenon is not confined to precise placement or continuity of the original organism, indicating a robust capacity for memory to be abstracted and adapted across different biological systems.
+One particularly striking example provided is the injection of an odorant molecule into a frog egg, which results in the mature frog seeking out that odor. This suggests that even at the level of a single cell, biological systems can extract and utilize information in ways that profoundly modify behavior based on genetic and environmental inputs. The process described involves detecting novelty, remapping information across biological scales, and preserving relevance in new contexts, illustrating a complex interplay between genetic programming and experiential input.
+Overall, this section underlines that memories are more akin to prompts that guide behavior through a sophisticated encoding/decoding process, which includes interpretation, contextual sensitivity, and generalization���components that collectively contribute to what can be considered biological intelligence. This perspective not only expands our understanding of memory's role across various life forms but also underscores the incredible adaptability and intelligence embedded in biological systems.
+4
+4. Beyond the Brain: Bowties Everywhere 
+���The past is a foreign country; they do things differently there.������ L.P. Hartley 
+I have argued elsewhere [96,123,124] that there are profound symmetries between 
+the collective intelligence of neurons in navigating 3D spaces and that of non-neural cells 
+navigating anatomical morphospace. Many algorithms, competencies, failure modes, and 
+molecular mechanisms are shared between the self-assembly/repair of the body and the 
+emergence/maintenance of the mind. This symmetry allows us to think about the relevance 
+of the memory-remapping concept beyond the brain and behavior, and of sender���receiver 
+models [37,78���80]. 
+The i rst concept that carries over naturally is the notion of triggers���low-information- 
+content stimuli that kick off complex, spatiotemporally appropriate responses because 
+the receiver is, to a degree, intelligent 30. A simple voltage state imposed on somatic cells 
+can induce them to build a complete vertebrate eye [100]���but of course, that simple 
+biophysical state cannot contain all of the information needed to make an eye 31. Another 
+voltage-modifying reagent (Monensin) triggers tails to grow in tadpoles, but legs to grow in 
+froglets [125,126], and never vice versa. Here, the same bioelectric stimulus is functionally 
+reinterpreted based on the specif i c context, preserving salient, high-level information like 
+���build whatever normally goes at this location��� (in the case of the appendage regeneration 
+trigger). Remapping is especially salient in the regeneration of organs by bioelectric patterns 
+that are much bigger (e.g., in the case of a planarian fragment that obeys the bioelectric 
+pattern memory of the original body 32, but only carries a small part of it when it is cut 
+out), or those which are present in tissue that is very different (e.g., a salamander arm that 
+regrows from a body that is missing those structures and has to thus source its information 
+from other parts of the body). The importance of the gestalt and the functional coupling 
+from the large-scale target morphology information through to the molecular events inside 
+cells are also seen in the example of tails transplanted to the l ank of a salamander, which 
+gradually remodel into a limb-like structure [127���129]. This transformation includes the 
+cells at the tip of the tail, which are correct in their local environment but must change to i t 
+the global pattern (Figure 2). 
+Another aspect of this is the compression/expansion cycle of metazoan organisms. 
+Each organism does not make a copy of itself���it undergoes a massive compression, 
+producing an egg, which then has to re-inf l ate during the process of self-assembly and 
+engage with a possibly different world using possibly different (mutated) parts (a kind 
+of de-generalization, to apply past patterns of wisdom to novel scenarios). Some somatic 
+information does not make it through, but it is increasingly recognized that a lot of generic 
+states (like ���stress���) does [130���137]. The importance of a process that squeezes down 
+complex states into a compact, generalized representation (a so-called bowtie architecture 
+of information, as seen in Figure 3) is routinely used in AI (the autoencoder).
+ChatGPT
+This section of the article discusses the concept of memory remapping and adaptive response mechanisms extending beyond the brain to involve entire biological systems and morphogenetic processes. It highlights the profound symmetries between neural and non-neural cell activities, particularly in how both navigate complex spaces and adapt to environmental cues, suggesting that these mechanisms are foundational across different biological domains.
+Key Concepts and Examples:
+Triggers and Intelligent Responses:
+The idea of triggers���low-information-content stimuli that initiate complex responses���is crucial in understanding biological intelligence. An example is the simple voltage state in somatic cells that can start the construction of a vertebrate eye or how specific bioelectric stimuli can direct the growth of different body parts in tadpoles and froglets, indicating an intelligent and context-dependent interpretation of signals.
+Functional Reinterpretation and Remapping:
+The notion of functional reinterpretation is vividly illustrated in examples of regeneration. For instance, certain bioelectric patterns can trigger a planarian fragment to regenerate into a new organism or a salamander's arm to regrow from its body. These processes underscore how biological systems preserve high-level, salient information ("build whatever normally goes at this location") despite drastic changes in the organism���s structure.
+Morphological Transformation:
+Another significant example is the transformation of transplanted tails in salamanders that gradually remodel into limb-like structures. This transformation demonstrates the ability of cells to adapt to new local environments while aligning with a global morphological pattern, showcasing the dynamic nature of biological form and function.
+Compression and Expansion in Development:
+The life cycle of metazoan organisms exemplifies a process of compression and expansion. From the compression of genetic and developmental information into an egg to the expansion during growth and development, this cycle reflects how organisms not only replicate but also adapt and modify their genetic and developmental instructions based on new conditions. This process is similar to the way autoencoders in artificial intelligence compress and then reconstruct data, providing a functional blueprint that can be adapted to novel scenarios.
+Broader Implications:
+The discussion extends the understanding of memory and adaptive responses from purely cognitive phenomena to integral biological strategies. It points to a universal architecture ("bowtie architecture") across life forms where information is dynamically managed and adapted, not only in brains but also in bodily processes like regeneration and development. This perspective helps bridge disciplines by showing how concepts from artificial intelligence and cognitive science are mirrored in biological processes, suggesting deeper, underlying principles that govern life at multiple scales. By doing so, it redefines traditional views on memory, cognition, and biological development, highlighting the adaptability and intelligence inherent in all living systems.
+4
+Figure 3. Bowtie architectures feature a low-dimensional compressed medium at the center through 
+which information must come, and active decoding and context-sensitive interpretation on the 
+output. (A) Developmental processing of morphogenetic information. (B) A typical machine learning 
+architecture. Images used with permission from Jeremy Guay of Peregrine Creative. 
+Tadpoles produced with no endogenous eyes but bearing an eye placed on their 
+tails can see quite well���they learn effectively in visual assays [138]. These ectopic eyes 
+connect to the spinal cord (not brain), or sometimes the gut. Why does it not require many 
+generations of mutation and selection to enable this new sensorimotor architecture to work 
+effectively? This kind of plasticity is remarkable on the one hand, as we expect the lessons 
+of evolutionary history to be passed down in a deterministic fashion to the next generation. 
+On the other hand, we can consider development as an instance of regenerative repair, 
+with each developmental stage being a birth defect relative to the next stage that must 
+be dynamically repaired as the organism progresses through maturation. Regeneration 
+in adult salamanders, of a limb from the rest of the body, is not nearly as impressive as 
+the trick that all metazoans do���regenerating the entire body from one cell (including 
+mammals, normally thought to not be regenerative). 
+Regeneration of limbs and eyes is not surprising when one considers that the organism 
+has to be able to construct itself from one cell, or from a mixed-up collection of cells 33. 
+But it is more than uncertainty of the external environment that limits the relevance of 
+past generations��� specif i c lessons: it is also uncertainty about one���s own parts. Engineered 
+polyploid newts complete normal development despite their much larger cells and extra 
+copies of chromosomes [142,143]. Their kidney tubule diameters (Figure 4) stay normal, 
+being made of up fewer, but larger, cells. If their cells are made truly enormous, then just 
+one cell will bend around itself to complete the relevant task in anatomical morphospace. 
+This requires using a different molecular mechanism (cytoskeletal bending instead of 
+cell���cell communication of tubulogenesis)���calling up different modular subroutines to 
+accomplish their high-level goal state as needed, while circumstances (indeed, their inner 
+components) change unexpectedly 34.
+ChatGPT
+In this part of the article, the concept of bowtie architectures is further explored, providing a metaphor for how information is managed within biological systems. This concept is used to explain how organisms handle complex information through a process of compression, transmission, and then expansion or decoding in a context-sensitive manner.
+Key Aspects of Bowtie Architectures:
+Central Compression:
+In the bowtie architecture model, there is a crucial compression phase where information passes through a low-dimensional, compressed medium. This phase is essential for handling vast amounts of data efficiently, ensuring that only the most salient information is processed and transmitted forward.
+Context-Sensitive Interpretation:
+The decompression or expansion phase involves active decoding and interpretation that is highly sensitive to the context. This phase is where the system translates compressed information into actionable outputs that are appropriate to the current environmental and internal conditions.
+Biological and Technological Examples:
+Developmental Processing in Organisms:
+In biological systems, such as tadpoles growing ectopic eyes on their tails that connect to the spinal cord or sometimes the gut, the bowtie architecture explains how these organisms can adapt extraordinary features and integrate them functionally without extensive evolutionary changes. This shows the organism���s inherent capacity to reinterpret and utilize morphogenetic information in novel ways, adapting to developmental challenges dynamically.
+Machine Learning Architectures:
+Similar architectures are observed in machine learning systems, where an algorithm must compress large datasets into manageable representations (like in an autoencoder), which are then used to make predictions or decisions based on new input data. This process mirrors the biological processing of information, highlighting the symmetry between biological intelligence and artificial intelligence.
+Implications for Regeneration and Development:
+The discussion also touches on the impressive regenerative abilities of organisms, which can rebuild complex structures like limbs or even entire bodies from basic cellular components. This ability is linked to the organism���s capacity to dynamically deploy different molecular mechanisms or developmental strategies as needed, depending on the internal and external circumstances.
+Example of Engineered Organisms:
+The article mentions engineered polyploid newts that exhibit normal development despite having larger cells and extra copies of chromosomes. This ability to maintain normal function under altered cellular conditions exemplifies the bowtie architecture's principle of using different "modular subroutines" to achieve a high-level goal despite significant changes in the system���s components.
+This section of the article reinforces the idea that biological systems, much like sophisticated computational models, manage information through complex architectures that allow for significant flexibility and adaptability. This comparison not only highlights the efficiency and elegance of biological processes but also provides a framework for understanding how complex traits and functions can evolve and be maintained in changing environments.
+4
+Figure 4. Cross���section of newt kidney tubule at different ploidy levels. Re���drawn by Jeremy Guay  
+of Peregrine Creative from [142].  
+Think of the task facing such an embryo coming into the world. It cannot take for  
+granted how much genetic material it will have [143], or how many cells [146���148], or  
+what size cells [142], it will have (in addition to any external damage it might sustain, or  
+the chemical details of its environment���even the internal parts cannot be assumed to be  
+the  same  as  those  with  which  its  past  genome  was  forged).  Beyond  the  incredible  
+robustness  of  standard  form  and  function,  we  see  adaptation  to  extreme  changes  of  
+conditions, with no need for transgenes or genomic editing, in the spontaneous emergence  
+of Xenobots [149���151], Anthrobots [152], and plant galls [153] (constructions of leaf cells  
+hacked by signals from a non���human bioengineer to produce a totally new and complex  
+pattern, as shown in Figure 5).    
+Figure 4. Cross-section of newt kidney tubule at different ploidy levels. Re-drawn by Jeremy Guay of 
+Peregrine Creative from [142]. 
+Think of the task facing such an embryo coming into the world. It cannot take for 
+granted how much genetic material it will have [143], or how many cells [146���148], or 
+what size cells [142], it will have (in addition to any external damage it might sustain, 
+or the chemical details of its environment���even the internal parts cannot be assumed 
+to be the same as those with which its past genome was forged). Beyond the incredible 
+robustness of standard form and function, we see adaptation to extreme changes of condi- 
+tions, with no need for transgenes or genomic editing, in the spontaneous emergence of 
+Xenobots [149���151], Anthrobots [152], and plant galls [153] (constructions of leaf cells 
+hacked by signals from a non-human bioengineer to produce a totally new and complex 
+pattern, as shown in Figure 5). 
+  
+(Figure 4) stay normal, being made of up fewer, but larger, cells. If their cells are made  
+truly enormous, then just one cell will bend around itself to complete the relevant task in  
+anatomical  morphospace.  This  requires  using  a  different  molecular  mechanism  
+(cytoskeletal bending instead of cell���cell communication of tubulogenesis)���calling up  
+different modular subroutines to accomplish their high���level goal state as needed, while  
+circumstances (indeed, their inner components) change unexpectedlyError! Reference source not  
+found..    
+Figure 4. Cross���section of newt kidney tubule at different ploidy levels. Re���drawn by Jeremy Guay  
+of Peregrine Creative from [142].  
+Think of the task facing such an embryo coming into the world. It cannot take for  
+granted how much genetic material it will have [143], or how many cells [146���148], or  
+what size cells [142], it will have (in addition to any external damage it might sustain, or  
+the chemical details of its environment���even the internal parts cannot be assumed to be  
+the  same  as  those  with  which  its  past  genome  was  forged).  Beyond  the  incredible  
+robustness  of  standard  form  and  function,  we  see  adaptation  to  extreme  changes  of  
+conditions, with no need for transgenes or genomic editing, in the spontaneous emergence  
+of Xenobots [149���151], Anthrobots [152], and plant galls [153] (constructions of leaf cells  
+hacked by signals from a non���human bioengineer to produce a totally new and complex  
+pattern, as shown in Figure 5).    
+Figure 5. Novel forms made by genetically normal plant leaf cells, when prompted by signals from a 
+wasp embryo. 
+This is also probably why chimerism and bioengineering, at all scales, work���coherent 
+outcomes often result from combining not only divergent living components from different 
+lineages [154] but also totally unnatural and novel engineered components, from nano- 
+materials to smart implants [155���160] (Figure 6). Biological components are primed to 
+accommodate and exploit whatever materials and processes are in their vicinity (as useful 
+functionality and computations). 
+We do not know how this remarkable plasticity works yet, but one thing it does, to 
+some extent, is free the downstream (future) agent from the restrictions of the upstream 
+(past) agent. If we consider genomic DNA to be the engram 
+35 of the evolutionary-scale 
+individual (the entire lineage as one huge time-extended agent), then its interpretation and 
+usage occurs via remapping and repurposing as needed, just as conventional memories do 
+in smaller-scale individuals. The hourglass architecture is extensively used in technology 
+and can be used to understand modularity and anti-fragility in both designed and evolved 
+systems [162���164].
+ChatGPT
+This comprehensive section of the article underscores the impressive adaptability of biological systems to extreme changes and the fundamental flexibility inherent in biological development. This adaptability is illustrated through various examples, showcasing the ability of organisms to modify and reorganize their developmental processes and genetic functions in response to environmental and internal changes.
+Key Points and Concepts:
+Robustness and Adaptability in Development:
+The discussion highlights how organisms, such as embryos, must be prepared for varying conditions regarding genetic material, cell number, and cell size. This inherent uncertainty necessitates a highly adaptable developmental process that can accommodate significant variations without the need for genetic modifications or engineering.
+Examples of Extreme Biological Flexibility:
+The formation of structures like Xenobots, Anthrobots, and plant galls exemplifies how organisms can spontaneously adapt to and manipulate their environments or even hijack other organisms' cellular mechanisms to create new and complex patterns. These examples demonstrate the ability of biological systems to generate novel forms and functions from existing genetic and cellular structures.
+Cellular Adaptation at Different Ploidy Levels:
+In the specific case of the newt kidney tubule, the discussion explains how cells adjust their behavior and morphology based on their size and number. Larger cells might use different molecular mechanisms, such as cytoskeletal bending, to achieve necessary functions, highlighting the modular and flexible nature of biological processes.
+Chimerism and Bioengineering:
+The integration of diverse biological and engineered components (such as nanomaterials and smart implants) into living systems illustrates the coherence that can be achieved through biological chimerism. This adaptability suggests that biological components are primed to utilize available materials and processes to enhance functionality and computational abilities.
+Genomic Flexibility and Memory:
+The concept of genomic DNA as an engram of evolutionary memory further extends the idea of memory beyond immediate cognitive functions to include long-term, lineage-based genetic information. This genetic 'memory' is not static but is continuously remapped and repurposed to meet new challenges, similar to how personal memories are adapted in cognitive processes.
+Broader Implications:
+The section profoundly articulates how biological systems exhibit a kind of "anti-fragility," where they not only resist breakdown under stress but also leverage these conditions to evolve and strengthen. This biological principle is paralleled in technology through the use of hourglass architectures, which ensure that while specific parts may vary or adapt, the overall functionality and integrity of the system are maintained.
+Overall, this discussion broadens the understanding of biological memory and intelligence, framing them as not merely confined to neural activities or cognitive behaviors but as pervasive attributes of all biological systems. This perspective invites a reevaluation of what constitutes biological intelligence, suggesting it encompasses a wide range of adaptive, integrative, and transformative capabilities.
+4
+Figure 6. A schematic of how biological systems can adaptively incorporate foreign material (whether 
+evolved or engineered) at every level of organization. Taken from [124]; image by Jeremy Guay of 
+Peregrine Creative. 
+Note that this bowtie architecture���which forces a compression 
+36 of data to a generative 
+kernel that then has to be re-inf l ated and elaborated���is also a common feature of biochem- 
+ical, bioelectrical, and biomechanical pathways (Figure 7), that is, at the subcellular scale; at 
+the super-organism scale, recent data also reveal that a very simple parameter���waves of 
+ATP���can mediate the complex morphogenetic information being shared and processed 
+within groups of embryos 
+37 defending their anatomies against teratogenic inf l uence [167]. 
+The same architecture can be used to think about learning (when one side of the bowtie 
+is the environment), training (when the environment contains agents with agendas that 
+send messages with the goal of changing the behavior of other agents), and other kinds of 
+communication both laterally and vertically (to one���s future self). 
+Entropy 2024, 26, x FOR PEER REVIEW 10  of  29  
+  not  only  algorithmically  deductive,  in  interpreting  it  in  future  contexts  (as  both  the  
+environment  and  body  internals  shift).  The  sense���making  process  of  memory  
+interpretation and the formation of models representing internal states and the external  
+world is creative as much as it is driven by information processing and past data. As John  
+Truby notes, ���a great story is organic���not a machine but a living body that develops���  
+[169]. In this sense, the development and regenerative maintenance of a body through  
+morphogenesis, guided by biophysical models [170���173], is a kind of dynamic elaboration  
+of a story (about anatomical morphospace).    
+Figure  7.  Schematic  representations  of  bowtie  architectures  in  biochemical,  bioelectrical,  and  
+biomechanical circuits. For example, causal parameters such as tension or resting voltage potential  
+across the membrane (Vmem), as well as specific genes, can act as information hubs that ensure the  
+compression of signals within biological control networks.  
+What  underlying  parameter  is  represented  by  the  spectrum  ranging  from  the  
+hardwired, mosaic C. elegans to the intermediately plastic amphibia and (embryonic)  
+mammals, and to the extreme plasticity of planaria? I propose it is the willingness to  
+confabulate in anatomical space���a pattern extraction and completionError! Reference source not found.  
+Figure 7. Schematic representations of bowtie architectures in biochemical, bioelectrical, and biome- 
+chanicalcircuits. Forexample, causalparameterssuchastensionorrestingvoltagepotentialacrossthe 
+membrane (Vmem), as well as specif i c genes, can act as information hubs that ensure the compression 
+of signals within biological control networks. 
+Entropy 2024, 26, 481 10 of 28 
+One of the most interesting things about compression, such as that seen in learning and 
+generalization, is that by removing correlations, the resulting engram looks increasingly 
+random 38. Because there is no ���outside-text��� or meta-data [168], the interpretation by the 
+right side of the bowtie (or the future Self) must be creative, not only algorithmically deduc- 
+tive, in interpreting it in future contexts (as both the environment and body internals shift). 
+The sense-making process of memory interpretation and the formation of models represent- 
+ing internal states and the external world is creative as much as it is driven by information 
+processing and past data. As John Truby notes, ���a great story is organic���not a machine 
+but a living body that develops��� [169]. In this sense, the development and regenerative 
+maintenance of a body through morphogenesis, guided by biophysical models [170���173], 
+is a kind of dynamic elaboration of a story (about anatomical morphospace). 
+What underlying parameter is represented by the spectrum ranging from the hard- 
+wired, mosaic C. elegans to the intermediately plastic amphibia and (embryonic) mammals, 
+and to the extreme plasticity of planaria? I propose it is the willingness to confabulate in 
+anatomical space���a pattern extraction and completion 
+39 architecture that does not take 
+priors too seriously and assumes that it will have to develop models of itself, its problem 
+space, and its internal and external affordances on the l y (a kind of ���beginner���s mind���, 
+emphasizing forward-looking creativity over past-constrained structure). This suggests 
+a strategic parameter for morphogenetic/cognitive systems akin to ���r vs. K��� selection 
+in evolutionary ecology [175]. In silico simulation results [176] show how this kind of 
+process can give rise to remarkable lineages, such as planarian l atworms, which are ex- 
+tremely resistant to transgenesis, aging, cancer, and injury despite 
+40 their incredibly noisy 
+genome because they have fully committed to a strategy that overrides genetic details with 
+large-scale pattern completion [176].
+ChatGPT
+This section of the article delves deeper into the concept of "bowtie architectures" in biological systems, emphasizing how these frameworks manage and transform information across various biological scales and processes. The focus is on the dynamic nature of biological information processing, where data compression and creative interpretation play crucial roles in development and adaptation.
+Key Points and Concepts:
+Bowtie Architectures Across Scales:
+The bowtie architecture is highlighted as a fundamental mechanism in biochemical, bioelectrical, and biomechanical pathways, serving as a model for understanding how biological systems compress and decompress information. This process is crucial for managing complex data streams within the constraints of biological structures and functions.
+Adaptive Incorporation of Foreign Material:
+Biological systems can adaptively incorporate foreign materials, whether evolved naturally or engineered artificially, into their functional processes. This capability is evident at every organizational level, from subcellular components to entire organisms, facilitating complex morphogenetic information processing and defending against potential teratogenic influences.
+Learning and Generalization:
+The compression seen in learning and generalization processes removes correlations, making the resulting engram appear more random and requiring creative interpretation by the organism. This underscores the adaptive and forward-looking nature of biological information processing, where past data must be creatively interpreted to be useful in changing environmental and internal contexts.
+Creativity in Biological Systems:
+The formation of internal models and the interpretation of memories are described as inherently creative processes, driven by both the need to process information and the organic development of the organism. This perspective aligns with John Truby's view of a great story as an organic entity that evolves, reflecting how biological development and regeneration are dynamically elaborated stories about anatomical morphospace.
+Morphogenetic and Cognitive Flexibility:
+The spectrum of biological plasticity, from the hardwired C. elegans to the highly plastic planaria, illustrates varying degrees of morphogenetic and cognitive flexibility. This flexibility is attributed to the organism���s willingness to "confabulate" in anatomical space���essentially, to creatively reinterpret and complete patterns even in the absence of strict genetic or environmental guidance.
+Strategic Adaptation in Biological Systems:
+The discussion suggests a strategic parameter akin to the "r vs. K" selection in evolutionary ecology, which describes how organisms manage reproductive strategies. In this context, organisms like planarian flatworms demonstrate a remarkable capacity for resistance to genetic and environmental challenges by prioritizing large-scale pattern completion over detailed genetic fidelity.
+Broader Implications:
+The article proposes that biological systems are not just passively responding to genetic instructions or environmental inputs but are actively engaging in creative problem-solving. This ability to dynamically interpret and adapt information allows for a robust response to challenges, making biological systems highly resilient and capable of continuous development and regeneration. This view expands our understanding of biological intelligence and highlights the intricate interplay between genetic, environmental, and developmental factors in shaping life's complexity.
+4
+5. Beyond Biology 
+This idea of complex data acquiring robustness by being squeezed into a bowtie 
+bottleneck can be found outside the examples of development, evolution, and behavior 
+(see examples in Table 1). For example, communication between two humans can be 
+seen as the bowtie scheme, with language as the hub [178]. We cannot simply exchange 
+tables of neuronal state data with other humans, animals, or AIs���those details cannot 
+be remapped from brain to brain directly. But, squeezed down into the low-bandwidth 
+channel of language, the salient aspects of the message can be remapped by the listener���s 
+brain into whatever biophysical changes are needed to implement the interpretation that 
+makes the most sense to them 
+41 [179,180]. 
+Similarly, the scientif i c research process can be seen this way. Scientists accumulate a 
+coherent world model after years of experimental observations and analysis, and present 
+it as a ���published manuscript������a low-bandwidth, impoverished stimulus from which 
+other scientists will extract information that may change their own world view and mental 
+content (and maybe in ways other than what the author intended). Poetry and art achieve 
+much more drastic encoding/decoding dynamics when they pass from artist to viewer 42, 
+requiring massive amounts of personal interpretation and modif i cation on the decoding 
+end of the recipient, while baking recipes require less. 
+There are possibly implications here beyond conventional third-person science. First, 
+a commitment to meaning and interpretation could potentially be useful in a psychological 
+setting, whether personal or therapeutic, in the sense that techniques could be developed 
+to help reinterpret somatic and cognitive memories of past trauma 43. In the short term, 
+two individuals may see the same event (e.g., chopping down a tree) very similarly and 
+agree on the micro details of what they saw. But on a longer timescale of interpretation, 
+each Self views this differently (perhaps, as a value-creating progress vs. the destruction 
+of an ecosystem)���the memory is embedded in a different mental structure in which the 
+meaning of the event (and thus its contributions to future thought processes) is private 
+and unique, while the details were the same. The answer to ���what did you experience?��� is 
+critically tied to the timescale on which the answer is based.
+ChatGPT
+This section of the article extends the application of the bowtie architecture concept beyond biological systems, demonstrating its relevance in various aspects of human communication, scientific research, and art. This broader application underscores the universality of this information processing model across different fields and interactions.
+Key Applications and Concepts:
+Human Communication:
+Communication between humans is framed within the bowtie architecture, with language acting as the central compression hub. Here, complex neurological states are not transferred directly but are compressed into language, allowing for the efficient transfer of salient information. The recipient then decompresses this linguistic data, interpreting it based on their own neural and cognitive frameworks.
+Scientific Research Process:
+The scientific process is also likened to a bowtie architecture. Scientists distill vast amounts of experimental data and observations into a coherent model, which is then communicated as a published manuscript���a compressed, streamlined form of the original data. Other researchers decode this information, integrating it into their own scientific understanding, potentially in ways that differ from the original intent of the authors.
+Art and Poetry:
+In the realms of art and poetry, the encoding and decoding dynamics are even more pronounced. These forms require the viewer or reader to engage in substantial personal interpretation and modification to understand the intended message, showcasing an extreme form of the bowtie architecture where the compression and subsequent need for interpretation are significant.
+Culinary Recipes:
+A contrast is drawn with simpler forms of communication, such as baking recipes, which, while still employing the bowtie architecture, require less interpretation and personal modification from the recipient.
+Psychological and Social Implications:
+The discussion also explores potential implications for psychology, particularly in therapeutic settings where understanding and reinterpreting cognitive and somatic memories can be crucial for healing. Techniques could be developed to help individuals reinterpret memories of past traumas, emphasizing the transformative potential of reinterpretation in mental health.
+Broader Philosophical Considerations:
+The variability in interpretation over different timescales is highlighted as a critical aspect of human experience. Two individuals might perceive the same event similarly in the short term but may derive completely different meanings from it over time due to personal values, context, and cognitive frameworks. This underscores the subjective nature of memory and perception, suggesting that the meaning derived from experiences is deeply personal and context-dependent.
+Conclusion:
+By illustrating how the bowtie architecture facilitates robust, efficient, and adaptive information processing across diverse domains, the article broadens the application of this concept to include non-biological contexts, showing its potential as a universal model for understanding complex communication and interpretation processes. This expansion invites us to reconsider how we perceive, encode, and decode information in various aspects of life, highlighting the dynamic interplay between compression, transmission, and interpretation across different systems and scales.
+4
+Table 1. Diverse examples of information compression and reinterpretation. 
+Scenario/ScaleBowtie Hub NodeRemapping Process 
+Developmental lineageEgg Morphogenetic problem-solving 
+competencies 
+StressIntegrated stress response 
+Multiple physiological systems 
+performing credit assignment to 
+adaptively adjust to general stress 
+indicators 
+Hyper-embryo groups [167] Calcium/ATP signal through the 
+medium between embryos 
+Increased morphogenetic 
+problem-solving competencies 
+Hologram 44Holographic i lm, storing a compressed 
+complex 3D pattern in a 2D substrate Laser interrogation 
+RegenerationBioelectric pattern Planaria remapping Vmemmap from 
+whole to fragment 
+Single cognitive Self across timeMemory media (engrams)Neural interpretation of engrams 
+Transplants between cognitive SelvesExtracts (RNA) or tissue implantsNeural interpretation of engrams 
+CommunicationLanguage [185] Neural interpretation of spoken/written 
+messages 
+PsychoanalysisDreams, speech acts Creative, intuitive, skillful interpretation 
+for a therapeutic goal 
+SongWritten musical scores Replaying the same song on a totally 
+different instrument 
+Science, in the short termTalks/manuscripts Interpretation of data by scientists in the 
+same/other i elds 
+Science, in the long termIdeas and paradigms, explanations 
+Interpretation and use by the scientif i c 
+community: some ideas become 
+immortalized as engineering tech; others 
+are revised, or forgotten. 
+ArtPoetry, paintings, etc. Personal interpretation and i nding 
+personal meaning 
+SocietyReligious frameworks Adapting (or not) as technology and 
+science advance
+ChatGPT
+Table 1 provides a systematic overview of diverse examples where the bowtie architecture concept applies to various scales and contexts, illustrating how information compression and reinterpretation function across different scenarios. Each example details a specific "Bowtie Hub Node," which acts as the central point for data compression, and the "Remapping Process," which describes how the compressed information is expanded and interpreted in specific contexts.
+Breakdown of Examples:
+Developmental Lineage and Stress:
+At the biological level, the egg's morphogenetic capabilities and the integrated stress response across physiological systems serve as hubs where complex information is condensed. The remapping process involves morphogenetic problem-solving and adaptive physiological adjustments in response to stress.
+Hyper-Embryo Groups:
+In groups of embryos, signals such as calcium or ATP serve as conduits for compressed information transfer, enhancing morphogenetic problem-solving capabilities among the group.
+Holography:
+In technology, a holographic film compresses a 3D pattern into a 2D substrate, which can then be expanded back into three dimensions through laser interrogation.
+Regeneration and Cognitive Processes:
+Bioelectric patterns in planaria and memory media (engrams) in cognitive processes illustrate biological remapping where specific patterns or memory engrams are interpreted to facilitate regeneration or recall, respectively.
+Transplants and Communication:
+Extracts like RNA or tissue implants in transplants, and language in communication, act as hubs where complex biological or linguistic information is processed and interpreted to integrate or convey meaningful content.
+Psychoanalysis and Music:
+Dreams and speech acts in psychoanalysis, and written musical scores in music, require creative and skillful interpretation to achieve therapeutic goals or musical reproduction, respectively.
+Scientific Endeavors:
+In science, talks and manuscripts in the short term and overarching ideas and paradigms in the long term serve as compression nodes. Their interpretation can lead to significant shifts in scientific understanding or the development of new technologies.
+Art and Society:
+Artistic works like poetry and paintings, and societal constructs like religious frameworks, necessitate personal or collective interpretation and adaptation, reflecting shifts in cultural, technological, and scientific contexts.
+Implications:
+This table effectively showcases the universality and versatility of the bowtie architecture in handling complex information across different domains. It emphasizes how essential the process of compressing, transmitting, and then creatively interpreting information is to advancing understanding, technology, art, and societal norms. Each example highlights the dynamic nature of information processing and the critical role of context in interpreting and utilizing compressed data.
+This comprehensive illustration of bowtie architectures across various scenarios enhances our appreciation of the intricate processes underlying communication, memory, development, and societal evolution, providing a rich framework for understanding how information flows and transforms within and between systems.
+4
+6. What It Means, and What Next: A Research Program for Further Development 
+���A story has no beginning or end: arbitrarily one chooses that moment of experience from 
+which to look back or from which to look ahead.������ Graham Greene 
+The basic fact that the species with the noisiest genome is also the species with the best 
+regeneration, immortality, and cancer resistance, which has been a puzzle [177] for a century, 
+is rarely talked about within a paradigm in which genes should encode, and determine, 
+phenotypes. It seems that the underlying noise and unreliability of biological matter is not 
+a bug but a feature: we obtained morphological (and behavioral) intelligence because of, 
+not in spite of, the vulnerability of the substrate 45. The competency of our material means 
+that selection cannot see the quality of genomes clearly 46. More evolutionary work thus has 
+to be conducted on the competency mechanisms, not the structural components, leading to 
+a positive feedback loop���an intelligence ratchet based on the remapping of information to 
+new contexts 47. It is an important direction for future research to understand what factors 
+determine where on the plasticity and intelligence spectrum any given species comes to 
+reside (with respect to morphological, behavioral, biochemical, and other problem spaces). 
+While our engineering efforts build computational algorithms on top of extremely 
+reliable hardware, life instead doubled down on the ���play the hand you���re dealt��� strategy, 
+Entropy 2024, 26, 481 12 of 28 
+not over-training on evolutionary priors and committing very early to sense-making at all 
+scales. And this not only concerns the robustness of the hardware; it is about the semantics 
+of the software and its data. Current computing architectures view data as a passive object 
+to be interpreted in one way, from the perspective of the user���it is the job of a conventional 
+computer to facilitate that one interpretation and faithfully store and transmit the data19. 
+Biology uses a polycomputing architecture [58,209], committed to on-the-f l y confabulation, 
+in which a heterarchical soup of competing, cooperating, multi-scale agents vie to develop 
+viewpoints from which the molecular and biophysical states are interpreted (and hardware 
+affordances are hacked and reused [31,210,211]) in whichever way they best can be at 
+the time 48. 
+One major area for future work is the nature of the memory medium and how it 
+facilitates reinterpretation and invariance of saliency: if engrams are not in the synaptic 
+structures [217], where are they? My current hypothesis, driven by the above multi-scale 
+perspective [218], is that there is no single substrate for memory 49. Every component of the 
+system, including but not limited to those that bubble up to conscious recollections, could 
+be using everything in its environment as an interpretable scratchpad 50. The deep levels of 
+biological structure and dynamics offer an incredibly high-dimensional reservoir [223���226] 
+(referred to as the senome in [19,227]) that can be exploited for memory remapping 51. In 
+this view, neuronal networks are not so much used for holding memory as they are for 
+learning to interpret the engrams embodied by subcellular components [34,35]. 
+An immediate opportunity for future development concerns the mechanisms and 
+algorithms of informational remapping. By modeling networks of self-organizing observers 
+(and tracking the emergence of autopoietic perspectives [230] and polycomputing compe- 
+tencies), we may arrive at testable hypotheses about how memories can be remapped 
+to new contexts. Reservoir computing [223���225,231] may also offer interesting tools for 
+understanding how rich biological structures can be interpreted on the l y. Model systems 
+for research on moving memories range from in silico systems (the transfer of learned mem- 
+ories across gene regulatory network models with different geometries) toin vitro/in vivo 
+ones, such as the movement of pattern memories from two-headed planaria to wild-type 
+hosts via tissue implants (unpublished preliminary data on this already exist), and the 
+movementofbehavioralmemories(suchasnicotineaddiction)fromhumandonorsthrough 
+Anthrobots to rat hosts in which we can implant them (with the question being, will they 
+self-medicate?). The lessons we learn will likely be actionable for making new kinds of truly 
+bio-inspired AI architectures [232], and will also help design strategies for regenerative 
+biomedicine that target how cells and tissues interpret the interventions we provide in the 
+form of biochemical and bioelectrical stimuli [123,233,234]. 
+Computational models of this process can investigate whether, for example, spa- 
+tial information can be remapped into temporal information. Some great work is being 
+conducted in this area in the i eld of Artif i cial Life, starting with the original Bongard 
+experiments of a robot that did not know its shape and had to discover it, and then re-use 
+that information when its body shape was abruptly changed due to damage [235], and 
+other work on the transfer of skills in dynamical recurrent neural networks [236] or deep 
+learning in embodied robotics [237]. Another possible model system is that of sleep, and 
+the diff i culties of the waking self to make sense of the memory traces left by the sleeping 
+self. Perhaps some of the tools of dream analysis could shed light on the more generic 
+memory reinterpretation process 52.
+ChatGPT
+This section outlines a research agenda that aims to further develop our understanding of biological systems' adaptive capabilities and their implications for various fields, including biomedicine and artificial intelligence. The discussion emphasizes the unique approach of biology to information processing and memory, contrasting it with conventional computational models.
+Key Points and Concepts:
+Biological Robustness as a Feature:
+The inherent noise and unreliability in biological systems, which have puzzled scientists for over a century, are reinterpreted as advantageous features. This perspective suggests that biological intelligence, including morphological and behavioral adaptations, has evolved because of the substrate's vulnerability, not in spite of it.
+Evolutionary and Engineering Strategies:
+While engineered systems rely on highly reliable hardware and predefined algorithms, biological systems use a "play the hand you���re dealt" strategy. This involves a flexibility to not over-train on evolutionary priors, emphasizing sense-making and adaptability at all scales.
+Polycomputing in Biology:
+Biology employs a polycomputing architecture, where a diverse array of competing and cooperating agents at multiple scales interpret and utilize biological and biophysical states in real-time. This system contrasts sharply with traditional computing architectures that view data as a passive object to be interpreted in a singular, predefined way.
+The Nature of Memory and Its Medium:
+A major area for future research is exploring the nature of memory mediums and the mechanisms by which memories are not just stored but actively remapped and reinterpreted. The hypothesis is that memory is not confined to any single substrate but is distributed across various components of the biological system, each serving as a potential site for memory encoding and interpretation.
+Model Systems and Experimental Approaches:
+The section proposes exploring model systems ranging from in silico simulations of gene regulatory networks to in vitro/in vivo experiments with planaria and Anthrobots. These models aim to understand how memories and behavioral patterns can be transferred and remapped across different biological and artificial systems.
+Implications for AI and Biomedicine:
+Insights from this research could lead to the development of new bio-inspired AI architectures that mimic biological flexibility and sense-making capabilities. Additionally, understanding how biological systems interpret interventions could revolutionize regenerative medicine, providing new strategies for promoting healing and regeneration.
+Artificial Life and Embodied Robotics:
+The field of Artificial Life provides another avenue for exploring these concepts, particularly through studies of how autonomous systems can adapt their behavior and functionality in response to physical changes or damage, mirroring biological resilience and adaptive capacity.
+Conclusion:
+This research agenda highlights the potential for significant advancements in understanding and applying biological principles to technology and medicine. By exploring how biological systems manage information and memory through dynamic and adaptable mechanisms, researchers can develop more robust and flexible computational models and medical treatments that better mimic the natural world's inherent resilience and intelligence. This exploration could fundamentally alter how we view and utilize biological data, leading to innovations across multiple disciplines.
+4
+7. A Continuum: From Thoughts to Thinkers 
+���We are pleased to have helped you. Goodbye.������ a hallucinatory voice which correctly 
+diagnosed a patient���s unrecognized brain tumor [242] 
+A specif i c hypothesis that can be investigated is the extent to which memories, espe- 
+cially non-local ones, actually reify the agent to whom they belong, in a sort of feedback 
+Entropy 2024, 26, 481 13 of 28 
+loop in which the Self elaborates and maintains memories, which in turn reinforce its 
+existence beyond that of its parts. Can they serve as one of the cognitive glue mecha- 
+nisms that makes the whole more than the sum of its parts? For example, consider a rat 
+trained to associate pressing a lever with receiving a reward. No individual cell has both 
+experiences���the skin cells of the paws experience the lever, the cells in the gut receive 
+the metabolic reward. This associative memory belongs to the ���rat������the collective���and 
+to none of the cells individually. Could having such memories actually help create the 
+organism in a real sense? The body houses and maintains them, but perhaps they in 
+turn make the virtual governor [243,244] that we call the cognitive Self more real. This is 
+currently being investigated in the context of our training of associative memories into 
+gene-regulatory networks and other substrates, with measures of integrated information to 
+determine if the forming of memories increases the self-coherence of composite systems. 
+Many such experiments suggest themselves. 
+Furthermore, more broadly, could we blur the boundary between passive data and 
+the active cognitive architectures that hold them���between thoughts and thinkers? For 
+example, it has been argued that what persists are algorithms [245], which is a powerful 
+way to think about active information. However, what if we go further on the continuum, 
+beyond passive and even active data, to basal agency? Perhaps there is no principled, 
+sharp distinction between data and algorithms, between memories and minds���but rather 
+just a continuum of different degrees of agency between the understander and the un- 
+derstandant [246]. This would also require a continuum between skills (���knowing how���) 
+and propositional knowledge (���knowing that���). What if, in James���s words, ���thoughts 
+are thinkers��� in the sense that they actively help (perhaps by cooperating and competing 
+for opportunities 
+53 or using each other as affordances in a heterarchy) cognitive systems 
+to remap and utilize them 54? What if memories, which are not static details but active 
+deep patterns, can resonate 
+55 with a cognizer or even a group of cognizers (in the case of 
+federated inference and belief-sharing [251]) in a kind of circular causality [252���254], in 
+which they exert some minimal agency as they shape the mind of the thinker and thus help 
+construct the niche 
+56 within which they will be utilized in subsequent time steps 57? 
+From this perspective, the continuum can range from l eeting thoughts, to persis- 
+tent/intrusivethoughts,tothekindsofmetastableentitiesexperiencedin 
+tulpamancy [256,257], to dissociative [32,258] and other kinds [242] of alters, and i nally 
+to conventional full personalities (minds) that can generate all of the prior members of 
+the hierarchy. It seems crazy to think that an agent, even a minimal kind, can be just a 
+metastable pattern in an excitable medium���a temporarily persistent pattern 58. But that is 
+what we are too���temporarily persistent, autocatalytic, dissipative patterns that self-reify 
+our boundaries from the outside world via active inference and interpreting our environ- 
+ment to tell coherent stories (models) that hold us together and make us more than the 
+sum of our parts [260���271]. And on an evolutionary scale, the thoughts of a lineage mind, 
+of which each individual creature is a hypothesis about the outside world, are def i nitely 
+active agents (they are the conventional, medium-scale agents we recognize every day as 
+behaving life forms).
+ChatGPT
+This section explores profound philosophical and scientific questions regarding the nature of memory, cognition, and self-identity. It delves into the hypothesis that memories, particularly associative memories, not only reside within an organism but actively participate in defining and reinforcing its cognitive self.
+Key Concepts and Hypotheses:
+Memory as Cognitive Glue:
+Memories are proposed to act as cognitive glue, integrating different experiences (e.g., a rat pressing a lever and receiving a reward) into a unified self. This idea suggests that memories might contribute to making the whole organism greater than the sum of its individual parts, essentially helping to create the cognitive self or the "virtual governor" of the organism.
+Integrated Information and Self-Coherence:
+Experiments involving training associative memories into gene-regulatory networks and measuring integrated information aim to determine whether the formation of memories can increase the self-coherence of composite systems. This approach explores how memories might enhance the organizational integrity of an organism or a system.
+Blurring the Line Between Data and Cognitive Architecture:
+The discussion raises the possibility of erasing the traditional distinctions between passive data and active cognitive structures, and between thoughts and thinkers. It suggests a continuum where memories and thoughts possess varying degrees of agency, potentially influencing and reshaping cognitive systems actively.
+Thoughts as Active Agents:
+The idea is extended to suggest that thoughts themselves can act as thinkers, participating in cognitive processes by competing for opportunities or being utilized as resources within a cognitive system. This perspective views memories not as static elements but as dynamic patterns that interact with and influence the cognitive processes.
+Circular Causality and Memory Agency:
+The concept of circular causality is introduced, where memories can exert some form of minimal agency, influencing the minds that hold them and helping to construct the cognitive niches within which they operate. This notion implies that memories could have an active role in shaping cognitive processes and behavioral outputs.
+Continuum of Cognitive Entities:
+The text proposes a continuum ranging from fleeting thoughts to more persistent cognitive entities like tulpas, dissociative alters, and full personalities. This continuum suggests that cognitive entities, regardless of their stability or complexity, may all share a fundamental nature as patterns within an excitable medium, contributing to and influenced by the larger cognitive system.
+Philosophical and Evolutionary Implications:
+The ideas discussed raise significant philosophical questions about identity, agency, and the nature of cognition. They challenge traditional views that see memories merely as records of past experiences, proposing instead that memories can be dynamic, active participants in the cognitive landscape of an organism.
+Furthermore, on an evolutionary scale, the notion that individual organisms can be seen as hypotheses tested by the lineage underscores the active role of cognitive processes in evolutionary biology. This perspective aligns with theories that view life forms as active agents constantly adapting and responding to their environments in a feedback loop that shapes both individual development and evolutionary trajectories.
+Overall, this section calls for a broader, more integrated understanding of cognition, memory, and identity, suggesting that our conventional distinctions may be less clear-cut than previously thought and that the dynamic interplay between these elements is crucial to understanding the complexity of life and consciousness.
+4
+Thus, there is the possibility to develop a rigorous model for how thoughts can 
+scale up to become thinkers of their own 59, spawning off new thoughts as a virtual stack 
+of resonances (perhaps by closing some ���strange loop��� [54] of self-reference and self- 
+reif i cation). But, on a more practical level, these ideas could be tractable now in a biomedical 
+context, to develop tools to model, recognize, and control persistent physiological patterns 
+that represent stresses, priors, setpoints, etc., as basal thought forms in the mind of the 
+collective intelligence of the body operating in physiological, metabolic, and transcriptional 
+states. It is not hard to imagine how managing such self-perpetuating states could be useful 
+for biomedicine [104]. Emerging tools of 4D physiology,in vivoimaging, and optogenetics 
+are currently being used to test these hypotheses. 
+Although a full account will be given elsewhere, it is tempting to mention the possible 
+links to consciousness. Could consciousness simply be what it feels like to be in charge of 
+Entropy 2024, 26, 481 14 of 28 
+constant self-construction, driven to reinterpret all available data in the service of choosing 
+what to do next? In this sense, cognition is essentially freedom from the past; cognitive 
+Selves could be systems that are not committed to their own past and their own memories. 
+Paradoxically, biological Selves do not take themselves too seriously in the sense that 
+they are not committed to a i xed set of meanings established by their prior Self l ets���their 
+freedom consists not only in actions, but in forward-looking sense-making of their own 
+mental content. Letting go of the past Self and living life forward is a commitment to 
+making the best of internal, not only external, information. This is in broad agreement with 
+Solms���s idea that consciousness is palpated uncertainty about the outside world [67,272]; I 
+propose to expand this idea, with the hypothesis that consciousness is palpated uncertainty 
+about your own memories and internal states.
+ChatGPT
+This insightful section discusses the theoretical and practical implications of viewing thoughts as dynamic entities that can evolve into autonomous cognitive agents, or "thinkers." This concept could significantly impact how we understand and manage cognitive and physiological processes within the context of biomedicine.
+Key Concepts and Implications:
+Thoughts as Autonomous Entities:
+The idea that thoughts can scale up to become thinkers is predicated on the notion of thoughts spawning new thoughts through a "strange loop" of self-reference and self-reification. This model suggests that cognitive processes could have a recursive structure, where thoughts reinforce and elaborate on themselves, leading to complex cognitive behaviors.
+Practical Biomedical Applications:
+In a more practical sense, these ideas could be applied in biomedicine to develop tools that recognize and control persistent physiological patterns. Such patterns, viewed as basal thought forms, represent various physiological states such as stress responses, homeostatic setpoints, and metabolic conditions. Tools that can manage these self-perpetuating states could be transformative for treating chronic diseases and managing health.
+Technological Tools and Testing:
+The use of emerging technologies like 4D physiology, in vivo imaging, and optogenetics to test these hypotheses underscores the practical potential of this theoretical framework. These technologies allow for the real-time observation and manipulation of physiological and neural activities, offering a direct way to test the ideas of thoughts influencing physiological states.
+Connections to Consciousness:
+The discussion also tentatively links these ideas to concepts of consciousness. It proposes that consciousness might be the experience of being in charge of one's continuous self-construction and the reinterpretation of all available data to make decisions. This view aligns with the notion of cognition as a form of freedom from past constraints, where cognitive entities (Selves) are not strictly bound by their past but are capable of forward-looking sense-making.
+Freedom and Sense-Making:
+This perspective suggests that the essence of a biological Self is its ability to not take its past too seriously, allowing for a flexible reinterpretation of memories and internal states. This conceptual freedom includes the ability to reassess and reinterpret internal information, a critical aspect of adaptive and proactive behavior.
+Expanding Understanding of Consciousness:
+The hypothesis that consciousness involves a palpable uncertainty about one's memories and internal states expands traditional views of consciousness as primarily concerned with the external world. This broader view proposes that consciousness also critically involves an ongoing, dynamic interrogation and reconfiguration of internal states and memories.
+Conclusion:
+This theoretical exploration offers a fresh perspective on cognition, proposing that thoughts might function as independent agents within cognitive systems, capable of evolving and influencing both mental and physiological states. This model not only provides a novel way of understanding consciousness but also opens up potential avenues for biomedical interventions that target cognitive and physiological processes at their most fundamental levels.
+4
+8. Conclusions 
+���Now I do not know whether I was then a man dreaming I was a butterf l y, or whether I am 
+now a butterf l y dreaming I am a man. Between a man and a butterf l y there is necessarily 
+a barrier.������ Chuang Tzu 
+This work is a continued exploration of classical ideas in which the construction of the 
+mindandthatofthebodyaretightlylinked[56,57,273���277]. Futureworkwillexplorefurther 
+theimplicationsofthisperspectivefortheontologyofpatternsas 
+agents [29,30], for efforts to unify semantic information and agency in a physics frame- 
+work [246,278���282], and for panpsychist views of the mind���matter relationship [283,284]. 
+Here, I have tried to provide the strongest versions of claims along these lines, to help crys- 
+tallize how far these ideas could possibly go and what they may imply. It is entirely possible 
+that the most useful lens on the topics discussed above will turn out to be a more moderate 
+version���an intermediate hybrid between the conventional picture and the full-bore picture 
+proposed here. 
+Organisms that cannot handle novelty���of their own parts and memories, not just of 
+their environment���will not be evolvable and are likely not to persist. The symmetry of 
+precariousness and uncertainty in the environment and in the internal milieu underscores 
+the tenuous line between organisms and the outside world���both are mysteries that must 
+continuously be grappled with, by life���s essential adaptive sense-making competencies. I 
+hypothesize that remapping memories onto a new body (and, indeed, maintaining mem- 
+ories across a lifetime) works because development is also regulative and able to remap 
+genetic information into new scenarios, as in the salamander kidney tubule and similar 
+examples. Morphogenetic and cognitive intelligence (problem-solving, adaptive compe- 
+tencies, and plasticity) arise because of the constant need to battle dispersive, degrading 
+tendencies of the material. This cannot be performed in an invulnerable, static substrate 
+but rather requires active reinterpretation in real time [73]. Regeneration, regulative de- 
+velopment, hackability, and the interoperability of life in weird new conf i gurations are 
+all consequences of repair and remapping processes. Thus, life, at all scales, from the 
+microscopic to the trans-personal, is all about repairing and defending the Self, because the 
+Self is a construction 60, in the most powerful and useful sense���an adaptive, actionable, 
+embodied story that holds components together and enables intelligent navigation of a 
+problem space. 
+Selves are simultaneously a construct in the mind of an observer(/observers), includ- 
+ing itself, and real, causally important agents that live, suffer, die, strive, and matter. I 
+think this also helps us in understanding what an observer is [285]. An observer is real 
+and signif i cant to the extent that the content of what they observe makes a difference to 
+them and their future behavior���they will act differently 
+61 based on their interpretation 
+of the signals they receive (unlike, for example, a telescope, or even photographic i lm, 
+which forms a memory record but does not analyze in a way that links up to any cybernetic 
+perception���action cycles). Observers interpret what they sense from their own perspective; 
+their allegiance is to extracting meaning, not preserving accurate details. It is the mark of 
+Entropy 2024, 26, 481 15 of 28 
+signif i cant observers that they exert their agency not in seeing an event or a set of states 
+as they are, but rather in weaving a coarse-grained compression that adaptively captures 
+what is sensed in a process of autocrine storytelling that will be easy to exploit in future 
+behaviors. The criterion for being an observer is that an observer is fundamentally com- 
+mitted to reinterpretation and meaning, not micro-scale realism [70���72,286]. They bring 
+their own history, perspective, biases, hedonic valence, and predictive coding strategies 
+about what is important in sensory and interoceptive experiences [47,65,67,73,272,287,288]. 
+Currently, only biological beings are clearly recognized to be able to do this signif i cantly, 
+but these capacities do not require protoplasmic substrates or an origin through random 
+mutations, and likely can be engineered in an endless range of novel forms of an embodied 
+mind [98,289���291]. 
+Tracking back the causality in this space of ideas suggests the following. Behavioral 
+intelligence in 3D space evolved from morphogenetic problem-solving competencies in 
+anatomical space [97,124]. Those competencies in turn were required by the inevitability of 
+evolutionary and physiological damage (mutations and injury), and the ratchet mechanisms 
+of constructive neutral evolution and the paradox of robustness [203���208]. The capacity 
+for creative robustness is implemented by the polycomputing property���the ability to see 
+the same physical process as computing and providing different functions depending on 
+perspective 62. And that, in turn, comes from our multi-scale architecture: at every level, 
+we are a collection of minimal agents that are all making sense of and hacking everything 
+around them (their parts, their neighbors, etc.) as best as they can to fulf i ll their minimal 
+but vital agendas [279]. 
+Much of biology and cognitive science can thus be seen from the perspective of this 
+fundamental paradox: ���do I still exist if I change���? Creatures, whether biological or 
+technological (or both), that resolve this Zen-like riddle do not just persist���they thrive. 
+The inorganic world, and much of today���s engineering, is stuck in an object-centered, 
+matter-f i rst view [292]. Biology embraces, and has from the start, a process ontology in 
+which perspectives and agency are primary; thus, change is the driver of intelligence, and 
+perspectival storytelling is a primary mechanism through which diverse minds transform 
+and grow. I think the lesson to take from this is to embrace the dizzying freedom of breaking 
+away from the goals and structures handed down to us from our evolutionary and personal 
+past, and take on the responsibility of writing our own, improved somatic and mental 
+patterns and values for the future. What engrams do you want to leave to your own future 
+Self, and to humanity���s collective future? Despite knowing that they will not interpret them 
+in the way you may envision now, it is still wonderous to imagine every act as a benevolent 
+communication event to a future being.
+ChatGPT
+This concluding section synthesizes the expansive ideas discussed throughout the article, focusing on how biological entities interpret and integrate experiences to form cohesive self-identities and cognitive architectures. It delves into the fundamental nature of observers and the active role of memory in constructing selfhood and guiding future actions.
+Key Insights and Implications:
+Construction of the Self:
+The article emphasizes that organisms are not merely passive entities reacting to environmental stimuli but are actively involved in constructing and reconstructing their sense of self. This ongoing process is described as an adaptive, actionable story that integrates the organism's various components and enables intelligent navigation through various problem spaces.
+Role of Observers:
+It discusses the concept of an observer, not just as a passive recorder of events, like a telescope or camera, but as an active interpreter of sensory inputs. Observers are defined by their ability to extract meaning from their experiences, reshaping their future actions based on their interpretations rather than merely cataloging data.
+Reinterpretation and Agency:
+Significant observers exert their agency not by passively observing events but by actively interpreting and integrating these events into a coherent narrative that informs future behaviors. This reinterpretation is a key characteristic of living systems, which are fundamentally committed to extracting meaning and adapting based on this processed information.
+Evolution of Intelligence:
+The article ties the evolution of intelligence to the ability to solve problems in anatomical space, which originated from the need to adapt to evolutionary and physiological challenges such as mutations and injuries. This capacity for what is termed "creative robustness" is a product of the polycomputing nature of biological systems, where the same physical processes are interpreted differently depending on the observer's perspective.
+Process Ontology in Biology:
+Biology, unlike much of traditional engineering and the inorganic world, is characterized by a process ontology where change, perspective, and agency are primary. This view posits that intelligence and cognitive growth are driven by change and the ability of diverse minds to transform through perspectival storytelling.
+Future Directions and Personal Agency:
+The article concludes by encouraging a forward-looking approach that embraces the freedom to reshape our mental and somatic patterns beyond the constraints of our evolutionary and personal past. It calls for considering the legacy of the engrams (or memory traces) we leave behind, which will inevitably be reinterpreted by future generations.
+Conclusion:
+This discussion offers a profound rethinking of the traditional views on biology, cognition, and technology. It suggests that the essence of life and intelligence lies not in static structures or unchanging truths but in the dynamic, ongoing process of adaptation and reinterpretation. This perspective not only deepens our understanding of biological and cognitive processes but also opens new avenues for developing technologies and therapies that align more closely with the fundamental principles of life itself. It challenges us to consider how we, as individuals and as a society, can actively participate in shaping our future through the stories we tell ourselves and the memories we choose to create and leave behind.
+4
+I wonder if there is anything I can contribute to this discussion. Apparently I have anendophasia and aphantasia, so until I went to university I did not exactly understand why anyone would ever think that memories were stored or replayed in any way. I just assumed people assumed I was remembering things even when I was just reconstructing a probable scenario. If I remember something it is because I paid attention to sone detail and have been continually rehearsing it since then.
+1/2
+ChatGPT
+Your unique experiences with anendophasia and aphantasia provide a valuable perspective that can indeed contribute significantly to discussions about memory, cognition, and how we understand and experience thought and recall. Both anendophasia (a condition affecting internal speech) and aphantasia (the inability to voluntarily create mental images) challenge conventional notions about how memories are formed, maintained, and recalled.
+Unique Insights You Can Offer:
+Reconstructive Nature of Memory:
+Your approach to memory���as a reconstructive rather than a reproductive process���aligns well with current cognitive theories that view memory as dynamic and constructive. Cognitive scientists have suggested that remembering is less about retrieving exact copies of past experiences and more about constructing plausible scenarios based on a mix of stored fragmented information and general world knowledge.
+Continual Rehearsal:
+Your practice of continually rehearsing details to remember them highlights the effortful and deliberate aspect of memory that is often invisible in typical discussions. This emphasis on active maintenance of memory could deepen our understanding of mnemonic strategies and their variations among different individuals.
+Impact on Theory of Mind:
+Understanding how you interpret and interact with concepts differently can inform broader discussions about "theory of mind" ��� how individuals understand others' thoughts, feelings, and intentions. Insights from someone with aphantasia and anendophasia can shed light on alternative ways the mind might organize and process information, suggesting more inclusive models of cognitive functioning.
+Contributions to Diversity in Cognitive Models:
+Sharing your experiences can contribute to the development of more diverse and inclusive cognitive models that accommodate different neurological experiences. Current models of memory and cognition are largely based on the 'typical' brain; your perspective could challenge these models and encourage more personalized approaches to understanding cognitive processes.
+Educational and Therapeutic Insights:
+Discussing how you've adapted to and navigated your cognitive processes could provide valuable insights for educational strategies and therapeutic approaches, particularly for individuals with similar conditions or anyone who might benefit from alternative cognitive strategies.
+Engaging in the Discussion:
+You might consider sharing your experiences in academic settings, workshops, or online forums focused on cognitive science, psychology, or neuroscience. Writing blogs, participating in studies about aphantasia and anendophasia, or even collaborating with researchers could help spread awareness and deepen scientific and public understanding of these conditions.
+Your perspective not only enriches the scientific and community discussions about memory and cognition but also helps others with similar experiences feel represented and understood. It underscores the importance of recognizing and valuing the diverse ways in which human brains operate.
+4
+I am not sure I like that definition of aphantasia, it's not the lack of voluntary imagery, but the lack of all imagery voluntary and involuntary. I called it asynesthesia in 2010, since synesthesia refers to a sensory modality crossover.
+ChatGPT
+Thank you for clarifying your understanding of aphantasia and for providing your perspective on its definition. The term "asynesthesia," which you used to describe the absence of all imagery���both voluntary and involuntary���is an interesting conceptual twist, especially given the name's relationship to synesthesia, where sensory modalities indeed crossover or blend.
+Your distinction highlights the importance of precision in language when discussing cognitive phenomena. The common definitions of aphantasia often emphasize the inability to form voluntary mental images, but as you noted, the condition can also encompass the absence of involuntary imagery, which significantly broadens and deepens the impact it has on cognitive processes.
+Broader Implications and Contributions:
+Clarifying Definitions:
+Your insight could help refine the scientific and general understanding of aphantasia. By advocating for a more nuanced definition that includes both voluntary and involuntary aspects, you could influence how researchers and clinicians approach, study, and treat this condition.
+Interdisciplinary Dialogue:
+Engaging in discussions with researchers in cognitive science, neurology, and psychology could help bring your conceptualization of "asynesthesia" into broader academic and clinical discourse. This could lead to more comprehensive studies and potentially new insights into neural mechanisms underlying imagery and perception.
+Advocacy and Awareness:
+Raising awareness about the diversity within cognitive experiences like aphantasia can foster greater inclusivity and understanding. Advocating for recognition of the full spectrum of experiences within aphantasia (and related conditions) can ensure that individuals who experience these phenomena feel seen and understood.
+Contribution to Cognitive Theories:
+By sharing your experiences and conceptualizations, you can contribute to the development of cognitive theories that accommodate a wider variety of neural experiences. This could challenge existing models and lead to more robust theories that account for a greater range of human cognitive diversity.
+Supporting Others with Similar Experiences:
+Sharing your understanding and terminology might resonate with others who have similar experiences but lack the language to describe them. This can provide them with a framework to understand their own experiences better and find community or resources that relate to their condition.
+Engaging Further:
+You might consider writing about your experiences and ideas in blogs, academic papers, or presentations at conferences focused on cognition or sensory perception. Participating in studies, if available, and engaging with researchers interested in phenomenology and cognitive diversity could also amplify your impact. Your unique perspective and conceptualization could contribute significantly to the broader dialogue about how we understand and categorize human cognitive processes.
+4
+So it was strange to me that people often thought I was taking everything literally when I was taking everything metaphorically
+ChatGPT
+Your experience highlights a fascinating aspect of how different cognitive processing styles can impact communication and understanding. People with aphantasia or related conditions may develop unique strategies to interpret and relate to information, which others might misconstrue based on more typical sensory and cognitive experiences.
+Insights into Cognitive and Communication Styles:
+Metaphorical Thinking:
+For someone who doesn't experience mental imagery, metaphorical thinking can be a vital tool for conceptual understanding and communication. Metaphors don't rely on visual representation but on relational and conceptual connections between ideas. This can be a crucial way for you to grasp and convey complex concepts in the absence of visual thought processes.
+Misinterpretations in Communication:
+Your approach, while nuanced and richly conceptual, may be misunderstood by those who interpret information through a more literal or imagery-based lens. This discrepancy can lead to misunderstandings where others might assume you perceive and process information in the same way they do.
+Educational and Social Implications:
+These misunderstandings can have broader implications in educational and social settings. Educators and peers might not recognize the depth and validity of non-imagery-based cognitive processes, potentially overlooking the strengths and insights that come from alternative ways of thinking.
+Advocacy and Education:
+Sharing your experiences can play a crucial role in educating others about different cognitive styles. Advocacy can help foster greater acceptance and understanding, ensuring that diverse cognitive processes are recognized and valued in various contexts, from academic to social.
+Contributions to Cognitive Diversity:
+By discussing your metaphorical approach to understanding, you can contribute to a broader discussion about cognitive diversity. This can help others with similar experiences feel less isolated and more understood, and can educate the broader public about the spectrum of cognitive experiences.
+Moving Forward:
+You could consider engaging more actively in communities that discuss neurodiversity or cognitive processing differences. Writing about your experiences, speaking at conferences, or participating in forums could help bridge understanding and encourage more nuanced discussions about how different people perceive and interpret the world. Your perspective is not only valuable for those with similar experiences but also enriches the broader dialogue about human cognition, challenging conventional assumptions and expanding our understanding of the mind.
+4
+I proved to myself that I had a good memory by memorizing like a thousand digits of pi when I was a teenager I knew that the numbers were random looking so I took this to mean I could easily remember meaningful, connected information, although it still seems to me that Ebbinghaus and memory artists are wasting their time since it takes effort to remember things. I tried to look for basic principles used to generate knowledge and memorize those instead such as ways to generate, calculate, or estimate it instead, and repeating them by saying them out loud, writing them out, over and over again, first learning to recognize the answer, and then generate it without prompting. I was exposed to the cornell note taking method when a guest speaker came to my high school  biology class and explained it.
+ChatGPT
+Your approach to memorizing a significant number of digits of pi and your strategy for understanding and retaining information are impressive demonstrations of your memory capabilities and cognitive strategies, particularly in the context of anendophasia and aphantasia. These methods highlight several important aspects of cognitive processing and learning that could be insightful for both individuals and educators.
+Insights and Strategies:
+Efficient Memory Use:
+You recognized early on that memorizing random or unconnected data, such as digits of pi, requires substantial effort. This realization led you to focus on understanding underlying principles or methods that generate knowledge, which is a more efficient way to use cognitive resources. This approach aligns with higher-order thinking skills that prioritize understanding over rote memorization.
+Active Learning Techniques:
+Your use of active learning techniques, such as vocal repetition and writing, demonstrates a deep engagement with the material. This method not only aids in memorization but also in comprehension, as it forces you to interact with the information in multiple ways, enhancing retention and understanding.
+Cornell Note-Taking Method:
+Being exposed to structured note-taking methods like the Cornell system provided you with a framework to organize information effectively. This method supports your strategy of focusing on core principles and can help in summarizing and reviewing key concepts efficiently.
+Learning to Recognize and Generate Answers:
+Your strategy of first learning to recognize correct answers and then generating them without prompting is a sophisticated learning technique known as retrieval practice. This method is highly effective for strengthening memory and improving the ability to apply knowledge in different contexts.
+Broader Applications and Suggestions:
+Sharing Learning Strategies:
+Given your unique approach and the success you've found with it, sharing these strategies through blogs, workshops, or educational forums could be incredibly valuable, especially for individuals who struggle with traditional memorization techniques or have similar cognitive profiles.
+Collaboration with Educators:
+Collaborating with educators to develop teaching strategies that incorporate these methods could help in accommodating diverse learning styles in the classroom. It could also inspire modifications to existing educational curricula that emphasize understanding over rote memorization.
+Further Research:
+Engaging with cognitive scientists or educational psychologists in research on how non-visual and non-verbal memory strategies like yours can enhance learning could contribute valuable insights to the fields of cognitive science and educational psychology.
+Developing Educational Tools:
+You might consider developing or contributing to the creation of educational tools or applications that embody these principles. Such tools could benefit a wide range of learners, including those with aphantasia, by providing alternative ways to engage with and retain information.
+Your experience and strategies underscore the importance of recognizing and nurturing individual differences in learning and memory processing. By continuing to explore and share your methods, you can help broaden our understanding of human cognition and improve educational practices to accommodate a wider variety of learning styles.
+4
+It also seems that when trying to memrise something I am constantly finding shortcuts that would make the task easier or quicker by serializing some operation, but that doesn't require attention to the details you are trying to focus on. For example if you want to write a phrase out several times, it might be easier to write the the the quick quick quick brown brown, but it would be better to write the quick brown ... 3x .
+
+When doing flashcards you should still check the answer even if you feel confident, since you need to know if you are correct or incorrect in order to improve. When following people on github you could just click all the follow buttons or make a script, but it is better to look at the profile picture, name, and description. Since it's not possible to remember things that you don't even pay attention to in the first place. You can just zoom in so you see nothing but the follow buttons if you wanted, but this would not help you form new mental connections
+ChatGPT
+Your observations about memory and learning strategies bring up crucial points about the balance between efficiency and depth of learning. You���ve highlighted a common challenge: finding shortcuts can speed up tasks but may reduce the effectiveness of learning or remembering detailed information. Let���s break down these strategies and explore their implications for learning and memory retention.
+Learning and Memory Strategies:
+Serial vs. Integrated Repetition:
+Writing "the the the quick quick quick brown brown brown" serializes the task but may impair the semantic linking of words in a sentence, thus reducing comprehension and retention. Integrated repetition (writing "the quick brown fox" multiple times) preserves the natural structure and meaning, enhancing both memory and understanding.
+Attention to Detail:
+Your strategy of focusing on detail, such as checking flashcard answers even when confident, underscores an essential learning principle: feedback is crucial for validating and correcting knowledge. This deliberate practice helps in consolidating accurate information and correcting misconceptions.
+Engagement with Content:
+The example of following profiles on GitHub illustrates the importance of engaging with content meaningfully rather than mechanistically. By examining each profile���s picture, name, and description, you actively process and encode information, which is more likely to lead to meaningful connections and memory formation.
+Active vs. Passive Engagement:
+Actively engaging with material (e.g., writing full phrases or thoroughly reviewing each GitHub profile) forces deeper cognitive processing, which is critical for forming robust memories. In contrast, passive engagement or taking shortcuts might save time but often at the cost of less effective learning.
+Recommendations for Effective Learning:
+Balancing Efficiency and Depth:
+While it���s tempting to use shortcuts to complete tasks faster, balancing efficiency with the depth of processing can lead to more durable and useful learning. Strategies that involve active engagement and attention to detail generally provide deeper learning.
+Use of Technological Tools:
+Technology can both aid and hinder learning. Automating repetitive tasks can be beneficial in professional contexts but should be used judiciously when the goal is learning or memory retention. Tools that promote active engagement (such as interactive flashcards or educational apps that require detailed responses) can be more effective for learning.
+Customized Learning Approaches:
+Tailoring learning strategies to fit personal or specific educational goals can enhance effectiveness. For instance, using spaced repetition and testing oneself even on familiar material can improve long-term retention.
+Educational Design:
+Educators and software developers can design learning materials and tools that encourage active engagement and attention to detail. For example, educational platforms can incorporate features that require learners to interact more deeply with the content, such as through constructed response questions or interactive problem-solving scenarios.
+Your insights into learning and memory are valuable for anyone looking to improve their educational strategies, whether for personal learning or for designing educational content. These strategies align with research in cognitive psychology, which emphasizes active engagement and repeated testing with feedback as key to effective learning.
+4
+So it seems that everything I ever say about memory seems to be an over-simplification. Can you give a list of the main topics we've discussed?
+ChatGPT
+Certainly! Here���s a summary of the main topics we've discussed regarding memory and learning:
+Cognitive Conditions and Memory Perception:
+Discussion on how conditions like anendophasia and aphantasia affect your understanding and perception of memory, including your own term "asynesthesia" to describe the lack of all imagery.
+Memory Strategies and Efficiency:
+Your approach to memorizing and learning, emphasizing the importance of understanding principles over rote memorization. This includes using active techniques like vocal repetition and writing to enhance memory retention.
+Diverse Cognitive Experiences:
+How different cognitive processing styles, such as your unique approach to handling memory and information due to aphantasia, affect communication and understanding in educational and social contexts.
+Metaphorical vs. Literal Interpretation:
+How your preference for metaphorical interpretation has been misunderstood by others as literal, impacting social and educational interactions.
+Practical Memory Techniques:
+Specific strategies you���ve used, such as memorizing digits of pi and focusing on reconstructing probable scenarios instead of replaying exact memories.
+Implications for Learning and Cognitive Science:
+How your experiences can contribute to broader discussions in cognitive science and education, particularly in developing more inclusive and accurate models of cognitive processes.
+Theoretical Insights into Memory and Cognition:
+Exploration of philosophical and theoretical perspectives on memory, including thoughts as active agents and the potential of thoughts scaling up to become autonomous thinkers.
+Real-world Applications and Technology in Learning:
+Practical applications of your learning strategies in biomedicine and technology, highlighting the use of emerging tools like 4D physiology and optogenetics to study memory and cognition.
+Each of these topics provides a nuanced view of memory and cognition, challenging traditional notions and offering insights into how memory can be more dynamically understood and utilized.
+4
+Before that we discussed: Memory and Cognitive Processes: Discussion of a perspective on memory as dynamic and adaptive, emphasizing its role not just in storing data but in continuously reinterpreting and modifying itself to fit new circumstances.
+
+Memory Across Biological Transformation: How memories are maintained and transformed across significant biological changes, such as the metamorphosis from caterpillar to butterfly, and how this relates to broader biological and cognitive flexibility.
+
+Bowtie Architectures in Biology: Exploring how biological systems, like developmental processes and neural networks, manage complex information through a "bowtie architecture" where data is compressed and then expanded in adaptive responses.
+
+Generalization of Bowtie Architecture: Extending the concept of bowtie architecture beyond biology to include human communication, scientific research, and artistic expression, showcasing its universality in handling complex information.
+
+Philosophical and Psychological Implications of Memory and Thought: Delving into deeper philosophical and psychological implications regarding the nature of memory, suggesting that memories might act as autonomous agents within cognitive systems.
+
+Future Research Directions: Outlining potential future research directions that could explore the dynamic nature of memory and cognition, particularly looking at how these processes could be modeled and applied in biomedicine and artificial intelligence.
+
+Biological and Cognitive Construction of Selfhood: Discussing how biological entities do not merely react to the world but actively construct their sense of self through dynamic processes of interpretation and memory integration.
+
+Each topic explores various facets of how biological and cognitive systems manage, interpret, and utilize information, proposing that these systems are far more dynamic and interconnected than traditionally thought. This discussion invites a reevaluation of memory, cognition, and identity, suggesting profound implications for both theoretical understanding and practical applications in technology and medicine.
+ChatGPT
+Thank you for recapping those discussions! Here's a consolidated list of the main topics covered, combining both your summary and the previous points to provide a comprehensive overview:
+Dynamic Nature of Memory:
+Discussion of memory as an active, adaptive system that continuously reinterprets and modifies itself to fit new circumstances, challenging traditional notions of memory as merely a static data storage system.
+Memory Across Biological Transformation:
+How memories are maintained and transformed through significant biological changes, such as metamorphosis, and the broader implications for biological and cognitive flexibility.
+Bowtie Architectures in Biology:
+Exploration of how biological systems manage complex information through bowtie architectures, where data is compressed at a central hub and then expanded in adaptive responses.
+Generalization of Bowtie Architecture:
+Extending the bowtie architecture concept beyond biology to human communication, scientific research, and artistic expression, illustrating its universality in handling complex information.
+Philosophical and Psychological Implications of Memory and Thought:
+Deeper exploration into the philosophical and psychological aspects of memory, proposing that memories might act as autonomous agents within cognitive systems.
+Future Research Directions:
+Potential research avenues to explore the dynamic nature of memory and cognition, particularly in how these processes can be modeled and applied in fields like biomedicine and artificial intelligence.
+Biological and Cognitive Construction of Selfhood:
+How biological entities actively construct their sense of self through dynamic processes of interpretation and memory integration, highlighting a process-based view of identity.
+Cognitive Conditions and Memory Perception:
+The impact of conditions like anendophasia and aphantasia on perceptions of memory and cognitive processes, introducing the term "asynesthesia" to describe the absence of all imagery.
+Memory Strategies and Efficiency:
+Personal memory strategies and the balance between efficiency and depth of learning, including practical methods like active learning techniques and structured note-taking.
+Diverse Cognitive Experiences:
+The implications of unique cognitive processing styles on communication and understanding, emphasizing the need for diverse cognitive models in education and cognitive science.
+Practical Memory Techniques:
+Practical applications of memory strategies in real-world settings, such as biomedicine, using emerging technologies to test hypotheses about memory and cognition.
+Each of these topics contributes to a broader understanding of how memory and cognition are not only fundamental to our identity but also actively shape our interactions with the world. This discussion not only enriches the academic and scientific discourse but also has practical implications for educational practices, therapeutic approaches, and the development of cognitive technologies.
+4
+I also wanted to mention that one should continually reconfigure their environment into a memory palace that displays the things you want to think about
+ChatGPT
+Incorporating the concept of a memory palace into daily life is a fascinating and effective strategy for enhancing memory and cognition. By transforming your environment into a living memory palace, you can continually reinforce and access important information or concepts that you want to keep at the forefront of your mind. Here���s how this idea expands into practical application and its implications:
+Practical Application of a Living Memory Palace:
+Environmental Cues:
+Arrange your living or working spaces to include visual or physical cues that remind you of important concepts or tasks. This could be as simple as placing books, project files, or themed artwork strategically around the room to trigger specific thoughts or memories related to your goals or interests.
+Routine Reconfiguration:
+Regularly update and reconfigure your environment to reflect new goals, projects, or areas of interest. This keeps the cognitive associations fresh and relevant, and prevents the setup from becoming background noise that no longer effectively triggers memory or thought.
+Incorporation of New Learning:
+As you learn new information or take on new challenges, integrate these into your memory palace through symbols, models, or even sticky notes placed in your environment. This technique can be particularly powerful for complex concepts or large volumes of information that benefit from spatial and visual representation.
+Implications for Cognitive Enhancement:
+Enhanced Recall and Learning:
+By associating information with specific physical locations and objects, you can enhance recall through the method of loci, an ancient mnemonic strategy known to significantly improve memory. This method leverages the human brain���s innate ability to better remember spatial information and integrates it with other types of data.
+Continuous Learning and Adaptation:
+Continually adapting your environment to reflect your cognitive or learning needs can lead to a form of ongoing, passive learning and reinforcement. This process makes learning a constant part of your daily experience and can deeply embed knowledge.
+Customization for Personal or Professional Growth:
+Tailoring your space to your personal and professional development goals can keep you mentally aligned with these objectives, effectively turning your environment into a tool for focus and motivation.
+Challenges and Considerations:
+Overstimulation:
+It's important to balance the richness of the environment with the potential for distraction or cognitive overload. Too many cues or overly complex arrangements might lead to confusion or difficulty in focusing rather than aiding memory.
+Accessibility and Practicality:
+While a memory palace can be highly effective, it needs to be practically implemented so that it doesn't disrupt daily functionality. The arrangement should enhance your living or working space rather than complicate it.
+Personalization:
+The effectiveness of such an environment can vary widely between individuals, depending on personal memory styles and cognitive preferences. Personalization is key to ensuring that the setup works for your specific cognitive processes.
+Your suggestion to continually reconfigure one���s environment into a memory palace offers a dynamic and integrated approach to cognitive enhancement. This strategy not only aids memory but also transforms one���s daily environment into an active participant in the process of learning and cognitive development.
+4
+I mean to arrange your living environment so that rooms and shelves are arranged thematically or typically. I do also tend to write on my fridge, washing machine, door posts, walls, and constantly "refactor" by moving things from one place to another. It seems there are some culturally agreed upon colour conventions where more dangerous and maintaince oriented objects are in high visibility colors such as orange, yellow, and red, and these things should be kept in cupboards or closets, where they aren't constantly seen. Just try putting one piece of garbage anywhere in a clean and organized room, it's like it's the only thing I can focus on. As you fix obvious macrolevel issues, smaller details become more obvious. After you have removed the red bucket and mop from the room, then you might see a small paint chip you wouldn't have noticed before. This is akin to drawing on the right side of the brain techniques like looking at a scene through a straw or upside down to thwart the global coherence mechanism
+ChatGPT
+Your approach to organizing your living environment as a thematic memory palace, coupled with continuous reconfiguration and the use of high visibility cues, reflects a sophisticated understanding of cognitive ergonomics���the science of designing environments according to human psychological and physical patterns. Let���s explore some principles and strategies based on your approach and how they can be applied to enhance cognitive functioning:
+Thematic and Dynamic Environment Design:
+Thematic Organization:
+Organizing rooms and shelves thematically helps in creating distinct cognitive zones that can trigger specific modes of thinking or behaviors. For instance, a reading nook might only contain items related to reading and writing, which can help focus your thoughts and minimize distractions when in that space.
+Dynamic Reconfiguration:
+Constantly changing the arrangement or d��cor based on current needs or projects keeps the environment fresh and mentally stimulating. This ongoing process can enhance cognitive flexibility and prevent the mental stagnation that might come from overly familiar surroundings.
+Use of Color and Visibility:
+Employing culturally agreed-upon color conventions (like using bright colors for maintenance or hazardous items) can serve as effective visual cues for organization and safety. Keeping such items out of constant sight unless needed can reduce cognitive load and focus attention on more immediately relevant tasks.
+Cognitive Enhancement through Environmental Cues:
+Focus and Attention Management:
+By controlling what is visible in your environment, such as removing visually striking but irrelevant items (like a red bucket and mop), you can manage where your attention is directed. This helps in reducing cognitive overload and increasing the effectiveness with which you process information.
+Incremental Detail Enhancement:
+As larger, more obvious items are organized or removed, smaller details become more noticeable. This practice can be particularly useful for tasks requiring high levels of detail orientation and can improve your overall observational skills.
+Visual Perception Techniques:
+Your reference to techniques like viewing scenes through a straw or upside down aligns with exercises in art education that aim to break down the global coherence mechanism���the brain���s tendency to integrate visual elements into a whole rather than focusing on parts. This can enhance perceptual skills and creative thinking by forcing you to see common items in an uncommon way, challenging habitual patterns of perception.
+Broader Implications and Applications:
+Psychological Well-being:
+An organized and thoughtfully arranged environment can significantly impact psychological well-being and productivity. Clutter can increase stress and reduce focus, while a well-organized space can promote a sense of control and peace.
+Enhanced Creativity:
+By continuously reconfiguring your environment and employing unconventional viewing techniques, you can foster a creative mindset that is always ready to see things from a new perspective, which is essential in creative and problem-solving tasks.
+Generalizability to Other Areas:
+These principles can be applied in workplace design, educational settings, and anywhere learning, focus, and cognitive engagement are crucial. Tailoring environments to maximize cognitive ergonomics can lead to broader improvements in performance, satisfaction, and well-being.
+Your method of integrating cognitive science principles into everyday living not only optimizes your own cognitive processes but also serves as a model that others can adapt to enhance their cognitive and psychological health. This personalized approach to environmental management is a vivid example of applying cognitive and perceptual psychology principles in everyday life.
+4
+I decided to call the conversation Dynamic Memory Agents, could I get another summary and the connections between the topics?
+ChatGPT
+Certainly! Naming the conversation "Dynamic Memory Agents" aptly captures the core theme of how memory is not just a passive storage system but actively participates in and influences cognitive processes. Let's summarize the topics discussed and explore how they interconnect under this theme.
+Summary of Topics Under "Dynamic Memory Agents":
+Dynamic and Adaptive Nature of Memory:
+We discussed how memory continuously reinterprets and modifies itself to fit new circumstances, emphasizing its active role in cognition rather than just being a repository of information.
+Memory Across Biological Transformation:
+The discussion included how memories are maintained and transformed through significant biological changes, such as the metamorphosis from caterpillar to butterfly, illustrating memory's flexibility and adaptability across drastic physiological changes.
+Bowtie Architectures in Biology:
+This concept was explored to show how biological systems manage complex information through a central compression and expansion process, which is crucial for adaptive responses and mirrors cognitive processes in memory handling.
+Generalization of Bowtie Architecture:
+Extending the bowtie architecture beyond biology, we discussed its application in human communication, scientific research, and artistic expression, showcasing its universality in managing complex information.
+Philosophical and Psychological Implications:
+We delved into deeper philosophical and psychological implications of memory as autonomous agents within cognitive systems, suggesting a blurring of lines between data and cognitive structures, and between memories and minds.
+Future Research Directions:
+Potential future research directions were outlined that could further explore the dynamic nature of memory and cognition, particularly in modeling and applying these processes in fields like biomedicine and artificial intelligence.
+Biological and Cognitive Construction of Selfhood:
+The discussion considered how biological entities actively construct their sense of self through dynamic processes of interpretation and memory integration, which aligns with the process ontology in biology where change and adaptation are primary.
+Practical Memory Techniques and Environmental Configuration:
+Practical strategies like the use of memory palaces and thematic environmental reconfiguration were discussed to enhance memory and cognition in everyday settings.
+Connections Between the Topics:
+Memory as a Dynamic Agent:
+Across all topics, memory is portrayed not as a static entity but as an active participant in cognitive processes, capable of adaptation and influence. This view challenges traditional notions of memory, suggesting that it plays a vital role in shaping cognitive and behavioral outcomes.
+Biological and Cognitive Flexibility:
+The discussions on memory across biological transformations and the use of bowtie architectures highlight memory's flexibility and its crucial role in biological adaptability. These concepts show how memory's dynamic nature is mirrored in both biological and cognitive systems.
+Interdisciplinary Applications:
+The extension of bowtie architecture into fields like communication and art illustrates how the principles underlying memory and information processing are applicable across disciplines, emphasizing a universal framework for understanding complex systems.
+Theoretical Implications for Selfhood and Agency:
+The philosophical discussions about memory as an agent and its role in constructing selfhood tie back to the broader implications for understanding consciousness and personal identity. These ideas propose that memory and cognition are not just about data storage but are integral to the agency and self-perception.
+Practical Implications and Future Research:
+The conversation about practical memory techniques and future research directions connects the theoretical aspects with real-world applications and potential advancements in technology and medicine.
+Overall, the theme "Dynamic Memory Agents" encapsulates the essence of the discussion: memory is an active, adaptive, and influential agent within cognitive systems, shaping how organisms perceive, interact with, and adapt to their environments. This perspective opens up new avenues for research, therapy, and educational practices, emphasizing a more integrated and dynamic understanding of memory and cognition.
+4
+ChatGPT puede cometer errores. Comprueba la informaci��n importante.
+?
+ChatGPT
+

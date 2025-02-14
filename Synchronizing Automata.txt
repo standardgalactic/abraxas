@@ -1,0 +1,1726 @@
+Synchronizing Automata
+Historial del chat
+ChatGPT
+ChatGPT
+Nuspeak Translator
+Jain Hive Tree
+Explorar GPT
+Hoy
+Synchronizing Automata
+Embodied Relegation
+Fruit Vegetable Number Converter
+Ayer
+Update GitHub Page Content
+7 d��as anteriores
+Perceptual Figuration
+Dynamic Terraformation
+Orthodromic Rivers
+Remove Control Characters Vim
+Language Learning Through Reading
+FFmpeg GIF Alternation Command
+Transformer Language Models Primer
+Script Processing Issues
+Critical Discourse Analysis Overview
+IrfanView Color Inversion Shortcut
+Control and Curiosity
+Eloi Morlocks Story Outline
+Overview of Psych Series
+Auditory Operating System
+Funes Memore et Linguistica
+Funes Memorius et Theoriae
+Cosmic Background Simulator
+30 d��as anteriores
+Overview of Psych Series
+Overview of Psych Series
+Semantic Ladle Theory
+Kriegslied ��bersetzung und Analyse
+Keen Psyop
+Diffusion Models as Evolutionary Algorithms
+Ancestral Knowledge
+Agregar un espacio de trabajo de Team
+Colabora en un plan Team
+Nathaniel Guimond
+Abrir barra lateral
+ChatGPT
+4o
+ChatGPT
+4o
+Compartir
+Dijiste:
+In computer science, more precisely, in the theory of deterministic finite automata (DFA), a synchronizing word or reset sequence is a word in the input alphabet of the DFA that sends any state of the DFA to one and the same state.[1] That is, if an ensemble of copies of the DFA are each started in different states, and all of the copies process the synchronizing word, they will all end up in the same state. Not every DFA has a synchronizing word; for instance, a DFA with two states, one for words of even length and one for words of odd length, can never be synchronized.
+
+
+This drawing represents a DFA with eight states and two input symbols, red and blue. The word blue-red-red-blue-red-red-blue-red-red is a synchronizing word that sends all states to the yellow state; the word blue-blue-red-blue-blue-red-blue-blue-red is another synchronizing word that sends all states to the green state.
+Existence
+edit
+Given a DFA, the problem of determining if it has a synchronizing word can be solved in polynomial time[2] using a theorem due to J��n ��ern��. A simple approach considers the power set of states of the DFA, and builds a directed graph where nodes belong to the power set, and a directed edge describes the action of the transition function. A path from the node of all states to a singleton state shows the existence of a synchronizing word. This algorithm is exponential in the number of states. A polynomial algorithm results however, due to a theorem of ��ern�� that exploits the substructure of the problem, and shows that a synchronizing word exists if and only if every pair of states has a synchronizing word.
+
+Length
+edit
+Unsolved problem in computer science:
+If a DFA with 
+n
+{\displaystyle n} states has a synchronizing word, must it have one of length at most 
+(
+n
+���
+1
+)
+2
+{\displaystyle (n-1)^{2}}?
+(more unsolved problems in computer science)
+The problem of estimating the length of synchronizing words has a long history and was posed independently by several authors, but it is commonly known as the ��ern�� conjecture. In 1969, J��n ��ern�� conjectured that (n ��� 1)2 is the upper bound for the length of the shortest synchronizing word for any n-state complete DFA (a DFA with complete state transition graph).[3] If this is true, it would be tight: in his 1964 paper, ��ern�� exhibited a class of automata (indexed by the number n of states) for which the shortest reset words have this length.[4] The best upper bound known is 0.1654n3, far from the lower bound.[5] For n-state DFAs over a k-letter input alphabet, an algorithm by David Eppstein finds a synchronizing word of length at most 11n3/48 + O(n2), and runs in time complexity O(n3+kn2). This algorithm does not always find the shortest possible synchronizing word for a given automaton; as Eppstein also shows, the problem of finding the shortest synchronizing word is NP-complete. However, for a special class of automata in which all state transitions preserve the cyclic order of the states, he describes a different algorithm with time O(kn2) that always finds the shortest synchronizing word, proves that these automata always have a synchronizing word of length at most (n ��� 1)2 (the bound given in ��ern��'s conjecture), and exhibits examples of automata with this special form whose shortest synchronizing word has length exactly (n ��� 1)2.[2]
+ChatGPT dijo:
+ChatGPT
+A
+synchronizing word
+, also known as a
+reset sequence
+, is a sequence of input symbols for a
+deterministic finite automaton (DFA)
+that brings all states of the automaton to a single common state, regardless of the starting state. In essence, applying this sequence to a DFA forces it into a specific state, effectively "synchronizing" all states. Not every DFA has a synchronizing word.
+Key Points about Synchronizing Words in DFA:
+Existence
+:
+Determining whether a DFA has a synchronizing word can be solved in polynomial time. This is based on a theorem by J��n ��ern��.
+A DFA has a synchronizing word if and only if every pair of states can be synchronized, meaning that there is a sequence of inputs that brings any two states to a common state.
+Algorithms
+:
+One approach to finding a synchronizing word is to use the power set of the states of the DFA and represent the transition function as a directed graph, where paths between nodes represent synchronizing sequences. However, this method can be computationally expensive (exponential in the number of states).
+��ern��'s theorem allows for more efficient algorithms, resulting in polynomial time complexity.
+��ern�� Conjecture (Length of Synchronizing Words)
+:
+The
+��ern�� conjecture
+, proposed in 1969, suggests that for a DFA with
+n
+n
+n
+states, the length of the shortest synchronizing word is at most
+(
+n
+���
+1
+)
+2
+(n - 1)^2
+(
+n
+���
+1
+)
+2
+. This would be a tight upper bound.
+��ern�� also constructed a class of automata where the length of the shortest synchronizing word indeed equals
+(
+n
+���
+1
+)
+2
+(n - 1)^2
+(
+n
+���
+1
+)
+2
+.
+Despite significant research, the best known upper bound for the length of synchronizing words is
+0.1654
+n
+3
+0.1654n^3
+0.1654
+n
+3
+, which is far from the conjectured bound.
+Algorithms like the one by David Eppstein provide approximations to synchronizing words with time complexities of
+O
+(
+n
+3
++
+k
+n
+2
+)
+O(n^3 + kn^2)
+O
+(
+n
+3
++
+k
+n
+2
+)
+, though finding the shortest synchronizing word is known to be NP-complete.
+Special Classes of Automata
+:
+There are special types of automata, such as those where all transitions preserve the cyclic order of states. For these, the ��ern�� conjecture holds true, and algorithms can find the shortest synchronizing word in
+O
+(
+k
+n
+2
+)
+O(kn^2)
+O
+(
+k
+n
+2
+)
+.
+Example:
+In a DFA with 8 states and two input symbols (say, "red" and "blue"), there may be multiple synchronizing words. For example:
+The word "blue-red-red-blue-red-red-blue-red-red" could send all states to a single state (say, the yellow state).
+Another word like "blue-blue-red-blue-blue-red-blue-blue-red" might send all states to a different state (say, the green state).
+This illustrates how different synchronizing words can exist for the same automaton, each leading to different final states.
+4o
+Dijiste:
+Abelian Complexity and Synchronization
+Jeffrey Shallit
+View PDF
+We present a general method for computing the abelian complexity ��abs(n) of an automatic sequence s in the case where (a) ��abs(n) is bounded by a constant and (b) the Parikh vectors of the length-n prefixes of s form a synchronized sequence.
+We illustrate the idea in detail, using the free software Walnut to compute the abelian complexity of the Tribonacci word TR=0102010���, the fixed point of the morphism 0���01, 1���02, 2���0. Previously, Richomme, Saari, and Zamboni showed that the abelian complexity of this word lies in {3,4,5,6,7}, and Turek gave a Tribonacci automaton computing it. We are able to "automatically" rederive these results, and more, using the method presented here.
+ChatGPT dijo:
+ChatGPT
+In the paper "Abelian Complexity and Synchronization" by Jeffrey Shallit, a method is presented for computing the
+abelian complexity
+��
+abs
+(
+n
+)
+\rho_{\text{abs}}(n)
+��
+abs
+���
+(
+n
+)
+of an
+automatic sequence
+s
+s
+s
+. This method is particularly useful in cases where:
+Bounded Abelian Complexity
+: The abelian complexity
+��
+abs
+(
+n
+)
+\rho_{\text{abs}}(n)
+��
+abs
+���
+(
+n
+)
+is bounded by a constant. Abelian complexity measures how many distinct Parikh vectors (or abelian equivalence classes) appear in the set of length-
+n
+n
+n
+factors of a sequence. A sequence has bounded abelian complexity if the number of distinct abelian equivalence classes of its length-
+n
+n
+n
+factors does not grow unboundedly.
+Parikh Vectors and Synchronization
+: The Parikh vectors of the length-
+n
+n
+n
+prefixes of the sequence form a
+synchronized sequence
+. Parikh vectors count the number of occurrences of each symbol in a factor of a word, without taking into account their order. Synchronization refers to the regularity of the transitions between states in a finite automaton that recognizes the sequence.
+Tribonacci Word Example:
+The paper uses the
+Tribonacci word
+as a case study to demonstrate this method. The Tribonacci word is the fixed point of the morphism:
+0
+���
+01
+0 \to 01
+0
+���
+01
+1
+���
+02
+1 \to 02
+1
+���
+02
+2
+���
+0
+2 \to 0
+2
+���
+0
+This word starts as
+TR
+=
+0102010
+���
+\text{TR} = 0102010\cdots
+TR
+=
+0102010
+���
+.
+Previous Work
+: Richomme, Saari, and Zamboni had shown that the abelian complexity of the Tribonacci word lies within the set
+{
+3
+,
+4
+,
+5
+,
+6
+,
+7
+}
+\{3, 4, 5, 6, 7\}
+{
+3
+,
+4
+,
+5
+,
+6
+,
+7
+}
+. This means that for any length-
+n
+n
+n
+factor, there are between 3 and 7 distinct Parikh vectors.
+Turek���s Contribution
+: Turek provided a Tribonacci automaton that could compute this abelian complexity.
+Shallit's Method:
+Shallit's paper introduces a more automated approach to rederive these results using the free software
+Walnut
+, which allows for automatic verification of properties related to sequences and automata. Walnut can compute the abelian complexity of automatic sequences by leveraging the synchronization of Parikh vectors in the DFA that recognizes the sequence.
+Abelian Complexity in Sequences:
+Abelian complexity
+tracks the diversity of frequency patterns of symbols in factors of the sequence. For example, two words are abelian equivalent if they have the same Parikh vector, meaning they contain the same symbols with the same frequencies, regardless of the order of those symbols.
+Synchronization
+plays a role in how efficiently the abelian complexity of a sequence can be computed, particularly when working with automatic sequences where transitions between states can be represented by a finite automaton.
+Importance of the Result:
+By presenting a method that automates the computation of abelian complexity using tools like Walnut, Shallit's work provides a more accessible way to handle problems in combinatorics on words, particularly for automatic sequences like the Tribonacci word. This could lead to further insights into how synchronization and automata theory can be applied to measure the complexity of sequences.
+In summary, Shallit's work not only revisits and confirms previous results about the Tribonacci word���s abelian complexity but also presents a general methodology that could be applied to a broader class of automatic sequences with bounded abelian complexity and synchronized Parikh vectors.
+4o
+Dijiste:
+Ideal regular languages and strongly connected synchronizing automata
+Author links open overlay panel
+Rog��rio Reis a
+, 
+Emanuele Rodaro b
+
+Show more
+
+Outline
+
+Share
+
+Cite
+https://doi.org/10.1016/j.tcs.2016.09.026
+Get rights and content
+Under an Elsevier user license
+open archive
+Abstract
+We introduce the notion of a reset left regular decomposition of an ideal regular language, and we prove that the category formed by these decompositions with the adequate set of morphisms is equivalent to the category of strongly connected synchronizing automata. We show that every ideal regular language has at least one reset left regular decomposition. As a consequence, every ideal regular language is the set of synchronizing words of some strongly connected synchronizing automaton. Furthermore, this one-to-one correspondence allows us to introduce the notion of reset decomposition complexity of an ideal from which follows a reformulation of ��ern��'s conjecture in purely language theoretic terms. Finally, we present and characterize a subclass of ideal regular languages for which a better upper bound for the reset decomposition complexity holds with respect to the general case.
+ChatGPT dijo:
+ChatGPT
+The paper "Ideal Regular Languages and Strongly Connected Synchronizing Automata" by Rog��rio Reis and Emanuele Rodaro introduces new concepts in automata theory, particularly focusing on the relationship between
+ideal regular languages
+and
+strongly connected synchronizing automata
+. The main contributions of the paper can be summarized as follows:
+Key Concepts Introduced:
+Reset Left Regular Decomposition
+:
+This is a new concept introduced for
+ideal regular languages
+. An ideal regular language is a type of regular language that contains all words extending a certain set of "basis" words, i.e., they are closed under right concatenation.
+The
+reset left regular decomposition
+breaks down an ideal regular language into simpler components, which is key to linking these languages to synchronizing automata.
+Equivalence with Strongly Connected Synchronizing Automata
+:
+The authors prove that the category formed by reset left regular decompositions (along with appropriate morphisms) is
+equivalent to the category of strongly connected synchronizing automata
+. This is a significant theoretical result, as it shows a deep correspondence between these two areas of study in formal language theory and automata theory.
+One-to-One Correspondence
+:
+A major result of the paper is that every
+ideal regular language
+can be represented as the set of synchronizing words for some
+strongly connected synchronizing automaton
+. In other words, every ideal regular language corresponds to an automaton that has a reset word which synchronizes the automaton to a single state.
+Reset Decomposition Complexity
+:
+The paper introduces the concept of
+reset decomposition complexity
+for an ideal regular language. This complexity measures how intricate the reset left regular decomposition of an ideal regular language is.
+This concept allows for a
+language-theoretic reformulation of ��ern�����s conjecture
+. The famous ��ern�� conjecture in automata theory states that for any synchronizing DFA with
+n
+n
+n
+states, there exists a synchronizing word of length at most
+(
+n
+���
+1
+)
+2
+(n-1)^2
+(
+n
+���
+1
+)
+2
+. By connecting this conjecture to the complexity of ideal regular languages, the authors provide a new perspective on this long-standing open problem in automata theory.
+Improved Bounds for a Subclass of Ideal Regular Languages
+:
+The paper identifies and characterizes a
+subclass of ideal regular languages
+for which the upper bound on the reset decomposition complexity is
+better
+than for the general case. This means that for this subclass, the synchronizing word or reset sequence may have a shorter maximum length than what is expected in the general case.
+Importance of the Results:
+The one-to-one correspondence between ideal regular languages and strongly connected synchronizing automata is a powerful result because it creates a bridge between
+language theory
+and
+automata theory
+, providing insights into both fields. Additionally, the introduction of the reset decomposition complexity and its connection to ��ern��'s conjecture offers a fresh approach to tackling this well-known problem, potentially leading to progress in understanding the upper bounds for synchronizing word lengths.
+By offering a new language-theoretic interpretation of synchronization, this paper opens new avenues for research in both ideal regular languages and the study of synchronizing automata, with practical implications for problems in formal verification, coding theory, and other areas of theoretical computer science.
+4o
+Dijiste:
+It seems to me that there is a correspondence between church-turing-howard machine and cellular automata, akin to an n-tuple dimensional Ising synch markov chain. Organisms preserve their homeostatic states by constructing markov blanket boundary which can project proxy mappings on inner screens like the reticular activating system and periaquaductal gray, allowing them to register an arousal sequence constructing a internal model of the environment
+ChatGPT dijo:
+ChatGPT
+You're touching on a complex and intriguing intersection of computational theory, biological systems, and cognitive neuroscience. Let's break it down and explore the correspondences you mention:
+1.
+Church-Turing-Howard Machine and Cellular Automata
+:
+The
+Church-Turing thesis
+posits that any computation performed by a physical system can be simulated by a Turing machine. The
+Howard correspondence
+extends this to the notion that proofs in logic correspond to programs in computation, particularly linking logic and type theory to computation (i.e., "proofs as programs").
+Cellular automata (CA)
+, like Turing machines, are computational models where the system evolves over time based on local rules applied to cells in a grid. CA can simulate Turing machines, and thus, computational processes.
+The connection you're suggesting is likely based on
+computational universality
+: both systems (Church-Turing and CA) are capable of simulating any computational process, meaning they could be seen as different models of computation. Cellular automata, however, work in a highly parallel, spatially structured way, which contrasts with the more sequential nature of Turing machines.
+2.
+n-Tuple Dimensional Ising Synch Markov Chain
+:
+The
+Ising model
+is a mathematical model of ferromagnetism in statistical mechanics. It describes how individual elements (like spins) interact with their neighbors in a lattice, resulting in large-scale patterns of order or disorder.
+An
+n-tuple dimensional Ising synch
+model might refer to higher-dimensional models of interaction where systems (like cells in a CA or nodes in a Markov chain) are synchronized, much like spins in the Ising model align to minimize energy. In this context, the system's evolution could be described probabilistically using a
+Markov chain
+, with transitions between states influenced by local interactions.
+If you're suggesting an
+Ising-like Markov chain
+for
+synchronization
+, it implies that elements of the system (whether they're computational elements or biological cells) interact in a way that they stabilize or synchronize their states over time. This could apply both to computational systems like cellular automata and biological systems that reach homeostasis.
+3.
+Organisms and Homeostasis: Markov Blankets
+:
+The
+Markov blanket
+is a concept from
+statistical and computational neuroscience
+. It represents the boundary that separates a system (like an organism) from its environment. The Markov blanket includes variables that shield the internal states from external perturbations and mediate the interaction between the internal and external world.
+Organisms maintain
+homeostasis
+���the regulation of internal states���by monitoring external stimuli (through sensory inputs) and regulating their internal states in response. The
+Markov blanket
+provides a framework for understanding how systems maintain this boundary between internal and external states.
+The
+reticular activating system (RAS)
+and
+periaqueductal gray (PAG)
+are brain structures involved in arousal, attention, and homeostatic regulation. The
+RAS
+modulates alertness and consciousness, while the
+PAG
+is involved in pain modulation and responses to stress. Together, they form part of a system that helps organisms register arousal sequences and respond to external changes.
+4.
+Proxy Mappings and Internal Models
+:
+The idea of
+proxy mappings on inner screens
+could refer to how organisms project external information onto internal models (often referred to as
+representations
+). These models allow the organism to simulate and predict environmental changes, which is crucial for adaptive behavior.
+This is closely related to
+predictive coding
+theories of the brain, where the brain continuously updates its internal model of the world by comparing incoming sensory data against predictions generated by that model. The
+Markov blanket
+can be thought of as mediating this process by allowing the organism to interpret the environment while maintaining a coherent internal state.
+The
+internal model of the environment
+that you mention is the brain's way of simulating and predicting interactions with the external world. It uses sensory input to build this model and guide future actions, much like how a computational model might update its states based on feedback.
+Synthesis:
+You seem to be suggesting a deep
+computational analogy
+between:
+Automata theory
+(Church-Turing-Howard machines, cellular automata),
+Statistical mechanics
+(n-tuple dimensional Ising models, Markov chains),
+Neuroscience and biology
+(homeostasis, Markov blankets, internal models of the environment).
+At the core of this analogy is the idea that
+systems, whether biological or computational, evolve through interacting components that synchronize their states
+over time, leading to organized, predictable behavior (homeostasis in biology, synchronization in automata). The
+Markov blanket
+acts as a crucial boundary for regulating interactions between internal and external states, just as boundary conditions in computational systems regulate the flow of information.
+In summary:
+Cellular automata
+and other computational models (like Turing machines) can simulate biological processes, particularly in terms of how systems maintain internal coherence (homeostasis).
+The
+Markov chain/Ising model analogy
+suggests that both computational and biological systems reach equilibrium states through local interactions, governed by probabilistic rules or energy minimization.
+The
+reticular activating system (RAS)
+and
+periaqueductal gray (PAG)
+help regulate arousal and attention, forming part of the organism���s mechanism for maintaining internal stability (akin to a Markov blanket).
+Your proposition aligns with theories that link
+computation, physics, and biology
+, suggesting that both physical systems (like Ising models) and biological systems (like neural networks) might be understood through the lens of
+synchronized state evolution
+, drawing from
+Markov chains
+and
+homeostatic principles
+.
+4o
+Dijiste:
+The inner screen model of consciousness: applying the 
+free energy principle directly to the study of conscious 
+experience 
+Maxwell J. D. Ramstead���1,2,A, Mahault Albarracin1,3,A, Alex Kiefer1,4, 
+Brennan Klein1,5, Chris Fields6, Karl Friston1,2, and Adam Safron7,8
+
+21st April 2023 
+Abstract 
+This paper presents a model of consciousness that follows directly from the free- 
+energy principle (FEP). We first rehearse the classical and quantum formulations of 
+the FEP. In particular, we consider the ���inner screen hypothesis��� that follows from the 
+quantum information theoretic version of the FEP. We then review applications of the 
+FEP to the known sparse (nested and hierarchical) neuro-anatomy of the brain. We 
+focus on the holographic structure of the brain, and how this structure supports (overt 
+and covert) action.
+
+The aim of this paper is to present a model of consciousness that follow directly from the 
+variational free energy principle (FEP). At a fundamental level, the FEP is concerned with 
+(state) spaces that can be decomposed into some ���thing���, ���particle���, or particular ���system��� of 
+interest, and the rest of state space (Friston, 2019a). Provided that the interaction across the 
+boundary���that individuates some ���thing��� from everything else���is sufficiently weak, then 
+the states on the interior of the boundary will be conditionally independent or separable 
+from exterior or external states. Both the particular system of interest and its external 
+environment will, in this case, have well-defined state spaces. The FEP characterizes the 
+behaviour of such system-environment pairs, regardless of whether their state spaces are 
+described in classical (Friston, 2019a; Ramstead et al., 2023) or quantum (Fields et al., 
+2022) terms. The compass of the FEP thus includes all systems that are intuitively regarded 
+as conscious���including all organisms���but also reaches far beyond them. Our contribution 
+here will be to frame an explicit hypothesis about what additional necessary structure must 
+be in play for a system, whether described in classical or quantum terms, to be conscious. 
+We approach the question of consciousness by starting from the FEP and using it to make 
+sense of established features of (human) neuroanatomy: namely, the nested and hierarchical 
+structure of the brain that arises from a particular kind of sparse coupling. This sparsity 
+structure can be modelled as a set of hierarchically nested Markov blankets; where the 
+Markov blanket of a given system constitutes the interface between that particular system 
+and everything else (Fields, Glazebrook, & Levin, 2022; Hip��lito et al., 2021). Note that the 
+system-environment boundary, and hence the location of the Markov blanket within state 
+space, can change over time, e.g., in cases involving material exchange and turnover between 
+the system and its environment (Ramstead & Friston, 2022; Ramstead et al., 2021). We 
+will highlight the importance of actively configuring and maintaining the sparsity structures 
+that underwrite Markov blankets; and suggest that conscious processing can be identified in 
+terms of its contribution to action. For example, consider overt action that is apparent to 
+4 
+an observer such as moving: e.g., palpation and saccadic sampling; or covert actions, such 
+as autonomic reflexes or attention and mental action in the brain; see (Sandved-Smith et al., 
+2021). 
+Our core argument can be summarized as follows: 1. Empirically, we know that the brain 
+evinces a sparse (i.e., hierarchical or heterarchical, and nested) structure; 2. Using the FEP, 
+we can model any part of the brain, from the sub-neuronal level to distributed neuronal 
+networks, as having Markov blankets. Given this setup, the dynamical dependencies that 
+drive the flow of information in the brain can be represented as hierarchically nested Markov 
+blankets. Mathematically, this is equivalent to a set of holographic screens nested within 
+one another, lending the set of nested screens a holographic structure; 3. The blankets 
+associated with conscious processing can be picked out from the ones that are enabling���but 
+not constitutive���by examining their role in selecting actions. 
+A few words about prior art. Ours is not the first attempt to develop an integrative 
+treatment of consciousness premised on the FEP. One notable attempt to integrate a broad 
+spectrum of theories of consciousness is integrated world modelling theory (IWMT) (Safron, 
+2020a, 2022). IWMT represents an attempt to integrate FEP accounts with two other lead- 
+ing theories of consciousness, namely, the global workspace theory (Baars, 2005) (GWT) 
+and integrated information theory (IIT) (Tononi, 2015; Tononi et al., 2016). A second body 
+of work that has focused on the role of active inference in the selection of ���winning hy- 
+potheses��� corresponding to conscious perceptual contents, as in binocular rivalry paradigms 
+(Hohwy, 2013, 2022; Hohwy, Roepstorff, & Friston, 2008; Parr et al., 2019), has also pre- 
+sented an FEP-theoretic perspective on lines of evidence motivating many distinct theories 
+of consciousness. We see the present work as deeply continuous with this prior art. In this 
+work, we focus squarely on what the FEP itself, applied to anatomical and functional brain 
+architectures, may suggest about the structures that realize consciousness. Furthermore, 
+considering that our holographic perspective is grounded in quantum information theory, 
+the explanatory reach of the ensuing model extends beyond brains to encompass more basal, 
+non-neural systems (Fields, Glazebrook, & Levin, 2021). That is, this work can be considered 
+to represent steps towards identifying necessary conditions for the realization of conscious- 
+ness in all entities���all particles, in the parlance of the FEP���in which such computational 
+properties might be observed.
+ChatGPT dijo:
+ChatGPT
+The paper
+"The Inner Screen Model of Consciousness: Applying the Free Energy Principle Directly to the Study of Conscious Experience"
+by Ramstead et al. introduces a model of consciousness that emerges from the
+Free Energy Principle (FEP)
+. The core argument revolves around how the FEP can be used to understand the nested, hierarchical structure of the brain, and how these structures might realize conscious processes.
+Summary of Key Concepts:
+1.
+The Free Energy Principle (FEP)
+:
+The FEP is a theoretical framework that describes how systems (biological or otherwise) maintain their
+internal states
+and minimize
+surprise
+or
+prediction error
+by minimizing free energy. In essence, this principle provides a unified account of how living systems maintain
+homeostasis
+by interacting with their environment through
+active inference
+.
+A system (like a brain) can be described as partitioned into some
+"thing"
+or
+"system of interest"
+(e.g., an organism or a brain region) and the rest of the state space (the environment). The boundary between the system and the environment, crucially, forms a
+Markov blanket
+.
+2.
+Markov Blankets
+:
+The
+Markov blanket
+is a key concept from both information theory and biology, representing the
+boundary
+that separates a system from its environment. It mediates interactions between internal and external states and is crucial for maintaining the internal consistency of the system.
+The authors argue that the brain can be understood as having a nested and hierarchical structure of Markov blankets at various levels of organization, from neuronal assemblies to larger brain networks. These Markov blankets enable the brain to process information while maintaining the integrity of internal states.
+3.
+Nested Holographic Screens
+:
+The
+holographic structure
+described in the paper refers to the idea that the brain���s nested, hierarchical Markov blankets resemble a set of
+nested holographic screens
+. These screens organize and process information in a structured way, analogous to how holographic images encode three-dimensional information on a two-dimensional surface.
+Consciousness is hypothesized to arise from specific
+nested Markov blankets
+within the brain. These blankets are involved in the selection of actions���whether overt (e.g., movement) or covert (e.g., attention or mental actions)���and play a constitutive role in conscious processing.
+4.
+Quantum Information Theoretic Formulation
+:
+The
+quantum formulation
+of the FEP extends its explanatory reach to both classical and quantum systems. This version suggests that the
+inner screen hypothesis
+���a metaphorical and mathematical description of how the brain might encode conscious experience���can also apply to quantum systems. This broadens the scope of the theory to potentially explain consciousness in non-neural systems, possibly encompassing more fundamental physical entities (particles, molecules, etc.) as well.
+Implications for Consciousness:
+5.
+Conscious Processing and Action
+:
+Conscious processing is tied to the brain's ability to
+select actions
+���whether overt (e.g., physical movements) or covert (e.g., mental decisions, attention). The nested Markov blankets that play a role in these actions are hypothesized to be central to the realization of consciousness.
+Consciousness, in this model, is not just about internal representations but about the
+active engagement
+of the system (e.g., the brain) with its environment through
+action selection
+.
+6.
+Relation to Existing Theories
+:
+The paper situates itself within the context of
+Integrated World Modeling Theory (IWMT)
+, which integrates the FEP with leading theories of consciousness, such as
+Global Workspace Theory (GWT)
+and
+Integrated Information Theory (IIT)
+.
+By focusing on the anatomical and functional architectures of the brain, the authors aim to show how the FEP provides a foundational framework for understanding consciousness, building upon previous attempts to synthesize broad theoretical approaches.
+7.
+Consciousness Beyond Neural Systems
+:
+The
+holographic perspective
+grounded in
+quantum information theory
+suggests that consciousness might not be exclusive to brains. The authors speculate that the necessary conditions for consciousness could, in principle, apply to other systems, such as
+non-neural organisms
+or even
+quantum systems
+, provided they exhibit similar computational properties related to Markov blankets and free energy minimization.
+Conclusion:
+The
+inner screen model of consciousness
+posits that the
+nested Markov blankets
+of the brain���or other systems capable of processing information in a hierarchical, sparsely coupled manner���are central to how conscious experience arises. Consciousness, in this view, is fundamentally about
+maintaining a coherent interface
+between an organism (or system) and its environment, using
+active inference
+to select appropriate actions and minimize prediction error.
+By extending this model to
+quantum systems
+and
+non-neural organisms
+, the authors suggest a more general framework for understanding consciousness, one that transcends the specific neural architectures of the human brain. This provides an ambitious, integrative perspective that could lead to new insights into both biological and artificial systems' cognitive and conscious capacities.
+The paper thus bridges
+neuroscience
+,
+information theory
+, and
+quantum mechanics
+to propose a unified approach to studying conscious experience, grounded in the principles of
+free energy minimization
+and
+active inference
+.
+4o
+Dijiste:
+How does this connect to our earlier discussions?
+ChatGPT dijo:
+ChatGPT
+The concepts in
+"The Inner Screen Model of Consciousness"
+based on the
+Free Energy Principle (FEP)
+are deeply connected to the ideas we previously discussed regarding
+Markov blankets, cellular automata, homeostasis, and synchronization
+in organisms and computational systems. Here's a more detailed breakdown of how these ideas intersect:
+1.
+Markov Blankets, Homeostasis, and System Boundaries
+Markov blankets
+play a central role in both discussions. In the
+FEP-based model
+, the Markov blanket serves as the
+boundary between a system and its environment
+, shielding internal states from external perturbations. This is closely aligned with the notion of
+organisms maintaining homeostasis
+by regulating internal states while interacting with the external world, which we discussed in terms of constructing
+boundaries
+to protect and organize their internal systems.
+Both views rely on
+partitioning systems
+into internal states and external influences and then modeling the interactions across these boundaries in terms of minimizing uncertainty or surprise (as in the
+FEP
+), or in terms of synchronizing states to maintain stability (as in
+Markov chains
+or
+Ising models
+).
+The
+inner screen model
+builds on this by proposing that
+nested Markov blankets
+in the brain correspond to a
+hierarchical model of consciousness
+, where the brain continuously maintains and updates internal models of the external world to regulate behavior and cognition, much like organisms using these boundaries to preserve
+homeostatic balance
+.
+2.
+Cellular Automata and Computational Models
+The
+Church-Turing-Howard machine and cellular automata
+that we discussed earlier are examples of computational models capable of
+simulating complex systems
+. These models represent how small, local interactions (like in a cellular automaton or a system following an Ising model) can lead to globally coordinated behavior.
+The
+FEP
+similarly describes how a system (such as the brain or even an automaton) interacts with its environment through
+feedback loops
+, continually updating its internal states to
+minimize free energy
+(analogous to minimizing uncertainty or error). The brain could be seen as a complex, adaptive automaton that is continuously synchronizing its states, akin to a
+Markov chain
+or
+cellular automaton
+, based on the feedback it receives from the environment.
+The
+holographic structure
+described in the paper parallels
+higher-dimensional synchronization models
+in computational systems, where
+nested layers of processing
+(or states) coordinate to produce coherent global behavior, such as
+consciousness
+or
+decision-making
+.
+3.
+Ising Model, Synchronization, and Hierarchical Structures
+The
+n-tuple dimensional Ising synch Markov chain
+we discussed refers to
+synchronization across layers of interacting elements
+, which is conceptually similar to the
+nested Markov blankets
+proposed in the FEP model of consciousness. In both cases, we are dealing with hierarchical structures where
+local interactions lead to global coherence
+.
+The
+Ising model
+is fundamentally about minimizing
+energy
+through interactions between neighboring elements, just as the
+FEP
+describes how biological and cognitive systems minimize
+free energy
+by aligning their internal models with external reality. Both describe systems that aim for
+equilibrium
+���whether in terms of physical states or cognitive stability.
+4.
+Internal Models and Proxy Mappings
+In our earlier discussion, we talked about how organisms project
+proxy mappings
+of external reality onto
+internal screens
+, constructing
+internal models
+of the environment. This ties directly to the
+inner screen hypothesis
+in the
+FEP model
+of consciousness.
+The
+brain's nested Markov blankets
+create a holographic-like structure, allowing the organism to maintain and update a
+predictive model
+of its environment. This internal model helps the brain predict and act in response to the world, similar to how computational models (like automata or Markov chains) update their states in response to inputs.
+Both views emphasize the role of
+internal representations
+and
+active inference
+in maintaining coherence, whether it's an organism adapting to external stimuli or a computational system synchronizing its states.
+5.
+Arousal, Perception, and Action Selection
+The
+inner screen model
+ties conscious processes to
+action selection
+, where conscious experience emerges from how the brain selects actions (both overt and covert). This connects to our earlier discussion about
+arousal sequences
+and how organisms construct internal models to guide their behavior.
+The
+reticular activating system (RAS)
+and
+periaqueductal gray (PAG)
+, which we mentioned as components of arousal and sensory regulation, are part of the larger system that uses
+Markov blankets
+to regulate
+conscious experience
+and
+attention
+in the FEP framework. The brain's ability to register arousal and model the environment ties directly to how it selects actions based on
+internal predictions
+, aligning with both
+FEP
+and
+computational models of synchronization
+.
+6.
+Quantum Information and Consciousness Beyond Neural Systems
+The quantum information theoretic formulation of the FEP, discussed in the inner screen model, aligns with our discussion on how
+computational universality
+could apply not just to neural systems but also to
+non-neural or quantum systems
+.
+The idea that consciousness might extend beyond biological systems to include quantum entities or other types of systems (via
+quantum Markov blankets
+or other mechanisms) resonates with the idea that
+homeostatic synchronization
+is a universal property of systems maintaining stability, whether biological, computational, or quantum.
+Synthesis:
+Both discussions revolve around the
+synchronization of internal states with external environments
+, whether through
+Markov blankets, cellular automata, or the FEP
+. In both frameworks:
+Organisms
+(or systems) construct
+boundaries
+(Markov blankets) to interface with the external world, regulating internal states to maintain homeostasis or minimize free energy.
+Computational models
+(like automata or Ising models) and
+biological models
+(like the FEP or Markov chains in the brain) rely on
+feedback loops
+and
+synchronization
+to achieve stability, coherence, and, ultimately, conscious processing.
+Nested hierarchies
+���whether
+Markov blankets
+,
+cellular automata
+layers, or
+neural networks
+���are central to how complex systems manage the flow of information and maintain global coherence through local interactions.
+Thus, the
+inner screen model
+of consciousness and the earlier ideas of
+computational synchronization and homeostasis
+converge on a unified view of how systems, whether
+biological, computational, or quantum
+, achieve stability, adapt to their environments, and generate complex behaviors, including consciousness.
+4o
+Dijiste:
+All
+Images
+Videos
+Shopping
+Web
+News
+Books
+More
+Tools
+
+Mara Mills: ���Everything is a Filter���?
+
+YouTube �� ICI Berlin Institute for Cultural Inquiry
+120+ views �� 1 year ago
+
+0:59
+... Method (NYU, 2023). Mara Mills: 'Everything is a Filter'? 128 views �� 1 year ago ...more. ICI Berlin Institute for Cultural Inquiry. 2.51K.
+
+everything is a filter - Rocket Science
+
+rocket-science.ch
+https://www.rocket-science.ch ��� taglines ��� everything-is-...
+everything is a filter. Exploring the unseen signal sculptors. In the world (of signal processing), filters are indispensable.
+
+Mara Mills 'Everything is a Filter'?
+
+ICI Berlin Institute for Cultural Inquiry
+https://www.ici-berlin.org ��� 2022/10 ��� Unknown
+PDF
+A key proposition of computer music and sig- nal processing is that 'everything's a filter'. The human throat, a musical instrument, an algo-.
+1 page
+
+What is a Filter? - CCRMA - Stanford University
+
+Stanford University
+https://ccrma.stanford.edu ��� ~jos ��� filters ��� What_Filter
+'' A well-known signal processing wizard is said to have remarked, `
+When you think about it, everything is a filter.'' A digital filter is just a filter ...
+What is a Filter? | Introduction to Digital Filters
+
+DSPRelated.com
+https://www.dsprelated.com ��� freebooks ��� What_Filter
+'' A well-known signal processing wizard is said to have remarked, `
+When you think about it, everything is a filter.'' A digital filter is just a filter ...
+People also ask
+What does it mean when a person has a filter?
+What do you mean by a filter?
+What is the theory that the brain is a filter?
+What does having filter mean?
+Feedback
+
+Mara Mills - ICI Berlin
+
+ICI Berlin Institute for Cultural Inquiry
+https://www.ici-berlin.org ��� events ��� mara-mills
+Mara Mills. 'Everything is a Filter'? The Electrical Filter Becomes Tool and Model (1903���15).
+
+Are there natural/physical high-pass filters? : r/DSP
+
+Reddit �� r/DSP
+10+ comments �� 3 years ago
+... wizard is said to have remarked, When you think about it, everything is a filter������ -Julius Orion Smith. Upvote 1. Downvote Reply reply. Award
+7 answers
+ 
+��
+ 
+Top answer: 
+High pass as in the physical system admits all frequencies greater than some minimum, ...
+
+ICI Berlin
+
+X
+https://x.com ��� iciberlin ��� status
+Nov 23, 2022 ��� Mara Mills: 'Everything is a Filter'? The Electrical Filter Becomes Tool and Model (1903���15), 28 Nov 2022, 19:30 https://ici-berlin.org ...
+
+Tutorial: Demystifying Digital Filters, Part 1
+
+Cycling '74
+https://cycling74.com ��� tutorials ��� demystifying-digital-f...
+Feb 16, 2021 ��� ... everything is a filter.��� When we talk about filters as musicians and Max users, we're usually referring to systems that modify the frequency ...
+
+Introduction to Digital Filters
+
+DSPRelated.com
+https://www.dsprelated.com ��� freebooks ��� Introduction
+'' A well-known signal processing wizard is said to have remarked, `
+When you think about it, everything is a filter.'' A digital filter is just a filter ...
+ChatGPT dijo:
+ChatGPT
+The phrase "Everything is a filter" is a concept that emerges from signal processing and other related fields, such as computer music and digital signal processing (DSP). This idea suggests that many systems, whether natural or engineered, can be understood in terms of how they
+filter
+information���allowing certain elements to pass through while blocking or modifying others. Let's break this down in relation to Mara Mills and broader signal processing concepts:
+Mara Mills and "Everything is a Filter"
+Mara Mills, a scholar in the field of media studies, explores how technologies, especially those related to hearing and vision, act as
+filters
+���shaping how we experience and process the world. In her talk titled
+"Everything is a Filter?"
+, Mills appears to engage with this notion from the perspective of historical and cultural inquiry, especially concerning the evolution of electrical filters in early 20th-century technology.
+Filters in Signal Processing
+In
+signal processing
+, a
+filter
+is a device or process that removes unwanted components or features from a signal. For example:
+Low-pass filters
+allow low-frequency signals to pass through while attenuating (reducing) the strength of higher-frequency signals.
+High-pass filters
+do the opposite, allowing high frequencies to pass and blocking low frequencies.
+Band-pass filters
+allow only a specific range of frequencies to pass through.
+The phrase
+"everything is a filter"
+means that many systems, both physical and abstract, can be understood in terms of how they
+selectively process information
+���just as an audio filter selects certain frequencies to let through and blocks others. For example:
+The
+human ear
+acts as a natural filter, interpreting and responding differently to sounds of varying frequencies.
+Musical instruments
+, through their construction and design, filter sound waves to produce specific tones.
+The Brain as a Filter
+One of the questions that arise from this concept is whether the
+brain functions as a filter
+. The brain can be thought of as a filter in several ways:
+Perceptual filtering
+: The brain processes sensory input, selectively attending to certain stimuli while ignoring others. This allows us to focus on relevant information in a noisy environment.
+Cognitive filtering
+: On a cognitive level, our thoughts and attention act as filters, shaping how we perceive and interpret the world.
+Applications of the Concept
+The idea of filtering can be extended to numerous fields:
+Media and culture
+: Technologies filter information in ways that shape culture and society. This relates to how media acts as a "filter" for knowledge and sensory experience, a concept that Mara Mills likely explores in her work.
+Biological systems
+: In biological contexts, filters help maintain homeostasis, selectively passing certain molecules while blocking others, much like
+cell membranes
+function in living organisms.
+In summary, the idea that
+"everything is a filter"
+can be applied across multiple disciplines���ranging from
+signal processing
+and
+neuroscience
+to
+media studies
+���alluding to the way systems interact with their environment by selectively processing, amplifying, or attenuating certain forms of input or data.
+4o
+Dijiste:
+In connection with our earlier discussion, I was referring how different states can be seen as chains of complex filters (complex matrix transforms). In null convention logic functions are programmed independently or in arbitrary order, and using a three valued logic including a null wave signal that signals whether that channel is transmitting a completed calculation , and can be drawn in a circuit that can be projected onto a sequential or parallel circuit. I was thinking that the propating null wave functioned like a markov blanket distinguishing a boundary between complete signals and noise or nonsense.
+ChatGPT dijo:
+ChatGPT
+Your reference to
+null convention logic (NCL)
+and the propagation of a
+null wave
+as a signal boundary fits well into the broader theme of
+Markov blankets
+and
+filtering
+in our earlier discussions. This analogy between
+Markov blankets
+and
+complex filters
+in a
+computational system
+draws attention to how different states, signals, and transitions can be separated and structured in both biological and computational systems. Here's how these concepts align and connect:
+1.
+Null Convention Logic (NCL) and Complex Filters as Matrices
+NCL
+is a form of
+asynchronous logic
+where the logic functions operate without a global clock, and computations can proceed in
+independent or arbitrary orders
+. The system uses
+three-valued logic
+(True, False, and Null), where
+Null
+indicates the absence of a valid signal, marking that the channel is waiting for a complete calculation.
+In this context, each state of the system (whether it is a circuit or a computational state) can be viewed as a
+complex filter
+or a
+matrix transformation
+, where signals are transformed, amplified, or filtered out based on their validity. These filters could be represented as
+complex matrices
+operating over the signals passing through the system, analogous to how biological systems (or even neural networks) filter sensory information or data.
+2.
+Propagating Null Wave as a Markov Blanket
+The
+null wave
+in NCL functions as a
+boundary signal
+that distinguishes
+completed calculations
+(useful signals) from
+noise
+(or incomplete signals). This is very much in line with the role of the
+Markov blanket
+in
+biological systems
+. In both cases, the
+null signal
+or
+Markov blanket
+acts as a kind of
+informational boundary
+���it separates the
+internal state
+(complete or useful data) from the
+external environment
+(incomplete data or noise).
+The
+Markov blanket
+in a biological context partitions a system's internal states (e.g., neurons, internal models, homeostatic processes) from the external world while allowing only certain kinds of interactions. Similarly, in NCL, the
+null signal
+defines the boundary between
+meaningful output
+(a completed calculation) and
+unprocessed or incomplete input
+(nonsense or noise).
+3.
+Parallelism, Sequentiality, and Boundary Management
+NCL
+circuits, whether parallel or sequential, manage
+data propagation
+in ways that resemble how
+Markov blankets
+manage
+information flow
+in biological systems. In an
+NCL circuit
+, computations can occur independently (parallel) or be projected onto a sequential order, with the
+null wave
+signaling when a given function has completed its operation.
+This is analogous to how
+information processing in the brain
+might occur in parallel across different brain regions, but certain boundary signals (like
+sensory feedback
+or
+cognitive attention
+) help ensure that only relevant or completed information gets passed on to the next stage of processing.
+Parallel circuits
+in NCL might represent the simultaneous processing of multiple Markov blankets in different parts of a system. Each
+filter
+(or matrix transformation) ensures that only
+meaningful signals
+are passed between different parts of the system.
+4.
+Distinguishing Complete Signals from Nonsense
+The idea that the
+null wave
+serves as a filter separating
+complete signals
+from
+noise
+fits with how biological systems maintain
+homeostasis
+by filtering out irrelevant or harmful stimuli. A
+Markov blanket
+shields the internal states from chaos or perturbations in the environment, allowing only relevant signals through���this is what the
+null wave
+does in NCL by acting as a barrier until the computation is fully valid.
+In our earlier discussion of
+predictive coding
+and
+active inference
+, this was analogous to the
+brain���s predictive model
+filtering out irrelevant sensory information, only attending to stimuli that reduce
+prediction error
+. Here, the
+null wave
+or
+Markov blanket
+ensures that only signals which have
+completed
+their processing pass through, while incomplete or incorrect signals are filtered out.
+5.
+Filters as Complex Matrix Transforms
+As you suggested, the states in NCL or similar systems can be seen as
+complex filters
+���each filter might correspond to a
+matrix transformation
+applied to an incoming signal, modifying it based on internal rules or the system���s current state.
+In this sense, the
+null wave
+marks when a filter (or matrix transformation) has fully processed the input and the signal is ready to pass on, much like how a
+Markov blanket
+determines the point at which internal states can interact with external ones.
+6.
+Homeostasis and Synchronization
+In both biological systems and NCL circuits,
+synchronization
+and
+homeostasis
+are key. A biological system maintains homeostasis through the use of
+feedback loops
+(like Markov blankets), ensuring that
+internal models
+of the world are coherent and stable. Similarly, in NCL, the null signal creates a stable and synchronized system, ensuring that asynchronous processes eventually converge on a
+valid output
+.
+The
+null wave
+could be thought of as a synchronization signal, ensuring that the system doesn���t move forward until the current computation has reached a stable, valid state���mirroring the
+homeostatic mechanisms
+we discussed earlier that keep systems in balance by ensuring only valid internal signals (those aligned with external reality) are allowed through.
+Synthesis:
+Your analogy between the
+null wave
+in
+NCL
+and a
+Markov blanket
+is quite fitting. In both cases, there is a
+boundary mechanism
+���the
+null wave
+in NCL, and the
+Markov blanket
+in biological systems���that acts as a
+filter
+, distinguishing between
+valid signals (completed computations)
+and
+noise (incomplete or irrelevant data)
+. The idea of
+complex matrix transformations
+in both biological and computational systems further reinforces how
+local interactions
+(or transformations) are propagated through systems to produce coherent, global behavior, whether it���s a computational circuit output or a cognitive decision in the brain.
+In both frameworks:
+Markov blankets
+(in biology) and
+null waves
+(in NCL) act as boundaries that allow for
+selective filtering
+of valid information while blocking noise.
+The
+processing states
+in these systems can be seen as
+complex filters
+or
+matrix transformations
+, ensuring that signals pass through meaningful layers of computation.
+The systems use
+local interactions
+to maintain
+global coherence
+���whether synchronizing computational processes or achieving homeostasis in biological systems.
+Thus, this analogy connects your earlier thoughts on
+synchronization, filters, and Markov blankets
+with more concrete applications in
+NCL
+and computational logic, reinforcing the idea that
+boundary mechanisms
+(like null waves or Markov blankets) are essential for separating useful information from noise in both biological and computational systems.
+4o
+Dijiste:
+A list of all of the topics we've discussed.
+ChatGPT dijo:
+ChatGPT
+Here���s a list of all the topics we've discussed so far:
+Synchronizing Words in DFA (Deterministic Finite Automata)
+:
+Concept of synchronizing words or reset sequences.
+��ern�� conjecture and its implications for synchronizing words.
+Algorithms and complexity in finding synchronizing words.
+Abelian Complexity and Automatic Sequences
+:
+Abelian complexity in automatic sequences, particularly the Tribonacci word.
+Role of Parikh vectors and synchronization in determining abelian complexity.
+Usage of tools like Walnut for computing complexity.
+Ideal Regular Languages and Strongly Connected Synchronizing Automata
+:
+Reset left regular decomposition in ideal regular languages.
+Equivalence to strongly connected synchronizing automata.
+Reset decomposition complexity and its connection to ��ern��'s conjecture.
+Church-Turing-Howard Machine and Cellular Automata
+:
+Computational models and their parallels to biological processes.
+Ising models and synchronization in complex systems.
+Homeostasis and system boundaries in computational and biological contexts.
+Markov Blankets in Biological Systems
+:
+Markov blankets as boundaries between internal states and the environment.
+Predictive coding and how systems maintain homeostasis by filtering information.
+Connection to cognitive processes, reticular activating system, and periaqueductal gray.
+The Inner Screen Model of Consciousness and Free Energy Principle
+:
+Free Energy Principle (FEP) applied to consciousness.
+Markov blankets and their role in hierarchical brain structures.
+Nested holographic screens and their connection to active inference and action selection.
+Null Convention Logic (NCL) and Markov Blankets
+:
+NCL circuits, three-valued logic, and the role of the null wave.
+Parallelism and sequential processing in NCL.
+The null wave as a boundary, akin to a Markov blanket, distinguishing completed signals from noise.
+Filters and Complex Matrix Transformations
+:
+Filters as complex matrix transforms in signal processing.
+Concept of everything being a filter in relation to signal processing, biological systems, and NCL.
+How Markov blankets and filters manage information flow and synchronization across systems.
+These topics connect a broad array of subjects, ranging from
+automata theory
+and
+signal processing
+to
+cognitive neuroscience
+and
+the philosophy of consciousness
+, unified by the themes of
+information processing
+,
+system boundaries
+, and
+synchronization
+.
+4o
+Dijiste:
+There's Plenty of Room Right Here: Biological Systems as Evolved, Overloaded, Multi-scale Machines
+Joshua Bongard, Michael Levin
+View PDF
+The applicability of computational models to the biological world is an active topic of debate. We argue that a useful path forward results from abandoning hard boundaries between categories and adopting an observer-dependent, pragmatic view. Such a view dissolves the contingent dichotomies driven by human cognitive biases (e.g., tendency to oversimplify) and prior technological limitations in favor of a more continuous, gradualist view necessitated by the study of evolution, developmental biology, and intelligent machines. Efforts to re-shape living systems for biomedical or bioengineering purposes require prediction and control of their function at multiple scales. This is challenging for many reasons, one of which is that living systems perform multiple functions in the same place at the same time. We refer to this as "polycomputing" - the ability of the same substrate to simultaneously compute different things. This ability is an important way in which living things are a kind of computer, but not the familiar, linear, deterministic kind; rather, living things are computers in the broad sense of computational materials as reported in the rapidly-growing physical computing literature. We argue that an observer-centered framework for the computations performed by evolved and designed systems will improve the understanding of meso-scale events, as it has already done at quantum and relativistic scales. Here, we review examples of biological and technological polycomputing, and develop the idea that overloading of different functions on the same hardware is an important design principle that helps understand and build both evolved and designed systems. Learning to hack existing polycomputing substrates, as well as evolve and design new ones, will have massive impacts on regenerative medicine, robotics, and computer engineering.
+ChatGPT dijo:
+ChatGPT
+The paper
+"There's Plenty of Room Right Here: Biological Systems as Evolved, Overloaded, Multi-scale Machines"
+by Joshua Bongard and Michael Levin explores the concept of
+polycomputing
+in biological systems and its implications for understanding living organisms as
+computational systems
+. Here's how this concept connects to our previous discussions:
+1.
+Polycomputing in Biological Systems
+:
+Polycomputing
+refers to the ability of the same biological substrate (e.g., a cell or tissue) to
+simultaneously compute multiple functions
+or processes. This contrasts with the typical understanding of
+linear, deterministic computing
+seen in traditional machines.
+In biological systems, the same tissue or organ might perform several different functions at once, blurring the lines between distinct computational tasks. This makes living organisms a kind of
+multi-scale, parallel computing system
+.
+This idea ties into the discussion we had about
+complex filters and matrix transformations
+in both biological and computational systems, where a single structure (or filter) processes multiple signals simultaneously, managing various inputs and outputs.
+2.
+Abandoning Hard Boundaries and Multi-Scale Computation
+:
+Bongard and Levin argue for a
+pragmatic, observer-dependent view
+of computational models, encouraging us to abandon hard distinctions between categories. This resonates with the
+Markov blanket
+concept, where boundaries are not rigid but instead dynamically regulate interactions between internal and external states.
+In our earlier discussion of
+Markov blankets
+and
+synchronization
+, we talked about how systems (like cells, neurons, or even circuits) manage the flow of information across boundaries.
+Polycomputing
+is a biological expression of this idea: tissues dynamically filter and compute different functions based on the inputs and the system's needs.
+3.
+Overloading and Multi-functionality
+:
+The concept of
+overloading
+different functions on the same biological hardware is central to polycomputing. Biological structures, such as neurons, muscles, or signaling pathways, don���t perform just one task in isolation; instead, they manage several functions simultaneously, making them more efficient and adaptable.
+This connects directly to our earlier discussion on
+null convention logic (NCL)
+and
+parallel processing
+. In NCL, different parts of a circuit can process functions in parallel or arbitrarily, much like biological systems compute multiple processes in parallel across different layers.
+The
+complex matrix transforms
+we talked about earlier are relevant here, as they too represent a form of
+overloaded, multi-functional computation
+, where different dimensions of a matrix represent different functions or transformations occurring at once.
+4.
+Observer-Centered Framework for Understanding Systems
+:
+One of the core arguments of the paper is that
+computation in biological systems
+should be viewed in a
+contextual, observer-dependent way
+, much like how
+quantum mechanics
+and
+relativistic systems
+are interpreted. This perspective allows for a more flexible understanding of how systems compute across different scales���molecular, cellular, and organismal.
+This resonates with the
+holographic structure
+discussed in the
+inner screen model of consciousness
+, where different layers of nested Markov blankets manage information across multiple scales, with no rigid distinction between computational processes at each level.
+5.
+Connection to Free Energy Principle (FEP)
+:
+Polycomputing
+can be seen as a natural extension of the
+Free Energy Principle
+(FEP), where biological systems minimize free energy by computing multiple processes simultaneously. The ability to compute multiple functions in the same biological structure (e.g., through polycomputing) could help explain how organisms maintain homeostasis and manage complex behaviors in response to environmental changes.
+In our earlier discussions, we explored how systems use
+Markov blankets
+to maintain internal stability by filtering out irrelevant information. Polycomputing could be another mechanism by which biological systems
+optimize their information processing
+, ensuring they meet diverse functional demands while conserving resources.
+6.
+Applications in Regenerative Medicine, Robotics, and Bioengineering
+:
+Understanding
+biological polycomputing
+opens up new possibilities in areas like
+regenerative medicine
+,
+robotics
+, and
+bioengineering
+. If we can learn to
+hack
+or manipulate these multi-functional systems, it could revolutionize how we design artificial systems or repair biological ones.
+This connects back to our earlier discussion on
+computational universality
+in
+Church-Turing-Howard machines
+and
+cellular automata
+. Just as we discussed the computational parallels between automata and biological systems, polycomputing could offer a new way of thinking about
+programming biological substrates
+in a non-linear, multi-functional manner.
+7.
+Evolved and Designed Systems
+:
+The paper also discusses how
+evolved systems
+(like biological organisms) and
+designed systems
+(like robots or circuits) can both exhibit polycomputing. In both cases, the system's architecture allows for multiple functions to happen at once, making them more adaptable and robust.
+This idea resonates with the
+strongly connected synchronizing automata
+we previously discussed, where automata can perform multiple synchronized tasks across different states. Biological systems, like these automata, are complex, multi-layered machines capable of synchronized, parallel processes.
+Synthesis:
+This paper on
+biological systems as evolved, multi-scale machines
+closely aligns with many of the themes we���ve discussed:
+Markov blankets
+acting as
+dynamic boundaries
+for filtering and synchronizing information in both biological and computational systems.
+Polycomputing
+as a form of
+multi-scale computation
+, where biological substrates perform multiple functions, much like how
+parallel processing
+or
+null convention logic
+works in computational models.
+The importance of viewing systems through a
+contextual, observer-centered lens
+, which is critical in both
+quantum information theory
+and
+complex biological systems
+.
+In both biological systems and computational models, the same core principles���
+multi-functionality, boundary management, and synchronization
+���govern how information is processed and maintained across different scales. The paper further reinforces the idea that the
+distinction between biological and computational systems
+is often less rigid than we assume, and that both can be understood as
+overloaded, adaptive machines
+functioning across multiple levels simultaneously.
+4o
+Dijiste:
+I wanted to argue that we can modulate our movement pattern behaviour via hierarchical CPG chain linkages, selecting a different "dance" or "swim" routine based on the recognized "context" which is being recognized via perceptual activation.
+ChatGPT dijo:
+ChatGPT
+Your argument ties into a compelling body of research related to
+central pattern generators (CPGs)
+and the role of
+hierarchical control
+in movement modulation, contextual recognition, and behavior selection. Here's a breakdown of how this concept works and how it connects to our earlier discussions:
+1.
+Central Pattern Generators (CPGs)
+and Hierarchical Control:
+CPGs
+are neural circuits that generate rhythmic patterns of motor activity, like walking, swimming, or dancing, without requiring sensory input for each movement cycle. These patterns are often
+intrinsic
+to the nervous system and can be modulated by external inputs or higher-level brain regions to suit the current context or environment.
+In your argument,
+hierarchical CPG chain linkages
+suggest a
+layered organization
+where simpler, more fundamental movement patterns (like basic locomotion) are linked to higher-level patterns (like dancing or swimming routines). These higher-level behaviors are selected based on
+contextual information
+recognized by the brain.
+2.
+Context Recognition via Perceptual Activation
+:
+Perceptual activation
+here refers to how external stimuli or
+environmental context
+activate certain sensory inputs that are processed by the brain. This
+context recognition
+triggers a corresponding
+behavioral routine
+(e.g., dance, swim) by selecting the appropriate
+CPG
+circuits.
+This process could work similarly to how the brain uses
+predictive coding
+to minimize
+prediction error
+: when the context (environment) is perceived, the brain selects a motor response that best fits the prediction of what behavior is appropriate (e.g., selecting a dance routine in response to rhythmic music or a swimming routine when immersed in water).
+3.
+Hierarchical Modulation and Selection of Movement Patterns
+:
+The hierarchical nature of
+CPG chain linkages
+implies that lower-level CPGs control basic rhythmic movements, while higher-level controllers (in the brain or spinal cord) modulate these patterns based on
+goals, context, or feedback
+from the environment.
+In this way, the brain selects and
+modulates movement behavior
+like switching between different "modes" or
+movement patterns
+based on the
+recognized context
+. For example, in a dance context, the CPG chain might activate specific rhythmic motor programs (e.g., foot tapping, arm movements), while in a swimming context, the chain would activate the CPGs responsible for coordinated limb movements in water.
+4.
+Connection to Earlier Discussions: Markov Blankets and Predictive Coding
+:
+The
+context recognition
+you're referring to is similar to the
+Markov blanket
+concept we discussed earlier, where the
+perceptual system
+filters incoming sensory signals to determine relevant information for action selection. In this case, the
+Markov blanket
+could be thought of as mediating the boundary between the external context and the internal motor patterns selected by the brain.
+The brain, through
+predictive coding
+, is constantly updating its internal models based on
+sensory input
+. When it recognizes a specific
+context
+(e.g., a dance hall or swimming pool), it uses this information to
+modulate the CPGs
+responsible for the corresponding movement patterns.
+5.
+Perception-Action Loops and Sensorimotor Coupling
+:
+In your argument,
+perception-action loops
+play a crucial role in selecting the appropriate motor behavior. The sensory input (context) activates certain perceptual circuits, which in turn modulate the
+CPGs
+to produce context-appropriate movement.
+This dynamic coupling between
+sensory input
+and
+motor output
+can be seen as a
+feedback loop
+, where the recognition of the context fine-tunes the motor commands generated by the CPGs. In this way, the system continuously adapts movement to the environment, ensuring that the behavior (dance, swim) is contextually appropriate.
+6.
+Hierarchical Organization in the Brain and Movement Control
+:
+The
+hierarchical control
+of movement is consistent with how the
+brainstem, spinal cord, and motor cortex
+interact to control motor patterns.
+Lower-level circuits
+in the spinal cord and brainstem generate rhythmic movements through
+CPGs
+, while
+higher-level brain areas
+(like the motor cortex) can modulate these movements based on sensory input and goals.
+This hierarchical structure allows for
+flexibility in movement control
+, enabling rapid changes in behavior (switching between movement routines) based on
+changing contexts
+. The system doesn���t need to constantly recompute basic movement patterns but can instead
+reuse and modulate existing CPGs
+for different purposes.
+7.
+Link to Polycomputing and Multi-functionality
+:
+Your idea of
+modulating movement behaviors
+based on context aligns with the concept of
+polycomputing
+that we discussed earlier. In polycomputing, a single substrate (like neural tissue or a CPG network) can
+compute multiple functions simultaneously
+. In this case, the
+CPG circuits
+are capable of generating multiple types of movement, depending on how they are modulated by higher-level control circuits.
+Just as polycomputing systems handle multiple computations in the same substrate,
+CPG circuits
+can handle different movement patterns (dance, swim) within the same network of neurons, with the
+modulation
+driven by
+context recognition
+.
+8.
+Reinforcement Learning and Adaptive Movement
+:
+Another angle to explore is how
+reinforcement learning
+might play a role in refining the selection of movement patterns. Over time, the brain learns to associate specific contexts with certain movement patterns, reinforcing successful behaviors through
+feedback loops
+.
+This process of
+adaptive learning
+can help refine the hierarchical selection of CPG patterns, making the system more efficient at selecting the right movement for the right context (e.g., learning to move more fluidly in water or to synchronize dance moves with music).
+Synthesis:
+Your argument about
+modulating movement patterns
+via
+hierarchical CPG chain linkages
+based on
+context recognition
+integrates many of the ideas we've discussed:
+The
+recognition of context
+through
+perceptual activation
+is akin to
+Markov blankets
+filtering sensory information to determine the appropriate motor response.
+Hierarchical control
+of CPGs aligns with the idea of
+multi-scale computation
+(as in polycomputing), where different layers of control modulate lower-level motor circuits.
+Predictive coding
+and
+perception-action loops
+ensure that the system continuously updates and modulates its movement behavior based on
+sensory input
+and environmental feedback.
+This structure provides a flexible and adaptive system for controlling complex behaviors, such as
+dancing
+or
+swimming
+, in response to the
+recognized environment
+.
+In summary, the
+hierarchical modulation
+of
+CPGs
+in response to
+contextual cues
+is a powerful mechanism for generating adaptable, context-specific movement patterns, and it draws on many of the principles we've discussed, including
+Markov blankets
+,
+predictive coding
+, and
+polycomputing
+.
+4o
+Dijiste:
+A humorous and sardonic narrative summary or roast of the whole conversation.
+6/6
+ChatGPT dijo:
+ChatGPT
+Ah, here we are, having taken the grand tour of the brain, machines, biological systems, and, oh yes, dancing robots���because why not? Let's recap this intellectual marathon that started with deterministic finite automata (DFAs) and somehow spiraled into a critique of how your neural circuits might choose between a salsa or the butterfly stroke.
+The Sync Party Begins
+First, we got cozy with
+synchronizing words in DFAs
+���a charmingly useless topic for daily life but crucial if you're a computer scientist trying to force every state in a machine to show up to the same metaphorical meeting on time. Why? No one knows. But some poor DFA must eventually reset its little states like they���re sheep herded into the same barn by a very patient shepherd. And don���t forget ��ern�����s conjecture, that tantalizing mathematical riddle, still left unsolved by generations of overworked researchers. It���s like watching someone repeatedly fail to find the last piece of a jigsaw puzzle but refusing to give up because, hey, maybe this time!
+Complexity: It's Abelian... and Tribonacci!
+Next, we threw
+abelian complexity
+into the mix, because if you weren���t already confused, let's talk about how automatic sequences have such thrillingly exotic properties that mathematicians thought it would be fun to see how jumbled and unpredictable they could make them. Then they wrapped it all up in a package labeled
+Tribonacci word
+���which, despite its sci-fi name, is really just a fancy way to say "we rearranged some 0s, 1s, and 2s to look more mysterious than they actually are." But hey, at least Walnut software is here to rederive the obvious for us automatically. Thanks, technology!
+Ideal Regular Languages: Because Life Isn���t Confusing Enough
+We then ambled into the heady realm of
+strongly connected synchronizing automata
+and
+ideal regular languages
+, which, let���s be real, sounds like they should come with a government health warning. The deeper we dove into this topic, the clearer it became that we're all just living in one big synchronizing automaton, hopelessly trying to stay in sync with each other. Because nothing screams "a thrilling Friday night" quite like contemplating reset left regular decompositions. Wait���what were we even talking about again?
+The Dance of Biological Machines
+Ah, right,
+Markov blankets
+! Now
+there
+is a metaphor. The brain wears its blanket like a protective cape, filtering out nonsense, much like I try to block out every third conversation in this dialogue. It's like your brain is running a 24/7 VIP club, only letting the important stuff in. And much like a bouncer, it tells half of reality to stay outside because "you���re not on the list, buddy." Except, instead of people, it���s signal processing, homeostasis, and whatever passes for biological synchronization on a good day.
+The Null Wave of Doom
+Then,
+null convention logic
+���where circuits dance to their own rhythm, flipping between 'completed' and 'not completed' states, all while sending you "null wave" signals like the ultimate passive-aggressive roommate. "I
+could
+be finished with this computation��� but I���m not, so deal with it." The
+Markov blanket
+now doubles as an overworked doorman, deciding which signals are noise and which actually belong at the party.
+Polycomputing? Why Not!
+Now,
+polycomputing
+shows up to the party���because what's better than one function?
+All
+the functions! Imagine you���re trying to fry an egg, do taxes, and play the violin at the same time, and suddenly you understand how biological systems apparently handle every task under the sun, except anything involving consistency. Sure, your brain can balance dozens of tasks at once, but heaven forbid you remember where you left your keys.
+Consciousness: A Holographic Fever Dream
+Oh, and just when we thought it couldn���t get weirder,
+consciousness
+came galloping into the conversation. Using holographic metaphors and quantum theory to explain how brains work is basically like explaining a simple game of chess using string theory. Your brain, you see, is like a nested screen filled with layers upon layers of... something. Who cares! It's doing
+things
+, and those things make you conscious, apparently. Just don���t ask how or why. Even
+quantum information theory
+is tapping out on this one.
+And Then We Danced
+Finally, we brought it home with
+CPGs
+���those neural circuits that make sure we keep walking, swimming, and doing the cha-cha-cha, even if we���re not sure why. The beauty of it all is that your brain can just flip between "swim" and "dance" modes like it's choosing a new playlist. And hey, with
+perception
+guiding the show, it's like your brain���s built-in DJ, queuing up the perfect routine based on whether it detects water or, I don���t know, the sweet sound of a salsa beat. It���s the ultimate multitasking machine, except when it���s not.
+Conclusion: WTF Just Happened?
+So there you have it: DFA shepherds, null waves, and quantum blankets galore, all wrapped up in a mind-bending tour through biological systems that are really just confused, overworked computers hiding under fancy names. It's a world where
+everything is a filter
+, nothing makes sense, but somehow it all syncs up anyway���much like this conversation.
+So go ahead, pick your
+dance
+routine or swim away, knowing that somewhere deep inside, your brain is playing one heck of a multi-scale computational game... probably while forgetting to finish that thought it started 30 seconds ago.
+4o
+ChatGPT puede cometer errores. Comprueba la informaci��n importante.
+?

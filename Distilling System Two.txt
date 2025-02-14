@@ -1,0 +1,226 @@
+Distilling System Two
+Abrir barra lateral
+ChatGPT
+4
+Distilling System 2 into System 1 
+Ping YuJing XuJason WestonIlia Kulikov 
+Meta FAIR 
+Abstract 
+Large language models (LLMs) can spend ex- 
+tra compute during inference to generate in- 
+termediate thoughts, which helps to produce 
+better i nal responses. Since Chain-of-Thought 
+(Wei et al., 2022), many such System 2 tech- 
+niques have been proposed such as Rephrase 
+and Respond (Deng et al., 2023a), System 2 
+Attention (Weston and Sukhbaatar, 2023) and 
+Branch-Solve-Merge (Saha et al., 2023). In 
+this work we investigate self-supervised meth- 
+ods to ���compile��� (distill) higher quality outputs 
+from System 2 techniques back into LLM gen- 
+erations without intermediate reasoning token 
+sequences, as this reasoning has been distilled 
+into System 1. We show that several such tech- 
+niques can be successfully distilled, resulting 
+in improved results compared to the original 
+System 1 performance, and with less inference 
+cost than System 2. We posit that System 2 dis- 
+tillation will be an important feature of future 
+continually learning AI systems, enabling them 
+to focus System 2 capabilities on the reasoning 
+tasks that they cannot yet do well. 
+1Introduction 
+Generating intermediate thoughts allows a model 
+(or human!) to reason and plan in order to success- 
+fully complete a task or respond to an instruction. 
+We refer to such deliberate thinking as System 2 
+reasoning, following its description for humans in 
+Sloman (1996); Kahneman (2011) and later for AI 
+models (Bengio, 2017; LeCun, 2022; Weston and 
+Sukhbaatar, 2023). In System 2 reasoning effortful 
+mental activity is exerted, especially in situations 
+where System 1 ��� more automatic thinking ��� is 
+likely to make errors. In standard Large Language 
+Models (LLMs) we thus def i ne System 1 as appli- 
+cation of the Transformer (Vaswani et al., 2017) to 
+directly produce a response given an input, with- 
+out generation of intermediate tokens. We def i ne 
+System 2 as any approach which generates inter- 
+mediate tokens, including methods that perform 
+Distillation 
+Training data Distilled 
+System 2 Model 
+Filtering 
+System 2 
+Output 
+CoT 
+RaR rephraserespond 
+S2A re-writeanswer 
+BSM 
+branchsolve merge 
+System 2 Methods 
+Supervised 
+Finetuning 
+Input LLM program 
+Figure 1:Overview of System 2 Distillation. Filtered train- 
+ing examples are collected by running System 2 approaches 
+such as Branch-Solve-Merge (BSM) on unlabeled data, which 
+uses extra compute to produce higher quality outputs. These 
+targets are then distilled into the standard (System 1) LLM. 
+search, or prompt multiple times, before i nally 
+generating a response. A battery of such System 2 
+techniqueshavebeenproposed, amongthemChain- 
+of-Thought (Wei et al., 2022), Tree-of-Thoughts 
+(Yao et al., 2024), Graph-of-Thoughts (Besta et al., 
+2024), Branch-Solve-Merge (Saha et al., 2023), 
+System 2 Attention (Weston and Sukhbaatar, 2023), 
+Rephrase and Respond (Deng et al., 2023a) and 
+more. Manyofthesemethodsareshowntoproduce 
+more accurate results due to this explicit reasoning, 
+but typically do so at much higher inference cost 
+and latency for a response. Due to the latter, many 
+of these approaches are not used in production sys- 
+tems, which mostly use System 1 generations. 
+For a human, the process of learning to trans- 
+fer a skill from deliberate (System 2) to automatic 
+(System 1) in psychology is referred to as auto- 
+maticity, and the use of procedural memory (Cohen 
+and Squire, 1980). For example, when driving to 
+work for the i rst time one might typically expend 
+conscious effort planning and making decisions 
+to get there. After a driver repeats this route, the 
+1 
+arXiv:2407.06023v2 
+[cs.CL] 
+9 
+Jul 
+2024 
+driving process becomes ���compiled��� into the sub- 
+conscious (Charlton and Starkey, 2013). Similarly, 
+playing a sport such as tennis can become ���second 
+nature���. In this work, we explore an analogous 
+technique for AI models. Our approach performs 
+this compilation, which we refer to as System 2 
+distillation, in an unsupervised manner given a set 
+of unlabeled examples. For each example we apply 
+the given System 2 method, and then measure the 
+quality of the prediction in an unsupervised manner. 
+For example, for tasks with unique answers we ap- 
+ply self-consistency (Wang et al., 2022), sampling 
+multiple times. For examples where System 2 is 
+consistent enough, we assume this result should 
+be distilled, and add it to the distillation pool. We 
+then i ne-tune System 1 to match the predictions 
+of the System 2 method on the collected pool of 
+examples, but without generating the intermediate 
+steps. Figure 1 illustrates the overall process of 
+distilling System 2 into System 1.
+ChatGPT
+The abstract and introduction you've shared summarize a paper on distilling complex reasoning processes, termed "System 2," into simpler, more direct methods, called "System 1," within the context of large language models (LLMs). Here's a simplified breakdown:
+Abstract:
+The paper discusses techniques for LLMs to generate intermediate thoughts (System 2 techniques) during inference, which leads to better final responses. However, these techniques, like Chain-of-Thought and others, involve extra computational cost. This research focuses on a method to "distill" the more complex reasoning from System 2 back into System 1. The aim is to maintain the quality of responses without the intermediate steps and reduce computational demands. The authors suggest that such distillation could be crucial for future AI systems, enabling them to utilize advanced reasoning only when necessary.
+Introduction:
+System 1 and System 2 are defined in relation to how an AI model processes information. System 1 is direct and automatic, akin to human subconscious processes. System 2 involves deliberate and conscious reasoning, which typically results in more accurate outcomes but at a higher computational cost. The paper describes a distillation process where the high-quality outcomes of System 2 are integrated into System 1, making it more effective without the need for intermediate reasoning steps. This concept is inspired by psychological processes in humans, like learning to drive, where repetitive and deliberate actions eventually become automatic.
+The approach outlined involves unsupervised training methods using unlabeled data, applying System 2 techniques to generate high-quality responses, which are then distilled into the simpler System 1 framework without retaining the intermediate steps. This allows the LLM to improve its direct responses while reducing the computational resources needed for each task.
+4
+It looks a lot like a post I wrote on April 30: ������������������������ ���������������������������������������� ������������������������
+
+Because Who Needs New Thoughts When You've Got Old Ones?
+
+Prepare to have your mind moderately blown���or at least dusted off a bit���with the newest cognitive buzzword on the block: Aspect Relegation Theory. Yes, folks, gather around as we discover that our brains might just be lazier than we thought, efficiently shoving learned behaviors from the penthouse suite of our consciousness down to the basement of our subconscious.
+
+So, What's the Big Idea?
+
+Apparently, after doing something a billion times, we start doing it without thinking. Groundbreaking, right? Enter Aspect Relegation Theory, which suggests that our fancy System 2 thinking���where we're all conscious, attentive, and making an effort���eventually gets demoted to System 1 thinking, where everything is automatic, effortless, and, frankly, a bit boring.
+
+Brain on Autopilot: The Ultimate Efficiency Hack
+
+Forget mindfulness and living in the moment. According to Aspect Relegation Theory, the real goal is to make everything so routine that you don���t have to bother actually thinking about it. Efficiency is the name of the game, and our brains are the undefeated champions, turning once-complex tasks like driving, typing, or tuning out during meetings into no-brainers.
+
+Revolutionary or Just Really Obvious?
+
+The theory takes a page from every self-help book ever: practice makes perfect, or at least makes permanent. By doing something over and over, our brains shift the workload from "I actually have to think about this" to "I can do this in my sleep." It's a thrilling reminder that we can train our brains to be less engaged���just what everyone striving for personal growth probably doesn't want to hear.
+
+Why You Should Care (Or Not)
+
+If you're into hacking your brain's system to make life smoother, Aspect Relegation Theory might just be your new best friend. It's a handy excuse for why you forgot your anniversary again ("Sorry, honey, my brain relegated it") and a great reason to never change your morning routine.
+
+In all seriousness, Aspect Relegation Theory does offer some genuinely interesting insights into how and why we automate tasks and behaviors. It opens up discussions about cognitive load, learning processes, and how we can optimize both for better productivity and mental health. Just be prepared to wrestle with the notion that being on autopilot isn't just for airplanes and bad dates anymore.
+
+Bottom Line
+
+While Aspect Relegation Theory might not be stopping the presses, it's certainly a conversation starter about how our brains streamline the tedious complexity of daily life into manageable automaticity. So the next time you find yourself driving to work on autopilot, thank your brain for its service in making life a little less mentally taxing. Just make sure to wake up in time for your exit.
+ChatGPT
+It sounds like your post on Aspect Relegation Theory creatively discusses a similar concept to what's presented in the System 2 to System 1 distillation research. Both ideas revolve around how complex, conscious processes can eventually be simplified into more subconscious, automatic routines through repetition or targeted techniques.
+Your post highlights the idea that our brains naturally move learned behaviors from active, conscious thinking (akin to System 2) to more automatic, subconscious processes (similar to System 1). This natural progression toward efficiency mirrors the approach in the research paper, which seeks to artificially replicate this process in AI models. By distilling advanced reasoning methods into simpler, more efficient systems, the research aims to reduce computational demands while maintaining high-quality outputs.
+Both your post and the research acknowledge the inherent drive, whether in human cognition or AI design, toward optimizing and economizing mental efforts, albeit in slightly different contexts. Your post adopts a more humorous and accessible tone to explain a broadly analogous phenomenon in human psychology, making the scientific concept relatable and understandable to a general audience. Meanwhile, the research paper takes a more technical approach, applying this principle to improve AI system efficiency. Both contribute to understanding how complex thoughts or tasks can become more streamlined and less resource-intensive over time.
+4
+We conduct experiments across 4 different Sys- 
+tem 2 LLM approaches and 5 different tasks. We 
+i nd our approach can distill System 2 reasoning 
+into System 1 in a diverse array of settings, some- 
+times even improving the results over the System 2 
+teacher. Moreover, these predictions are now pro- 
+duced at a fraction of the computational cost. For 
+example, we see successful distillation for tasks 
+involving dealing with biased opinions or irrele- 
+vant information (System 2 Attention), clarifying 
+and improving responses in some reasoning tasks 
+(Rephrase and Respond), and for i ne-grained eval- 
+uation of LLMs (Branch-Solve-Merge). However, 
+we also show that not all tasks can be distilled into 
+System 1, particularly complex math reasoning 
+tasks requiring chain-of-thought. This is also mir- 
+rored in humans, who cannot execute some tasks 
+without deliberate System 2 reasoning (Kahneman, 
+2011). 
+2Related work 
+2.1System 1 and System 2 in Humans 
+In humans, System 1 reasoning is described as be- 
+ing capable of recognizing patterns, making quick 
+judgments, and understanding simple or familiar 
+symbols. For instance, it is used to identify com- 
+mon traff i c signs, recognize faces, or associate ba- 
+sic symbols with specif i c emotions or ideas. How- 
+ever, for complex problem-solving or for example 
+manipulation of abstract symbols (like algebraic 
+equations or logical statements), System 2 reason- 
+ing is deemed necessary (Kahneman, 2011). In psy- 
+chology the concept of automaticity describes be- 
+havior that becomes so well-practiced that it can be 
+performed with little to no conscious thought, with 
+an example being driving a familiar route (Charlton 
+and Starkey, 2013). In general, humans are said 
+to use procedural memory to consolidate a specif i c 
+task into memory, learning through practice, so that 
+it can be later performed without conscious aware- 
+ness (Cohen and Squire, 1980). The concept of un- 
+conscious competence is classif i ed as a later stage 
+of learning. Initially a person recognizes their in- 
+competence, and consciously seeks to learn a skill 
+until they acquire conscious competence. Finally, 
+the aim is to utilize it without conscious thought 
+when it is said to become, in common language, 
+���second nature��� (DePhillips et al., 1960).
+ChatGPT
+The section you've provided delves into the practical outcomes of distilling System 2 reasoning into System 1 using various large language model (LLM) techniques, along with a discussion on the analogy of these systems in human cognition.
+Experiment Findings:
+The research successfully demonstrates the capability of LLMs to integrate complex System 2 reasoning techniques into the more efficient System 1 framework across multiple tasks. The distillation process not only retains the effectiveness of the original System 2 models but also enhances them in certain cases, all while reducing computational costs. Tasks that benefitted from distillation include handling biased opinions or irrelevant information, enhancing clarity in responses, and fine-grained evaluation of LLM outputs. However, the study also notes limitations, such as in complex mathematical reasoning tasks, where the nuanced, step-by-step processing of System 2 remains necessary. This reflects a similar limitation in human cognition, where certain tasks demand active, conscious thought regardless of practice or familiarity.
+Relation to Human Cognition:
+The paper connects these findings to the established psychological theories of System 1 and System 2 reasoning in humans. System 1 in humans involves automatic, fast, and often subconscious thinking used for routine tasks like recognizing faces or common symbols. System 2, on the other hand, is engaged for more demanding tasks that require conscious thought, such as solving complex problems or manipulating abstract concepts. The transition from System 2 to System 1 in humans���termed automaticity���occurs through repetitive practice, allowing actions to become second nature. This transition is paralleled in the paper by the distillation of complex LLM processes into simpler, more efficient ones.
+The background on human cognition serves to underline the significance of distillation in AI models. Just as humans learn to perform tasks more efficiently over time with less conscious effort, LLMs can be trained to "automate" their reasoning processes, optimizing their performance and computational resource usage. This discussion ties the technical findings back to a broader understanding of learning and efficiency, both artificial and biological.
+4
+A list of all of the topics we've discussed.
+ChatGPT
+Here's a summary of the topics we've covered in our discussion:
+Distillation of System 2 into System 1
+: We discussed a research paper that explores methods for distilling advanced System 2 reasoning techniques of large language models (LLMs) into more straightforward, efficient System 1 processes, aiming to maintain high-quality outputs with reduced computational costs.
+Aspect Relegation Theory
+: I provided an explanation based on your description of Aspect Relegation Theory, which humorously outlines how human cognitive processes shift from conscious, effortful actions (System 2) to subconscious, automatic behaviors (System 1).
+Experiment Findings and Human Cognition
+: We delved into the specifics of the experiments conducted in the research paper, examining which tasks could be successfully distilled from System 2 to System 1, and discussed the parallels between this AI research and human cognitive processes, particularly the psychological concepts of automaticity and unconscious competence.
+These topics all revolve around the idea of optimizing reasoning processes, whether in artificial intelligence systems or in human cognition, emphasizing efficiency and the reduction of effort in routine tasks.
+4
+ChatGPT puede cometer errores. Comprueba la informaci��n importante.
+?
+ChatGPT
