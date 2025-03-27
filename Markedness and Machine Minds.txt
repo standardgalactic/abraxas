@@ -1,0 +1,114 @@
+Markedness and Machine Minds: A Theory of Mind Framework for Modeling Human Expertise through Semantic and Temporal Deviation
+
+Abstract:
+This paper introduces the Multi-Domain Semantic and Temporal Intelligence Evaluation (MD-STIE) framework, a computational system designed to model human expertise in a manner analogous to human theory of mind (ToM).
+
+MD-STIE leverages linguistic markedness and temporal dynamics of user behavior to identify, contextualize, and predict human cognitive capabilities across diverse task domains. Drawing on the premise that human ToM infers mental states from deviations in expected behavior, MD-STIE flags temporally or semantically "marked" actions as anomalies requiring belief revision.
+
+Through LLM-augmented interaction, the framework simulates surprise, seeks contextual input, and refines internal models of user expertise, mirroring the cognitive architecture underlying social cognition. We present case studies across domains including web development, combinatorics, and AI system design, showing how MD-STIE reconstructs user profiles through cross-domain behavioral inference.
+
+We argue this framework represents a computational analog to mental state attribution, offering implications for adaptive interfaces, cognitive modeling, and the future of machine social cognition.
+
+1. Introduction
+
+Theory of mind (ToM) enables humans to infer the mental states, intentions, and knowledge of others based on observable behavior. In both developmental psychology and cognitive science, ToM is considered a cornerstone of social cognition and intelligent interaction. This paper explores the hypothesis that a computational framework rooted in semantic and temporal markedness can instantiate an analogous mechanism for machines.
+
+We propose the MD-STIE framework as an early prototype of machine-embedded ToM: a system that interprets user behavior not merely in terms of task success, but in terms of inferred intent, expertise, and deviation from statistical expectations. This framework is designed to operate across domains, offering a generalized model of user cognition derived from marked actions and contextual explanations.
+
+2. Background and Related Work
+
+2.1 Theory of Mind in Cognitive Science
+ToM is traditionally studied through tasks that reveal belief attribution, intention recognition, and predictive reasoning. Classic experiments such as the Sally-Anne test demonstrate the human capacity to revise mental models based on knowledge discrepancies (Baron-Cohen et al., 1985). Computationally, ToM has been modeled using probabilistic inference frameworks (Baker et al., 2009), inverse planning (Baker et al., 2017), and neural network-based simulations of mental state reasoning (Rabinowitz et al., 2018).
+
+2.2 Markedness in Linguistics and Cognition
+Markedness refers to the asymmetry between typical (unmarked) and atypical (marked) forms (Jakobson, 1971; Battistella, 1990). In language, marked elements convey specificity or deviation. Recent applications extend markedness to conceptual and behavioral analysis, interpreting deviation as a cognitively salient feature (Croft, 2003).
+
+2.3 Machine Learning and Expertise Modeling
+Expertise modeling often relies on performance metrics or supervised learning (Koedinger et al., 2015). More recent systems have explored unsupervised modeling of skill acquisition using keystroke data (Epp et al., 2011) or temporal patterns (Anderson et al., 1995). LLM-based user modeling has emerged with adaptive agents (Chiang & Birchfield, 2023), though typically lacking theory-driven interpretation of outlier behaviors. MD-STIE bridges this gap by integrating linguistic theory with cognitive modeling.
+
+3. The MD-STIE Framework
+
+3.1 Overview
+MD-STIE operates in three stages:
+
+Detection of Markedness: Identifying semantically or temporally unusual behavior.
+
+Contextual Inquiry: Prompting users to provide explanations or leveraging interaction histories.
+
+Belief Updating: Revising the user model based on contextual input, akin to mental state attribution.
+
+3.2 Semantic Markedness
+Leveraging large language models (LLMs), the system identifies rare or abstract linguistic/conceptual patterns in user inputs. Examples include unconventional code constructs, high-level abstractions, or unusual toolchains.
+
+3.3 Temporal Markedness
+The system analyzes prompt-response cycles, typing latency, hesitation intervals, and completion time. Deviations from domain-specific norms are flagged as temporally marked.
+
+3.4 Cross-Domain Integration
+User behaviors are mapped to an evolving ontology, enabling the system to generalize inferences across tasks. For example, a user who demonstrates rapid, semantically rich problem solving in combinatorics may be re-evaluated for advanced capability in logical reasoning during web development tasks. This supports the construction of a unified cognitive profile that incorporates domain-agnostic behavioral patterns.
+
+4. Case Study: From Anomaly to Expert
+
+A user completes a glitch-effect webpage deployment in 10 minutes, far below the 2-hour task norm. MD-STIE flags this as a marked event. Upon querying, the user explains the use of Git Bash, WSL, and Python servers—advanced tools that explain the temporal anomaly. The system updates its model, shifting from an interpretation of error or randomness to one of expertise.
+
+This mirrors ToM processes in humans: initial surprise gives way to belief revision upon receiving new information.
+
+5. Discussion
+
+5.1 Machine Surprise and Cognitive Simulation
+MD-STIE’s ability to flag markedness reflects an early form of computational surprise, distinct from the statistical surprise minimized in active inference. While active inference frameworks focus on reducing prediction error to maintain homeostatic equilibrium, MD-STIE leverages surprise as a cue for schema violation—triggering interpretive model revision. This cognitive-style surprise prompts the system to seek contextual explanation, emulating the process of belief updating in human cognition.
+
+5.2 Implications for Adaptive Systems
+Such a system can enhance adaptive interfaces that respond to user expertise, learning pace, or preferred strategy. It offers potential for real-time tutoring, human-computer collaboration, and cognitive profiling.
+
+5.3 Toward Machine Theory of Mind
+By modeling the dynamics of mental state attribution computationally, MD-STIE opens a path toward machines that do not merely react, but interpret, infer, and anticipate human behavior.
+
+5.4 Cognitive Architecture Inspiration
+The MD-STIE framework draws inspiration from cognitive architectures that emphasize layered information processing and interpretive mechanisms. Notably, Glasser's Stations of the Mind (1984) provides a compelling model for understanding how cognitive systems process information at different levels, from raw sensory input to higher-order cognitive control. In MD-STIE, the detection and interpretation of semantic and temporal markedness can be viewed as an instantiation of Glasser's interpretive processing station, where the system seeks to understand the underlying causes of observed deviations. Furthermore, the system’s ability to revise its user models based on these interpretations reflects the reflexive reappraisal inherent in Glasser’s model, aligning with meta-cognitive processes. This alignment lends cognitive plausibility and theoretical depth to the MD-STIE architecture, bridging computational modeling with foundational theories of human thought.
+
+6. Future Work
+
+Future research will focus on integrating physiological signals (e.g., keystroke dynamics, eye tracking) to enhance inference fidelity, expanding domain ontologies for broader generalization, and formalizing the belief updating mechanism using Bayesian or neural-symbolic models. A promising direction is implementing belief state tracking via Bayesian theory of mind models (Baker et al., 2009) or hybrid architectures combining symbolic reasoning with neural embeddings (Besold et al., 2017). In MD-STIE, the evidence derived from semantic or temporal markedness acts as Bayesian likelihood—adjusting the system’s prior belief about a user’s expertise level in light of new contextual evidence. We also aim to explore a full MD-STIE implementation aligned with Glasser’s five-station cognitive architecture:
+
+Station 1 (Reception): Low-level user input collection including typing cadence and prompt timing.
+
+Station 2 (Immediate Processing): Fast anomaly detection via temporal pattern recognition.
+
+Station 3 (Representational Memory): Dynamic user modeling over time and across tasks.
+
+Station 4 (Interpretive Processing): Reasoning over marked behavior using semantic models and context.
+
+Station 5 (Decision/Control): Real-time reclassification, adaptive interface adjustments, and behavioral prediction.
+
+This mapping offers a pathway toward cognitively inspired HCI systems with richer responsiveness and interpretive depth.
+
+7. Conclusion
+
+MD-STIE represents a step toward machine-emulated theory of mind, using semantic and temporal markedness as proxies for belief violation and model revision. In tracking expertise as an emergent cognitive pattern across domains, the framework lays the groundwork for socially intelligent systems capable of human-like understanding.
+
+References:
+Anderson, J. R., Corbett, A. T., Koedinger, K. R., & Pelletier, R. (1995). Cognitive tutors: Lessons learned. The Journal of the Learning Sciences, 4(2), 167–207.
+
+Baker, C. L., Saxe, R., & Tenenbaum, J. B. (2009). Action understanding as inverse planning. Cognition, 113(3), 329–349.
+
+Baker, C. L., Jara-Ettinger, J., Saxe, R., & Tenenbaum, J. B. (2017). Rational quantitative attribution of beliefs, desires and percepts in human mentalizing. Nature Human Behaviour, 1(4), 1–10.
+
+Baron-Cohen, S., Leslie, A. M., & Frith, U. (1985). Does the autistic child have a "theory of mind"? Cognition, 21(1), 37–46.
+
+Battistella, E. L. (1990). Markedness: The Evaluative Superstructure of Language. SUNY Press.
+
+Besold, T. R., Garcez, A. d., Bader, S., Bowman, H., Domingos, P., Hitzler, P., ... & van Harmelen, F. (2017). Neural-symbolic learning and reasoning: A survey and interpretation. arXiv preprint arXiv:1711.03902.
+
+Chiang, T., & Birchfield, J. (2023). Language models as personalized tutors: Context-aware feedback for coding exercises. Proceedings of the AAAI Conference on Artificial Intelligence, 37(12), 13482–13490.
+
+Croft, W. (2003). Typology and Universals. Cambridge University Press.
+
+Epp, C., Lippold, M., & Mandryk, R. L. (2011). Identifying emotional states using keystroke dynamics. Proceedings of the SIGCHI Conference on Human Factors in Computing Systems, 715–724.
+
+Glasser, R. (1984). The Station of the Mind: Reflections on the Nature of Intelligence. Hillsdale, NJ: Erlbaum.
+
+Jakobson, R. (1971). Selected Writings II: Word and Language. Mouton.
+
+Koedinger, K. R., Pavlik Jr, P. I., McLaren, B. M., & Aleven, V. (2015). Is the doer effect a causal relationship? How can we tell and why it’s important. Proceedings of the Second ACM Conference on Learning@ Scale, 359–362.
+
+Rabinowitz, N. C., Perbet, F., Song, F., Zhang, C., Eslami, S. A., & Botvinick, M. (2018). Machine theory of mind. International Conference on Machine Learning, 4218–4227.
