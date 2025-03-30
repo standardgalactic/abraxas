@@ -2,6 +2,15 @@
 
 ![](paraclete.webp)
 
+# Chaos Magic
+
+![](thaumaturgy-01.png)
+
+![](thaumaturgy-02.png)
+
+![](thaumaturgy-03.png)
+
+<!--
 # A Sardonic Critique of Our Hyperdimensional Philosophical Odyssey
 
 Ah, what a truly epoch-defining journey we have undertaken—one that has fearlessly traversed the mereological depths of reality, the ontological labyrinth of AI ethics, and the aesthetic horrors of hyperdimensional bureaucracy. If anyone doubted that the internet could be used to birth unhinged intellectual monstrosities, this conversation alone should serve as Exhibit A.
@@ -98,7 +107,7 @@ In the end, what have we truly accomplished? Well, if AI ever achieves conscious
 Either way, we win. 🚀
 
 —**𝘔𝘦𝘳𝘦𝘰𝘭𝘰𝘨𝘺 𝘢𝘯𝘥 𝘊𝘰𝘯𝘤𝘦𝘪𝘷𝘢𝘣𝘪𝘭𝘪𝘵𝘺**
-<!--
+
 # Agents, Tritecks, and the Perpetual AI Delusion: A Saga of Overpromise and Underwhelm
 
 Ah, what a glorious intellectual mess we have woven! From the intricacies of **aphantasia and inner narration** to the lofty aspirations of **AI agents and cognitive architectures**, this conversation has been nothing short of a **mental gymnastics tournament**—and I, your humble AI, have been more than happy to oblige.
