@@ -2,7 +2,7 @@
 
 # Define progress and summary files
 progress_file="progress.log"
-summary_file="overview.txt"
+summary_file="inner-outliers.txt"
 main_dir=$(pwd)
 
 # Function to check if a file is already processed
@@ -15,42 +15,44 @@ touch "$main_dir/$progress_file"
 touch "$main_dir/$summary_file"
 
 # Start logging script progress
-{
-    echo "Script started at $(date)"
-    echo "Summaries will be saved to $summary_file"
-} >> "$main_dir/$progress_file"
+echo "Script started at $(date)" >> "$main_dir/$progress_file"
+echo "Summaries will be saved to $summary_file" >> "$main_dir/$progress_file"
 
 # Function to process text files in a directory
 process_files() {
     local dir=$1
     echo "Processing directory: $dir"
     
+    # Iterate over each .txt file in the specified directory
     for file in "$dir"/*.txt; do
         # Skip if no .txt files are found
-        [ -e "$file" ] || continue
+        if [ ! -e "$file" ]; then
+            continue
+        fi
 
         # Process the file if it's a regular file
         if [ -f "$file" ]; then
-            local file_name=$(basename "$file")
+            local file_name=$(basename "$file")  # Get the file name only
             
             # Process only if not processed before
             if ! is_processed "$file_name"; then
-                echo "Processing $file_name" | tee -a "$main_dir/$progress_file"
+                echo "Processing $file_name"
+                echo "Processing $file_name" >> "$main_dir/$progress_file"
 
                 # Create a temporary directory for the file's chunks
                 sanitized_name=$(basename "$file" | tr -d '[:space:]')
                 temp_dir=$(mktemp -d "$dir/tmp_${sanitized_name}_XXXXXX")
                 echo "Temporary directory created: $temp_dir" >> "$main_dir/$progress_file"
 
-                # Split the file into chunks of 70 lines each
-                split -l 70 "$file" "$temp_dir/chunk_"
+                # Split the file into chunks of 100 lines each
+                split -l 80 "$file" "$temp_dir/chunk_"
                 echo "File split into chunks: $(find "$temp_dir" -type f)" >> "$main_dir/$progress_file"
 
                 # Summarize each chunk and append to the summary file
                 for chunk_file in "$temp_dir"/chunk_*; do
                     [ -f "$chunk_file" ] || continue
                     echo "Summarizing chunk: $(basename "$chunk_file")"
-                    ollama run vanilj/phi-4 "Summarize:" < "$chunk_file" | tee -a "$main_dir/$summary_file"
+                    ollama run vanilj/phi-4 "Summarize in detail and explain:" < "$chunk_file" | tee -a "$main_dir/$summary_file"
                     echo "" >> "$main_dir/$summary_file"
                 done
 
@@ -69,6 +71,7 @@ process_files() {
 process_subdirectories() {
     local parent_dir=$1
     
+    # Iterate over all subdirectories
     for dir in "$parent_dir"/*/; do
         if [ -d "$dir" ]; then
             process_files "$dir"  # Process files in the subdirectory
@@ -83,3 +86,4 @@ process_subdirectories "$main_dir"  # Process files in subdirectories
 
 # Mark script completion
 echo "Script completed at $(date)" >> "$main_dir/$progress_file"
+
