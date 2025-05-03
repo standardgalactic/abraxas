@@ -1,0 +1,25 @@
+In Null Convention Logic (NCL), the purpose of a null-wavefront is **to demarcate the boundaries between successive data wavefronts and reset the circuit to a known state, ensuring correct operation**. Let's break this down:
+
+*   **Data Wavefronts:** NCL relies on the propagation of data signals through the circuit.  A data wavefront represents a valid computation with meaningful data values.
+*   **Null Wavefronts:**  After a data wavefront has propagated and its result has been used, the null wavefront clears the signals and prepares the circuit for the next data wavefront.  It signals the absence of valid data.  All wires in the NCL circuit go to the NULL state.
+*   **Demarcation and Sequencing:** The null wavefront acts as a separator. It ensures that the next data wavefront doesn't interfere with the previous one. Without it, old data could corrupt the new calculation. Think of it like a reset signal after each computation.
+*   **Resetting to Known State:**  By driving all signals to a NULL state, the null wavefront puts the circuit in a consistent, predictable state. This is crucial for reliable operation. If signals were left in an unknown state after a computation, the next data wavefront could behave unpredictably.
+*   **Handshake Signaling:** The transition between a data wavefront and a null wavefront forms part of a handshake signaling mechanism. The completion of a data operation is signaled by a transition to the NULL state, which then triggers the next operation.
+
+**Analogy:**
+
+Imagine a production line assembling cars.
+
+*   **Data Wavefront:** A car being assembled moves along the line.
+*   **Null Wavefront:** A cleaning crew comes in and removes all the tools and debris left over from the previous assembly before the next car begins its assembly.
+
+**In Summary:**
+
+The null wavefront in NCL is essential for:
+
+*   Correctly separating data wavefronts to prevent interference.
+*   Resetting the circuit to a known state for reliable operation.
+*   Implementing a handshake signaling scheme that coordinates data flow.
+*   Ensuring the circuit is ready to process the next data wavefront.
+
+Without the null wavefront, NCL circuits would be prone to errors and unpredictable behavior.
