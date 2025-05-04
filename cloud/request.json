@@ -1,0 +1,18 @@
+{
+    "model": "meta/llama-4-scout-17b-16e-instruct-maas"
+    ,"stream": true
+    ,"max_tokens": 4096
+    ,"temperature": 1
+    ,"top_p": 0.95
+    ,"messages": [
+        {
+            "role": "user",
+            "content": [
+                {
+                    "type": "text",
+                    "text": "What is the purpose of a propagating null-wavefront in Null Convention Logic? "
+                }
+            ]
+        }
+    ]
+}

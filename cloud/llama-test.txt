@@ -1,0 +1,130 @@
+bonobo@Memex:abraxas(main)$ pwd
+/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/abraxas
+bonobo@Memex:abraxas(main)$ cd cloud
+/mnt/c/Users/Mechachleopteryx/OneDrive/Documents/GitHub/abraxas/cloud
+bonobo@Memex:cloud(main)$ ls
+apophenia.txt  null-convention-logic.txt  question.py  request.json  test.py
+bonobo@Memex:cloud(main)$ cat << EOF > request.json
+model"> {
+>     "model": "meta/llama-4-scout-17b-16e-instruct-maas"
+>     ,"stream": true
+>     ,"max_tokens": 4096
+>     ,"temperature": 1
+>     ,"top_p": 0.95
+>     ,"messages": [
+>         {
+>             "role": "user",
+>             "content": [
+>                 {
+>                     "type": "text",
+>                     "text": "Introduction[edit]\nApophenia can be considered a commonplace effect of brain function. Taken to an extreme, however, it can be a symptom of psychiatric dysfunction, for example, as a symptom in schizophrenia,[7] where a patient sees hostile patterns (for example, a conspiracy to persecute them) in ordinary actions.\nApophenia is also typical of conspiracy theories, where coincidences may be woven together into an apparent plot.[8]\nExamples[edit]Pareidolia[edit]\nMain article: Pareidolia\n\n\n\"The Organ Player\": an example of pareidolia in Neptune's Grotto, Sardinia\nPareidolia is a type of apophenia involving the perception of images or sounds in random stimuli.\nA common example is the perception of a face within an inanimate object—the headlights and grill of an automobile may appear to be \"grinning\". People around the world see the \"Man in the Moon\".[9] People sometimes see the face of a religious figure in a piece of toast or in the grain of a piece of wood. There is strong evidence that psychedelic drugs tend to induce or enhance pareidolia.[10]\n\nPareidolia usually occurs as a result of the fusiform face area—which is the part of the human brain responsible for seeing faces—mistakenly interpreting an object, shape or configuration with some kind of perceived \"face-like\" features as being a face."
+        >                 }
+>             ]
+>         }
+F
+
+ENDPOI>     ]
+> }
+> EOF
+NT="us-east5-aiplatform.googleapis.com"
+REGION="us-east5"
+PROJECT_ID="spellpop"
+
+curl \
+-X POST \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer $(gcloud auth print-access-token)" \
+"https://${ENDPOINT}/v1beta1/projects/${PROJECT_ID}/locations/${REGION}/endpoints/openapi/chat/completions" -d '@request.json'bonobo@Memex:cloud(main)$
+bonobo@Memex:cloud(main)$ ENDPOINT="us-east5-aiplatform.googleapis.com"
+bonobo@Memex:cloud(main)$ REGION="us-east5"
+bonobo@Memex:cloud(main)$ PROJECT_ID="spellpop"
+bonobo@Memex:cloud(main)$
+bonobo@Memex:cloud(main)$ curl \
+> -X POST \
+> -H "Content-Type: application/json" \
+> -H "Authorization: Bearer $(gcloud auth print-access-token)" \
+> "https://${ENDPOINT}/v1beta1/projects/${PROJECT_ID}/locations/${REGION}/endpoints/openapi/chat/completions" -d '@request.json'
+data: {"choices":[{"delta":{"content":"The","role":"assistant"},"index":0,"logprobs":null}],"created":1746380939,"id":"2025-05-04|10:48:59.816423-07|4.53.151.218|86083419","model":"meta/llama-4-scout-17b-16e-instruct-maas","object":"chat.completion.chunk","system_fingerprint":""}
+
+data: {"choices":[{"delta":{"content":" fascinating topic of apophenia! Let's dive into the concept and its examples.\n\n","role":"assistant"},"index":0,"logprobs":null}],"created":1746380939,"id":"2025-05-04|10:48:59.816423-07|4.53.151.218|86083419","model":"meta/llama-4-scout-17b-16e-instruct-maas","object":"chat.completion.chunk","system_fingerprint":""}
+
+data: {"choices":[{"delta":{"content":"**What is Apophenia?**\n\nApophenia refers to the experience of","role":"assistant"},"index":0,"logprobs":null}],"created":1746380939,"id":"2025-05-04|10:48:59.816423-07|4.53.151.218|86083419","model":"meta/llama-4-scout-17b-16e-instruct-maas","object":"chat.completion.chunk","system_fingerprint":""}
+
+data: {"choices":[{"delta":{"content":" seeing meaningful patterns or connections in random or meaningless data. It's a common effect of brain function, but when taken to an extreme, it can be a symptom of","role":"assistant"},"index":0,"logprobs":null}],"created":1746380939,"id":"2025-05-04|10:48:59.816423-07|4.53.151.218|86083419","model":"meta/llama-4-scout-17b-16e-instruct-maas","object":"chat.completion.chunk","system_fingerprint":""}
+
+data: {"choices":[{"delta":{"content":" psychiatric dysfunction, such as schizophrenia. Apophenia is also a hallmark of conspiracy theories, where coincidences are woven together to form an apparent plot.\n\n**","role":"assistant"},"index":0,"logprobs":null}],"created":1746380939,"id":"2025-05-04|10:48:59.816423-07|4.53.151.218|86083419","model":"meta/llama-4-scout-17b-16e-instruct-maas","object":"chat.completion.chunk","system_fingerprint":""}
+
+data: {"choices":[{"delta":{"content":"Pareidolia: A Type of Apophenia**\n\nPareidolia is a specific type of apophenia that involves perceiving images or sounds in random stimuli. This can include seeing faces in inanimate objects, hearing hidden messages in music","role":"assistant"},"index":0,"logprobs":null}],"created":1746380939,"id":"2025-05-04|10:48:59.816423-07|4.53.151.218|86083419","model":"meta/llama-4-scout-17b-16e-instruct-maas","object":"chat.completion.chunk","system_fingerprint":""}
+
+data: {"choices":[{"delta":{"content":", or perceiving patterns in random data. Pareidolia is a result of the brain's tendency to recognize patterns, particularly faces, which is a fundamental aspect of human cognition.\n\n**Examples of Pareidolia**\n\n* Seeing a face in","role":"assistant"},"index":0,"logprobs":null}],"created":1746380939,"id":"2025-05-04|10:48:59.816423-07|4.53.151.218|86083419","model":"meta/llama-4-scout-17b-16e-instruct-maas","object":"chat.completion.chunk","system_fingerprint":""}
+
+data: {"choices":[{"delta":{"content":" a piece of toast, wood grain, or a cloud\n* Perceiving a grinning face in the headlights and grill of an automobile\n* Recognizing the \"Man in the Moon\" or other shapes in celestial bodies\n* Hearing hidden messages or codes in music or other sounds\n\n**The Science Behind Pare","role":"assistant"},"index":0,"logprobs":null}],"created":1746380939,"id":"2025-05-04|10:48:59.816423-07|4.53.151.218|86083419","model":"meta/llama-4-scout-17b-16e-instruct-maas","object":"chat.completion.chunk","system_fingerprint":""}
+
+data: {"choices":[{"delta":{"content":"idolia**\n\nPareidolia is thought to occur due to the activity of the fusiform face area, a part of the brain responsible for processing facial recognition. When this area is mistakenly activated, it can lead to the perception of faces or patterns in random stimuli. This phenomenon is also influenced by the brain's tendency","role":"assistant"},"index":0,"logprobs":null}],"created":1746380939,"id":"2025-05-04|10:48:59.816423-07|4.53.151.218|86083419","model":"meta/llama-4-scout-17b-16e-instruct-maas","object":"chat.completion.chunk","system_fingerprint":""}
+
+data: {"choices":[{"delta":{"content":" to seek out patterns and meaning, which can sometimes result in false positives.\n\n**The Role of Psychedelic Drugs**\n\nInterestingly, research suggests that psychedelic drugs can enhance or induce pareidolia. This is likely due to the altered state of consciousness and perception that these substances can produce.\n\nOverall, apophenia","role":"assistant"},"index":0,"logprobs":null}],"created":1746380939,"id":"2025-05-04|10:48:59.816423-07|4.53.151.218|86083419","model":"meta/llama-4-scout-17b-16e-instruct-maas","object":"chat.completion.chunk","system_fingerprint":""}
+
+data: {"choices":[{"delta":{"content":" and pareidolia are fascinating examples of how our brains process and interpret information, often leading to interesting and sometimes humorous experiences!","role":"assistant"},"finish_reason":"stop","index":0,"logprobs":null}],"created":1746380939,"id":"2025-05-04|10:48:59.816423-07|4.53.151.218|86083419","model":"meta/llama-4-scout-17b-16e-instruct-maas","object":"chat.completion.chunk","system_fingerprint":"","usage":{"completion_tokens":409,"prompt_tokens":315,"total_tokens":724}}
+
+data: [DONE]
+
+bonobo@Memex:cloud(main)$ cat << EOF > request.json
+> {
+>     "model": "meta/llama-4-scout-17b-16e-instruct-maas"
+>     ,"stream": true
+>     ,"max_tokens": 4096
+"temper>     ,"temperature": 1
+>     ,"top_p": 0.95
+>     ,"messages": [
+>         {
+>             "role": "user",
+>             "content": [
+>                 {
+>                     "type": "text",
+>                     "text": "What is the purpose of a propagating null-wavefront in Null Convention Logic? "
+>                 }
+>             ]
+>         }
+>     ]
+
+EOF
+> }
+> EOF
+
+ENDPOINT="us-east5-aiplatform.googleapis.com"
+REGION="us-east5"
+PROJECT_ID="spellpop"
+
+curl \
+-X POST \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer $(gcloud auth print-access-token)" \
+"https://${ENDPOINT}/v1beta1/projects/${PROJECT_ID}/locations/${REGION}/endpoints/openapi/chat/completions" -d '@request.json'bonobo@Memex:cloud(main)$
+bonobo@Memex:cloud(main)$ ENDPOINT="us-east5-aiplatform.googleapis.com"
+bonobo@Memex:cloud(main)$ REGION="us-east5"
+bonobo@Memex:cloud(main)$ PROJECT_ID="spellpop"
+bonobo@Memex:cloud(main)$
+bonobo@Memex:cloud(main)$ curl \
+> -X POST \
+> -H "Content-Type: application/json" \
+> -H "Authorization: Bearer $(gcloud auth print-access-token)" \
+> "https://${ENDPOINT}/v1beta1/projects/${PROJECT_ID}/locations/${REGION}/endpoints/openapi/chat/completions" -d '@request.json'
+data: {"choices":[{"delta":{"content":"In","role":"assistant"},"index":0,"logprobs":null}],"created":1746380997,"id":"2025-05-04|10:49:57.024742-07|4.53.151.218|86083419","model":"meta/llama-4-scout-17b-16e-instruct-maas","object":"chat.completion.chunk","system_fingerprint":""}
+
+data: {"choices":[{"delta":{"content":" Null Convention Logic (NCL), a propagating null-wavefront serves several purposes.","role":"assistant"},"index":0,"logprobs":null}],"created":1746380997,"id":"2025-05-04|10:49:57.024742-07|4.53.151.218|86083419","model":"meta/llama-4-scout-17b-16e-instruct-maas","object":"chat.completion.chunk","system_fingerprint":""}
+
+data: {"choices":[{"delta":{"content":" NCL is an asynchronous digital logic design methodology that relies on a handshake protocol for","role":"assistant"},"index":0,"logprobs":null}],"created":1746380997,"id":"2025-05-04|10:49:57.024742-07|4.53.151.218|86083419","model":"meta/llama-4-scout-17b-16e-instruct-maas","object":"chat.completion.chunk","system_fingerprint":""}
+
+data: {"choices":[{"delta":{"content":" data transfer. \n\nThe main purpose of a propagating null-wavefront in NCL is to act as a \" spacer\" or a delimiter between data waves in a","role":"assistant"},"index":0,"logprobs":null}],"created":1746380997,"id":"2025-05-04|10:49:57.024742-07|4.53.151.218|86083419","model":"meta/llama-4-scout-17b-16e-instruct-maas","object":"chat.completion.chunk","system_fingerprint":""}
+
+data: {"choices":[{"delta":{"content":" pipeline. \n\nHere's how it works:\n\n1.  Data wavefronts represent valid data.\n2.  Null wavefronts, on the other hand,","role":"assistant"},"index":0,"logprobs":null}],"created":1746380997,"id":"2025-05-04|10:49:57.024742-07|4.53.151.218|86083419","model":"meta/llama-4-scout-17b-16e-instruct-maas","object":"chat.completion.chunk","system_fingerprint":""}
+
+data: {"choices":[{"delta":{"content":" represent the absence of valid data.\n\nThe null-wavefront serves as a spacer between data wavefronts. This spacer or null wave helps ensure that the data wavefronts maintain their relative order and prevents data corruption.\n\nBy using null-wavefront","role":"assistant"},"index":0,"logprobs":null}],"created":1746380997,"id":"2025-05-04|10:49:57.024742-07|4.53.151.218|86083419","model":"meta/llama-4-scout-17b-16e-instruct-maas","object":"chat.completion.chunk","system_fingerprint":""}
+
+data: {"choices":[{"delta":{"content":"s, NCL designs can ensure that:\n\n*   Data is processed in a pipelined fashion.\n*   There is a clear distinction between different data sets.\n*   Data is not lost or mixed up.\n\nOverall, the propagating null","role":"assistant"},"index":0,"logprobs":null}],"created":1746380997,"id":"2025-05-04|10:49:57.024742-07|4.53.151.218|86083419","model":"meta/llama-4-scout-17b-16e-instruct-maas","object":"chat.completion.chunk","system_fingerprint":""}
+
+data: {"choices":[{"delta":{"content":"-wavefront plays a crucial role in maintaining the correct functionality and data integrity in NCL circuits.","role":"assistant"},"finish_reason":"stop","index":0,"logprobs":null}],"created":1746380997,"id":"2025-05-04|10:49:57.024742-07|4.53.151.218|86083419","model":"meta/llama-4-scout-17b-16e-instruct-maas","object":"chat.completion.chunk","system_fingerprint":"","usage":{"completion_tokens":216,"prompt_tokens":17,"total_tokens":233}}
+
+data: [DONE]
+
+bonobo@Memex:cloud(main)$
