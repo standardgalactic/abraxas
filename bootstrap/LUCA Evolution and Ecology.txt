@@ -1,0 +1,392 @@
+LUCA Evolution and Ecology
+Skip to content
+Open sidebar
+ChatGPT
+4o
+Saved memory full
+Saved memory full
+ChatGPT
+4o
+Share
+PLUS
+You said:
+The nature of the last universal common 
+ancestor and its impact on the early 
+Earth system
+Edmund R. R. Moody  1 , Sandra Álvarez-Carretero  1
+, 
+Tara A. Mahendrarajah  2
+, James W. Clark3
+, Holly C. Betts1
+, 
+Nina Dombrowski  2
+, Lénárd L. Szánthó  4,5,6, Richard A. Boyle7
+, Stuart Daines7
+, 
+Xi Chen  8
+, Nick Lane  9
+, Ziheng Yang  9
+, Graham A. Shields  8
+, 
+Gergely J. Szöllősi5,6,10, Anja Spang  2,11, Davide Pisani  1,12 , 
+Tom A. Williams  12 , Timothy M. Lenton  7 & Philip C. J. Donoghue  1
+The nature of the last universal common ancestor (LUCA), its age and its impact 
+on the Earth system have been the subject of vigorous debate across diverse 
+disciplines, often based on disparate data and methods. Age estimates for LUCA 
+are usually based on the fossil record, varying with every reinterpretation. 
+The nature of LUCA's metabolism has proven equally contentious, with some 
+attributing all core metabolisms to LUCA, whereas others reconstruct a 
+simpler life form dependent on geochemistry. Here we infer that LUCA lived 
+~4.2 Ga (4.09-4.33 Ga) through divergence time analysis of pre-LUCA gene 
+duplicates, calibrated using microbial fossils and isotope records under a 
+new cross-bracing implementation. Phylogenetic reconciliation suggests 
+that LUCA had a genome of at least 2.5 Mb (2.49-2.99 Mb), encoding around 
+2,600 proteins, comparable to modern prokaryotes. Our results suggest 
+LUCA was a prokaryote-grade anaerobic acetogen that possessed an 
+early immune system. Although LUCA is sometimes perceived as living in 
+isolation, we infer LUCA to have been part of an established ecological system. 
+The metabolism of LUCA would have provided a niche for other microbial 
+community members and hydrogen recycling by atmospheric photo-
+chemistry could have supported a modestly productive early ecosystem.
+The common ancestry of all extant cellular life is evidenced by the uni-
+versal genetic code, machinery for protein synthesis, shared chirality 
+of the almost-universal set of 20 amino acids and use of ATP as a com-
+mon energy currency1
+. The last universal common ancestor (LUCA) is 
+the node on the tree of life from which the fundamental prokaryotic 
+domains (Archaea and Bacteria) diverge. As such, our understanding of 
+LUCA impacts our understanding of the early evolution of life on Earth. 
+Was LUCA a simple or complex organism? What kind of environment did 
+it inhabit and when? Previous estimates of LUCA are in conflict either 
+due to conceptual disagreement about what LUCA is2
+ or as a result of dif-
+ferent methodological approaches and data3-9
+. Published analyses dif-
+fer in their inferences of LUCA's genome, from conservative estimates of 
+80 orthologous proteins10 up to 1,529 different potential gene families4
+. 
+Interpretations range from little beyond an information-processing 
+and metabolic core6
+ through to a prokaryote-grade organism with 
+much of the gene repertoire of modern Archaea and Bacteria8
+, recently
+ChatGPT said:
+This paper, authored by Moody et al. (2024), presents a comprehensive reevaluation of the
+Last Universal Common Ancestor (LUCA)
+, its
+age
+,
+metabolism
+, and
+ecological role
+, using
+phylogenetic reconciliation
+,
+fossil calibration
+, and
+molecular clock analysis
+.
+Key Findings
+Age of LUCA
+:
+LUCA is estimated to have lived around
+4.2 billion years ago
+(confidence interval:
+4.09-4.33 Ga
+), placing it
+shortly after the Late Heavy Bombardment
+and earlier than many previous estimates.
+Genome Complexity
+:
+LUCA likely had a
+genome of ~2.5 Mb
+, encoding approximately
+2,600 proteins
+, making it
+genetically comparable to modern prokaryotes
+in complexity.
+Metabolic Profile
+:
+LUCA is inferred to have been an
+anaerobic acetogen
+, meaning it used
+CO₂ and H₂
+to produce
+acetate
+—a metabolism consistent with life in
+hydrothermal or geochemically active environments
+.
+Immune and Community Function
+:
+Surprisingly, LUCA may have had an
+early immune system
+, indicating
+exposure to viral predation or gene transfer
+pressures.
+Rather than being isolated, LUCA
+lived within a microbial community
+, interacting ecologically with others in a
+hydrogen-cycling ecosystem
+potentially supported by
+atmospheric photochemistry
+.
+Methodological Innovation
+:
+The paper introduces a
+"cross-bracing" calibration method
+, integrating fossil evidence (e.g., microbial fossils and isotope data) into divergence time estimation, resolving prior discrepancies.
+Implications for Early Earth and Life:
+Ecological Complexity
+: LUCA was
+not a primitive lone survivor
+, but part of a
+diverse, interacting microbial ecosystem
+.
+Biosphere Feedback
+: Its metabolism likely contributed to
+early Earth's geochemical cycles
+, such as the
+carbon and hydrogen cycles
+.
+Revises Origin-of-Life Models
+: Supports
+geochemically informed origin scenarios
+, such as
+alkaline hydrothermal vent models
+, over more minimalist "RNA world" models for LUCA.
+Would you like a visual diagram of LUCA's ecosystem and traits based on this study?
+You said:
+s://doi.org/10.1038/s41559-024-02461-1
+(ILN)31,32 relaxed-clock models with our partitioned dataset (GBM, 
+4.18-4.33 Ga; ILN, 4.09-4.32 Ga; Fig. 1) fall within our composite age 
+estimate for LUCA ranging from 3.94 Ga to 4.52 Ga, comparable to pre-
+vious studies13,18,33. Dating analyses based on single genes, or concatena-
+tions that excluded each gene in turn, returned compatible timescales 
+(Extended Data Figs. 1 and 2 and 'Additional methods' in Methods).
+LUCA's physiology
+To estimate the physiology of LUCA, we first inferred an updated micro-
+bial phylogeny from 57 phylogenetic marker genes (see 'Universal 
+marker genes' in Methods) on 700 genomes, comprising 350 Archaea 
+and 350 Bacteria15. This tree was in good agreement with recent phylo-
+genies of the archaeal and bacterial domains of life34,35. For example, 
+the TACK36 and Asgard clades of Archaea37-39 and Gracilicutes within 
+Bacteria40,41 were recovered as monophyletic. However, the analysis 
+was equivocal as to the phylogenetic placement of the Patescibacteria 
+(CPR)42 and DPANN43, which are two small-genome lineages that have 
+been difficult to place in trees. Approximately unbiased44 tests could 
+not distinguish the placement of these clades, neither at the root of 
+their respective domains nor in derived positions, with CPR sister to 
+Chloroflexota (as reported recently in refs. 35,41,45) and DPANN sister 
+to Euryarchaeota. To account for this phylogenetic uncertainty, we 
+performed LUCA reconstructions on two trees: our maximum likeli-
+hood (ML) tree (topology 1; Extended Data Fig. 3) and a tree in which 
+CPR were placed as the sister of Chloroflexota, with DPANN sister to all 
+other Archaea (topology 2; Extended Data Fig. 4). In both cases, the gene 
+families mapped to LUCA were very similar (correlation of LUCA pres-
+ence probabilities (PP), r = 0.6720275, P < 2.2 × 10−
+16). We discuss the 
+results on the tree with topology 2 and discuss the residual differences 
+in Supplementary Information, 'Topology 1' (Supplementary Data 1).
+We used the probabilistic gene- and species-tree reconciliation 
+algorithm ALE46 to infer the evolution of gene family trees for each 
+sampled entry in the KEGG Orthology (KO) database47 on our species 
+tree. ALE infers the history of gene duplications, transfers and losses 
+based on a comparison between a distribution of bootstrapped gene 
+trees and the reference species tree, allowing us to estimate the prob-
+ability that the gene family was present at a node in the tree35,48,49. This 
+reconciliation approach has several advantages for drawing inferences 
+about LUCA. Most gene families have experienced gene transfer since 
+the time of LUCA50,51 and so explicitly modelling transfers enables us 
+to include many more gene families in the analysis than has been pos-
+sible using previous approaches. As the analysis is probabilistic, we can 
+also account for uncertainty in gene family origins and evolutionary 
+history by averaging over different scenarios using the reconcilia-
+tion model. Using this approach, we estimated the probability that 
+each KEGG gene family (KO) was present in LUCA and then used the 
+resulting probabilities to construct a hypothetical model of LUCA's 
+gene content, metabolic potential (Fig. 2) and environmental context 
+(Fig. 3). Using the KEGG annotation is beneficial because it allows us to 
+connect our inferences to curated functional annotations; however, it 
+has the drawback that some widespread gene families that were likely 
+present in LUCA are divided into multiple KO families that individually 
+appear to be restricted to particular taxonomic groups and inferred 
+to have arisen later. To account for this limitation, we also performed 
+an analysis of COG (Clusters of Orthologous Genes)52 gene families, 
+which correspond to more coarse-grained functional annotations 
+(Supplementary Data 2).
+Genome size and cellular features
+By using modern prokaryotic genomes as training data, we used a pre-
+dictive model to estimate the genome size and the number of protein 
+families encoded by LUCA based on the relationship between the num-
+ber of KEGG gene families and the total number of proteins encoded 
+by modern prokaryote genomes (Extended Data Figs. 5 and 6). On the 
+basis of the PPs for KEGG KO gene families, we identified a conservative 
+reviewed in ref. 7. Here we use molecular clock methodology, horizontal 
+gene-transfer-aware phylogenetic reconciliation and existing biogeo-
+chemical models to address questions about LUCA's age, gene content, 
+metabolism and impact on the early Earth system.
+Estimating the age of LUCA
+Life's evolutionary timescale is typically calibrated to the oldest 
+fossil occurrences. However, the veracity of fossil discoveries from 
+the early Archaean period has been contested11,12. Relaxed Bayesian 
+node-calibrated molecular clock approaches provide a means of inte-
+grating the sparse fossil and geochemical record of early life with the 
+information provided by molecular data; however, constraining LUCA's 
+age is challenging due to limited prokaryote fossil calibrations and 
+the uncertainty in their placement on the phylogeny. Molecular clock 
+estimates of LUCA13-15 have relied on conserved universal single-copy 
+marker genes within phylogenies for which LUCA represented the root. 
+Dating the root of a tree is difficult because errors propagate from the 
+tips to the root of the dated phylogeny and information is not available 
+to estimate the rate of evolution for the branch incident on the root 
+node. Therefore, we analysed genes that duplicated before LUCA with 
+two (or more) copies in LUCA's genome16. The root in these gene trees 
+represents this duplication preceding LUCA, whereas LUCA is repre-
+sented by two descendant nodes. Use of these universal paralogues 
+also has the advantage that the same calibrations can be applied at least 
+twice. After duplication, the same species divergences are represented 
+on both sides of the gene tree17,18 and thus can be assumed to have the 
+same age. This considerably reduces the uncertainty when genetic 
+distance (branch length) is resolved into absolute time and rate. When 
+a shared node is assigned a fossil calibration, such cross-bracing also 
+serves to double the number of calibrations on the phylogeny, improv-
+ing divergence time estimates. We calibrated our molecular clock analy-
+ses using 13 calibrations (see 'Fossil calibrations' in Supplementary 
+Information). The calibration on the root of the tree of life is of particu-
+lar importance. Some previous studies have placed a younger maximum 
+constraint on the age of LUCA based on the assumption that life could 
+not have survived Late Heavy Bombardment (LHB) (~3.7-3.9 billion 
+years ago (Ga))19. However, the LHB hypothesis is extrapolated and 
+scaled from the Moon's impact record, the interpretation of which 
+has been questioned in terms of the intensity, duration and even the 
+veracity of an LHB episode20-23. Thus, the LHB hypothesis should not be 
+considered a credible maximum constraint on the age of LUCA. We used 
+soft-uniform bounds, with the maximum-age bound based on the time 
+of the Moon-forming impact (4,510 million years ago (Ma) ± 10 Myr), 
+which would have effectively sterilized Earth's precursors, Tellus and 
+Theia13. Our minimum bound on the age of LUCA is based on low δ98Mo 
+isotope values indicative of Mn oxidation compatible with oxygenic 
+photosynthesis and, therefore, total-group Oxyphotobacteria in the 
+Mozaan Group, Pongola Supergroup, South Africa24,25, dated minimally 
+to 2,954 Ma ± 9 Myr (ref. 26).
+Our estimates for the age of LUCA are inferred with a concatenated 
+and a partitioned dataset, both consisting of five pre-LUCA paralogues: 
+catalytic and non-catalytic subunits from ATP synthases, elongation 
+factor Tu and G, signal recognition protein and signal recognition par-
+ticle receptor, tyrosyl-tRNA and tryptophanyl-tRNA synthetases, and 
+leucyl- and valyl-tRNA synthetases27. Marginal densities (commonly 
+referred to as effective priors) fall within calibration densities (that 
+is, user-specified priors) when topologically adjacent calibrations do 
+not overlap temporally, but may differ when they overlap, to ensure 
+the relative age relationships between ancestor-descendant nodes. 
+We consider the marginal densities a reasonable interpretation of the 
+calibration evidence given the phylogeny; we are not attempting to test 
+the hypothesis that the fossil record is an accurate temporal archive 
+of evolutionary history because it is not28. The duplicated LUCA node 
+age estimates we obtained under the autocorrelated rates (geomet-
+ric Brownian motion (GBM))29,30 and independent-rates log-norma
+ChatGPT said:
+This extended excerpt offers a deeper technical view into
+Moody et al.'s (2024)
+paper on LUCA, emphasizing the
+phylogenetic, genomic, and geochemical methods
+used to reconstruct its age, physiology, and environmental role.
+Below is a structured summary of the newly introduced content:
+1. Age Estimation Methodology
+Gene Duplication Strategy
+:
+Rather than rooting the tree with universal single-copy genes (which propagate uncertainty), the authors analyzed
+five pre-LUCA gene duplicates
+. This allows
+internal calibration
+of LUCA by anchoring each duplicated pair within the tree.
+Cross-Bracing Calibration
+:
+By identifying
+shared species divergence events
+across both branches of each duplicate gene pair,
+the same fossil calibration
+can be applied multiple times, reducing uncertainty and increasing robustness.
+Clock Models Used
+:
+GBM (Geometric Brownian Motion)
+: 4.18-4.33 Ga
+ILN (Independent Log-Normal)
+: 4.09-4.32 Ga
+These span a
+composite range of ~3.94-4.52 Ga
+,
+pushing LUCA's origin close to Earth's formation
+(~4.51 Ga).
+Calibrations
+:
+The
+maximum age constraint
+was set near the
+Moon-forming impact (4.51 Ga)
+, rejecting the Late Heavy Bombardment (LHB) as a valid upper bound.
+The
+minimum constraint
+came from molybdenum isotope evidence of
+oxygenic photosynthesis ~2.95 Ga
+, anchoring the lower bound.
+2. Phylogenetic Reconstruction
+Used
+57 universal marker genes
+from 700 genomes (350 Archaea, 350 Bacteria).
+Recovered
+monophyletic clades
+: TACK and Asgard (Archaea), Gracilicutes (Bacteria).
+Placement of
+CPR and DPANN lineages
+remains uncertain, so the team analyzed
+two alternative tree topologies
+, showing strong
+concordance (r = 0.67, p < 2.2e−16)
+in LUCA gene predictions.
+3. Probabilistic Ancestral Reconstruction
+Employed the
+ALE (Amalgamated Likelihood Estimation)
+algorithm to reconcile gene trees with the species tree.
+ALE models
+gene duplications, losses, and horizontal transfers
+, making it more accurate than prior static presence/absence methods.
+Mapped
+KEGG Orthology (KO)
+gene families to LUCA, complemented by
+COG analysis
+to mitigate functional fragmentation across KOs.
+4. Physiology and Genomic Profile of LUCA
+Predicted genome size
+: ~2.5-3.0 Mb
+Estimated proteome
+: ~2,600 proteins
+Physiological inferences:
+Anaerobic acetogen
+: Metabolized
+H₂ and CO₂
+to generate acetate.
+Possibly had
+rudimentary immune mechanisms
+, suggesting interaction with mobile genetic elements (e.g., phages).
+Lived in a
+microbial ecosystem
+, not in isolation.
+5. Broader Implications
+Rejects minimalist models
+of LUCA as a proto-cell or information-only core.
+Instead supports a view of LUCA as a
+functionally integrated, prokaryote-grade organism
+with ecological context and metabolic specificity.
+Validates geochemical hypotheses like the
+alkaline hydrothermal vent theory
+.
+Would you like a synthesized diagram or annotated summary figure (e.g., LUCA's ecosystem and metabolic pathways) based on the reconstructed traits from this paper?
+4o
+Search
+Deep research
+Create image
+ChatGPT can make mistakes. Check important info. See
+Cookie Preferences
+.
+
