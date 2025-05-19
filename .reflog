@@ -1,13 +1,62 @@
-e0196c0 HEAD@{0}: commit: Abraxas Rebase
-51f6b68 HEAD@{1}: rebase (finish): returning to refs/heads/main
-51f6b68 HEAD@{2}: rebase (squash): 𝘐𝘯𝘧𝘪𝘯𝘪𝘵𝘦 𝘛𝘢𝘱𝘦𝘴
-07e9662 HEAD@{3}: rebase (start): checkout HEAD~2
-2ce2aa3 HEAD@{4}: commit: Update
-07e9662 HEAD@{5}: rebase (finish): returning to refs/heads/main
-07e9662 HEAD@{6}: rebase (squash): 𝘐𝘯𝘧𝘪𝘯𝘪𝘵𝘦 𝘛𝘢𝘱𝘦𝘴
-dc389d2 HEAD@{7}: rebase (squash): # This is a combination of 2 commits.
-567e62c HEAD@{8}: rebase (start): checkout HEAD~3
-b8d884e HEAD@{9}: commit: Infinite Tapes
-f2047a9 HEAD@{10}: commit (amend): Infinite Tapes
-2674202 HEAD@{11}: commit: Infinite Tapes
-567e62c HEAD@{12}: clone: from https://github.com/standardgalactic/abraxas
+926e651 HEAD@{0}: rebase (finish): returning to refs/heads/main
+926e651 HEAD@{1}: rebase (squash): Recursive Causality
+2ea80fb HEAD@{2}: rebase (start): checkout HEAD~2
+e48d2d0 HEAD@{3}: commit: Recursive Causality
+2ea80fb HEAD@{4}: rebase (finish): returning to refs/heads/main
+2ea80fb HEAD@{5}: rebase (squash): Recursive Causality
+b604592 HEAD@{6}: rebase (start): checkout HEAD~2
+540802b HEAD@{7}: commit: Recursive Causality
+b604592 HEAD@{8}: rebase (finish): returning to refs/heads/main
+b604592 HEAD@{9}: rebase (squash): Recursive Causality
+dd1b808 HEAD@{10}: rebase (start): checkout HEAD~2
+645be43 HEAD@{11}: commit: Recursive Causality
+dd1b808 HEAD@{12}: rebase (finish): returning to refs/heads/main
+dd1b808 HEAD@{13}: rebase (squash): Recursive Causality
+3c186d2 HEAD@{14}: rebase (start): checkout HEAD~2
+842efae HEAD@{15}: commit: Recursive Causality
+3c186d2 HEAD@{16}: commit: Recursive Causality
+1b35a26 HEAD@{17}: pull: Fast-forward
+6008a9d HEAD@{18}: reset: moving to 6008a9d
+f6e0dfe HEAD@{19}: rebase (finish): returning to refs/heads/main
+f6e0dfe HEAD@{20}: rebase (squash): Parametric Substrates
+649a023 HEAD@{21}: rebase (start): checkout HEAD~2
+c63a3e9 HEAD@{22}: rebase (finish): returning to refs/heads/main
+c63a3e9 HEAD@{23}: rebase (continue): Holobiotic Systems
+e258510 HEAD@{24}: rebase (start): checkout HEAD~2
+b065f2d HEAD@{25}: commit: Holobiotic Systems
+e258510 HEAD@{26}: commit: Holobiotic Systems
+649a023 HEAD@{27}: rebase (finish): returning to refs/heads/main
+649a023 HEAD@{28}: rebase (squash): Parametric Substrates
+d2acc74 HEAD@{29}: rebase (start): checkout HEAD~2
+e090438 HEAD@{30}: commit: Holobiotic Systems
+d2acc74 HEAD@{31}: rebase (finish): returning to refs/heads/main
+d2acc74 HEAD@{32}: rebase (squash): Parametric Substrates
+6008a9d HEAD@{33}: rebase (start): checkout HEAD~2
+3439367 HEAD@{34}: commit: Parametric Substrates
+6008a9d HEAD@{35}: commit: Parametric Substrates
+185d281 HEAD@{36}: rebase (finish): returning to refs/heads/main
+185d281 HEAD@{37}: rebase (squash): Alternate Scenarios
+32c387a HEAD@{38}: rebase (start): checkout HEAD~2
+4756683 HEAD@{39}: commit: Update
+32c387a HEAD@{40}: commit: Alternate Scenarios
+69462a8 HEAD@{41}: pull: Fast-forward
+e698d99 HEAD@{42}: rebase (finish): returning to refs/heads/main
+e698d99 HEAD@{43}: rebase (squash): 𝘗𝘢𝘯𝘪𝘤 𝘔𝘰𝘥𝘦
+fe6cfa3 HEAD@{44}: rebase (start): checkout HEAD~2
+5e0923b HEAD@{45}: commit: Communicable Attributes
+fe6cfa3 HEAD@{46}: pull: Fast-forward
+2aceb10 HEAD@{47}: rebase (finish): returning to refs/heads/main
+2aceb10 HEAD@{48}: rebase (squash): Deep Research
+777fa99 HEAD@{49}: rebase (start): checkout HEAD~2
+787c277 HEAD@{50}: commit: Deep Research
+777fa99 HEAD@{51}: pull: Fast-forward
+6f6b519 HEAD@{52}: commit: 𝘗𝘦𝘳𝘪𝘭𝘴 𝘰𝘧 𝘈𝘣𝘴𝘵𝘳𝘢𝘤𝘵𝘪𝘰𝘯
+ecf7820 HEAD@{53}: commit: 𝘊𝘰𝘯𝘵𝘦𝘹𝘵𝘶𝘢𝘭 𝘚𝘶𝘱𝘱𝘰𝘳𝘵
+07888dd HEAD@{54}: pull: Fast-forward
+854f2bc HEAD@{55}: commit (amend): File Overview
+de4b082 HEAD@{56}: rebase (abort): returning to refs/heads/main
+5938401 HEAD@{57}: rebase (pick): 𝘚𝘰𝘯𝘰𝘮𝘰𝘳𝘱𝘩𝘪𝘤 𝘌𝘤𝘩𝘰𝘭𝘰𝘤𝘢𝘵𝘪𝘰𝘯
+6169c75 HEAD@{58}: rebase (pick): 𝘗𝘳𝘦𝘳𝘢𝘵𝘪𝘰𝘯𝘢𝘭 𝘐𝘯𝘵𝘦𝘭𝘭𝘪𝘨𝘦𝘯𝘤𝘦
+b1307d0 HEAD@{59}: rebase (start): checkout HEAD~2
+de4b082 HEAD@{60}: commit: Update
+0ca8edc HEAD@{61}: pull: Merge made by the 'ort' strategy.
