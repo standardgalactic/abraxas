@@ -1,0 +1,334 @@
+Thought Control Protocols
+Skip to content
+Open sidebar
+ChatGPT
+Saved memory full
+Saved memory full
+ChatGPT
+Share
+You said:
+Benedict Evans compares early databases to modern AI by highlighting both the evolution in complexity and the shift in perception as these technologies mature. He notes that relational databases, once a groundbreaking innovation, became a foundational layer within enterprise software—eventually so ubiquitous that their novelty faded and they were simply regarded as standard infrastructure. No one questioned whether a new application would work because "Oracle has all the database"; instead, databases became an enabling technology embedded in countless products and industries[2].
+
+Evans draws a parallel to modern AI and machine learning, suggesting that today's excitement around AI mirrors the earlier hype about databases. Machine learning represents a "step change" in what computers can do, enabling new use cases and spawning new companies, just as databases once did. Over time, he expects machine learning and AI to become similarly normalized—integrated into a wide array of products to the point where "pretty much everything will have ML somewhere inside and no-one will care"[2].
+
+In terms of complexity, Evans points out that both technologies introduced fundamentally new capabilities: databases enabled complex data storage and retrieval, while AI allows computers to infer patterns and automate tasks previously requiring human judgment. However, the perception of these technologies shifts as they become more reliable and widespread. What was once seen as advanced "AI" becomes just another part of the software stack as its use becomes routine and its complexity is abstracted away for end users[2].
+
+In summary, Evans uses the comparison to show that as technologies like databases and AI mature, their complexity becomes hidden and their perception shifts from revolutionary to ordinary—eventually becoming essential, yet unremarkable, parts of the digital landscape[2].
+
+Citations:
+[1] https://www.sciencedirect.com/science/article/pii/S0004370215001538
+[2] https://www.ben-evans.com/benedictevans/2018/06/22/ways-to-think-about-machine-learning-8nefy
+[3] https://dspace.library.uvic.ca/bitstream/handle/1828/8314/Evans_Guy-Warwick_MSc_2017.pdf?sequence=1
+[4] https://pmc.ncbi.nlm.nih.gov/articles/PMC8108480/
+[5] https://knightcolumbia.org/content/ai-as-normal-technology
+[6] https://www.sciencedirect.com/science/article/pii/S2949761224000427
+[7] https://www.nber.org/system/files/working_papers/w24001/w24001.pdf
+[8] https://pmc.ncbi.nlm.nih.gov/articles/PMC6268174/
+ChatGPT said:
+This is a clear and well-structured synthesis of Benedict Evans' analogy between the evolution of relational databases and modern AI. If you're aiming to use or refine this passage for academic or analytical work, here are a few suggestions to tighten the prose and elevate its clarity or depth slightly:
+Refined Version:
+Benedict Evans compares the early days of relational databases to the current trajectory of artificial intelligence, highlighting both the evolution in technical capability and the transformation in public perception. He notes that databases, once a groundbreaking innovation, eventually became invisible infrastructure. At one time, the question was whether a database could power a new application; later, the assumption became that "Oracle has all the database," and developers simply built atop it. Databases became so pervasive and dependable that their novelty faded—they were no longer remarkable, just essential.
+Evans draws a direct parallel to modern AI and machine learning, suggesting that today's enthusiasm for AI echoes the earlier hype around databases. Machine learning represents a "step change" in computational capability, enabling a host of new use cases and birthing entire industries—just as relational databases once did. However, he argues that over time, AI will undergo the same normalization. Eventually, "pretty much everything will have ML somewhere inside and no one will care" [2].
+In terms of complexity, both technologies introduced novel capabilities: databases allowed for structured storage and rapid retrieval of vast data sets, while AI enables pattern recognition and automation of tasks that once required human intuition. As they mature, their complexity becomes abstracted from the end user. What begins as revolutionary "AI" gradually transforms into standard tooling within the broader software stack.
+In summary, Evans illustrates a key pattern in the lifecycle of transformative technologies: initial amazement gives way to routine adoption. As their capabilities are normalized and their integration deepens, they shift from being revolutionary to becoming the invisible scaffolding of modern systems—critical, yet taken for granted.
+Commentary on Citations:
+Citation [2] is clearly the key source and is used well.
+You may consider tightening the citation scheme depending on your target format (e.g., APA, MLA, Chicago). If you plan to include this in a research paper or essay, formalizing the bibliography and in-text citation format would add polish.
+Optional Expansion for Depth:
+You could further enhance the analysis by briefly mentioning the consequences of this shift in perception—for instance:
+How normalizing AI could dull ethical vigilance or transparency efforts.
+How abstraction influences innovation layering (e.g., APIs built on ML the way apps once relied on SQL).
+Let me know if you'd like a version formatted for academic publication or blog use, or expanded into a longer commentary.
+You said:
+Benedict Evans compares AI evolution to historical software developments to illustrate how new technologies are initially perceived as revolutionary but, over time, become integrated into everyday tools and processes—eventually being regarded simply as "software" rather than something fundamentally different[1][2][3]. This perspective helps demystify AI by placing its current hype and transformative potential within the broader context of past technology shifts.
+
+Evans points out that in the 1970s, complex systems like early databases were labeled "AI," but as they became reliable and widely adopted, they were reclassified as standard software[1][2]. He uses this historical analogy to show that what is considered "AI" today may eventually become just another part of the software landscape as it matures and its capabilities become normalized.
+
+He also observes that technological adoption typically follows a pattern: at first, new technologies are forced to fit existing workflows, but as people better understand their unique capabilities, they begin to reshape work and create new possibilities[1][3][5]. For example, early machine learning was used for basic pattern recognition, but as it advanced, it enabled new applications in natural language and image processing[1]. Similarly, generative AI is currently being used to automate tasks and generate ideas—akin to having "infinite interns"—but over time, it could lead to entirely new ways of working and interacting with technology[3].
+
+By comparing AI's evolution to previous software developments, Evans emphasizes that:
+
+- The boundary between "AI" and "software" is fluid: once AI becomes reliable and widely used, it loses its novelty and is simply seen as another software tool[2][3].
+- Major technology shifts (like PCs, the web, smartphones, and now AI) follow a recurring pattern of initial excitement, gradual integration, and eventual transformation of industries and workflows[1][3][5].
+- Understanding this historical context helps businesses and individuals set realistic expectations for AI's impact and better anticipate how it will be absorbed into mainstream technology[1][3][5].
+
+In summary, Evans uses these comparisons to provide a grounded, long-term view of AI, encouraging a focus on how it will become embedded in everyday software and reshape work—just as previous waves of technology have done.
+
+Citations:
+[1] https://beyond10x.substack.com/p/benedict-evans-gen-ai-and-the-future
+[2] https://www.ben-evans.com/benedictevans/2024/6/8/building-ai-products
+[3] https://www.contagious.com/news-and-views/analyst-benedict-evans-on-ai-in-2024
+[4] https://www.youtube.com/watch?v=7s-uWHNn5Xc
+[5] https://www.intercom.com/blog/videos/pioneer-beyond-the-ai-hype-benedict-evans/
+[6] https://www.ben-evans.com/benedictevans/2024/5/4/ways-to-think-about-agi
+[7] https://www.ben-evans.com/benedictevans/2023/7/2/working-with-ai
+[8] https://www.linkedin.com/posts/benedictevans_which-of-these-features-are-ai-and-which-activity-7228365464349892608-5M93
+[9] https://www.ben-evans.com/benedictevans/2019/4/15/notes-on-ai-bias
+[10] https://www.ben-evans.com/benedictevans/2023/8/27/generative-ai-ad-intellectual-property
+ChatGPT said:
+This is an insightful and well-composed summary of Benedict Evans' framing of AI through the lens of historical software development. To enhance clarity and flow—especially if you're preparing this for publication, teaching material, or a strategic brief—I'd suggest a few light edits for cohesion, tone, and rhythm. Here's a polished version:
+AI as Just Another Software Evolution: Benedict Evans on the Normalization of Innovation
+Benedict Evans compares the rise of artificial intelligence to earlier waves of software innovation to highlight a recurring pattern: technologies that once seemed revolutionary are eventually absorbed into everyday tools, reclassified not as magical breakthroughs but as ordinary "software" [1][2][3]. This historical framing helps demystify AI, grounding its current hype within the broader evolution of digital technologies.
+In the 1970s, Evans notes, technologies like early databases were often described as "AI" because they enabled complex, automated operations that were previously unimaginable. But as these systems matured and became reliable, they lost their aura of novelty and were absorbed into the background infrastructure of software [1][2]. He suggests that the same trajectory awaits today's AI systems: as their capabilities stabilize, they will fade into the fabric of mainstream technology.
+Evans also identifies a common adoption pattern. Initially, new technologies are awkwardly retrofitted into existing workflows. But as their unique affordances are better understood, they begin to reshape work itself and open up new possibilities [1][3][5]. Machine learning started with narrow pattern recognition but has since expanded into transformative domains like natural language processing and computer vision [1]. Generative AI, currently framed as a tool for accelerating content creation—like having "infinite interns"—could, over time, spawn entirely new modes of working, designing, and thinking [3].
+Evans' core insights can be distilled into three main themes:
+AI is on a path to normalization.
+The boundary between "AI" and "software" is porous; once AI becomes reliable and ubiquitous, it will no longer be perceived as distinct or exceptional [2][3].
+Technology follows a repeating cycle.
+Like personal computing, the web, and smartphones, AI is going through a familiar arc: early excitement, messy experimentation, and eventual deep integration into systems, industries, and behaviors [1][3][5].
+Historical awareness offers strategic clarity.
+Understanding how past technologies matured helps businesses, developers, and policymakers set realistic expectations for AI and anticipate its long-term structural impact [1][3][5].
+In sum, Evans encourages us to see AI not as a singular revolution, but as the latest installment in a long lineage of transformative—yet ultimately assimilated—technologies. The magic wears off, but the impact endures.
+Let me know if you'd like this version adapted to a specific format (e.g., corporate memo, tech trend report, or publication-ready op-ed), or if you want to weave in additional comparisons (e.g., cloud computing, open-source software) for further context.
+You said:
+Benedict Evans approaches macro and strategic trends in technology by adopting a broad, analytical perspective that connects historical patterns with current developments to anticipate future shifts. Rather than simply reporting surface-level trends, Evans unpacks the complexities of how technological change reshapes industries and society over time, acting as a kind of "macroeconomist for tech"[2]. He is known for synthesizing large-scale data and industry narratives, providing clarity on what drives technological evolution and why it matters for businesses and consumers[2][3].
+
+Evans frequently emphasizes the importance of understanding both the present and the trajectory of innovation. He uses historical analogies—such as the shift from early databases to Excel, or from command lines to graphical user interfaces—to illustrate how new technologies first mimic existing processes before enabling fundamentally new ways of working[2]. He applies models like the S-curve to describe phases of technology adoption: initial excitement, a period of slower, iterative growth, and eventual widespread acceptance[2].
+
+A key aspect of Evans' approach is his focus on generational platform shifts, which he believes occur every 10-15 years (e.g., the rise of the iPhone or generative AI), and on deeper, more fundamental changes that may take decades to fully unfold[2]. He frames critical questions about the implications of these shifts, rather than offering definitive predictions, encouraging ongoing exploration and critical thinking[2][4].
+
+Evans also leverages multiple platforms—such as his widely read newsletter, LinkedIn, and speaking engagements—to reach diverse audiences, providing both technical and strategic insights tailored for entrepreneurs, executives, and tech enthusiasts[3]. His content strategy is data-driven and provocative, aiming to spark meaningful conversations and help decision-makers cut through industry noise[3].
+
+In summary, Benedict Evans' approach to macro and strategic trends in technology is characterized by:
+
+- Connecting historical context with current and emerging trends to anticipate future developments[2][4].
+- Using models and analogies to explain technology adoption and impact[2].
+- Focusing on generational shifts and their broader implications for industry and society[2][4].
+- Framing critical questions to guide deeper analysis rather than offering simplistic answers[2].
+- Delivering insights through accessible, data-rich content designed to inform and provoke thought among a wide range of stakeholders[3].
+
+Citations:
+[1] https://about.fb.com/news/video/three-steps-to-the-future-benedict-evans/
+[2] https://beyond10x.substack.com/p/benedict-evans-gen-ai-and-the-future
+[3] https://www.favikon.com/blog/who-is-benedict-evans
+[4] https://www.youtube.com/watch?v=3D_BqQjSLps
+[5] https://www.swissre.com/profile/Benedict_Evans/ep_b84e6f
+[6] https://www.mosaicventures.com/people/benedict-evans
+[7] https://www.ben-evans.com/presentations
+[8] https://www.ben-evans.com
+[9] https://www.linkedin.com/posts/benedictevans_presentations-benedict-evans-activity-7265361160466567168-N8IM
+[10] https://www.linkedin.com/posts/benedictevans_presentations-benedict-evans-activity-7268269680706863104-nLFv
+ChatGPT said:
+Your summary effectively captures Benedict Evans' strategic, long-horizon approach to technology analysis. To refine and tighten the prose while preserving its nuance, here's an enhanced version suitable for publication or strategic briefings:
+Benedict Evans on Technology Trends: A Strategic, Historical Lens
+Benedict Evans approaches macro and strategic trends in technology not as a futurist or hype-chaser, but as a kind of
+macroeconomist for tech
+—mapping how innovations unfold over time, reshape industries, and influence societal structures [2]. Rather than focusing on surface-level developments, Evans analyzes technology in historical and structural terms, helping decision-makers distinguish between transient fads and foundational shifts [2][3].
+At the core of Evans' methodology is a deep respect for historical analogy. He frequently draws comparisons between current innovations and past transitions—such as the evolution from mainframes to personal computing, or from early databases to Excel—to show how technologies initially mimic existing paradigms before enabling new ones [2]. These comparisons help contextualize the present and anticipate the shape of the future.
+Evans often applies models like the
+S-curve
+to explain the lifecycle of technology adoption: a burst of early enthusiasm, followed by a slower phase of refinement, and then widespread, often invisible, integration [2]. For instance, he places generative AI on the early slope of this curve—exciting, uneven, and experimental—but likely to become an embedded layer of future software and workflows.
+A major theme in his work is the
+"generational platform shift"
+—deep technological transitions that occur roughly every 10-15 years (e.g., the PC, the internet, smartphones, and now AI) [2]. These shifts don't just produce new products; they reconfigure the entire terrain of opportunity, requiring new mental models and strategic postures. Evans avoids simplistic forecasting and instead poses critical, open-ended questions:
+What will this enable? What might change? What assumptions no longer hold?
+[2][4].
+His delivery is just as strategic as his thinking. Through newsletters, presentations, blog posts, and LinkedIn commentary, Evans tailors insights for a broad audience—entrepreneurs, analysts, executives, and the intellectually curious [3][9]. His content is characterized by clarity, restraint, and provocation: data-rich, narrative-driven, and designed to spark meaningful debate rather than dictate conclusions.
+In summary, Benedict Evans' approach to tech strategy includes:
+Historical contextualization
+: Using analogies from past shifts to decode present and future changes [2][4].
+Conceptual modeling
+: Applying adoption models like the S-curve to map technological lifecycles [2].
+Focus on structural shifts
+: Framing "platform transitions" as generational rather than incremental [2].
+Question-driven insight
+: Offering frameworks and queries rather than premature predictions [2][4].
+Multichannel engagement
+: Delivering insight through compelling, accessible content tailored to a diverse professional audience [3][9].
+Evans' true value lies in helping others think more clearly—not just about what's coming, but about how to
+recognize
+what matters as it arrives.
+Let me know if you'd like this reformatted as a slide deck summary, executive briefing, or part of a broader tech foresight report.
+You said:
+## Benedict Evans' Main Research Interests
+
+**Technology Industry Macro Trends**
+
+Benedict Evans is widely recognized for his in-depth analysis of macro and strategic trends in the technology industry. He focuses on how large-scale shifts—such as the rise of mobile, the evolution of media, and the ongoing digital transformation—reshape industries and consumer behavior[1][6]. His yearly presentations and widely read newsletter are known for distilling these complex trends for a broad audience[1].
+
+**Mobile, Media, and Digital Disruption**
+
+Evans has spent much of his career examining the intersection of mobile technology, media, and the broader digital economy. He analyzes how mobile adoption, new media platforms, and digital business models disrupt established industries and create new opportunities[1][2].
+
+**Artificial Intelligence and Automation**
+
+Recently, Evans has written extensively about artificial intelligence (AI), especially the practical use cases and limitations of large language models (LLMs) like ChatGPT. He explores where AI can deliver meaningful value, often comparing it to an "automated intern"—useful for tasks that require pattern recognition and automation, but with clear boundaries regarding reliability and trustworthiness[3][5]. He is particularly interested in distinguishing between problems where "80%-OK" solutions are sufficient and those requiring near-perfect accuracy, such as self-driving cars[3][5].
+
+**Web3, Crypto, and Decentralized Technologies**
+
+Evans also investigates the implications of emerging technologies such as crypto, Web3, and blockchain. He analyzes the hype cycles, regulatory challenges, and the potential for these technologies to become either mainstream or remain niche[6].
+
+**Technology Regulation and Policy**
+
+Another area of interest is the increasing regulation of technology and its impact on innovation, competition, and market structure. Evans examines how governments and regulatory bodies interact with tech companies and the resulting effects on industry evolution[6].
+
+**Generational Shifts in Technology**
+
+Evans frequently discusses the recurring generational shifts in technology—major changes that occur every 10-15 years, such as the move from desktop to mobile, or from traditional software to cloud and AI. He studies the patterns underlying these shifts and their implications for businesses and society[6].
+
+---
+
+**Summary Table: Benedict Evans' Main Research Interests**
+
+| Area                          | Focus                                                                 |
+|-------------------------------|-----------------------------------------------------------------------|
+| Macro Tech Trends             | Strategic, industry-wide shifts in technology                         |
+| Mobile & Media                | Mobile adoption, digital disruption, new media platforms              |
+| Artificial Intelligence       | Use cases, limitations, automation, reliability of AI/LLMs            |
+| Web3 & Crypto                 | Blockchain, decentralization, hype vs. reality, regulatory impacts    |
+| Tech Regulation & Policy      | Government, regulation, market structure, innovation                  |
+| Generational Tech Shifts      | Recurring major transitions in technology platforms and paradigms      |
+
+Evans' work is characterized by a pragmatic, pattern-seeking approach to understanding what matters in tech, what might happen next, and how businesses and society can navigate ongoing digital disruption[1][6].
+
+Citations:
+[1] https://www.swissre.com/profile/Benedict_Evans/ep_b84e6f
+[2] https://www.a-speakers.com/speakers/benedict-evans/
+[3] https://www.icopilots.com/did-benedict-evans-just-discover-ai-is-only-good-for-solving-80-ok-problems-2/
+[4] https://www.linkedin.com/in/benedictevans
+[5] https://www.ben-evans.com/benedictevans/2024/4/19/looking-for-ai-use-cases
+[6] https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/forward-thinking-on-tech-and-the-unpredictability-of-prediction-with-benedict-evans
+[7] https://www.ben-evans.com
+[8] https://www.mosaicventures.com/people/benedict-evans
+[9] https://benevanslab.wordpress.com
+[10] https://experts.mcmaster.ca/display/evansb
+ChatGPT said:
+This is an excellent structured overview of Benedict Evans' main research interests. It's well-organized, detailed, and clearly cited. To elevate this into a more publication-ready or strategic dossier format—while maintaining the original integrity—here's a refined and polished version with slightly tighter phrasing, clearer transitions, and smoother integration of key ideas:
+Benedict Evans' Main Research Interests
+Benedict Evans is a leading analyst of strategic and macro-level shifts in the technology sector. His work spans a wide array of domains, unified by a focus on how technological change disrupts markets, reshapes industries, and alters the fabric of everyday life. Across newsletters, keynote presentations, and advisory work, Evans offers a unique blend of historical insight, strategic modeling, and pragmatic foresight.
+1. Technology Industry Macro Trends
+Evans is best known for his synthesis of macro technology trends. He focuses on how large-scale shifts—such as the rise of mobile computing, the digital transformation of legacy industries, and the reconfiguration of consumer behavior—unfold over time. His annual presentations are widely regarded for cutting through hype to identify enduring patterns and strategic inflection points.
+📌
+Focus: Strategic industry evolution, long-term framing, and structural transitions
+[1][6].
+2. Mobile, Media, and Digital Disruption
+A major part of Evans' earlier work centers on how mobile technology and digital platforms upended traditional media and business models. He analyzes adoption curves, monetization strategies, and the interplay between new interfaces (e.g., smartphones) and new forms of content (e.g., streaming, social).
+📌
+Focus: Mobile-first transitions, media platform economics, digital user behavior
+[1][2].
+3. Artificial Intelligence and Automation
+Evans offers a grounded perspective on AI, especially large language models (LLMs) and automation. He conceptualizes AI not as an omniscient oracle, but as a capable "automated intern" useful for tasks that tolerate imprecision. He emphasizes the distinction between problems where "80% is good enough" and domains—like autonomous driving—where anything less than perfection is unacceptable.
+📌
+Focus: AI use cases, error tolerance, trust, productivity augmentation
+[3][5].
+4. Web3, Crypto, and Decentralized Technologies
+Evans has critically examined Web3 and blockchain technologies, navigating between utopian promises and grounded skepticism. He explores potential applications, evaluates regulatory dynamics, and dissects the cultural and economic narratives driving interest in decentralization.
+📌
+Focus: Blockchain utility, adoption barriers, financial infrastructure, narrative analysis
+[6].
+5. Technology Regulation and Policy
+Evans engages with the growing role of government policy and antitrust regulation in shaping the tech ecosystem. He examines how emerging rules affect innovation, market competition, and the strategic behavior of major platforms.
+📌
+Focus: Regulation vs. innovation, market power, platform responsibility, public-private dynamics
+[6].
+6. Generational Shifts in Technology
+A recurring theme in Evans' work is the idea of generational platform shifts—transformations that occur every 10-15 years, such as the rise of mobile, cloud computing, or generative AI. He analyzes how these shifts often start by mimicking existing paradigms before enabling entirely new capabilities.
+📌
+Focus: Platform transitions, S-curve dynamics, disruptive inflection points
+[6].
+Summary Table: Benedict Evans' Research Themes
+Area
+Focus
+Macro Tech Trends
+Industry-wide structural changes and long-term strategic framing
+Mobile & Media
+Digital disruption, new content models, user interface transitions
+Artificial Intelligence
+Use cases, limitations, and trust boundaries for LLMs and automation
+Web3 & Crypto
+Blockchain hype vs. utility, regulatory implications, financial shifts
+Tech Regulation & Policy
+Governance of tech, antitrust, innovation constraints
+Generational Tech Shifts
+Recurring major platform transitions and their strategic implications
+Evans' work stands out for its balance of breadth and depth, offering executives, investors, and technologists a clear lens through which to interpret the noise of innovation. He doesn't merely predict what's next—he helps you understand what questions to ask as the future unfolds.
+Let me know if you'd like this formatted as a briefing memo, a slide deck summary, or adapted into a strategic foresight document for a specific audience (e.g., policy, venture capital, enterprise strategy).
+You said:
+A list of all of the topics we've discussed
+ChatGPT said:
+Here's a consolidated list of all the topics we've discussed across your sessions, grouped thematically for clarity:
+🧠
+RSVP Theory and Related Physics Work
+RSVP (Relativistic Scalar Vector Plenum) Theory
+- Formalization, scalar (Φ), vector (v), and entropy (S) fields, space "falling outward," negentropy and constraint relaxation.
+Entropic Redshift and Alternative to ΛCDM
+- Simulation and observational testing.
+TARTAN
+- Trajectory-Aware Recursive Tiling with Annotated Noise for RSVP simulations.
+Unistochastic Quantum Theory
+- As emergent from RSVP field dynamics (inspired by Jacob Barandes).
+William Glasser and William Calvin
+- Integrated into RSVP as models of recursive perception and control.
+🧪
+Simulation and Modeling
+Lattice Simulations
+- For RSVP and entropic smoothing effects.
+Torsion Dynamics and Constraint Relaxation
+- Used to simulate field evolution.
+Coarse-Grained Mappings from RSVP to Quantum/Statistical Mechanics
+- Emergent probabilistic dynamics.
+🎮
+Choreography, Embodiment, and Interaction Design
+Polymorphic Keyboard-Motion Mapping
+- 26-letter motion alphabet for poi spinning.
+Three-Mode Control System
+- Basic movement, pattern variation, and expression.
+Avatar Control in Unity/Unreal
+- Integration of gesture-driven interfaces.
+MIDI/IMU Control Systems
+- Real-time performance and visual choreography.
+📚
+Critical Theory, Technology, and AI
+Against AI Imperialism
+- A manifesto critiquing cognitive colonialism, techno-sovereignty, and platform control.
+AI Geopolitics
+- Analysis of generative AI as a sovereign infrastructure layer.
+A Manifesto for Relational Ethical Computation
+- Drawing on Mach and Stein against oracular tech.
+Rendering Realities
+- NeRFs as a metaphor for ethical reconstruction in speculative fiction.
+Leaking Chatroom, Reed Wall Mind, Motile Womb Theory
+- Inspired by Monica Anderson's epistemology.
+Spherepop Language
+- Bubble-based, visual logic inspired by Monica Anderson's work.
+🌲
+Ecological Architecture and Conscious Systems
+Xylomorphic Architecture
+- Forests, paper mills, and biofeedback as models for organs and cities.
+Writable Urban Surfaces and Mycelial Microchips
+- Conceptual designs inspired by ecosystems.
+🖊️
+Creative Writing and Philosophy
+The Lunar Deity Cover-Up
+- A subversive critique of theology, Wikipedia, and narrative control.
+Friendship, Loneliness, and Epistemology
+- Sociocultural essays with charts, critique, and savage insight.
+Pet Peeves List
+- Cultural, linguistic, and epistemic pet peeves with humor and deep analysis.
+🕹️
+Game Design and Aesthetics
+Blastoids
+- Retro 3D cockpit shooter with green vector CRT aesthetic, Descent-like gameplay.
+Visual and Input Logic for Slow-Moving Asteroids
+- Semi-stationary player aiming mechanic.
+🧠
+People and Thought Leaders
+Monica Anderson
+- Archive and expansion of her writings on Model-Free Methods and epistemology.
+Jacob Barandes
+- His unistochastic quantum theory as a framework for RSVP emergence.
+Benedict Evans
+- Strategic tech trend analyst; synthesized profile of his work and interests.
+🧰
+Tooling and Interfaces
+Quadrivium Repository Explorer
+- Shell script to summarize
+.txt
+files using Ollama; future embedding and querying.
+RAG Interface Prototypes
+- Exploration of Retrieval-Augmented Generation for knowledge systems.
+Let me know if you'd like this list exported, visualized as a mind map, or organized into a timeline, research log, or knowledge graph.
+Tools
+ChatGPT can make mistakes. Check important info. See
+Cookie Preferences
+.
