@@ -1,0 +1,116 @@
+Testing the Relativistic Scalar-Vector Plenum (RSVP)
+Theory: Experimental Validation of Cosmic Geometry
+Abstract
+The Relativistic Scalar-Vector Plenum (RSVP) theory posits that cosmic structure formation
+arises from the interaction of a scalar entropy field Φ, vector baryon flow v, and a Voronoi-
+Delaunay tessellation, governed by relativistic dynamics. This paper presents a rigorous ex-
+perimental framework to test RSVP theory, integrating laboratory analogues, astronomical ob-
+servations, numerical simulations, and quantum turbulence experiments. These tests evaluate
+RSVP's predictions against the ΛCDM model, focusing on void ellipticity, filament shear align-
+ment, and halo lensing profiles, with an emphasis on quantitative metrics and mathematical
+formulations.
+1
+Introduction
+The Relativistic Scalar-Vector Plenum (RSVP) theory proposes that the universe's large-scale struc-
+ture emerges from the interplay of a scalar entropy field Φ, vector baryon flow v, and a Voronoi-
+Delaunay tessellation, described by relativistic field equations. Unlike the ΛCDM model, RSVP
+eliminates dark matter halos, predicting unique geometric and dynamic signatures. This pa-
+per outlines experiments to test RSVP, employing mathematical formulations to quantify pre-
+dictions.
+2
+Laboratory Analogue: Quantum Dot Systems
+A two-dimensional electron gas (2DEG) in a gallium arsenide heterostructure models cosmic dy-
+namics. The scalar field Φ is represented by a disorder potential, and the vector field v by directed
+electron flow. Local entropy 𝑆is derived from density fluctuations via shot-noise spectroscopy,
+with power spectrum 𝑃( 𝑓) ∝𝑆.
+The experimental procedure comprises:
+1. Patterning gate electrodes to impose a Voronoi tessellation potential, 𝑉(r) = ∑
+𝑖𝜙𝑖exp(−|r −
+r𝑖|2/𝜎2), where r𝑖are Voronoi cell centers.
+2. Applying a thermal gradient ∇𝑇∥v to drive entropy dynamics, modeled as 𝜕𝑡𝑆= −∇· (v𝑆).
+3. Measuring electron density 𝑛𝑒(r) at Delaunay vertices via scanning tunneling microscopy,
+testing the RSVP prediction 𝜌𝑏∝|∇· v|, where 𝜌𝑏is baryon density.
+The electron density at vertices is expected to satisfy:
+𝑛𝑒(r𝑣) ∝
+∫
+|∇· v| 𝑑𝐴,
+where r𝑣are Delaunay vertices and 𝑑𝐴is the area element.
+3
+Astronomical Observations: Cosmic Shear and Void Geom-
+etry
+Using data from the Euclid space telescope and the Large Synoptic Survey Telescope (LSST), we
+measure cosmic shear 𝛾obs. RSVP predicts:
+1
+
+• Filament Shear Alignment: Shear aligns with baryon flow, with:
+𝛾RSVP =
+∫
+𝜌𝑏v · 𝑑l,
+maximized at 𝜃≈0 (flow-filament alignment), unlike ΛCDM's 𝜃≈𝜋/4. The correlation
+function is:
+𝐶(𝜃) = ⟨𝛾obs · 𝛾RSVP⟩∝cos 𝜃.
+• Void Ellipticity: Void shapes depend on entropy, with ellipticity:
+𝑒= 𝑎−𝑏
+𝑎+ 𝑏∝𝑆−1,
+where 𝑎and 𝑏are void semi-axes, contrasting with ΛCDM's 𝑒≈0.05. Cross-correlating weak
+lensing with 21cm hydrogen data from CHIME and the Square Kilometre Array tests:
+⟨𝑒𝑆⟩=
+∫
+𝑒(r)𝑆(r) 𝑑𝑉.
+4
+Numerical Simulations: Computational Cosmology
+Modified cosmological codes (e.g., AREPO, GADGET-4) incorporate dynamic Voronoi-Delaunay
+tessellation and entropy diffusion:
+𝜕𝑆
+𝜕𝑡= ∇2𝑆+ 𝛼(v · ∇𝑆) + 𝛽𝑅,
+where 𝑅is the Ricci scalar accounting for relativistic effects. Initial conditions use Gaussian
+random fields for Φ, with power spectrum 𝑃(𝑘) ∼𝑘𝑛, 𝑛∈[−2.5, −1.0]. Control simulations omit
+v-coupling. Metrics include:
+• Betti number ratios 𝑏1/𝑏2, quantifying filament-to-void balance:
+𝑏1/𝑏2 = Number of filaments
+Number of voids
+.
+• Wasserstein distance 𝑊1 between simulated and observed galaxy cluster distributions:
+𝑊1(𝜇, 𝜈) =
+inf
+𝛾∈Γ(𝜇,𝜈)
+∫
+|x −y| 𝑑𝛾(x, y).
+5
+Quantum Turbulence: Superfluid Helium-3
+Superfluid helium-3 at millikelvin temperatures models cosmic filaments via vortex lines. The
+experimental setup involves:
+• Imprinting a vortex lattice with Voronoi tessellation, where vortex positions satisfy r𝑖=
+arg min𝑉(r).
+• Modulating rotation rate Ω(𝑡) to drive 𝜕𝑡Φ, with dynamics:
+𝜕𝑡Φ = −v · ∇Φ + 𝜅∇2Φ.
+• Tracking vortex reconnection via NMR spectroscopy, testing vortex accumulation:
+𝑁𝑣(r𝑣) ∝Ω1/2,
+mirroring 𝜌𝑏(Φ).
+2
+
+6
+Discriminating RSVP from ΛCDM
+Key observables include:
+• Void Ellipticity: RSVP predicts 𝑒≈0.3, with ⟨𝑒𝑆⟩≠0, versus ΛCDM's 𝑒≈0.05.
+• Filament Shear Alignment: RSVP requires 𝐶(𝜃) ∝cos 𝜃, peaking at 𝜃≈0, versus ΛCDM's
+uniform 𝐶(𝜃).
+• Halo Lensing Profiles: RSVP predicts 𝛾∝𝜌𝑏, unlike ΛCDM's 𝛾∝𝜌DM (NFW profile).
+7
+Future Directions
+The experimental roadmap includes:
+• Laboratory: Quantifying 𝑛𝑒statistics in 2DEG systems, targeting microscopy resolution <
+10 nm.
+• Observational: Reanalyzing Planck CMB for v-aligned B-mode polarization, ⟨𝐵· v⟩, and
+proposing JWST void observations for 𝑒(𝑆).
+• Numerical: Releasing TARTAN-RSVP code, benchmarking against IllustrisTNG for 𝑏1/𝑏2 at
+high redshifts.
+8
+Conclusion
+The RSVP theory proposes a relativistic framework for cosmic structure, eliminating dark mat-
+ter halos. The proposed experiments—quantum dots, astronomical surveys, simulations, and
+superfluids—test predictions with precise mathematical formulations. Positive results could re-
+define cosmic evolution, while negative results would constrain theoretical models, advancing
+our understanding of the universe.
+3
+
