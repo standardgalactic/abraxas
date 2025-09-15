@@ -1,0 +1,239 @@
+\begin{thebibliography}{37}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[al~Khwarizmi(825)]{AlKhwarizmi825}
+Muhammad ibn~Musa al~Khwarizmi.
+\newblock \emph{Al-Kitab al-mukhtasar fi hisab al-jabr wa'l-muqabala}.
+\newblock n.p., 825.
+\newblock Original manuscript; translated editions available.
+
+\bibitem[Alexandrov et~al.(1997)Alexandrov, Kontsevich, Schwarz, and
+  Zaboronsky]{AlexandrovKontsevichSchwarzZaboronsky1997}
+M.~Alexandrov, M.~Kontsevich, A.~Schwarz, and O.~Zaboronsky.
+\newblock The geometry of the master equation and topological quantum field
+  theory.
+\newblock \emph{International Journal of Modern Physics A}, 12\penalty0
+  (07):\penalty0 1405--1429, 1997.
+\newblock \doi{10.1142/S0217751X97001031}.
+
+\bibitem[Awodey(2010)]{Awodey2010}
+Steve Awodey.
+\newblock \emph{Category Theory}.
+\newblock Oxford Logic Guides. Oxford University Press, 2nd edition, 2010.
+
+\bibitem[Batalin and Vilkovisky(1981)]{BatalinVilkovisky1981}
+I.~A. Batalin and G.~A. Vilkovisky.
+\newblock Gauge algebra and quantization.
+\newblock \emph{Physics Letters B}, 102:\penalty0 27--31, 1981.
+\newblock \doi{10.1016/0370-2693(81)90205-7}.
+
+\bibitem[Boole(1847)]{Boole1847}
+George Boole.
+\newblock \emph{The Mathematical Analysis of Logic}.
+\newblock Macmillan, Barclay, \& Macmillan, 1847.
+
+\bibitem[Curry(1930)]{Curry1930}
+Haskell~B. Curry.
+\newblock Grundlagen der kombinatorischen logik.
+\newblock \emph{American Journal of Mathematics}, 52\penalty0 (3):\penalty0
+  509--536, 1930.
+
+\bibitem[Descartes(1637)]{Descartes1637}
+René Descartes.
+\newblock \emph{La Géométrie}.
+\newblock Jan Maire, 1637.
+
+\bibitem[Fauconnier and Turner(2002)]{FauconnierTurner2002}
+Gilles Fauconnier and Mark Turner.
+\newblock \emph{The Way We Think: Conceptual Blending and the Mind's Hidden
+  Complexities}.
+\newblock Basic Books, 2002.
+
+\bibitem[Friston(2010)]{Friston2010}
+Karl Friston.
+\newblock The free-energy principle: a unified brain theory?
+\newblock \emph{Nature Reviews Neuroscience}, 11:\penalty0 127--138, 2010.
+\newblock \doi{10.1038/nrn2787}.
+
+\bibitem[Grady et~al.(2017)Grady, Li, and Li]{GradyLiLi2017}
+Ryan~E. Grady, Qin Li, and Si~Li.
+\newblock Batalin-vilkovisky quantization and the algebraic index.
+\newblock \emph{Advances in Mathematics}, 317:\penalty0 575--639, 2017.
+\newblock \doi{10.1016/j.aim.2017.06.022}.
+
+\bibitem[Han et~al.(2023)Han, Bai, Liu, and Ouyang]{Han2023}
+Tao Han, Lei Bai, Lingbo Liu, and Wanli Ouyang.
+\newblock Steerer: Resolving scale variations for counting and localization via
+  selective inheritance learning.
+\newblock arXiv preprint arXiv:2308.10468, 2023.
+
+\bibitem[Hanson(2003)]{Hanson2003}
+Robin Hanson.
+\newblock Shall we vote on values, but bet on beliefs?
+\newblock \emph{Journal of Political Philosophy}, 11\penalty0 (3):\penalty0
+  247--275, 2003.
+
+\bibitem[Jacobson(1995)]{Jacobson1995}
+Ted Jacobson.
+\newblock Thermodynamics of spacetime: The einstein equation of state.
+\newblock \emph{Phys. Rev. Lett.}, 75:\penalty0 1260, 1995.
+\newblock \doi{10.1103/PhysRevLett.75.1260}.
+
+\bibitem[Leibniz(1684)]{Leibniz1684}
+Gottfried~Wilhelm Leibniz.
+\newblock Nova methodus pro maximis et minimis.
+\newblock \emph{Acta Eruditorum}, 1684.
+
+\bibitem[Lurie(2009)]{Lurie2009}
+Jacob Lurie.
+\newblock \emph{Higher Topos Theory}, volume 170 of \emph{Annals of Mathematics
+  Studies}.
+\newblock Princeton University Press, 2009.
+
+\bibitem[Mac~Lane and Moerdijk(1992)]{MacLaneMoerdijk1992}
+Saunders Mac~Lane and Ieke Moerdijk.
+\newblock \emph{Sheaves in Geometry and Logic: A First Introduction to Topos
+  Theory}.
+\newblock Universitext. Springer, 1992.
+\newblock \doi{10.1007/978-1-4612-0927-0}.
+
+\bibitem[Newton(1687)]{Newton1687}
+Isaac Newton.
+\newblock \emph{Philosophiæ Naturalis Principia Mathematica}.
+\newblock Joseph Streater for the Royal Society, 1687.
+
+\bibitem[{OpenAI}(2023)]{OpenAI2023}
+{OpenAI}.
+\newblock Gpt-4 technical report.
+\newblock arXiv preprint arXiv:2303.08774, 2023.
+
+\bibitem[Padmanabhan(2010)]{Padmanabhan2010}
+T.~Padmanabhan.
+\newblock Thermodynamical aspects of gravity: New insights.
+\newblock \emph{Reports on Progress in Physics}, 73\penalty0 (4):\penalty0
+  046901, 2010.
+\newblock \doi{10.1088/0034-4885/73/4/046901}.
+
+\bibitem[Pantev et~al.(2013)Pantev, Toën, Vaquié, and
+  Vezzosi]{PantevToenVaqVezz2013}
+Tony Pantev, Bertrand Toën, Michel Vaquié, and Gabriele Vezzosi.
+\newblock Shifted symplectic structures.
+\newblock \emph{Publications Mathématiques de l'IHÉS}, 117:\penalty0
+  271--328, 2013.
+\newblock \doi{10.1007/s10240-013-0054-1}.
+
+\bibitem[Pessoa(2017)]{Pessoa2017}
+Luiz Pessoa.
+\newblock A network model of the emotional brain.
+\newblock \emph{Trends in Cognitive Sciences}, 21\penalty0 (5):\penalty0
+  357--371, 2017.
+\newblock \doi{10.1016/j.tics.2017.03.002}.
+
+\bibitem[Petillo(2024)]{Petillo2024}
+Will Petillo.
+\newblock What if alignment is not enough?
+\newblock GreaterWrong post, 2024.
+\newblock URL
+  \url{https://www.greaterwrong.com/posts/jFkEhqpsCRbKgLZrd/what-if-alignment-is-not-enough}.
+
+\bibitem[Pletser(1987)]{Pletser1987}
+Vladimir Pletser.
+\newblock Ishango bone: A mathematical analysis.
+\newblock \emph{Historia Mathematica}, 14:\penalty0 313--323, 1987.
+
+\bibitem[Powers(2005)]{Powers2005}
+William~T. Powers.
+\newblock \emph{Behavior: The Control of Perception}.
+\newblock Benchmark Publications, 2nd edition, 2005.
+
+\bibitem[Radford et~al.(2021)Radford, Kim, Hallacy, Ramesh, Goh, Agarwal,
+  Sastry, Askell, Mishkin, Clark, Krueger, and Sutskever]{Radford2021}
+Alec Radford, Jong~Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh,
+  Sandhini Agarwal, Girish Sastry, Amanda Askell, Pamela Mishkin, Jack Clark,
+  Gretchen Krueger, and Ilya Sutskever.
+\newblock Learning transferable visual models from natural language
+  supervision.
+\newblock arXiv preprint arXiv:2103.00020, 2021.
+
+\bibitem[Rombach et~al.(2022)Rombach, Blattmann, Lorenz, Esser, and
+  Ommer]{Rombach2022}
+Robin Rombach, Andreas Blattmann, Dominik Lorenz, Patrick Esser, and Björn
+  Ommer.
+\newblock High-resolution image synthesis with latent diffusion models.
+\newblock arXiv preprint arXiv:2112.10752, 2022.
+
+\bibitem[Schmandt-Besserat(1992)]{SchmandtBesserat1992}
+Denise Schmandt-Besserat.
+\newblock \emph{Before Writing: From Counting to Cuneiform}.
+\newblock University of Texas Press, 1992.
+
+\bibitem[Shannon(1948)]{Shannon1948}
+Claude~E. Shannon.
+\newblock A mathematical theory of communication.
+\newblock \emph{Bell System Technical Journal}, 27\penalty0 (3):\penalty0
+  379--423, 1948.
+\newblock \doi{10.1002/j.1538-7305.1948.tb01338.x}.
+
+\bibitem[Toën and Vezzosi(2008)]{ToenVezzosi2008}
+Bertrand Toën and Gabriele Vezzosi.
+\newblock \emph{Homotopical Algebraic Geometry II: Geometric Stacks and
+  Applications}, volume 193 of \emph{Memoirs of the American Mathematical
+  Society}.
+\newblock American Mathematical Society, 2008.
+
+\bibitem[Tsallis(1988)]{Tsallis1988}
+C.~Tsallis.
+\newblock Possible generalization of boltzmann-gibbs statistics.
+\newblock \emph{Journal of Statistical Physics}, 52:\penalty0 479--487, 1988.
+\newblock \doi{10.1007/BF01016429}.
+
+\bibitem[Turing(1937)]{Turing1936}
+Alan~M. Turing.
+\newblock On computable numbers, with an application to the
+  entscheidungsproblem.
+\newblock \emph{Proceedings of the London Mathematical Society}, s2-42\penalty0
+  (1):\penalty0 230--265, 1937.
+\newblock \doi{10.1112/plms/s2-42.1.230}.
+
+\bibitem[Verlinde(2011)]{Verlinde2011}
+Erik~P. Verlinde.
+\newblock On the origin of gravity and the laws of newton.
+\newblock \emph{Journal of High Energy Physics}, 2011\penalty0 (4):\penalty0
+  29, 2011.
+\newblock \doi{10.1007/JHEP04(2011)029}.
+
+\bibitem[von Neumann(1945)]{VonNeumann1945}
+John von Neumann.
+\newblock First draft of a report on the edvac.
+\newblock Technical report, University of Pennsylvania, 1945.
+
+\bibitem[Wiener(1948)]{Wiener1948}
+Norbert Wiener.
+\newblock \emph{Cybernetics: Or Control and Communication in the Animal and the
+  Machine}.
+\newblock MIT Press, 1948.
+
+\bibitem[Yampolskiy(2020)]{Yampolskiy2020}
+Roman Yampolskiy.
+\newblock Uncontrollability of ai.
+\newblock arXiv preprint arXiv:2008.04071, 2020.
+
+\bibitem[Yudkowsky(2004)]{Yudkowsky2004}
+Eliezer Yudkowsky.
+\newblock Coherent extrapolated volition.
+\newblock Singularity Institute for Artificial Intelligence, 2004.
+\newblock URL \url{https://intelligence.org/files/CEV.pdf}.
+
+\bibitem[Zyczkowski et~al.(2003)Zyczkowski, Slomczynski, Kus, and
+  Sommers]{ZyczkowskiSlomczynskiKusSommers2003}
+K.~Zyczkowski, W.~Slomczynski, M.~Kus, and H.-J. Sommers.
+\newblock Random unistochastic matrices.
+\newblock \emph{Journal of Physics A: Mathematical and General}, 36\penalty0
+  (12):\penalty0 3425, 2003.
+\newblock \doi{10.1088/0305-4470/36/12/329}.
+
+\end{thebibliography}
