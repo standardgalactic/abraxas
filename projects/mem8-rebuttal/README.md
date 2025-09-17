@@ -7,6 +7,10 @@ This folder contains the Mem|8 rebuttal to Xylomorphic Computation, plus extensi
 - `Mem8_Rebuttal.tex` — Academic LaTeX rebuttal.
 - `Ayian_Feasibility.md` — Feasibility study for a work-backed, persona-bound cryptocurrency.
 - `Petabyte_Covenant.md` — Foundational covenant tying Ayian issuance to 2^50 base-2 memory.
+- `Ayian Cryptocurrency Feasibility Study.md` — Extended feasibility study.
+- `MEM-8 & Marine Algorithm Research.md` — Research paper.
+- `Petabyte_Covenant_Ayian_Full_with_Disclaimer.pdf` — Full covenant (PDF).
+- `Ayian Unpacked_ Work-Backed Crypto, Persona-Bound Value, and Hybrid Governance.mp3` — Audio explainer.
 
 **Abstract:**  
 Where Xylomorphic Computation frames the questions, Mem|8 provides the substrate.  
