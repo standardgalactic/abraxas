@@ -31,7 +31,7 @@ The choice of platform is not merely a technical decision but a strategic one th
 | **EVM Compatibility** | Native | Yes | No | Yes |
 | **Key Strengths** | Maximum security & decentralization; largest developer ecosystem 1 | Low fees; fast transactions; EVM compatibility 4 | Extreme scalability & speed; ultra-low fees 4 | Inherits Ethereum's security; low fees; high throughput; EVM compatible 7 |
 | **Key Weaknesses** | Low scalability; high gas fees 3 | Centralization concerns; lower security guarantees | Network instability issues; non-EVM learning curve 4 | Complexity of bridging assets; reliance on sequencer for liveness |
-| \*\*Suitability for MEM | 8 PoC Model\*\* | Poor (Costs make PoC unviable) | Moderate (Performance is good, but centralization is a risk) | Moderate (Performance is excellent, but ecosystem and reliability are concerns) |
+| \*\*Suitability for MEM\|8 PoC Model\*\* | Poor (Costs make PoC unviable) | Moderate (Performance is good, but centralization is a risk) | Moderate (Performance is excellent, but ecosystem and reliability are concerns) |
 
 #### **1.2. The "Work-Backed" Paradigm: A Deep Dive into Proof-of-Contribution (PoC)**
 
