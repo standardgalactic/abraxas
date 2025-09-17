@@ -226,7 +226,7 @@ The recommended governance model for the MEM|8 DAO is a hybrid system that lever
 * **Proposal Power:** To prevent spam, the ability to submit a formal governance proposal will require a member to hold a minimum threshold of Ayian tokens. This ensures that those who initiate formal decision-making processes have a tangible stake in the outcome.  
 * Voting Power: A member's total voting power on any given proposal will be calculated using a formula that combines both their staked Ayian tokens and their lifetime contribution score. A potential formula could be:
 
-  Voting Power=Staked Ayian​×ContributionScore
+  $$Voting\ Power = \sqrt{Staked\ Ayian} \times Contribution\ Score$$
 
   This formula incorporates two key principles. First, by taking the square root of the staked Ayian, it applies the principle of quadratic voting to the capital component, significantly diminishing the power of whale token holders. Second, it multiplies this by the user's contribution score, directly amplifying the voice of proven, long-term contributors. This creates a balanced system where both capital investment and active participation are valued, but where contribution acts as a powerful multiplier on influence.  
 * **Governance Tooling:** The implementation of this model can be achieved using a combination of existing, battle-tested tools.  
