@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abraxas</title>
+
+<!--
+ABRAXAS FIELD SIMULATOR
+
+This system is loosely analogous to an Ising-style synchronization process,
+but generalized beyond discrete spins into continuous fields and directional flow.
+
+In the Ising model:
+    - each site carries a discrete spin
+    - neighboring spins interact to align
+    - thermal noise disrupts alignment
+
+Here:
+    - Φ (phi) acts as a continuous local state (a generalized "spin")
+    - v (vector field) mediates directional coupling between regions
+    - S (entropy) acts as disorder / noise
+    - residue accumulates irreversible effects of past disorder
+
+Key difference:
+    This is not just alignment — it is transport-mediated reorganization.
+    Coherence emerges through flow (v), not just local agreement.
+
+You can think of it as:
+    Ising synchronization + diffusion + dissipation + memory
+
+Where:
+    - gradients of Φ drive flow
+    - flow redistributes structure
+    - entropy resists organization
+    - residue records what cannot be undone
+
+The different visualization modes (Field, Trajectory, Repair, Fragmentation)
+are projections of this same evolving system.
+-->
+
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #050607;
+  color: #c8d4e0;
+  font-family: monospace;
+  overflow: hidden;
+  user-select: none;
+}
+canvas { position: absolute; inset: 0; }
+
+#ui {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 14px 20px;
+}
+
+#top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#title {
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  opacity: 0.55;
+}
+
+#status {
+  font-size: 10px;
+  opacity: 0.35;
+  text-align: right;
+  line-height: 1.6;
+}
+
+#bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#phenomenon {
+  font-size: 11px;
+  opacity: 0.45;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+#controls {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  font-size: 11px;
+  pointer-events: all;
+}
+
+.proj {
+  cursor: pointer;
+  opacity: 0.45;
+  letter-spacing: 0.12em;
+  transition: opacity 0.15s;
+  padding: 2px 0;
+}
+.proj:hover { opacity: 0.9; }
+.proj.active {
+  opacity: 1.0;
+  border-bottom: 1px solid rgba(180,200,255,0.4);
+}
+
+#scrub-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  pointer-events: all;
+}
+
+#scrub {
+  flex: 1;
+  -webkit-appearance: none;
+  height: 2px;
+  background: rgba(180,200,255,0.15);
+  outline: none;
+  cursor: pointer;
+}
+#scrub::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 8px;
+  height: 8px;
+  background: rgba(180,200,255,0.6);
+  border-radius: 50%;
+}
+
+#frame-counter {
+  font-size: 10px;
+  opacity: 0.3;
+  width: 52px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+#loading {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  opacity: 0.4;
+  letter-spacing: 0.2em;
+}
+</style>
+</head>
+<body>
+
+<canvas id="canvas"></canvas>
+
+<div id="loading">LOADING FIELD DATA…</div>
+
+<div id="ui" style="display:none">
+  <div id="top">
+    <div id="title">ABRAXAS</div>
+    <div id="status"></div>
+  </div>
+  <div id="bottom">
+    <div id="phenomenon"></div>
+    <div id="controls">
+      <div class="proj active" data-mode="field">FIELD</div>
+      <div class="proj" data-mode="trajectory">TRAJECTORY</div>
+      <div class="proj" data-mode="repair">REPAIR</div>
+      <div class="proj" data-mode="fragmentation">FRAGMENTATION</div>
+    </div>
+    <div id="scrub-row">
+      <input id="scrub" type="range" min="0" max="199" value="0">
+      <div id="frame-counter">0 / 199</div>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="assets/js/main.js"></script>
+
+</body>
+</html>
