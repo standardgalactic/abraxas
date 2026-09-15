@@ -1,0 +1,421 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{times}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\hypersetup{colorlinks=false, pdfborder={0 0 0}}
+
+\titleformat{\section}{\normalfont\large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\normalsize\bfseries}{\thesubsection}{1em}{}
+
+\title{\textbf{Projection Before Pressure: Toward Nose-Free Eyeglasses \\ and the Eventual Abolition of the Nose \\ as an Optical Support Structure}}
+\author{Flyxion \\ \small Independent Researcher}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent Conventional eyeglasses solve an optical problem by imposing a mechanical burden upon an anatomically unrelated structure. The nose refracts no light, performs no image reconstruction, and has no recognized role in correcting myopia, hyperopia, astigmatism, presbyopia, or higher-order aberrations. Nevertheless, it has served for centuries as the principal load-bearing member of personal optical systems. This arrangement should be regarded not as an inevitability but as a historical convenience hardened into industrial doctrine.
+
+This speculative monograph proposes a nose-free visual-correction architecture in which externally supported emitters project a dynamically corrected optical field toward the eye. A computational optical engine estimates ocular aberrations, head motion, pupil position, scene depth, and retinal resolution requirements; it then generates a precompensated beam whose distortion by the eye produces an improved retinal image. A second operating regime introduces a wavelength-selective, externally powered contact lens capable of receiving encoded energy through the eyelid and converting it into visible retinal stimulation. This would permit limited visual presentation while the eyelids remain closed.
+
+The proposal is physically plausible only in restricted forms. Retinal projection is real; adaptive optical correction is real; externally powered smart contact lenses are an active research domain; and some wavelengths penetrate eyelid tissue more effectively than visible light. Their combination, however, faces severe problems of eye safety, alignment, power delivery, thermal management, retinal scanning, speckle, occlusion, accommodation, and biological variability. The closed-eye mode would not simply transmit ordinary vision through the eyelid. It would constitute a miniature externally powered display residing upon the eye. The resulting apparatus might liberate the nose only by transferring unprecedented responsibility to the cornea.
+\end{abstract}
+
+\section{The Nasal Contingency}
+
+An optical aid should ideally modify the optical field entering the pupil. Conventional eyeglasses accomplish this with passive lenses positioned in front of the eyes. Because the lenses require mechanical support, the frame distributes its mass across the ears and nasal bridge.
+
+The arrangement is effective, inexpensive, passive, and remarkably robust. It is also conceptually peculiar. The nose is recruited because it happens to occupy a convenient location between the eyes, not because it possesses optical competence.
+
+Let the utility of a corrective system be written as
+\[
+U=Q_{\mathrm{vision}}-\lambda_m B_{\mathrm{mechanical}}
+-\lambda_s R_{\mathrm{safety}}
+-\lambda_c C_{\mathrm{complexity}},
+\]
+where $Q_{\mathrm{vision}}$ is corrected visual quality, $B_{\mathrm{mechanical}}$ is bodily burden, $R_{\mathrm{safety}}$ is risk, and $C_{\mathrm{complexity}}$ is operational complexity.
+
+Conventional glasses achieve moderate to high $Q_{\mathrm{vision}}$, low $R_{\mathrm{safety}}$, and extremely low $C_{\mathrm{complexity}}$, while accepting a modest nasal burden. The proposed system attempts to drive $B_{\mathrm{mechanical}}$ toward zero. Its central comic tragedy is that it may increase every other term.
+
+Nevertheless, eliminating nasal support is not intrinsically absurd. A practical nose-free device could transfer its mass to the temples, ears, forehead, scalp, collar, or surrounding environment. The more radical proposal replaces the corrective lens itself with a computationally shaped projected field.
+
+\section{Correction Without a Corrective Lens}
+
+Let the external scene produce an optical field $L(\mathbf{x},\omega,t)$, where $\mathbf{x}$ is position, $\omega$ represents direction and wavelength, and $t$ is time. The eye transforms this field through an imperfect ocular operator $\mathcal{H}_{\mathrm{eye}}$, producing the retinal image
+\[
+I_r=\mathcal{H}_{\mathrm{eye}}[L]+\eta,
+\]
+where $\eta$ represents retinal, neural, and environmental noise.
+
+Ordinary glasses introduce a passive corrective operator $\mathcal{H}_{\mathrm{lens}}$:
+\[
+I_r=\mathcal{H}_{\mathrm{eye}}\mathcal{H}_{\mathrm{lens}}[L]+\eta.
+\]
+
+The nose-free system instead calculates an emitted field $L^\ast$ satisfying approximately
+\[
+\mathcal{H}_{\mathrm{eye}}[L^\ast]\approx I_{\mathrm{target}}.
+\]
+
+If an estimate $\widehat{\mathcal{H}}_{\mathrm{eye}}$ is available, the projector may compute
+\[
+L^\ast=\widehat{\mathcal{H}}_{\mathrm{eye}}^{-1}[I_{\mathrm{target}}],
+\]
+subject to constraints imposed by pupil size, retinal safety, emitter bandwidth, optical \'{e}tendue, and the impossibility of perfectly inverting a noisy or singular optical system.
+
+The projector therefore does not send an already corrected picture into the eye in the ordinary photographic sense. It sends a deliberately pre-distorted field that becomes more nearly correct after passing through the user's defective optics. This is the optical equivalent of printing a warped image on a flexible surface so that it appears undistorted after the surface is bent.
+
+\section{Architecture of the Nose-Free Apparatus}
+
+The apparatus consists conceptually of an outward-facing scene sensor, an inward-facing ocular tracker, a computational correction engine, a structured-light emitter, and a non-nasal support system.
+
+The scene sensor estimates luminance, color, depth, motion, semantic importance, and glare. The ocular tracker estimates pupil center, pupil diameter, gaze direction, blink state, tear-film irregularity, and short-term eye motion. The correction engine constructs a target retinal representation. The emitter directs the resulting field through the moving pupil.
+
+The support structure may be temple-mounted or forehead-mounted, but the device should not rest upon the nasal bridge. In the strongest interpretation, no optical element need occupy the conventional eyeglass plane at all. Small emitters positioned laterally could steer their outputs toward the pupils.
+
+The system state is
+\[
+s(t)=[\mathbf{p}(t),\mathbf{g}(t),d_p(t),A(t),B(t),E(t)],
+\]
+where $\mathbf{p}(t)$ is pupil position, $\mathbf{g}(t)$ is gaze direction, $d_p(t)$ is pupil diameter, $A(t)$ is the estimated ocular aberration state, $B(t)$ is blink or eyelid state, and $E(t)$ describes the external scene.
+
+The emitted field is determined by a control policy
+\[
+L^\ast(t)=\pi(s(t),u,\mathcal{S}),
+\]
+where $u$ contains user-specific correction parameters and $\mathcal{S}$ contains safety constraints.
+
+\section{Why a Beam Cannot Merely Be Pointed at the Eye}
+
+The phrase ``direct a vibrating beam into the eye'' is intuitively suggestive but physically incomplete. Light is already an electromagnetic field, and ordinary vision consists of such fields entering the pupil. The essential innovation cannot therefore be that the light vibrates. It must be that the field's spatial, temporal, spectral, and directional structure is deliberately controlled.
+
+A useful retinal projector must control at least
+\[
+L^\ast=L^\ast(x,y,\theta,\phi,\lambda,t),
+\]
+where $(x,y)$ specifies emitter-plane position, $(\theta,\phi)$ specifies propagation direction, $\lambda$ is wavelength, and $t$ is time.
+
+The system must also maintain a moving exit pupil: a spatial region within which the user's pupil can move while continuing to receive the intended image. If the beam is narrow, ordinary eye movements cause the image to vanish. If it is broadened indiscriminately, efficiency declines and unintended ocular exposure increases.
+
+The engineering problem is therefore not merely projection. It is continually aligned, pupil-constrained projection under biological motion.
+
+Any physically developed prototype would require certified eye-safety engineering. A consumer experiment involving an improvised laser directed into the eye would be unacceptable. Early validation should use simulated optical models, cameras, artificial eyes, and instrumented phantoms rather than human exposure.
+
+\section{Ocular Correction Model}
+
+The eye's wavefront aberration may be represented using a basis such as Zernike modes:
+\[
+W(\rho,\theta)=\sum_{n,m}a_n^m Z_n^m(\rho,\theta).
+\]
+
+Low-order coefficients describe defocus and astigmatism. Higher-order coefficients describe coma, trefoil, spherical aberration, and other deviations that ordinary spectacles correct poorly or not at all.
+
+The projector generates a conjugate correction
+\[
+W_c(\rho,\theta)\approx -W(\rho,\theta).
+\]
+
+In an ideal coherent system,
+\[
+W_{\mathrm{total}}=W+W_c\approx 0.
+\]
+
+In practice, correction must account for alignment error, tear-film variation, pupil-size changes, wavelength dependence, and the fact that the eye rotates rather than merely translating.
+
+The coefficient vector should therefore evolve:
+\[
+\mathbf{a}(t+\Delta t)=F\bigl(\mathbf{a}(t),\mathbf{p}(t),d_p(t),\mathbf{g}(t)\bigr).
+\]
+
+A calibrated baseline could provide the static prescription, while online estimation corrects slower changes. Rapid correction of every tear-film fluctuation would be neither feasible nor necessarily desirable, since excessive compensation could convert harmless variation into unstable visual artifacts.
+
+\section{Noise Reduction as Retinal Allocation}
+
+A computational vision system can modify the scene before projection. However, ``noise reduction'' must not mean indiscriminate smoothing. The objective is to suppress visually irrelevant variation while preserving boundaries, fine structures, and temporal continuity.
+
+Let the observed scene image be
+\[
+Y=X+N,
+\]
+where $X$ is the desired scene representation and $N$ is sensor or environmental noise. A conventional estimator seeks
+\[
+\widehat{X}=\arg\min_X\left[\|Y-X\|_2^2+\lambda R(X)\right],
+\]
+where $R(X)$ is a regularization term.
+
+For retinal projection, the loss should incorporate perceptual and ocular factors:
+\[
+\mathcal{L}_{\mathrm{denoise}}=\alpha\mathcal{L}_{\mathrm{fidelity}}+\beta\mathcal{L}_{\mathrm{edge}}+\gamma\mathcal{L}_{\mathrm{temporal}}+\delta\mathcal{L}_{\mathrm{retinal}}.
+\]
+
+The fidelity term discourages invention. The edge term preserves important discontinuities. The temporal term prevents flicker and crawling detail. The retinal term weights errors according to eccentricity, contrast sensitivity, ocular pathology, and the user's correction profile.
+
+The system should preserve uncertainty rather than silently converting uncertain pixels into confident objects. A useful output is therefore not merely $\widehat{X}$, but
+\[
+(\widehat{X},U_X),
+\]
+where $U_X$ is an uncertainty field. Enhancement strength should decrease as uncertainty rises:
+\[
+\lambda_{\mathrm{enhance}}(\mathbf{x})=\lambda_0\bigl(1-U_X(\mathbf{x})\bigr).
+\]
+
+This prevents the glasses from sharpening noise into nonexistent wires, letters, faces, or obstacles.
+
+\section{Edge Enhancement and Sharpness}
+
+Perceived sharpness depends substantially on local contrast near boundaries. A basic enhancement operator may be written
+\[
+X_s=X+\alpha(X-G_\sigma * X),
+\]
+where $G_\sigma * X$ is a blurred version of the image and $\alpha$ controls high-frequency amplification.
+
+This conventional unsharp-mask formulation is insufficient because it amplifies noise and can create halos. A more suitable operator is edge-aware:
+\[
+X_s(\mathbf{x})=X(\mathbf{x})+\alpha(\mathbf{x})M(\mathbf{x})H(X)(\mathbf{x}),
+\]
+where $H(X)$ is a high-frequency residual and $M(\mathbf{x})$ is an edge-confidence mask.
+
+The gain should depend upon retinal eccentricity $e$, estimated scene depth $z$, local signal-to-noise ratio, and the user's contrast sensitivity:
+\[
+\alpha=f(e,z,\mathrm{SNR},C_u).
+\]
+
+Central vision may receive fine enhancement, while peripheral vision receives more conservative contrast shaping. Excessive peripheral edge amplification could make normal head motion unpleasant and produce false motion signals.
+
+Sharpness must also remain temporally stable:
+\[
+\|X_s(t)-\mathcal{W}(X_s(t-1))\|<\epsilon,
+\]
+where $\mathcal{W}$ warps the preceding frame according to estimated motion. Without this constraint, supposedly sharper edges will shimmer as the head and eyes move.
+
+\section{Magnification Without Losing the World}
+
+Electronic magnification ordinarily narrows the field of view. If the image is enlarged by scale $m$, the visible angular region declines approximately as
+\[
+\Omega_m\propto\frac{\Omega_0}{m^2}.
+\]
+
+A useful system should therefore distinguish three forms of magnification. Local magnification enlarges a selected region while preserving peripheral context. Semantic magnification enlarges objects such as text or faces based on their inferred relevance. Gaze-contingent magnification enlarges the region near fixation while maintaining a lower-resolution surrounding field.
+
+A continuous magnification field can be expressed as
+\[
+m(\mathbf{x},t)=1+(m_{\max}-1)\exp\left(-\frac{\|\mathbf{x}-\mathbf{g}(t)\|^2}{2\sigma_g^2}\right).
+\]
+
+This produces a magnified region around gaze with a gradual transition to ordinary scale. The transformation must preserve topology and avoid sudden jumps when gaze changes. A low-pass gaze trajectory
+\[
+\widetilde{\mathbf{g}}(t)=\alpha\mathbf{g}(t)+(1-\alpha)\widetilde{\mathbf{g}}(t-\Delta t)
+\]
+can reduce instability, although excessive smoothing causes the magnifier to lag behind the user's intention.
+
+The system should expose magnification as an action rather than an unannounced interpretation. Automatically enlarging whatever the machine considers important risks transforming vision into involuntary editorial design.
+
+\section{Closed-Eyelid Operation}
+
+Ordinary visible light is strongly attenuated and scattered by the eyelid. A conventional projected image aimed at a closed eye would therefore become a diffuse reddish glow rather than a focused retinal image.
+
+The proposed contact lens changes the architecture. It does not merely focus a beam passing through the eyelid. Instead, it receives energy or encoded signals at a wavelength chosen for tissue transmission, converts that input locally, and emits a visible field toward the pupil or retina.
+
+The operating chain becomes
+\[
+L_{\mathrm{external}}\rightarrow T_{\mathrm{lid}}\rightarrow D_{\mathrm{lens}}\rightarrow L_{\mathrm{visible}}\rightarrow\mathcal{H}_{\mathrm{eye}}\rightarrow I_r,
+\]
+where $T_{\mathrm{lid}}$ is transmission through the eyelid and $D_{\mathrm{lens}}$ is the contact-lens conversion operator.
+
+The lens would require a wavelength-selective receiver, modulation detector, power-management system, microdisplay or emitting elements, optical coupling structure, thermal protection, and a fail-closed safety state. At that point the device is no longer a passive contact lens. It is an externally powered ocular display whose activation signal happens to pass through the eyelid.
+
+Thus, the system would permit perception with the eyes closed, but not because the biological eye had acquired the ability to see through flesh. The contact lens would synthesize a new visible stimulus on the inner side of the obstruction.
+
+\section{Activation Wavelength and Communication Channel}
+
+Let the external carrier have wavelength $\lambda_a$. Its selection must satisfy competing requirements:
+\[
+\lambda_a^\ast=\arg\max_\lambda\frac{T_{\mathrm{lid}}(\lambda)\eta_{\mathrm{receiver}}(\lambda)}{R_{\mathrm{thermal}}(\lambda)+R_{\mathrm{retinal}}(\lambda)+N_{\mathrm{ambient}}(\lambda)}.
+\]
+
+Here $T_{\mathrm{lid}}$ is eyelid transmission, $\eta_{\mathrm{receiver}}$ is lens-receiver efficiency, $R_{\mathrm{thermal}}$ and $R_{\mathrm{retinal}}$ represent biological risk, and $N_{\mathrm{ambient}}$ measures interference.
+
+The carrier should not itself encode an image through spatial projection across the eyelid. Tissue scattering would destroy much of that structure. It should instead carry power, timing, and compressed display instructions. The lens would reconstruct the visible image locally.
+
+A modulated activation signal can be written
+\[
+s_a(t)=A(t)\cos(2\pi f_c t+\phi(t)),
+\]
+with information encoded through a safety-bounded modulation scheme. A wake-up code could activate the lens only after detecting a valid temporal signature:
+\[
+\operatorname{Activate}\iff\operatorname{Corr}(s_a,c_K)>\tau,
+\]
+where $c_K$ is an authorized activation sequence.
+
+This protects against accidental activation from ordinary infrared sources. Authentication, however, must never override thermal or exposure limits. Safety interlocks remain physically prior to software permission.
+
+\section{Closed-Eye Rendering Modes}
+
+Closed-eye operation should not initially attempt unrestricted photorealistic vision. The most plausible early modes would use sparse, low-resolution information.
+
+A navigation mode might display directional cues and obstacle warnings. A reading mode might present a small number of high-contrast characters. A diagnostic mode might display fixation targets. A sleep-transition mode might provide abstract patterns or controlled visual stimulation, although medical claims would require separate clinical evidence.
+
+The available retinal information rate is constrained by lens area, receiver power, display resolution, heat dissipation, optical alignment, and tolerable brightness. The system should therefore allocate its limited channel according to task salience:
+\[
+R_{\mathrm{total}}=R_{\mathrm{navigation}}+R_{\mathrm{text}}+R_{\mathrm{status}}+R_{\mathrm{background}}.
+\]
+
+Under constrained bandwidth,
+\[
+R_{\mathrm{navigation}}>R_{\mathrm{text}}>R_{\mathrm{background}}.
+\]
+
+The closed-eye mode should privilege actionable structure over visual realism. A bright arrow may be more useful and safer than an elaborate synthetic street scene.
+
+\section{Blink Detection and State Transition}
+
+The system must distinguish an ordinary blink from deliberate closed-eye operation. Let $B(t)\in\{\text{open},\text{blink},\text{closed},\text{uncertain}\}$. Classification may depend on closure duration, bilateral synchronization, user command, gaze history, and physiological signals.
+
+A conservative state machine requires explicit confirmation:
+\[
+\text{open}\rightarrow\text{candidate closed}\rightarrow\text{authenticated}\rightarrow\text{closed-eye display}.
+\]
+
+Any uncertainty returns the system to a non-emitting state. The transition should obey
+\[
+P(\text{activation}\mid\text{ordinary blink})<\epsilon.
+\]
+
+Otherwise, every blink risks becoming an unsolicited presentation opportunity, completing advertising's conquest of the final fraction of human life not yet occupied by a screen.
+
+\section{Calibration}
+
+Calibration requires estimation of ocular aberration, pupil geometry, gaze-dependent distortion, emitter alignment, contact-lens position, eyelid transmission, and perceptual thresholds.
+
+The system may present controlled stimuli and optimize parameters according to user responses:
+\[
+\theta^\ast=\arg\max_\theta Q_{\mathrm{percept}}(\theta),
+\]
+subject to
+\[
+\theta\in\mathcal{S}_{\mathrm{safe}}.
+\]
+
+A more objective calibration could use retinal imaging or wavefront sensing, but subjective quality remains important because optical correction does not uniquely determine visual comfort.
+
+Contact lenses rotate and translate. A lens-mounted display must therefore estimate its own pose:
+\[
+\mathbf{T}_{\mathrm{lens}}(t)=[R(t)\mid\mathbf{d}(t)].
+\]
+
+The emitted image must be transformed by the inverse pose:
+\[
+I_{\mathrm{emit}}(t)=\mathbf{T}_{\mathrm{lens}}^{-1}(t)\,I_{\mathrm{target}}(t).
+\]
+
+Without pose compensation, the image would drift or rotate when the lens moved.
+
+\section{Latency and Stability}
+
+Retinal projection is highly sensitive to latency because the eyes move rapidly. Let total system latency be
+\[
+\tau_{\mathrm{total}}=\tau_{\mathrm{sense}}+\tau_{\mathrm{estimate}}+\tau_{\mathrm{render}}+\tau_{\mathrm{emit}}.
+\]
+
+During this interval, angular error accumulates:
+\[
+\Delta\theta\approx\omega_{\mathrm{eye}}\tau_{\mathrm{total}},
+\]
+where $\omega_{\mathrm{eye}}$ is angular eye velocity.
+
+The system must predict short-term eye movement:
+\[
+\widehat{\mathbf{g}}(t+\tau)=F_g\left(\mathbf{g}_{t-k:t}\right).
+\]
+
+Prediction should be bounded. A mistaken prediction must reduce image quality rather than redirect concentrated energy outside the intended retinal region. Safety cannot depend upon perfect gaze forecasting.
+
+Temporal instability also threatens visual comfort. Correction strength should change continuously:
+\[
+\left\|\frac{d\Theta}{dt}\right\|\leq\kappa,
+\]
+except during explicitly permitted transitions such as display blanking.
+
+\section{Safety Architecture}
+
+The system's primary constraint is not image quality but prevention of ocular injury. Every proposed function must operate inside an independently enforced safe set:
+\[
+\mathcal{S}_{\mathrm{safe}}=\{P,\lambda,\tau,A,\Delta T,\mathbf{p} : \text{all exposure and thermal constraints satisfied}\}.
+\]
+
+The control system computes a desired emission $u^\ast$, but the safety controller projects it into the allowed set:
+\[
+u_{\mathrm{actual}}=\Pi_{\mathcal{S}_{\mathrm{safe}}}(u^\ast).
+\]
+
+A hardware interlock must disable emission when tracking is lost, the pupil leaves the permitted region, the lens response becomes uncertain, temperature rises abnormally, communication fails, or the device's calibration state is invalid.
+
+No algorithmic image advantage can compensate for an unsafe ocular exposure. ``Sharper edges'' is not an acceptable epitaph.
+
+Human testing would require professional ophthalmic oversight, certified emitters, exposure modelling, independent measurement, and staged validation. An ordinary laser pointer, modified projector, or improvised infrared emitter must not be used as a prototype.
+
+\section{Experimental Program}
+
+The first phase should remain entirely non-biological. An optical bench can combine a programmable emitter, model eye, deformable lens, artificial pupil, and camera positioned at the retinal plane. Tests would measure correction accuracy, exit-pupil tolerance, latency, speckle, and failure behavior.
+
+The second phase could use ex vivo optical phantoms representing the cornea, lens, vitreous medium, retina, eyelid scattering, and tear film. The closed-eye receiver should first be represented by an external detector and microdisplay rather than an actual contact lens.
+
+The central correction experiment compares four conditions:
+\[
+C_0=\text{uncorrected model eye}, \qquad C_1=\text{conventional passive lens},
+\]
+\[
+C_2=\text{projected static correction}, \qquad C_3=\text{projected adaptive correction}.
+\]
+
+Outcome measures include modulation transfer function, point-spread function, edge localization error, temporal stability, field of view, and alignment tolerance.
+
+The closed-eye experiment should separately test carrier transmission, receiver efficiency, thermal behavior, and reconstructed display quality. These must not be collapsed into one theatrical demonstration in which a glowing lens is declared to have abolished blindness, sleep, and the human need to look away.
+
+\section{Evaluation Criteria}
+
+Visual correction quality can be measured through the corrected modulation transfer function $\operatorname{MTF}_{\mathrm{corrected}}(f)$ and compared with both the uncorrected eye and conventional lenses.
+
+Edge enhancement quality may be assessed through localization accuracy rather than apparent contrast alone:
+\[
+E_{\mathrm{edge}}=\frac{1}{N}\sum_i\|\widehat{\mathbf{e}}_i-\mathbf{e}_i\|.
+\]
+
+Noise reduction should be evaluated using both objective signal measures and false-structure production. A system that creates a sharp but nonexistent edge has failed more seriously than one that leaves a genuine edge slightly blurred.
+
+Magnification should be evaluated using reading speed, search time, peripheral awareness, motion comfort, and task errors. Closed-eye display performance should be measured using symbol recognition, directional accuracy, latency, thermal stability, and involuntary-activation rate.
+
+The complete utility function is
+\[
+J=w_q Q_{\mathrm{vision}}+w_t Q_{\mathrm{task}}+w_c Q_{\mathrm{comfort}}-w_f E_{\mathrm{false}}-w_l E_{\mathrm{latency}}-w_r R_{\mathrm{safety}}.
+\]
+
+Any system that improves acuity while substantially increasing false structures or biological risk should be rejected.
+
+\section{What the Invention Actually Becomes}
+
+At first glance, the proposal appears to replace eyeglasses with a beam. Upon formalization, it becomes at least three distinct technologies.
+
+The first is a nose-free retinal projection system for open-eye visual correction. The second is a computational enhancement engine providing denoising, edge management, magnification, and scene-dependent correction. The third is an externally powered contact-lens display capable of operating behind a closed eyelid.
+
+These components need not succeed together. Nose-free retinal correction could be useful without the contact lens. Computational magnification could be useful without retinal projection. A closed-eye contact display could become a specialized signalling device without replacing ordinary vision.
+
+The modular interpretation prevents the most speculative component from invalidating the entire program.
+
+\section{Conclusion}
+
+The nose-free glasses project begins with a legitimate complaint: the nose has been conscripted into optical engineering without possessing any optical qualifications. A projected correction system could, in principle, replace passive spectacle lenses with an actively shaped field that compensates for ocular aberration and computationally improves selected features of the scene.
+
+Noise reduction, edge enhancement, sharpness, and magnification should be implemented as constrained perceptual transformations rather than indiscriminate image beautification. Their purpose is to improve task-relevant retinal information while preserving uncertainty, temporal stability, and environmental context.
+
+The closed-eye contact lens requires a more radical reinterpretation. A special external wavelength cannot simply carry a focused visible scene through a closed eyelid. It could instead deliver power and encoded information to a wavelength-selective contact lens, which would reconstruct a visible display inside the eyelid. The user would not literally see through closed eyes; the apparatus would place a display on the eye and illuminate it from beyond the lid.
+
+The final invention therefore replaces a passive piece of glass resting on the nose with gaze tracking, adaptive optics, computational vision, authenticated wireless power, a microscopic ocular display, continuous safety supervision, and enough regulatory complexity to make the nose appear, retrospectively, like an elegant engineering solution.
+
+Yet this conclusion does not defeat the proposal. It states its real achievement. Nose-free glasses would not merely relocate an old lens. They would transform corrective eyewear from a static object into an active agreement among scene, algorithm, emitter, eye, and, only when absolutely necessary, the person attempting to see.
+
+\end{document}

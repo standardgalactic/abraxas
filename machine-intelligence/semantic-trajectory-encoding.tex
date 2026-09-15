@@ -1,0 +1,671 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{fancyvrb}
+\usepackage{titlesec}
+\usepackage{authblk}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=black,
+  pdftitle={Semantic Trajectory Encoding for Generative Music Reconstruction},
+  pdfauthor={Flyxion}
+}
+
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{0.8em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{0.8em}{}
+
+\newcommand{\R}{\mathbb{R}}
+\DeclareMathOperator{\Expand}{Expand}
+\DeclareMathOperator{\Canonicalize}{Canonicalize}
+\DeclareMathOperator{\Hash}{Hash}
+\DeclareMathOperator{\PRF}{PRF}
+\DeclareMathOperator{\PRNG}{PRNG}
+\DeclareMathOperator{\Corr}{Corr}
+\DeclareMathOperator{\corr}{corr}
+\DeclareMathOperator{\DTW}{DTW}
+\DeclareMathOperator{\clip}{clip}
+
+\title{\Large Semantic Trajectory Encoding for Generative Music Reconstruction:\\
+A Formal Specification and Theoretical Foundation}
+\author{Flyxion}
+\affil{Independent Researcher}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+Conventional audio coding treats a musical recording as a waveform to be compressed and later reconstructed under a signal-fidelity criterion. This specification proposes a categorically different target for representing songs: a compact, text-centered symbolic document that preserves linguistic content, musical organization, production intent, and time-varying performance behavior as declared invariants, and that delegates acoustic instantiation to a compatible generative renderer. The representation described here, termed Semantic Trajectory Encoding (STE), is not a lossy audio codec in the classical sense. It is closer in structure to a musical score annotated with a deterministic control law: a compact identifier, termed a trajectory hook, that expands into a family of time-varying parameter trajectories governing vocal deformation, dynamic impact, spectral density, spatial behavior, rhythmic pressure, and one or more low-frequency processes.
+
+The central theoretical claim of this document is that a song's perceptually and semantically salient identity can be factored into (i) a discrete symbolic layer analogous to a lyric sheet and lead sheet, (ii) a small set of local constraints and exceptions, and (iii) a compact generative law that governs how production parameters evolve across musical and semantic time. Reconstruction under this scheme is evaluated not by sample-level or even spectral-level distortion but by the preservation of a song-identity vector spanning textual, structural, melodic, rhythmic, affective, and trajectory-level invariants. The specification formalizes the encoder, the decoder, the trajectory-generation mechanism, the genre-as-admissibility-region construction, the canonicalization and versioning discipline required for reproducibility, and the evaluation methodology appropriate to a representation whose success criterion is invariance preservation rather than waveform recovery. The document closes by situating the proposal relative to existing work in audio coding, symbolic music representation, neural audio synthesis, and digital watermarking, and by stating the system's central hypothesis in falsifiable form.
+\end{abstract}
+
+\section{Introduction and Motivation}
+
+\subsection{The reconstruction problem in audio coding}
+
+Classical audio codecs (PCM-derivative formats, transform codecs such as MP3 and AAC, and more recent neural codecs based on learned autoencoders) share a common contract: an encoder maps a waveform into a compressed bitstream, and a decoder maps that bitstream back into an approximation of the original waveform, with fidelity measured by some combination of perceptual and signal-level distortion. This contract is appropriate when the object of value is the specific acoustic event that was recorded. It is considerably less appropriate when the object of value is a \emph{song} considered as an abstract structure that outlives, and is recognizably instantiable independently of, any single recorded performance of it.
+
+Human musical practice has long recognized this distinction. A lead sheet, a chord chart, or a hymnal notation captures a song's identity at a level of abstraction well below waveform fidelity, yet performances generated from that notation by different musicians, in different eras, on different instruments, remain recognizably ``the same song.'' The present specification generalizes this practice to a computational setting in which the ``performer'' is a generative audio model, the ``notation'' is a structured text format, and the missing ingredient historically supplied by a live musician's stylistic intuition is instead supplied by a deterministic, versioned, and reproducible control law.
+
+\subsection{Why a control law rather than a static description}
+
+A purely descriptive text score, however detailed, faces a combinatorial difficulty: the number of time-varying production decisions in a fully produced song (vocal drive at each syllable, transient emphasis at each hit, spatial width at each section) is far too large to enumerate by hand, and enumerating them defeats the compression objective. The system therefore introduces the \emph{trajectory hook}, a compact identifier from which a deterministic generator expands a full family of control trajectories. The hook is not a conventional audio filter (it does not act on a signal already present) and it is not an arbitrary random seed used merely to introduce variation (its expansion is structured, versioned, and semantically addressable). It functions as a reproducible \emph{law of motion} governing how a bounded set of perceptual parameters evolves as a function of musical time, semantic time, or both.
+
+\subsection{Positioning as a semantic codec}
+
+The system as a whole may be understood as a semantic music codec, by analogy with (but categorically distinct from) a conventional signal codec. Its encoder converts a recording, a transcription, or a manually authored song description into a canonical textual score. Its decoder combines that score with a synthesis model, a trajectory library, and an optional secret key to produce an acoustically realized performance. The encoder's task is closer to structured transcription and identity extraction than to signal compression; the decoder's task is closer to controlled generation than to signal reconstruction.
+
+\section{Scope and Design Objective}
+
+Let an observed song recording be represented by a waveform
+\[
+x:[0,T]\rightarrow \R^{C},
+\]
+where $T$ is its duration and $C$ is the number of audio channels. Conventional audio coding seeks a compressed representation $z$ such that a decoder reconstructs a waveform $\hat{x}$ minimizing a signal-level distortion measure:
+\[
+z=E(x), \qquad \hat{x}=D(z),
+\]
+\[
+\mathcal{L}_{\mathrm{signal}}(x,\hat{x})
+=
+\alpha\|x-\hat{x}\|_2^2
++
+\beta\,d_{\mathrm{spectral}}(x,\hat{x}).
+\]
+
+The proposed system adopts a different target. It seeks a compact representation $S$ from which a renderer produces a performance $\hat{x}$ that preserves selected musical, semantic, and affective invariants:
+\[
+S=E_{\mathrm{sem}}(x),
+\qquad
+\hat{x}=R(S,M,K),
+\]
+where $M$ identifies the rendering model and $K$ is an optional private key. Reconstruction quality is not primarily defined by waveform equality. It is defined by preservation of a song-identity vector
+\[
+I(x)=
+\left[
+I_{\mathrm{text}},
+I_{\mathrm{structure}},
+I_{\mathrm{melody}},
+I_{\mathrm{rhythm}},
+I_{\mathrm{affect}},
+I_{\mathrm{trajectory}}
+\right].
+\]
+
+The principal objective is therefore
+\[
+I(\hat{x})\approx I(x),
+\]
+even when
+\[
+\hat{x}\neq x.
+\]
+
+This distinction is foundational to the entire specification: the format preserves a generative identity, not an acoustic fossil. It follows that any evaluation methodology borrowed wholesale from waveform-fidelity codecs (PESQ, POLQA, signal-to-noise ratio) is a category error when applied to this system, and Section \ref{sec:evaluation} develops evaluation criteria appropriate to invariance preservation rather than sample recovery.
+
+\subsection{Relation to information-theoretic compression}
+
+It is worth being precise about what kind of compression claim is and is not being made. Classical rate-distortion theory bounds the achievable trade-off between bitrate and expected distortion for a fixed distortion measure, typically a metric on the signal space itself. The present system instead performs what might be called \emph{identity-preserving generative compression}: the ``distortion'' being bounded is not a metric on waveforms but a metric on a much lower-dimensional identity vector $I(x)$, computed by a possibly complex, model-dependent extraction procedure. This is closer in spirit to semantic or task-oriented compression than to classical Shannon--Nyquist coding, and its compression ratio must be accounted for accordingly (see Section \ref{sec:compression}).
+
+\section{Conceptual Model}
+
+A song is represented as the interaction of five layers:
+\[
+S=(L,G,A,H,C).
+\]
+Here $L$ is the linguistic layer, containing lyrics, phonetic material, and semantic events. $G$ is the musical grammar, including sections, meter, tempo, harmony, melodic constraints, and repetition. $A$ is the arrangement description, specifying instrumental roles and production families. $H$ is the trajectory hook. $C$ is a set of explicit local constraints or exceptions.
+
+The rendered performance is generated by
+\[
+\hat{x}=R(L,G,A,\Theta_H,C;M),
+\]
+where $\Theta_H$ is the time-varying control field expanded from the hook.
+
+This factorization separates three things that ordinary natural-language prompting tends to collapse into an undifferentiated instruction. The text specifies \emph{what} is being expressed. The musical grammar specifies \emph{where and when} events occur. The trajectory field specifies \emph{how} the performance moves through its expressive space. Collapsing these three into a single prompt string forces a generative model to infer structure, timing, and motion simultaneously from an underspecified surface description, which is a principal source of the inconsistency and non-reproducibility observed in current text-to-music systems. By contrast, a genre label alone denotes a largely static neighborhood of plausible sounds; the trajectory hook converts that neighborhood into an explicit, reproducible path.
+
+\subsection{Layer independence and interface discipline}
+
+Each of the five layers is designed to be independently revisable without invalidating the others, subject to interface constraints. Revising $L$ (a lyric edit) should not require re-deriving $H$; revising $A$ (a change of instrumental palette) should not require re-deriving $G$. This modularity is analogous to the separation of concerns in software architecture between data, control flow, and configuration, and it is what permits the same trajectory hook to be reused across renderer versions, and the same lyric and structural content to be reused across differing production identities.
+
+\section{The Trajectory Hook}
+
+\subsection{Definition}
+
+A trajectory hook is a compact string $H$ from which a deterministic parameter generator produces a structured latent code:
+\[
+z_H=\Expand(H,K,V),
+\]
+where $K$ is an optional secret key and $V$ identifies the codec version. The latent code is divided into three components:
+\[
+z_H=(z_{\mathrm{global}},z_{\mathrm{section}},z_{\mathrm{micro}}).
+\]
+The global component governs the overall production identity for the entire piece. The section component governs transformations between verses, choruses, bridges, and other large formal units. The micro component governs bounded local variation around phonemes, beats, note attacks, and transients.
+
+The expanded code must satisfy a determinism property for a fixed tuple $(H,K,V)$:
+\[
+\Expand(H,K,V)
+=
+\Expand(H,K,V),
+\]
+and a sensitivity property under perturbation of the hook:
+\[
+H\neq H'
+\Longrightarrow
+d\!\left(
+\Expand(H,K,V),
+\Expand(H',K,V)
+\right)>\epsilon
+\]
+with high probability, where $d$ is a suitable distance on the space of expanded trajectory codes. Determinism guarantees reproducibility across independent decoders sharing $(H,K,V)$; sensitivity guarantees that the hook space is not degenerate, i.e., that distinct hooks reliably index distinct trajectory families rather than collapsing onto a small number of equivalence classes.
+
+\subsection{Public and private hooks}
+
+Two hook modes should be distinguished. A \emph{public} hook functions as a reproducible seed: anyone possessing the score and the same decoder can reproduce its trajectory family, analogous to a published cipher with no secret key. A \emph{keyed} hook functions as a compact, partially concealed performance instruction whose expanded form is calculated using a pseudorandom function:
+\[
+z_H=\PRF_K(H\parallel V\parallel h(S_0)),
+\]
+where $S_0$ is the canonical score excluding the hook itself and $h(\cdot)$ is a collision-resistant hash. Binding the hook to a hash of the surrounding score prevents a keyed hook from being transplanted unchanged into a different score to reproduce a foreign trajectory family, an attack analogous to a replay or cut-and-paste attack against a naively constructed message-authentication scheme.
+
+It is important to state precisely what the keyed mode does and does not achieve. It does not encrypt the lyrics, obscure the musical grammar, or prevent stylistic imitation by a competent human or machine listener. It conceals the \emph{exact} parameter trajectory and provides a mechanism for authenticating a particular rendering convention as originating from a specific keyholder. It should not be represented, marketed, or relied upon as a strong copyright-protection mechanism; its security property is closer to that of a watermark or a proof of convention-origin than to that of an access-control cipher (see Section \ref{sec:security} for a fuller discussion of the security model and its limits).
+
+\subsection{Hook syntax}
+
+A human-readable hook might take the form
+\begin{Verbatim}[frame=single,fontsize=\small]
+@hook M8-KYTHERA-73F2
+\end{Verbatim}
+Its components may carry mnemonic value for the author, but their interpretation must be determined entirely by the versioned decoder specification rather than by informal association, in order to preserve cross-implementation reproducibility. In the illustrative example, \texttt{M8} might identify a trajectory family, \texttt{KYTHERA} might select a stylistic basin within that family, and \texttt{73F2} might supply entropy governing within-family variation. The string itself remains compact (on the order of a few bytes of meaningful entropy); its semantic expansion is held entirely by the decoder and trajectory-library specification, not by the string's surface form. This is a deliberate design choice: it keeps the score human-portable and typographically stable while placing the combinatorial complexity of the expansion where it can be versioned, audited, and improved without altering any existing score.
+
+\section{Temporal Coordinate System}
+
+Control trajectories require a temporal coordinate system that remains meaningful when tempo, duration, or arrangement changes. Absolute seconds are therefore inadequate as the primary coordinate, since a tempo change or a re-arrangement would silently desynchronize every previously specified control event from its intended musical referent.
+
+The score instead uses hierarchical musical time:
+\[
+\tau=(s,b,q,\phi),
+\]
+where $s$ is the section index, $b$ is the bar, $q$ is the beat within the bar, and $\phi\in[0,1)$ is the fractional position within the beat.
+
+Semantic anchors form a second, orthogonal coordinate system:
+\[
+\Sigma=
+\{
+\sigma_1,\sigma_2,\ldots,\sigma_m
+\},
+\]
+where each $\sigma_i$ identifies an event of narrative or affective consequence, such as an entrance, revelation, refusal, reversal, rupture, climax, or release. These anchors are typically extracted or authored at the level of the linguistic layer $L$ and need not coincide with bar boundaries; a rupture may occur mid-phrase.
+
+A trajectory may consequently be attached to musical time, semantic time, or both:
+\[
+\theta_j(\tau,\Sigma).
+\]
+
+This dual coordinate system permits a generated performance to remain structurally recognizable even when its tempo changes, its meter is reinterpreted, or its section lengths are stretched or compressed by a downstream arrangement decision. A chorus expansion remains attached to the \emph{chorus as a formal and semantic unit} rather than to an absolute timestamp that would be invalidated by any subsequent tempo adjustment. This is analogous to the distinction in typesetting between absolute pixel coordinates and a flowable, reflow-tolerant document model; the present system adopts the reflow-tolerant discipline for musical time.
+
+\section{The Control Field}
+
+The hook expands into a multidimensional control field
+\[
+\Theta(t)=
+[
+v(t),d(t),o(t),p(t),w(t),r(t),e(t),B(t)
+].
+\]
+
+The function $v(t)$ describes vocal state, including breathiness, phonation pressure, pitch correction, doubling, formant displacement, and consonant emphasis. The function $d(t)$ describes deformation, including saturation, clipping, wavefolding, granulation, bit reduction, and spectral roughness. The function $o(t)$ describes perceptual impact, formalized in Section \ref{sec:oomph}. The function $p(t)$ describes rhythmic pressure, capturing micro-timing displacement, swing ratio, and syncopation density. The function $w(t)$ describes spatial width and depth. The function $r(t)$ describes reverberant persistence, including decay time and early-to-late energy ratio. The function $e(t)$ describes spectral excitation or brightness, capturing high-frequency emphasis and formant tilt. Finally,
+\[
+B(t)=\{b_1(t),b_2(t),\ldots,b_n(t)\}
+\]
+is the set of low-frequency trajectories, treated at length in Section \ref{sec:lowfreq}.
+
+The parameter field should not operate directly in an unconstrained, renderer-specific parameter space, both because such a space is unstable across renderer versions and because its dimensions typically lack any shared perceptual meaning across different synthesis engines. It should first inhabit a normalized perceptual space:
+\[
+\Theta(t)\in[0,1]^D.
+\]
+A renderer-specific mapping then converts normalized values into actual synthesis and effect parameters:
+\[
+\psi_M:[0,1]^D\rightarrow\mathcal{P}_M,
+\]
+where $\mathcal{P}_M$ is the parameter space supported by renderer $M$. This separation is the specification's principal mechanism for future-proofing: it allows the same textual representation to survive changes in plugins, synthesis engines, or model generations, since only $\psi_M$ needs to be re-specified when the underlying renderer changes, while $S$ and its derived $\Theta(t)$ remain untouched. In control-theoretic terms, $\Theta(t)$ plays the role of a reference trajectory in a normalized coordinate frame, and $\psi_M$ plays the role of an actuator-specific mapping from that frame into the physical (here, synthesis-parameter) actuation space.
+
+\section{Vocal Deformation Model}
+
+Vocal processing should be decomposed into interpretable dimensions rather than represented by a single undifferentiated ``distortion'' value, both for authorial control and for evaluability. Let
+\[
+v(t)=
+[
+g(t),f(t),a(t),n(t),c(t),u(t)
+],
+\]
+where $g$ is nonlinear drive, $f$ is formant displacement, $a$ is aspiration or breath noise, $n$ is pitch or timbral instability, $c$ is multiplicity or chorus density, and $u$ is intelligibility preservation.
+
+The renderer must enforce the constraint
+\[
+u(t)\geq u_{\min}(\ell_t),
+\]
+where $\ell_t$ is the linguistic importance of the current passage, itself derivable from the encoder's semantic-event annotation of $L$. A semantically decisive line should ordinarily retain greater intelligibility than an ornamental repetition, even when both occupy the same production regime; this constraint prevents a globally aggressive production hook from indiscriminately obscuring narratively load-bearing text.
+
+Vocal deformation may be coupled to semantic intensity:
+\[
+g(t)=
+\clip
+\left(
+g_0+\alpha E_{\mathrm{sem}}(t)+\beta E_{\mathrm{pros}}(t)+\eta_H(t)
+\right),
+\]
+where $E_{\mathrm{sem}}(t)$ measures the importance of the lyric at time $t$, $E_{\mathrm{pros}}(t)$ measures performed prosodic emphasis, and $\eta_H(t)$ is the hook-derived trajectory component.
+
+This coupling permits vocal deformation to function rhetorically rather than merely decoratively. A voice can crack at a moment of confession, multiply at a moment of collective declaration, or become spectrally narrow during a moment of withdrawal, and these correspondences are governed by an explicit, auditable functional relationship between the linguistic and acoustic layers rather than left to an opaque model's uninterpretable internal association.
+
+\section{Formalizing Perceptual Impact (``Oomph'')}
+\label{sec:oomph}
+
+Colloquial production vocabulary such as ``oomph,'' ``punch,'' or ``weight'' should not be reduced to loudness, since two passages of identical short-term loudness can differ sharply in perceived impact depending on transient shape, harmonic density, and contextual contrast. It is better treated as a perceptual compound:
+\[
+o(t)=
+w_L L(t)
++
+w_T T(t)
++
+w_S S(t)
++
+w_H H_d(t)
++
+w_C C(t),
+\]
+where $L(t)$ is low-frequency impact, $T(t)$ is transient density, $S(t)$ is short-term loudness, $H_d(t)$ is harmonic density, and $C(t)$ is contrast relative to the preceding passage.
+
+The contrast term is essential and is frequently the dimension most neglected by naive production heuristics. A uniformly loud song has less perceived impact at any given moment than a song that deliberately preserves headroom for expansion; this is the acoustic analogue of the general perceptual principle that salience is driven by deviation from a locally adapted baseline rather than by absolute magnitude. The renderer should therefore optimize not only instantaneous force but its derivative relative to a local expectation:
+\[
+\Delta o(t)=o(t)-\mathbb{E}[o(t-\delta:t)].
+\]
+
+A chorus may feel powerful largely because it departs sharply from the preceding state rather than because of any absolute peak value it attains. The score format should therefore be able to specify an impact \emph{transition} rather than an impact \emph{level}, as in
+\begin{Verbatim}[frame=single,fontsize=\small]
+@impact restrained > tectonic
+\end{Verbatim}
+without prescribing exact gain values, leaving the precise numerical realization of ``restrained'' and ``tectonic'' to the hook-derived trajectory and the renderer's admissibility region (Section \ref{sec:genre}).
+
+\section{Low-Frequency Trajectories}
+\label{sec:lowfreq}
+
+The informal notion of ``trajectories below'' a given frequency can be formalized as a family of partially independent processes beneath a configurable crossover frequency $f_c$. Each trajectory is
+\[
+b_i(t)=
+[
+f_i(t),a_i(t),q_i(t),\varphi_i(t),\rho_i(t)
+],
+\]
+where $f_i$ is its central frequency or pitch relation, $a_i$ its amplitude envelope, $q_i$ its spectral width, $\varphi_i$ its phase policy, and $\rho_i$ its coupling to rhythm or harmony.
+
+Three useful default roles are:
+\[
+b_1(t)=\text{fundamental reinforcement},
+\]
+\[
+b_2(t)=\text{subharmonic or difference-tone trajectory},
+\]
+\[
+b_3(t)=\text{percussive pressure trajectory}.
+\]
+
+A ``braided'' relationship among such trajectories means that they are coupled but not identical:
+\[
+b_i(t)=\bar{b}(t)+\delta_i(t),
+\]
+subject to a near-zero-sum deviation constraint
+\[
+\sum_i \delta_i(t)\approx0
+\]
+and bounded pairwise correlation
+\[
+\rho_{\min}
+<
+\corr(b_i,b_j)
+<
+\rho_{\max}.
+\]
+
+This construction prevents the low end of the mix from collapsing into one monolithic envelope, which tends to sound static and undifferentiated, while simultaneously preventing the trajectories from moving so independently that they lose collective coherence and read as unrelated noise sources. The symbolic instruction
+\begin{Verbatim}[frame=single,fontsize=\small]
+@below 3 braided trajectories
+\end{Verbatim}
+therefore specifies cardinality (three processes), relational topology (braided rather than independent or identical), and coordination policy (bounded correlation) without requiring the author to encode thousands of individual automation points, and without requiring the renderer to guess at the intended relationship among the low-frequency elements from an underspecified instruction.
+
+\section{Trajectory Generation}
+
+Each normalized control dimension may be produced as a weighted combination of basis functions:
+\[
+\theta_j(t)
+=
+\sigma\left(
+\mu_j
++
+\sum_{k=1}^{K}
+a_{jk}\phi_k(t)
++
+\sum_{m=1}^{M}
+c_{jm}\chi_m(t)
+\right).
+\]
+Here $\mu_j$ is a global baseline, $\phi_k(t)$ are continuous basis trajectories, $\chi_m(t)$ are event-conditioned functions attached to semantic or musical anchors, and $\sigma$ constrains the result to an admissible interval, typically $[0,1]$.
+
+The basis library may contain ramps, pulses, damped oscillations, splines, bounded random walks, attack-decay envelopes, hysteretic transitions, and coupled oscillators. The hook selects their identities, coefficients, phases, and coupling strengths, effectively parameterizing a point (or, more precisely, a low-dimensional manifold) within this basis library's combinatorial space.
+
+For reproducibility, stochastic-looking functions must be generated from a deterministic counter-based random process rather than from an unseeded or system-time-seeded generator:
+\[
+\eta(t,j)=
+\PRNG
+\left(
+z_H,j,\lfloor t/\Delta t\rfloor
+\right).
+\]
+This construction permits random access: rendering the third chorus in isolation should not require replaying the entire song from the beginning, since the value of $\eta$ at any $(t,j)$ pair is a pure function of the hook-derived seed, the dimension index, and the discretized time index, with no dependence on prior state. This property is essential for interactive editing workflows in which an author wishes to preview or regenerate a single section without incurring the cost, and without risking the non-reproducibility, of a full sequential re-render.
+
+\section{Genre as an Admissibility Region}
+\label{sec:genre}
+
+Genre should not function as a bag of descriptive adjectives loosely associated with a training distribution, an approach that tends to produce plausible-sounding but structurally uncommitted output. It should instead define an admissible region $\mathcal{A}_g$ within the normalized control space:
+\[
+\Theta(t)\in\mathcal{A}_g.
+\]
+
+For an illustrative ``industrial gospel'' profile, $\mathcal{A}_g$ might permit high vocal multiplicity, strong contrast between restraint and collective expansion, distorted percussive transients, sustained low-frequency pressure, and extended decay, while excluding continuous maximal saturation throughout, because uninterrupted saturation would destroy the genre's structural dependence on release and escalation as organizing dramatic principles.
+
+The hook specifies a trajectory \emph{through} this region:
+\[
+\gamma_H:[0,T]\rightarrow\mathcal{A}_g.
+\]
+
+Local score instructions further modify the admissible region at a given time:
+\[
+\mathcal{A}_{g,t}
+=
+\mathcal{A}_g
+\cap
+\mathcal{A}_{\mathrm{section}}
+\cap
+\mathcal{A}_{\mathrm{event}}
+\cap
+\mathcal{A}_{\mathrm{override}}.
+\]
+
+The renderer must project any proposed parameter state back into the admissible region whenever an unconstrained combination of hook output and local instruction would otherwise leave it:
+\[
+\Theta'(t)
+=
+\Pi_{\mathcal{A}_{g,t}}
+\left(
+\Theta(t)
+\right).
+\]
+
+This construction makes genre a constraint system with a well-defined feasible region rather than a superficial descriptive label, and it gives the specification a principled way to reconcile potentially conflicting instructions (a hook trajectory that would exit the genre region, a local override that would do the same) via a single, well-defined projection operator rather than through ad hoc precedence rules.
+
+\section{Textual Score Format}
+
+A minimal score may be expressed as follows:
+
+\begin{Verbatim}[frame=single,fontsize=\small]
+@format STC/1.0
+@title Take Back Tomorrow
+@tempo 74
+@meter 4/4
+@genre industrial-gospel
+@renderer-profile open-vocal-1
+@filter marine-vocal
+@hook public:M8-KYTHERA-73F2
+@voice clean > fractured > collective
+@impact restrained > tectonic
+@below 3 braided trajectories
+@identity lyrics,melodic-contour,section-order,turn-events
+
+[verse:1 | pressure=.20 | voice=close]
+I signed my name beneath the line
+And told myself the ink was clean.
+
+[turn:recognition | silence=strong]
+Yeah.
+So did they.
+
+[chorus:1 | open | impact=+.35 | below=unbraid]
+I'm taking back tomorrow.
+You can keep who I was yesterday.
+
+[chorus:final | collective | trajectory=collapse-release]
+I'm taking back tomorrow.
+\end{Verbatim}
+
+Values explicitly written in the score constrain rather than necessarily replace the hook-derived values. If $\theta_H(t)$ is the generated trajectory and $c(t)$ is an explicit instruction, their combination may be
+\[
+\theta(t)
+=
+(1-\lambda_c)\theta_H(t)
++
+\lambda_c c(t),
+\]
+where the specificity of the written instruction determines $\lambda_c$. A hard numeric override, such as \texttt{impact=+.35}, uses $\lambda_c=1$. A suggestive qualitative term such as \texttt{open} produces a smaller value of $\lambda_c$ and leaves proportionally more control to the hook-derived trajectory. This graded-override mechanism allows an author to intervene at any point along a continuum from full manual specification to full delegation to the trajectory law, and it allows the score itself to document, at each point of intervention, how much authorial control was exercised relative to the generative default.
+
+\section{Encoding Procedure}
+
+The encoder accepts either a recording or an existing textual song specification as input.
+
+For an audio input, it estimates lyric content, phoneme timing, section boundaries, tempo, meter, melodic contour, harmonic regions, instrumentation, vocal state, dynamic contour, and production events, typically using a combination of automatic speech recognition, beat and downbeat tracking, chord and key estimation, source separation, and learned production-feature classifiers. These estimates form an intermediate analysis graph:
+\[
+\mathcal{G}_x=(N,E),
+\]
+where nodes represent musical and semantic events and edges represent temporal, harmonic, repetitive, or causal relationships among them.
+
+The encoder then separates observations into three classes. \emph{Invariants} are properties that should survive regeneration under any compliant renderer; these typically include lyrics, section order, and the coarse melodic and harmonic skeleton. \emph{Preferences} are properties that guide rendering but may vary across compliant renderings, such as exact instrumentation timbre or precise micro-timing. \emph{Residuals} are details considered too expensive or too incidental to encode explicitly, and are left to the trajectory hook or the renderer's own generative defaults.
+
+Formally, the encoder chooses score $S$ to minimize
+\[
+\mathcal{J}(S)
+=
+\lambda_R |S|
++
+\lambda_I d_I\!\left(I(x),I(R(S))\right)
++
+\lambda_P d_P\!\left(P(x),P(R(S))\right),
+\]
+where $|S|$ is description length, $d_I$ measures identity loss relative to the declared invariant set, and $d_P$ measures production-character loss relative to the declared preference set.
+
+The result is not necessarily the shortest possible text; it is the shortest text that preserves the declared identity criteria within tolerance:
+\[
+\min |S|
+\quad
+\text{subject to}
+\quad
+d_I\leq\epsilon_I,
+\qquad
+d_P\leq\epsilon_P.
+\]
+This is a constrained rather than unconstrained minimum-description-length objective, and the choice of $\epsilon_I$ and $\epsilon_P$ is itself an authorial or application-level decision rather than a fixed codec parameter, since different use cases (archival documentation of a specific recording versus generative seed material for open-ended reinterpretation) warrant different tolerances.
+
+\section{Decoding Procedure}
+
+A compliant decoder performs, in order, canonical parsing, hook expansion, structural planning, trajectory generation, constraint projection, synthesis, and validation.
+
+First, the score is normalized into a canonical representation so that irrelevant whitespace, tag ordering, or metadata formatting differences do not change the hook's expansion or the resulting trajectory. Second, the hook is expanded into its latent hierarchy as described in Section 4. Third, semantic and musical anchors are aligned to a provisional timeline, resolving any tension between the two coordinate systems introduced in Section 5. Fourth, global and sectional trajectories are generated from the expanded hook. Fifth, local event trajectories, including any explicit author overrides, are superimposed according to the blending rule of Section 11. Sixth, the resulting control field is projected into the genre and renderer admissibility regions as described in Section \ref{sec:genre}. Seventh, the performance is synthesized by the renderer's model $M$ under the mapping $\psi_M$. Finally, a validator compares the output against the score's declared invariants and flags any violation.
+
+If validation fails, the decoder may revise only non-invariant parameters:
+\[
+\Theta_{n+1}
+=
+\Theta_n
+-
+\eta\nabla_{\Theta}
+\mathcal{L}_{\mathrm{validation}},
+\]
+subject to preservation of the hook's trajectory topology, meaning that the gradient step is permitted to adjust magnitudes and local timing but not to alter the qualitative shape (ordering of extrema, sign pattern, coupling structure) established by the hook. This restriction avoids a failure mode in which validation-driven correction silently substitutes an unrelated solution for the encoded performance law merely because that unrelated solution happens to satisfy the validator's surface criteria.
+
+\section{Canonicalization and Versioning}
+
+Deterministic reproduction across independent implementations requires a canonical score. The canonicalization procedure must specify character encoding, Unicode normalization form, line-ending convention, whitespace-collapsing rules, numeric precision and rounding, tag ordering, section-identifier syntax, and comment exclusion, in the same way that canonical XML or JSON serialization specifications exist precisely to make hashing and signature verification well defined across implementations.
+
+Let
+\[
+S_c=\Canonicalize(S,V).
+\]
+The score identity is then
+\[
+\operatorname{SID}
+=
+\Hash(V\parallel S_c).
+\]
+Every decoder must report its codec version, renderer identifier, model checksum, trajectory-library checksum, and hook mode. A complete rendering receipt is therefore the tuple
+\[
+Q=
+(
+\operatorname{SID},
+V,
+M,
+\Hash(M),
+\Hash(\mathcal{B}),
+H
+).
+\]
+
+Without these fields, exact procedural reproducibility cannot be claimed for any given rendering, since either the score, the renderer, or the trajectory library could silently differ between two nominally identical rendering attempts. It follows that a score may remain semantically and musically portable across successive renderer generations while ceasing to be \emph{acoustically} reproducible once the renderer or trajectory library changes; the specification treats this as an expected and acceptable degradation, provided the receipt makes clear which reconstruction level (Section \ref{sec:levels}) is being claimed.
+
+\section{Reconstruction Levels}
+\label{sec:levels}
+
+The specification distinguishes four increasingly demanding reconstruction claims, ordered by the strength of the fidelity guarantee they impose.
+
+\emph{Semantic reconstruction} preserves lyrics, section order, and narrative movement, and is the weakest and most portable claim; it should survive essentially any compliant renderer and any future codec version.
+
+\emph{Musical reconstruction} additionally preserves melody, harmony, meter, and rhythmic identity, and requires a renderer capable of following an explicit melodic and harmonic skeleton rather than merely a textual and structural one.
+
+\emph{Performative reconstruction} additionally preserves expressive trajectories such as restraint, rupture, expansion, and release, and is the level at which the trajectory hook mechanism becomes load-bearing rather than merely decorative.
+
+\emph{Render reconstruction} attempts to reproduce a particular timbral realization under a fixed model and version, and is the level closest in spirit to conventional audio coding, though even at this level the specification does not claim sample-exact recovery, only close perceptual and parametric correspondence under the fixed rendering receipt $Q$.
+
+Most practical uses of the system will target musical or performative reconstruction; render reconstruction is properly understood as a narrow, version-locked special case rather than the system's primary design point, and claims of render-level fidelity should always be qualified by an explicit rendering receipt.
+
+\section{Evaluation Methodology}
+\label{sec:evaluation}
+
+Evaluation must separate textual adequacy, musical identity, trajectory preservation, and acoustic plausibility, since conflating these into a single aggregate score would obscure exactly the distinctions the specification is designed to make legible.
+
+Textual adequacy can be measured through word error rate, phoneme error rate, structural-label accuracy, and semantic-event agreement between the reference and the reconstruction's extracted linguistic layer. Musical identity can be evaluated using melodic-contour distance, chord-sequence agreement, beat alignment, and section-boundary accuracy, drawing on standard music-information-retrieval evaluation practice.
+
+Trajectory preservation requires evaluation machinery not typically found in either audio-coding or symbolic-music evaluation literature. Let $\Theta_x(t)$ be control trajectories inferred from the reference recording and $\Theta_{\hat{x}}(t)$ those inferred from the reconstruction. A normalized trajectory error is
+\[
+D_\Theta
+=
+\frac{1}{D}
+\sum_{j=1}^{D}
+\DTW
+\left(
+\Theta_{x,j},
+\Theta_{\hat{x},j}
+\right),
+\]
+where dynamic time warping is used specifically because it permits modest timing differences between reference and reconstruction without penalizing them as trajectory-shape errors, which a fixed-alignment distance such as ordinary Euclidean distance would incorrectly do.
+
+Because a song's performative identity may lie substantially in the \emph{relationships} among control dimensions rather than in their absolute values, the evaluation should also compare derivative signs, turning points, extrema ordering, and cross-parameter coupling structure:
+\[
+D_{\mathrm{rel}}
+=
+\left\|
+\Corr(\Theta_x)
+-
+\Corr(\Theta_{\hat{x}})
+\right\|_F.
+\]
+
+Listening tests should ask, at minimum, whether two renderings are recognizably the same song, whether they exhibit the same dramatic motion (the same points of restraint, escalation, fracture, and release), and whether the hook remains perceptually recognizable when the underlying rendering system is changed.
+
+A particularly demanding and diagnostically valuable test holds the score fixed while varying the renderer:
+\[
+\hat{x}_i=R(S,M_i).
+\]
+If listeners continue to identify the same musical and performative structure across renderers $M_1, M_2, \ldots$, this is strong evidence that the representation has captured genuine, renderer-independent invariants rather than model-specific surface features that happen to correlate with the reference recording under a single synthesis engine. This cross-renderer invariance test is the closest analogue, within this framework, to a construct-validity check in psychometrics: it tests whether the measured quantity (song identity, as operationalized by the score) behaves consistently across different instruments (renderers) purporting to measure the same underlying construct.
+
+\section{Compression Accounting}
+\label{sec:compression}
+
+The codec's compression ratio must not be reported by comparing only the text file against the waveform while silently ignoring the cost of the decoder itself, since this would produce a misleadingly favorable ratio for any single instance. The honest amortized rate is
+\[
+R_{\mathrm{effective}}
+=
+|S|
++
+\frac{|M|+|\mathcal{B}|}{N},
+\]
+where $|M|$ is the model size, $|\mathcal{B}|$ is the trajectory-library size, and $N$ is the number of songs rendered using the shared infrastructure.
+
+For a single song, a multi-gigabyte synthesis model is not meaningfully ``smaller'' than a losslessly or near-losslessly compressed waveform such as FLAC; the apparent compression is illusory unless the decoder's cost is amortized across a corpus. Across a large collection, however, the shared decoder cost genuinely is amortized: a ten-kilobyte score may represent a song economically in aggregate if the same renderer and trajectory library serve thousands of scores, in the same way that a shared dictionary in dictionary-based compression schemes is only economical when reused across many messages.
+
+The system should therefore be described, without overstatement, as achieving \emph{collection-level generative compression}, not single-file compression, and any comparison to conventional audio codecs should make this scope explicit.
+
+\section{Security and Provenance}
+\label{sec:security}
+
+A keyed hook can authenticate a rendering convention but cannot, on its own, guarantee ownership of musical content, and the specification does not claim otherwise. The score should optionally contain a provenance block identifying the encoder, source hash, declared authorship, timestamp, and transformation permissions, analogous in function to metadata blocks in existing digital-rights and provenance standards, though without this specification taking a position on the legal effect of such declarations in any given jurisdiction.
+
+A rendering may include a low-energy watermark derived from
+\[
+W=
+\PRF_K(\operatorname{SID}\parallel H),
+\]
+but watermarking must remain architecturally separate from the generative hook. Combining the two too tightly could allow removal of the watermark to damage the musical reconstruction itself, or could allow ordinary, benign transformations of the audio (transcoding, mild equalization) to create false authentication failures; keeping them separate ensures that watermark verification and generative fidelity fail independently rather than being coupled failure modes.
+
+The decoder must also expose which properties of a given rendering were explicitly encoded by the author, which were inferred by the encoder from a source recording, which were generated from the hook, and which were invented by the renderer to fill gaps left underspecified by the score. This provenance distinction is not a peripheral feature; it is the mechanism that prevents generated detail from being misrepresented, whether inadvertently or deliberately, as recovered or historically accurate information, a concern that becomes acute in any archival, forensic, or attribution context in which the distinction between ``recovered'' and ``generated'' carries evidentiary weight.
+
+\section{Principal Limitations}
+
+The representation cannot uniquely recover information that was discarded before encoding. If two distinct recordings happen to produce the same score under the encoder's identity-extraction procedure, the decoder has no basis on which to determine which waveform was historically original; the hook reduces ambiguity by selecting a single trajectory from the admissible family, but it does not and cannot reverse information genuinely lost at the encoding stage. This is a direct consequence of the encoder's lossy, invariant-extracting design and should not be regarded as a defect so much as an explicit design commitment that the specification asks readers to accept on its own terms.
+
+The representation is also culturally and conventionally dependent in a way that classical waveform codecs are not. Terms such as ``oomph,'' ``fractured,'' ``gospel,'' or ``subterranean'' acquire operational meaning only through a documented mapping, a specific training corpus, or a specific trajectory-library profile; they carry no signal-level definition independent of that context. Their behavior must therefore be versioned and empirically validated in the same way that a controlled vocabulary in any technical or legal domain requires an authoritative definition and change-control process, since an undocumented drift in the meaning of such a term between codec versions would silently break reproducibility even when every formal field of the specification is satisfied.
+
+Model drift presents a related but distinct limitation. A score may remain syntactically and semantically readable while later models interpret its controls differently than earlier models did, simply because the renderer's own internal representations have shifted. Canonical rendering receipts and the maintenance of reference decoders are therefore necessary, not optional, if long-term repeatability is a design requirement for a given deployment.
+
+Finally, compression quality is intrinsically relative to the intended invariant, and the specification does not claim a single privileged notion of song identity. A lyric-centered score may preserve the song primarily as narrative while allowing its melody to drift substantially across renderings. A melody-centered score may preserve recognizability of the tune while losing the performance's moral or emotional movement across sections. The encoder must therefore declare, as part of the score's \texttt{@identity} field, what it considers constitutive of the song's identity for the purposes of a given encoding, since this declaration is what gives the evaluation methodology of Section \ref{sec:evaluation} a well-defined target.
+
+\section{Relation to Prior Work}
+
+The system draws on, and should be evaluated against, several adjacent literatures without being reducible to any one of them.
+
+Relative to classical and neural audio codecs, the system shares the encoder/decoder vocabulary but departs fundamentally in its fidelity criterion, replacing waveform or spectral distortion with identity-vector preservation, as developed in Section 2.
+
+Relative to symbolic music representation formats such as MusicXML, MIDI, and ABC notation, the system shares the commitment to a compact, human-readable, structurally organized text format, but extends this tradition by incorporating an explicit, deterministic, time-varying production-control layer (the trajectory hook and its expansion) that these earlier formats do not attempt to specify, having historically left production and performance nuance entirely to a human performer's discretion.
+
+Relative to neural text-to-music and text-to-audio generation systems, the system shares the goal of instantiating an audio performance from a compact textual specification, but departs by insisting on a deterministic, versioned, and reproducible control law rather than relying on a single opaque conditioning prompt interpreted anew, and potentially inconsistently, by an evolving underlying model at each generation.
+
+Relative to digital watermarking and audio provenance systems, the system's keyed-hook mechanism shares structural features (a pseudorandom function bound to content via a hash) but is explicitly not proposed as a substitute for a dedicated watermarking or rights-management layer, and Section \ref{sec:security} states this limitation directly rather than leaving it to be inferred.
+
+\section{Falsifiable Research Claim}
+
+The system's strongest defensible hypothesis is stated here in a form intended to be empirically falsifiable rather than merely programmatic:
+
+\begin{quote}
+A song can be represented by a compact textual score plus a deterministic trajectory hook such that independently generated renderings preserve its declared semantic, musical, and performative invariants across multiple compatible synthesis systems.
+\end{quote}
+
+This claim fails, and should be treated by any evaluator as having failed, under any of the following conditions: if the hook merely produces arbitrary ornamental variation uncorrelated with the declared invariants; if the song's perceptual identity disappears or becomes unrecognizable when the renderer changes while the score remains fixed; if listeners recognize only the lyrics and fail to identify shared musical or performative structure across renderings; or if the score must, in practice, become so detailed as to effectively re-encode the original automation and audio data, at which point the system has collapsed back into a conventional, non-generative codec under a different name.
+
+The claim succeeds when a comparatively small representation repeatedly produces performances that differ in surface acoustic realization yet preserve the same structured dramatic movement: the same pattern of restraint, escalation, fracture, low-frequency organization, climax, and release, reproducibly identifiable by listeners and quantifiably measurable by the trajectory-preservation metrics of Section \ref{sec:evaluation}.
+
+The conceptual compression achieved by the system is therefore not, strictly speaking, waveform-into-text compression in the classical sense. It is more precisely characterized as a two-stage transformation:
+\[
+\text{recording}
+\longrightarrow
+\text{invariants + constraints + law of motion}
+\longrightarrow
+\text{new performance}.
+\]
+The trajectory hook is the compact carrier of that law of motion, and the specification's central contribution is the claim that such a law, once made explicit, versioned, and deterministic, is sufficient to carry a song's identity across renderings in a way that neither an unstructured text prompt nor a conventional waveform codec can achieve on its own.
+
+\end{document}
